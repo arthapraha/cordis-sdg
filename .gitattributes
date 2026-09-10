@@ -1,0 +1,9 @@
+# Default: normalise text in the repository.
+* text=auto eol=lf
+
+# Captured source pages are the evidence behind every licence quotation in
+# README.md, and their sha256 hashes are recorded in data/manifest.json.
+# Git must not touch a byte of them. Line-ending normalisation on checkout
+# would change the bytes, change the hash, and silently invalidate the whole
+# licence capture without anything appearing to be wrong.
+sources/** -text -diff

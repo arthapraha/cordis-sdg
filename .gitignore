@@ -1,0 +1,9 @@
+# Snapshot payloads are not committed. Their sha256 hashes are in
+# data/manifest.json, which is committed, so a re-download can be verified
+# byte for byte without carrying ~180 MB of data in git history.
+data/raw/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
