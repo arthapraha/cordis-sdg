@@ -1,7 +1,21 @@
 {
-  "manifest_version": 1,
-  "built_under_registration_sha256": "951e3e281b51bade85b778cd2c30955cad6837a1001fda6d6c9196fbb64afcee",
+  "manifest_version": 2,
+  "built_under_registration_sha256": "7eed47e43897f8bd1df673088564ffcad1a80e76d52424577f4d77a61ff82824",
   "note": "Snapshot record for the CORDIS-to-SDG entry. Payload files are not committed; these hashes let anyone verify a re-download byte for byte.",
+  "snapshot": {
+    "upstream_last_modified": {
+      "projects": "Thu, 06 Aug 2026 14:02:10 GMT",
+      "project_deliverables": "Wed, 29 Jul 2026 16:59:50 GMT",
+      "reports": "Wed, 29 Jul 2026 16:22:44 GMT"
+    },
+    "retrieved_utc": {
+      "projects": "2026-09-10T22:37:17Z",
+      "project_deliverables": "2026-09-11T20:31:11Z",
+      "reports": "2026-09-11T20:31:11Z",
+      "sdg_taxonomy": "2026-09-10T22:37:51Z"
+    },
+    "note": "This snapshot is not one upstream moment and does not claim to be. The projects extract was last modified upstream on 6 August 2026; the deliverables and reports extracts on 29 July 2026, both eight days earlier. They were also retrieved at two different local moments: the projects extract and the taxonomy on 2026-09-10, the other two on 2026-09-11, after registration v7 admitted the fields they carry. Stated as a fact here rather than left to be inferred from two hashes sitting side by side."
+  },
   "sources": {
     "competition_page": {
       "url": "https://data.europa.eu/dashboard/en/competition/cordis-sdg",
@@ -54,89 +68,188 @@
     "cordis_horizon_europe_projects": {
       "title": "CORDIS - EU research projects under HORIZON EUROPE (2021-2027)",
       "publisher": "Publications Office of the European Union",
-      "download_url": "https://cordis.europa.eu/data/cordis-HORIZONprojects-csv.zip",
-      "retrieved_utc": "2026-09-10T22:37:17Z",
-      "http_status": 200,
-      "upstream_last_modified": "Thu, 06 Aug 2026 14:02:10 GMT",
-      "portal_distribution_updated": "2026-08-07",
-      "archive": {
-        "path": "data/raw/cordis-HORIZONprojects-csv.zip",
-        "bytes": 36672015,
-        "sha256": "f91d5b6d7f952a4eeb725f4917576ffba652b6b03739d2ba763fa67b5dee6d22"
+      "dataset_page": "https://data.europa.eu/data/datasets/cordis-eu-research-projects-under-horizon-europe-2021-2027",
+      "licence": {
+        "statement": "Commission Decision 2011/833/EU on the reuse of Commission documents",
+        "uri": "http://data.europa.eu/eli/dec/2011/833/oj",
+        "source": "cordis_dataset_metadata",
+        "note": "Machine-readable dct:license on the dataset and on each of its distributions, in the captured DCAT metadata. The prose statement naming the same instrument, and CC BY 4.0 for editorial content, is in the captured CORDIS legal notice and quoted in the README."
       },
-      "members": [
-        {
-          "path": "data/raw/cordis-horizon-projects/euroSciVoc.csv",
-          "bytes": 6443757,
-          "sha256": "ad3d46447ddf569a19920ef13cd3ce2e41288d46714424ed859479c4266ee2e5"
+      "note": "One dataset, three CSV distributions. Registration v7 section 2 names one snapshot of this dataset; the projects extract alone carries neither the editorial description nor the deliverables that section 2 admits and section 3.4 matches on, so the other two distributions are part of the same snapshot.",
+      "distributions": {
+        "projects": {
+          "download_url": "https://cordis.europa.eu/data/cordis-HORIZONprojects-csv.zip",
+          "retrieved_utc": "2026-09-10T22:37:17Z",
+          "http_status": 200,
+          "upstream_last_modified": "Thu, 06 Aug 2026 14:02:10 GMT",
+          "portal_distribution_updated": "2026-08-07",
+          "archive": {
+            "path": "data/raw/cordis-HORIZONprojects-csv.zip",
+            "bytes": 36672015,
+            "sha256": "f91d5b6d7f952a4eeb725f4917576ffba652b6b03739d2ba763fa67b5dee6d22"
+          },
+          "members": [
+            {
+              "path": "data/raw/cordis-horizon-projects/euroSciVoc.csv",
+              "bytes": 6443757,
+              "sha256": "ad3d46447ddf569a19920ef13cd3ce2e41288d46714424ed859479c4266ee2e5"
+            },
+            {
+              "path": "data/raw/cordis-horizon-projects/information.zip",
+              "bytes": 231028,
+              "sha256": "1c71629c4d3a2c73600ae749ffa794aa2dcb84d47a8fbc276d575c1cc7907c91"
+            },
+            {
+              "path": "data/raw/cordis-horizon-projects/legalBasis.csv",
+              "bytes": 2125171,
+              "sha256": "5846370a0a0ebe564e509f9a7ccdbc2408652f00850764a7df48f9835cff47a5"
+            },
+            {
+              "path": "data/raw/cordis-horizon-projects/organization.csv",
+              "bytes": 59707775,
+              "sha256": "05a2c116f4409f0efb31a81dfd1d8da7536f9b037ee36cca0243558571594826"
+            },
+            {
+              "path": "data/raw/cordis-horizon-projects/policyPriorities.csv",
+              "bytes": 3306966,
+              "sha256": "7c727bc3ebb680ad30eb1dc75bbbf1679520a065d8085d3ecd0911420fa75342"
+            },
+            {
+              "path": "data/raw/cordis-horizon-projects/project.csv",
+              "bytes": 54033108,
+              "sha256": "5b6c7dd781dd8b1ea6bad3cd8c101a430be408de87b5d83560c47e4aa08c7a11"
+            },
+            {
+              "path": "data/raw/cordis-horizon-projects/topics.csv",
+              "bytes": 1997357,
+              "sha256": "8d58698124537a82373db7b84a3b8235db16fc92caebe50041cbdca020a5d4a9"
+            },
+            {
+              "path": "data/raw/cordis-horizon-projects/webItem.csv",
+              "bytes": 831,
+              "sha256": "2b8549cbf8b303d50912283173e981e2c8d503f943e56bf5095961902687e2b4"
+            },
+            {
+              "path": "data/raw/cordis-horizon-projects/webLink.csv",
+              "bytes": 11959700,
+              "sha256": "c2e8af6d04e3db722a233e9e04bcf2e9ebb29f70bc80d8905ad6fe7c69f9a5ee"
+            }
+          ],
+          "measured": {
+            "project_csv": {
+              "columns": [
+                "id",
+                "acronym",
+                "status",
+                "title",
+                "startDate",
+                "endDate",
+                "totalCost",
+                "ecMaxContribution",
+                "topics",
+                "ecSignatureDate",
+                "frameworkProgramme",
+                "masterCall",
+                "subCall",
+                "fundingScheme",
+                "nature",
+                "objective",
+                "contentUpdateDate",
+                "rcn",
+                "grantDoi",
+                "keywords",
+                "Human-validated",
+                "legalBasis"
+              ],
+              "rows": 23451,
+              "rows_at_header_width": 23258,
+              "distinct_id": 23258
+            }
+          }
         },
-        {
-          "path": "data/raw/cordis-horizon-projects/information.zip",
-          "bytes": 231028,
-          "sha256": "1c71629c4d3a2c73600ae749ffa794aa2dcb84d47a8fbc276d575c1cc7907c91"
+        "project_deliverables": {
+          "download_url": "https://cordis.europa.eu/data/cordis-HORIZONprojectDeliverables-csv.zip",
+          "retrieved_utc": "2026-09-11T20:31:11Z",
+          "http_status": 200,
+          "upstream_last_modified": "Wed, 29 Jul 2026 16:59:50 GMT",
+          "archive": {
+            "path": "data/raw/cordis-HORIZONprojectDeliverables-csv.zip",
+            "bytes": 4665117,
+            "sha256": "3e17dec2a5d88e491b34a33e3aadd76bf5452b1cb778a5d47b7d98742d2281c6"
+          },
+          "members": [
+            {
+              "path": "data/raw/cordis-horizon-deliverables/information.zip",
+              "bytes": 231028,
+              "sha256": "8f2edfd282505b0720aa26d029169e14e7a5bd62b59cc2090e443e114f8159a2"
+            },
+            {
+              "path": "data/raw/cordis-horizon-deliverables/projectDeliverables.csv",
+              "bytes": 23949629,
+              "sha256": "4ef6a1e8eccbda851df9d79f84bd7f0e34b4846cb7e02059fcc9e8a7dc8258df"
+            }
+          ],
+          "measured": {
+            "project_deliverables_csv": {
+              "columns": [
+                "deliverableType",
+                "description",
+                "url",
+                "projectID",
+                "projectAcronym",
+                "contentUpdateDate",
+                "rcn",
+                "collection"
+              ],
+              "rows": 58780,
+              "rows_at_header_width": 58757,
+              "distinct_projectID": 11283,
+              "projects_covered": 11180
+            }
+          },
+          "carries": "A per-deliverable 'description' column of real prose. This is the deliverable's own text, not the project's editorial description. There is no 'title' column, so registration v7 section 3.4's phrase 'the deliverable titles' has no field to match; 'description' is what this distribution provides."
         },
-        {
-          "path": "data/raw/cordis-horizon-projects/legalBasis.csv",
-          "bytes": 2125171,
-          "sha256": "5846370a0a0ebe564e509f9a7ccdbc2408652f00850764a7df48f9835cff47a5"
-        },
-        {
-          "path": "data/raw/cordis-horizon-projects/organization.csv",
-          "bytes": 59707775,
-          "sha256": "05a2c116f4409f0efb31a81dfd1d8da7536f9b037ee36cca0243558571594826"
-        },
-        {
-          "path": "data/raw/cordis-horizon-projects/policyPriorities.csv",
-          "bytes": 3306966,
-          "sha256": "7c727bc3ebb680ad30eb1dc75bbbf1679520a065d8085d3ecd0911420fa75342"
-        },
-        {
-          "path": "data/raw/cordis-horizon-projects/project.csv",
-          "bytes": 54033108,
-          "sha256": "5b6c7dd781dd8b1ea6bad3cd8c101a430be408de87b5d83560c47e4aa08c7a11"
-        },
-        {
-          "path": "data/raw/cordis-horizon-projects/topics.csv",
-          "bytes": 1997357,
-          "sha256": "8d58698124537a82373db7b84a3b8235db16fc92caebe50041cbdca020a5d4a9"
-        },
-        {
-          "path": "data/raw/cordis-horizon-projects/webItem.csv",
-          "bytes": 831,
-          "sha256": "2b8549cbf8b303d50912283173e981e2c8d503f943e56bf5095961902687e2b4"
-        },
-        {
-          "path": "data/raw/cordis-horizon-projects/webLink.csv",
-          "bytes": 11959700,
-          "sha256": "c2e8af6d04e3db722a233e9e04bcf2e9ebb29f70bc80d8905ad6fe7c69f9a5ee"
+        "reports": {
+          "download_url": "https://cordis.europa.eu/data/cordis-HORIZONreports-csv.zip",
+          "retrieved_utc": "2026-09-11T20:31:11Z",
+          "http_status": 200,
+          "upstream_last_modified": "Wed, 29 Jul 2026 16:22:44 GMT",
+          "archive": {
+            "path": "data/raw/cordis-HORIZONreports-csv.zip",
+            "bytes": 1034430,
+            "sha256": "52a133c5c545760eb66440e1f13c48d194471f4b37b1eba485002553d3b9c219"
+          },
+          "members": [
+            {
+              "path": "data/raw/cordis-horizon-reports/information.zip",
+              "bytes": 231028,
+              "sha256": "56eacbd8b02f25532a6608343b09a1c4af428b84ddf9d71617f10b85b19034bc"
+            },
+            {
+              "path": "data/raw/cordis-horizon-reports/reportSummaries.csv",
+              "bytes": 2786293,
+              "sha256": "ecfc23fc333ca1a9c47f908ce8ae2ebb5eb478f03e365ce7d61367879361b437"
+            }
+          ],
+          "measured": {
+            "report_summaries_csv": {
+              "columns": [
+                "attachment",
+                "id",
+                "title",
+                "projectID",
+                "projectAcronym",
+                "contentUpdateDate",
+                "rcn"
+              ],
+              "rows": 9734,
+              "rows_at_header_width": 9734,
+              "distinct_projectID": 9734,
+              "projects_covered": 9654
+            }
+          },
+          "carries": "No narrative text. The seven columns are attachment, id, title, projectID, projectAcronym, contentUpdateDate and rcn; 'title' is the boilerplate 'Periodic Reporting for period N - ACRONYM' and 'attachment' holds image paths. The editorial content the competition page defines as the project description is NOT in this CSV distribution. See the README for where it is and what that costs."
         }
-      ],
-      "measured": {
-        "project_rows": 23451,
-        "project_columns": [
-          "id",
-          "acronym",
-          "status",
-          "title",
-          "startDate",
-          "endDate",
-          "totalCost",
-          "ecMaxContribution",
-          "topics",
-          "ecSignatureDate",
-          "frameworkProgramme",
-          "masterCall",
-          "subCall",
-          "fundingScheme",
-          "nature",
-          "objective",
-          "contentUpdateDate",
-          "rcn",
-          "grantDoi",
-          "keywords",
-          "Human-validated",
-          "legalBasis"
-        ]
       }
     },
     "eu_vocabularies_sdg_taxonomy": {
@@ -148,6 +261,12 @@
       "dataset_page": "https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/sdg",
       "retrieved_utc": "2026-09-10T22:37:51Z",
       "http_status": 200,
+      "licence": {
+        "statement": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+        "uri": "https://creativecommons.org/licenses/by/4.0/",
+        "source": "op_copyright_notice",
+        "note": "The SDG distribution carries no licence statement inside the RDF and the taxonomy has no data.europa.eu DCAT record of its own, so the governing statement is the Publications Office copyright notice captured under sources and quoted verbatim in the README. Recorded here so both datasets in this manifest carry a licence field rather than one carrying it and one leaving it to prose."
+      },
       "file": {
         "path": "data/raw/sdg-skos-ap-eu.rdf",
         "bytes": 6337360,
