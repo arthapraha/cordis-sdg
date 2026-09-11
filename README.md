@@ -412,6 +412,22 @@ exits non-zero, names the section and writes nothing. **It was written to fail o
 the refused code and it did**, reporting `--set all` exiting 0 having written
 261,389 bytes.
 
+**The output records the parameter VALUES, not the parameters file.** The first
+version hashed `parameters-v1.json` itself, which makes adding a comment
+indistinguishable from changing a weight. Counsel asked for a note about what
+`independent_sources` counts; the note went into the file, the file's hash moved,
+and the output's hash moved with it, on a run whose every scored row was
+identical. I then reported that the output reproduced, because I had checked
+before writing the note and not after.
+
+`parameters_values_sha256` is the sha256 of the parameters with every
+underscore-prefixed documentation key stripped, serialised as compact JSON with
+sorted keys. **It moves when a parameter moves and stays still when one is
+explained**, and both directions are tested: adding a comment leaves the output
+byte-identical, and changing the threshold from 3.0 to 3.5 changes it. The file's
+own hash lives in the commit message and here, where a changing hash costs
+nothing.
+
 **Row provenance is owed by the mapping table, not by this artefact.** Section 6
 item 2 requires the pipeline commit and the snapshot hash on every row of the
 submitted CSV. The intermediate output carries the registration hash, the

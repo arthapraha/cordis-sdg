@@ -48,6 +48,31 @@ SOURCES = ["title", "keywords", "objective", "editorial_description",
            "deliverable_descriptions"]
 
 
+def effective_parameters(obj):
+    """The parameters with every documentation key removed, recursively.
+
+    WHY THE OUTPUT HASHES THIS AND NOT THE FILE. The first version recorded the
+    sha256 of parameters-v1.json itself. That makes adding a comment
+    indistinguishable from changing a weight: counsel asked for a note about what
+    `independent_sources` counts, the note went into the file, the file's hash
+    moved, and the output's hash moved with it — on a run whose every scored row
+    was byte-identical. I then claimed the output reproduced, because I had
+    checked before writing the note and not after (cordis-sdg seq 132).
+
+    Provenance should answer "were these the numbers?", not "was this the same
+    prose?". Keys beginning with an underscore are documentation and are stripped
+    here, so the recorded hash moves when a parameter moves and stays still when
+    someone explains one. The file's own hash is recorded in the commit and the
+    README, where a changing hash costs nothing.
+    """
+    if isinstance(obj, dict):
+        return {k: effective_parameters(v) for k, v in obj.items()
+                if not k.startswith("_")}
+    if isinstance(obj, list):
+        return [effective_parameters(v) for v in obj]
+    return obj
+
+
 def read_csv(path):
     with open(path, encoding="utf-8", newline="") as fh:
         return list(csv.DictReader(fh, delimiter=";"))
@@ -372,7 +397,14 @@ def main():
                          "and cannot change any assignment here.",
         "registration_sha256": params["_registration_sha256"],
         "parameters_version": params["version"],
-        "parameters_sha256": hashlib.sha256(PARAMS.read_bytes()).hexdigest(),
+        "parameters_values_sha256": hashlib.sha256(
+            json.dumps(effective_parameters(params), sort_keys=True,
+                       separators=(",", ":")).encode("utf-8")).hexdigest(),
+        "parameters_values_sha256_is": (
+            "sha256 of the parameters with every underscore-prefixed "
+            "documentation key stripped, serialised as compact JSON with sorted "
+            "keys. It moves when a parameter moves and not when one is "
+            "explained. The file's own hash is in the commit and the README."),
         "handoff_sha256": artefact_hash,
         "set": args.set,
         "projects": len(rows),
