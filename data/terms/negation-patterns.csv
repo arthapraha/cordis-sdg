@@ -1,0 +1,58 @@
+pattern;class;window;applies_rule;note
+not related to;scope_exclusion;60 characters before the match;2;Announces the project is not in that area.
+unrelated to;scope_exclusion;60 characters before the match;2;As "not related to".
+does not address;scope_exclusion;60 characters before the match;2;Explicit scope exclusion.
+do not address;scope_exclusion;60 characters before the match;2;Plural form.
+does not cover;scope_exclusion;60 characters before the match;2;Explicit scope exclusion.
+do not cover;scope_exclusion;60 characters before the match;2;Plural form.
+does not consider;scope_exclusion;60 characters before the match;2;Explicit scope exclusion.
+is not concerned with;scope_exclusion;60 characters before the match;2;Explicit scope exclusion.
+outside the scope of;scope_exclusion;60 characters before the match;2;Explicit scope exclusion.
+out of scope for;scope_exclusion;60 characters before the match;2;Explicit scope exclusion.
+beyond the scope of;scope_exclusion;60 characters before the match;2;Explicit scope exclusion.
+with the exception of;scope_exclusion;60 characters before the match;2;Carves the term out of a list.
+except for;scope_exclusion;60 characters before the match;2;Carves the term out of a list.
+other than;scope_exclusion;60 characters before the match;2;Carves the term out of a list.
+excluding;scope_exclusion;60 characters before the match;2;Carves the term out of a list.
+not applicable to;scope_exclusion;60 characters before the match;2;Explicit scope exclusion.
+no;direct_negation;5 words before the match;3;Ordinary determiner negation.
+not;direct_negation;5 words before the match;3;Ordinary negation.
+non-;direct_negation;5 words before the match;3;Prefix negation, matched as a token prefix.
+without;direct_negation;5 words before the match;3;Ordinary negation.
+neither;direct_negation;5 words before the match;3;Ordinary negation.
+nor;direct_negation;5 words before the match;3;Ordinary negation.
+never;direct_negation;5 words before the match;3;Ordinary negation.
+lack of;direct_negation;5 words before the match;3;Names an absence.
+absence of;direct_negation;5 words before the match;3;Names an absence.
+failure to;direct_negation;5 words before the match;3;Names an absence.
+cannot;direct_negation;5 words before the match;3;Ordinary negation.
+does not;direct_negation;5 words before the match;3;Ordinary negation.
+will not;direct_negation;5 words before the match;3;Ordinary negation.
+reduce;negative_subject;same sentence;4;Several targets ask for a reduction; this protects the match.
+reduction of;negative_subject;same sentence;4;As "reduce".
+reducing;negative_subject;same sentence;4;As "reduce".
+eliminate;negative_subject;same sentence;4;Targets 1.1, 2.1, 3.3, 5.2 and others ask for elimination.
+eliminating;negative_subject;same sentence;4;As "eliminate".
+eradicate;negative_subject;same sentence;4;Target 1.1's own verb.
+prevent;negative_subject;same sentence;4;Targets 3.4, 12.4, 15.8 and others ask for prevention.
+prevention of;negative_subject;same sentence;4;As "prevent".
+mitigate;negative_subject;same sentence;4;Target 13 language.
+mitigation of;negative_subject;same sentence;4;As "mitigate".
+combat;negative_subject;same sentence;4;Targets 3.3, 13.3, 15.3 use this verb.
+combating;negative_subject;same sentence;4;As "combat".
+tackle;negative_subject;same sentence;4;Common paraphrase of "combat" in project prose.
+avoid;negative_subject;same sentence;4;Used for emissions and waste avoidance.
+decrease;negative_subject;same sentence;4;As "reduce".
+minimise;negative_subject;same sentence;4;Target 6.3's own verb, British spelling.
+minimize;negative_subject;same sentence;4;Target 6.3's own verb, as published.
+halve;negative_subject;same sentence;4;Targets 3.6 and 12.3 use this verb.
+halving;negative_subject;same sentence;4;As "halve".
+end;negative_subject;same sentence;4;Targets 1.1, 2.1, 5.1 and others use this verb.
+ending;negative_subject;same sentence;4;As "end".
+unlike;comparison;40 characters before the match;5;Positions the work against a field it is not in.
+in contrast to;comparison;40 characters before the match;5;As "unlike".
+as opposed to;comparison;40 characters before the match;5;As "unlike".
+compared with;comparison;40 characters before the match;5;As "unlike".
+compared to;comparison;40 characters before the match;5;As "unlike".
+rather than;comparison;40 characters before the match;5;As "unlike".
+instead of;comparison;40 characters before the match;5;As "unlike".

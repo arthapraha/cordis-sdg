@@ -12,12 +12,16 @@ move the method.
 | registration | `cordis-sdg-registration-v9.md`, sha256 `72187842d621e55dedb6c6b366356131141cd47acf3324ab26bc7f06293c341c` (32,402 bytes) |
 | ratified | 2026-09-11, by the owner, by hash |
 | supersedes | v1 to v8, none of which governs this repository. v1 was never ratified and neither was v8; what each version changed is logged in v9 section 11, and every hash is in the cordis-sdg record. No superseded hash is written here, so a grep for one returns nothing rather than something a reader has to interpret. |
-| this commit covers | registration section 8, ratification-day line: repository, rules re-read, all four CORDIS distributions and the taxonomy hashed, licence lines captured |
+| this commit covers | registration sections 3.1 to 3.3: the crosswalk, the key-term extraction rule, the synonym list, the stop-list and the negation rule, all committed as data |
 
-Nothing beyond that line is in this repository yet. There is no crosswalk, no
-key-term extraction rule, no synonym list, no stop-list, no sample draw, no
-labelling and no model call, because none of those are authorised until the
-owner's next word.
+Section 8's ratification-day line was completed at `7c34a77`: repository, rules
+re-read, all four CORDIS distributions and the taxonomy hashed, licence lines
+captured.
+
+**Nothing has been matched against any project.** There is no sample draw, no
+labelling, no scoring and no model call, and no matching runs until this commit's
+hash is passed. The vocabulary in `data/terms/` and the crosswalk in
+`data/crosswalk/` were built from the taxonomy and the category list alone.
 
 ## Licence
 
@@ -298,11 +302,43 @@ but unread. That was v2's rule and v7 replaced it, for the reason v7 item 23
 gives: in CORDIS a participant **is** an organisation, so the old sentence
 forbade precisely what section 2 requires. v9 carries that rule unchanged.
 
+## The mapping vocabulary
+
+Registration section 3 requires the mapping decision to be made by rules a reader
+can run by hand. Three of the artefacts those rules need are committed here, and
+**none of them was derived from project text**, which is what keeps section 4's
+held-out evaluation set meaningful.
+
+| file | what it is |
+|---|---|
+| `data/terms/sdg-targets.csv` | the 169 targets and 17 goals, extracted from the hashed taxonomy so no label is ever transcribed by hand |
+| `data/terms/key-term-rule.md` | the extraction rule, **written before it was run**, as section 3.2 requires |
+| `data/terms/target-key-terms.csv` | 1,055 terms over 167 targets, produced by applying that rule to the target labels |
+| `data/terms/synonyms.csv` | 471 curated synonyms covering all 169 targets |
+| `data/terms/stop-list.csv` | 66 words that appear incidentally in research prose, each with the context in which it still counts |
+| `data/terms/negation-rule.md` | when a match near a negation is discarded, with what the rule will get wrong stated in advance |
+| `data/terms/negation-patterns.csv` | that rule's machine-readable patterns |
+| `data/crosswalk/eurosciwoc-to-sdg.csv` | 235 rows from 199 EuroSciVoc categories to 82 targets, each with a one-line justification citing the target's text |
+
+`data/crosswalk/README.md` says how the crosswalk was built, which rows a
+reviewer should attack first, and why four fifths of the category vocabulary is
+deliberately unmapped.
+
+**Two targets, 3.a and 10.1, yield no key term at all.** Both are long clauses
+whose last words are qualifiers rather than subjects, so a head-of-phrase rule
+finds nothing in them. They are reachable through the curated synonym list
+instead. Making the rule cleverer until they produced something would have been
+tuning the rule against its own output, which is the habit section 3 exists to
+prevent.
+
 ## Reproducing this commit
 
 ```
 python scripts/make_manifest.py
 python scripts/verify_licences.py
+python scripts/extract_targets.py
+python scripts/extract_key_terms.py
+python scripts/verify_crosswalk.py
 ```
 
 `make_manifest.py` rebuilds `data/manifest.json` from the files on disk. Every
@@ -315,6 +351,13 @@ recover afterwards.
 quotations from the competition page, against the captured bytes in `sources/`,
 and exits non-zero if any of them has drifted. It reports 11 checks and all of
 them pass at this commit.
+
+`extract_targets.py` and `extract_key_terms.py` regenerate the two derived files
+in `data/terms/` from the hashed taxonomy and the committed rule.
+`verify_crosswalk.py` checks that every identifier in the crosswalk, the synonym
+list and the key terms is real: every target exists in the taxonomy, every
+category exists in the snapshot, every crosswalk row carries a justification, and
+every target is reachable by at least one term. It passes at this commit.
 
 ## Status
 

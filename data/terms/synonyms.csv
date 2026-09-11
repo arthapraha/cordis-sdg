@@ -1,0 +1,472 @@
+target_id;synonym;kind;note
+1.1;extreme poverty;subject;The target's own subject.
+1.1;absolute poverty;domain;Standard economics term for the same measure.
+1.1;poverty eradication;domain;Names the commitment.
+1.1;living below the poverty line;domain;How the measure is usually phrased in research prose.
+1.2;relative poverty;domain;The national-definition measure this target uses.
+1.2;child poverty;domain;The target names children of all ages explicitly.
+1.2;multidimensional poverty;domain;"poverty in all its dimensions" in the target's own words.
+1.2;at risk of poverty;policy;The EU statistical phrasing (AROP).
+1.3;social protection;subject;The target's own subject.
+1.3;social safety net;domain;Common synonym in development research.
+1.3;social security systems;domain;Standard alternative phrasing.
+1.3;minimum income scheme;policy;The EU instrument that implements a social protection floor.
+1.4;access to basic services;subject;The target's own subject.
+1.4;land tenure;domain;The target names ownership and control over land.
+1.4;property rights;domain;As "land tenure".
+1.4;financial inclusion;domain;The target names access to financial services.
+1.4;microfinance;domain;A named mechanism for the same.
+1.5;climate resilience of the poor;subject;The target's own subject.
+1.5;disaster risk reduction;domain;The target names exposure to disasters.
+1.5;vulnerability to extreme events;domain;The target's own words.
+1.5;adaptive capacity;domain;Shared with target 13.1; both may fire.
+1.a;development cooperation;subject;The target's own subject.
+1.a;official development assistance;domain;The measured form of it.
+1.a;ODA;acronym;Acronym for the above; matched as a whole word.
+1.b;pro-poor policy;subject;The target's own subject.
+1.b;gender-sensitive development strategy;subject;The target's own words.
+2.1;food security;subject;Goal 2's central concept and this target's subject.
+2.1;hunger;subject;The target's own word.
+2.1;undernourishment;domain;The measured form of hunger.
+2.1;food access;domain;The target names access by all people.
+2.2;malnutrition;subject;The target's own subject.
+2.2;stunting;subject;The target's own word.
+2.2;wasting;subject;The target's own word.
+2.2;micronutrient deficiency;domain;The standard term for the nutritional outcome named.
+2.2;nutritional status;domain;How intervention studies phrase the outcome.
+2.3;smallholder;subject;"small-scale food producers" in ordinary agricultural research usage.
+2.3;agricultural productivity;subject;The target's own subject.
+2.3;family farming;subject;The target's own words.
+2.3;pastoralist;subject;The target's own word.
+2.3;farm income;domain;The target names incomes of small-scale producers.
+2.4;sustainable food production;subject;The target's own subject.
+2.4;resilient agriculture;subject;The target's own words.
+2.4;agroecology;domain;The research field that names these practices.
+2.4;soil quality;domain;The target names progressively improving land and soil quality.
+2.4;climate-smart agriculture;domain;Standard term for agriculture that adapts to climate change.
+2.4;regenerative agriculture;domain;As "agroecology".
+2.5;genetic diversity of seeds;subject;The target's own subject.
+2.5;plant genetic resources;domain;The FAO term for the same.
+2.5;seed bank;domain;The named mechanism, "seed and plant banks" in the target.
+2.5;germplasm;domain;The technical term used in breeding research.
+2.5;crop wild relatives;domain;"related wild species" in the target's own words.
+2.5;landrace;domain;As "germplasm".
+2.a;agricultural research;subject;The target's own subject.
+2.a;rural infrastructure;subject;The target's own subject.
+2.a;agricultural extension;subject;The target's own words.
+2.a;gene bank;domain;The target names plant and livestock gene banks.
+2.b;agricultural trade;subject;The target's own subject.
+2.b;agricultural export subsidies;subject;The target's own words.
+2.c;food commodity markets;subject;The target's own subject.
+2.c;food price volatility;subject;The target's own words.
+2.c;market information systems;subject;The target's own words.
+3.1;maternal mortality;subject;The target's own subject.
+3.1;maternal health;domain;The field that addresses it.
+3.1;obstetric care;domain;The clinical intervention area.
+3.2;neonatal mortality;subject;The target's own subject.
+3.2;child mortality;subject;The target's own subject.
+3.2;under-five mortality;domain;The measured form.
+3.2;infant mortality;domain;As above.
+3.3;communicable diseases;subject;The target's own subject.
+3.3;infectious disease;domain;The ordinary research term for the same.
+3.3;tuberculosis;subject;Named in the target.
+3.3;malaria;subject;Named in the target.
+3.3;HIV;domain;The pathogen behind AIDS, which the target names.
+3.3;AIDS;subject;Named in the target.
+3.3;hepatitis;subject;Named in the target.
+3.3;neglected tropical diseases;subject;Named in the target.
+3.3;epidemic;subject;The target's own word.
+3.3;water-borne disease;subject;Named in the target.
+3.4;non-communicable diseases;subject;The target's own subject.
+3.4;NCD;acronym;Acronym for the above.
+3.4;premature mortality;subject;The target's own words.
+3.4;mental health;subject;Named in the target.
+3.4;cardiovascular disease;domain;A principal NCD category.
+3.4;diabetes;domain;A principal NCD category.
+3.4;cancer;domain;A principal NCD category.
+3.4;chronic disease;domain;Ordinary research phrasing for NCDs.
+3.4;well-being;subject;Named in the target.
+3.5;substance abuse;subject;The target's own subject.
+3.5;narcotic drug abuse;subject;The target's own words.
+3.5;harmful use of alcohol;subject;The target's own words.
+3.5;addiction;domain;The clinical field.
+3.6;road traffic accidents;subject;The target's own subject.
+3.6;road safety;domain;The policy field that addresses it.
+3.6;traffic injuries;subject;The target's own words.
+3.7;reproductive health;subject;The target's own subject.
+3.7;sexual health;subject;The target's own words.
+3.7;family planning;subject;Named in the target.
+3.7;contraception;domain;The intervention behind family planning.
+3.8;universal health coverage;subject;The target's own subject.
+3.8;UHC;acronym;Acronym for the above.
+3.8;essential medicines;subject;Named in the target.
+3.8;access to vaccines;subject;Named in the target.
+3.8;health financing;domain;"financial risk protection" in the target.
+3.9;air pollution;subject;Named in the target.
+3.9;soil pollution;subject;Named in the target.
+3.9;water pollution;subject;Named in the target.
+3.9;hazardous chemicals;subject;Named in the target; shared with 6.3 and 12.4.
+3.9;contamination;subject;The target's own word.
+3.9;environmental health;domain;The field that studies these exposures.
+3.a;tobacco control;subject;The target's own subject. This target emits no key term, so these synonyms are its only route.
+3.a;smoking cessation;domain;The principal intervention.
+3.a;tobacco;subject;The target's subject, one word.
+3.b;vaccine development;subject;The target's own subject.
+3.b;essential medicines research;subject;The target's own words.
+3.b;neglected disease research;subject;The target names diseases that primarily affect developing countries.
+3.b;TRIPS;policy;The agreement the target names on access to medicines.
+3.c;health workforce;subject;The target's own subject.
+3.c;health financing;subject;The target's own subject.
+3.d;early warning for health risks;subject;The target's own subject.
+3.d;pandemic preparedness;domain;The ordinary term for this capacity.
+3.d;International Health Regulations;policy;Named in the target.
+3.d;epidemic preparedness;domain;As "pandemic preparedness".
+4.1;primary education;subject;The target's own subject.
+4.1;secondary education;subject;The target's own subject.
+4.1;learning outcomes;subject;The target's own words.
+4.2;early childhood development;subject;The target's own subject.
+4.2;pre-primary education;subject;The target's own words.
+4.3;vocational education;subject;The target's own subject.
+4.3;tertiary education;subject;The target's own subject.
+4.3;higher education;domain;Ordinary term for tertiary education.
+4.4;technical and vocational skills;subject;The target's own subject.
+4.4;employability skills;domain;The target names skills for employment.
+4.4;digital skills;domain;The principal EU reading of this target.
+4.4;reskilling;domain;As "employability skills".
+4.5;gender disparities in education;subject;The target's own subject.
+4.5;inclusive education;domain;The target names the vulnerable and persons with disabilities.
+4.6;literacy;subject;The target's own subject.
+4.6;numeracy;subject;The target's own subject.
+4.7;education for sustainable development;subject;The target's own subject.
+4.7;global citizenship education;subject;The target's own words.
+4.a;education facilities;subject;The target's own subject.
+4.a;inclusive learning environment;subject;The target's own words.
+4.b;scholarships;subject;The target's own subject.
+4.c;teacher training;subject;The target's own subject.
+4.c;qualified teachers;subject;The target's own words.
+5.1;gender discrimination;subject;The target's own subject.
+5.1;gender equality;subject;Goal 5's central concept.
+5.2;violence against women;subject;The target's own subject.
+5.2;gender-based violence;domain;The standard research term.
+5.2;sexual exploitation;subject;Named in the target.
+5.2;trafficking;subject;Named in the target; shared with 8.7 and 16.2.
+5.3;female genital mutilation;subject;Named in the target.
+5.3;child marriage;subject;Named in the target.
+5.3;forced marriage;subject;Named in the target.
+5.4;unpaid care work;subject;The target's own subject.
+5.4;domestic work;subject;The target's own words.
+5.5;women in leadership;subject;The target's own subject.
+5.5;women's participation in decision-making;subject;The target's own words.
+5.6;reproductive rights;subject;The target's own subject.
+5.a;women's land rights;subject;The target's own subject.
+5.a;women's access to economic resources;subject;The target's own words.
+5.b;women's access to technology;subject;The target's own subject.
+5.b;ICT for women's empowerment;subject;The target names enabling technology, in particular ICT.
+5.c;gender equality policy;subject;The target's own subject.
+5.c;gender mainstreaming;policy;The EU instrument for the same.
+6.1;drinking water;subject;The target's own subject.
+6.1;safe water supply;subject;The target's own words.
+6.1;potable water;domain;Ordinary engineering term.
+6.2;sanitation;subject;The target's own subject.
+6.2;hygiene;subject;The target's own subject.
+6.2;open defecation;subject;Named in the target.
+6.2;WASH;acronym;The sector acronym for water, sanitation and hygiene.
+6.3;water quality;subject;The target's own subject.
+6.3;wastewater treatment;subject;The target names untreated wastewater.
+6.3;water pollution;subject;The target's own subject.
+6.3;water reuse;subject;"safe reuse" in the target's own words.
+6.3;effluent;domain;The engineering term for what is discharged.
+6.4;water use efficiency;subject;The target's own subject.
+6.4;water scarcity;subject;The target's own subject.
+6.4;water stress;subject;The target's own words.
+6.4;irrigation efficiency;domain;The principal withdrawal the target addresses.
+6.5;integrated water resources management;subject;The target's own subject.
+6.5;IWRM;acronym;Acronym for the above.
+6.5;transboundary water cooperation;subject;The target's own words.
+6.5;river basin management;domain;The operational form of IWRM.
+6.6;water-related ecosystems;subject;The target's own subject.
+6.6;wetlands;subject;Named in the target.
+6.6;aquifers;subject;Named in the target.
+6.6;river restoration;domain;The restoration the target names.
+6.a;water and sanitation capacity-building;subject;The target's own subject.
+6.a;desalination;subject;Named in the target.
+6.a;water harvesting;subject;Named in the target.
+6.a;water efficiency technology;subject;The target's own words.
+6.b;community participation in water management;subject;The target's own subject.
+7.1;energy access;subject;The target's own subject.
+7.1;electrification;domain;The mechanism for access to electricity.
+7.1;affordable energy;subject;The target's own words.
+7.1;clean cooking;domain;The target names modern energy services for all.
+7.1;energy poverty;policy;The EU framing of the same problem.
+7.2;renewable energy;subject;The target's own subject.
+7.2;energy mix;subject;The target's own words.
+7.2;solar energy;domain;A named renewable source.
+7.2;wind energy;domain;A named renewable source.
+7.2;photovoltaic;domain;As "solar energy".
+7.2;bioenergy;domain;A named renewable source.
+7.2;geothermal;domain;A named renewable source.
+7.2;hydropower;domain;A named renewable source.
+7.2;green hydrogen;domain;Renewable-derived energy carrier, in scope where produced from renewables.
+7.3;energy efficiency;subject;The target's own subject.
+7.3;energy intensity;subject;The target's own words.
+7.3;building retrofit;domain;The principal efficiency intervention in the EU context.
+7.3;heat recovery;domain;An efficiency mechanism.
+7.a;clean energy research;subject;The target's own subject.
+7.a;energy technology cooperation;subject;The target's own words.
+7.a;carbon capture;domain;Named in the target as advanced and cleaner fossil-fuel technology.
+7.b;energy infrastructure in developing countries;subject;The target's own subject.
+7.b;off-grid energy;domain;The form this infrastructure usually takes.
+7.b;mini-grid;domain;As "off-grid energy".
+8.1;economic growth;subject;The target's own subject.
+8.1;GDP growth;domain;The measured form.
+8.2;economic productivity;subject;The target's own subject.
+8.2;technological upgrading;subject;The target's own words.
+8.2;high-value-added sectors;subject;The target's own words.
+8.3;decent job creation;subject;The target's own subject.
+8.3;entrepreneurship;subject;Named in the target.
+8.3;SME growth;domain;"micro-, small- and medium-sized enterprises" in the target.
+8.3;informal economy;domain;The target names formalization of informal enterprises.
+8.4;resource efficiency;subject;The target's own subject.
+8.4;decoupling growth from environmental degradation;subject;The target's own words.
+8.4;material footprint;subject;The measured form named in the target.
+8.5;full employment;subject;The target's own subject.
+8.5;decent work;subject;The target's own subject.
+8.5;equal pay;subject;The target's own words.
+8.6;youth not in employment education or training;subject;The target's own subject.
+8.6;NEET;acronym;Acronym for the above, and the EU statistical term.
+8.7;forced labour;subject;Named in the target.
+8.7;child labour;subject;Named in the target.
+8.7;modern slavery;subject;Named in the target.
+8.7;human trafficking;subject;Named in the target.
+8.8;labour rights;subject;The target's own subject.
+8.8;occupational safety;subject;The target's own words.
+8.8;working conditions;domain;The ordinary research phrasing.
+8.9;sustainable tourism;subject;The target's own subject.
+8.9;ecotourism;domain;A named form of the same.
+8.10;access to banking;subject;The target's own subject.
+8.10;financial services access;subject;The target's own words.
+8.a;aid for trade;subject;The target's own subject.
+8.b;youth employment strategy;subject;The target's own subject. This target's span is long; the synonyms carry it.
+8.b;Global Jobs Pact;policy;Named in the target.
+9.1;resilient infrastructure;subject;The target's own subject.
+9.1;transport infrastructure;subject;The target's own words.
+9.1;regional infrastructure;subject;The target's own words.
+9.1;infrastructure resilience;domain;Inversion of the subject, common in engineering prose.
+9.2;inclusive industrialization;subject;The target's own subject.
+9.2;sustainable industrialization;subject;The target's own subject.
+9.2;manufacturing value added;subject;The measured form named in the target.
+9.2;industrial employment;subject;The target's own words.
+9.3;access to financial services for small enterprises;subject;The target's own subject.
+9.3;value chain integration;subject;The target's own words.
+9.4;resource-use efficiency in industry;subject;The target's own subject.
+9.4;clean technologies;subject;The target's own words.
+9.4;industrial retrofitting;subject;The target's own words.
+9.4;industrial decarbonisation;domain;The EU reading of retrofitting industry for sustainability.
+9.4;circular manufacturing;domain;As "industrial decarbonisation".
+9.5;scientific research capacity;subject;The target's own subject.
+9.5;research and development expenditure;subject;The measured form named in the target.
+9.5;innovation capacity;subject;The target's own words.
+9.5;researchers per million;subject;The indicator the target names.
+9.a;infrastructure in developing countries;subject;The target's own subject.
+9.b;domestic technology development;subject;The target's own subject.
+9.b;industrial diversification;subject;The target's own words.
+9.c;access to information and communications technology;subject;The target's own subject.
+9.c;universal internet access;subject;The target's own words.
+9.c;broadband access;domain;The mechanism for universal internet access.
+9.c;digital divide;domain;The problem this target addresses.
+10.1;income growth of the bottom 40 per cent;subject;The target's own subject. This target emits no key term, so these synonyms are its only route.
+10.1;income inequality;domain;The concept the target measures.
+10.1;bottom 40 per cent;subject;The target's own words.
+10.1;income distribution;domain;As "income inequality".
+10.2;social inclusion;subject;The target's own subject.
+10.2;economic inclusion;subject;The target's own subject.
+10.2;political inclusion;subject;The target's own words.
+10.3;equal opportunity;subject;The target's own subject.
+10.3;discriminatory laws;subject;The target's own words.
+10.4;fiscal policy for equality;subject;The target's own subject.
+10.4;wage policy;subject;Named in the target.
+10.4;social protection policy;subject;Named in the target.
+10.5;financial market regulation;subject;The target's own subject.
+10.6;representation of developing countries in global institutions;subject;The target's own subject.
+10.7;orderly migration;subject;The target's own subject.
+10.7;migration policy;subject;The target's own words.
+10.7;safe migration;subject;The target's own words.
+10.a;special and differential treatment;subject;The target's own subject.
+10.b;development assistance flows;subject;The target's own subject.
+10.b;foreign direct investment to developing states;subject;The target's own words.
+10.c;remittance costs;subject;The target's own subject. The span is long, so these synonyms carry it.
+10.c;migrant remittances;subject;The target's own subject.
+11.1;adequate housing;subject;The target's own subject.
+11.1;affordable housing;subject;The target's own words.
+11.1;slum upgrading;subject;Named in the target.
+11.1;informal settlements;domain;The ordinary research term for slums.
+11.2;sustainable transport;subject;The target's own subject.
+11.2;public transport;subject;Named in the target.
+11.2;road safety;subject;Named in the target, shared with 3.6.
+11.2;urban mobility;domain;The EU term for this target's area.
+11.3;inclusive urbanization;subject;The target's own subject.
+11.3;participatory urban planning;subject;The target's own words.
+11.3;human settlement planning;subject;The target's own words.
+11.4;cultural heritage;subject;The target's own subject.
+11.4;natural heritage;subject;The target's own subject.
+11.5;disaster deaths and economic losses;subject;The target's own subject.
+11.5;urban flood risk;domain;The principal urban disaster in the EU context.
+11.5;disaster risk reduction;domain;The field, shared with 1.5 and 13.1.
+11.6;urban air quality;subject;The target's own subject.
+11.6;municipal waste management;subject;The target's own words.
+11.6;environmental impact of cities;subject;The target's own words.
+11.7;green public spaces;subject;The target's own subject.
+11.7;urban green space;domain;The ordinary research term.
+11.a;urban-rural linkages;subject;The target's own subject.
+11.a;territorial development planning;subject;The target's own words.
+11.b;integrated disaster risk management;subject;The target's own subject.
+11.b;Sendai Framework;policy;Named in the target.
+11.b;climate adaptation planning in cities;subject;The target's own words.
+11.c;sustainable buildings using local materials;subject;The target's own subject.
+12.1;sustainable consumption and production;subject;The target's own subject.
+12.1;10-Year Framework of Programmes;policy;Named in the target.
+12.2;sustainable management of natural resources;subject;The target's own subject.
+12.2;natural resource efficiency;subject;The target's own words.
+12.3;food loss;subject;The target's own subject.
+12.3;food waste;subject;The target's own subject.
+12.3;post-harvest loss;subject;Named in the target.
+12.3;supply chain losses;subject;The target's own words.
+12.4;chemicals and waste management;subject;The target's own subject.
+12.4;hazardous waste;subject;The target's own words.
+12.4;chemical releases to air water and soil;subject;The target's own words.
+12.4;Basel Convention;policy;One of the international frameworks the target names.
+12.5;waste prevention;subject;The target's own subject.
+12.5;recycling;subject;Named in the target.
+12.5;reuse;subject;Named in the target.
+12.5;circular economy;policy;The EU instrument for waste reduction through reuse and recycling.
+12.5;waste valorisation;domain;The processing route behind recycling.
+12.6;corporate sustainability reporting;subject;The target's own subject.
+12.7;sustainable public procurement;subject;The target's own subject.
+12.7;green public procurement;policy;The EU term for the same.
+12.8;awareness for sustainable lifestyles;subject;The target's own subject.
+12.a;scientific capacity for sustainable consumption;subject;The target's own subject.
+12.b;sustainable tourism monitoring;subject;The target's own subject.
+12.c;fossil-fuel subsidies;subject;The target's own subject.
+13.1;climate resilience;subject;The target's own subject.
+13.1;adaptive capacity;subject;The target's own words.
+13.1;climate-related hazards;subject;The target's own words.
+13.1;climate adaptation;domain;The field name for this target.
+13.1;natural disasters;subject;Named in the target.
+13.2;climate change policy;subject;The target's own subject.
+13.2;nationally determined contributions;domain;The instrument through which climate measures enter national planning.
+13.2;climate mitigation;domain;The field name for the measures this target integrates.
+13.2;greenhouse gas emissions reduction;domain;The substance of climate measures.
+13.2;decarbonisation;domain;As "climate mitigation".
+13.2;net zero;domain;As "climate mitigation".
+13.3;climate education and awareness;subject;The target's own subject.
+13.3;climate literacy;domain;Ordinary term for the same.
+13.3;early warning for climate;subject;Named in the target.
+13.a;Green Climate Fund;policy;Named in the target.
+13.a;climate finance;subject;The target's own subject.
+13.b;climate planning capacity in least developed countries;subject;The target's own subject.
+14.1;marine pollution;subject;The target's own subject.
+14.1;marine litter;subject;Named in the target.
+14.1;nutrient pollution;subject;Named in the target.
+14.1;eutrophication;domain;The process behind nutrient pollution.
+14.1;microplastics;domain;A principal form of marine litter in current research.
+14.2;marine ecosystem management;subject;The target's own subject.
+14.2;coastal ecosystem restoration;subject;The target's own words.
+14.2;ocean health;subject;The target's own words.
+14.3;ocean acidification;subject;The target's own subject.
+14.4;overfishing;subject;Named in the target.
+14.4;illegal unreported and unregulated fishing;subject;Named in the target.
+14.4;IUU fishing;acronym;Acronym for the above.
+14.4;fish stocks;subject;The target's own words.
+14.4;maximum sustainable yield;subject;Named in the target.
+14.5;marine protected areas;subject;The target's own subject.
+14.5;coastal and marine conservation;subject;The target's own words.
+14.6;fisheries subsidies;subject;The target's own subject.
+14.7;sustainable use of marine resources;subject;The target's own subject.
+14.7;small island developing states economies;subject;The target's own words.
+14.a;marine technology;subject;The target's own subject.
+14.a;marine scientific research;subject;The target's own words.
+14.a;Intergovernmental Oceanographic Commission;policy;Named in the target.
+14.b;small-scale artisanal fishers;subject;The target's own subject.
+14.c;United Nations Convention on the Law of the Sea;policy;Named in the target.
+14.c;UNCLOS;acronym;Acronym for the above.
+15.1;terrestrial ecosystems;subject;The target's own subject.
+15.1;freshwater ecosystems;subject;The target's own subject.
+15.1;wetlands;subject;Named in the target, shared with 6.6.
+15.1;ecosystem restoration;domain;The field name for this target's action.
+15.2;sustainable forest management;subject;The target's own subject.
+15.2;deforestation;subject;Named in the target.
+15.2;reforestation;subject;Named in the target.
+15.2;afforestation;subject;Named in the target.
+15.3;desertification;subject;Named in the target.
+15.3;land degradation;subject;The target's own subject.
+15.3;soil restoration;subject;The target's own words.
+15.3;land degradation neutrality;domain;The measured form named in the target.
+15.4;mountain ecosystems;subject;The target's own subject.
+15.4;mountain biodiversity;subject;The target's own words.
+15.5;biodiversity loss;subject;The target's own subject.
+15.5;habitat degradation;subject;The target's own words.
+15.5;threatened species;subject;The target's own words.
+15.5;species extinction;subject;The target's own words.
+15.6;genetic resources access and benefit-sharing;subject;The target's own subject.
+15.6;Nagoya Protocol;policy;The instrument implementing this target.
+15.7;poaching;subject;Named in the target.
+15.7;wildlife trafficking;subject;Named in the target.
+15.8;invasive alien species;subject;The target's own subject.
+15.9;biodiversity in national planning;subject;The target's own subject.
+15.9;natural capital accounting;domain;The mechanism for integrating ecosystem values into accounts.
+15.a;biodiversity finance;subject;The target's own subject.
+15.b;forest management finance;subject;The target's own subject.
+15.c;capacity to combat poaching;subject;The target's own subject.
+16.1;violence reduction;subject;The target's own subject.
+16.1;homicide rates;subject;The target's own words.
+16.2;violence against children;subject;The target's own subject.
+16.2;child exploitation;subject;Named in the target.
+16.2;child trafficking;subject;Named in the target.
+16.3;rule of law;subject;The target's own subject.
+16.3;access to justice;subject;The target's own subject.
+16.4;illicit financial flows;subject;The target's own subject.
+16.4;arms trafficking;subject;Named in the target.
+16.4;stolen asset recovery;subject;The target's own words.
+16.4;organized crime;subject;Named in the target.
+16.5;corruption;subject;The target's own subject.
+16.5;bribery;subject;Named in the target.
+16.6;accountable institutions;subject;The target's own subject.
+16.6;transparent institutions;subject;The target's own words.
+16.7;participatory decision-making;subject;The target's own subject.
+16.7;inclusive decision-making;subject;The target's own words.
+16.8;participation of developing countries in global governance;subject;The target's own subject.
+16.9;legal identity;subject;The target's own subject.
+16.9;birth registration;subject;Named in the target.
+16.10;public access to information;subject;The target's own subject.
+16.10;fundamental freedoms;subject;The target's own words.
+16.10;freedom of expression;domain;The principal fundamental freedom at issue.
+16.a;capacity to prevent violence;subject;The target's own subject.
+16.b;non-discriminatory laws;subject;The target's own subject.
+17.1;domestic resource mobilization;subject;The target's own subject.
+17.1;tax collection capacity;subject;The target's own words.
+17.2;official development assistance commitments;subject;The target's own subject. The span is long, so these synonyms carry it.
+17.2;ODA to gross national income;subject;The indicator the target names.
+17.3;additional financial resources for developing countries;subject;The target's own subject.
+17.4;debt sustainability;subject;The target's own subject.
+17.4;debt relief;subject;The target's own words.
+17.5;investment promotion regimes;subject;The target's own subject.
+17.6;science and technology cooperation;subject;The target's own subject.
+17.6;knowledge sharing;subject;The target's own words.
+17.6;technology facilitation mechanism;policy;Named in the target.
+17.7;environmentally sound technologies transfer;subject;The target's own subject.
+17.8;technology bank;subject;Named in the target.
+17.8;enabling technology capacity-building;subject;The target's own words.
+17.9;capacity-building for the sustainable development goals;subject;The target's own subject.
+17.10;multilateral trading system;subject;The target's own subject.
+17.10;World Trade Organization;policy;Named in the target.
+17.11;developing country exports;subject;The target's own subject.
+17.12;duty-free market access;subject;The target's own subject.
+17.13;global macroeconomic stability;subject;The target's own subject.
+17.14;policy coherence for sustainable development;subject;The target's own subject.
+17.15;national policy space;subject;The target's own subject.
+17.16;global partnership for sustainable development;subject;The target's own subject.
+17.17;public-private partnerships;subject;The target's own subject.
+17.17;civil society partnerships;subject;The target's own words.
+17.18;statistical capacity;subject;The target's own subject.
+17.18;disaggregated data;subject;The target's own words.
+17.19;measurements of progress beyond GDP;subject;The target's own subject.

@@ -1,0 +1,1056 @@
+target_uri;target_id;goal_id;term;source_span;emitted_by_step;target_count;discriminating
+http://data.europa.eu/sdg/1.1;1.1;1;extreme poverty for all people everywhere;eradicate extreme poverty for all people everywhere;6;1;yes
+http://data.europa.eu/sdg/1.1;1.1;1;people everywhere;eradicate extreme poverty for all people everywhere;7;1;yes
+http://data.europa.eu/sdg/1.1;1.1;1;1 25 a day;currently measured as people living on less than $1.25 a day;7;1;yes
+http://data.europa.eu/sdg/1.2;1.2;1;half the proportion of men;reduce at least by half the proportion of men;6;1;yes
+http://data.europa.eu/sdg/1.2;1.2;1;women;women;6;6;no
+http://data.europa.eu/sdg/1.3;1.3;1;nationally appropriate social protection systems;Implement nationally appropriate social protection systems;6;1;yes
+http://data.europa.eu/sdg/1.3;1.3;1;social protection systems;Implement nationally appropriate social protection systems;7;1;yes
+http://data.europa.eu/sdg/1.3;1.3;1;measures;measures for all;6;1;yes
+http://data.europa.eu/sdg/1.3;1.3;1;floors;floors;6;1;yes
+http://data.europa.eu/sdg/1.3;1.3;1;vulnerable;the vulnerable;6;2;yes
+http://data.europa.eu/sdg/1.4;1.4;1;men;ensure that all men;6;2;yes
+http://data.europa.eu/sdg/1.4;1.4;1;women;women;6;6;no
+http://data.europa.eu/sdg/1.4;1.4;1;poor;the poor;6;2;yes
+http://data.europa.eu/sdg/1.4;1.4;1;vulnerable;the vulnerable;6;2;yes
+http://data.europa.eu/sdg/1.4;1.4;1;have equal rights to economic resources;have equal rights to economic resources;6;1;yes
+http://data.europa.eu/sdg/1.4;1.4;1;economic resources;have equal rights to economic resources;7;2;yes
+http://data.europa.eu/sdg/1.4;1.4;1;access to basic services;access to basic services;6;1;yes
+http://data.europa.eu/sdg/1.4;1.4;1;basic services;access to basic services;7;2;yes
+http://data.europa.eu/sdg/1.4;1.4;1;ownership;ownership;6;1;yes
+http://data.europa.eu/sdg/1.4;1.4;1;control over land;control over land;6;2;yes
+http://data.europa.eu/sdg/1.4;1.4;1;forms of property;other forms of property;6;2;yes
+http://data.europa.eu/sdg/1.4;1.4;1;inheritance;inheritance;6;2;yes
+http://data.europa.eu/sdg/1.4;1.4;1;natural resources;natural resources;6;3;yes
+http://data.europa.eu/sdg/1.4;1.4;1;financial services;financial services;6;6;no
+http://data.europa.eu/sdg/1.4;1.4;1;microfinance;microfinance;6;1;yes
+http://data.europa.eu/sdg/1.5;1.5;1;resilience of the poor;build the resilience of the poor;6;1;yes
+http://data.europa.eu/sdg/1.5;1.5;1;those in vulnerable situations;those in vulnerable situations;6;2;yes
+http://data.europa.eu/sdg/1.5;1.5;1;vulnerable situations;those in vulnerable situations;7;6;no
+http://data.europa.eu/sdg/1.5;1.5;1;exposure;reduce their exposure;6;1;yes
+http://data.europa.eu/sdg/1.5;1.5;1;vulnerability to climate-related extreme events;vulnerability to climate-related extreme events;6;1;yes
+http://data.europa.eu/sdg/1.5;1.5;1;climate-related extreme events;vulnerability to climate-related extreme events;7;1;yes
+http://data.europa.eu/sdg/1.5;1.5;1;economic;other economic;6;3;yes
+http://data.europa.eu/sdg/1.5;1.5;1;social;social;6;3;yes
+http://data.europa.eu/sdg/1.5;1.5;1;environmental shocks;environmental shocks;6;1;yes
+http://data.europa.eu/sdg/1.5;1.5;1;disasters;disasters;6;2;yes
+http://data.europa.eu/sdg/1.a;1.a;1;variety of sources;Ensure significant mobilization of resources from a variety of sources;7;1;yes
+http://data.europa.eu/sdg/1.a;1.a;1;enhanced development cooperation;through enhanced development cooperation;6;1;yes
+http://data.europa.eu/sdg/1.a;1.a;1;order to provide adequate;in order to provide adequate;6;1;yes
+http://data.europa.eu/sdg/1.a;1.a;1;provide adequate;in order to provide adequate;7;1;yes
+http://data.europa.eu/sdg/1.a;1.a;1;predictable means for developing countries;predictable means for developing countries;6;1;yes
+http://data.europa.eu/sdg/1.a;1.a;1;developing countries;predictable means for developing countries;7;22;no
+http://data.europa.eu/sdg/1.a;1.a;1;developed countries;least developed countries;6;19;no
+http://data.europa.eu/sdg/1.a;1.a;1;implement programmes;to implement programmes;6;1;yes
+http://data.europa.eu/sdg/1.b;1.b;1;sound policy frameworks;Create sound policy frameworks at the national;6;1;yes
+http://data.europa.eu/sdg/1.b;1.b;1;regional;regional;6;3;yes
+http://data.europa.eu/sdg/1.b;1.b;1;based on pro-poor;based on pro-poor;6;1;yes
+http://data.europa.eu/sdg/1.b;1.b;1;gender-sensitive development strategies;gender-sensitive development strategies;6;1;yes
+http://data.europa.eu/sdg/1.b;1.b;1;poverty eradication actions;to support accelerated investment in poverty eradication actions;7;1;yes
+http://data.europa.eu/sdg/2.1;2.1;2;hunger;end hunger;6;1;yes
+http://data.europa.eu/sdg/2.1;2.1;2;access by all people;ensure access by all people;6;1;yes
+http://data.europa.eu/sdg/2.1;2.1;2;poor;the poor;6;2;yes
+http://data.europa.eu/sdg/2.1;2.1;2;people in vulnerable situations;people in vulnerable situations;6;2;yes
+http://data.europa.eu/sdg/2.1;2.1;2;vulnerable situations;people in vulnerable situations;7;6;no
+http://data.europa.eu/sdg/2.1;2.1;2;infants;infants;6;1;yes
+http://data.europa.eu/sdg/2.1;2.1;2;safe;to safe;6;5;no
+http://data.europa.eu/sdg/2.1;2.1;2;nutritious;nutritious;6;1;yes
+http://data.europa.eu/sdg/2.1;2.1;2;sufficient food all year round;sufficient food all year round;6;1;yes
+http://data.europa.eu/sdg/2.1;2.1;2;year round;sufficient food all year round;7;1;yes
+http://data.europa.eu/sdg/2.2;2.2;2;forms of malnutrition;end all forms of malnutrition;6;1;yes
+http://data.europa.eu/sdg/2.2;2.2;2;achieving;achieving;6;1;yes
+http://data.europa.eu/sdg/2.2;2.2;2;2025;by 2025;6;1;yes
+http://data.europa.eu/sdg/2.2;2.2;2;internationally agreed targets on stunting;the internationally agreed targets on stunting;6;1;yes
+http://data.europa.eu/sdg/2.2;2.2;2;targets on stunting;the internationally agreed targets on stunting;7;1;yes
+http://data.europa.eu/sdg/2.2;2.2;2;years of age;wasting in children under 5 years of age;7;2;yes
+http://data.europa.eu/sdg/2.2;2.2;2;adolescent girls;address the nutritional needs of adolescent girls;7;1;yes
+http://data.europa.eu/sdg/2.2;2.2;2;pregnant;pregnant;6;1;yes
+http://data.europa.eu/sdg/2.2;2.2;2;lactating women;lactating women;6;1;yes
+http://data.europa.eu/sdg/2.2;2.2;2;older persons;older persons;6;3;yes
+http://data.europa.eu/sdg/2.3;2.3;2;agricultural productivity;double the agricultural productivity;6;1;yes
+http://data.europa.eu/sdg/2.3;2.3;2;incomes of small-scale food producers;incomes of small-scale food producers;6;1;yes
+http://data.europa.eu/sdg/2.3;2.3;2;small-scale food producers;incomes of small-scale food producers;7;1;yes
+http://data.europa.eu/sdg/2.3;2.3;2;women;women;6;6;no
+http://data.europa.eu/sdg/2.3;2.3;2;indigenous peoples;indigenous peoples;6;2;yes
+http://data.europa.eu/sdg/2.3;2.3;2;family farmers;family farmers;6;1;yes
+http://data.europa.eu/sdg/2.3;2.3;2;pastoralists;pastoralists;6;1;yes
+http://data.europa.eu/sdg/2.3;2.3;2;fishers;fishers;6;1;yes
+http://data.europa.eu/sdg/2.3;2.3;2;secure;through secure;6;1;yes
+http://data.europa.eu/sdg/2.3;2.3;2;equal access to land;equal access to land;6;1;yes
+http://data.europa.eu/sdg/2.3;2.3;2;access to land;equal access to land;7;1;yes
+http://data.europa.eu/sdg/2.3;2.3;2;productive resources;other productive resources;6;1;yes
+http://data.europa.eu/sdg/2.3;2.3;2;inputs;inputs;6;1;yes
+http://data.europa.eu/sdg/2.3;2.3;2;knowledge;knowledge;6;2;yes
+http://data.europa.eu/sdg/2.3;2.3;2;financial services;financial services;6;6;no
+http://data.europa.eu/sdg/2.3;2.3;2;markets;markets;6;3;yes
+http://data.europa.eu/sdg/2.3;2.3;2;opportunities for value addition;opportunities for value addition;6;1;yes
+http://data.europa.eu/sdg/2.3;2.3;2;value addition;opportunities for value addition;7;1;yes
+http://data.europa.eu/sdg/2.3;2.3;2;non-farm employment;non-farm employment;6;1;yes
+http://data.europa.eu/sdg/2.4;2.4;2;sustainable food production systems;ensure sustainable food production systems;6;1;yes
+http://data.europa.eu/sdg/2.4;2.4;2;food production systems;ensure sustainable food production systems;7;1;yes
+http://data.europa.eu/sdg/2.4;2.4;2;resilient agricultural practices that increase productivity;implement resilient agricultural practices that increase productivity;6;1;yes
+http://data.europa.eu/sdg/2.4;2.4;2;increase productivity;implement resilient agricultural practices that increase productivity;7;1;yes
+http://data.europa.eu/sdg/2.4;2.4;2;help maintain ecosystems;that help maintain ecosystems;6;1;yes
+http://data.europa.eu/sdg/2.4;2.4;2;climate change;that strengthen capacity for adaptation to climate change;7;2;yes
+http://data.europa.eu/sdg/2.4;2.4;2;extreme weather;extreme weather;6;1;yes
+http://data.europa.eu/sdg/2.4;2.4;2;drought;drought;6;2;yes
+http://data.europa.eu/sdg/2.4;2.4;2;flooding;flooding;6;1;yes
+http://data.europa.eu/sdg/2.4;2.4;2;disasters;other disasters;6;2;yes
+http://data.europa.eu/sdg/2.4;2.4;2;improve land;that progressively improve land;6;1;yes
+http://data.europa.eu/sdg/2.4;2.4;2;soil quality;soil quality;6;1;yes
+http://data.europa.eu/sdg/2.5;2.5;2;genetic diversity of seeds;maintain the genetic diversity of seeds;6;1;yes
+http://data.europa.eu/sdg/2.5;2.5;2;diversity of seeds;maintain the genetic diversity of seeds;7;1;yes
+http://data.europa.eu/sdg/2.5;2.5;2;cultivated plants;cultivated plants;6;1;yes
+http://data.europa.eu/sdg/2.5;2.5;2;farmed;farmed;6;1;yes
+http://data.europa.eu/sdg/2.5;2.5;2;domesticated animals;domesticated animals;6;1;yes
+http://data.europa.eu/sdg/2.5;2.5;2;related wild species;their related wild species;6;1;yes
+http://data.europa.eu/sdg/2.5;2.5;2;soundly managed;through soundly managed;6;1;yes
+http://data.europa.eu/sdg/2.5;2.5;2;diversified seed;diversified seed;6;1;yes
+http://data.europa.eu/sdg/2.5;2.5;2;plant banks;plant banks at the national;6;1;yes
+http://data.europa.eu/sdg/2.5;2.5;2;regional;regional;6;3;yes
+http://data.europa.eu/sdg/2.5;2.5;2;fair;fair;6;2;yes
+http://data.europa.eu/sdg/2.5;2.5;2;genetic resources;equitable sharing of benefits arising from the utilization of genetic resources;7;2;yes
+http://data.europa.eu/sdg/2.5;2.5;2;associated traditional knowledge;associated traditional knowledge;6;1;yes
+http://data.europa.eu/sdg/2.5;2.5;2;internationally agreed;as internationally agreed;6;2;yes
+http://data.europa.eu/sdg/2.a;2.a;2;investment;Increase investment;6;1;yes
+http://data.europa.eu/sdg/2.a;2.a;2;enhanced international cooperation;through enhanced international cooperation;6;1;yes
+http://data.europa.eu/sdg/2.a;2.a;2;rural infrastructure;in rural infrastructure;6;1;yes
+http://data.europa.eu/sdg/2.a;2.a;2;agricultural research;agricultural research;6;1;yes
+http://data.europa.eu/sdg/2.a;2.a;2;extension services;extension services;6;1;yes
+http://data.europa.eu/sdg/2.a;2.a;2;plant;plant;6;1;yes
+http://data.europa.eu/sdg/2.a;2.a;2;developing countries;livestock gene banks in order to enhance agricultural productive capacity in developing countries;7;22;no
+http://data.europa.eu/sdg/2.a;2.a;2;developed countries;least developed countries;6;19;no
+http://data.europa.eu/sdg/2.b;2.b;2;correct;Correct;6;1;yes
+http://data.europa.eu/sdg/2.b;2.b;2;prevent trade restrictions;prevent trade restrictions;6;1;yes
+http://data.europa.eu/sdg/2.b;2.b;2;distortions in world agricultural markets;distortions in world agricultural markets;6;1;yes
+http://data.europa.eu/sdg/2.b;2.b;2;world agricultural markets;distortions in world agricultural markets;7;1;yes
+http://data.europa.eu/sdg/2.b;2.b;2;agricultural export subsidies;through the parallel elimination of all forms of agricultural export subsidies;7;1;yes
+http://data.europa.eu/sdg/2.b;2.b;2;export measures with equivalent effect;all export measures with equivalent effect;6;1;yes
+http://data.europa.eu/sdg/2.b;2.b;2;equivalent effect;all export measures with equivalent effect;7;1;yes
+http://data.europa.eu/sdg/2.b;2.b;2;doha development round;in accordance with the mandate of the Doha Development Round;7;1;yes
+http://data.europa.eu/sdg/2.c;2.c;2;food commodity markets;Adopt measures to ensure the proper functioning of food commodity markets;7;1;yes
+http://data.europa.eu/sdg/2.c;2.c;2;derivatives;their derivatives;6;1;yes
+http://data.europa.eu/sdg/2.c;2.c;2;timely access to market information;facilitate timely access to market information;6;1;yes
+http://data.europa.eu/sdg/2.c;2.c;2;market information;facilitate timely access to market information;7;1;yes
+http://data.europa.eu/sdg/2.c;2.c;2;food reserves;on food reserves;6;1;yes
+http://data.europa.eu/sdg/2.c;2.c;2;food price volatility;in order to help limit extreme food price volatility;7;1;yes
+http://data.europa.eu/sdg/3.1;3.1;3;70 per 100;reduce the global maternal mortality ratio to less than 70 per 100;7;1;yes
+http://data.europa.eu/sdg/3.1;3.1;3;000 live births;000 live births;6;2;yes
+http://data.europa.eu/sdg/3.2;3.2;3;preventable deaths of newborns;end preventable deaths of newborns;6;1;yes
+http://data.europa.eu/sdg/3.2;3.2;3;deaths of newborns;end preventable deaths of newborns;7;1;yes
+http://data.europa.eu/sdg/3.2;3.2;3;children under 5 years of age;children under 5 years of age;6;1;yes
+http://data.europa.eu/sdg/3.2;3.2;3;years of age;children under 5 years of age;7;2;yes
+http://data.europa.eu/sdg/3.2;3.2;3;12 per 1;with all countries aiming to reduce neonatal mortality to at least as low as 12 per 1;7;1;yes
+http://data.europa.eu/sdg/3.2;3.2;3;000 live births;000 live births;6;2;yes
+http://data.europa.eu/sdg/3.2;3.2;3;25 per 1;under‑5 mortality to at least as low as 25 per 1;7;1;yes
+http://data.europa.eu/sdg/3.3;3.3;3;epidemics of aids;end the epidemics of AIDS;6;1;yes
+http://data.europa.eu/sdg/3.3;3.3;3;tuberculosis;tuberculosis;6;1;yes
+http://data.europa.eu/sdg/3.3;3.3;3;malaria;malaria;6;1;yes
+http://data.europa.eu/sdg/3.3;3.3;3;neglected tropical diseases;neglected tropical diseases;6;1;yes
+http://data.europa.eu/sdg/3.3;3.3;3;combat hepatitis;combat hepatitis;6;1;yes
+http://data.europa.eu/sdg/3.3;3.3;3;water-borne diseases;water-borne diseases;6;1;yes
+http://data.europa.eu/sdg/3.3;3.3;3;communicable diseases;other communicable diseases;6;1;yes
+http://data.europa.eu/sdg/3.4;3.4;3;diseases through prevention;reduce by one third premature mortality from non-communicable diseases through prevention;7;1;yes
+http://data.europa.eu/sdg/3.4;3.4;3;treatment;treatment;6;1;yes
+http://data.europa.eu/sdg/3.4;3.4;3;mental health;promote mental health;6;1;yes
+http://data.europa.eu/sdg/3.4;3.4;3;well-being;well-being;6;1;yes
+http://data.europa.eu/sdg/3.5;3.5;3;prevention;Strengthen the prevention;6;1;yes
+http://data.europa.eu/sdg/3.5;3.5;3;treatment of substance abuse;treatment of substance abuse;6;1;yes
+http://data.europa.eu/sdg/3.5;3.5;3;substance abuse;treatment of substance abuse;7;1;yes
+http://data.europa.eu/sdg/3.5;3.5;3;narcotic drug abuse;narcotic drug abuse;6;1;yes
+http://data.europa.eu/sdg/3.5;3.5;3;harmful use of alcohol;harmful use of alcohol;6;1;yes
+http://data.europa.eu/sdg/3.5;3.5;3;use of alcohol;harmful use of alcohol;7;1;yes
+http://data.europa.eu/sdg/3.6;3.6;3;deaths;halve the number of global deaths;6;3;yes
+http://data.europa.eu/sdg/3.6;3.6;3;injuries from road traffic accidents;injuries from road traffic accidents;6;1;yes
+http://data.europa.eu/sdg/3.6;3.6;3;road traffic accidents;injuries from road traffic accidents;7;1;yes
+http://data.europa.eu/sdg/3.7;3.7;3;universal access to sexual;ensure universal access to sexual;6;2;yes
+http://data.europa.eu/sdg/3.7;3.7;3;access to sexual;ensure universal access to sexual;7;2;yes
+http://data.europa.eu/sdg/3.7;3.7;3;reproductive health-care services;reproductive health-care services;6;1;yes
+http://data.europa.eu/sdg/3.7;3.7;3;family planning;for family planning;6;1;yes
+http://data.europa.eu/sdg/3.7;3.7;3;information;information;6;4;yes
+http://data.europa.eu/sdg/3.7;3.7;3;education;education;6;3;yes
+http://data.europa.eu/sdg/3.7;3.7;3;programmes;programmes;6;3;yes
+http://data.europa.eu/sdg/3.8;3.8;3;universal health coverage;Achieve universal health coverage;6;1;yes
+http://data.europa.eu/sdg/3.8;3.8;3;financial risk protection;financial risk protection;6;1;yes
+http://data.europa.eu/sdg/3.8;3.8;3;access to quality essential health-care services;access to quality essential health-care services;6;1;yes
+http://data.europa.eu/sdg/3.8;3.8;3;essential health-care services;access to quality essential health-care services;7;1;yes
+http://data.europa.eu/sdg/3.8;3.8;3;access to safe;access to safe;6;4;yes
+http://data.europa.eu/sdg/3.8;3.8;3;effective;effective;6;2;yes
+http://data.europa.eu/sdg/3.8;3.8;3;affordable essential medicines;affordable essential medicines;6;2;yes
+http://data.europa.eu/sdg/3.8;3.8;3;vaccines;vaccines for all;6;2;yes
+http://data.europa.eu/sdg/3.9;3.9;3;deaths;substantially reduce the number of deaths;6;3;yes
+http://data.europa.eu/sdg/3.9;3.9;3;illnesses from hazardous chemicals;illnesses from hazardous chemicals;6;1;yes
+http://data.europa.eu/sdg/3.9;3.9;3;hazardous chemicals;illnesses from hazardous chemicals;7;2;yes
+http://data.europa.eu/sdg/3.9;3.9;3;air;air;6;1;yes
+http://data.europa.eu/sdg/3.9;3.9;3;soil pollution;soil pollution;6;1;yes
+http://data.europa.eu/sdg/3.9;3.9;3;contamination;contamination;6;1;yes
+http://data.europa.eu/sdg/3.b;3.b;3;development of vaccines;development of vaccines;6;1;yes
+http://data.europa.eu/sdg/3.b;3.b;3;medicines for the communicable;medicines for the communicable;6;1;yes
+http://data.europa.eu/sdg/3.b;3.b;3;affect developing countries;non‑communicable diseases that primarily affect developing countries;7;1;yes
+http://data.europa.eu/sdg/3.b;3.b;3;access to affordable essential medicines;provide access to affordable essential medicines;6;1;yes
+http://data.europa.eu/sdg/3.b;3.b;3;affordable essential medicines;provide access to affordable essential medicines;7;2;yes
+http://data.europa.eu/sdg/3.b;3.b;3;vaccines;vaccines;6;2;yes
+http://data.europa.eu/sdg/3.b;3.b;3;trips agreement;in accordance with the Doha Declaration on the TRIPS Agreement;7;1;yes
+http://data.europa.eu/sdg/3.b;3.b;3;public health;Public Health;6;1;yes
+http://data.europa.eu/sdg/3.b;3.b;3;protect public health;which affirms the right of developing countries to use to the full the provisions in the Agreement on Trade-Related Aspects of Intellectual Property Rights regarding flexibilities to protect public health;7;1;yes
+http://data.europa.eu/sdg/3.b;3.b;3;and;and;6;1;yes
+http://data.europa.eu/sdg/3.b;3.b;3;particular;in particular;6;2;yes
+http://data.europa.eu/sdg/3.b;3.b;3;access to medicines;provide access to medicines for all;6;1;yes
+http://data.europa.eu/sdg/3.c;3.c;3;health financing;Substantially increase health financing;6;1;yes
+http://data.europa.eu/sdg/3.c;3.c;3;recruitment;the recruitment;6;2;yes
+http://data.europa.eu/sdg/3.c;3.c;3;training;training;6;2;yes
+http://data.europa.eu/sdg/3.c;3.c;3;developing countries;retention of the health workforce in developing countries;7;22;no
+http://data.europa.eu/sdg/3.c;3.c;3;developed countries;especially in least developed countries;6;19;no
+http://data.europa.eu/sdg/3.c;3.c;3;small island developing states;small island developing States;6;9;no
+http://data.europa.eu/sdg/3.c;3.c;3;island developing states;small island developing States;7;10;no
+http://data.europa.eu/sdg/3.d;3.d;3;capacity of all countries;Strengthen the capacity of all countries;6;1;yes
+http://data.europa.eu/sdg/3.d;3.d;3;developing countries;developing countries;6;22;no
+http://data.europa.eu/sdg/3.d;3.d;3;early warning;for early warning;6;2;yes
+http://data.europa.eu/sdg/3.d;3.d;3;risk reduction;risk reduction;6;1;yes
+http://data.europa.eu/sdg/3.d;3.d;3;health risks;global health risks;6;1;yes
+http://data.europa.eu/sdg/4.1;4.1;4;girls;ensure that all girls;6;4;yes
+http://data.europa.eu/sdg/4.1;4.1;4;boys complete free;boys complete free;6;1;yes
+http://data.europa.eu/sdg/4.1;4.1;4;equitable;equitable;6;1;yes
+http://data.europa.eu/sdg/4.1;4.1;4;quality primary;quality primary;6;1;yes
+http://data.europa.eu/sdg/4.1;4.1;4;secondary education leading;secondary education leading to relevant;6;1;yes
+http://data.europa.eu/sdg/4.1;4.1;4;effective learning outcomes;effective learning outcomes;6;1;yes
+http://data.europa.eu/sdg/4.2;4.2;4;girls;ensure that all girls;6;4;yes
+http://data.europa.eu/sdg/4.2;4.2;4;early childhood development;boys have access to quality early childhood development;7;1;yes
+http://data.europa.eu/sdg/4.2;4.2;4;care;care;6;1;yes
+http://data.europa.eu/sdg/4.2;4.2;4;primary education;pre‑primary education so that they are ready for primary education;7;1;yes
+http://data.europa.eu/sdg/4.3;4.3;4;equal access for all women;ensure equal access for all women;6;1;yes
+http://data.europa.eu/sdg/4.3;4.3;4;men to affordable;men to affordable;6;1;yes
+http://data.europa.eu/sdg/4.3;4.3;4;quality technical;quality technical;6;1;yes
+http://data.europa.eu/sdg/4.3;4.3;4;vocational;vocational;6;1;yes
+http://data.europa.eu/sdg/4.3;4.3;4;tertiary education;tertiary education;6;1;yes
+http://data.europa.eu/sdg/4.3;4.3;4;university;university;6;1;yes
+http://data.europa.eu/sdg/4.4;4.4;4;youth;substantially increase the number of youth;6;3;yes
+http://data.europa.eu/sdg/4.4;4.4;4;adults who have relevant skills;adults who have relevant skills;6;1;yes
+http://data.europa.eu/sdg/4.4;4.4;4;have relevant skills;adults who have relevant skills;7;1;yes
+http://data.europa.eu/sdg/4.4;4.4;4;technical;technical;6;2;yes
+http://data.europa.eu/sdg/4.4;4.4;4;vocational skills;vocational skills;6;1;yes
+http://data.europa.eu/sdg/4.4;4.4;4;employment;for employment;6;1;yes
+http://data.europa.eu/sdg/4.4;4.4;4;decent jobs;decent jobs;6;1;yes
+http://data.europa.eu/sdg/4.4;4.4;4;entrepreneurship;entrepreneurship;6;2;yes
+http://data.europa.eu/sdg/4.5;4.5;4;gender disparities in education;eliminate gender disparities in education;6;1;yes
+http://data.europa.eu/sdg/4.5;4.5;4;disparities in education;eliminate gender disparities in education;7;1;yes
+http://data.europa.eu/sdg/4.5;4.5;4;vocational training for the vulnerable;vocational training for the vulnerable;6;1;yes
+http://data.europa.eu/sdg/4.5;4.5;4;persons with disabilities;persons with disabilities;6;4;yes
+http://data.europa.eu/sdg/4.5;4.5;4;indigenous peoples;indigenous peoples;6;2;yes
+http://data.europa.eu/sdg/4.5;4.5;4;children in vulnerable situations;children in vulnerable situations;6;1;yes
+http://data.europa.eu/sdg/4.5;4.5;4;vulnerable situations;children in vulnerable situations;7;6;no
+http://data.europa.eu/sdg/4.6;4.6;4;youth;ensure that all youth;6;3;yes
+http://data.europa.eu/sdg/4.6;4.6;4;substantial proportion of adults;a substantial proportion of adults;6;1;yes
+http://data.europa.eu/sdg/4.6;4.6;4;both men;both men;6;1;yes
+http://data.europa.eu/sdg/4.6;4.6;4;women;women;6;6;no
+http://data.europa.eu/sdg/4.6;4.6;4;literacy;achieve literacy;6;1;yes
+http://data.europa.eu/sdg/4.6;4.6;4;numeracy;numeracy;6;1;yes
+http://data.europa.eu/sdg/4.7;4.7;4;learners acquire the knowledge;ensure that all learners acquire the knowledge;6;1;yes
+http://data.europa.eu/sdg/4.7;4.7;4;acquire the knowledge;ensure that all learners acquire the knowledge;7;1;yes
+http://data.europa.eu/sdg/4.7;4.7;4;skills needed to promote sustainable development;skills needed to promote sustainable development;6;1;yes
+http://data.europa.eu/sdg/4.7;4.7;4;including;including;6;2;yes
+http://data.europa.eu/sdg/4.7;4.7;4;among others;among others;6;1;yes
+http://data.europa.eu/sdg/4.7;4.7;4;education for sustainable development;through education for sustainable development;6;1;yes
+http://data.europa.eu/sdg/4.7;4.7;4;sustainable lifestyles;sustainable lifestyles;6;1;yes
+http://data.europa.eu/sdg/4.7;4.7;4;human rights;human rights;6;1;yes
+http://data.europa.eu/sdg/4.7;4.7;4;gender equality;gender equality;6;2;yes
+http://data.europa.eu/sdg/4.7;4.7;4;promotion of a culture of peace;promotion of a culture of peace;6;1;yes
+http://data.europa.eu/sdg/4.7;4.7;4;culture of peace;promotion of a culture of peace;7;1;yes
+http://data.europa.eu/sdg/4.7;4.7;4;non-violence;non-violence;6;1;yes
+http://data.europa.eu/sdg/4.7;4.7;4;citizenship;global citizenship;6;1;yes
+http://data.europa.eu/sdg/4.7;4.7;4;appreciation of cultural diversity;appreciation of cultural diversity;6;1;yes
+http://data.europa.eu/sdg/4.7;4.7;4;cultural diversity;appreciation of cultural diversity;7;1;yes
+http://data.europa.eu/sdg/4.7;4.7;4;culture s contribution to sustainable development;of culture’s contribution to sustainable development;6;1;yes
+http://data.europa.eu/sdg/4.a;4.a;4;education facilities that are child;upgrade education facilities that are child;6;1;yes
+http://data.europa.eu/sdg/4.a;4.a;4;disability;disability;6;3;yes
+http://data.europa.eu/sdg/4.a;4.a;4;gender sensitive;gender sensitive;6;1;yes
+http://data.europa.eu/sdg/4.a;4.a;4;safe;provide safe;6;5;no
+http://data.europa.eu/sdg/4.a;4.a;4;non-violent;non-violent;6;1;yes
+http://data.europa.eu/sdg/4.a;4.a;4;inclusive;inclusive;6;5;no
+http://data.europa.eu/sdg/4.a;4.a;4;effective learning environments;effective learning environments for all;6;1;yes
+http://data.europa.eu/sdg/4.b;4.b;4;developing countries;substantially expand globally the number of scholarships available to developing countries;7;22;no
+http://data.europa.eu/sdg/4.b;4.b;4;developed countries;least developed countries;6;19;no
+http://data.europa.eu/sdg/4.b;4.b;4;small island developing states;small island developing States;6;9;no
+http://data.europa.eu/sdg/4.b;4.b;4;island developing states;small island developing States;7;10;no
+http://data.europa.eu/sdg/4.b;4.b;4;african countries;African countries;6;3;yes
+http://data.europa.eu/sdg/4.b;4.b;4;enrolment in higher education;for enrolment in higher education;6;1;yes
+http://data.europa.eu/sdg/4.b;4.b;4;higher education;for enrolment in higher education;7;1;yes
+http://data.europa.eu/sdg/4.b;4.b;4;vocational training;vocational training;6;1;yes
+http://data.europa.eu/sdg/4.b;4.b;4;information;information;6;4;yes
+http://data.europa.eu/sdg/4.b;4.b;4;communications technology;communications technology;6;4;yes
+http://data.europa.eu/sdg/4.b;4.b;4;technical;technical;6;2;yes
+http://data.europa.eu/sdg/4.b;4.b;4;engineering;engineering;6;1;yes
+http://data.europa.eu/sdg/4.b;4.b;4;scientific programmes;scientific programmes;6;1;yes
+http://data.europa.eu/sdg/4.c;4.c;4;supply of qualified teachers;substantially increase the supply of qualified teachers;6;1;yes
+http://data.europa.eu/sdg/4.c;4.c;4;qualified teachers;substantially increase the supply of qualified teachers;7;1;yes
+http://data.europa.eu/sdg/4.c;4.c;4;developing countries;through international cooperation for teacher training in developing countries;7;22;no
+http://data.europa.eu/sdg/4.c;4.c;4;developed countries;especially least developed countries;6;19;no
+http://data.europa.eu/sdg/4.c;4.c;4;small island developing states;small island developing States;6;9;no
+http://data.europa.eu/sdg/4.c;4.c;4;island developing states;small island developing States;7;10;no
+http://data.europa.eu/sdg/5.1;5.1;5;forms of discrimination against all women;End all forms of discrimination against all women;6;1;yes
+http://data.europa.eu/sdg/5.1;5.1;5;against all women;End all forms of discrimination against all women;7;2;yes
+http://data.europa.eu/sdg/5.1;5.1;5;girls everywhere;girls everywhere;6;1;yes
+http://data.europa.eu/sdg/5.2;5.2;5;forms of violence against all women;Eliminate all forms of violence against all women;6;1;yes
+http://data.europa.eu/sdg/5.2;5.2;5;against all women;Eliminate all forms of violence against all women;7;2;yes
+http://data.europa.eu/sdg/5.2;5.2;5;girls in the public;girls in the public;6;1;yes
+http://data.europa.eu/sdg/5.2;5.2;5;private spheres;private spheres;6;1;yes
+http://data.europa.eu/sdg/5.2;5.2;5;trafficking;trafficking;6;2;yes
+http://data.europa.eu/sdg/5.2;5.2;5;sexual;sexual;6;1;yes
+http://data.europa.eu/sdg/5.2;5.2;5;types of exploitation;other types of exploitation;6;1;yes
+http://data.europa.eu/sdg/5.3;5.3;5;harmful practices;Eliminate all harmful practices;6;1;yes
+http://data.europa.eu/sdg/5.3;5.3;5;child;child;6;1;yes
+http://data.europa.eu/sdg/5.3;5.3;5;early;early;6;1;yes
+http://data.europa.eu/sdg/5.3;5.3;5;forced marriage;forced marriage;6;1;yes
+http://data.europa.eu/sdg/5.3;5.3;5;female genital mutilation;female genital mutilation;6;1;yes
+http://data.europa.eu/sdg/5.4;5.4;5;recognize;Recognize;6;1;yes
+http://data.europa.eu/sdg/5.4;5.4;5;value unpaid care;value unpaid care;6;1;yes
+http://data.europa.eu/sdg/5.4;5.4;5;public services;domestic work through the provision of public services;7;1;yes
+http://data.europa.eu/sdg/5.4;5.4;5;infrastructure;infrastructure;6;3;yes
+http://data.europa.eu/sdg/5.4;5.4;5;social protection policies;social protection policies;6;2;yes
+http://data.europa.eu/sdg/5.4;5.4;5;within the household;the promotion of shared responsibility within the household;7;1;yes
+http://data.europa.eu/sdg/5.4;5.4;5;family as nationally;the family as nationally appropriate;6;1;yes
+http://data.europa.eu/sdg/5.5;5.5;5;women s full;Ensure women’s full;6;1;yes
+http://data.europa.eu/sdg/5.5;5.5;5;effective participation;effective participation;6;1;yes
+http://data.europa.eu/sdg/5.5;5.5;5;decision-making in political;equal opportunities for leadership at all levels of decision-making in political;7;1;yes
+http://data.europa.eu/sdg/5.5;5.5;5;economic;economic;6;3;yes
+http://data.europa.eu/sdg/5.5;5.5;5;public life;public life;6;1;yes
+http://data.europa.eu/sdg/5.6;5.6;5;universal access to sexual;Ensure universal access to sexual;6;2;yes
+http://data.europa.eu/sdg/5.6;5.6;5;access to sexual;Ensure universal access to sexual;7;2;yes
+http://data.europa.eu/sdg/5.6;5.6;5;reproductive health;reproductive health;6;1;yes
+http://data.europa.eu/sdg/5.6;5.6;5;conference on population;reproductive rights as agreed in accordance with the Programme of Action of the International Conference on Population;7;1;yes
+http://data.europa.eu/sdg/5.6;5.6;5;beijing platform for action;the Beijing Platform for Action;6;1;yes
+http://data.europa.eu/sdg/5.6;5.6;5;platform for action;the Beijing Platform for Action;7;1;yes
+http://data.europa.eu/sdg/5.6;5.6;5;outcome documents of their review conferences;the outcome documents of their review conferences;6;1;yes
+http://data.europa.eu/sdg/5.6;5.6;5;review conferences;the outcome documents of their review conferences;7;1;yes
+http://data.europa.eu/sdg/5.a;5.a;5;economic resources;Undertake reforms to give women equal rights to economic resources;7;2;yes
+http://data.europa.eu/sdg/5.a;5.a;5;access to ownership;access to ownership;6;1;yes
+http://data.europa.eu/sdg/5.a;5.a;5;control over land;control over land;6;2;yes
+http://data.europa.eu/sdg/5.a;5.a;5;forms of property;other forms of property;6;2;yes
+http://data.europa.eu/sdg/5.a;5.a;5;financial services;financial services;6;6;no
+http://data.europa.eu/sdg/5.a;5.a;5;inheritance;inheritance;6;2;yes
+http://data.europa.eu/sdg/5.a;5.a;5;natural resources;natural resources;6;3;yes
+http://data.europa.eu/sdg/5.a;5.a;5;accordance with national laws;in accordance with national laws;6;1;yes
+http://data.europa.eu/sdg/5.b;5.b;5;use of enabling technology;Enhance the use of enabling technology;6;2;yes
+http://data.europa.eu/sdg/5.b;5.b;5;enabling technology;Enhance the use of enabling technology;7;2;yes
+http://data.europa.eu/sdg/5.b;5.b;5;information;information;6;4;yes
+http://data.europa.eu/sdg/5.b;5.b;5;communications technology;communications technology;6;4;yes
+http://data.europa.eu/sdg/5.b;5.b;5;promote the empowerment of women;to promote the empowerment of women;6;1;yes
+http://data.europa.eu/sdg/5.b;5.b;5;empowerment of women;to promote the empowerment of women;7;1;yes
+http://data.europa.eu/sdg/5.c;5.c;5;sound policies;strengthen sound policies;6;1;yes
+http://data.europa.eu/sdg/5.c;5.c;5;gender equality;enforceable legislation for the promotion of gender equality;7;2;yes
+http://data.europa.eu/sdg/5.c;5.c;5;empowerment of all women;the empowerment of all women;6;1;yes
+http://data.europa.eu/sdg/5.c;5.c;5;girls;girls at all levels;6;4;yes
+http://data.europa.eu/sdg/6.1;6.1;6;universal;achieve universal;6;2;yes
+http://data.europa.eu/sdg/6.1;6.1;6;equitable access to safe;equitable access to safe;6;1;yes
+http://data.europa.eu/sdg/6.1;6.1;6;access to safe;equitable access to safe;7;4;yes
+http://data.europa.eu/sdg/6.1;6.1;6;affordable drinking water;affordable drinking water for all;6;1;yes
+http://data.europa.eu/sdg/6.2;6.2;6;access to adequate;achieve access to adequate;6;1;yes
+http://data.europa.eu/sdg/6.2;6.2;6;equitable sanitation;equitable sanitation;6;1;yes
+http://data.europa.eu/sdg/6.2;6.2;6;hygiene;hygiene for all;6;1;yes
+http://data.europa.eu/sdg/6.2;6.2;6;open defecation;end open defecation;6;1;yes
+http://data.europa.eu/sdg/6.2;6.2;6;needs of women;paying special attention to the needs of women;7;1;yes
+http://data.europa.eu/sdg/6.2;6.2;6;girls;girls;6;4;yes
+http://data.europa.eu/sdg/6.2;6.2;6;those in vulnerable situations;those in vulnerable situations;6;2;yes
+http://data.europa.eu/sdg/6.2;6.2;6;vulnerable situations;those in vulnerable situations;7;6;no
+http://data.europa.eu/sdg/6.3;6.3;6;water quality by reducing pollution;improve water quality by reducing pollution;6;1;yes
+http://data.europa.eu/sdg/6.3;6.3;6;reducing pollution;improve water quality by reducing pollution;7;1;yes
+http://data.europa.eu/sdg/6.3;6.3;6;eliminating dumping;eliminating dumping;6;1;yes
+http://data.europa.eu/sdg/6.3;6.3;6;minimizing release of hazardous chemicals;minimizing release of hazardous chemicals;6;1;yes
+http://data.europa.eu/sdg/6.3;6.3;6;hazardous chemicals;minimizing release of hazardous chemicals;7;2;yes
+http://data.europa.eu/sdg/6.3;6.3;6;materials;materials;6;1;yes
+http://data.europa.eu/sdg/6.3;6.3;6;halving the proportion of untreated wastewater;halving the proportion of untreated wastewater;6;1;yes
+http://data.europa.eu/sdg/6.3;6.3;6;untreated wastewater;halving the proportion of untreated wastewater;7;1;yes
+http://data.europa.eu/sdg/6.3;6.3;6;increasing recycling;substantially increasing recycling;6;1;yes
+http://data.europa.eu/sdg/6.3;6.3;6;safe reuse globally;safe reuse globally;6;1;yes
+http://data.europa.eu/sdg/6.4;6.4;6;water-use efficiency across all sectors;substantially increase water-use efficiency across all sectors;6;1;yes
+http://data.europa.eu/sdg/6.4;6.4;6;across all sectors;substantially increase water-use efficiency across all sectors;7;1;yes
+http://data.europa.eu/sdg/6.4;6.4;6;sustainable withdrawals;ensure sustainable withdrawals;6;1;yes
+http://data.europa.eu/sdg/6.4;6.4;6;address water scarcity;supply of freshwater to address water scarcity;7;1;yes
+http://data.europa.eu/sdg/6.4;6.4;6;people suffering from water scarcity;substantially reduce the number of people suffering from water scarcity;6;1;yes
+http://data.europa.eu/sdg/6.4;6.4;6;water scarcity;substantially reduce the number of people suffering from water scarcity;7;1;yes
+http://data.europa.eu/sdg/6.5;6.5;6;integrated water resources management;implement integrated water resources management at all levels;6;1;yes
+http://data.europa.eu/sdg/6.5;6.5;6;transboundary cooperation;through transboundary cooperation as appropriate;6;1;yes
+http://data.europa.eu/sdg/6.6;6.6;6;restore water-related ecosystems;restore water-related ecosystems;6;1;yes
+http://data.europa.eu/sdg/6.6;6.6;6;mountains;mountains;6;2;yes
+http://data.europa.eu/sdg/6.6;6.6;6;forests;forests;6;2;yes
+http://data.europa.eu/sdg/6.6;6.6;6;wetlands;wetlands;6;2;yes
+http://data.europa.eu/sdg/6.6;6.6;6;rivers;rivers;6;1;yes
+http://data.europa.eu/sdg/6.6;6.6;6;aquifers;aquifers;6;1;yes
+http://data.europa.eu/sdg/6.6;6.6;6;lakes;lakes;6;1;yes
+http://data.europa.eu/sdg/6.a;6.a;6;cooperation;expand international cooperation;6;3;yes
+http://data.europa.eu/sdg/6.a;6.a;6;countries in water-;capacity-building support to developing countries in water-;7;1;yes
+http://data.europa.eu/sdg/6.a;6.a;6;sanitation-related activities;sanitation-related activities;6;1;yes
+http://data.europa.eu/sdg/6.a;6.a;6;programmes;programmes;6;3;yes
+http://data.europa.eu/sdg/6.a;6.a;6;water harvesting;water harvesting;6;1;yes
+http://data.europa.eu/sdg/6.a;6.a;6;desalination;desalination;6;1;yes
+http://data.europa.eu/sdg/6.a;6.a;6;wastewater treatment;wastewater treatment;6;1;yes
+http://data.europa.eu/sdg/6.a;6.a;6;recycling;recycling;6;2;yes
+http://data.europa.eu/sdg/6.a;6.a;6;reuse technologies;reuse technologies;6;1;yes
+http://data.europa.eu/sdg/6.b;6.b;6;improving water;strengthen the participation of local communities in improving water;7;1;yes
+http://data.europa.eu/sdg/6.b;6.b;6;sanitation management;sanitation management;6;1;yes
+http://data.europa.eu/sdg/7.1;7.1;7;universal access to affordable;ensure universal access to affordable;6;1;yes
+http://data.europa.eu/sdg/7.1;7.1;7;access to affordable;ensure universal access to affordable;7;1;yes
+http://data.europa.eu/sdg/7.1;7.1;7;reliable;reliable;6;2;yes
+http://data.europa.eu/sdg/7.1;7.1;7;modern energy services;modern energy services;6;1;yes
+http://data.europa.eu/sdg/7.2;7.2;7;energy mix;increase substantially the share of renewable energy in the global energy mix;7;1;yes
+http://data.europa.eu/sdg/7.3;7.3;7;rate of improvement in energy efficiency;double the global rate of improvement in energy efficiency;6;1;yes
+http://data.europa.eu/sdg/7.a;7.a;7;clean energy research;enhance international cooperation to facilitate access to clean energy research;7;1;yes
+http://data.europa.eu/sdg/7.a;7.a;7;renewable energy;renewable energy;6;1;yes
+http://data.europa.eu/sdg/7.a;7.a;7;advanced;advanced;6;1;yes
+http://data.europa.eu/sdg/7.a;7.a;7;cleaner fossil-fuel technology;cleaner fossil-fuel technology;6;1;yes
+http://data.europa.eu/sdg/7.a;7.a;7;investment in energy infrastructure;promote investment in energy infrastructure;6;1;yes
+http://data.europa.eu/sdg/7.a;7.a;7;energy infrastructure;promote investment in energy infrastructure;7;1;yes
+http://data.europa.eu/sdg/7.a;7.a;7;clean energy technology;clean energy technology;6;1;yes
+http://data.europa.eu/sdg/7.b;7.b;7;infrastructure;expand infrastructure;6;3;yes
+http://data.europa.eu/sdg/7.b;7.b;7;technology for supplying modern;upgrade technology for supplying modern;6;1;yes
+http://data.europa.eu/sdg/7.b;7.b;7;supplying modern;upgrade technology for supplying modern;7;1;yes
+http://data.europa.eu/sdg/7.b;7.b;7;developing countries;sustainable energy services for all in developing countries;7;22;no
+http://data.europa.eu/sdg/7.b;7.b;7;developed countries;least developed countries;6;19;no
+http://data.europa.eu/sdg/7.b;7.b;7;small island developing states;small island developing States;6;9;no
+http://data.europa.eu/sdg/7.b;7.b;7;island developing states;small island developing States;7;10;no
+http://data.europa.eu/sdg/7.b;7.b;7;landlocked developing countries;landlocked developing countries;6;3;yes
+http://data.europa.eu/sdg/7.b;7.b;7;programmes of support;in accordance with their respective programmes of support;7;1;yes
+http://data.europa.eu/sdg/8.1;8.1;8;circumstances and;Sustain per capita economic growth in accordance with national circumstances and;7;1;yes
+http://data.europa.eu/sdg/8.1;8.1;8;particular;in particular;6;2;yes
+http://data.europa.eu/sdg/8.1;8.1;8;developed countries;at least 7 per cent gross domestic product growth per annum in the least developed countries;7;19;no
+http://data.europa.eu/sdg/8.2;8.2;8;productivity through diversification;Achieve higher levels of economic productivity through diversification;7;1;yes
+http://data.europa.eu/sdg/8.2;8.2;8;technological upgrading;technological upgrading;6;1;yes
+http://data.europa.eu/sdg/8.2;8.2;8;focus on high-value added;through a focus on high-value added;6;1;yes
+http://data.europa.eu/sdg/8.2;8.2;8;high-value added;through a focus on high-value added;7;1;yes
+http://data.europa.eu/sdg/8.2;8.2;8;labour-intensive sectors;labour-intensive sectors;6;1;yes
+http://data.europa.eu/sdg/8.3;8.3;8;development-oriented policies that support productive activities;Promote development-oriented policies that support productive activities;6;1;yes
+http://data.europa.eu/sdg/8.3;8.3;8;support productive activities;Promote development-oriented policies that support productive activities;7;1;yes
+http://data.europa.eu/sdg/8.3;8.3;8;decent job creation;decent job creation;6;1;yes
+http://data.europa.eu/sdg/8.3;8.3;8;entrepreneurship;entrepreneurship;6;2;yes
+http://data.europa.eu/sdg/8.3;8.3;8;creativity;creativity;6;1;yes
+http://data.europa.eu/sdg/8.3;8.3;8;encourage the formalization;encourage the formalization;6;1;yes
+http://data.europa.eu/sdg/8.3;8.3;8;growth of micro-;growth of micro-;6;1;yes
+http://data.europa.eu/sdg/8.3;8.3;8;small-;small-;6;1;yes
+http://data.europa.eu/sdg/8.3;8.3;8;medium-sized enterprises;medium-sized enterprises;6;1;yes
+http://data.europa.eu/sdg/8.3;8.3;8;access to financial services;through access to financial services;6;1;yes
+http://data.europa.eu/sdg/8.3;8.3;8;financial services;through access to financial services;7;6;no
+http://data.europa.eu/sdg/8.4;8.4;8;2030;through 2030;6;4;yes
+http://data.europa.eu/sdg/8.4;8.4;8;resource efficiency in consumption;global resource efficiency in consumption;6;1;yes
+http://data.europa.eu/sdg/8.4;8.4;8;efficiency in consumption;global resource efficiency in consumption;7;1;yes
+http://data.europa.eu/sdg/8.4;8.4;8;environmental degradation;endeavour to decouple economic growth from environmental degradation;7;1;yes
+http://data.europa.eu/sdg/8.4;8.4;8;sustainable consumption;in accordance with the 10‑Year Framework of Programmes on Sustainable Consumption;7;2;yes
+http://data.europa.eu/sdg/8.4;8.4;8;developed countries taking the lead;with developed countries taking the lead;6;2;yes
+http://data.europa.eu/sdg/8.4;8.4;8;taking the lead;with developed countries taking the lead;7;2;yes
+http://data.europa.eu/sdg/8.5;8.5;8;full;achieve full;6;1;yes
+http://data.europa.eu/sdg/8.5;8.5;8;productive employment;productive employment;6;1;yes
+http://data.europa.eu/sdg/8.5;8.5;8;decent work for all women;decent work for all women;6;1;yes
+http://data.europa.eu/sdg/8.5;8.5;8;men;men;6;2;yes
+http://data.europa.eu/sdg/8.5;8.5;8;young people;for young people;6;1;yes
+http://data.europa.eu/sdg/8.5;8.5;8;persons with disabilities;persons with disabilities;6;4;yes
+http://data.europa.eu/sdg/8.5;8.5;8;equal value;equal pay for work of equal value;7;1;yes
+http://data.europa.eu/sdg/8.6;8.6;8;youth not in employment;substantially reduce the proportion of youth not in employment;6;1;yes
+http://data.europa.eu/sdg/8.6;8.6;8;not in employment;substantially reduce the proportion of youth not in employment;7;1;yes
+http://data.europa.eu/sdg/8.6;8.6;8;education;education;6;3;yes
+http://data.europa.eu/sdg/8.6;8.6;8;training;training;6;2;yes
+http://data.europa.eu/sdg/8.7;8.7;8;immediate;Take immediate;6;1;yes
+http://data.europa.eu/sdg/8.7;8.7;8;effective measures to eradicate forced labour;effective measures to eradicate forced labour;6;1;yes
+http://data.europa.eu/sdg/8.7;8.7;8;eradicate forced labour;effective measures to eradicate forced labour;7;1;yes
+http://data.europa.eu/sdg/8.7;8.7;8;modern slavery;end modern slavery;6;1;yes
+http://data.europa.eu/sdg/8.7;8.7;8;human trafficking;human trafficking;6;1;yes
+http://data.europa.eu/sdg/8.7;8.7;8;secure the prohibition;secure the prohibition;6;1;yes
+http://data.europa.eu/sdg/8.7;8.7;8;child labour;elimination of the worst forms of child labour;7;1;yes
+http://data.europa.eu/sdg/8.7;8.7;8;recruitment;recruitment;6;2;yes
+http://data.europa.eu/sdg/8.7;8.7;8;use of child soldiers;use of child soldiers;6;1;yes
+http://data.europa.eu/sdg/8.7;8.7;8;child soldiers;use of child soldiers;7;1;yes
+http://data.europa.eu/sdg/8.8;8.8;8;labour rights;Protect labour rights;6;1;yes
+http://data.europa.eu/sdg/8.8;8.8;8;safe;promote safe;6;5;no
+http://data.europa.eu/sdg/8.8;8.8;8;secure working environments for all workers;secure working environments for all workers;6;1;yes
+http://data.europa.eu/sdg/8.8;8.8;8;migrant workers;migrant workers;6;1;yes
+http://data.europa.eu/sdg/8.8;8.8;8;women migrants;women migrants;6;1;yes
+http://data.europa.eu/sdg/8.8;8.8;8;those in precarious employment;those in precarious employment;6;1;yes
+http://data.europa.eu/sdg/8.8;8.8;8;precarious employment;those in precarious employment;7;1;yes
+http://data.europa.eu/sdg/8.9;8.9;8;devise;devise;6;1;yes
+http://data.europa.eu/sdg/8.9;8.9;8;creates jobs;implement policies to promote sustainable tourism that creates jobs;7;2;yes
+http://data.europa.eu/sdg/8.9;8.9;8;promotes local culture;promotes local culture;6;2;yes
+http://data.europa.eu/sdg/8.9;8.9;8;products;products;6;2;yes
+http://data.europa.eu/sdg/8.10;8.10;8;institutions to encourage;Strengthen the capacity of domestic financial institutions to encourage;7;1;yes
+http://data.europa.eu/sdg/8.10;8.10;8;access to banking;expand access to banking;6;1;yes
+http://data.europa.eu/sdg/8.10;8.10;8;insurance;insurance;6;1;yes
+http://data.europa.eu/sdg/8.10;8.10;8;financial services;financial services for all;6;6;no
+http://data.europa.eu/sdg/8.a;8.a;8;developing countries;Increase Aid for Trade support for developing countries;7;22;no
+http://data.europa.eu/sdg/8.a;8.a;8;developed countries;least developed countries;6;19;no
+http://data.europa.eu/sdg/8.b;8.b;8;youth employment;operationalize a global strategy for youth employment;7;1;yes
+http://data.europa.eu/sdg/8.b;8.b;8;labour organization;implement the Global Jobs Pact of the International Labour Organization;7;1;yes
+http://data.europa.eu/sdg/9.1;9.1;9;reliable;reliable;6;2;yes
+http://data.europa.eu/sdg/9.1;9.1;9;resilient infrastructure;resilient infrastructure;6;1;yes
+http://data.europa.eu/sdg/9.1;9.1;9;regional;regional;6;3;yes
+http://data.europa.eu/sdg/9.1;9.1;9;transborder infrastructure;transborder infrastructure;6;1;yes
+http://data.europa.eu/sdg/9.1;9.1;9;support economic development;to support economic development;6;1;yes
+http://data.europa.eu/sdg/9.1;9.1;9;human well-being;human well-being;6;1;yes
+http://data.europa.eu/sdg/9.1;9.1;9;focus on affordable;with a focus on affordable;6;1;yes
+http://data.europa.eu/sdg/9.1;9.1;9;equitable access;equitable access for all;6;1;yes
+http://data.europa.eu/sdg/9.2;9.2;9;inclusive;Promote inclusive;6;5;no
+http://data.europa.eu/sdg/9.2;9.2;9;sustainable industrialization and;sustainable industrialization and;6;1;yes
+http://data.europa.eu/sdg/9.2;9.2;9;2030;by 2030;6;4;yes
+http://data.europa.eu/sdg/9.2;9.2;9;raise industry s share of employment;significantly raise industry’s share of employment;6;1;yes
+http://data.europa.eu/sdg/9.2;9.2;9;gross domestic product;gross domestic product;6;2;yes
+http://data.europa.eu/sdg/9.2;9.2;9;line with national circumstances;in line with national circumstances;6;1;yes
+http://data.europa.eu/sdg/9.2;9.2;9;developed countries;double its share in least developed countries;6;19;no
+http://data.europa.eu/sdg/9.3;9.3;9;access of small-scale industrial;Increase the access of small-scale industrial;6;1;yes
+http://data.europa.eu/sdg/9.3;9.3;9;small-scale industrial;Increase the access of small-scale industrial;7;1;yes
+http://data.europa.eu/sdg/9.3;9.3;9;enterprises;other enterprises;6;1;yes
+http://data.europa.eu/sdg/9.3;9.3;9;developing countries;in developing countries;6;22;no
+http://data.europa.eu/sdg/9.3;9.3;9;financial services;to financial services;6;6;no
+http://data.europa.eu/sdg/9.3;9.3;9;affordable credit;affordable credit;6;1;yes
+http://data.europa.eu/sdg/9.3;9.3;9;integration into value chains;their integration into value chains;6;1;yes
+http://data.europa.eu/sdg/9.3;9.3;9;value chains;their integration into value chains;7;1;yes
+http://data.europa.eu/sdg/9.3;9.3;9;markets;markets;6;3;yes
+http://data.europa.eu/sdg/9.4;9.4;9;infrastructure;upgrade infrastructure;6;3;yes
+http://data.europa.eu/sdg/9.4;9.4;9;retrofit industries to make them sustainable;retrofit industries to make them sustainable;6;1;yes
+http://data.europa.eu/sdg/9.4;9.4;9;make them sustainable;retrofit industries to make them sustainable;7;1;yes
+http://data.europa.eu/sdg/9.4;9.4;9;increased resource-use efficiency;with increased resource-use efficiency;6;1;yes
+http://data.europa.eu/sdg/9.4;9.4;9;greater adoption of clean;greater adoption of clean;6;1;yes
+http://data.europa.eu/sdg/9.4;9.4;9;adoption of clean;greater adoption of clean;7;1;yes
+http://data.europa.eu/sdg/9.4;9.4;9;environmentally sound technologies;environmentally sound technologies;6;1;yes
+http://data.europa.eu/sdg/9.4;9.4;9;industrial processes;industrial processes;6;1;yes
+http://data.europa.eu/sdg/9.4;9.4;9;respective capabilities;with all countries taking action in accordance with their respective capabilities;7;1;yes
+http://data.europa.eu/sdg/9.5;9.5;9;scientific research;Enhance scientific research;6;1;yes
+http://data.europa.eu/sdg/9.5;9.5;9;developing countries;developing countries;6;22;no
+http://data.europa.eu/sdg/9.5;9.5;9;including;including;6;2;yes
+http://data.europa.eu/sdg/9.5;9.5;9;2030;by 2030;6;4;yes
+http://data.europa.eu/sdg/9.5;9.5;9;encouraging innovation;encouraging innovation;6;1;yes
+http://data.europa.eu/sdg/9.5;9.5;9;increasing the number of research;substantially increasing the number of research;6;1;yes
+http://data.europa.eu/sdg/9.5;9.5;9;development workers per 1 million people;development workers per 1 million people;6;1;yes
+http://data.europa.eu/sdg/9.5;9.5;9;1 million people;development workers per 1 million people;7;1;yes
+http://data.europa.eu/sdg/9.5;9.5;9;public;public;6;1;yes
+http://data.europa.eu/sdg/9.5;9.5;9;private research;private research;6;1;yes
+http://data.europa.eu/sdg/9.5;9.5;9;development spending;development spending;6;1;yes
+http://data.europa.eu/sdg/9.a;9.a;9;enhanced financial;resilient infrastructure development in developing countries through enhanced financial;7;1;yes
+http://data.europa.eu/sdg/9.a;9.a;9;technological;technological;6;1;yes
+http://data.europa.eu/sdg/9.a;9.a;9;technical support to african countries;technical support to African countries;6;1;yes
+http://data.europa.eu/sdg/9.a;9.a;9;african countries;technical support to African countries;7;3;yes
+http://data.europa.eu/sdg/9.a;9.a;9;developed countries;least developed countries;6;19;no
+http://data.europa.eu/sdg/9.a;9.a;9;landlocked developing countries;landlocked developing countries;6;3;yes
+http://data.europa.eu/sdg/9.a;9.a;9;small island developing states;small island developing States;6;9;no
+http://data.europa.eu/sdg/9.a;9.a;9;island developing states;small island developing States;7;10;no
+http://data.europa.eu/sdg/9.b;9.b;9;domestic technology development;Support domestic technology development;6;1;yes
+http://data.europa.eu/sdg/9.b;9.b;9;innovation in developing countries;innovation in developing countries;6;1;yes
+http://data.europa.eu/sdg/9.b;9.b;9;developing countries;innovation in developing countries;7;22;no
+http://data.europa.eu/sdg/9.b;9.b;9;ensuring a conducive policy environment;by ensuring a conducive policy environment for;6;1;yes
+http://data.europa.eu/sdg/9.b;9.b;9;conducive policy environment;by ensuring a conducive policy environment for;7;1;yes
+http://data.europa.eu/sdg/9.b;9.b;9;industrial diversification;industrial diversification;6;1;yes
+http://data.europa.eu/sdg/9.b;9.b;9;value addition to commodities;value addition to commodities;6;1;yes
+http://data.europa.eu/sdg/9.b;9.b;9;addition to commodities;value addition to commodities;7;1;yes
+http://data.europa.eu/sdg/9.c;9.c;9;increase access to information;Significantly increase access to information;6;1;yes
+http://data.europa.eu/sdg/9.c;9.c;9;access to information;Significantly increase access to information;7;2;yes
+http://data.europa.eu/sdg/9.c;9.c;9;communications technology;communications technology;6;4;yes
+http://data.europa.eu/sdg/9.c;9.c;9;strive to provide universal;strive to provide universal;6;1;yes
+http://data.europa.eu/sdg/9.c;9.c;9;provide universal;strive to provide universal;7;1;yes
+http://data.europa.eu/sdg/9.c;9.c;9;countries by 2020;affordable access to the Internet in least developed countries by 2020;7;1;yes
+http://data.europa.eu/sdg/10.2;10.2;10;empower;empower;6;1;yes
+http://data.europa.eu/sdg/10.2;10.2;10;social;promote the social;6;3;yes
+http://data.europa.eu/sdg/10.2;10.2;10;economic;economic;6;3;yes
+http://data.europa.eu/sdg/10.2;10.2;10;political inclusion;political inclusion of all;6;1;yes
+http://data.europa.eu/sdg/10.2;10.2;10;irrespective of age;irrespective of age;6;1;yes
+http://data.europa.eu/sdg/10.2;10.2;10;sex;sex;6;1;yes
+http://data.europa.eu/sdg/10.2;10.2;10;disability;disability;6;3;yes
+http://data.europa.eu/sdg/10.2;10.2;10;race;race;6;2;yes
+http://data.europa.eu/sdg/10.2;10.2;10;ethnicity;ethnicity;6;2;yes
+http://data.europa.eu/sdg/10.2;10.2;10;origin;origin;6;1;yes
+http://data.europa.eu/sdg/10.2;10.2;10;religion;religion;6;1;yes
+http://data.europa.eu/sdg/10.2;10.2;10;status;other status;6;1;yes
+http://data.europa.eu/sdg/10.3;10.3;10;equal opportunity;Ensure equal opportunity;6;1;yes
+http://data.europa.eu/sdg/10.3;10.3;10;inequalities of outcome;reduce inequalities of outcome;6;1;yes
+http://data.europa.eu/sdg/10.3;10.3;10;eliminating discriminatory laws;by eliminating discriminatory laws;6;1;yes
+http://data.europa.eu/sdg/10.3;10.3;10;policies;policies;6;2;yes
+http://data.europa.eu/sdg/10.3;10.3;10;practices;practices;6;1;yes
+http://data.europa.eu/sdg/10.3;10.3;10;promoting appropriate legislation;promoting appropriate legislation;6;1;yes
+http://data.europa.eu/sdg/10.3;10.3;10;action in this regard;action in this regard;6;1;yes
+http://data.europa.eu/sdg/10.3;10.3;10;this regard;action in this regard;7;1;yes
+http://data.europa.eu/sdg/10.4;10.4;10;policies;Adopt policies;6;2;yes
+http://data.europa.eu/sdg/10.4;10.4;10;fiscal;especially fiscal;6;1;yes
+http://data.europa.eu/sdg/10.4;10.4;10;wage;wage;6;1;yes
+http://data.europa.eu/sdg/10.4;10.4;10;social protection policies;social protection policies;6;2;yes
+http://data.europa.eu/sdg/10.4;10.4;10;achieve greater equality;progressively achieve greater equality;6;1;yes
+http://data.europa.eu/sdg/10.5;10.5;10;regulation;Improve the regulation;6;1;yes
+http://data.europa.eu/sdg/10.5;10.5;10;monitoring of global financial markets;monitoring of global financial markets;6;1;yes
+http://data.europa.eu/sdg/10.5;10.5;10;financial markets;monitoring of global financial markets;7;1;yes
+http://data.europa.eu/sdg/10.5;10.5;10;institutions;institutions;6;2;yes
+http://data.europa.eu/sdg/10.5;10.5;10;implementation of such regulations;strengthen the implementation of such regulations;6;1;yes
+http://data.europa.eu/sdg/10.6;10.6;10;enhanced representation;Ensure enhanced representation;6;1;yes
+http://data.europa.eu/sdg/10.6;10.6;10;deliver more effective;financial institutions in order to deliver more effective;7;1;yes
+http://data.europa.eu/sdg/10.6;10.6;10;credible;credible;6;1;yes
+http://data.europa.eu/sdg/10.6;10.6;10;accountable;accountable;6;2;yes
+http://data.europa.eu/sdg/10.6;10.6;10;legitimate institutions;legitimate institutions;6;1;yes
+http://data.europa.eu/sdg/10.7;10.7;10;orderly;Facilitate orderly;6;1;yes
+http://data.europa.eu/sdg/10.7;10.7;10;safe;safe;6;5;no
+http://data.europa.eu/sdg/10.7;10.7;10;regular;regular;6;1;yes
+http://data.europa.eu/sdg/10.7;10.7;10;responsible migration;responsible migration;6;1;yes
+http://data.europa.eu/sdg/10.7;10.7;10;mobility of people;mobility of people;6;1;yes
+http://data.europa.eu/sdg/10.7;10.7;10;implementation of planned;through the implementation of planned;6;1;yes
+http://data.europa.eu/sdg/10.7;10.7;10;well-managed migration policies;well-managed migration policies;6;1;yes
+http://data.europa.eu/sdg/10.a;10.a;10;principle of special;Implement the principle of special;6;1;yes
+http://data.europa.eu/sdg/10.a;10.a;10;differential treatment for developing countries;differential treatment for developing countries;6;1;yes
+http://data.europa.eu/sdg/10.a;10.a;10;developing countries;differential treatment for developing countries;7;22;no
+http://data.europa.eu/sdg/10.a;10.a;10;developed countries;least developed countries;6;19;no
+http://data.europa.eu/sdg/10.a;10.a;10;accordance with world trade organization agreements;in accordance with World Trade Organization agreements;6;1;yes
+http://data.europa.eu/sdg/10.a;10.a;10;trade organization agreements;in accordance with World Trade Organization agreements;7;1;yes
+http://data.europa.eu/sdg/10.b;10.b;10;encourage official development assistance;Encourage official development assistance;6;1;yes
+http://data.europa.eu/sdg/10.b;10.b;10;official development assistance;Encourage official development assistance;7;1;yes
+http://data.europa.eu/sdg/10.b;10.b;10;financial flows;financial flows;6;1;yes
+http://data.europa.eu/sdg/10.b;10.b;10;foreign direct investment;foreign direct investment;6;1;yes
+http://data.europa.eu/sdg/10.b;10.b;10;states where the need is greatest;to States where the need is greatest;6;1;yes
+http://data.europa.eu/sdg/10.b;10.b;10;need is greatest;to States where the need is greatest;7;1;yes
+http://data.europa.eu/sdg/10.b;10.b;10;developed countries;least developed countries;6;19;no
+http://data.europa.eu/sdg/10.b;10.b;10;african countries;African countries;6;3;yes
+http://data.europa.eu/sdg/10.b;10.b;10;small island developing states;small island developing States;6;9;no
+http://data.europa.eu/sdg/10.b;10.b;10;island developing states;small island developing States;7;10;no
+http://data.europa.eu/sdg/10.b;10.b;10;landlocked developing countries;landlocked developing countries;6;3;yes
+http://data.europa.eu/sdg/10.b;10.b;10;accordance with their national plans;in accordance with their national plans;6;1;yes
+http://data.europa.eu/sdg/10.b;10.b;10;programmes;programmes;6;3;yes
+http://data.europa.eu/sdg/10.c;10.c;10;migrant remittances;reduce to less than 3 per cent the transaction costs of migrant remittances;7;1;yes
+http://data.europa.eu/sdg/10.c;10.c;10;higher than 5;eliminate remittance corridors with costs higher than 5 per cent;7;1;yes
+http://data.europa.eu/sdg/11.1;11.1;11;access for all to adequate;ensure access for all to adequate;6;1;yes
+http://data.europa.eu/sdg/11.1;11.1;11;safe;safe;6;5;no
+http://data.europa.eu/sdg/11.1;11.1;11;affordable housing;affordable housing;6;1;yes
+http://data.europa.eu/sdg/11.1;11.1;11;basic services;basic services;6;2;yes
+http://data.europa.eu/sdg/11.1;11.1;11;slums;upgrade slums;6;1;yes
+http://data.europa.eu/sdg/11.2;11.2;11;access to safe;provide access to safe;6;4;yes
+http://data.europa.eu/sdg/11.2;11.2;11;affordable;affordable;6;1;yes
+http://data.europa.eu/sdg/11.2;11.2;11;accessible;accessible;6;2;yes
+http://data.europa.eu/sdg/11.2;11.2;11;sustainable transport systems;sustainable transport systems for all;6;1;yes
+http://data.europa.eu/sdg/11.2;11.2;11;improving road safety;improving road safety;6;1;yes
+http://data.europa.eu/sdg/11.2;11.2;11;notably by expanding public transport;notably by expanding public transport;6;1;yes
+http://data.europa.eu/sdg/11.2;11.2;11;expanding public transport;notably by expanding public transport;7;1;yes
+http://data.europa.eu/sdg/11.2;11.2;11;vulnerable situations;with special attention to the needs of those in vulnerable situations;7;6;no
+http://data.europa.eu/sdg/11.2;11.2;11;women;women;6;6;no
+http://data.europa.eu/sdg/11.2;11.2;11;children;children;6;2;yes
+http://data.europa.eu/sdg/11.2;11.2;11;persons with disabilities;persons with disabilities;6;4;yes
+http://data.europa.eu/sdg/11.2;11.2;11;older persons;older persons;6;3;yes
+http://data.europa.eu/sdg/11.3;11.3;11;inclusive;enhance inclusive;6;5;no
+http://data.europa.eu/sdg/11.3;11.3;11;sustainable urbanization;sustainable urbanization;6;1;yes
+http://data.europa.eu/sdg/11.3;11.3;11;capacity for participatory;capacity for participatory;6;1;yes
+http://data.europa.eu/sdg/11.3;11.3;11;integrated;integrated;6;1;yes
+http://data.europa.eu/sdg/11.3;11.3;11;sustainable human settlement planning;sustainable human settlement planning;6;1;yes
+http://data.europa.eu/sdg/11.3;11.3;11;human settlement planning;sustainable human settlement planning;7;1;yes
+http://data.europa.eu/sdg/11.3;11.3;11;management in all countries;management in all countries;6;1;yes
+http://data.europa.eu/sdg/11.4;11.4;11;efforts to protect;Strengthen efforts to protect;6;1;yes
+http://data.europa.eu/sdg/11.4;11.4;11;safeguard the world s cultural;safeguard the world’s cultural;6;1;yes
+http://data.europa.eu/sdg/11.4;11.4;11;world s cultural;safeguard the world’s cultural;7;1;yes
+http://data.europa.eu/sdg/11.4;11.4;11;natural heritage;natural heritage;6;1;yes
+http://data.europa.eu/sdg/11.5;11.5;11;deaths;significantly reduce the number of deaths;6;3;yes
+http://data.europa.eu/sdg/11.5;11.5;11;people affected;the number of people affected;6;1;yes
+http://data.europa.eu/sdg/11.5;11.5;11;caused by disasters;substantially decrease the direct economic losses relative to global gross domestic product caused by disasters;7;1;yes
+http://data.europa.eu/sdg/11.5;11.5;11;water-related disasters;water-related disasters;6;1;yes
+http://data.europa.eu/sdg/11.5;11.5;11;focus on protecting the poor;with a focus on protecting the poor;6;1;yes
+http://data.europa.eu/sdg/11.5;11.5;11;protecting the poor;with a focus on protecting the poor;7;1;yes
+http://data.europa.eu/sdg/11.5;11.5;11;people in vulnerable situations;people in vulnerable situations;6;2;yes
+http://data.europa.eu/sdg/11.5;11.5;11;vulnerable situations;people in vulnerable situations;7;6;no
+http://data.europa.eu/sdg/11.6;11.6;11;impact of cities;reduce the adverse per capita environmental impact of cities;7;1;yes
+http://data.europa.eu/sdg/11.6;11.6;11;paying special attention to air quality;by paying special attention to air quality;6;1;yes
+http://data.europa.eu/sdg/11.6;11.6;11;air quality;by paying special attention to air quality;7;1;yes
+http://data.europa.eu/sdg/11.6;11.6;11;municipal;municipal;6;1;yes
+http://data.europa.eu/sdg/11.6;11.6;11;waste management;other waste management;6;1;yes
+http://data.europa.eu/sdg/11.7;11.7;11;universal access to safe;provide universal access to safe;6;1;yes
+http://data.europa.eu/sdg/11.7;11.7;11;access to safe;provide universal access to safe;7;4;yes
+http://data.europa.eu/sdg/11.7;11.7;11;inclusive;inclusive;6;5;no
+http://data.europa.eu/sdg/11.7;11.7;11;accessible;accessible;6;2;yes
+http://data.europa.eu/sdg/11.7;11.7;11;green;green;6;1;yes
+http://data.europa.eu/sdg/11.7;11.7;11;public spaces;public spaces;6;1;yes
+http://data.europa.eu/sdg/11.7;11.7;11;women;for women;6;6;no
+http://data.europa.eu/sdg/11.7;11.7;11;children;children;6;2;yes
+http://data.europa.eu/sdg/11.7;11.7;11;older persons;older persons;6;3;yes
+http://data.europa.eu/sdg/11.7;11.7;11;persons with disabilities;persons with disabilities;6;4;yes
+http://data.europa.eu/sdg/11.a;11.a;11;positive economic;Support positive economic;6;1;yes
+http://data.europa.eu/sdg/11.a;11.a;11;social;social;6;3;yes
+http://data.europa.eu/sdg/11.a;11.a;11;environmental links between urban;environmental links between urban;6;1;yes
+http://data.europa.eu/sdg/11.a;11.a;11;links between urban;environmental links between urban;7;1;yes
+http://data.europa.eu/sdg/11.a;11.a;11;peri-urban;peri-urban;6;1;yes
+http://data.europa.eu/sdg/11.a;11.a;11;rural areas by strengthening;rural areas by strengthening national;6;1;yes
+http://data.europa.eu/sdg/11.a;11.a;11;areas by strengthening;rural areas by strengthening national;7;1;yes
+http://data.europa.eu/sdg/11.a;11.a;11;regional development planning;regional development planning;6;1;yes
+http://data.europa.eu/sdg/11.b;11.b;11;cities;substantially increase the number of cities;6;1;yes
+http://data.europa.eu/sdg/11.b;11.b;11;human settlements adopting;human settlements adopting;6;1;yes
+http://data.europa.eu/sdg/11.b;11.b;11;implementing integrated policies;implementing integrated policies;6;1;yes
+http://data.europa.eu/sdg/11.b;11.b;11;plans towards inclusion;plans towards inclusion;6;1;yes
+http://data.europa.eu/sdg/11.b;11.b;11;resource efficiency;resource efficiency;6;1;yes
+http://data.europa.eu/sdg/11.b;11.b;11;mitigation;mitigation;6;1;yes
+http://data.europa.eu/sdg/11.b;11.b;11;adaptation to climate change;adaptation to climate change;6;1;yes
+http://data.europa.eu/sdg/11.b;11.b;11;climate change;adaptation to climate change;7;2;yes
+http://data.europa.eu/sdg/11.b;11.b;11;resilience to disasters;resilience to disasters;6;1;yes
+http://data.europa.eu/sdg/11.b;11.b;11;risk reduction 2015 2030;in line with the Sendai Framework for Disaster Risk Reduction 2015–2030;7;1;yes
+http://data.europa.eu/sdg/11.b;11.b;11;holistic disaster risk management;holistic disaster risk management at all levels;6;1;yes
+http://data.europa.eu/sdg/11.b;11.b;11;disaster risk management;holistic disaster risk management at all levels;7;1;yes
+http://data.europa.eu/sdg/11.c;11.c;11;developed countries;Support least developed countries;6;19;no
+http://data.europa.eu/sdg/11.c;11.c;11;financial;through financial;6;1;yes
+http://data.europa.eu/sdg/11.c;11.c;11;technical assistance;technical assistance;6;1;yes
+http://data.europa.eu/sdg/11.c;11.c;11;building sustainable;in building sustainable;6;1;yes
+http://data.europa.eu/sdg/11.c;11.c;11;resilient buildings utilizing local materials;resilient buildings utilizing local materials;6;1;yes
+http://data.europa.eu/sdg/11.c;11.c;11;utilizing local materials;resilient buildings utilizing local materials;7;1;yes
+http://data.europa.eu/sdg/12.1;12.1;12;sustainable consumption;Implement the 10‑Year Framework of Programmes on Sustainable Consumption;7;2;yes
+http://data.europa.eu/sdg/12.1;12.1;12;production patterns;Production Patterns;6;1;yes
+http://data.europa.eu/sdg/12.1;12.1;12;countries taking action;all countries taking action;6;1;yes
+http://data.europa.eu/sdg/12.1;12.1;12;developed countries taking the lead;with developed countries taking the lead;6;2;yes
+http://data.europa.eu/sdg/12.1;12.1;12;taking the lead;with developed countries taking the lead;7;2;yes
+http://data.europa.eu/sdg/12.1;12.1;12;taking into account the development;taking into account the development;6;1;yes
+http://data.europa.eu/sdg/12.1;12.1;12;account the development;taking into account the development;7;1;yes
+http://data.europa.eu/sdg/12.1;12.1;12;capabilities of developing countries;capabilities of developing countries;6;1;yes
+http://data.europa.eu/sdg/12.1;12.1;12;developing countries;capabilities of developing countries;7;22;no
+http://data.europa.eu/sdg/12.2;12.2;12;efficient use of natural resources;efficient use of natural resources;6;1;yes
+http://data.europa.eu/sdg/12.2;12.2;12;natural resources;efficient use of natural resources;7;3;yes
+http://data.europa.eu/sdg/12.3;12.3;12;2030;By 2030;6;4;yes
+http://data.europa.eu/sdg/12.3;12.3;12;d;d;6;1;yes
+http://data.europa.eu/sdg/12.4;12.4;12;environmentally sound management of chemicals;achieve the environmentally sound management of chemicals;6;1;yes
+http://data.europa.eu/sdg/12.4;12.4;12;management of chemicals;achieve the environmentally sound management of chemicals;7;1;yes
+http://data.europa.eu/sdg/12.4;12.4;12;wastes throughout their life cycle;all wastes throughout their life cycle;6;1;yes
+http://data.europa.eu/sdg/12.4;12.4;12;life cycle;all wastes throughout their life cycle;7;1;yes
+http://data.europa.eu/sdg/12.4;12.4;12;accordance with agreed international frameworks;in accordance with agreed international frameworks;6;1;yes
+http://data.europa.eu/sdg/12.4;12.4;12;agreed international frameworks;in accordance with agreed international frameworks;7;1;yes
+http://data.europa.eu/sdg/12.4;12.4;12;release to air;significantly reduce their release to air;6;1;yes
+http://data.europa.eu/sdg/12.4;12.4;12;human health;soil in order to minimize their adverse impacts on human health;7;1;yes
+http://data.europa.eu/sdg/12.4;12.4;12;environment;the environment;6;1;yes
+http://data.europa.eu/sdg/12.5;12.5;12;waste generation through prevention;substantially reduce waste generation through prevention;6;1;yes
+http://data.europa.eu/sdg/12.5;12.5;12;generation through prevention;substantially reduce waste generation through prevention;7;1;yes
+http://data.europa.eu/sdg/12.5;12.5;12;reduction;reduction;6;1;yes
+http://data.europa.eu/sdg/12.5;12.5;12;recycling;recycling;6;2;yes
+http://data.europa.eu/sdg/12.5;12.5;12;reuse;reuse;6;1;yes
+http://data.europa.eu/sdg/12.6;12.6;12;encourage companies;Encourage companies;6;1;yes
+http://data.europa.eu/sdg/12.6;12.6;12;large;especially large;6;1;yes
+http://data.europa.eu/sdg/12.6;12.6;12;transnational companies;transnational companies;6;1;yes
+http://data.europa.eu/sdg/12.6;12.6;12;adopt sustainable practices;to adopt sustainable practices;6;1;yes
+http://data.europa.eu/sdg/12.6;12.6;12;reporting cycle;to integrate sustainability information into their reporting cycle;7;1;yes
+http://data.europa.eu/sdg/12.7;12.7;12;public procurement practices that are sustainable;Promote public procurement practices that are sustainable;6;1;yes
+http://data.europa.eu/sdg/12.7;12.7;12;accordance with national policies;in accordance with national policies;6;1;yes
+http://data.europa.eu/sdg/12.7;12.7;12;priorities;priorities;6;1;yes
+http://data.europa.eu/sdg/12.8;12.8;12;people everywhere have the relevant information;ensure that people everywhere have the relevant information;6;1;yes
+http://data.europa.eu/sdg/12.8;12.8;12;awareness for sustainable development;awareness for sustainable development;6;1;yes
+http://data.europa.eu/sdg/12.8;12.8;12;lifestyles in harmony with nature;lifestyles in harmony with nature;6;1;yes
+http://data.europa.eu/sdg/12.8;12.8;12;harmony with nature;lifestyles in harmony with nature;7;1;yes
+http://data.europa.eu/sdg/12.a;12.a;12;developing countries to strengthen their scientific;Support developing countries to strengthen their scientific;6;1;yes
+http://data.europa.eu/sdg/12.a;12.a;12;strengthen their scientific;Support developing countries to strengthen their scientific;7;1;yes
+http://data.europa.eu/sdg/12.a;12.a;12;patterns of consumption;technological capacity to move towards more sustainable patterns of consumption;7;1;yes
+http://data.europa.eu/sdg/12.b;12.b;12;creates jobs;implement tools to monitor sustainable development impacts for sustainable tourism that creates jobs;7;2;yes
+http://data.europa.eu/sdg/12.b;12.b;12;promotes local culture;promotes local culture;6;2;yes
+http://data.europa.eu/sdg/12.b;12.b;12;products;products;6;2;yes
+http://data.europa.eu/sdg/12.c;12.c;12;removing market distortions;Rationalize inefficient fossil-fuel subsidies that encourage wasteful consumption by removing market distortions;7;1;yes
+http://data.europa.eu/sdg/12.c;12.c;12;accordance with national circumstances;in accordance with national circumstances;6;1;yes
+http://data.europa.eu/sdg/12.c;12.c;12;restructuring taxation;by restructuring taxation;6;1;yes
+http://data.europa.eu/sdg/12.c;12.c;12;phasing out those harmful subsidies;phasing out those harmful subsidies;6;1;yes
+http://data.europa.eu/sdg/12.c;12.c;12;those harmful subsidies;phasing out those harmful subsidies;7;1;yes
+http://data.europa.eu/sdg/12.c;12.c;12;where they exist;where they exist;6;1;yes
+http://data.europa.eu/sdg/12.c;12.c;12;reflect their environmental impacts;to reflect their environmental impacts;6;1;yes
+http://data.europa.eu/sdg/12.c;12.c;12;environmental impacts;to reflect their environmental impacts;7;1;yes
+http://data.europa.eu/sdg/12.c;12.c;12;specific needs;taking fully into account the specific needs;7;1;yes
+http://data.europa.eu/sdg/12.c;12.c;12;conditions of developing countries;conditions of developing countries;6;1;yes
+http://data.europa.eu/sdg/12.c;12.c;12;developing countries;conditions of developing countries;7;22;no
+http://data.europa.eu/sdg/12.c;12.c;12;protects the poor;minimizing the possible adverse impacts on their development in a manner that protects the poor;7;1;yes
+http://data.europa.eu/sdg/12.c;12.c;12;affected communities;the affected communities;6;1;yes
+http://data.europa.eu/sdg/13.1;13.1;13;adaptive capacity to climate-related hazards;adaptive capacity to climate-related hazards;6;1;yes
+http://data.europa.eu/sdg/13.1;13.1;13;climate-related hazards;adaptive capacity to climate-related hazards;7;1;yes
+http://data.europa.eu/sdg/13.1;13.1;13;natural disasters in all countries;natural disasters in all countries;6;1;yes
+http://data.europa.eu/sdg/13.2;13.2;13;strategies;strategies;6;1;yes
+http://data.europa.eu/sdg/13.2;13.2;13;planning;planning;6;1;yes
+http://data.europa.eu/sdg/13.3;13.3;13;education;Improve education;6;3;yes
+http://data.europa.eu/sdg/13.3;13.3;13;awareness-raising;awareness-raising;6;1;yes
+http://data.europa.eu/sdg/13.3;13.3;13;human;human;6;1;yes
+http://data.europa.eu/sdg/13.3;13.3;13;institutional capacity on climate change mitigation;institutional capacity on climate change mitigation;6;1;yes
+http://data.europa.eu/sdg/13.3;13.3;13;climate change mitigation;institutional capacity on climate change mitigation;7;1;yes
+http://data.europa.eu/sdg/13.3;13.3;13;adaptation;adaptation;6;1;yes
+http://data.europa.eu/sdg/13.3;13.3;13;impact reduction;impact reduction;6;1;yes
+http://data.europa.eu/sdg/13.3;13.3;13;early warning;early warning;6;2;yes
+http://data.europa.eu/sdg/13.a;13.a;13;meaningful mitigation actions;Implement the commitment undertaken by developed-country parties to the United Nations Framework Convention on Climate Change to a goal of mobilizing jointly $100 billion annually by 2020 from all sources to address the needs of developing countries in the context of meaningful mitigation actions;7;1;yes
+http://data.europa.eu/sdg/13.a;13.a;13;transparency on implementation;transparency on implementation;6;1;yes
+http://data.europa.eu/sdg/13.a;13.a;13;soon as possible;fully operationalize the Green Climate Fund through its capitalization as soon as possible;7;1;yes
+http://data.europa.eu/sdg/13.b;13.b;13;climate change-related planning;Promote mechanisms for raising capacity for effective climate change-related planning;7;1;yes
+http://data.europa.eu/sdg/13.b;13.b;13;management in least developed countries;management in least developed countries;6;1;yes
+http://data.europa.eu/sdg/13.b;13.b;13;developed countries;management in least developed countries;7;19;no
+http://data.europa.eu/sdg/13.b;13.b;13;small island developing states;small island developing States;6;9;no
+http://data.europa.eu/sdg/13.b;13.b;13;island developing states;small island developing States;7;10;no
+http://data.europa.eu/sdg/13.b;13.b;13;focusing on women;focusing on women;6;1;yes
+http://data.europa.eu/sdg/13.b;13.b;13;youth;youth;6;3;yes
+http://data.europa.eu/sdg/13.b;13.b;13;local;local;6;1;yes
+http://data.europa.eu/sdg/13.b;13.b;13;marginalized communities;marginalized communities;6;1;yes
+http://data.europa.eu/sdg/14.1;14.1;14;prevent;prevent;6;1;yes
+http://data.europa.eu/sdg/14.1;14.1;14;marine pollution of all kinds;significantly reduce marine pollution of all kinds;6;1;yes
+http://data.europa.eu/sdg/14.1;14.1;14;land-based activities;from land-based activities;6;1;yes
+http://data.europa.eu/sdg/14.1;14.1;14;marine debris;marine debris;6;1;yes
+http://data.europa.eu/sdg/14.1;14.1;14;nutrient pollution;nutrient pollution;6;1;yes
+http://data.europa.eu/sdg/14.2;14.2;14;sustainably manage;sustainably manage;6;1;yes
+http://data.europa.eu/sdg/14.2;14.2;14;marine;protect marine;6;1;yes
+http://data.europa.eu/sdg/14.2;14.2;14;significant adverse impacts;coastal ecosystems to avoid significant adverse impacts;7;1;yes
+http://data.europa.eu/sdg/14.2;14.2;14;strengthening their resilience;by strengthening their resilience;6;1;yes
+http://data.europa.eu/sdg/14.2;14.2;14;achieve healthy;take action for their restoration in order to achieve healthy;7;1;yes
+http://data.europa.eu/sdg/14.2;14.2;14;productive oceans;productive oceans;6;1;yes
+http://data.europa.eu/sdg/14.3;14.3;14;minimize;Minimize;6;1;yes
+http://data.europa.eu/sdg/14.3;14.3;14;address the impacts of ocean acidification;address the impacts of ocean acidification;6;1;yes
+http://data.europa.eu/sdg/14.3;14.3;14;ocean acidification;address the impacts of ocean acidification;7;1;yes
+http://data.europa.eu/sdg/14.3;14.3;14;enhanced scientific cooperation;through enhanced scientific cooperation at all levels;6;1;yes
+http://data.europa.eu/sdg/14.4;14.4;14;effectively regulate harvesting;effectively regulate harvesting;6;1;yes
+http://data.europa.eu/sdg/14.4;14.4;14;overfishing;end overfishing;6;2;yes
+http://data.europa.eu/sdg/14.4;14.4;14;illegal;illegal;6;1;yes
+http://data.europa.eu/sdg/14.4;14.4;14;unreported;unreported;6;2;yes
+http://data.europa.eu/sdg/14.4;14.4;14;unregulated fishing;unregulated fishing;6;2;yes
+http://data.europa.eu/sdg/14.4;14.4;14;destructive fishing practices;destructive fishing practices;6;1;yes
+http://data.europa.eu/sdg/14.4;14.4;14;science-based management plans;implement science-based management plans;6;1;yes
+http://data.europa.eu/sdg/14.4;14.4;14;shortest time feasible;in order to restore fish stocks in the shortest time feasible;7;1;yes
+http://data.europa.eu/sdg/14.4;14.4;14;biological characteristics;at least to levels that can produce maximum sustainable yield as determined by their biological characteristics;7;1;yes
+http://data.europa.eu/sdg/14.5;14.5;14;marine areas;marine areas;6;1;yes
+http://data.europa.eu/sdg/14.5;14.5;14;consistent;consistent with national;6;1;yes
+http://data.europa.eu/sdg/14.5;14.5;14;law;international law;6;1;yes
+http://data.europa.eu/sdg/14.5;14.5;14;available scientific information;based on the best available scientific information;7;1;yes
+http://data.europa.eu/sdg/14.6;14.6;14;contribute to overcapacity;prohibit certain forms of fisheries subsidies which contribute to overcapacity;7;1;yes
+http://data.europa.eu/sdg/14.6;14.6;14;overfishing;overfishing;6;2;yes
+http://data.europa.eu/sdg/14.6;14.6;14;subsidies that contribute to illegal;eliminate subsidies that contribute to illegal;6;1;yes
+http://data.europa.eu/sdg/14.6;14.6;14;contribute to illegal;eliminate subsidies that contribute to illegal;7;1;yes
+http://data.europa.eu/sdg/14.6;14.6;14;unreported;unreported;6;2;yes
+http://data.europa.eu/sdg/14.6;14.6;14;unregulated fishing;unregulated fishing;6;2;yes
+http://data.europa.eu/sdg/14.6;14.6;14;refrain from introducing new such subsidies;refrain from introducing new such subsidies;6;1;yes
+http://data.europa.eu/sdg/14.6;14.6;14;new such subsidies;refrain from introducing new such subsidies;7;1;yes
+http://data.europa.eu/sdg/14.6;14.6;14;recognizing;recognizing that appropriate;6;1;yes
+http://data.europa.eu/sdg/14.6;14.6;14;effective special;effective special;6;1;yes
+http://data.europa.eu/sdg/14.6;14.6;14;differential treatment for developing;differential treatment for developing;6;1;yes
+http://data.europa.eu/sdg/14.6;14.6;14;treatment for developing;differential treatment for developing;7;1;yes
+http://data.europa.eu/sdg/14.6;14.6;14;fisheries subsidies negotiation3;least developed countries should be an integral part of the World Trade Organization fisheries subsidies negotiation3;7;1;yes
+http://data.europa.eu/sdg/14.7;14.7;14;island developing states;increase the economic benefits to small island developing States;7;10;no
+http://data.europa.eu/sdg/14.7;14.7;14;marine resources;least developed countries from the sustainable use of marine resources;7;2;yes
+http://data.europa.eu/sdg/14.7;14.7;14;sustainable management of fisheries;through sustainable management of fisheries;6;1;yes
+http://data.europa.eu/sdg/14.7;14.7;14;management of fisheries;through sustainable management of fisheries;7;1;yes
+http://data.europa.eu/sdg/14.7;14.7;14;aquaculture;aquaculture;6;1;yes
+http://data.europa.eu/sdg/14.7;14.7;14;tourism;tourism;6;1;yes
+http://data.europa.eu/sdg/14.a;14.a;14;scientific knowledge;Increase scientific knowledge;6;1;yes
+http://data.europa.eu/sdg/14.a;14.a;14;transfer marine technology;transfer marine technology;6;1;yes
+http://data.europa.eu/sdg/14.a;14.a;14;oceanographic commission criteria;taking into account the Intergovernmental Oceanographic Commission Criteria;7;1;yes
+http://data.europa.eu/sdg/14.a;14.a;14;marine technology;Guidelines on the Transfer of Marine Technology;7;1;yes
+http://data.europa.eu/sdg/14.a;14.a;14;order to improve ocean health;in order to improve ocean health;6;1;yes
+http://data.europa.eu/sdg/14.a;14.a;14;improve ocean health;in order to improve ocean health;7;1;yes
+http://data.europa.eu/sdg/14.a;14.a;14;developing countries;to enhance the contribution of marine biodiversity to the development of developing countries;7;22;no
+http://data.europa.eu/sdg/14.a;14.a;14;small island developing states;small island developing States;6;9;no
+http://data.europa.eu/sdg/14.a;14.a;14;island developing states;small island developing States;7;10;no
+http://data.europa.eu/sdg/14.a;14.a;14;developed countries;least developed countries;6;19;no
+http://data.europa.eu/sdg/14.b;14.b;14;marine resources;Provide access for small-scale artisanal fishers to marine resources;7;2;yes
+http://data.europa.eu/sdg/14.b;14.b;14;markets;markets;6;3;yes
+http://data.europa.eu/sdg/14.c;14.c;14;conservation;Enhance the conservation;6;3;yes
+http://data.europa.eu/sdg/14.c;14.c;14;sustainable use of oceans;sustainable use of oceans;6;1;yes
+http://data.europa.eu/sdg/14.c;14.c;14;use of oceans;sustainable use of oceans;7;1;yes
+http://data.europa.eu/sdg/14.c;14.c;14;future we want;as recalled in paragraph 158 of “The future we want”;7;1;yes
+http://data.europa.eu/sdg/15.1;15.1;15;conservation;ensure the conservation;6;3;yes
+http://data.europa.eu/sdg/15.1;15.1;15;restoration;restoration;6;1;yes
+http://data.europa.eu/sdg/15.1;15.1;15;sustainable use of terrestrial;sustainable use of terrestrial;6;1;yes
+http://data.europa.eu/sdg/15.1;15.1;15;use of terrestrial;sustainable use of terrestrial;7;1;yes
+http://data.europa.eu/sdg/15.1;15.1;15;inland freshwater ecosystems;inland freshwater ecosystems;6;1;yes
+http://data.europa.eu/sdg/15.1;15.1;15;forests;forests;6;2;yes
+http://data.europa.eu/sdg/15.1;15.1;15;wetlands;wetlands;6;2;yes
+http://data.europa.eu/sdg/15.1;15.1;15;mountains;mountains;6;2;yes
+http://data.europa.eu/sdg/15.1;15.1;15;drylands;drylands;6;1;yes
+http://data.europa.eu/sdg/15.1;15.1;15;line with obligations under international agreements;in line with obligations under international agreements;6;1;yes
+http://data.europa.eu/sdg/15.1;15.1;15;under international agreements;in line with obligations under international agreements;7;1;yes
+http://data.europa.eu/sdg/15.2;15.2;15;types of forests;promote the implementation of sustainable management of all types of forests;7;1;yes
+http://data.europa.eu/sdg/15.2;15.2;15;halt deforestation;halt deforestation;6;1;yes
+http://data.europa.eu/sdg/15.2;15.2;15;restore degraded forests;restore degraded forests;6;1;yes
+http://data.europa.eu/sdg/15.2;15.2;15;afforestation;substantially increase afforestation;6;1;yes
+http://data.europa.eu/sdg/15.2;15.2;15;reforestation globally;reforestation globally;6;1;yes
+http://data.europa.eu/sdg/15.3;15.3;15;combat desertification;combat desertification;6;1;yes
+http://data.europa.eu/sdg/15.3;15.3;15;restore degraded land;restore degraded land;6;1;yes
+http://data.europa.eu/sdg/15.3;15.3;15;soil;soil;6;1;yes
+http://data.europa.eu/sdg/15.3;15.3;15;land affected by desertification;land affected by desertification;6;1;yes
+http://data.europa.eu/sdg/15.3;15.3;15;affected by desertification;land affected by desertification;7;1;yes
+http://data.europa.eu/sdg/15.3;15.3;15;drought;drought;6;2;yes
+http://data.europa.eu/sdg/15.3;15.3;15;floods;floods;6;1;yes
+http://data.europa.eu/sdg/15.3;15.3;15;land degradation-neutral world;strive to achieve a land degradation-neutral world;7;1;yes
+http://data.europa.eu/sdg/15.4;15.4;15;conservation of mountain ecosystems;ensure the conservation of mountain ecosystems;6;1;yes
+http://data.europa.eu/sdg/15.4;15.4;15;mountain ecosystems;ensure the conservation of mountain ecosystems;7;1;yes
+http://data.europa.eu/sdg/15.4;15.4;15;biodiversity;their biodiversity;6;1;yes
+http://data.europa.eu/sdg/15.5;15.5;15;urgent;Take urgent;6;1;yes
+http://data.europa.eu/sdg/15.5;15.5;15;natural habitats;significant action to reduce the degradation of natural habitats;7;1;yes
+http://data.europa.eu/sdg/15.5;15.5;15;halt the loss of biodiversity and;halt the loss of biodiversity and;6;1;yes
+http://data.europa.eu/sdg/15.5;15.5;15;biodiversity and;halt the loss of biodiversity and;7;1;yes
+http://data.europa.eu/sdg/15.5;15.5;15;2020;by 2020;6;1;yes
+http://data.europa.eu/sdg/15.5;15.5;15;prevent the extinction of threatened species;prevent the extinction of threatened species;6;1;yes
+http://data.europa.eu/sdg/15.5;15.5;15;threatened species;prevent the extinction of threatened species;7;1;yes
+http://data.europa.eu/sdg/15.6;15.6;15;fair;Promote fair;6;2;yes
+http://data.europa.eu/sdg/15.6;15.6;15;genetic resources;equitable sharing of the benefits arising from the utilization of genetic resources;7;2;yes
+http://data.europa.eu/sdg/15.6;15.6;15;access to such resources;promote appropriate access to such resources;6;1;yes
+http://data.europa.eu/sdg/15.6;15.6;15;internationally agreed;as internationally agreed;6;2;yes
+http://data.europa.eu/sdg/15.7;15.7;15;urgent action to end poaching;Take urgent action to end poaching;6;1;yes
+http://data.europa.eu/sdg/15.7;15.7;15;end poaching;Take urgent action to end poaching;7;1;yes
+http://data.europa.eu/sdg/15.7;15.7;15;trafficking of protected species of flora;trafficking of protected species of flora;6;1;yes
+http://data.europa.eu/sdg/15.7;15.7;15;species of flora;trafficking of protected species of flora;7;1;yes
+http://data.europa.eu/sdg/15.7;15.7;15;fauna;fauna;6;1;yes
+http://data.europa.eu/sdg/15.7;15.7;15;address both demand;address both demand;6;1;yes
+http://data.europa.eu/sdg/15.7;15.7;15;supply of illegal wildlife products;supply of illegal wildlife products;6;1;yes
+http://data.europa.eu/sdg/15.7;15.7;15;illegal wildlife products;supply of illegal wildlife products;7;1;yes
+http://data.europa.eu/sdg/15.8;15.8;15;introduce measures to prevent the introduction;introduce measures to prevent the introduction;6;1;yes
+http://data.europa.eu/sdg/15.8;15.8;15;prevent the introduction;introduce measures to prevent the introduction;7;1;yes
+http://data.europa.eu/sdg/15.8;15.8;15;species on land;significantly reduce the impact of invasive alien species on land;7;1;yes
+http://data.europa.eu/sdg/15.8;15.8;15;water ecosystems;water ecosystems;6;1;yes
+http://data.europa.eu/sdg/15.8;15.8;15;control;control;6;1;yes
+http://data.europa.eu/sdg/15.8;15.8;15;priority species;eradicate the priority species;6;1;yes
+http://data.europa.eu/sdg/15.9;15.9;15;integrate ecosystem;integrate ecosystem;6;1;yes
+http://data.europa.eu/sdg/15.9;15.9;15;biodiversity values;biodiversity values into national;6;1;yes
+http://data.europa.eu/sdg/15.9;15.9;15;local planning;local planning;6;1;yes
+http://data.europa.eu/sdg/15.9;15.9;15;development processes;development processes;6;1;yes
+http://data.europa.eu/sdg/15.9;15.9;15;poverty reduction strategies;poverty reduction strategies;6;1;yes
+http://data.europa.eu/sdg/15.9;15.9;15;accounts;accounts;6;1;yes
+http://data.europa.eu/sdg/15.a;15.a;15;mobilize;Mobilize;6;1;yes
+http://data.europa.eu/sdg/15.a;15.a;15;sources to conserve;significantly increase financial resources from all sources to conserve;7;1;yes
+http://data.europa.eu/sdg/15.a;15.a;15;sustainably use biodiversity;sustainably use biodiversity;6;1;yes
+http://data.europa.eu/sdg/15.a;15.a;15;ecosystems;ecosystems;6;1;yes
+http://data.europa.eu/sdg/15.b;15.b;15;mobilize significant resources from all sources;Mobilize significant resources from all sources;6;1;yes
+http://data.europa.eu/sdg/15.b;15.b;15;finance sustainable forest management;at all levels to finance sustainable forest management;6;1;yes
+http://data.europa.eu/sdg/15.b;15.b;15;sustainable forest management;at all levels to finance sustainable forest management;7;1;yes
+http://data.europa.eu/sdg/15.b;15.b;15;advance such management;provide adequate incentives to developing countries to advance such management;7;1;yes
+http://data.europa.eu/sdg/15.b;15.b;15;conservation;for conservation;6;3;yes
+http://data.europa.eu/sdg/15.b;15.b;15;reforestation;reforestation;6;1;yes
+http://data.europa.eu/sdg/15.c;15.c;15;support for efforts to combat poaching;Enhance global support for efforts to combat poaching;6;1;yes
+http://data.europa.eu/sdg/15.c;15.c;15;combat poaching;Enhance global support for efforts to combat poaching;7;1;yes
+http://data.europa.eu/sdg/15.c;15.c;15;trafficking of protected species;trafficking of protected species;6;1;yes
+http://data.europa.eu/sdg/15.c;15.c;15;protected species;trafficking of protected species;7;1;yes
+http://data.europa.eu/sdg/15.c;15.c;15;sustainable livelihood opportunities;by increasing the capacity of local communities to pursue sustainable livelihood opportunities;7;1;yes
+http://data.europa.eu/sdg/16.1;16.1;16;forms of violence;Significantly reduce all forms of violence;6;1;yes
+http://data.europa.eu/sdg/16.1;16.1;16;related death rates everywhere;related death rates everywhere;6;1;yes
+http://data.europa.eu/sdg/16.1;16.1;16;death rates everywhere;related death rates everywhere;7;1;yes
+http://data.europa.eu/sdg/16.2;16.2;16;abuse;End abuse;6;1;yes
+http://data.europa.eu/sdg/16.2;16.2;16;exploitation;exploitation;6;1;yes
+http://data.europa.eu/sdg/16.2;16.2;16;trafficking;trafficking;6;2;yes
+http://data.europa.eu/sdg/16.2;16.2;16;forms of violence against;all forms of violence against;6;1;yes
+http://data.europa.eu/sdg/16.2;16.2;16;violence against;all forms of violence against;7;1;yes
+http://data.europa.eu/sdg/16.2;16.2;16;torture of children;torture of children;6;1;yes
+http://data.europa.eu/sdg/16.3;16.3;16;rule of law;Promote the rule of law at the national;6;1;yes
+http://data.europa.eu/sdg/16.3;16.3;16;equal access to justice;ensure equal access to justice for all;6;1;yes
+http://data.europa.eu/sdg/16.3;16.3;16;access to justice;ensure equal access to justice for all;7;1;yes
+http://data.europa.eu/sdg/16.4;16.4;16;illicit financial;significantly reduce illicit financial;6;1;yes
+http://data.europa.eu/sdg/16.4;16.4;16;arms flows;arms flows;6;1;yes
+http://data.europa.eu/sdg/16.4;16.4;16;recovery;strengthen the recovery;6;1;yes
+http://data.europa.eu/sdg/16.4;16.4;16;return of stolen assets;return of stolen assets;6;1;yes
+http://data.europa.eu/sdg/16.4;16.4;16;stolen assets;return of stolen assets;7;1;yes
+http://data.europa.eu/sdg/16.4;16.4;16;combat all forms of organized crime;combat all forms of organized crime;6;1;yes
+http://data.europa.eu/sdg/16.4;16.4;16;organized crime;combat all forms of organized crime;7;1;yes
+http://data.europa.eu/sdg/16.5;16.5;16;corruption;Substantially reduce corruption;6;1;yes
+http://data.europa.eu/sdg/16.5;16.5;16;bribery in all their forms;bribery in all their forms;6;1;yes
+http://data.europa.eu/sdg/16.6;16.6;16;effective;Develop effective;6;2;yes
+http://data.europa.eu/sdg/16.6;16.6;16;accountable;accountable;6;2;yes
+http://data.europa.eu/sdg/16.6;16.6;16;transparent institutions;transparent institutions at all levels;6;1;yes
+http://data.europa.eu/sdg/16.7;16.7;16;responsive;Ensure responsive;6;1;yes
+http://data.europa.eu/sdg/16.7;16.7;16;inclusive;inclusive;6;5;no
+http://data.europa.eu/sdg/16.7;16.7;16;participatory;participatory;6;1;yes
+http://data.europa.eu/sdg/16.7;16.7;16;representative decision-making;representative decision-making at all levels;6;1;yes
+http://data.europa.eu/sdg/16.8;16.8;16;broaden;Broaden;6;1;yes
+http://data.europa.eu/sdg/16.9;16.9;16;legal identity;provide legal identity for all;6;1;yes
+http://data.europa.eu/sdg/16.9;16.9;16;birth registration;birth registration;6;1;yes
+http://data.europa.eu/sdg/16.10;16.10;16;public access to information;Ensure public access to information;6;1;yes
+http://data.europa.eu/sdg/16.10;16.10;16;access to information;Ensure public access to information;7;2;yes
+http://data.europa.eu/sdg/16.10;16.10;16;fundamental freedoms;protect fundamental freedoms;6;1;yes
+http://data.europa.eu/sdg/16.10;16.10;16;accordance with national legislation;in accordance with national legislation;6;1;yes
+http://data.europa.eu/sdg/16.10;16.10;16;agreements;international agreements;6;1;yes
+http://data.europa.eu/sdg/16.a;16.a;16;institutions;Strengthen relevant national institutions;6;2;yes
+http://data.europa.eu/sdg/16.a;16.a;16;cooperation;through international cooperation;6;3;yes
+http://data.europa.eu/sdg/16.a;16.a;16;building capacity;for building capacity at all levels;6;1;yes
+http://data.europa.eu/sdg/16.a;16.a;16;developing countries;in developing countries;6;22;no
+http://data.europa.eu/sdg/16.a;16.a;16;prevent violence;to prevent violence;6;1;yes
+http://data.europa.eu/sdg/16.a;16.a;16;combat terrorism;combat terrorism;6;1;yes
+http://data.europa.eu/sdg/16.a;16.a;16;crime;crime;6;1;yes
+http://data.europa.eu/sdg/16.b;16.b;16;enforce non-discriminatory laws;enforce non-discriminatory laws;6;1;yes
+http://data.europa.eu/sdg/16.b;16.b;16;policies for sustainable development;policies for sustainable development;6;1;yes
+http://data.europa.eu/sdg/17.1;17.1;17;domestic resource mobilization;Strengthen domestic resource mobilization;6;1;yes
+http://data.europa.eu/sdg/17.1;17.1;17;support to developing countries;through international support to developing countries;6;1;yes
+http://data.europa.eu/sdg/17.1;17.1;17;developing countries;through international support to developing countries;7;22;no
+http://data.europa.eu/sdg/17.1;17.1;17;improve domestic capacity for tax;to improve domestic capacity for tax;6;1;yes
+http://data.europa.eu/sdg/17.1;17.1;17;capacity for tax;to improve domestic capacity for tax;7;1;yes
+http://data.europa.eu/sdg/17.1;17.1;17;revenue collection;other revenue collection;6;1;yes
+http://data.europa.eu/sdg/17.2;17.2;17;development assistance commitments;Developed countries to implement fully their official development assistance commitments;7;1;yes
+http://data.europa.eu/sdg/17.2;17.2;17;developing countries;the commitment by many developed countries to achieve the target of 0.7 per cent of gross national income for official development assistance   to developing countries;7;22;no
+http://data.europa.eu/sdg/17.2;17.2;17;developed countries;0.15 to 0.20 per cent of ODA/GNI to least developed countries;7;19;no
+http://data.europa.eu/sdg/17.3;17.3;17;multiple sources;Mobilize additional financial resources for developing countries from multiple sources;7;1;yes
+http://data.europa.eu/sdg/17.4;17.4;17;fostering debt financing;Assist developing countries in attaining long-term debt sustainability through coordinated policies aimed at fostering debt financing;7;1;yes
+http://data.europa.eu/sdg/17.4;17.4;17;debt relief;debt relief;6;1;yes
+http://data.europa.eu/sdg/17.4;17.4;17;debt restructuring;debt restructuring;6;1;yes
+http://data.europa.eu/sdg/17.4;17.4;17;reduce debt distress;address the external debt of highly indebted poor countries to reduce debt distress;7;1;yes
+http://data.europa.eu/sdg/17.5;17.5;17;developed countries;implement investment promotion regimes for least developed countries;7;19;no
+http://data.europa.eu/sdg/17.6;17.6;17;north-south;Enhance North-South;6;2;yes
+http://data.europa.eu/sdg/17.6;17.6;17;south-south;South-South;6;2;yes
+http://data.europa.eu/sdg/17.6;17.6;17;triangular regional;triangular regional;6;1;yes
+http://data.europa.eu/sdg/17.6;17.6;17;cooperation;international cooperation on;6;3;yes
+http://data.europa.eu/sdg/17.6;17.6;17;access to science;access to science;6;1;yes
+http://data.europa.eu/sdg/17.6;17.6;17;knowledge-sharing on mutually agreed terms;enhance knowledge-sharing on mutually agreed terms;6;1;yes
+http://data.europa.eu/sdg/17.6;17.6;17;mutually agreed terms;enhance knowledge-sharing on mutually agreed terms;7;1;yes
+http://data.europa.eu/sdg/17.6;17.6;17;improved coordination among existing mechanisms;through improved coordination among existing mechanisms;6;1;yes
+http://data.europa.eu/sdg/17.6;17.6;17;among existing mechanisms;through improved coordination among existing mechanisms;7;1;yes
+http://data.europa.eu/sdg/17.6;17.6;17;united nations;at the United Nations level;6;1;yes
+http://data.europa.eu/sdg/17.6;17.6;17;technology facilitation mechanism;through a global technology facilitation mechanism;6;1;yes
+http://data.europa.eu/sdg/17.7;17.7;17;transfer;transfer;6;1;yes
+http://data.europa.eu/sdg/17.7;17.7;17;dissemination;dissemination;6;1;yes
+http://data.europa.eu/sdg/17.7;17.7;17;favourable terms;diffusion of environmentally sound technologies to developing countries on favourable terms;7;1;yes
+http://data.europa.eu/sdg/17.7;17.7;17;concessional;on concessional;6;1;yes
+http://data.europa.eu/sdg/17.7;17.7;17;preferential terms;preferential terms;6;1;yes
+http://data.europa.eu/sdg/17.7;17.7;17;mutually agreed;as mutually agreed;6;1;yes
+http://data.europa.eu/sdg/17.8;17.8;17;fully operationalize the technology bank;Fully operationalize the technology bank;6;1;yes
+http://data.europa.eu/sdg/17.8;17.8;17;technology bank;Fully operationalize the technology bank;7;1;yes
+http://data.europa.eu/sdg/17.8;17.8;17;science;science;6;1;yes
+http://data.europa.eu/sdg/17.8;17.8;17;countries by 2017;innovation capacity-building mechanism for least developed countries by 2017;7;1;yes
+http://data.europa.eu/sdg/17.8;17.8;17;use of enabling technology;enhance the use of enabling technology;6;2;yes
+http://data.europa.eu/sdg/17.8;17.8;17;enabling technology;enhance the use of enabling technology;7;2;yes
+http://data.europa.eu/sdg/17.8;17.8;17;information;information;6;4;yes
+http://data.europa.eu/sdg/17.8;17.8;17;communications technology;communications technology;6;4;yes
+http://data.europa.eu/sdg/17.9;17.9;17;support for implementing effective;Enhance international support for implementing effective;6;1;yes
+http://data.europa.eu/sdg/17.9;17.9;17;implementing effective;Enhance international support for implementing effective;7;1;yes
+http://data.europa.eu/sdg/17.9;17.9;17;sustainable development goals;targeted capacity-building in developing countries to support national plans to implement all the Sustainable Development Goals;7;1;yes
+http://data.europa.eu/sdg/17.9;17.9;17;north-south;through North-South;6;2;yes
+http://data.europa.eu/sdg/17.9;17.9;17;south-south;South-South;6;2;yes
+http://data.europa.eu/sdg/17.9;17.9;17;triangular cooperation;triangular cooperation;6;1;yes
+http://data.europa.eu/sdg/17.10;17.10;17;universal;Promote a universal;6;2;yes
+http://data.europa.eu/sdg/17.10;17.10;17;rules-based;rules-based;6;1;yes
+http://data.europa.eu/sdg/17.10;17.10;17;open;open;6;1;yes
+http://data.europa.eu/sdg/17.10;17.10;17;non discriminatory;non‑discriminatory;6;1;yes
+http://data.europa.eu/sdg/17.10;17.10;17;world trade organization;equitable multilateral trading system under the World Trade Organization;7;1;yes
+http://data.europa.eu/sdg/17.10;17.10;17;doha development agenda;through the conclusion of negotiations under its Doha Development Agenda;7;1;yes
+http://data.europa.eu/sdg/17.11;17.11;17;increase the exports of developing countries;Significantly increase the exports of developing countries;6;1;yes
+http://data.europa.eu/sdg/17.11;17.11;17;developing countries;Significantly increase the exports of developing countries;7;22;no
+http://data.europa.eu/sdg/17.11;17.11;17;exports by 2020;with a view to doubling the least developed countries’ share of global exports by 2020;7;1;yes
+http://data.europa.eu/sdg/17.12;17.12;17;realize timely implementation of duty-free;Realize timely implementation of duty-free;6;1;yes
+http://data.europa.eu/sdg/17.12;17.12;17;implementation of duty-free;Realize timely implementation of duty-free;7;1;yes
+http://data.europa.eu/sdg/17.12;17.12;17;developed countries;quota-free market access on a lasting basis for all least developed countries;7;19;no
+http://data.europa.eu/sdg/17.12;17.12;17;consistent with world trade organization decisions;consistent with World Trade Organization decisions;6;1;yes
+http://data.europa.eu/sdg/17.12;17.12;17;trade organization decisions;consistent with World Trade Organization decisions;7;1;yes
+http://data.europa.eu/sdg/17.12;17.12;17;countries are transparent;by ensuring that preferential rules of origin applicable to imports from least developed countries are transparent;7;1;yes
+http://data.europa.eu/sdg/17.12;17.12;17;simple;simple;6;1;yes
+http://data.europa.eu/sdg/17.12;17.12;17;contribute to facilitating market access;contribute to facilitating market access;6;1;yes
+http://data.europa.eu/sdg/17.12;17.12;17;facilitating market access;contribute to facilitating market access;7;1;yes
+http://data.europa.eu/sdg/17.13;17.13;17;macroeconomic stability;Enhance global macroeconomic stability;6;1;yes
+http://data.europa.eu/sdg/17.13;17.13;17;policy coordination;through policy coordination;6;1;yes
+http://data.europa.eu/sdg/17.13;17.13;17;policy coherence;policy coherence;6;1;yes
+http://data.europa.eu/sdg/17.14;17.14;17;policy coherence for sustainable development;Enhance policy coherence for sustainable development;6;1;yes
+http://data.europa.eu/sdg/17.15;17.15;17;respect each country s policy space;Respect each country’s policy space;6;1;yes
+http://data.europa.eu/sdg/17.15;17.15;17;country s policy space;Respect each country’s policy space;7;1;yes
+http://data.europa.eu/sdg/17.15;17.15;17;leadership to establish;leadership to establish;6;1;yes
+http://data.europa.eu/sdg/17.15;17.15;17;policies for poverty eradication;implement policies for poverty eradication;6;1;yes
+http://data.europa.eu/sdg/17.15;17.15;17;poverty eradication;implement policies for poverty eradication;7;1;yes
+http://data.europa.eu/sdg/17.16;17.16;17;partnership for sustainable development;Enhance the Global Partnership for Sustainable Development;6;1;yes
+http://data.europa.eu/sdg/17.16;17.16;17;complemented by multi-stakeholder partnerships that mobilize;complemented by multi-stakeholder partnerships that mobilize;6;1;yes
+http://data.europa.eu/sdg/17.16;17.16;17;partnerships that mobilize;complemented by multi-stakeholder partnerships that mobilize;7;1;yes
+http://data.europa.eu/sdg/17.16;17.16;17;knowledge;share knowledge;6;2;yes
+http://data.europa.eu/sdg/17.16;17.16;17;expertise;expertise;6;1;yes
+http://data.europa.eu/sdg/17.16;17.16;17;financial resources;financial resources;6;1;yes
+http://data.europa.eu/sdg/17.16;17.16;17;developing countries;developing countries;6;22;no
+http://data.europa.eu/sdg/17.17;17.17;17;encourage;Encourage;6;1;yes
+http://data.europa.eu/sdg/17.17;17.17;17;effective public;promote effective public;6;1;yes
+http://data.europa.eu/sdg/17.17;17.17;17;public-private;public-private;6;1;yes
+http://data.europa.eu/sdg/17.17;17.17;17;civil society partnerships;civil society partnerships;6;1;yes
+http://data.europa.eu/sdg/17.17;17.17;17;building on the experience;building on the experience;6;1;yes
+http://data.europa.eu/sdg/17.17;17.17;17;resourcing strategies of partnerships;resourcing strategies of partnerships;6;1;yes
+http://data.europa.eu/sdg/17.17;17.17;17;strategies of partnerships;resourcing strategies of partnerships;7;1;yes
+http://data.europa.eu/sdg/17.18;17.18;17;capacity-building support to developing countries;enhance capacity-building support to developing countries;6;1;yes
+http://data.europa.eu/sdg/17.18;17.18;17;developing countries;enhance capacity-building support to developing countries;7;22;no
+http://data.europa.eu/sdg/17.18;17.18;17;developed countries;for least developed countries;6;19;no
+http://data.europa.eu/sdg/17.18;17.18;17;small island developing states;small island developing States;6;9;no
+http://data.europa.eu/sdg/17.18;17.18;17;island developing states;small island developing States;7;10;no
+http://data.europa.eu/sdg/17.18;17.18;17;increase significantly the availability of high-quality;to increase significantly the availability of high-quality;6;1;yes
+http://data.europa.eu/sdg/17.18;17.18;17;availability of high-quality;to increase significantly the availability of high-quality;7;1;yes
+http://data.europa.eu/sdg/17.18;17.18;17;timely;timely;6;1;yes
+http://data.europa.eu/sdg/17.18;17.18;17;reliable data disaggregated by income;reliable data disaggregated by income;6;1;yes
+http://data.europa.eu/sdg/17.18;17.18;17;disaggregated by income;reliable data disaggregated by income;7;1;yes
+http://data.europa.eu/sdg/17.18;17.18;17;gender;gender;6;1;yes
+http://data.europa.eu/sdg/17.18;17.18;17;age;age;6;1;yes
+http://data.europa.eu/sdg/17.18;17.18;17;race;race;6;2;yes
+http://data.europa.eu/sdg/17.18;17.18;17;ethnicity;ethnicity;6;2;yes
+http://data.europa.eu/sdg/17.18;17.18;17;migratory status;migratory status;6;1;yes
+http://data.europa.eu/sdg/17.18;17.18;17;disability;disability;6;3;yes
+http://data.europa.eu/sdg/17.18;17.18;17;geographic location;geographic location;6;1;yes
+http://data.europa.eu/sdg/17.18;17.18;17;characteristics relevant in national contexts;other characteristics relevant in national contexts;6;1;yes
+http://data.europa.eu/sdg/17.19;17.19;17;gross domestic product;build on existing initiatives to develop measurements of progress on sustainable development that complement gross domestic product;7;2;yes
+http://data.europa.eu/sdg/17.19;17.19;17;statistical capacity-building in developing countries;support statistical capacity-building in developing countries;6;1;yes
+http://data.europa.eu/sdg/17.19;17.19;17;developing countries;support statistical capacity-building in developing countries;7;22;no

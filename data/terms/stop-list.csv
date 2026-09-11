@@ -1,0 +1,66 @@
+term;class;why_it_is_here;counts_only_when
+sustainable;theme;The single most common word in both the SDG labels and EU research prose. On its own it is a register, not evidence.;Part of a longer committed term: "sustainable management", "sustainable agriculture", "sustainable consumption", "sustainable tourism", "sustainable cities", "sustainable industrialization", "sustainable forest management", "sustainable fisheries", "sustainable transport", "sustainable energy".
+sustainability;theme;Same as "sustainable" and used interchangeably in project prose.;Part of a longer committed term, as for "sustainable".
+development;theme;Appears in the name of the framework itself and in almost any research proposal.;Part of "sustainable development", "development assistance", "least developed countries", "developing countries", "research and development" is EXCLUDED as evidence.
+water;theme;Names goal 6 but is also a reagent, a coolant and a solvent in unrelated research.;Part of a longer committed term: "water quality", "water scarcity", "drinking water", "water use efficiency", "water resources", "wastewater", "water supply", "water stress", "water-related ecosystems", "water harvesting".
+energy;theme;Names goal 7 but is also a physical quantity in most of physics and chemistry.;Part of a longer committed term: "renewable energy", "energy efficiency", "clean energy", "energy access", "energy mix", "energy services", "energy infrastructure", "energy storage" only where paired with a renewable or grid term.
+health;theme;Names goal 3 but also qualifies soil, ecosystems, finances and equipment.;Part of a longer committed term naming human health: "public health", "health services", "health coverage", "health workforce", "mental health", "reproductive health", "health risks", "health systems". Excluded where the head noun is not a person or a population.
+growth;theme;Names part of goal 8 but is also cell growth, crystal growth and film growth.;Part of "economic growth", "GDP growth", "inclusive growth", "productivity growth". Excluded in any biological or materials sense.
+quality;generic;Qualifies almost any noun in research prose.;Part of a longer committed term: "water quality", "air quality", "quality education", "quality of care".
+management;generic;Appears in most project work-package language.;Part of a longer committed term naming what is managed: "water management", "waste management", "forest management", "disaster risk management", "chemicals management".
+resilience;theme;Widely used in EU research prose for systems of every kind.;Part of a longer committed term or paired with a hazard, a climate term, or a population: "climate resilience", "resilience of the poor", "disaster resilience", "resilient infrastructure".
+innovation;generic;Names part of goal 9 but is a required word in Horizon Europe proposals.;Part of "scientific research and innovation capacity", "technological innovation" where the target text also names industry or infrastructure.
+research;generic;Every project in the corpus is research. Carries no discriminating information.;Never counts alone. Counts only inside "research and development expenditure" and "research capacity" for target 9.5.
+technology;generic;Present in most engineering and ICT project text.;Part of a longer committed term: "environmentally sound technologies", "information and communications technology", "enabling technology" only where the target text names technology transfer or capacity.
+capacity;generic;Used for both institutional capacity and physical capacity.;Part of a longer committed term: "capacity-building", "adaptive capacity", "productive capacity", "institutional capacity".
+system;generic;Structural word in nearly all technical prose.;Only inside a committed multi-word term: "food systems", "health systems", "early warning systems", "social protection systems".
+systems;generic;As "system".;As "system".
+global;structural;Step 5 of the key-term rule strips it, and it survives only inside fixed phrases.;Part of "global partnership", "global citizenship", "global financial markets", "global energy mix".
+national;structural;A scoping word in the target labels, not a subject.;Part of "national policies", "national planning", "nationally determined contributions".
+international;structural;As "national".;Part of "international cooperation", "international trade", "international law", "international support".
+policy;generic;Common in impact sections of proposals regardless of subject.;Part of a longer committed term naming the policy area.
+strategy;generic;As "policy".;Part of a longer committed term naming what the strategy is for.
+framework;generic;Appears in both the SDG labels and in nearly all proposal boilerplate.;Part of a named instrument in the target text, such as "10-Year Framework of Programmes".
+approach;generic;Proposal register.;Never counts as evidence on its own.
+impact;generic;Required section heading in Horizon Europe proposals.;Never counts as evidence on its own.
+level;structural;Stripped by step 5; listed so its removal is visible.;Never counts as evidence on its own.
+levels;structural;As "level".;Never counts as evidence on its own.
+number;structural;Stripped by step 5.;Never counts as evidence on its own.
+proportion;structural;Stripped by step 5.;Never counts as evidence on its own.
+share;structural;Stripped by step 5, but note "energy mix share" is carried by the longer term.;Part of "share of renewable energy".
+substantially;structural;Degree word in the target labels.;Never counts as evidence on its own.
+significantly;structural;As "substantially".;Never counts as evidence on its own.
+progressively;structural;As "substantially".;Never counts as evidence on its own.
+particularly;structural;As "substantially".;Never counts as evidence on its own.
+especially;structural;As "substantially".;Never counts as evidence on its own.
+appropriate;structural;As "substantially".;Never counts as evidence on its own.
+relevant;structural;As "substantially".;Never counts as evidence on its own.
+all;structural;Universal quantifier in the target labels.;Never counts as evidence on its own.
+countries;structural;Scoping word; the discriminating forms are the qualified ones.;Part of "developing countries", "least developed countries", "landlocked developing countries", "small island developing States", "developed countries".
+people;structural;Scoping word.;Part of "people living in poverty", "people in vulnerable situations", "older persons" and similar qualified forms.
+access;generic;Appears in the labels of many goals and in most infrastructure prose.;Part of a longer committed term naming what is accessed: "access to energy", "access to water", "access to finance", "access to justice", "access to markets", "access to information".
+support;generic;Proposal register and a commitment verb.;Part of a longer committed term: "international support", "support to developing countries".
+services;generic;Used for both public services and software services.;Part of a longer committed term: "financial services", "health services", "energy services", "ecosystem services", "sanitation services".
+efficiency;generic;A goal of almost all engineering work.;Part of "resource efficiency", "energy efficiency", "water use efficiency".
+resources;generic;Used for natural, human and computational resources alike.;Part of "natural resources", "water resources", "marine resources", "genetic resources", "domestic resources".
+production;generic;Present in most manufacturing and biology text.;Part of "sustainable production", "agricultural production", "food production", "production capacity".
+use;structural;Too common to carry meaning.;Part of "water use efficiency", "land use", "resource use", "sustainable use".
+new;structural;Proposal register.;Never counts as evidence on its own.
+increase;verb;Commitment verb stripped by step 4.;Never counts as evidence on its own.
+reduce;verb;Commitment verb stripped by step 4.;Never counts as evidence on its own.
+improve;verb;Commitment verb stripped by step 4.;Never counts as evidence on its own.
+ensure;verb;Commitment verb stripped by step 4.;Never counts as evidence on its own.
+promote;verb;Commitment verb stripped by step 4.;Never counts as evidence on its own.
+strengthen;verb;Commitment verb stripped by step 4.;Never counts as evidence on its own.
+enhance;verb;Commitment verb stripped by step 4.;Never counts as evidence on its own.
+achieve;verb;Commitment verb stripped by step 4.;Never counts as evidence on its own.
+develop;verb;Commitment verb stripped by step 4, and ambiguous with "developing countries".;Never counts as evidence on its own.
+provide;verb;Commitment verb stripped by step 4.;Never counts as evidence on its own.
+build;verb;Commitment verb stripped by step 4.;Never counts as evidence on its own.
+implement;verb;Commitment verb stripped by step 4.;Never counts as evidence on its own.
+adopt;verb;Commitment verb stripped by step 4.;Never counts as evidence on its own.
+expand;verb;Commitment verb stripped by step 4.;Never counts as evidence on its own.
+eliminate;verb;Commitment verb stripped by step 4.;Never counts as evidence on its own.
+end;verb;Commitment verb stripped by step 4.;Never counts as evidence on its own.
+protect;verb;Commitment verb stripped by step 4.;Never counts as evidence on its own.
+maintain;verb;Commitment verb stripped by step 4.;Never counts as evidence on its own.

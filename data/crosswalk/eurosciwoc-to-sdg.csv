@@ -1,0 +1,236 @@
+eurosciwoc_path;target_id;strength;justification
+agricultural sciences/agriculture, forestry, and fisheries/agriculture;2.4;direct;Target 2.4 asks for "sustainable food production systems" and "resilient agricultural practices"; agriculture is the activity it names.
+agricultural sciences/agriculture, forestry, and fisheries/agriculture/sustainable agriculture;2.4;direct;Target 2.4's subject verbatim: sustainable food production and resilient agricultural practices.
+agricultural sciences/agriculture, forestry, and fisheries/agriculture/agroecology;2.4;direct;Agroecology is the research field for the "resilient agricultural practices that help maintain ecosystems" target 2.4 names.
+agricultural sciences/agriculture, forestry, and fisheries/agriculture/agroecology;15.3;contributing;Target 15.3 asks to "restore degraded land and soil"; agroecological practice is a named route to it.
+agricultural sciences/agriculture, forestry, and fisheries/agriculture/agronomy;2.3;contributing;Target 2.3 asks to "double the agricultural productivity"; agronomy is the science of crop productivity.
+agricultural sciences/agriculture, forestry, and fisheries/agriculture/agronomy/plant breeding;2.3;direct;Target 2.3's agricultural productivity, and 2.5's "genetic diversity of seeds, cultivated plants" is the material breeding works on.
+agricultural sciences/agriculture, forestry, and fisheries/agriculture/agronomy/plant breeding;2.5;contributing;Target 2.5 names the genetic diversity of cultivated plants, which breeding both uses and narrows.
+agricultural sciences/agriculture, forestry, and fisheries/agriculture/agronomy/plant protection;2.4;contributing;Target 2.4's resilient agricultural practices include protecting yield against pests and disease.
+agricultural sciences/agriculture, forestry, and fisheries/agriculture/grains and oilseeds;2.3;contributing;Target 2.3's agricultural productivity, applied to the staple crops the category names.
+agricultural sciences/agriculture, forestry, and fisheries/agriculture/grains and oilseeds/cereals;2.1;contributing;Target 2.1 asks to end hunger and ensure "access by all people to safe, nutritious and sufficient food"; cereals are the staple.
+agricultural sciences/agriculture, forestry, and fisheries/agriculture/grains and oilseeds/legumes;2.1;contributing;As cereals, for target 2.1's sufficient and nutritious food.
+agricultural sciences/agriculture, forestry, and fisheries/agriculture/horticulture;2.1;contributing;Target 2.1's nutritious food; horticulture is the fruit and vegetable supply.
+agricultural sciences/agriculture, forestry, and fisheries/agriculture/horticulture/urban horticulture;11.3;contributing;Target 11.3's inclusive and sustainable urbanization includes food production inside settlements.
+agricultural sciences/agriculture, forestry, and fisheries/fisheries;14.4;direct;Target 14.4 asks to "regulate harvesting and end overfishing" and restore fish stocks; fisheries science is that subject.
+agricultural sciences/agriculture, forestry, and fisheries/fisheries;14.7;contributing;Target 14.7 names the economic benefits of "sustainable use of marine resources", including fisheries.
+agricultural sciences/agriculture, forestry, and fisheries/forestry;15.2;direct;Target 15.2 asks for "sustainable management of all types of forests"; forestry is that activity.
+agricultural sciences/agriculture, forestry, and fisheries/forestry/silviculture;15.2;direct;Silviculture is the practice of the forest management target 15.2 names, including reforestation.
+agricultural sciences/agriculture, forestry, and fisheries/forestry;15.1;contributing;Target 15.1 names the conservation and sustainable use of terrestrial ecosystems, forests among them.
+agricultural sciences/animal and dairy science/apiculture;15.5;contributing;Target 15.5 addresses biodiversity loss; pollinator husbandry bears directly on it.
+agricultural sciences/animal and dairy science/dairy;2.3;contributing;Target 2.3's agricultural productivity and incomes of small-scale food producers.
+agricultural sciences/animal and dairy science/domestic animals;2.5;contributing;Target 2.5 names "farmed and domesticated animals" and their genetic diversity.
+agricultural sciences/veterinary sciences;3.3;contributing;Target 3.3 combats communicable disease; veterinary science covers the zoonotic reservoir.
+agricultural sciences/veterinary sciences;2.3;contributing;Target 2.3's livestock productivity for small-scale producers.
+agricultural sciences/agricultural biotechnology/agricultural genetics;2.5;direct;Target 2.5's subject is the genetic diversity of seeds, cultivated plants and farmed animals.
+agricultural sciences/agricultural biotechnology/biomass;7.2;contributing;Target 7.2's "share of renewable energy in the global energy mix"; biomass is a renewable source.
+agricultural sciences/agricultural biotechnology/marker assisted selection;2.3;contributing;A breeding method for the agricultural productivity target 2.3 names.
+engineering and technology/environmental engineering/energy and fuels;7.3;contributing;Target 7.3 asks to "double the global rate of improvement in energy efficiency"; the category is the field where that happens.
+engineering and technology/environmental engineering/energy and fuels/renewable energy;7.2;direct;Target 7.2's subject verbatim: increase substantially the share of renewable energy.
+engineering and technology/environmental engineering/energy and fuels/renewable energy/solar energy;7.2;direct;Solar is a renewable source under target 7.2's energy mix.
+engineering and technology/environmental engineering/energy and fuels/renewable energy/solar energy/photovoltaic;7.2;direct;As solar energy, for target 7.2.
+engineering and technology/environmental engineering/energy and fuels/renewable energy/solar energy/concentrated solar power;7.2;direct;As solar energy, for target 7.2.
+engineering and technology/environmental engineering/energy and fuels/renewable energy/solar energy/solar thermal;7.2;direct;As solar energy, for target 7.2.
+engineering and technology/environmental engineering/energy and fuels/renewable energy/wind energy;7.2;direct;Wind is a renewable source under target 7.2's energy mix.
+engineering and technology/environmental engineering/energy and fuels/renewable energy/geothermal energy;7.2;direct;Geothermal is a renewable source under target 7.2's energy mix.
+engineering and technology/environmental engineering/energy and fuels/renewable energy/hydroelectricity;7.2;direct;Hydropower is a renewable source under target 7.2's energy mix.
+engineering and technology/environmental engineering/energy and fuels/renewable energy/hydroelectricity/marine energy;7.2;direct;Marine renewables under target 7.2's energy mix.
+engineering and technology/environmental engineering/energy and fuels/renewable energy/hydroelectricity/marine energy/tidal energy;7.2;direct;As marine energy, for target 7.2.
+engineering and technology/environmental engineering/energy and fuels/renewable energy/hydroelectricity/marine energy/wave power;7.2;direct;As marine energy, for target 7.2.
+engineering and technology/environmental engineering/energy and fuels/renewable energy/hydrogen energy;7.2;contributing;Hydrogen counts for target 7.2 only where it is produced from renewables, which the evidence must show.
+engineering and technology/environmental engineering/energy and fuels/renewable energy/hybrid energy;7.2;direct;Hybrid renewable systems under target 7.2's energy mix.
+engineering and technology/environmental engineering/energy and fuels/biomass energy;7.2;direct;Bioenergy is a renewable source under target 7.2's energy mix.
+engineering and technology/environmental engineering/energy and fuels/fuel cells;7.3;contributing;Target 7.3's energy efficiency, through higher conversion efficiency.
+engineering and technology/environmental engineering/energy and fuels/energy conversion;7.3;contributing;Target 7.3's rate of improvement in energy efficiency.
+engineering and technology/environmental engineering/energy and fuels/nuclear energy;7.1;contributing;Target 7.1's "affordable, reliable and modern energy services"; nuclear is not renewable under 7.2 and is deliberately not mapped there.
+engineering and technology/environmental engineering/energy and fuels/fossil energy;7.a;contributing;Target 7.a names "advanced and cleaner fossil-fuel technology" as within clean energy research.
+engineering and technology/environmental engineering/energy and fuels/synthetic fuels;7.a;contributing;Target 7.a's cleaner fuel technology research.
+engineering and technology/environmental engineering/carbon capture engineering;13.2;direct;Target 13.2 integrates climate change measures into policy; carbon capture is a mitigation technology.
+engineering and technology/environmental engineering/carbon capture engineering;7.a;contributing;Target 7.a names advanced and cleaner fossil-fuel technology.
+engineering and technology/environmental engineering/air pollution engineering;3.9;direct;Target 3.9 asks to reduce deaths and illnesses from "air, water and soil pollution and contamination".
+engineering and technology/environmental engineering/air pollution engineering;11.6;direct;Target 11.6 names "air quality" as part of reducing the environmental impact of cities.
+engineering and technology/environmental engineering/water treatment processes;6.3;direct;Target 6.3 asks to improve water quality by "halving the proportion of untreated wastewater".
+engineering and technology/environmental engineering/water treatment processes/wastewater treatment processes;6.3;direct;Target 6.3's untreated wastewater, verbatim.
+engineering and technology/environmental engineering/water treatment processes/drinking water treatment processes;6.1;direct;Target 6.1 asks for universal access to "safe and affordable drinking water".
+engineering and technology/environmental engineering/waste management;12.5;direct;Target 12.5 asks to "substantially reduce waste generation through prevention, reduction, recycling and reuse".
+engineering and technology/environmental engineering/waste management;11.6;contributing;Target 11.6 names municipal waste management in reducing cities' environmental impact.
+engineering and technology/environmental engineering/waste management/waste treatment processes;12.5;direct;Target 12.5's waste treatment, prevention and reduction.
+engineering and technology/environmental engineering/waste management/waste treatment processes/recycling;12.5;direct;Recycling is named in target 12.5.
+engineering and technology/environmental engineering/waste management/waste treatment processes/remanufacturing;12.5;direct;Reuse is named in target 12.5; remanufacturing is its industrial form.
+engineering and technology/environmental engineering/waste management/waste treatment processes/recycling;6.3;contributing;Target 6.3 names "increasing recycling and safe reuse" of water specifically; only water recycling counts.
+engineering and technology/environmental engineering/natural resources management;12.2;direct;Target 12.2 asks for "sustainable management and efficient use of natural resources".
+engineering and technology/environmental engineering/ecosystem-based management;15.1;direct;Target 15.1 names conservation and sustainable use of terrestrial and inland freshwater ecosystems.
+engineering and technology/environmental engineering/ecosystem-based management;14.2;contributing;Target 14.2 asks to "sustainably manage and protect marine and coastal ecosystems".
+engineering and technology/environmental engineering/mining and mineral processing;12.2;contributing;Target 12.2's sustainable management and efficient use of natural resources.
+engineering and technology/environmental engineering/remote sensing;15.3;contributing;Target 15.3's land degradation is measured by remote sensing; evidence must name the application.
+engineering and technology/environmental engineering/remote sensing;13.1;contributing;Target 13.1's climate-related hazards; earth observation underpins early warning.
+engineering and technology/environmental biotechnology/bioremediation;3.9;contributing;Target 3.9's soil and water contamination; bioremediation removes it.
+engineering and technology/environmental biotechnology/bioremediation;15.3;contributing;Target 15.3's restoration of degraded land and soil.
+engineering and technology/environmental biotechnology/biosensing;6.3;contributing;Target 6.3's water quality monitoring; evidence must name the environmental application.
+engineering and technology/civil engineering/water engineering;6.4;contributing;Target 6.4 asks to "substantially increase water-use efficiency" and address water scarcity.
+engineering and technology/civil engineering/water engineering/water supply systems;6.1;direct;Target 6.1's universal and equitable access to safe and affordable drinking water.
+engineering and technology/civil engineering/water engineering/irrigation;6.4;direct;Target 6.4's water-use efficiency; irrigation is the largest withdrawal.
+engineering and technology/civil engineering/water engineering/irrigation;2.4;contributing;Target 2.4's resilient agricultural practices.
+engineering and technology/civil engineering/water engineering/coastal and estuarine hydraulics;14.2;contributing;Target 14.2's management and protection of coastal ecosystems.
+engineering and technology/civil engineering/water engineering/coastal and estuarine hydraulics;11.5;contributing;Target 11.5's reduction of deaths and losses from disasters, including coastal flooding.
+engineering and technology/civil engineering/water engineering/ocean engineering;14.a;contributing;Target 14.a asks to increase scientific knowledge and develop marine technology.
+engineering and technology/civil engineering/transportation engineering;11.2;direct;Target 11.2 asks for access to "safe, affordable, accessible and sustainable transport systems".
+engineering and technology/civil engineering/transportation engineering;9.1;direct;Target 9.1 names "quality, reliable, sustainable and resilient infrastructure", transport included.
+engineering and technology/civil engineering/transportation engineering/railroad engineering;11.2;direct;Rail is public transport under target 11.2.
+engineering and technology/civil engineering/transportation engineering/highway engineering;9.1;contributing;Target 9.1's transport infrastructure.
+engineering and technology/civil engineering/transportation engineering/highway engineering;3.6;contributing;Target 3.6 halves deaths and injuries from road traffic accidents; road design bears on it.
+engineering and technology/civil engineering/transportation engineering/port and harbor engineering;9.1;contributing;Target 9.1's transport infrastructure.
+engineering and technology/civil engineering/transportation engineering/airport engineering;9.1;contributing;Target 9.1's transport infrastructure.
+engineering and technology/civil engineering/urban engineering;11.3;direct;Target 11.3's inclusive and sustainable urbanization and settlement planning.
+engineering and technology/civil engineering/urban engineering/smart cities;11.3;direct;Target 11.3's sustainable urbanization capacity.
+engineering and technology/civil engineering/urban engineering/smart cities;11.6;contributing;Target 11.6's reduction of the environmental impact of cities.
+engineering and technology/civil engineering/construction engineering;11.1;contributing;Target 11.1's access to adequate, safe and affordable housing.
+engineering and technology/civil engineering/construction engineering;9.1;contributing;Target 9.1's quality, reliable and resilient infrastructure.
+engineering and technology/civil engineering/structural engineering;9.1;contributing;Target 9.1's resilient infrastructure.
+engineering and technology/civil engineering/structural engineering;11.5;contributing;Target 11.5's reduction of disaster deaths and economic losses, through structural resilience.
+engineering and technology/civil engineering/architecture engineering;11.1;contributing;Target 11.1's adequate and affordable housing.
+engineering and technology/civil engineering/architecture engineering;7.3;contributing;Target 7.3's energy efficiency; building design is the principal EU route.
+engineering and technology/industrial biotechnology/bioprocessing technologies;9.4;contributing;Target 9.4 asks to retrofit industries with "clean and environmentally sound technologies".
+engineering and technology/industrial biotechnology/biomaterials;12.5;contributing;Target 12.5's waste reduction, where biomaterials displace non-recoverable ones.
+engineering and technology/industrial biotechnology/metabolic engineering;9.4;contributing;Target 9.4's cleaner industrial processes.
+engineering and technology/chemical engineering/chemical process engineering;9.4;contributing;Target 9.4's resource-use efficiency and clean technologies in industry.
+engineering and technology/chemical engineering/chemical process engineering;12.4;contributing;Target 12.4's environmentally sound management of chemicals throughout their life cycle.
+engineering and technology/chemical engineering/separation technologies;12.5;contributing;Target 12.5's recycling, which depends on separation.
+engineering and technology/chemical engineering/biochemical engineering;9.4;contributing;Target 9.4's clean and environmentally sound industrial technologies.
+engineering and technology/mechanical engineering/manufacturing engineering;9.4;direct;Target 9.4's "retrofit industries to make them sustainable, with increased resource-use efficiency".
+engineering and technology/mechanical engineering/manufacturing engineering;9.2;contributing;Target 9.2's inclusive and sustainable industrialization.
+engineering and technology/mechanical engineering/vehicle engineering;11.2;contributing;Target 11.2's sustainable transport systems.
+engineering and technology/mechanical engineering/thermodynamic engineering;7.3;contributing;Target 7.3's energy efficiency.
+engineering and technology/other engineering and technologies/food technology;2.1;contributing;Target 2.1's safe, nutritious and sufficient food.
+engineering and technology/other engineering and technologies/food technology;12.3;contributing;Target 12.3 asks to halve food waste and reduce "food losses along production and supply chains".
+engineering and technology/other engineering and technologies/nuclear engineering/nuclear waste management;12.4;contributing;Target 12.4's environmentally sound management of wastes and their release.
+engineering and technology/medical engineering/diagnostic imaging;3.8;contributing;Target 3.8's access to quality essential health-care services.
+engineering and technology/medical engineering/medical laboratory technology;3.8;contributing;Target 3.8's quality essential health-care services.
+engineering and technology/medical engineering/wearable medical technology;3.4;contributing;Target 3.4's prevention and treatment of non-communicable diseases.
+natural sciences/earth and related environmental sciences/atmospheric sciences/climatology/climatic changes;13.1;direct;Target 13.1's resilience and adaptive capacity to climate-related hazards rests on this science.
+natural sciences/earth and related environmental sciences/atmospheric sciences/climatology/climatic changes;13.3;contributing;Target 13.3 asks to improve education and capacity on climate change.
+natural sciences/earth and related environmental sciences/atmospheric sciences/climatology;13.1;contributing;Target 13.1's climate-related hazards.
+natural sciences/earth and related environmental sciences/atmospheric sciences/meteorology;13.1;contributing;Target 13.1's early warning for climate-related hazards.
+natural sciences/earth and related environmental sciences/environmental sciences/pollution;3.9;direct;Target 3.9's deaths and illnesses from air, water and soil pollution and contamination.
+natural sciences/earth and related environmental sciences/environmental sciences/pollution;12.4;contributing;Target 12.4's significant reduction of chemical releases to air, water and soil.
+natural sciences/earth and related environmental sciences/environmental sciences/ozone depletion;12.4;contributing;Target 12.4's environmentally sound management of chemicals and their release.
+natural sciences/earth and related environmental sciences/environmental sciences/sustainability sciences;12.1;contributing;Target 12.1's sustainable consumption and production patterns.
+natural sciences/earth and related environmental sciences/hydrology;6.4;contributing;Target 6.4's water scarcity and sustainable withdrawals.
+natural sciences/earth and related environmental sciences/hydrology/hydrogeology;6.6;contributing;Target 6.6 names aquifers among water-related ecosystems to protect and restore.
+natural sciences/earth and related environmental sciences/hydrology/drainage basins;6.5;contributing;Target 6.5's integrated water resources management at all levels.
+natural sciences/earth and related environmental sciences/hydrology/ecohydrology;6.6;contributing;Target 6.6's water-related ecosystems, including wetlands and rivers.
+natural sciences/earth and related environmental sciences/hydrology/limnology;6.6;contributing;Target 6.6's lakes and water-related ecosystems.
+natural sciences/earth and related environmental sciences/oceanography;14.a;contributing;Target 14.a's increase in scientific knowledge and research capacity on ocean health.
+natural sciences/earth and related environmental sciences/oceanography/ocean chemistry;14.3;direct;Target 14.3 asks to minimize and address the impacts of ocean acidification.
+natural sciences/earth and related environmental sciences/oceanography/physical oceanography;14.a;contributing;Target 14.a's marine scientific research.
+natural sciences/earth and related environmental sciences/soil sciences;15.3;direct;Target 15.3's combat of desertification and restoration of degraded land and soil.
+natural sciences/earth and related environmental sciences/soil sciences/soil management;15.3;direct;Target 15.3's restoration of degraded soil.
+natural sciences/earth and related environmental sciences/soil sciences/soil management;2.4;contributing;Target 2.4's progressive improvement of land and soil quality.
+natural sciences/earth and related environmental sciences/soil sciences/land-based treatment;3.9;contributing;Target 3.9's soil contamination.
+natural sciences/earth and related environmental sciences/physical geography/natural disasters;11.5;direct;Target 11.5's reduction of deaths and economic losses caused by disasters.
+natural sciences/earth and related environmental sciences/physical geography/natural disasters;13.1;direct;Target 13.1 names natural disasters alongside climate-related hazards.
+natural sciences/earth and related environmental sciences/physical geography/natural disasters;1.5;contributing;Target 1.5's exposure and vulnerability of the poor to climate-related extreme events and disasters.
+natural sciences/earth and related environmental sciences/physical geography/glaciology;13.1;contributing;Target 13.1's climate-related hazards; cryosphere change is one measure of them.
+natural sciences/earth and related environmental sciences/physical geography/coastal geography;14.2;contributing;Target 14.2's coastal ecosystems.
+natural sciences/earth and related environmental sciences/geology/seismology;11.5;contributing;Target 11.5's disaster deaths and losses; seismic hazard is a principal cause.
+natural sciences/earth and related environmental sciences/geology/volcanology;11.5;contributing;Target 11.5's disaster deaths and losses.
+natural sciences/earth and related environmental sciences/palaeontology/paleoclimatology;13.3;contributing;Target 13.3's climate knowledge and capacity; palaeoclimate is its evidential base.
+natural sciences/biological sciences/biodiversity conservation;15.5;direct;Target 15.5 asks to "halt the loss of biodiversity" and protect threatened species.
+natural sciences/biological sciences/biodiversity conservation;14.5;contributing;Target 14.5's conservation of coastal and marine areas.
+natural sciences/biological sciences/biodiversity conservation;15.1;contributing;Target 15.1's conservation of terrestrial and inland freshwater ecosystems.
+natural sciences/biological sciences/ecology;15.1;contributing;Target 15.1's conservation, restoration and sustainable use of ecosystems.
+natural sciences/biological sciences/marine biology;14.2;contributing;Target 14.2's protection of marine and coastal ecosystems.
+natural sciences/biological sciences/marine biology;14.a;contributing;Target 14.a's marine scientific research.
+natural sciences/biological sciences/microbiology;3.3;contributing;Target 3.3's communicable diseases; evidence must name the pathogen or the disease.
+natural sciences/biological sciences/synthetic biology;3.b;contributing;Target 3.b's research and development of vaccines and medicines; evidence must name the health application.
+natural sciences/biological sciences/reproductive biology;3.7;contributing;Target 3.7's sexual and reproductive health-care services.
+natural sciences/biological sciences/zoology;15.5;contributing;Target 15.5's threatened species and biodiversity loss.
+natural sciences/biological sciences/botany;15.5;contributing;Target 15.5's biodiversity loss, in plants.
+natural sciences/computer and information sciences/artificial intelligence;9.5;contributing;Target 9.5's enhancement of scientific research and technological capabilities.
+natural sciences/computer and information sciences/data science;17.18;contributing;Target 17.18's increase in the availability of high-quality, disaggregated data.
+natural sciences/computer and information sciences/internet;9.c;direct;Target 9.c asks to "significantly increase access to information and communications technology" and provide universal internet access.
+natural sciences/computer and information sciences/computer security;16.4;contributing;Target 16.4's reduction of illicit financial flows and organized crime, where the evidence names cybercrime.
+medical and health sciences/health sciences/public health;3.8;contributing;Target 3.8's universal health coverage and access to quality essential health-care services.
+medical and health sciences/health sciences/public health/epidemiology;3.3;contributing;Target 3.3's end of epidemics and combat of communicable diseases.
+medical and health sciences/health sciences/public health/epidemiology/epidemics prevention;3.3;direct;Target 3.3's end of the epidemics it names.
+medical and health sciences/health sciences/public health/epidemiology/epidemics prevention;3.d;direct;Target 3.d's capacity for early warning, risk reduction and management of health risks.
+medical and health sciences/health sciences/public health/epidemiology/pandemics;3.d;direct;Target 3.d's early warning and management of national and global health risks.
+medical and health sciences/health sciences/public health/epidemiology/zoonosis;3.3;contributing;Target 3.3's communicable diseases, at the animal-human interface.
+medical and health sciences/health sciences/public health/epidemiology/exposomes;3.9;contributing;Target 3.9's illnesses from hazardous chemicals and pollution.
+medical and health sciences/health sciences/public health/epidemiology/modeling of diseases spread;3.3;contributing;Target 3.3's communicable disease control.
+medical and health sciences/health sciences/public health/occupational health;8.8;direct;Target 8.8 asks to "promote safe and secure working environments for all workers".
+medical and health sciences/health sciences/infectious diseases;3.3;direct;Target 3.3's communicable diseases, verbatim.
+medical and health sciences/health sciences/tropical medicine;3.3;direct;Target 3.3 names neglected tropical diseases and malaria.
+medical and health sciences/health sciences/parasitology;3.3;contributing;Target 3.3's malaria and neglected tropical diseases.
+medical and health sciences/health sciences/nutrition;2.2;direct;Target 2.2 asks to "end all forms of malnutrition".
+medical and health sciences/health sciences/dietetics;2.2;contributing;Target 2.2's nutritional outcomes.
+medical and health sciences/health sciences/dietetics;3.4;contributing;Target 3.4's prevention of non-communicable diseases, of which diet is a principal determinant.
+medical and health sciences/health sciences/health care services;3.8;direct;Target 3.8's access to quality essential health-care services.
+medical and health sciences/health sciences/health care sciences;3.8;contributing;Target 3.8's universal health coverage.
+medical and health sciences/health sciences/nursing;3.c;contributing;Target 3.c's increase in health financing and the health workforce.
+medical and health sciences/health sciences/substance abuse;3.5;direct;Target 3.5's prevention and treatment of substance abuse, verbatim.
+medical and health sciences/health sciences/sport and fitness sciences;3.4;contributing;Target 3.4's promotion of well-being and prevention of non-communicable disease.
+medical and health sciences/health sciences/social biomedical sciences;3.8;contributing;Target 3.8's universal health coverage, on its social determinants.
+medical and health sciences/health sciences/personalized medicine;3.4;contributing;Target 3.4's treatment of non-communicable diseases.
+medical and health sciences/clinical medicine/oncology;3.4;direct;Cancer is a principal non-communicable disease under target 3.4.
+medical and health sciences/clinical medicine/cardiology;3.4;direct;Cardiovascular disease is a principal non-communicable disease under target 3.4.
+medical and health sciences/clinical medicine/endocrinology;3.4;contributing;Diabetes is a principal non-communicable disease under target 3.4.
+medical and health sciences/clinical medicine/psychiatry;3.4;direct;Target 3.4 names the promotion of mental health and well-being.
+medical and health sciences/clinical medicine/clinical neurology;3.4;contributing;Target 3.4's non-communicable disease burden.
+medical and health sciences/clinical medicine/obstetrics;3.1;direct;Target 3.1's reduction of the global maternal mortality ratio.
+medical and health sciences/clinical medicine/gynaecology;3.7;contributing;Target 3.7's sexual and reproductive health-care services.
+medical and health sciences/clinical medicine/paediatrics;3.2;direct;Target 3.2's end of preventable deaths of newborns and children under 5.
+medical and health sciences/clinical medicine/gerontology;3.4;contributing;Target 3.4's premature mortality and well-being at all ages.
+medical and health sciences/clinical medicine/clinical microbiology;3.3;contributing;Target 3.3's communicable diseases.
+medical and health sciences/clinical medicine/emergency medicine;3.6;contributing;Target 3.6's deaths and injuries from road traffic accidents.
+medical and health sciences/basic medicine/immunology;3.b;contributing;Target 3.b's research and development of vaccines.
+medical and health sciences/basic medicine/pharmacology and pharmacy;3.b;direct;Target 3.b's research and development of medicines and access to essential medicines.
+medical and health sciences/basic medicine/toxicology;3.9;direct;Target 3.9's deaths and illnesses from hazardous chemicals.
+medical and health sciences/basic medicine/toxicology;12.4;contributing;Target 12.4's environmentally sound management of chemicals to minimise adverse effects on human health.
+medical and health sciences/medical biotechnology/genetic engineering;3.b;contributing;Target 3.b's vaccine and medicine development; evidence must name the therapeutic application.
+social sciences/economics and business/economics/sustainable economy;12.1;contributing;Target 12.1's sustainable consumption and production patterns.
+social sciences/economics and business/economics/bioeconomy;12.2;contributing;Target 12.2's sustainable management and efficient use of natural resources.
+social sciences/economics and business/economics/health economics;3.8;contributing;Target 3.8's financial risk protection within universal health coverage.
+social sciences/economics and business/economics/health economics/economic impact of epidemics;3.d;contributing;Target 3.d's management of national and global health risks.
+social sciences/economics and business/economics/production economics/productivity;8.2;contributing;Target 8.2's higher levels of economic productivity.
+social sciences/economics and business/economics/macroeconomics;8.1;contributing;Target 8.1's sustained per capita economic growth.
+social sciences/economics and business/economics/monetary and finances;17.13;contributing;Target 17.13's global macroeconomic stability.
+social sciences/economics and business/business and management/entrepreneurship;8.3;direct;Target 8.3's support for entrepreneurship and the growth of micro-, small- and medium-sized enterprises.
+social sciences/economics and business/business and management/employment;8.5;direct;Target 8.5's full and productive employment and decent work for all.
+social sciences/economics and business/business and management/innovation management;9.5;contributing;Target 9.5's enhancement of technological capabilities and innovation.
+social sciences/economics and business/business and management/business models;12.6;contributing;Target 12.6's encouragement of sustainable practices in companies.
+social sciences/other social sciences/development studies;17.9;contributing;Target 17.9's capacity-building support for the sustainable development goals.
+social sciences/other social sciences/development studies/development economics;1.a;contributing;Target 1.a's mobilization of resources through enhanced development cooperation.
+social sciences/educational sciences/pedagogy;4.1;contributing;Target 4.1's quality primary and secondary education and learning outcomes.
+social sciences/educational sciences/didactics;4.1;contributing;Target 4.1's effective learning outcomes.
+social sciences/educational sciences/inclusive education;4.5;direct;Target 4.5's elimination of disparities in education and equal access for the vulnerable.
+social sciences/educational sciences/special education;4.5;direct;Target 4.5 names persons with disabilities among those needing equal access to education.
+social sciences/law/human rights;16.3;contributing;Target 16.3's rule of law and equal access to justice for all.
+social sciences/law/human rights;16.b;contributing;Target 16.b's non-discriminatory laws and policies.
+social sciences/law/environmental law;16.3;contributing;Target 16.3's rule of law, applied to the environment.
+social sciences/law/criminology;16.1;contributing;Target 16.1's significant reduction of all forms of violence.
+social sciences/law/law enforcement;16.4;contributing;Target 16.4's combat of organized crime and illicit flows.
+social sciences/law/international law;16.3;contributing;Target 16.3's rule of law at the national and international levels.
+social sciences/political sciences/public administration;16.6;direct;Target 16.6's development of effective, accountable and transparent institutions.
+social sciences/political sciences/political policies;16.7;contributing;Target 16.7's responsive, inclusive and participatory decision-making.
+social sciences/political sciences/government systems;16.6;contributing;Target 16.6's effective and accountable institutions.
+social sciences/sociology/governance;16.6;direct;Target 16.6's effective, accountable and transparent institutions at all levels.
+social sciences/sociology/gender studies;5.1;direct;Target 5.1's end to all forms of discrimination against all women and girls.
+social sciences/sociology/social issues/social inequalities;10.2;direct;Target 10.2's social, economic and political inclusion of all.
+social sciences/sociology/social issues/social inequalities/gender inequality;5.1;direct;Target 5.1's end to discrimination against women and girls.
+social sciences/sociology/social issues/social inequalities/age inequality;10.2;contributing;Target 10.2 names age among the grounds on which inclusion is to be promoted.
+social sciences/sociology/social issues/social inequalities/racial inequality;10.3;contributing;Target 10.3's equal opportunity and elimination of discriminatory laws and practices.
+social sciences/sociology/social issues/corruption;16.5;direct;Target 16.5's substantial reduction of corruption and bribery in all their forms.
+social sciences/sociology/social issues/unemployment;8.5;direct;Target 8.5's full and productive employment for all women and men.
+social sciences/sociology/social issues/unemployment;8.6;contributing;Target 8.6's reduction of the proportion of youth not in employment, education or training.
+social sciences/sociology/demography;10.7;contributing;Target 10.7's orderly, safe and regular migration and mobility of people.
+social sciences/sociology/social work;1.3;contributing;Target 1.3's nationally appropriate social protection systems and measures for all.
+social sciences/sociology/family studies;5.4;contributing;Target 5.4's recognition of unpaid care and domestic work.
+social sciences/sociology/industrial relations;8.8;contributing;Target 8.8's protection of labour rights.
+social sciences/social geography/urban studies;11.3;direct;Target 11.3's inclusive and sustainable urbanization and settlement planning.
+social sciences/social geography/transport;11.2;direct;Target 11.2's access to safe, affordable and sustainable transport systems.
+social sciences/social geography/cultural and economic geography;10.2;contributing;Target 10.2's inclusion irrespective of economic or other status.
+humanities/history and archaeology/archaeology;11.4;contributing;Target 11.4's protection and safeguarding of the world's cultural and natural heritage.
+humanities/arts/art history;11.4;contributing;Target 11.4's cultural heritage.
+humanities/philosophy, ethics and religion/ethics;16.6;contributing;Target 16.6's accountable institutions; evidence must name the governance application.
+medical and health sciences/health sciences/medical ethics;3.8;contributing;Target 3.8's equitable access to health services.
