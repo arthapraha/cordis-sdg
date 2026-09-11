@@ -9,10 +9,10 @@ move the method.
 
 | | |
 |---|---|
-| registration | `cordis-sdg-registration-v7.md`, sha256 `7eed47e43897f8bd1df673088564ffcad1a80e76d52424577f4d77a61ff82824` (26,598 bytes) |
+| registration | `cordis-sdg-registration-v9.md`, sha256 `72187842d621e55dedb6c6b366356131141cd47acf3324ab26bc7f06293c341c` (32,402 bytes) |
 | ratified | 2026-09-11, by the owner, by hash |
-| supersedes | v1 to v6, none of which governs this repository. v1 `c19d7d83…` was never ratified; what each later version changed is logged in v7 section 11, and every hash is in the cordis-sdg record. No superseded hash is written here, so a grep for one returns nothing rather than something a reader has to interpret. |
-| this commit covers | registration section 8, ratification-day line: repository, rules re-read, all three CORDIS distributions and the taxonomy hashed, licence lines captured |
+| supersedes | v1 to v8, none of which governs this repository. v1 was never ratified and neither was v8; what each version changed is logged in v9 section 11, and every hash is in the cordis-sdg record. No superseded hash is written here, so a grep for one returns nothing rather than something a reader has to interpret. |
+| this commit covers | registration section 8, ratification-day line: repository, rules re-read, all four CORDIS distributions and the taxonomy hashed, licence lines captured |
 
 Nothing beyond that line is in this repository yet. There is no crosswalk, no
 key-term extraction rule, no synonym list, no stop-list, no sample draw, no
@@ -32,9 +32,10 @@ are credited in the description document rather than on the certificate.
 
 ## Snapshots
 
-Two datasets. The CORDIS dataset is **one dataset with three CSV distributions**,
-all three hashed and recorded in `data/manifest.json`, because the projects
-extract alone does not carry the fields the registration matches on.
+Two datasets. The CORDIS dataset is **one dataset with four distributions**, all
+four hashed and recorded in `data/manifest.json`, because the projects extract
+alone does not carry the fields the registration matches on and no CSV
+distribution carries the editorial description at all.
 
 **CORDIS — EU research projects under HORIZON EUROPE (2021-2027)**
 
@@ -43,20 +44,41 @@ extract alone does not carry the fields the registration matches on.
 | `cordis-HORIZONprojects-csv.zip` | 2026-09-10T22:37:17Z | Thu, 06 Aug 2026 14:02:10 GMT | `f91d5b6d7f952a4eeb725f4917576ffba652b6b03739d2ba763fa67b5dee6d22` | 36,672,015 |
 | `cordis-HORIZONprojectDeliverables-csv.zip` | 2026-09-11T20:31:11Z | Wed, 29 Jul 2026 16:59:50 GMT | `3e17dec2a5d88e491b34a33e3aadd76bf5452b1cb778a5d47b7d98742d2281c6` | 4,665,117 |
 | `cordis-HORIZONreports-csv.zip` | 2026-09-11T20:31:11Z | Wed, 29 Jul 2026 16:22:44 GMT | `52a133c5c545760eb66440e1f13c48d194471f4b37b1eba485002553d3b9c219` | 1,034,430 |
+| `cordis-HORIZONreports-json.zip` | 2026-09-11T20:59:32Z | Wed, 29 Jul 2026 16:22:46 GMT | `a13edd67ac8c2fc1b5db3f2c218f81b9ccab1c336de24c3a09e3889f2c70e110` | 44,040,912 |
 
 **This snapshot is not one upstream moment, and it does not claim to be.** The
-projects extract was last modified upstream on **6 August 2026**; the other two
-on **29 July 2026**, eight days earlier. They were also retrieved at two
-different local moments, a day apart, because the deliverables and reports
-extracts were only admitted once registration v7 widened the fields in scope.
-Anything computed across the three carries that gap. It is written here as a
-fact rather than left to be inferred from three hashes sitting side by side, and
-it is stated the same way in the manifest under `snapshot`.
+projects extract was last modified upstream on **6 August 2026**; the other three
+on **29 July 2026**, eight days earlier. They were also retrieved at **three**
+local moments rather than one: the projects extract and the taxonomy on
+2026-09-10, the two CSV sub-sets on 2026-09-11 once registration v7 widened the
+fields in scope, and the reports JSON later the same evening once v9 defined the
+editorial description as its four narrative fields. Anything computed across the
+four carries that gap. It is written here as a fact rather than left to be
+inferred from four hashes sitting side by side, and it is stated the same way in
+the manifest under `snapshot`.
 
-Each archive ships its own `information.zip`. All three are **231,028 bytes and
-none of them is the same file**: three different sha256 values at an identical
-byte length, which is the plainest possible argument for hashing members rather
-than trusting a name and a size.
+**The reports JSON was fetched twice, 28 minutes apart, and both fetches returned
+identical bytes.** That is not proof the upstream file is stable, but it is the
+only stability evidence available without waiting, and it is cheap to record.
+
+Each archive ships its own `information.zip`, and all four are **231,028 bytes**.
+**Three of the four hashes are distinct**: the projects and deliverables archives
+each carry their own, and the two reports archives share one, which is what you
+would expect of two serialisations of the same sub-set. Identical byte lengths
+with different contents are the plainest possible argument for hashing members
+rather than trusting a name and a size.
+
+### On hashing the JSON distribution's members
+
+Every other distribution here lists one sha256 per member, because each has fewer
+than ten. **The reports JSON archive has 9,735 entries**, and 9,735 lines of hash
+would bury the manifest for nothing. Every record is still hashed; those hashes
+are reduced to **one digest** over `<name> <sha256> <bytes>` lines sorted by name,
+recorded as `records_digest` with its algorithm written out beside it so the check
+is reproducible from the manifest alone. `information.zip` is listed individually
+because it is the one member that is not a record. **This is a deliberate
+departure from the one-hash-per-member rule the other three follow, and it buys
+the same guarantee in a file a person can read.**
 
 **Sustainable Development Goals taxonomy — EU Vocabularies**
 
@@ -73,16 +95,18 @@ The goal and target counts are counted from the downloaded file, not taken from
 the competition page, and they agree with what the organisers state in Q5.
 
 The payload files live under `data/raw/` and are **not committed**; their hashes
-are, one per file including every member of all three CORDIS archives. To
-reproduce, re-download and compare against `data/manifest.json`.
+are, one per file for every member of the three small CORDIS archives and one
+digest over the 9,734 records of the fourth. To reproduce, re-download and
+compare against `data/manifest.json`.
 
-### What the three distributions measure to
+### What the four distributions measure to
 
-| | rows | projects covered |
+| | rows or records | projects covered |
 |---|---|---|
 | `project.csv` | 23,451 | 23,258 distinct ids |
 | `projectDeliverables.csv` | 58,780 | 11,180 of 23,258 (48.1%) |
 | `reportSummaries.csv` | 9,734 | 9,654 of 23,258 (41.5%) |
+| reports JSON records | 9,734 | 9,654 of 23,258 (41.51%) |
 
 **A note on the project row count, which is not the number of projects.**
 `project.csv` yields 23,451 rows, of which **23,258 parse to the header's 22
@@ -94,18 +118,21 @@ is visible rather than discovered later by whoever writes the loader.
 
 ## Which distribution carries the editorial description
 
-Registration v7 section 2 admits the **editorial description** and the
-**deliverables**, and section 3.4 makes the matcher read both. The owner asked
-for the answer as a measurement rather than an assumption. It is not the answer
-anyone expected, so here it is with the numbers behind it.
+Registration v9 section 2 admits the **editorial description** and the
+**deliverable descriptions**, and section 3.4 makes the matcher read both. The
+owner asked for the answer as a measurement rather than an assumption. It was not
+the answer anyone expected, and v8 and v9 were drafted to meet it: v7 had named
+one field that does not exist and one that was not in the snapshot. Here it is
+with the numbers behind it.
 
 **`projectDeliverables.csv` carries deliverable prose, and it is real.** Eight
 columns — `deliverableType`, `description`, `url`, `projectID`,
 `projectAcronym`, `contentUpdateDate`, `rcn`, `collection` — with `description`
 running to 3,989 characters at its widest across 58,780 rows. That is the
-deliverable's own text. **There is no `title` column**, so section 3.4's phrase
-"the deliverable titles" has no field to match; `description` is what this
-distribution actually provides.
+deliverable's own text. **There is no `title` column.** v7's section 3.4 asked
+the matcher to read "the deliverable titles", which named a field that does not
+exist; **v9 item 27 renamed it to the deliverable descriptions**, which is what
+this distribution actually provides.
 
 **`reportSummaries.csv` carries no narrative at all.** Its seven columns are
 `attachment`, `id`, `title`, `projectID`, `projectAcronym`, `contentUpdateDate`
@@ -120,22 +147,39 @@ in `sources/competition-page.html`:
 
 > Project description. Editorial content prepared for CORDIS, providing a more accessible description of the project and its context.
 
-**Where it actually lives, measured and not fetched into this snapshot.** The
-same reports distribution published as JSON rather than CSV is 44,040,912 bytes
-against the CSV's 1,034,430, and it is one file per report: 9,735 records against
-the CSV's 9,734 rows. Each record carries `teaser`, `summary`, `workPerformed`
-and `finalResults`, which are the editorial prose, and a `description` field that
-is a type marker reading `periodic` rather than text. Of the first 1,500 records
-read, `teaser` and `summary` are non-empty in 1,500, `workPerformed` in 1,498 and
-`finalResults` in 1,494. **The CSV serialisation drops every one of those
-fields.**
+**Where it lives, now measured over every record rather than a sample.** The same
+reports sub-set published as JSON rather than CSV is 44,040,912 bytes against the
+CSV's 1,034,430, one file per report. Registration v9 section 2 defines the
+editorial description as this distribution's `teaser`, `summary`, `workPerformed`
+and `finalResults`, read in that order. Its own `description` field is a type
+marker reading `periodic` and is **not** the editorial description.
 
-That download was made to answer the question and **was deliberately not brought
-into this snapshot or this manifest**, because the owner's word authorised the
-projectDeliverables and reports distributions and this repository does not
-quietly widen its own scope. **What the registration does with the gap is not
-this commit's to decide**, and section 3.4 cannot be satisfied for the editorial
-description by anything currently hashed here.
+| | of 9,734 records |
+|---|---|
+| `teaser` non-empty | 9,734 |
+| `summary` non-empty | 9,734 |
+| `workPerformed` non-empty | 9,729 |
+| `finalResults` non-empty | 9,721 |
+| at least one of the four non-empty | 9,734 |
+| records that failed to parse | 0 |
+
+**The CSV serialisation drops every one of those fields**, which is why the JSON
+is in the snapshot and the CSV is kept beside it.
+
+**Project coverage, measured on the JSON itself and not inherited.** Each record
+links to exactly **one** project, through `relations.associations[]` where the
+association's categories include the code `/project`. No record has zero links and
+none has more than one. That yields **9,734 distinct projects, of which 9,654 are
+in the projects snapshot and 80 are not** — the same 80 the CSV shows, and a
+consequence of the eight-day upstream gap between the two extracts. **Coverage of
+the snapshot is 41.51%**, which is what the CSV-derived figure predicted, so
+section 3.4's "about 41%" holds on the JSON's own evidence.
+
+**Two corrections to what this file said before.** It reported "9,735 records
+against the CSV's 9,734 rows". **There are 9,734 records**; the 9,735th archive
+entry is `information.zip`, and counting archive entries as records was the error.
+The two serialisations carry the same 9,734 reports. And the narrative fill rates
+above are now counted over all 9,734 records rather than the first 1,500.
 
 ## Licences of the source data
 
@@ -217,10 +261,16 @@ licence, and the Publications Office notice for the taxonomy.
 
 ## Data handling
 
-Registration v7 section 2 fixes the fields this entry reads: **id, acronym,
+Registration v9 section 2 fixes the fields this entry reads: **id, acronym,
 title, objective, description (editorial content), EuroSciVoc classification,
 keywords, topic, programme part, start and end dates, participating
-organisations, countries and deliverables.**
+organisations, countries and deliverable descriptions.**
+
+Two of those are defined by v9 rather than named, because the measurement above
+showed the obvious reading did not exist in the data. **The editorial description
+is the reports JSON's `teaser`, `summary`, `workPerformed` and `finalResults`,
+read in that order.** And because the deliverables distribution has no title
+column, **what is read is each deliverable's `description`**, not its title.
 
 **Section 5 is the rule that governs the rest: person-level fields are not read.**
 An organisation is not a person. The competition page's rule, quoted from the
@@ -246,7 +296,7 @@ An earlier commit of this file, written under registration v2, said "no
 participant or person fields are read" and described `organization.csv` as hashed
 but unread. That was v2's rule and v7 replaced it, for the reason v7 item 23
 gives: in CORDIS a participant **is** an organisation, so the old sentence
-forbade precisely what section 2 requires.
+forbade precisely what section 2 requires. v9 carries that rule unchanged.
 
 ## Reproducing this commit
 
@@ -268,12 +318,17 @@ them pass at this commit.
 
 ## Status
 
-Registration v7 is ratified and this repository is anchored to its hash. The
+Registration v9 is ratified and this repository is anchored to its hash. The
 competition page was re-read against the registration's own reading of it before
 any of this was written, and the differences found were reported to the project
 room first, as the registration requires. This repository follows the
 registration exactly as ratified; changing it takes an amendment and a new hash.
 
-One thing the registration asks for is **not** satisfied by anything hashed here,
-and it is named rather than worked around: section 3.4's editorial description
-has no source in this snapshot. See the measurement above.
+**The gap this file reported at the previous commit is closed.** Section 3.4's
+editorial description had no source in the snapshot; it now has one, defined by
+v9 and hashed here, and its coverage is measured rather than inferred. Everything
+section 8 puts on ratification day is done.
+
+Nothing beyond it is built. There is still no crosswalk, no key-term extraction
+rule, no synonym list, no stop-list, no negation rule, no sample draw, no
+labelling and no model call.

@@ -1,20 +1,22 @@
 {
   "manifest_version": 2,
-  "built_under_registration_sha256": "7eed47e43897f8bd1df673088564ffcad1a80e76d52424577f4d77a61ff82824",
+  "built_under_registration_sha256": "72187842d621e55dedb6c6b366356131141cd47acf3324ab26bc7f06293c341c",
   "note": "Snapshot record for the CORDIS-to-SDG entry. Payload files are not committed; these hashes let anyone verify a re-download byte for byte.",
   "snapshot": {
     "upstream_last_modified": {
       "projects": "Thu, 06 Aug 2026 14:02:10 GMT",
       "project_deliverables": "Wed, 29 Jul 2026 16:59:50 GMT",
-      "reports": "Wed, 29 Jul 2026 16:22:44 GMT"
+      "reports": "Wed, 29 Jul 2026 16:22:44 GMT",
+      "reports_json": "Wed, 29 Jul 2026 16:22:46 GMT"
     },
     "retrieved_utc": {
       "projects": "2026-09-10T22:37:17Z",
       "project_deliverables": "2026-09-11T20:31:11Z",
       "reports": "2026-09-11T20:31:11Z",
+      "reports_json": "2026-09-11T20:59:32Z",
       "sdg_taxonomy": "2026-09-10T22:37:51Z"
     },
-    "note": "This snapshot is not one upstream moment and does not claim to be. The projects extract was last modified upstream on 6 August 2026; the deliverables and reports extracts on 29 July 2026, both eight days earlier. They were also retrieved at two different local moments: the projects extract and the taxonomy on 2026-09-10, the other two on 2026-09-11, after registration v7 admitted the fields they carry. Stated as a fact here rather than left to be inferred from two hashes sitting side by side."
+    "note": "This snapshot is not one upstream moment and does not claim to be. The projects extract was last modified upstream on 6 August 2026; the deliverables and both reports extracts on 29 July 2026, eight days earlier. They were also retrieved at three local moments, not one: the projects extract and the taxonomy on 2026-09-10, the deliverables and reports CSV on 2026-09-11 at 20:31:11Z once registration v7 admitted the fields they carry, and the reports JSON on 2026-09-11 at 20:59:32Z once v9 defined the editorial description as its four narrative fields. Stated as a fact here rather than left to be inferred from four hashes sitting side by side. The reports JSON was fetched twice, 28 minutes apart, and both fetches returned identical bytes."
   },
   "sources": {
     "competition_page": {
@@ -75,7 +77,7 @@
         "source": "cordis_dataset_metadata",
         "note": "Machine-readable dct:license on the dataset and on each of its distributions, in the captured DCAT metadata. The prose statement naming the same instrument, and CC BY 4.0 for editorial content, is in the captured CORDIS legal notice and quoted in the README."
       },
-      "note": "One dataset, three CSV distributions. Registration v7 section 2 names one snapshot of this dataset; the projects extract alone carries neither the editorial description nor the deliverables that section 2 admits and section 3.4 matches on, so the other two distributions are part of the same snapshot.",
+      "note": "One dataset, four distributions. Registration v9 section 2 names one snapshot of this dataset in four distributions: the projects CSV, the deliverables CSV, the reports CSV and the reports JSON. The projects extract alone carries neither of the two prose fields section 2 admits, and no CSV distribution carries the editorial description at all, which is why the JSON is in the snapshot.",
       "distributions": {
         "projects": {
           "download_url": "https://cordis.europa.eu/data/cordis-HORIZONprojects-csv.zip",
@@ -248,7 +250,51 @@
               "projects_covered": 9654
             }
           },
-          "carries": "No narrative text. The seven columns are attachment, id, title, projectID, projectAcronym, contentUpdateDate and rcn; 'title' is the boilerplate 'Periodic Reporting for period N - ACRONYM' and 'attachment' holds image paths. The editorial content the competition page defines as the project description is NOT in this CSV distribution. See the README for where it is and what that costs."
+          "carries": "No narrative text. The seven columns are attachment, id, title, projectID, projectAcronym, contentUpdateDate and rcn; 'title' is the boilerplate 'Periodic Reporting for period N - ACRONYM' and 'attachment' holds image paths. The editorial content the competition page defines as the project description is NOT in this CSV distribution; it is in the reports_json distribution below, which is the same 9,734 reports serialised differently."
+        },
+        "reports_json": {
+          "download_url": "https://cordis.europa.eu/data/cordis-HORIZONreports-json.zip",
+          "retrieved_utc": "2026-09-11T20:59:32Z",
+          "http_status": 200,
+          "upstream_last_modified": "Wed, 29 Jul 2026 16:22:46 GMT",
+          "archive": {
+            "path": "data/raw/cordis-HORIZONreports-json.zip",
+            "bytes": 44040912,
+            "sha256": "a13edd67ac8c2fc1b5db3f2c218f81b9ccab1c336de24c3a09e3889f2c70e110"
+          },
+          "members": {
+            "note": "9,735 entries: 9,734 one-record JSON files plus information.zip. The records are covered by one digest rather than 9,734 lines of hash; see records_digest.algorithm under measured, which any re-download can recompute.",
+            "information_zip": {
+              "path": "information.zip",
+              "bytes": 231028,
+              "sha256": "56eacbd8b02f25532a6608343b09a1c4af428b84ddf9d71617f10b85b19034bc"
+            }
+          },
+          "measured": {
+            "reports_json": {
+              "record_files": 9734,
+              "records_parsed": 9734,
+              "records_unparsable": 0,
+              "records_with_any_narrative_field": 9734,
+              "narrative_fields_non_empty": {
+                "teaser": 9734,
+                "summary": 9734,
+                "workPerformed": 9729,
+                "finalResults": 9721
+              },
+              "records_with_no_project_link": 0,
+              "records_with_more_than_one_project_link": 0,
+              "distinct_projects_linked": 9734,
+              "projects_covered": 9654,
+              "linked_projects_absent_from_snapshot": 80,
+              "coverage_percent_of_snapshot": 41.51,
+              "records_digest": {
+                "value": "eaa215d8f6bc54eb74dc8d588b09b654bc1dc6ba0047a3b3cf4d131e3e2ef529",
+                "algorithm": "sha256 over the concatenation of '<member name> <member sha256> <member bytes>\\n' for every member whose name ends in .json, sorted by member name, UTF-8 encoded. information.zip is excluded and listed separately."
+              }
+            }
+          },
+          "carries": "The project editorial description, which no CSV distribution of this dataset carries. Registration v9 section 2 defines it as this distribution's teaser, summary, workPerformed and finalResults, read in that order. Its own 'description' field is a type marker reading 'periodic' and is NOT the editorial description. Each record links to exactly one project through relations.associations[] where the association's categories include the code '/project'."
         }
       }
     },

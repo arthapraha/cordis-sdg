@@ -6,8 +6,8 @@ repository is hand-transcribed. Retrieval timestamps are recorded constants: the
 are the UTC clock readings taken at the moment each fetch ran, and cannot be
 recovered from the filesystem afterwards.
 
-Registration v7 7eed47e43897f8bd1df673088564ffcad1a80e76d52424577f4d77a61ff82824,
-section 2. Ratified by the owner in cordis-sdg at seq 69.
+Registration v9 72187842d621e55dedb6c6b366356131141cd47acf3324ab26bc7f06293c341c,
+section 2. Ratified by the owner in cordis-sdg at seq 86.
 """
 
 import csv
@@ -18,7 +18,7 @@ import sys
 import zipfile
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-REGISTRATION = "7eed47e43897f8bd1df673088564ffcad1a80e76d52424577f4d77a61ff82824"
+REGISTRATION = "72187842d621e55dedb6c6b366356131141cd47acf3324ab26bc7f06293c341c"
 
 # UTC clock readings taken at fetch time. See README for how each was obtained.
 # The projects extract and the four licence captures were fetched on 2026-09-10;
@@ -34,6 +34,7 @@ RETRIEVED = {
     "sdg_taxonomy": "2026-09-10T22:37:51Z",
     "cordis_deliverables_archive": "2026-09-11T20:31:11Z",
     "cordis_reports_archive": "2026-09-11T20:31:11Z",
+    "cordis_reports_json_archive": "2026-09-11T20:59:32Z",
 }
 
 # Upstream Last-Modified as served, verbatim. The three CORDIS extracts do not
@@ -44,6 +45,7 @@ UPSTREAM_LAST_MODIFIED = {
     "projects": "Thu, 06 Aug 2026 14:02:10 GMT",
     "project_deliverables": "Wed, 29 Jul 2026 16:59:50 GMT",
     "reports": "Wed, 29 Jul 2026 16:22:44 GMT",
+    "reports_json": "Wed, 29 Jul 2026 16:22:46 GMT",
 }
 
 
@@ -99,6 +101,96 @@ def members_of(archive_relpath, extract_dir):
     return [entry(extract_dir + "/" + m) for m in names]
 
 
+def zip_member_entry(archive_relpath, member):
+    """Hash one member from inside the archive, without extracting it."""
+    with zipfile.ZipFile(ROOT / archive_relpath) as zf:
+        data = zf.read(member)
+    return dict(path=member, bytes=len(data), sha256=hashlib.sha256(data).hexdigest())
+
+
+def reports_json_measure(archive_relpath, project_ids):
+    """Measure the reports JSON distribution, and digest its members.
+
+    WHY A DIGEST RATHER THAN A HASH PER MEMBER. Every other distribution here
+    lists one sha256 per member, because each has fewer than ten. This archive
+    has 9,735 entries, and 9,735 lines of hash would bury the manifest for no
+    gain. Instead every record is hashed, and those hashes are reduced to ONE
+    value over "<name> <sha256> <bytes>\\n" lines sorted by name. A re-download
+    recomputes it in the same loop and compares one value, which is the same
+    guarantee in a readable file. The algorithm is written out below so the
+    check is reproducible from the manifest alone, and information.zip is still
+    listed individually because it is the one member that is not a record.
+
+    The narrative fields are counted over EVERY record, not a sample, and the
+    project link is read from each record's own relations rather than inferred
+    from the CSV serialisation's projectID column.
+    """
+    fields = ["teaser", "summary", "workPerformed", "finalResults"]
+    non_empty = {f: 0 for f in fields}
+    lines = []
+    records = 0
+    unparsable = 0
+    any_narrative = 0
+    no_link = 0
+    multi_link = 0
+    linked = set()
+
+    with zipfile.ZipFile(ROOT / archive_relpath) as zf:
+        for info in sorted(zf.infolist(), key=lambda i: i.filename):
+            if not info.filename.endswith(".json"):
+                continue
+            data = zf.read(info.filename)
+            lines.append("%s %s %d\n" % (
+                info.filename, hashlib.sha256(data).hexdigest(), len(data)))
+            try:
+                rec = json.loads(data)
+            except Exception:
+                unparsable += 1
+                continue
+            records += 1
+            if any(isinstance(rec.get(f), str) and rec[f].strip() for f in fields):
+                any_narrative += 1
+            for f in fields:
+                v = rec.get(f)
+                if isinstance(v, str) and v.strip():
+                    non_empty[f] += 1
+            ids = set()
+            for a in (rec.get("relations") or {}).get("associations") or []:
+                cats = (a.get("relations") or {}).get("categories") or []
+                if "/project" in {c.get("code") for c in cats} and a.get("id"):
+                    ids.add(a["id"])
+            if not ids:
+                no_link += 1
+            elif len(ids) > 1:
+                multi_link += 1
+            linked |= ids
+
+    digest = hashlib.sha256("".join(lines).encode("utf-8")).hexdigest()
+    covered = len(linked & project_ids)
+    return {
+        "record_files": records + unparsable,
+        "records_parsed": records,
+        "records_unparsable": unparsable,
+        "records_with_any_narrative_field": any_narrative,
+        "narrative_fields_non_empty": non_empty,
+        "records_with_no_project_link": no_link,
+        "records_with_more_than_one_project_link": multi_link,
+        "distinct_projects_linked": len(linked),
+        "projects_covered": covered,
+        "linked_projects_absent_from_snapshot": len(linked - project_ids),
+        "coverage_percent_of_snapshot": round(100.0 * covered / len(project_ids), 2),
+        "records_digest": {
+            "value": digest,
+            "algorithm": (
+                "sha256 over the concatenation of '<member name> <member sha256> "
+                "<member bytes>\\n' for every member whose name ends in .json, "
+                "sorted by member name, UTF-8 encoded. information.zip is excluded "
+                "and listed separately."
+            ),
+        },
+    }
+
+
 def sdg_concept_counts():
     """Count goals and targets in the SKOS file by identifier shape."""
     import re
@@ -124,6 +216,8 @@ def main():
 
     deliverables["projects_covered"] = len(deliverable_ids & project_ids)
     reports["projects_covered"] = len(report_ids & project_ids)
+    reports_json = reports_json_measure(
+        "data/raw/cordis-HORIZONreports-json.zip", project_ids)
 
     manifest = {
         "manifest_version": 2,
@@ -138,17 +232,22 @@ def main():
                 "projects": RETRIEVED["cordis_projects_archive"],
                 "project_deliverables": RETRIEVED["cordis_deliverables_archive"],
                 "reports": RETRIEVED["cordis_reports_archive"],
+                "reports_json": RETRIEVED["cordis_reports_json_archive"],
                 "sdg_taxonomy": RETRIEVED["sdg_taxonomy"],
             },
             "note": (
                 "This snapshot is not one upstream moment and does not claim to be. "
                 "The projects extract was last modified upstream on 6 August 2026; "
-                "the deliverables and reports extracts on 29 July 2026, both eight "
-                "days earlier. They were also retrieved at two different local "
-                "moments: the projects extract and the taxonomy on 2026-09-10, the "
-                "other two on 2026-09-11, after registration v7 admitted the fields "
-                "they carry. Stated as a fact here rather than left to be inferred "
-                "from two hashes sitting side by side."
+                "the deliverables and both reports extracts on 29 July 2026, eight "
+                "days earlier. They were also retrieved at three local moments, not "
+                "one: the projects extract and the taxonomy on 2026-09-10, the "
+                "deliverables and reports CSV on 2026-09-11 at 20:31:11Z once "
+                "registration v7 admitted the fields they carry, and the reports "
+                "JSON on 2026-09-11 at 20:59:32Z once v9 defined the editorial "
+                "description as its four narrative fields. Stated as a fact here "
+                "rather than left to be inferred from four hashes sitting side by "
+                "side. The reports JSON was fetched twice, 28 minutes apart, and "
+                "both fetches returned identical bytes."
             ),
         },
         "sources": {
@@ -213,11 +312,12 @@ def main():
                     ),
                 },
                 "note": (
-                    "One dataset, three CSV distributions. Registration v7 section 2 "
-                    "names one snapshot of this dataset; the projects extract alone "
-                    "carries neither the editorial description nor the deliverables "
-                    "that section 2 admits and section 3.4 matches on, so the other "
-                    "two distributions are part of the same snapshot."
+                    "One dataset, four distributions. Registration v9 section 2 names "
+                    "one snapshot of this dataset in four distributions: the projects "
+                    "CSV, the deliverables CSV, the reports CSV and the reports JSON. "
+                    "The projects extract alone carries neither of the two prose fields "
+                    "section 2 admits, and no CSV distribution carries the editorial "
+                    "description at all, which is why the JSON is in the snapshot."
                 ),
                 "distributions": {
                     "projects": {
@@ -269,8 +369,36 @@ def main():
                             "the boilerplate 'Periodic Reporting for period N - ACRONYM' and "
                             "'attachment' holds image paths. The editorial content the "
                             "competition page defines as the project description is NOT in "
-                            "this CSV distribution. See the README for where it is and what "
-                            "that costs."
+                            "this CSV distribution; it is in the reports_json distribution "
+                            "below, which is the same 9,734 reports serialised differently."
+                        ),
+                    },
+                    "reports_json": {
+                        "download_url": "https://cordis.europa.eu/data/cordis-HORIZONreports-json.zip",
+                        "retrieved_utc": RETRIEVED["cordis_reports_json_archive"],
+                        "http_status": 200,
+                        "upstream_last_modified": UPSTREAM_LAST_MODIFIED["reports_json"],
+                        "archive": entry("data/raw/cordis-HORIZONreports-json.zip"),
+                        "members": {
+                            "note": (
+                                "9,735 entries: 9,734 one-record JSON files plus "
+                                "information.zip. The records are covered by one digest "
+                                "rather than 9,734 lines of hash; see records_digest.algorithm "
+                                "under measured, which any re-download can recompute."
+                            ),
+                            "information_zip": zip_member_entry(
+                                "data/raw/cordis-HORIZONreports-json.zip", "information.zip"),
+                        },
+                        "measured": {"reports_json": reports_json},
+                        "carries": (
+                            "The project editorial description, which no CSV distribution of "
+                            "this dataset carries. Registration v9 section 2 defines it as this "
+                            "distribution's teaser, summary, workPerformed and finalResults, "
+                            "read in that order. Its own 'description' field is a type marker "
+                            "reading 'periodic' and is NOT the editorial description. Each "
+                            "record links to exactly one project through "
+                            "relations.associations[] where the association's categories "
+                            "include the code '/project'."
                         ),
                     },
                 },
@@ -325,6 +453,10 @@ def main():
           deliverables["projects_covered"], "projects covered")
     print("reportSummaries.csv:", reports["rows"], "rows,",
           reports["projects_covered"], "projects covered")
+    print("reports JSON:", reports_json["records_parsed"], "records,",
+          reports_json["projects_covered"], "projects covered",
+          "(%.2f%%)" % reports_json["coverage_percent_of_snapshot"],
+          "digest", reports_json["records_digest"]["value"][:12] + "…")
     print("sdg:", manifest["datasets"]["eu_vocabularies_sdg_taxonomy"]["measured"])
 
 
