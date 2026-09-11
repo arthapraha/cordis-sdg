@@ -58,17 +58,34 @@ from both ends. A word on this list that sits **inside** a span is kept, because
 list is closed and is exactly this:
 
 > a, an, the, of, to, for, in, on, at, by, with, from, into, through, their, its,
-> our, that, which, is, are, be, being, been, as, s, and the quantifier and
-> scoping words these labels use structurally: all, any, such, other, more, most,
-> least, substantially, significantly, progressively, particularly, especially,
-> inter, alia, appropriate, relevant, national, global, international, per, cent,
-> proportion, share, number, level, levels.
+> our, that, which, is, are, be, being, been, as, s, **and**, **or**, all, any,
+> such, other, more, most, least, substantially, significantly, progressively,
+> particularly, especially, inter, alia, appropriate, relevant, national, global,
+> international, per, cent, proportion, share, number, level, levels.
+
+**`and` and `or` are on that list as items, and they are bolded because of how
+they got left off it.** The list previously read "…as, s, **and** the quantifier
+and scoping words these labels use structurally: all, any, …". The word joining
+the two halves of that sentence was prose, not an entry, and the transcription
+read it the same way, so the closed list never contained the conjunction the
+labels are *split on* at step 3. A span that was only `and` therefore survived
+edge-stripping untouched and reached the vocabulary as a key term for target 3.b.
+**A term that matches every objective in the corpus is the same defect as a bare
+year, one token over.** Found by counsel reading the 861 terms for sense
+(cordis-sdg seq 106), after a pass that had checked reproducibility and counts
+and found nothing.
 
 **6. Keep a span as a key term if, after 4 and 5, it is 1 to 6 words long, is not
-made only of digits, and contains at least one word that is not on the generic
-stop-list** in `stop-list.csv`. A span that reduces to nothing but stop-list
-words is dropped here, which is the point of doing this before matching rather
-than after.
+made only of digits, is not a single word from step 5's list, and contains at
+least one word that is not on the generic stop-list** in `stop-list.csv`. A span
+that reduces to nothing but stop-list words is dropped here, which is the point
+of doing this before matching rather than after.
+
+**The single-function-word clause is belt to step 5's braces.** Step 5 strips
+those words from a span's edges, but a span that IS one of them has no edges to
+strip and passes through whole. Naming the exclusion at step 6 as well means a
+future addition to step 5's list cannot reintroduce the fault by being added in
+the wrong place.
 
 **The digits clause was added after the fact and the reason belongs in the
 record.** Step 1 strips only a *leading* deadline, and several targets carry a

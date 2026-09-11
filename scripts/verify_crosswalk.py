@@ -35,6 +35,8 @@ import csv
 import pathlib
 import sys
 
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 TARGETS = ROOT / "data/terms/sdg-targets.csv"
 KEYTERMS = ROOT / "data/terms/target-key-terms.csv"
@@ -113,6 +115,26 @@ def main():
     bad_kt = sorted({r["target_id"] for r in kt if r["target_id"] not in target_ids})
     if bad_kt:
         failures.append("key terms naming a target not in the taxonomy: %s" % bad_kt)
+
+    # A TERM THAT MATCHES EVERYTHING IS WORSE THAN NO TERM, and until now this
+    # file checked only that identifiers were real. Two passes reproduced the
+    # vocabulary byte for byte and neither saw that target 12.3's terms were
+    # "2030" and "d", or that target 3.b's was "and" (cordis-sdg seq 103, 106).
+    # A reproducibility check is not a content check. These are the content
+    # checks, mechanical so they do not depend on someone reading 859 terms.
+    import extract_key_terms  # the committed step-5 list, not a second copy
+    junk = collections.defaultdict(list)
+    for r in kt:
+        term = r["term"]
+        words = term.split()
+        if all(w.isdigit() for w in words):
+            junk["a bare number"].append((r["target_id"], term))
+        elif len(words) == 1 and words[0] in extract_key_terms.EDGE_WORDS:
+            junk["a single function word"].append((r["target_id"], term))
+        elif len(term) < 3:
+            junk["shorter than three characters"].append((r["target_id"], term))
+    for why, items in sorted(junk.items()):
+        failures.append("key terms that are %s: %s" % (why, sorted(set(items))))
 
     # --- reachability ----------------------------------------------------
     reachable = {r["target_id"] for r in kt} | {r["target_id"] for r in syn}

@@ -59,6 +59,12 @@ EDGE_WORDS = {
     "a", "an", "the", "of", "to", "for", "in", "on", "at", "by", "with",
     "from", "into", "through", "their", "its", "our", "that", "which",
     "is", "are", "be", "being", "been", "as", "s",
+    # "and" and "or" are ITEMS here, not prose. The rule's own sentence used to
+    # read "…as, s, and the quantifier and scoping words…", and this list was
+    # transcribed from it the same way, so the conjunction the labels are SPLIT
+    # ON at step 3 was never in the closed list. A span that was only "and"
+    # survived edge-stripping whole and became a key term for target 3.b.
+    "and", "or",
     "all", "any", "such", "other", "more", "most", "least",
     "substantially", "significantly", "progressively", "particularly",
     "especially", "inter", "alia", "appropriate", "relevant", "national",
@@ -163,6 +169,7 @@ def main():
             # vocabulary from three targets at once.
             if (1 <= len(words) <= 6
                     and not all(w.isdigit() for w in words)
+                    and not (len(words) == 1 and words[0] in EDGE_WORDS)
                     and not all(w in stop_terms for w in words)):
                 if term not in seen:
                     seen.add(term)
@@ -176,6 +183,7 @@ def main():
                 hw = head.split()
                 if (1 <= len(hw) <= 6
                         and not all(w.isdigit() for w in hw)
+                        and not (len(hw) == 1 and hw[0] in EDGE_WORDS)
                         and not all(w in stop_terms for w in hw)):
                     seen.add(head)
                     emitted.append((t, head, raw.strip(), 7))
