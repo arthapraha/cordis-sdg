@@ -13,3 +13,9 @@ __pycache__/
 # labellers fetch it from the vault. draw.json and the two id lists ARE
 # committed, because the draw must be checkable from the repository alone.
 data/sample/handoff-150.json
+
+# Pipeline output goes to the room as an artefact by hash, like the hand-off.
+# The parameters and the code are committed; the scores are not, because
+# registration section 4 keeps the labellers blind to them.
+data/pipeline/development-50-v1.json
+data/pipeline/development-50-explanations-v1.json

@@ -1,0 +1,64 @@
+{
+  "_what_this_is": "Registration v9 section 3.5's weighting, threshold and confidence rule, written down BEFORE the pipeline was run on any project. Section 3.5 permits these to be tuned on the development 50 and then frozen by the owner's word before the evaluation 100 is scored; this file is the pre-tuning baseline, and any tuned version supersedes it in a commit that says what moved and why.",
+  "_registration_sha256": "72187842d621e55dedb6c6b366356131141cd47acf3324ab26bc7f06293c341c",
+  "version": "v1",
+
+  "evidence_weights": {
+    "_note": "A crosswalk row is a reviewed claim about a whole discipline and outranks any single phrase. A synonym naming the target's own subject outranks a key term mechanically extracted from its label.",
+    "crosswalk_direct": 3.0,
+    "crosswalk_contributing": 1.5,
+    "synonym_subject": 2.0,
+    "synonym_domain": 1.5,
+    "synonym_policy": 1.5,
+    "synonym_acronym": 1.5,
+    "key_term_multi_word": 1.5,
+    "key_term_single_word": 1.0,
+    "key_term_not_discriminating": 0.5
+  },
+
+  "field_multipliers": {
+    "_note": "Title and keywords are curated and short, so a match in them is less likely to be incidental than the same match inside 2,000 words of abstract. Deliverable descriptions are administrative prose about outputs rather than about the project's aim, so they are discounted.",
+    "title": 1.2,
+    "keywords": 1.2,
+    "objective": 1.0,
+    "editorial_description": 1.0,
+    "deliverable_descriptions": 0.8,
+    "eurosciwoc_categories": 1.0
+  },
+
+  "assignment": {
+    "threshold": 3.0,
+    "_threshold_note": "At these weights a single reviewed direct crosswalk row reaches the threshold on its own, and a single lexical phrase never does. That is the intended shape: one reviewed discipline-level claim is evidence; one word is not.",
+    "requires_discriminating_evidence": true,
+    "_discriminating_note": "A target is not assigned on non-discriminating evidence alone. Section 3.3 says a term emitted by more than four targets counts only in stated contexts; the stated context here is that it corroborates, never that it decides.",
+    "max_targets_per_project": 5,
+    "_cap_note": "Registration section 2. A project whose evidence supports more keeps the five highest-scoring and records the overflow count on its row.",
+    "goal_assigned_with_target": true
+  },
+
+  "confidence_bands": {
+    "_note": "Section 3.6: derived from the score and the number of INDEPENDENT evidence sources, counted over the fields that project actually has, never over the five. A project with two of five fields present and both firing is better evidenced than one with five present and two firing, and the band must not punish it for the absence.",
+    "high": {"min_score": 6.0, "min_independent_sources": 3},
+    "medium": {"min_score": 4.5, "min_independent_sources": 2},
+    "low": {"min_score": 3.0, "min_independent_sources": 1}
+  },
+
+  "ambiguity": {
+    "_note": "Section 3.6. A project with evidence too thin for any target above threshold is assigned at goal level where a goal is supported, and left unassigned where none is. Both counts are reported.",
+    "goal_level_fallback_threshold": 2.0,
+    "report_cross_cutting": true,
+    "_cross_cutting_definition": "assigned targets spanning two or more different goals"
+  },
+
+  "matching": {
+    "_note": "Section 3.4. Matching is case-insensitive on a whitespace-normalised copy of the field, and a term matches only at word boundaries, so 'air' does not fire inside 'chair'. The exact phrase found and its source field are recorded on every match.",
+    "case_sensitive": false,
+    "word_boundaries_required": true,
+    "single_stop_list_word_never_matches": true,
+    "occurrences_counted_per_phrase_per_field": 1,
+    "_occurrence_note": "A phrase is evidence that a project mentions a thing, not a measure of how often, so a term repeated twenty times scores once per field and a long abstract cannot outscore a precise one by repetition.",
+    "first_surviving_occurrence_counts": true,
+    "_survivor_note": "The one occurrence that counts is the first that SURVIVES section 3.3's negation rule, not simply the first. A project that writes 'not related to water quality' in its scope sentence and 'we improve water quality' in its aim has said the second thing, and stopping at the first occurrence would discard the project's actual claim on the strength of its disclaimer. Where every occurrence is discarded, the discard is recorded once with the pattern class that caused it.",
+    "_stop_list_note": "Section 3.3's stop-list words count only inside a longer committed term. A committed term is already multi-word or already survived the vocabulary's own checks, so the rule here is simply that a matched phrase which is exactly one stop-list word is discarded."
+  }
+}

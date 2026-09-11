@@ -121,11 +121,23 @@ has reached…` — two quote characters where three are needed. A standard read
 sees an opening quote, an immediate closing quote, an empty field, and then prose
 outside any quotes.
 
+Measured across **every field**, not just the objective:
+
 | | |
 |---|---|
-| projects whose objective begins with a quote character | 966 (4.1%) |
-| of those, rows a standard reader **breaks** (wrong field count) | 192 |
-| of those, rows it **silently corrupts**, dropping the character | 774 |
+| rows with at least one field whose content begins with a quote | **994 (4.24%)** |
+| of those, rows a standard reader **breaks** (wrong field count) | **193** |
+| of those, rows it **silently alters**, dropping the character | **801** |
+
+By field, counting a row once per affected field: **objective 966, title 17,
+keywords 17.** Among the 193 rows that break outright, the culprit is the
+objective in 191, the keywords in 1, and the title and objective together in 1.
+
+**An earlier version of this table said "966, of those 192 break and 774 are
+corrupted", which mixed two scopes in three lines**: 966 is the objective-only
+count, 192 is the objective-only share of the breakages, and 193 was the
+whole-file figure stated correctly one paragraph away. Found by counsel passing
+`169bf4f`.
 
 `scripts/read_projects.py` is the one place this file is read. It does not repair
 anything: **every field in the export is quoted and separated by `";"`**, so it
@@ -356,6 +368,44 @@ instead. Making the rule cleverer until they produced something would have been
 tuning the rule against its own output, which is the habit section 3 exists to
 prevent.
 
+## The pipeline
+
+Registration section 3 requires the mapping decision to be made by rules a reader
+can run by hand, with a language model writing only the explanation of a decision
+already made. The two halves are separate files, and the separation is structural
+rather than a matter of discipline.
+
+| file | what it does |
+|---|---|
+| `data/pipeline/parameters-v1.json` | the weights, threshold, cap and confidence bands, written down **before** the pipeline was run on any project |
+| `scripts/pipeline.py` | sections 3.4 to 3.6. Calls no model. Reads the hand-off artefact, not the snapshot |
+| `scripts/explain.py` | section 3.7. Reads only the evidence rows of a decision already fixed |
+
+**The pipeline reads the labelling hand-off, not the raw extracts.** Section 4.5
+requires the labellers and the pipeline to read the same text, gaps included.
+Reading the snapshot here instead would let the pipeline see a field no labeller
+was shown, and the agreement figure would then compare two different inputs.
+
+**The explanation pass cannot reach the project.** Its prompt carries the
+target's label, the matched phrases with their source fields, and the crosswalk
+justification where one fired. It carries no objective, title or abstract, so the
+model cannot reason from the project and present it as reading the evidence. That
+is checked rather than asserted: no prompt contains any twelve-word run of its
+project's objective. The only field it writes is `explanation`, onto a row whose
+target, score and confidence are already fixed, and nothing reads its output back
+into the decision.
+
+**Scoring the evaluation set is refused by the script itself.** `pipeline.py
+--set evaluation` exits non-zero and names section 4.3: the owner's freeze word
+comes first, and a script should not be able to breach the registration because
+someone typed the wrong flag.
+
+**The explanation pass is parked.** No model credential is set in this
+environment, and section 9 forbids keys in the repository or the room, so the
+pass records its 97 prompts with their hashes and stops. It does not invent a
+key, substitute a provider, or write anything that pretends to be a model's work.
+Running it later is a re-run against recorded prompts, not a rebuild.
+
 ## Reproducing this commit
 
 ```
@@ -364,6 +414,10 @@ python scripts/verify_licences.py
 python scripts/extract_targets.py
 python scripts/extract_key_terms.py
 python scripts/verify_crosswalk.py
+python scripts/draw_sample.py
+python scripts/build_handoff.py
+python scripts/pipeline.py --handoff data/sample/handoff-150.json --set development --out data/pipeline/development-50-v1.json
+python scripts/explain.py --results data/pipeline/development-50-v1.json --out data/pipeline/development-50-explanations-v1.json
 ```
 
 `make_manifest.py` rebuilds `data/manifest.json` from the files on disk. Every
