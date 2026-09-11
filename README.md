@@ -313,7 +313,7 @@ held-out evaluation set meaningful.
 |---|---|
 | `data/terms/sdg-targets.csv` | the 169 targets and 17 goals, extracted from the hashed taxonomy so no label is ever transcribed by hand |
 | `data/terms/key-term-rule.md` | the extraction rule, **written before it was run**, as section 3.2 requires |
-| `data/terms/target-key-terms.csv` | 1,055 terms over 167 targets, produced by applying that rule to the target labels |
+| `data/terms/target-key-terms.csv` | 1,053 terms over 167 targets, produced by applying that rule to the target labels |
 | `data/terms/synonyms.csv` | 471 curated synonyms covering all 169 targets |
 | `data/terms/stop-list.csv` | 65 words that appear incidentally in research prose, each with the context in which it still counts: 8 theme, 19 generic, 20 structural, 18 verb |
 | `data/terms/negation-rule.md` | when a match near a negation is discarded, with what the rule will get wrong stated in advance |

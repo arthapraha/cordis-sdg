@@ -59,7 +59,6 @@ http://data.europa.eu/sdg/2.1;2.1;2;sufficient food all year round;sufficient fo
 http://data.europa.eu/sdg/2.1;2.1;2;year round;sufficient food all year round;7;1;yes
 http://data.europa.eu/sdg/2.2;2.2;2;forms of malnutrition;end all forms of malnutrition;6;1;yes
 http://data.europa.eu/sdg/2.2;2.2;2;achieving;achieving;6;1;yes
-http://data.europa.eu/sdg/2.2;2.2;2;2025;by 2025;6;1;yes
 http://data.europa.eu/sdg/2.2;2.2;2;internationally agreed targets on stunting;the internationally agreed targets on stunting;6;1;yes
 http://data.europa.eu/sdg/2.2;2.2;2;targets on stunting;the internationally agreed targets on stunting;7;1;yes
 http://data.europa.eu/sdg/2.2;2.2;2;years of age;wasting in children under 5 years of age;7;2;yes
@@ -429,7 +428,6 @@ http://data.europa.eu/sdg/8.3;8.3;8;small-;small-;6;1;yes
 http://data.europa.eu/sdg/8.3;8.3;8;medium-sized enterprises;medium-sized enterprises;6;1;yes
 http://data.europa.eu/sdg/8.3;8.3;8;access to financial services;through access to financial services;6;1;yes
 http://data.europa.eu/sdg/8.3;8.3;8;financial services;through access to financial services;7;6;no
-http://data.europa.eu/sdg/8.4;8.4;8;2030;through 2030;6;4;yes
 http://data.europa.eu/sdg/8.4;8.4;8;resource efficiency in consumption;global resource efficiency in consumption;6;1;yes
 http://data.europa.eu/sdg/8.4;8.4;8;efficiency in consumption;global resource efficiency in consumption;7;1;yes
 http://data.europa.eu/sdg/8.4;8.4;8;environmental degradation;endeavour to decouple economic growth from environmental degradation;7;1;yes
@@ -486,7 +484,6 @@ http://data.europa.eu/sdg/9.1;9.1;9;focus on affordable;with a focus on affordab
 http://data.europa.eu/sdg/9.1;9.1;9;equitable access;equitable access for all;6;1;yes
 http://data.europa.eu/sdg/9.2;9.2;9;inclusive;Promote inclusive;6;5;no
 http://data.europa.eu/sdg/9.2;9.2;9;sustainable industrialization and;sustainable industrialization and;6;1;yes
-http://data.europa.eu/sdg/9.2;9.2;9;2030;by 2030;6;4;yes
 http://data.europa.eu/sdg/9.2;9.2;9;raise industry s share of employment;significantly raise industry’s share of employment;6;1;yes
 http://data.europa.eu/sdg/9.2;9.2;9;gross domestic product;gross domestic product;6;2;yes
 http://data.europa.eu/sdg/9.2;9.2;9;line with national circumstances;in line with national circumstances;6;1;yes
@@ -512,7 +509,6 @@ http://data.europa.eu/sdg/9.4;9.4;9;respective capabilities;with all countries t
 http://data.europa.eu/sdg/9.5;9.5;9;scientific research;Enhance scientific research;6;1;yes
 http://data.europa.eu/sdg/9.5;9.5;9;developing countries;developing countries;6;22;no
 http://data.europa.eu/sdg/9.5;9.5;9;including;including;6;2;yes
-http://data.europa.eu/sdg/9.5;9.5;9;2030;by 2030;6;4;yes
 http://data.europa.eu/sdg/9.5;9.5;9;encouraging innovation;encouraging innovation;6;1;yes
 http://data.europa.eu/sdg/9.5;9.5;9;increasing the number of research;substantially increasing the number of research;6;1;yes
 http://data.europa.eu/sdg/9.5;9.5;9;development workers per 1 million people;development workers per 1 million people;6;1;yes
@@ -693,8 +689,11 @@ http://data.europa.eu/sdg/12.1;12.1;12;capabilities of developing countries;capa
 http://data.europa.eu/sdg/12.1;12.1;12;developing countries;capabilities of developing countries;7;22;no
 http://data.europa.eu/sdg/12.2;12.2;12;efficient use of natural resources;efficient use of natural resources;6;1;yes
 http://data.europa.eu/sdg/12.2;12.2;12;natural resources;efficient use of natural resources;7;3;yes
-http://data.europa.eu/sdg/12.3;12.3;12;2030;By 2030;6;4;yes
-http://data.europa.eu/sdg/12.3;12.3;12;d;d;6;1;yes
+http://data.europa.eu/sdg/12.3;12.3;12;consumer;consumer levels;6;1;yes
+http://data.europa.eu/sdg/12.3;12.3;12;food losses along production;reduce food losses along production;6;1;yes
+http://data.europa.eu/sdg/12.3;12.3;12;losses along production;reduce food losses along production;7;1;yes
+http://data.europa.eu/sdg/12.3;12.3;12;supply chains;supply chains;6;1;yes
+http://data.europa.eu/sdg/12.3;12.3;12;post-harvest losses;post-harvest losses;6;1;yes
 http://data.europa.eu/sdg/12.4;12.4;12;environmentally sound management of chemicals;achieve the environmentally sound management of chemicals;6;1;yes
 http://data.europa.eu/sdg/12.4;12.4;12;management of chemicals;achieve the environmentally sound management of chemicals;7;1;yes
 http://data.europa.eu/sdg/12.4;12.4;12;wastes throughout their life cycle;all wastes throughout their life cycle;6;1;yes
@@ -859,7 +858,6 @@ http://data.europa.eu/sdg/15.5;15.5;15;urgent;Take urgent;6;1;yes
 http://data.europa.eu/sdg/15.5;15.5;15;natural habitats;significant action to reduce the degradation of natural habitats;7;1;yes
 http://data.europa.eu/sdg/15.5;15.5;15;halt the loss of biodiversity and;halt the loss of biodiversity and;6;1;yes
 http://data.europa.eu/sdg/15.5;15.5;15;biodiversity and;halt the loss of biodiversity and;7;1;yes
-http://data.europa.eu/sdg/15.5;15.5;15;2020;by 2020;6;1;yes
 http://data.europa.eu/sdg/15.5;15.5;15;prevent the extinction of threatened species;prevent the extinction of threatened species;6;1;yes
 http://data.europa.eu/sdg/15.5;15.5;15;threatened species;prevent the extinction of threatened species;7;1;yes
 http://data.europa.eu/sdg/15.6;15.6;15;fair;Promote fair;6;2;yes

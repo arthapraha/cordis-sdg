@@ -27,8 +27,12 @@ TARGETS = ROOT / "data/terms/sdg-targets.csv"
 STOPLIST = ROOT / "data/terms/stop-list.csv"
 OUT = ROOT / "data/terms/target-key-terms.csv"
 
-# Step 1. The deadline preamble.
-PREAMBLE = re.compile(r"^by\s+\d{4},?\s+", re.I)
+# Step 1. The deadline preamble. The whitespace after the comma is OPTIONAL:
+# target 12.3's label in this snapshot reads "By 2030,halve per capita global
+# food waste…" with no space. Requiring it would leave the preamble in place and
+# emit the bare year as a key term, and "2030" is the worst term this vocabulary
+# could hold — Horizon Europe objectives mention it constantly.
+PREAMBLE = re.compile(r"^by\s+\d{4},\s*|^by\s+\d{4}\s+", re.I)
 
 # Step 2. The indicator parenthetical.
 PARENTHETICAL = re.compile(r"\([^)]*\)")
@@ -153,8 +157,13 @@ def main():
             if not term:
                 continue
             words = term.split()
-            # Step 6 gates the FULL span only.
-            if 1 <= len(words) <= 6 and not all(w in stop_terms for w in words):
+            # Step 6 gates the FULL span only. The all-digits clause catches
+            # the SECOND date inside a sentence, which step 1 does not see: 2.2,
+            # 8.4, 9.2, 9.5 and 15.5 all carry one, and "2030" was reaching the
+            # vocabulary from three targets at once.
+            if (1 <= len(words) <= 6
+                    and not all(w.isdigit() for w in words)
+                    and not all(w in stop_terms for w in words)):
                 if term not in seen:
                     seen.add(term)
                     emitted.append((t, term, raw.strip(), 6))
@@ -165,7 +174,9 @@ def main():
             head = normalise(head_phrase(span))
             if head and head not in seen:
                 hw = head.split()
-                if 1 <= len(hw) <= 6 and not all(w in stop_terms for w in hw):
+                if (1 <= len(hw) <= 6
+                        and not all(w.isdigit() for w in hw)
+                        and not all(w in stop_terms for w in hw)):
                     seen.add(head)
                     emitted.append((t, head, raw.strip(), 7))
 

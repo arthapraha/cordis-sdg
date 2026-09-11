@@ -26,7 +26,14 @@ case-insensitive; output terms are lowercased.
 **1. Strip the deadline preamble.** Remove a leading `By <year>, ` or
 `By <year> ` (for example "By 2030, " and "By 2020, "). It dates the target, not
 its subject, and it appears in 120 of the 169 labels, so it would otherwise be
-the most frequent term in the vocabulary.
+the most frequent term in the vocabulary. **The space after the comma is
+optional**, because target 12.3's label in this snapshot is spelled "By
+2030,halve per capita global food waste…" with no space at all. Requiring the
+space would have left 12.3's preamble in place and emitted the bare year as a
+key term, which is the single worst term this vocabulary could contain: Horizon
+Europe objectives mention 2030 constantly, so 12.3 would fire on a large part of
+the corpus on the strength of a date. The rule accommodates the source data's
+spelling rather than the other way round.
 
 **2. Strip the indicator parenthetical.** Remove any text in parentheses. In these
 labels parentheses carry measurement notes and examples ("currently measured as
@@ -57,10 +64,22 @@ list is closed and is exactly this:
 > inter, alia, appropriate, relevant, national, global, international, per, cent,
 > proportion, share, number, level, levels.
 
-**6. Keep a span as a key term if, after 4 and 5, it is 1 to 6 words long and
-contains at least one word that is not on the generic stop-list** in
-`stop-list.csv`. A span that reduces to nothing but stop-list words is dropped
-here, which is the point of doing this before matching rather than after.
+**6. Keep a span as a key term if, after 4 and 5, it is 1 to 6 words long, is not
+made only of digits, and contains at least one word that is not on the generic
+stop-list** in `stop-list.csv`. A span that reduces to nothing but stop-list
+words is dropped here, which is the point of doing this before matching rather
+than after.
+
+**The digits clause was added after the fact and the reason belongs in the
+record.** Step 1 strips only a *leading* deadline, and several targets carry a
+second date inside the sentence — 2.2's "including achieving, by 2025, the
+internationally agreed targets", and the same shape in 8.4, 9.2, 9.5 and 15.5.
+Splitting on commas made "by 2025" its own span, step 5 stripped "by", and the
+year survived as a key term. **"2030" was being emitted by three separate
+targets**, so a project objective mentioning the year — which Horizon Europe
+objectives do constantly, in the programme's own framing and in Agenda 2030 —
+would have fired all three. A date is never the subject of a target, and no
+term in this vocabulary should be one.
 
 **7. Emit the head noun phrase as well**, for any span longer than three words,
 so that "sustainable management of water" and "management of water" both count as

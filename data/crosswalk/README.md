@@ -40,9 +40,24 @@ or title was read. **That is what makes section 4's held-out evaluation set wort
 anything**, and it is checkable: `scripts/verify_crosswalk.py` reads exactly the
 same two sources and nothing else.
 
-Rows were written at the **most specific level the evidence supports**, which is
-usually a leaf or near-leaf category. Where a parent category maps and its
-children map to the same target, only the level that carries the claim is listed.
+Rows were written at **every level whose own justification holds**, which is
+usually a leaf or near-leaf category but is often its parent as well.
+
+**An earlier version of this sentence claimed the opposite** — that where a parent
+and its children map to the same target, only one level is listed — and the table
+has never done that. **46 parent/child pairs map to the same target, 36 of them at
+the same strength**: `agriculture` and `agriculture/agroecology` both reach 2.4 as
+`direct`, and so do `soil sciences` and `soil sciences/soil management` for 15.3.
+Hermes Cordis found the mismatch in the section 4.6 pass. **The data is right and
+the sentence was wrong**, which is the third time in this repository that a
+sentence has miscounted the list beneath it.
+
+Both levels earn their row. A project tagged only `agriculture` and a project
+tagged `agriculture/agroecology` are different evidence for target 2.4, and
+dropping the parent row would silently lose the first. What the duplication costs
+is that one project carrying both tags produces two crosswalk hits for one
+target, so **section 3.5's scoring must count distinct targets rather than rows**,
+and the per-row source record in section 3.4 is what makes that checkable.
 
 ## Coverage, stated plainly
 
@@ -99,7 +114,34 @@ scrutiny are these, and they are named rather than left to be found:
   wrong in practice**, and the per-field evidence record in section 3.4 is how
   that gets checked rather than assumed.
 
-## A defect in the source data, recorded so nobody silently "fixes" it
+## Defects in the source data, recorded so nobody silently "fixes" them
+
+**Two are in the taxonomy snapshot**, both found by Hermes Cordis in the section
+4.6 pass and both verified here from the taxonomy's own bytes.
+
+**Target 12.3 carries two English labels and the first is a truncated fragment,
+`"By 2030,d"`.** The full 165-character text is in the same file. The extractor
+took the first and target 12.3 therefore reached the vocabulary with two terms,
+`2030` and `d`. **`2030` is the damaging one**: Horizon Europe objectives mention
+the year constantly, so 12.3 would have fired across a large part of the corpus
+on the strength of a date. `extract_targets.py` now takes the **longest** English
+label, which is deterministic and needs no list of exceptions, because a
+truncation is always shorter than what it truncates.
+
+Fixing that surfaced a second, wider fault that was nobody's finding: **five
+other targets were emitting a bare year too** — 2.2, 8.4, 9.2, 9.5 and 15.5 all
+carry a second date inside the sentence, which step 1 of the key-term rule never
+sees because it strips only a leading one. **`2030` was reaching the vocabulary
+from three targets at once.** Step 6 now rejects any span made only of digits.
+
+**Target 14.6's label ends `"…negotiation3"`**, a footnote marker glommed onto
+the last word. It is left alone deliberately. It produces one dead term,
+`fisheries subsidies negotiation3`, which can only ever fail to match, so it
+costs nothing; and stripping trailing digits from labels is a rule change that
+would have to justify itself against every label rather than the one that
+provoked it. It is recorded here so the next reader knows it was seen.
+
+## A defect in the category vocabulary
 
 Exactly one of the 1,007 category paths carries a **trailing space**:
 `engineering and technology/medical engineering/wearable medical technology `.

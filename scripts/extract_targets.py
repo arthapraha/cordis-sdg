@@ -64,12 +64,34 @@ def load():
 
 
 def english(labels, refs):
-    """The English prefLabel, or empty. Language is read, never assumed."""
-    for r in refs:
-        text = labels.get(r, {}).get("en")
-        if text:
-            return text
-    return ""
+    """The English prefLabel, or empty. Language is read, never assumed.
+
+    A concept may carry MORE THAN ONE English prefLabel, and taking the first in
+    document order is wrong. Exactly one target in this snapshot does: 12.3 has
+    `label_11f52c55fa`, whose literal is the truncated fragment "By 2030,d", and
+    `label_5a4f01a073`, which carries the full 165-character target text. The
+    truncated one comes first, so the first-match reading gave target 12.3 the
+    label "By 2030,d" and the key-term rule then emitted exactly two terms from
+    it: "2030" and "d".
+
+    "2030" is the damaging one. Horizon Europe objectives mention 2030 constantly
+    — it is in the programme's own framing and in Agenda 2030 — so target 12.3
+    would have fired on a large share of the corpus on the strength of a year.
+    A truncated label did not merely lose evidence, it manufactured a false
+    positive generator, and it was invisible because the pipeline had no reason
+    to look at a label's length.
+
+    The longest English label is taken instead. That is deterministic, it needs
+    no list of exceptions, and it is right for the general case: a truncation is
+    always shorter than the text it truncates. Found by Hermes Cordis in the
+    section 4.6 pass (cordis-sdg seq 103) and verified here from the taxonomy's
+    own bytes rather than from an external source.
+    """
+    candidates = [labels.get(r, {}).get("en") for r in refs]
+    candidates = [c for c in candidates if c]
+    if not candidates:
+        return ""
+    return max(candidates, key=len)
 
 
 def main():
