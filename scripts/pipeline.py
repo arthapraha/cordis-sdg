@@ -319,21 +319,43 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--handoff", required=True,
                     help="path to handoff-150.json")
-    ap.add_argument("--set", default="development",
-                    choices=["development", "evaluation", "all"])
+    # No `choices` list. argparse would reject an unknown value with "invalid
+    # choice" and exit 2, which is a refusal that does not say why — and the
+    # point of this guard is that a person who types the wrong thing is told
+    # which rule stopped them. Every value except "development" is refused here,
+    # by one path, naming section 4.3 and the value that was asked for.
+    ap.add_argument("--set", default="development")
     ap.add_argument("--out", required=True)
     args = ap.parse_args()
 
-    if args.set == "evaluation":
-        sys.exit("refused: registration section 4.3 requires the owner's freeze "
-                 "word before the evaluation set is scored, and section 3.5 "
-                 "before any parameter is frozen. This script will not score the "
-                 "evaluation 100 on its own say-so.")
+    # THE GUARD IS ON THE DATA, NOT ON THE SPELLING OF A FLAG.
+    #
+    # The first version of this tested `--set == "evaluation"` and the flag had a
+    # third choice, `--set all`, which the record filter admitted. Counsel ran it
+    # and scored 150 rows, 100 of them evaluation, exit 0 (cordis-sdg seq 127),
+    # while the README claimed the registration could not be breached by a wrong
+    # flag. A guard on one spelling of the thing it forbids is not a guard.
+    #
+    # `all` is gone, and what remains refuses on the records themselves: if any
+    # selected record is an evaluation record, this script stops, whatever route
+    # brought it here. A future flag cannot reopen the hole because the check no
+    # longer looks at flags.
+    REFUSAL = ("refused --set %s: registration section 4.3 requires the owner's "
+               "freeze word before the evaluation set is scored, and section 3.5 "
+               "before any parameter is frozen. This script scores the "
+               "development 50 and nothing else on its own say-so.")
+
+    if args.set != "development":
+        sys.exit(REFUSAL % args.set)
 
     params = json.loads(PARAMS.read_text(encoding="utf-8"))
     doc = json.loads(pathlib.Path(args.handoff).read_text(encoding="utf-8"))
-    records = [r for r in doc["projects"]
-               if args.set == "all" or r["set"] == args.set]
+    records = [r for r in doc["projects"] if r["set"] == args.set]
+    # Belt to the braces above, and the one that survives a future flag: whatever
+    # route selected these records, if any of them is an evaluation record this
+    # script stops before scoring a single one.
+    if any(r["set"] != "development" for r in records):
+        sys.exit(REFUSAL % args.set)
     if not records:
         sys.exit("no records for set %s" % args.set)
 

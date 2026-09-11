@@ -395,10 +395,29 @@ project's objective. The only field it writes is `explanation`, onto a row whose
 target, score and confidence are already fixed, and nothing reads its output back
 into the decision.
 
-**Scoring the evaluation set is refused by the script itself.** `pipeline.py
---set evaluation` exits non-zero and names section 4.3: the owner's freeze word
-comes first, and a script should not be able to breach the registration because
-someone typed the wrong flag.
+**Scoring the evaluation set is refused by the script itself**, and the first
+version of that claim was false. `pipeline.py` tested for `--set evaluation` and
+the flag had a third value, `--set all`, which the record filter admitted:
+counsel ran it and scored 150 rows, 100 of them evaluation, exit 0. **A guard on
+one spelling of the thing it forbids is not a guard**, and the README said the
+registration could not be breached by a wrong flag while it could be, by the flag
+one word over.
+
+It now refuses on two counts: every `--set` value except `development` is
+rejected by one path that names section 4.3 and the value asked for, and the
+records themselves are checked before any is scored, so a future flag cannot
+reopen the hole. `scripts/test_pipeline_guard.py` runs the real script as a
+subprocess and asserts that every mode which could reach an evaluation record
+exits non-zero, names the section and writes nothing. **It was written to fail on
+the refused code and it did**, reporting `--set all` exiting 0 having written
+261,389 bytes.
+
+**Row provenance is owed by the mapping table, not by this artefact.** Section 6
+item 2 requires the pipeline commit and the snapshot hash on every row of the
+submitted CSV. The intermediate output carries the registration hash, the
+parameters hash and the hand-off hash, and stops there, because adding the commit
+to it would change its bytes on every commit and this artefact is verified by
+hash. The mapping table is where section 6's provenance lands.
 
 **The explanation pass is parked.** No model credential is set in this
 environment, and section 9 forbids keys in the repository or the room, so the
@@ -418,6 +437,7 @@ python scripts/draw_sample.py
 python scripts/build_handoff.py
 python scripts/pipeline.py --handoff data/sample/handoff-150.json --set development --out data/pipeline/development-50-v1.json
 python scripts/explain.py --results data/pipeline/development-50-v1.json --out data/pipeline/development-50-explanations-v1.json
+python scripts/test_pipeline_guard.py
 ```
 
 `make_manifest.py` rebuilds `data/manifest.json` from the files on disk. Every

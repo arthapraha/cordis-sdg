@@ -29,6 +29,20 @@ that a commercial API's reproducibility has inherent limits because the provider
 may change the model. That is precisely why the per-row record below exists.
 
 No credential is read from anywhere but the environment, by name, per section 9.
+
+ON THE PROMPT HASH, WHICH IS NOT UNIQUE PER ROW. 97 explanations hash to 95
+distinct prompts, because the prompt deliberately carries no project id: two
+projects that reached the same target on the same matched phrases get the same
+prompt and will get the same explanation. Counsel noted at cordis-sdg seq 127
+that the per-row prompt hash therefore cannot tell those rows apart.
+
+That is true and it is left as it is. A row is identified by (project id, target
+id), which is recorded on it; the prompt hash identifies the PROMPT, which is
+what section 3.7 asks to be recorded so a reader can reproduce the model call.
+Two rows sharing a hash is a true statement about them, not a collision to be
+broken. Adding the project id to the prompt would make every hash unique and
+would also hand the model a project identifier it has no use for, which is the
+opposite of what the rest of this file is built to prevent.
 """
 
 import argparse

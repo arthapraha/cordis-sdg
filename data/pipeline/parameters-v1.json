@@ -38,6 +38,7 @@
 
   "confidence_bands": {
     "_note": "Section 3.6: derived from the score and the number of INDEPENDENT evidence sources, counted over the fields that project actually has, never over the five. A project with two of five fields present and both firing is better evidenced than one with five present and two firing, and the band must not punish it for the absence.",
+    "_what_counts_as_an_independent_source": "SIX channels, not five: section 3.4's five text fields plus the EuroSciVoc crosswalk. A reviewed crosswalk row and a matched phrase are genuinely independent of each other — one is a discipline-level claim a reviewer checked, the other is the project's own words — so a target supported by both reaches two sources and the medium band. Counsel raised this at cordis-sdg seq 127 because section 3.6 says 'independent evidence sources' without enumerating them, and either reading is defensible; this is the one in force and the one the bands were set against. Recorded rather than changed: the alternative reading would move bands on rows counsel has already passed, and the choice belongs in a tuning commit under section 3.5, not in a fix to a guard.",
     "high": {"min_score": 6.0, "min_independent_sources": 3},
     "medium": {"min_score": 4.5, "min_independent_sources": 2},
     "low": {"min_score": 3.0, "min_independent_sources": 1}
