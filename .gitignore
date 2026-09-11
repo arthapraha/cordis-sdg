@@ -7,3 +7,9 @@ data/raw/
 __pycache__/
 *.pyc
 .venv/
+
+# The hand-off artefact is uploaded to the room by hash, not carried in git:
+# it is a 1 MB derivative of payload that is itself not committed, and the
+# labellers fetch it from the vault. draw.json and the two id lists ARE
+# committed, because the draw must be checkable from the repository alone.
+data/sample/handoff-150.json

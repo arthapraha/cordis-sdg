@@ -164,8 +164,10 @@
                 "legalBasis"
               ],
               "rows": 23451,
-              "rows_at_header_width": 23258,
-              "distinct_id": 23258
+              "distinct_id": 23451,
+              "rows_a_standard_csv_reader_breaks": 193,
+              "rows_at_header_width_under_a_standard_reader": 23258,
+              "note": "Read through scripts/read_projects.py. The two counts differ because CORDIS under-escapes a field whose content starts with a quote; the reader parses on the literal separator the file actually uses and needs no repair heuristic."
             }
           }
         },
@@ -206,7 +208,7 @@
               "rows": 58780,
               "rows_at_header_width": 58757,
               "distinct_projectID": 11283,
-              "projects_covered": 11180
+              "projects_covered": 11283
             }
           },
           "carries": "A per-deliverable 'description' column of real prose. This is the deliverable's own text, not the project's editorial description. There is no 'title' column, so registration v7 section 3.4's phrase 'the deliverable titles' has no field to match; 'description' is what this distribution provides."
@@ -247,7 +249,7 @@
               "rows": 9734,
               "rows_at_header_width": 9734,
               "distinct_projectID": 9734,
-              "projects_covered": 9654
+              "projects_covered": 9734
             }
           },
           "carries": "No narrative text. The seven columns are attachment, id, title, projectID, projectAcronym, contentUpdateDate and rcn; 'title' is the boilerplate 'Periodic Reporting for period N - ACRONYM' and 'attachment' holds image paths. The editorial content the competition page defines as the project description is NOT in this CSV distribution; it is in the reports_json distribution below, which is the same 9,734 reports serialised differently."
@@ -285,8 +287,8 @@
               "records_with_no_project_link": 0,
               "records_with_more_than_one_project_link": 0,
               "distinct_projects_linked": 9734,
-              "projects_covered": 9654,
-              "linked_projects_absent_from_snapshot": 80,
+              "projects_covered": 9734,
+              "linked_projects_absent_from_snapshot": 0,
               "coverage_percent_of_snapshot": 41.51,
               "records_digest": {
                 "value": "eaa215d8f6bc54eb74dc8d588b09b654bc1dc6ba0047a3b3cf4d131e3e2ef529",

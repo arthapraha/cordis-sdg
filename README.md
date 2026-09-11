@@ -107,18 +107,40 @@ compare against `data/manifest.json`.
 
 | | rows or records | projects covered |
 |---|---|---|
-| `project.csv` | 23,451 | 23,258 distinct ids |
-| `projectDeliverables.csv` | 58,780 | 11,180 of 23,258 (48.1%) |
-| `reportSummaries.csv` | 9,734 | 9,654 of 23,258 (41.5%) |
-| reports JSON records | 9,734 | 9,654 of 23,258 (41.51%) |
+| `project.csv` | 23,451 | 23,451 distinct ids |
+| `projectDeliverables.csv` | 58,780 | 11,283 of 23,451 (48.11%) |
+| `reportSummaries.csv` | 9,734 | 9,734 of 23,451 (41.51%) |
+| reports JSON records | 9,734 | 9,734 of 23,451 (41.51%) |
 
-**A note on the project row count, which is not the number of projects.**
-`project.csv` yields 23,451 rows, of which **23,258 parse to the header's 22
-fields** and 23,258 are distinct ids with no duplicates. The remaining **193 rows
-parse to between 23 and 30 fields**, because they carry an unescaped semicolon
-inside a value. A naive read of this file misaligns exactly those rows. The
-manifest records both counts under `rows` and `rows_at_header_width` so the gap
-is visible rather than discovered later by whoever writes the loader.
+**A note on reading `project.csv` at all, because a standard CSV reader gets it
+wrong.** The corpus is **23,451 projects** and every row carries a clean id.
+
+CORDIS under-escapes any field whose content **begins** with a quotation mark.
+A project whose abstract opens with one is written `;"";""Deep Learning (DL)
+has reached…` — two quote characters where three are needed. A standard reader
+sees an opening quote, an immediate closing quote, an empty field, and then prose
+outside any quotes.
+
+| | |
+|---|---|
+| projects whose objective begins with a quote character | 966 (4.1%) |
+| of those, rows a standard reader **breaks** (wrong field count) | 192 |
+| of those, rows it **silently corrupts**, dropping the character | 774 |
+
+`scripts/read_projects.py` is the one place this file is read. It does not repair
+anything: **every field in the export is quoted and separated by `";"`**, so it
+splits on that literal sequence and un-doubles internal quotes. All 23,451 rows
+then yield exactly 22 fields, with no heuristics and no special cases.
+
+**An earlier reader here dropped the 193 rows it could not parse, and that error
+was reported three times before anyone asked the data what it meant.** The
+population was given as 23,258, which is the count at header width and nothing
+else; there were never duplicate ids to explain. The first attempt at a fix was a
+repair heuristic that rejoined split fields and chose the join point by
+validating the row's shape. It cannot work, and the reason is worth keeping:
+absorbing any two adjacent free-text fields shifts the tail identically, so every
+one of the 193 had five or more shape-valid join points. **A check that cannot
+distinguish the right answer from four wrong ones is not a check.**
 
 ## Which distribution carries the editorial description
 
@@ -174,9 +196,12 @@ is in the snapshot and the CSV is kept beside it.
 links to exactly **one** project, through `relations.associations[]` where the
 association's categories include the code `/project`. No record has zero links and
 none has more than one. That yields **9,734 distinct projects, of which 9,654 are
-in the projects snapshot and 80 are not** — the same 80 the CSV shows, and a
-consequence of the eight-day upstream gap between the two extracts. **Coverage of
-the snapshot is 41.51%**, which is what the CSV-derived figure predicted, so
+in the projects snapshot and none are not**. An earlier version of this file said
+80 were absent and explained them by the eight-day upstream gap between the
+extracts. **That explanation was invented.** Those 80 were projects the old
+reader had dropped, and once the corpus is read correctly every linked project is
+present. **Coverage of the snapshot is 41.51%**, which is what the CSV-derived
+figure predicted, so
 section 3.4's "about 41%" holds on the JSON's own evidence.
 
 **Two corrections to what this file said before.** It reported "9,735 records

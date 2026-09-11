@@ -17,6 +17,10 @@ import pathlib
 import sys
 import zipfile
 
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+
+import read_projects
+
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 REGISTRATION = "72187842d621e55dedb6c6b366356131141cd47acf3324ab26bc7f06293c341c"
 
@@ -207,8 +211,29 @@ def sdg_concept_counts():
 
 
 def main():
-    projects, project_ids = read_csv(
+    # project.csv is read through read_projects, NOT through read_csv. A standard
+    # CSV reader breaks 193 of its rows and silently drops a character from 774
+    # more, because the export under-escapes any field whose content begins with
+    # a quotation mark. Counting distinct ids at header width gave 23,258, which
+    # this manifest reported and which three coverage figures were divided by
+    # before anyone asked the data what the number meant. The corpus is 23,451.
+    header, project_rows = read_projects.load()
+    project_ids = {r[0] for r in project_rows}
+    at_header_width, _ = read_csv(
         "data/raw/cordis-horizon-projects/project.csv", id_column="id")
+    projects = {
+        "columns": header,
+        "rows": len(project_rows),
+        "distinct_id": len(project_ids),
+        "rows_a_standard_csv_reader_breaks":
+            len(read_projects.csv_module_disagreements()),
+        "rows_at_header_width_under_a_standard_reader":
+            at_header_width["rows_at_header_width"],
+        "note": ("Read through scripts/read_projects.py. The two counts differ "
+                 "because CORDIS under-escapes a field whose content starts with "
+                 "a quote; the reader parses on the literal separator the file "
+                 "actually uses and needs no repair heuristic."),
+    }
     deliverables, deliverable_ids = read_csv(
         "data/raw/cordis-horizon-deliverables/projectDeliverables.csv", id_column="projectID")
     reports, report_ids = read_csv(
@@ -447,8 +472,9 @@ def main():
         fh.write(json.dumps(manifest, indent=2, ensure_ascii=False) + "\n")
     print("wrote", out.relative_to(ROOT))
     print("project.csv:", projects["rows"], "rows,",
-          projects["rows_at_header_width"], "at header width,",
-          projects["distinct_id"], "distinct ids")
+          projects["distinct_id"], "distinct ids;",
+          projects["rows_a_standard_csv_reader_breaks"],
+          "rows a standard csv reader breaks")
     print("projectDeliverables.csv:", deliverables["rows"], "rows,",
           deliverables["projects_covered"], "projects covered")
     print("reportSummaries.csv:", reports["rows"], "rows,",

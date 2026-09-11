@@ -1,0 +1,14 @@
+{
+  "registration_sha256": "72187842d621e55dedb6c6b366356131141cd47acf3324ab26bc7f06293c341c",
+  "seed": "72187842d621e55dedb6c6b366356131141cd47acf3324ab26bc7f06293c341c",
+  "seed_is": "the ratified registration's own hash, pre-registered in cordis-sdg at seq 119 before this script was run",
+  "method": "order the population ascending by (sha256(seed + ':' + id), id); take the first 150; positions 1-50 are development, 51-150 are evaluation",
+  "population_size": 23451,
+  "population_source": "field 0 of project.csv, read through scripts/read_projects.py",
+  "draw_size": 150,
+  "development_size": 50,
+  "evaluation_size": 100,
+  "development_sha256": "6f7796e478097f0ebcb3469429c7b54493303485c898bbfcd0bd45f25173d3c6",
+  "evaluation_sha256": "a09eecf88344d2d916b4cc2c90d4cf33988108f4bd3ba6d72145311ff04ce680",
+  "digest_definition": "sha256 of the id list, one id per line, no trailing newline"
+}
