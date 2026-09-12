@@ -217,22 +217,22 @@
       <div class="metrics-grid">
         <div class="metric-box highlight-box">
           <div class="metric-title">Target-Level Precision</div>
-          <div class="metric-number">0.447</div>
+          <div class="metric-number" id="eval-metric-precision">0.447</div>
           <div class="metric-desc">Target-level precision on held-out evaluation 100 sample (calibrated threshold).</div>
         </div>
         <div class="metric-box highlight-box">
           <div class="metric-title">Target-Level Recall</div>
-          <div class="metric-number">0.221</div>
+          <div class="metric-number" id="eval-metric-recall">0.221</div>
           <div class="metric-desc">Target-level recall on held-out 100 sample (reflects vocabulary ceiling constraints).</div>
         </div>
         <div class="metric-box warning-box">
           <div class="metric-title">Recall Ceiling</div>
-          <div class="metric-number">0.442</div>
-          <div class="metric-desc"><strong>53 of 95 reference pairs</strong> share zero vocabulary with official target descriptions at any threshold.</div>
+          <div class="metric-number" id="eval-metric-ceiling">0.442</div>
+          <div class="metric-desc"><strong id="eval-metric-ceiling-unreachable">53 of 95 reference pairs</strong> share zero vocabulary with official target descriptions at any threshold.</div>
         </div>
         <div class="metric-box">
           <div class="metric-title">Development Cohen's Kappa</div>
-          <div class="metric-number">0.677</div>
+          <div class="metric-number" id="eval-metric-kappa">0.677</div>
           <div class="metric-desc">Inter-annotator agreement scale on development 50 sample (substantial agreement baseline).</div>
         </div>
       </div>

@@ -351,17 +351,45 @@ def build_prototype_data():
         json.dump(summary, f, ensure_ascii=False, indent=1, sort_keys=True)
     print(f"  Wrote summary: {summary_path.relative_to(REPO_ROOT)}")
 
-    # Copy 6 notebook figures to prototype/figures/ for standalone deployment
+    # Condition 2 Guard (seq 289/291): Refuse if any prototype figure copy differs from original
+    print("  Checking figure copies against originals for drift...")
     proto_fig_dir = REPO_ROOT / "prototype" / "figures"
     proto_fig_dir.mkdir(parents=True, exist_ok=True)
     for key, (src_path, expected_hash) in EXPECTED_HASHES.items():
         if key.startswith("fig_"):
             dest_path = proto_fig_dir / src_path.name
-            raw_bytes = src_path.read_bytes()
-            assert hashlib.sha256(raw_bytes).hexdigest() == expected_hash
-            dest_path.write_bytes(raw_bytes)
-            assert hashlib.sha256(dest_path.read_bytes()).hexdigest() == expected_hash
-    print(f"  Copied and verified 6 notebook SVGs into {proto_fig_dir.relative_to(REPO_ROOT)}")
+            src_bytes = src_path.read_bytes()
+            src_hash = hashlib.sha256(src_bytes).hexdigest()
+            if src_hash != expected_hash:
+                raise AssertionError(
+                    f"Original figure corrupted: {src_path} has hash {src_hash}, expected {expected_hash}"
+                )
+            dest_path.write_bytes(src_bytes)
+            dest_bytes = dest_path.read_bytes()
+            dest_hash = hashlib.sha256(dest_bytes).hexdigest()
+            if dest_hash != src_hash:
+                raise AssertionError(
+                    f"Figure drift detected: {dest_path.name} in prototype/figures ({dest_hash}) "
+                    f"differs from original {src_path} ({src_hash})"
+                )
+    print(f"  Verified 6 notebook SVGs in {proto_fig_dir.relative_to(REPO_ROOT)}: zero drift against originals.")
+
+    # Condition 1 Guard (seq 291): Refuse if evaluation metrics diverge from artefact
+    print("  Checking evaluation metrics contract against metrics artefact...")
+    t_prec = round(float(metrics_doc["target_level"]["precision"]), 3)
+    t_rec = round(float(metrics_doc["target_level"]["recall"]), 3)
+    c_ceil = round(float(metrics_doc["recall_ceiling"]["ceiling"]), 3)
+    c_unreach = metrics_doc["recall_ceiling"]["with_no_evidence_at_any_threshold"]
+    c_pairs = metrics_doc["recall_ceiling"]["reference_pairs"]
+    d_kappa = round(float(metrics_doc["self_proof_against_seq_129"]["target_level"]["cohens_kappa"]), 3)
+
+    if (t_prec, t_rec, c_ceil, c_unreach, c_pairs, d_kappa) != (0.447, 0.221, 0.442, 53, 95, 0.677):
+        raise AssertionError(
+            f"Evaluation metrics drift in {EXPECTED_HASHES['metrics_artefact'][0]}: "
+            f"got P={t_prec}, R={t_rec}, Ceiling={c_ceil} ({c_unreach}/{c_pairs}), Kappa={d_kappa}; "
+            f"expected P=0.447, R=0.221, Ceiling=0.442 (53/95), Kappa=0.677"
+        )
+    print(f"  Verified evaluation metrics: P={t_prec}, R={t_rec}, Ceiling={c_ceil} ({c_unreach}/{c_pairs}), Kappa={d_kappa}")
 
     # Verification pass over generated assets
     print("\nVerifying generated prototype assets...")
@@ -380,7 +408,7 @@ def build_prototype_data():
 
     assert total_sharded_projects == 23451
     print(f"  All 23,451 projects verified across {len(shards)} shards.")
-    print("SUCCESS: Prototype static data generated and verified.")
+    print("SUCCESS: Prototype static data generated and verified with all guards active.")
 
 
 if __name__ == "__main__":

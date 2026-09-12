@@ -86,6 +86,7 @@ async function loadStaticData() {
     state.projectsIndex = await indexRes.json();
 
     renderCorpusSummary();
+    renderEvaluationMetrics();
     renderSdgDistribution();
     populateSdgFilterDropdown();
     applyFilters();
@@ -109,6 +110,45 @@ function renderCorpusSummary() {
   document.getElementById("stat-target").textContent = Number(counts.projects_with_target || 9394).toLocaleString();
   document.getElementById("stat-goal").textContent = Number(counts.projects_goal_level_only || 6882).toLocaleString();
   document.getElementById("stat-none").textContent = Number(counts.projects_unassigned || 7175).toLocaleString();
+}
+
+// Render Evaluation Metrics (Condition 1 Guard)
+function renderEvaluationMetrics() {
+  if (!state.corpusSummary || !state.corpusSummary.validation_metrics) return;
+  const vm = state.corpusSummary.validation_metrics;
+  const eval100 = vm.evaluation_100 || {};
+  const tLevel = eval100.target_level;
+  const ceiling = eval100.recall_ceiling;
+  const dev50 = vm.development_50;
+
+  if (tLevel) {
+    const precEl = document.getElementById("eval-metric-precision");
+    if (precEl && tLevel.precision !== undefined) {
+      precEl.textContent = Number(tLevel.precision).toFixed(3);
+    }
+    const recEl = document.getElementById("eval-metric-recall");
+    if (recEl && tLevel.recall !== undefined) {
+      recEl.textContent = Number(tLevel.recall).toFixed(3);
+    }
+  }
+
+  if (ceiling) {
+    const ceilEl = document.getElementById("eval-metric-ceiling");
+    if (ceilEl && ceiling.ceiling !== undefined) {
+      ceilEl.textContent = Number(ceiling.ceiling).toFixed(3);
+    }
+    const pairsEl = document.getElementById("eval-metric-ceiling-unreachable");
+    if (pairsEl && ceiling.with_no_evidence_at_any_threshold !== undefined && ceiling.reference_pairs !== undefined) {
+      pairsEl.textContent = `${ceiling.with_no_evidence_at_any_threshold} of ${ceiling.reference_pairs} reference pairs`;
+    }
+  }
+
+  if (dev50) {
+    const kappaEl = document.getElementById("eval-metric-kappa");
+    if (kappaEl && dev50.cohens_kappa !== undefined) {
+      kappaEl.textContent = Number(dev50.cohens_kappa).toFixed(3);
+    }
+  }
 }
 
 // Populate SDG Dropdown Filter
