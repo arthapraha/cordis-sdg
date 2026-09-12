@@ -49,6 +49,30 @@ data/sample/handoff-evaluation-100.json
 # The contents rather than the directory: git cannot re-include a file whose
 # PARENT is excluded, so "data/corpus/" plus a negation silently does nothing.
 data/corpus/*
-# …except the figure counts. 90 KB, what the notebook plots, and the notebook
-# cannot be re-executed from the repository without them.
+# …except two files, and the exception is deliberate. Owner's ruling at
+# cordis-sdg seq 285.
+#
+# THE DERIVATIVE RULE AND ITS TWO EXCEPTIONS. Everything else under data/corpus/
+# is a derivative of the 248 MB snapshot payload, which is not committed, so the
+# derivatives go to the artefact vault by hash instead. That rule holds for
+# records.jsonl, 146 MB of hand-off-shaped records nobody reads directly.
+#
+# It does not hold for these two, because both are DELIVERABLES rather than
+# intermediates:
+#
+#   figures.json           the counts the notebook plots. 90 KB. Without it a
+#                          clone cannot re-execute the notebook, which is
+#                          registration section 6 item 1.
+#   mapping-table-*.csv    registration SECTION 6 ITEM 2 ITSELF, the submitted
+#                          table. 24.6 MB raw and 2.6 MB stored, because every
+#                          row repeats the same snapshot hash, pipeline commit
+#                          and target labels, so it compresses 9.5 to 1.
+#
+# The prototype's static payload under prototype/ is the third exception and
+# lives outside this tree: section 6 item 7's data is a derivative of the table
+# above, and a clone must carry both or it ships the copy without the original.
+# prototype/README.md carries that with its own conditions — regenerated only
+# when the table's hash changes, never for cosmetics, and its builder refuses to
+# write on any input-hash mismatch.
 !data/corpus/figures.json
+!data/corpus/mapping-table-*.csv

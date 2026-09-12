@@ -17,3 +17,11 @@ sources/** -text -diff
 # reproduce its own hash from the repository is not evidence, it is a copy with a
 # footnote. Counsel found this at cordis-sdg seq 178.
 data/labels/*.json -text -diff
+
+# The submitted mapping table is verified by hash by another seat, whose input
+# contract names 181d378a…. Git must not touch a byte of it, for the same reason
+# as the sealed labels above: the committed blob has to be the artefact that was
+# posted, not a normalisation of it. It is written with newline="" and an
+# explicit line terminator, so it is already LF; this makes that a property of
+# the repository rather than of the machine that wrote it.
+data/corpus/mapping-table-*.csv -text -diff
