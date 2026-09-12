@@ -30,6 +30,7 @@ is stale, never that a result is wrong.
 
 import json
 import pathlib
+import re
 import sys
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
@@ -174,7 +175,31 @@ def main():
          "covers %s projects rather than 150" % thousands(cover["projects_in_table"])),
     ]
 
+    # THE REGISTRATION HASH CANNOT BE COMPUTED FROM ANYTHING HERE, so it is
+    # checked for AGREEMENT rather than against a value. The registration lives
+    # in the room's artefact vault and is not committed, so no file in this
+    # repository can say what its hash ought to be; every committed artefact
+    # records the PREDECESSOR it was built under, which is correct and is not
+    # the hash these documents name as in force.
+    #
+    # What can still be checked is that the two documents name the SAME one and
+    # that it is well formed. A typo in either fires. Counsel asked for this at
+    # cordis-sdg seq 302: it is the hash a judge reads first.
+    named = {}
+    for doc, text in docs.items():
+        found = re.findall(r"registration-v10[.]md`, sha256 `([0-9a-f]{64})`", text)
+        named[doc] = found
     failures = []
+    for doc, found in named.items():
+        if len(found) != 1:
+            failures.append((doc, "exactly one registration hash (found %d)" % len(found), "—"))
+    if all(len(v) == 1 for v in named.values()):
+        values = {doc: v[0] for doc, v in named.items()}
+        if len(set(values.values())) != 1:
+            failures.append(("both documents",
+                             "one registration hash, not %d different ones" % len(set(values.values())),
+                             " vs ".join(sorted(set(values.values())))))
+
     for doc, what, needle in claims:
         if needle not in docs[doc]:
             failures.append((doc, what, needle))
