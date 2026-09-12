@@ -23,10 +23,17 @@ data/pipeline/development-50-v2.json
 data/pipeline/dev50-adjudication-v2.json
 data/sample/handoff-evaluation-100.json
 
+# NOT ignored, and the reason is the same one that applies to data/corpus/
+# figures.json: THE NOTEBOOK READS IT. data/pipeline/evaluation-100-metrics.json
+# is 15 KB and is one of the notebook's three inputs, so a clone without it
+# cannot re-execute the notebook — which is exactly what happened, verified by
+# cloning and watching nbconvert fail on the first cell. Counsel found the
+# consequence at cordis-sdg seq 267 from the other side: the file was missing
+# from another seat's clone too.
+
 # The section 4.7 metrics report, like the other pipeline output: posted to the
 # room as an artefact by hash. metrics.py and the label artefacts it reads are
 # committed, so the report is reproducible from the repository.
-data/pipeline/evaluation-100-metrics.json
 
 # The corpus records and the section 6 mapping table: 146 MB of hand-off-shaped
 # records and the table built from them. Both are derivatives of payload that is
