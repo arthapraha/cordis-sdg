@@ -31,4 +31,9 @@ data/pipeline/evaluation-100-metrics.json
 # The corpus records and the section 6 mapping table: 146 MB of hand-off-shaped
 # records and the table built from them. Both are derivatives of payload that is
 # itself not committed, and both go to the room as artefacts by hash.
-data/corpus/
+# The contents rather than the directory: git cannot re-include a file whose
+# PARENT is excluded, so "data/corpus/" plus a negation silently does nothing.
+data/corpus/*
+# …except the figure counts. 90 KB, what the notebook plots, and the notebook
+# cannot be re-executed from the repository without them.
+!data/corpus/figures.json

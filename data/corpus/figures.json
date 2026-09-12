@@ -1,0 +1,5091 @@
+{
+ "_what_this_is": "The counts behind registration section 6 item 4's visualisations. Data, not pictures: see the module docstring.",
+ "registration_sha256": "72187842d621e55dedb6c6b366356131141cd47acf3324ab26bc7f06293c341c",
+ "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+ "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+ "mapping_table_sha256": "181d378a3078014193f3ae4f684b00b375ed62f3d24b2b34c060f6457b4a00d3",
+ "partial": false,
+ "coverage": {
+  "projects_in_records": 23451,
+  "projects_in_table": 23451,
+  "projects_missing_from_table": 0
+ },
+ "corpus_shape": {
+  "rows": 28833,
+  "projects_with_a_target": 9394,
+  "projects_goal_level_only": 6882,
+  "projects_unassigned": 7175
+ },
+ "most_linked_targets": [
+  {
+   "key": "3.4",
+   "count": 2109
+  },
+  {
+   "key": "7.2",
+   "count": 1071
+  },
+  {
+   "key": "12.5",
+   "count": 1017
+  },
+  {
+   "key": "2.4",
+   "count": 832
+  },
+  {
+   "key": "13.1",
+   "count": 694
+  },
+  {
+   "key": "16.6",
+   "count": 676
+  },
+  {
+   "key": "3.9",
+   "count": 634
+  },
+  {
+   "key": "10.2",
+   "count": 454
+  },
+  {
+   "key": "3.3",
+   "count": 394
+  },
+  {
+   "key": "2.2",
+   "count": 345
+  },
+  {
+   "key": "8.5",
+   "count": 313
+  },
+  {
+   "key": "11.b",
+   "count": 311
+  },
+  {
+   "key": "7.3",
+   "count": 278
+  },
+  {
+   "key": "6.3",
+   "count": 277
+  },
+  {
+   "key": "8.3",
+   "count": 265
+  },
+  {
+   "key": "3.d",
+   "count": 250
+  },
+  {
+   "key": "11.4",
+   "count": 187
+  },
+  {
+   "key": "15.2",
+   "count": 186
+  },
+  {
+   "key": "9.5",
+   "count": 176
+  },
+  {
+   "key": "14.4",
+   "count": 169
+  },
+  {
+   "key": "13.3",
+   "count": 164
+  },
+  {
+   "key": "13.2",
+   "count": 160
+  },
+  {
+   "key": "12.4",
+   "count": 157
+  },
+  {
+   "key": "7.a",
+   "count": 149
+  },
+  {
+   "key": "15.1",
+   "count": 139
+  }
+ ],
+ "least_linked_targets": {
+  "targets_in_taxonomy": 169,
+  "targets_never_assigned": [
+   "1.1",
+   "1.2",
+   "1.b",
+   "10.6",
+   "10.a",
+   "10.c",
+   "12.7",
+   "12.8",
+   "12.a",
+   "12.b",
+   "14.b",
+   "15.a",
+   "15.c",
+   "16.1",
+   "16.8",
+   "16.b",
+   "17.1",
+   "17.11",
+   "17.12",
+   "17.13",
+   "17.14",
+   "17.15",
+   "17.19",
+   "17.2",
+   "17.3",
+   "17.4",
+   "17.5",
+   "2.b",
+   "6.b",
+   "7.b",
+   "8.10",
+   "8.a",
+   "9.b"
+  ],
+  "_note": "A target reached by nothing cannot appear in a count of what was assigned, so it is listed rather than plotted."
+ },
+ "goals_by_project_count": [
+  {
+   "goal_id": "3",
+   "projects": 3391
+  },
+  {
+   "goal_id": "7",
+   "projects": 1372
+  },
+  {
+   "goal_id": "2",
+   "projects": 1263
+  },
+  {
+   "goal_id": "12",
+   "projects": 1203
+  },
+  {
+   "goal_id": "13",
+   "projects": 905
+  },
+  {
+   "goal_id": "11",
+   "projects": 825
+  },
+  {
+   "goal_id": "16",
+   "projects": 774
+  },
+  {
+   "goal_id": "8",
+   "projects": 709
+  },
+  {
+   "goal_id": "9",
+   "projects": 490
+  },
+  {
+   "goal_id": "10",
+   "projects": 483
+  },
+  {
+   "goal_id": "15",
+   "projects": 470
+  },
+  {
+   "goal_id": "6",
+   "projects": 457
+  },
+  {
+   "goal_id": "4",
+   "projects": 351
+  },
+  {
+   "goal_id": "14",
+   "projects": 296
+  },
+  {
+   "goal_id": "5",
+   "projects": 182
+  },
+  {
+   "goal_id": "1",
+   "projects": 151
+  },
+  {
+   "goal_id": "17",
+   "projects": 145
+  }
+ ],
+ "goals_never_assigned": [],
+ "confidence_bands": [
+  {
+   "key": "low",
+   "count": 9228
+  },
+  {
+   "key": "medium",
+   "count": 2923
+  },
+  {
+   "key": "high",
+   "count": 2625
+  }
+ ],
+ "by_programme_master_call": [
+  {
+   "key": "HORIZON-MSCA-2024-PF-01",
+   "projects": 1720,
+   "with_a_target": 516,
+   "rate": 0.3
+  },
+  {
+   "key": "HORIZON-MSCA-2025-PF",
+   "projects": 1618,
+   "with_a_target": 512,
+   "rate": 0.3164
+  },
+  {
+   "key": "HORIZON-MSCA-2023-PF-01",
+   "projects": 1322,
+   "with_a_target": 376,
+   "rate": 0.2844
+  },
+  {
+   "key": "HORIZON-MSCA-2022-PF-01",
+   "projects": 1289,
+   "with_a_target": 460,
+   "rate": 0.3569
+  },
+  {
+   "key": "HORIZON-MSCA-2021-PF-01",
+   "projects": 1211,
+   "with_a_target": 462,
+   "rate": 0.3815
+  },
+  {
+   "key": "ERC-2024-STG",
+   "projects": 491,
+   "with_a_target": 103,
+   "rate": 0.2098
+  },
+  {
+   "key": "ERC-2025-STG",
+   "projects": 476,
+   "with_a_target": 117,
+   "rate": 0.2458
+  },
+  {
+   "key": "ERC-2021-STG",
+   "projects": 470,
+   "with_a_target": 148,
+   "rate": 0.3149
+  },
+  {
+   "key": "ERC-2022-STG",
+   "projects": 411,
+   "with_a_target": 118,
+   "rate": 0.2871
+  },
+  {
+   "key": "ERC-2023-STG",
+   "projects": 400,
+   "with_a_target": 106,
+   "rate": 0.265
+  },
+  {
+   "key": "ERC-2025-COG",
+   "projects": 341,
+   "with_a_target": 69,
+   "rate": 0.2023
+  },
+  {
+   "key": "ERC-2024-COG",
+   "projects": 329,
+   "with_a_target": 73,
+   "rate": 0.2219
+  },
+  {
+   "key": "ERC-2022-COG",
+   "projects": 323,
+   "with_a_target": 82,
+   "rate": 0.2539
+  },
+  {
+   "key": "ERC-2021-COG",
+   "projects": 318,
+   "with_a_target": 111,
+   "rate": 0.3491
+  },
+  {
+   "key": "ERC-2023-COG",
+   "projects": 307,
+   "with_a_target": 90,
+   "rate": 0.2932
+  },
+  {
+   "key": "ERC-2025-POC",
+   "projects": 299,
+   "with_a_target": 100,
+   "rate": 0.3344
+  },
+  {
+   "key": "ERC-2024-ADG",
+   "projects": 281,
+   "with_a_target": 55,
+   "rate": 0.1957
+  },
+  {
+   "key": "ERC-2021-ADG",
+   "projects": 255,
+   "with_a_target": 70,
+   "rate": 0.2745
+  },
+  {
+   "key": "ERC-2023-ADG",
+   "projects": 255,
+   "with_a_target": 50,
+   "rate": 0.1961
+  },
+  {
+   "key": "ERC-2024-POC",
+   "projects": 245,
+   "with_a_target": 67,
+   "rate": 0.2735
+  },
+  {
+   "key": "ERC-2023-POC",
+   "projects": 240,
+   "with_a_target": 102,
+   "rate": 0.425
+  },
+  {
+   "key": "ERC-2022-ADG",
+   "projects": 218,
+   "with_a_target": 47,
+   "rate": 0.2156
+  },
+  {
+   "key": "ERC-2022-POC2",
+   "projects": 209,
+   "with_a_target": 101,
+   "rate": 0.4833
+  },
+  {
+   "key": "HORIZON-EIC-2022-ACCELERATOR-01",
+   "projects": 203,
+   "with_a_target": 80,
+   "rate": 0.3941
+  },
+  {
+   "key": "HORIZON-EIC-2023-ACCELERATOR-01",
+   "projects": 162,
+   "with_a_target": 67,
+   "rate": 0.4136
+  },
+  {
+   "key": "HORIZON-MSCA-2022-DN-01",
+   "projects": 158,
+   "with_a_target": 81,
+   "rate": 0.5127
+  },
+  {
+   "key": "ERC-2022-POC1",
+   "projects": 156,
+   "with_a_target": 65,
+   "rate": 0.4167
+  },
+  {
+   "key": "HORIZON-MSCA-2024-DN-01",
+   "projects": 153,
+   "with_a_target": 66,
+   "rate": 0.4314
+  },
+  {
+   "key": "HORIZON-MSCA-2021-DN-01",
+   "projects": 152,
+   "with_a_target": 81,
+   "rate": 0.5329
+  },
+  {
+   "key": "ERC-2025-ADG",
+   "projects": 145,
+   "with_a_target": 27,
+   "rate": 0.1862
+  },
+  {
+   "key": "HORIZON-MSCA-2025-DN-01",
+   "projects": 141,
+   "with_a_target": 72,
+   "rate": 0.5106
+  },
+  {
+   "key": "HORIZON-EIE-2022-SCALEUP-02",
+   "projects": 138,
+   "with_a_target": 69,
+   "rate": 0.5
+  },
+  {
+   "key": "HORIZON-EIC-2024-ACCELERATOR-02",
+   "projects": 137,
+   "with_a_target": 61,
+   "rate": 0.4453
+  },
+  {
+   "key": "HORIZON-MSCA-2023-DN-01",
+   "projects": 136,
+   "with_a_target": 61,
+   "rate": 0.4485
+  },
+  {
+   "key": "HORIZON-WIDERA-2021-ACCESS-03",
+   "projects": 106,
+   "with_a_target": 60,
+   "rate": 0.566
+  },
+  {
+   "key": "ERC-2026-POC",
+   "projects": 99,
+   "with_a_target": 27,
+   "rate": 0.2727
+  },
+  {
+   "key": "HORIZON-WIDERA-2023-ACCESS-02",
+   "projects": 96,
+   "with_a_target": 35,
+   "rate": 0.3646
+  },
+  {
+   "key": "HORIZON-EIC-2025-ACCELERATOR-02",
+   "projects": 94,
+   "with_a_target": 38,
+   "rate": 0.4043
+  },
+  {
+   "key": "HORIZON-MSCA-2024-SE-01",
+   "projects": 83,
+   "with_a_target": 37,
+   "rate": 0.4458
+  },
+  {
+   "key": "HORIZON-MSCA-2025-SE-01",
+   "projects": 81,
+   "with_a_target": 36,
+   "rate": 0.4444
+  },
+  {
+   "key": "HORIZON-MSCA-2022-SE-01",
+   "projects": 80,
+   "with_a_target": 36,
+   "rate": 0.45
+  },
+  {
+   "key": "HORIZON-MSCA-2021-SE-01",
+   "projects": 78,
+   "with_a_target": 46,
+   "rate": 0.5897
+  },
+  {
+   "key": "HORIZON-MSCA-2023-SE-01",
+   "projects": 78,
+   "with_a_target": 32,
+   "rate": 0.4103
+  },
+  {
+   "key": "HORIZON-WIDERA-2022-TALENTS-04",
+   "projects": 78,
+   "with_a_target": 27,
+   "rate": 0.3462
+  },
+  {
+   "key": "HORIZON-CL2-2025-01",
+   "projects": 77,
+   "with_a_target": 48,
+   "rate": 0.6234
+  },
+  {
+   "key": "HORIZON-EIC-2021-ACCELERATOROPEN-01",
+   "projects": 77,
+   "with_a_target": 29,
+   "rate": 0.3766
+  },
+  {
+   "key": "HORIZON-CL4-2021-DIGITAL-EMERGING-01",
+   "projects": 74,
+   "with_a_target": 32,
+   "rate": 0.4324
+  },
+  {
+   "key": "HORIZON-CL4-2025-01",
+   "projects": 72,
+   "with_a_target": 40,
+   "rate": 0.5556
+  },
+  {
+   "key": "HORIZON-EIC-2021-ACCELERATORCHALLENGES-01",
+   "projects": 72,
+   "with_a_target": 42,
+   "rate": 0.5833
+  },
+  {
+   "key": "HORIZON-INFRA-2025-01",
+   "projects": 72,
+   "with_a_target": 29,
+   "rate": 0.4028
+  },
+  {
+   "key": "HORIZON-CL4-2022-RESILIENCE-01",
+   "projects": 68,
+   "with_a_target": 45,
+   "rate": 0.6618
+  },
+  {
+   "key": "HORIZON-EIC-2022-PATHFINDEROPEN-01",
+   "projects": 66,
+   "with_a_target": 27,
+   "rate": 0.4091
+  },
+  {
+   "key": "HORIZON-WIDERA-2025-02",
+   "projects": 66,
+   "with_a_target": 19,
+   "rate": 0.2879
+  },
+  {
+   "key": "ERC-2025-SyG",
+   "projects": 65,
+   "with_a_target": 12,
+   "rate": 0.1846
+  },
+  {
+   "key": "HORIZON-EIC-2023-PATHFINDEROPEN-01",
+   "projects": 62,
+   "with_a_target": 33,
+   "rate": 0.5323
+  },
+  {
+   "key": "HORIZON-EIC-2021-PATHFINDEROPEN-01",
+   "projects": 60,
+   "with_a_target": 25,
+   "rate": 0.4167
+  },
+  {
+   "key": "HORIZON-WIDERA-2023-TALENTS-02",
+   "projects": 59,
+   "with_a_target": 23,
+   "rate": 0.3898
+  },
+  {
+   "key": "ERC-2024-SyG",
+   "projects": 58,
+   "with_a_target": 14,
+   "rate": 0.2414
+  },
+  {
+   "key": "HORIZON-EIE-2021-SCALEUP-01",
+   "projects": 57,
+   "with_a_target": 27,
+   "rate": 0.4737
+  },
+  {
+   "key": "HORIZON-CL4-2021-RESILIENCE-01",
+   "projects": 56,
+   "with_a_target": 39,
+   "rate": 0.6964
+  },
+  {
+   "key": "HORIZON-CL6-2025-01",
+   "projects": 56,
+   "with_a_target": 38,
+   "rate": 0.6786
+  },
+  {
+   "key": "HORIZON-WIDERA-2024-TALENTS-02",
+   "projects": 54,
+   "with_a_target": 15,
+   "rate": 0.2778
+  },
+  {
+   "key": "HORIZON-CL4-2021-TWIN-TRANSITION-01",
+   "projects": 53,
+   "with_a_target": 39,
+   "rate": 0.7358
+  },
+  {
+   "key": "HORIZON-WIDERA-2022-TALENTS-02",
+   "projects": 52,
+   "with_a_target": 30,
+   "rate": 0.5769
+  },
+  {
+   "key": "HORIZON-CL5-2021-D3-03",
+   "projects": 51,
+   "with_a_target": 42,
+   "rate": 0.8235
+  },
+  {
+   "key": "HORIZON-CL4-2023-TWIN-TRANSITION-01",
+   "projects": 50,
+   "with_a_target": 40,
+   "rate": 0.8
+  },
+  {
+   "key": "HORIZON-EIC-2022-TRANSITION-01",
+   "projects": 50,
+   "with_a_target": 22,
+   "rate": 0.44
+  },
+  {
+   "key": "HORIZON-EIC-2022-PATHFINDERCHALLENGES-01",
+   "projects": 49,
+   "with_a_target": 21,
+   "rate": 0.4286
+  },
+  {
+   "key": "HORIZON-MSCA-2022-CITIZENS-01",
+   "projects": 49,
+   "with_a_target": 30,
+   "rate": 0.6122
+  },
+  {
+   "key": "HORIZON-MSCA-2025-CITIZENS-01",
+   "projects": 49,
+   "with_a_target": 13,
+   "rate": 0.2653
+  },
+  {
+   "key": "HORIZON-CL4-2021-HUMAN-01",
+   "projects": 47,
+   "with_a_target": 20,
+   "rate": 0.4255
+  },
+  {
+   "key": "HORIZON-MSCA-2023-CITIZENS-01",
+   "projects": 47,
+   "with_a_target": 16,
+   "rate": 0.3404
+  },
+  {
+   "key": "HORIZON-EIC-2023-PATHFINDERCHALLENGES-01",
+   "projects": 46,
+   "with_a_target": 30,
+   "rate": 0.6522
+  },
+  {
+   "key": "HORIZON-EIC-2024-PATHFINDEROPEN-01",
+   "projects": 45,
+   "with_a_target": 20,
+   "rate": 0.4444
+  },
+  {
+   "key": "HORIZON-CL5-2021-D2-01",
+   "projects": 44,
+   "with_a_target": 35,
+   "rate": 0.7955
+  },
+  {
+   "key": "HORIZON-CL5-2023-D3-02",
+   "projects": 44,
+   "with_a_target": 37,
+   "rate": 0.8409
+  },
+  {
+   "key": "HORIZON-CL6-2021-GOVERNANCE-01",
+   "projects": 44,
+   "with_a_target": 38,
+   "rate": 0.8636
+  },
+  {
+   "key": "HORIZON-EIC-2023-TRANSITION-01",
+   "projects": 44,
+   "with_a_target": 10,
+   "rate": 0.2273
+  },
+  {
+   "key": "HORIZON-EIC-2025-PATHFINDEROPEN",
+   "projects": 44,
+   "with_a_target": 16,
+   "rate": 0.3636
+  },
+  {
+   "key": "HORIZON-CL4-2022-TWIN-TRANSITION-01",
+   "projects": 43,
+   "with_a_target": 34,
+   "rate": 0.7907
+  },
+  {
+   "key": "HORIZON-CL5-2021-D3-02",
+   "projects": 43,
+   "with_a_target": 34,
+   "rate": 0.7907
+  },
+  {
+   "key": "HORIZON-CL5-2024-D3-01",
+   "projects": 43,
+   "with_a_target": 29,
+   "rate": 0.6744
+  },
+  {
+   "key": "HORIZON-CL5-2025-02",
+   "projects": 43,
+   "with_a_target": 32,
+   "rate": 0.7442
+  },
+  {
+   "key": "HORIZON-CL4-2025-03",
+   "projects": 42,
+   "with_a_target": 11,
+   "rate": 0.2619
+  },
+  {
+   "key": "HORIZON-EIC-2021-PATHFINDERCHALLENGES-01",
+   "projects": 42,
+   "with_a_target": 22,
+   "rate": 0.5238
+  },
+  {
+   "key": "HORIZON-CL5-2021-D5-01",
+   "projects": 41,
+   "with_a_target": 19,
+   "rate": 0.4634
+  },
+  {
+   "key": "HORIZON-CL5-2022-D5-01",
+   "projects": 40,
+   "with_a_target": 27,
+   "rate": 0.675
+  },
+  {
+   "key": "HORIZON-EIC-2024-TRANSITION-01",
+   "projects": 40,
+   "with_a_target": 17,
+   "rate": 0.425
+  },
+  {
+   "key": "HORIZON-WIDERA-2025-TALENTS-01",
+   "projects": 40,
+   "with_a_target": 14,
+   "rate": 0.35
+  },
+  {
+   "key": "HORIZON-CL6-2025-02",
+   "projects": 39,
+   "with_a_target": 33,
+   "rate": 0.8462
+  },
+  {
+   "key": "HORIZON-HLTH-2021-DISEASE-04",
+   "projects": 39,
+   "with_a_target": 28,
+   "rate": 0.7179
+  },
+  {
+   "key": "HORIZON-CL5-2022-D3-01",
+   "projects": 38,
+   "with_a_target": 30,
+   "rate": 0.7895
+  },
+  {
+   "key": "HORIZON-EIC-2025-TRANSITIONOPEN",
+   "projects": 38,
+   "with_a_target": 15,
+   "rate": 0.3947
+  },
+  {
+   "key": "HORIZON-EIC-2025-UKRAINIANTECH-01",
+   "projects": 38,
+   "with_a_target": 13,
+   "rate": 0.3421
+  },
+  {
+   "key": "HORIZON-WIDERA-2023-TALENTS-01",
+   "projects": 38,
+   "with_a_target": 11,
+   "rate": 0.2895
+  },
+  {
+   "key": "ERC-2023-SyG",
+   "projects": 37,
+   "with_a_target": 13,
+   "rate": 0.3514
+  },
+  {
+   "key": "HORIZON-CL5-2023-D3-01",
+   "projects": 37,
+   "with_a_target": 27,
+   "rate": 0.7297
+  },
+  {
+   "key": "HORIZON-CL5-2023-D5-01",
+   "projects": 37,
+   "with_a_target": 16,
+   "rate": 0.4324
+  },
+  {
+   "key": "HORIZON-HLTH-2025-01",
+   "projects": 37,
+   "with_a_target": 22,
+   "rate": 0.5946
+  },
+  {
+   "key": "HORIZON-HLTH-2023-DISEASE-03",
+   "projects": 36,
+   "with_a_target": 30,
+   "rate": 0.8333
+  },
+  {
+   "key": "HORIZON-CL4-2023-RESILIENCE-01",
+   "projects": 35,
+   "with_a_target": 24,
+   "rate": 0.6857
+  },
+  {
+   "key": "HORIZON-CL4-2023-SPACE-01",
+   "projects": 35,
+   "with_a_target": 10,
+   "rate": 0.2857
+  },
+  {
+   "key": "HORIZON-CL5-2024-D5-01",
+   "projects": 35,
+   "with_a_target": 13,
+   "rate": 0.3714
+  },
+  {
+   "key": "HORIZON-JU-SNS-2022",
+   "projects": 35,
+   "with_a_target": 10,
+   "rate": 0.2857
+  },
+  {
+   "key": "ERC-2022-SYG",
+   "projects": 34,
+   "with_a_target": 15,
+   "rate": 0.4412
+  },
+  {
+   "key": "HORIZON-CL4-2023-HUMAN-01-CNECT",
+   "projects": 34,
+   "with_a_target": 14,
+   "rate": 0.4118
+  },
+  {
+   "key": "HORIZON-CL6-2021-FARM2FORK-01",
+   "projects": 34,
+   "with_a_target": 29,
+   "rate": 0.8529
+  },
+  {
+   "key": "HORIZON-CL6-2022-GOVERNANCE-01",
+   "projects": 34,
+   "with_a_target": 29,
+   "rate": 0.8529
+  },
+  {
+   "key": "HORIZON-WIDERA-2022-TALENTS-01",
+   "projects": 34,
+   "with_a_target": 15,
+   "rate": 0.4412
+  },
+  {
+   "key": "HORIZON-CL2-2024-TRANSFORMATIONS-01",
+   "projects": 33,
+   "with_a_target": 20,
+   "rate": 0.6061
+  },
+  {
+   "key": "HORIZON-CL6-2023-BIODIV-01",
+   "projects": 33,
+   "with_a_target": 27,
+   "rate": 0.8182
+  },
+  {
+   "key": "HORIZON-JTI-CLEANH2-2023-1",
+   "projects": 33,
+   "with_a_target": 17,
+   "rate": 0.5152
+  },
+  {
+   "key": "HORIZON-CL2-2024-DEMOCRACY-01",
+   "projects": 32,
+   "with_a_target": 16,
+   "rate": 0.5
+  },
+  {
+   "key": "HORIZON-EIC-2024-PATHFINDERCHALLENGES-01",
+   "projects": 32,
+   "with_a_target": 14,
+   "rate": 0.4375
+  },
+  {
+   "key": "HORIZON-JU-GH-EDCTP3-2024-01-two-stage",
+   "projects": 32,
+   "with_a_target": 26,
+   "rate": 0.8125
+  },
+  {
+   "key": "HORIZON-SESAR-2022-DES-IR-01",
+   "projects": 32,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-CL2-2022-TRANSFORMATIONS-01",
+   "projects": 31,
+   "with_a_target": 26,
+   "rate": 0.8387
+  },
+  {
+   "key": "HORIZON-CL4-2024-TWIN-TRANSITION-01",
+   "projects": 31,
+   "with_a_target": 16,
+   "rate": 0.5161
+  },
+  {
+   "key": "HORIZON-INFRA-2023-DEV-01",
+   "projects": 31,
+   "with_a_target": 12,
+   "rate": 0.3871
+  },
+  {
+   "key": "HORIZON-CL2-2023-TRANSFORMATIONS-01",
+   "projects": 30,
+   "with_a_target": 27,
+   "rate": 0.9
+  },
+  {
+   "key": "HORIZON-CL5-2022-D3-03",
+   "projects": 30,
+   "with_a_target": 24,
+   "rate": 0.8
+  },
+  {
+   "key": "HORIZON-CL5-2024-D3-02",
+   "projects": 30,
+   "with_a_target": 25,
+   "rate": 0.8333
+  },
+  {
+   "key": "HORIZON-CL6-2023-GOVERNANCE-01",
+   "projects": 30,
+   "with_a_target": 20,
+   "rate": 0.6667
+  },
+  {
+   "key": "HORIZON-EIC-2021-TRANSITIONOPEN-01",
+   "projects": 30,
+   "with_a_target": 16,
+   "rate": 0.5333
+  },
+  {
+   "key": "HORIZON-JTI-CLEANH2-2022-1",
+   "projects": 30,
+   "with_a_target": 15,
+   "rate": 0.5
+  },
+  {
+   "key": "HORIZON-JU-CBE-2023",
+   "projects": 30,
+   "with_a_target": 24,
+   "rate": 0.8
+  },
+  {
+   "key": "HORIZON-JU-CBE-2024",
+   "projects": 30,
+   "with_a_target": 20,
+   "rate": 0.6667
+  },
+  {
+   "key": "HORIZON-MSCA-2022-COFUND-01",
+   "projects": 30,
+   "with_a_target": 14,
+   "rate": 0.4667
+  },
+  {
+   "key": "HORIZON-MSCA-2025-COFUND-01",
+   "projects": 30,
+   "with_a_target": 9,
+   "rate": 0.3
+  },
+  {
+   "key": "HORIZON-CL2-2022-DEMOCRACY-01",
+   "projects": 29,
+   "with_a_target": 22,
+   "rate": 0.7586
+  },
+  {
+   "key": "HORIZON-CL2-2022-HERITAGE-01",
+   "projects": 29,
+   "with_a_target": 26,
+   "rate": 0.8966
+  },
+  {
+   "key": "HORIZON-CL5-2022-D2-01",
+   "projects": 29,
+   "with_a_target": 19,
+   "rate": 0.6552
+  },
+  {
+   "key": "HORIZON-CL6-2021-BIODIV-01",
+   "projects": 29,
+   "with_a_target": 24,
+   "rate": 0.8276
+  },
+  {
+   "key": "HORIZON-EIC-2025-PATHFINDERCHALLENGES-01",
+   "projects": 29,
+   "with_a_target": 16,
+   "rate": 0.5517
+  },
+  {
+   "key": "HORIZON-EURATOM-2021-NRT-01",
+   "projects": 29,
+   "with_a_target": 17,
+   "rate": 0.5862
+  },
+  {
+   "key": "HORIZON-HLTH-2023-TOOL-05",
+   "projects": 29,
+   "with_a_target": 21,
+   "rate": 0.7241
+  },
+  {
+   "key": "HORIZON-JTI-CLEANH2-2024",
+   "projects": 29,
+   "with_a_target": 8,
+   "rate": 0.2759
+  },
+  {
+   "key": "HORIZON-JU-CLEANH2-2025",
+   "projects": 29,
+   "with_a_target": 10,
+   "rate": 0.3448
+  },
+  {
+   "key": "HORIZON-SESAR-2025-DES-IR-02",
+   "projects": 29,
+   "with_a_target": 3,
+   "rate": 0.1034
+  },
+  {
+   "key": "HORIZON-CL4-2022-DATA-01",
+   "projects": 28,
+   "with_a_target": 13,
+   "rate": 0.4643
+  },
+  {
+   "key": "HORIZON-JU-GH-EDCTP3-2023-01",
+   "projects": 28,
+   "with_a_target": 18,
+   "rate": 0.6429
+  },
+  {
+   "key": "HORIZON-JU-SNS-2023",
+   "projects": 28,
+   "with_a_target": 11,
+   "rate": 0.3929
+  },
+  {
+   "key": "HORIZON-MSCA-2023-COFUND-01",
+   "projects": 28,
+   "with_a_target": 8,
+   "rate": 0.2857
+  },
+  {
+   "key": "HORIZON-CL4-2023-DIGITAL-EMERGING-01-CNECT",
+   "projects": 27,
+   "with_a_target": 5,
+   "rate": 0.1852
+  },
+  {
+   "key": "HORIZON-CL5-2021-D6-01",
+   "projects": 27,
+   "with_a_target": 12,
+   "rate": 0.4444
+  },
+  {
+   "key": "HORIZON-HLTH-2022-DISEASE-06-two-stage",
+   "projects": 27,
+   "with_a_target": 15,
+   "rate": 0.5556
+  },
+  {
+   "key": "HORIZON-MSCA-2021-COFUND-01",
+   "projects": 27,
+   "with_a_target": 11,
+   "rate": 0.4074
+  },
+  {
+   "key": "HORIZON-MSCA-2024-COFUND-01",
+   "projects": 27,
+   "with_a_target": 4,
+   "rate": 0.1481
+  },
+  {
+   "key": "HORIZON-CL2-2023-DEMOCRACY-01",
+   "projects": 26,
+   "with_a_target": 16,
+   "rate": 0.6154
+  },
+  {
+   "key": "HORIZON-CL2-2023-HERITAGE-01",
+   "projects": 26,
+   "with_a_target": 25,
+   "rate": 0.9615
+  },
+  {
+   "key": "HORIZON-CL4-2022-SPACE-01",
+   "projects": 26,
+   "with_a_target": 5,
+   "rate": 0.1923
+  },
+  {
+   "key": "HORIZON-CL4-2025-02",
+   "projects": 26,
+   "with_a_target": 5,
+   "rate": 0.1923
+  },
+  {
+   "key": "HORIZON-CL6-2022-FARM2FORK-01",
+   "projects": 26,
+   "with_a_target": 20,
+   "rate": 0.7692
+  },
+  {
+   "key": "HORIZON-CL6-2023-CIRCBIO-01",
+   "projects": 26,
+   "with_a_target": 19,
+   "rate": 0.7308
+  },
+  {
+   "key": "HORIZON-CL6-2023-FARM2FORK-01",
+   "projects": 26,
+   "with_a_target": 22,
+   "rate": 0.8462
+  },
+  {
+   "key": "HORIZON-JU-GH-EDCTP3-2022-01",
+   "projects": 26,
+   "with_a_target": 19,
+   "rate": 0.7308
+  },
+  {
+   "key": "HORIZON-WIDERA-2022-ERA-01",
+   "projects": 26,
+   "with_a_target": 15,
+   "rate": 0.5769
+  },
+  {
+   "key": "HORIZON-CL5-2025-04",
+   "projects": 25,
+   "with_a_target": 11,
+   "rate": 0.44
+  },
+  {
+   "key": "HORIZON-HLTH-2022-STAYHLTH-01-two-stage",
+   "projects": 25,
+   "with_a_target": 15,
+   "rate": 0.6
+  },
+  {
+   "key": "HORIZON-CL4-2022-DIGITAL-EMERGING-01",
+   "projects": 24,
+   "with_a_target": 9,
+   "rate": 0.375
+  },
+  {
+   "key": "HORIZON-CL5-2021-D1-01",
+   "projects": 24,
+   "with_a_target": 20,
+   "rate": 0.8333
+  },
+  {
+   "key": "HORIZON-CL5-2023-D6-01",
+   "projects": 24,
+   "with_a_target": 15,
+   "rate": 0.625
+  },
+  {
+   "key": "HORIZON-JU-CBE-2025",
+   "projects": 24,
+   "with_a_target": 16,
+   "rate": 0.6667
+  },
+  {
+   "key": "HORIZON-MISS-2023-OCEAN-01",
+   "projects": 24,
+   "with_a_target": 17,
+   "rate": 0.7083
+  },
+  {
+   "key": "HORIZON-NEB-2025-01",
+   "projects": 24,
+   "with_a_target": 12,
+   "rate": 0.5
+  },
+  {
+   "key": "HORIZON-WIDERA-2025-06",
+   "projects": 24,
+   "with_a_target": 5,
+   "rate": 0.2083
+  },
+  {
+   "key": "HORIZON-CL4-2022-DIGITAL-EMERGING-02",
+   "projects": 23,
+   "with_a_target": 8,
+   "rate": 0.3478
+  },
+  {
+   "key": "HORIZON-JTI-CLEANH2-2022-2",
+   "projects": 23,
+   "with_a_target": 12,
+   "rate": 0.5217
+  },
+  {
+   "key": "HORIZON-CL4-2023-DIGITAL-EMERGING-01",
+   "projects": 22,
+   "with_a_target": 9,
+   "rate": 0.4091
+  },
+  {
+   "key": "HORIZON-CL5-2024-D6-01",
+   "projects": 22,
+   "with_a_target": 12,
+   "rate": 0.5455
+  },
+  {
+   "key": "HORIZON-CL6-2024-CIRCBIO-01",
+   "projects": 22,
+   "with_a_target": 13,
+   "rate": 0.5909
+  },
+  {
+   "key": "HORIZON-CL6-2024-FARM2FORK-01",
+   "projects": 22,
+   "with_a_target": 17,
+   "rate": 0.7727
+  },
+  {
+   "key": "HORIZON-CL6-2025-03",
+   "projects": 22,
+   "with_a_target": 14,
+   "rate": 0.6364
+  },
+  {
+   "key": "HORIZON-CL3-2025-01",
+   "projects": 21,
+   "with_a_target": 5,
+   "rate": 0.2381
+  },
+  {
+   "key": "HORIZON-CL4-2021-DATA-01",
+   "projects": 21,
+   "with_a_target": 10,
+   "rate": 0.4762
+  },
+  {
+   "key": "HORIZON-CL4-2021-SPACE-01",
+   "projects": 21,
+   "with_a_target": 11,
+   "rate": 0.5238
+  },
+  {
+   "key": "HORIZON-CL4-2023-HUMAN-01",
+   "projects": 21,
+   "with_a_target": 11,
+   "rate": 0.5238
+  },
+  {
+   "key": "HORIZON-EURATOM-2023-NRT-01",
+   "projects": 21,
+   "with_a_target": 8,
+   "rate": 0.381
+  },
+  {
+   "key": "HORIZON-JU-CBE-2022",
+   "projects": 21,
+   "with_a_target": 16,
+   "rate": 0.7619
+  },
+  {
+   "key": "HORIZON-CL2-2021-TRANSFORMATIONS-01",
+   "projects": 20,
+   "with_a_target": 18,
+   "rate": 0.9
+  },
+  {
+   "key": "HORIZON-CL2-2024-HERITAGE-01",
+   "projects": 20,
+   "with_a_target": 7,
+   "rate": 0.35
+  },
+  {
+   "key": "HORIZON-CL4-2024-DIGITAL-EMERGING-01",
+   "projects": 20,
+   "with_a_target": 6,
+   "rate": 0.3
+  },
+  {
+   "key": "HORIZON-CL4-2024-RESILIENCE-01",
+   "projects": 20,
+   "with_a_target": 9,
+   "rate": 0.45
+  },
+  {
+   "key": "HORIZON-CL5-2023-D1-01",
+   "projects": 20,
+   "with_a_target": 18,
+   "rate": 0.9
+  },
+  {
+   "key": "HORIZON-CL5-2023-D2-01",
+   "projects": 20,
+   "with_a_target": 14,
+   "rate": 0.7
+  },
+  {
+   "key": "HORIZON-CL5-2024-D2-01",
+   "projects": 20,
+   "with_a_target": 7,
+   "rate": 0.35
+  },
+  {
+   "key": "HORIZON-CL6-2021-CIRCBIO-01",
+   "projects": 20,
+   "with_a_target": 15,
+   "rate": 0.75
+  },
+  {
+   "key": "HORIZON-CL6-2021-ZEROPOLLUTION-01",
+   "projects": 20,
+   "with_a_target": 18,
+   "rate": 0.9
+  },
+  {
+   "key": "HORIZON-CL6-2024-GOVERNANCE-01",
+   "projects": 20,
+   "with_a_target": 15,
+   "rate": 0.75
+  },
+  {
+   "key": "HORIZON-EIC-2026-AIC",
+   "projects": 20,
+   "with_a_target": 6,
+   "rate": 0.3
+  },
+  {
+   "key": "HORIZON-JU-Clean-Aviation-2022-01",
+   "projects": 20,
+   "with_a_target": 6,
+   "rate": 0.3
+  },
+  {
+   "key": "HORIZON-MISS-2022-CANCER-01",
+   "projects": 20,
+   "with_a_target": 20,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-MISS-2022-OCEAN-01",
+   "projects": 20,
+   "with_a_target": 18,
+   "rate": 0.9
+  },
+  {
+   "key": "HORIZON-SESAR-2025-DES-ER-03",
+   "projects": 20,
+   "with_a_target": 5,
+   "rate": 0.25
+  },
+  {
+   "key": "HORIZON-WIDERA-2021-ERA-01",
+   "projects": 20,
+   "with_a_target": 9,
+   "rate": 0.45
+  },
+  {
+   "key": "HORIZON-CL6-2022-BIODIV-01",
+   "projects": 19,
+   "with_a_target": 15,
+   "rate": 0.7895
+  },
+  {
+   "key": "HORIZON-EUSPA-2022-SPACE",
+   "projects": 19,
+   "with_a_target": 13,
+   "rate": 0.6842
+  },
+  {
+   "key": "HORIZON-JU-EUROHPC-2025-AI-01-IBA",
+   "projects": 19,
+   "with_a_target": 7,
+   "rate": 0.3684
+  },
+  {
+   "key": "HORIZON-MISS-2024-CLIMA-01",
+   "projects": 19,
+   "with_a_target": 16,
+   "rate": 0.8421
+  },
+  {
+   "key": "HORIZON-EIE-2022-CONNECT-01",
+   "projects": 18,
+   "with_a_target": 9,
+   "rate": 0.5
+  },
+  {
+   "key": "HORIZON-MISS-2023-SOIL-01",
+   "projects": 18,
+   "with_a_target": 15,
+   "rate": 0.8333
+  },
+  {
+   "key": "HORIZON-SESAR-2022-DES-ER-01",
+   "projects": 18,
+   "with_a_target": 3,
+   "rate": 0.1667
+  },
+  {
+   "key": "HORIZON-SESAR-2023-DES-ER-02",
+   "projects": 18,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-CL2-2021-DEMOCRACY-01",
+   "projects": 17,
+   "with_a_target": 12,
+   "rate": 0.7059
+  },
+  {
+   "key": "HORIZON-CL4-2025-04",
+   "projects": 17,
+   "with_a_target": 11,
+   "rate": 0.6471
+  },
+  {
+   "key": "HORIZON-CL5-2023-D3-03",
+   "projects": 17,
+   "with_a_target": 15,
+   "rate": 0.8824
+  },
+  {
+   "key": "HORIZON-EUSPA-2023-SPACE",
+   "projects": 17,
+   "with_a_target": 6,
+   "rate": 0.3529
+  },
+  {
+   "key": "HORIZON-HLTH-2021-ENVHLTH-02",
+   "projects": 17,
+   "with_a_target": 14,
+   "rate": 0.8235
+  },
+  {
+   "key": "HORIZON-HLTH-2021-TOOL-06",
+   "projects": 17,
+   "with_a_target": 9,
+   "rate": 0.5294
+  },
+  {
+   "key": "HORIZON-HLTH-2024-DISEASE-03-two-stage",
+   "projects": 17,
+   "with_a_target": 9,
+   "rate": 0.5294
+  },
+  {
+   "key": "HORIZON-MISS-2022-SOIL-01",
+   "projects": 17,
+   "with_a_target": 15,
+   "rate": 0.8824
+  },
+  {
+   "key": "HORIZON-MISS-2025-03",
+   "projects": 17,
+   "with_a_target": 16,
+   "rate": 0.9412
+  },
+  {
+   "key": "HORIZON-WIDERA-2021-ACCESS-02",
+   "projects": 17,
+   "with_a_target": 11,
+   "rate": 0.6471
+  },
+  {
+   "key": "HORIZON-WIDERA-2023-ERA-01",
+   "projects": 17,
+   "with_a_target": 8,
+   "rate": 0.4706
+  },
+  {
+   "key": "HORIZON-CL3-2021-CS-01",
+   "projects": 16,
+   "with_a_target": 3,
+   "rate": 0.1875
+  },
+  {
+   "key": "HORIZON-CL4-2023-RESILIENCE-01-TWO-STAGE",
+   "projects": 16,
+   "with_a_target": 11,
+   "rate": 0.6875
+  },
+  {
+   "key": "HORIZON-CL5-2022-D3-02",
+   "projects": 16,
+   "with_a_target": 13,
+   "rate": 0.8125
+  },
+  {
+   "key": "HORIZON-CL5-2022-D6-01",
+   "projects": 16,
+   "with_a_target": 9,
+   "rate": 0.5625
+  },
+  {
+   "key": "HORIZON-CL6-2024-CIRCBIO-02",
+   "projects": 16,
+   "with_a_target": 15,
+   "rate": 0.9375
+  },
+  {
+   "key": "HORIZON-EIE-2021-CONNECT-01",
+   "projects": 16,
+   "with_a_target": 9,
+   "rate": 0.5625
+  },
+  {
+   "key": "HORIZON-EIT-2023-2025-KIC",
+   "projects": 16,
+   "with_a_target": 11,
+   "rate": 0.6875
+  },
+  {
+   "key": "HORIZON-HLTH-2022-DISEASE-07",
+   "projects": 16,
+   "with_a_target": 16,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-HLTH-2022-IND-13",
+   "projects": 16,
+   "with_a_target": 10,
+   "rate": 0.625
+  },
+  {
+   "key": "HORIZON-HLTH-2023-ENVHLTH-02",
+   "projects": 16,
+   "with_a_target": 12,
+   "rate": 0.75
+  },
+  {
+   "key": "HORIZON-JU-SNS-2024",
+   "projects": 16,
+   "with_a_target": 3,
+   "rate": 0.1875
+  },
+  {
+   "key": "HORIZON-MISS-2022-CLIMA-01",
+   "projects": 16,
+   "with_a_target": 15,
+   "rate": 0.9375
+  },
+  {
+   "key": "HORIZON-WIDERA-2023-ACCESS-04",
+   "projects": 16,
+   "with_a_target": 6,
+   "rate": 0.375
+  },
+  {
+   "key": "HORIZON-CL2-2021-HERITAGE-01",
+   "projects": 15,
+   "with_a_target": 14,
+   "rate": 0.9333
+  },
+  {
+   "key": "HORIZON-CL3-2021-FCT-01",
+   "projects": 15,
+   "with_a_target": 11,
+   "rate": 0.7333
+  },
+  {
+   "key": "HORIZON-CL5-2022-D1-02",
+   "projects": 15,
+   "with_a_target": 13,
+   "rate": 0.8667
+  },
+  {
+   "key": "HORIZON-CL5-2022-D4-02",
+   "projects": 15,
+   "with_a_target": 12,
+   "rate": 0.8
+  },
+  {
+   "key": "HORIZON-CL5-2022-D6-02",
+   "projects": 15,
+   "with_a_target": 12,
+   "rate": 0.8
+  },
+  {
+   "key": "HORIZON-CL6-2021-CLIMATE-01",
+   "projects": 15,
+   "with_a_target": 12,
+   "rate": 0.8
+  },
+  {
+   "key": "HORIZON-CL6-2023-ZEROPOLLUTION-01",
+   "projects": 15,
+   "with_a_target": 11,
+   "rate": 0.7333
+  },
+  {
+   "key": "HORIZON-CL6-2024-BIODIV-01",
+   "projects": 15,
+   "with_a_target": 12,
+   "rate": 0.8
+  },
+  {
+   "key": "HORIZON-HLTH-2022-TOOL-11",
+   "projects": 15,
+   "with_a_target": 7,
+   "rate": 0.4667
+  },
+  {
+   "key": "HORIZON-MISS-2023-CANCER-01",
+   "projects": 15,
+   "with_a_target": 14,
+   "rate": 0.9333
+  },
+  {
+   "key": "HORIZON-MSCA-2025-COFUND-02",
+   "projects": 15,
+   "with_a_target": 3,
+   "rate": 0.2
+  },
+  {
+   "key": "HORIZON-WIDERA-2024-TALENTS-03",
+   "projects": 15,
+   "with_a_target": 4,
+   "rate": 0.2667
+  },
+  {
+   "key": "HORIZON-CL3-2022-CS-01",
+   "projects": 14,
+   "with_a_target": 4,
+   "rate": 0.2857
+  },
+  {
+   "key": "HORIZON-CL4-2023-DATA-01",
+   "projects": 14,
+   "with_a_target": 8,
+   "rate": 0.5714
+  },
+  {
+   "key": "HORIZON-CL6-2024-CLIMATE-01",
+   "projects": 14,
+   "with_a_target": 11,
+   "rate": 0.7857
+  },
+  {
+   "key": "HORIZON-INFRA-2021-DEV-02",
+   "projects": 14,
+   "with_a_target": 11,
+   "rate": 0.7857
+  },
+  {
+   "key": "HORIZON-INFRA-2022-TECH-01",
+   "projects": 14,
+   "with_a_target": 10,
+   "rate": 0.7143
+  },
+  {
+   "key": "HORIZON-INFRA-2023-SERV-01",
+   "projects": 14,
+   "with_a_target": 7,
+   "rate": 0.5
+  },
+  {
+   "key": "HORIZON-INFRA-2024-TECH-01",
+   "projects": 14,
+   "with_a_target": 6,
+   "rate": 0.4286
+  },
+  {
+   "key": "HORIZON-JU-SNS-2025-01",
+   "projects": 14,
+   "with_a_target": 3,
+   "rate": 0.2143
+  },
+  {
+   "key": "HORIZON-MISS-2025-02",
+   "projects": 14,
+   "with_a_target": 10,
+   "rate": 0.7143
+  },
+  {
+   "key": "HORIZON-WIDERA-2022-ACCESS-01-two-stage",
+   "projects": 14,
+   "with_a_target": 8,
+   "rate": 0.5714
+  },
+  {
+   "key": "HORIZON-WIDERA-2024-ERA-02",
+   "projects": 14,
+   "with_a_target": 2,
+   "rate": 0.1429
+  },
+  {
+   "key": "HORIZON-WIDERA-2025-01",
+   "projects": 14,
+   "with_a_target": 6,
+   "rate": 0.4286
+  },
+  {
+   "key": "HORIZON-CL3-2023-CS-01",
+   "projects": 13,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-CL5-2024-D1-01",
+   "projects": 13,
+   "with_a_target": 8,
+   "rate": 0.6154
+  },
+  {
+   "key": "HORIZON-CL6-2022-CIRCBIO-01",
+   "projects": 13,
+   "with_a_target": 11,
+   "rate": 0.8462
+  },
+  {
+   "key": "HORIZON-CL6-2022-CIRCBIO-02-two-stage",
+   "projects": 13,
+   "with_a_target": 10,
+   "rate": 0.7692
+  },
+  {
+   "key": "HORIZON-CL6-2022-FARM2FORK-02-two-stage",
+   "projects": 13,
+   "with_a_target": 13,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-CL6-2024-FARM2FORK-02",
+   "projects": 13,
+   "with_a_target": 9,
+   "rate": 0.6923
+  },
+  {
+   "key": "HORIZON-EIC-2021-TRANSITION-CHALLENGES-01",
+   "projects": 13,
+   "with_a_target": 7,
+   "rate": 0.5385
+  },
+  {
+   "key": "HORIZON-EIE-2023-CONNECT-01",
+   "projects": 13,
+   "with_a_target": 7,
+   "rate": 0.5385
+  },
+  {
+   "key": "HORIZON-EUSPA-2021-SPACE",
+   "projects": 13,
+   "with_a_target": 6,
+   "rate": 0.4615
+  },
+  {
+   "key": "HORIZON-HLTH-2022-STAYHLTH-02",
+   "projects": 13,
+   "with_a_target": 9,
+   "rate": 0.6923
+  },
+  {
+   "key": "HORIZON-JU-IHI-2025-09-single-stage",
+   "projects": 13,
+   "with_a_target": 9,
+   "rate": 0.6923
+  },
+  {
+   "key": "HORIZON-MISS-2024-SOIL-01",
+   "projects": 13,
+   "with_a_target": 11,
+   "rate": 0.8462
+  },
+  {
+   "key": "HORIZON-WIDERA-2022-ACCESS-04",
+   "projects": 13,
+   "with_a_target": 8,
+   "rate": 0.6154
+  },
+  {
+   "key": "HORIZON-WIDERA-2023-ACCESS-01",
+   "projects": 13,
+   "with_a_target": 3,
+   "rate": 0.2308
+  },
+  {
+   "key": "HORIZON-CL3-2024-CS-01",
+   "projects": 12,
+   "with_a_target": 1,
+   "rate": 0.0833
+  },
+  {
+   "key": "HORIZON-CL4-2021-DIGITAL-EMERGING-02",
+   "projects": 12,
+   "with_a_target": 1,
+   "rate": 0.0833
+  },
+  {
+   "key": "HORIZON-CL5-2023-D4-01",
+   "projects": 12,
+   "with_a_target": 10,
+   "rate": 0.8333
+  },
+  {
+   "key": "HORIZON-CL5-2025-06",
+   "projects": 12,
+   "with_a_target": 8,
+   "rate": 0.6667
+  },
+  {
+   "key": "HORIZON-CL6-2022-ZEROPOLLUTION-01",
+   "projects": 12,
+   "with_a_target": 12,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-JU-GH-EDCTP3-2025-02-two-stage",
+   "projects": 12,
+   "with_a_target": 11,
+   "rate": 0.9167
+  },
+  {
+   "key": "HORIZON-JU-GH-EDCTP3-2025-04-two-stage",
+   "projects": 12,
+   "with_a_target": 12,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-MISS-2021-CANCER-02",
+   "projects": 12,
+   "with_a_target": 12,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-MISS-2024-CANCER-01",
+   "projects": 12,
+   "with_a_target": 12,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-WIDERA-2023-ACCESS-03",
+   "projects": 12,
+   "with_a_target": 11,
+   "rate": 0.9167
+  },
+  {
+   "key": "HORIZON-WIDERA-2023-ACCESS-07",
+   "projects": 12,
+   "with_a_target": 6,
+   "rate": 0.5
+  },
+  {
+   "key": "HORIZON-CL3-2024-FCT-01",
+   "projects": 11,
+   "with_a_target": 1,
+   "rate": 0.0909
+  },
+  {
+   "key": "HORIZON-CL4-2024-RESILIENCE-01-TWO-STAGE",
+   "projects": 11,
+   "with_a_target": 4,
+   "rate": 0.3636
+  },
+  {
+   "key": "HORIZON-CL4-2024-SPACE-01",
+   "projects": 11,
+   "with_a_target": 3,
+   "rate": 0.2727
+  },
+  {
+   "key": "HORIZON-CL5-2023-D4-02",
+   "projects": 11,
+   "with_a_target": 7,
+   "rate": 0.6364
+  },
+  {
+   "key": "HORIZON-CL5-2024-D4-02",
+   "projects": 11,
+   "with_a_target": 6,
+   "rate": 0.5455
+  },
+  {
+   "key": "HORIZON-HLTH-2021-CARE-05",
+   "projects": 11,
+   "with_a_target": 7,
+   "rate": 0.6364
+  },
+  {
+   "key": "HORIZON-HLTH-2022-TOOL-12-two-stage",
+   "projects": 11,
+   "with_a_target": 7,
+   "rate": 0.6364
+  },
+  {
+   "key": "HORIZON-MISS-2023-CLIMA-01",
+   "projects": 11,
+   "with_a_target": 9,
+   "rate": 0.8182
+  },
+  {
+   "key": "HORIZON-MISS-2024-CIT-01",
+   "projects": 11,
+   "with_a_target": 10,
+   "rate": 0.9091
+  },
+  {
+   "key": "HORIZON-MISS-2025-05",
+   "projects": 11,
+   "with_a_target": 9,
+   "rate": 0.8182
+  },
+  {
+   "key": "HORIZON-WIDERA-2024-ERA-01",
+   "projects": 11,
+   "with_a_target": 5,
+   "rate": 0.4545
+  },
+  {
+   "key": "HORIZON-CL2-2024-HERITAGE-ECCCH-01",
+   "projects": 10,
+   "with_a_target": 7,
+   "rate": 0.7
+  },
+  {
+   "key": "HORIZON-CL3-2022-DRS-01",
+   "projects": 10,
+   "with_a_target": 4,
+   "rate": 0.4
+  },
+  {
+   "key": "HORIZON-CL4-2022-HUMAN-01",
+   "projects": 10,
+   "with_a_target": 5,
+   "rate": 0.5
+  },
+  {
+   "key": "HORIZON-CL5-2022-D4-01",
+   "projects": 10,
+   "with_a_target": 9,
+   "rate": 0.9
+  },
+  {
+   "key": "HORIZON-CL6-2023-CIRCBIO-02",
+   "projects": 10,
+   "with_a_target": 9,
+   "rate": 0.9
+  },
+  {
+   "key": "HORIZON-CL6-2023-CLIMATE-01",
+   "projects": 10,
+   "with_a_target": 5,
+   "rate": 0.5
+  },
+  {
+   "key": "HORIZON-EIT-2025-KIC-IBA",
+   "projects": 10,
+   "with_a_target": 7,
+   "rate": 0.7
+  },
+  {
+   "key": "HORIZON-EUROHPC-JU-2021-COE-01",
+   "projects": 10,
+   "with_a_target": 7,
+   "rate": 0.7
+  },
+  {
+   "key": "HORIZON-HLTH-2021-CORONA-01",
+   "projects": 10,
+   "with_a_target": 9,
+   "rate": 0.9
+  },
+  {
+   "key": "HORIZON-HLTH-2021-STAYHLTH-01",
+   "projects": 10,
+   "with_a_target": 9,
+   "rate": 0.9
+  },
+  {
+   "key": "HORIZON-HLTH-2023-CARE-04",
+   "projects": 10,
+   "with_a_target": 7,
+   "rate": 0.7
+  },
+  {
+   "key": "HORIZON-INFRA-2021-EOSC-01",
+   "projects": 10,
+   "with_a_target": 4,
+   "rate": 0.4
+  },
+  {
+   "key": "HORIZON-JU-GH-EDCTP3-2023-02-two-stage",
+   "projects": 10,
+   "with_a_target": 6,
+   "rate": 0.6
+  },
+  {
+   "key": "HORIZON-KDT-JU-2023-2-RIA",
+   "projects": 10,
+   "with_a_target": 3,
+   "rate": 0.3
+  },
+  {
+   "key": "HORIZON-MISS-2021-SOIL-02",
+   "projects": 10,
+   "with_a_target": 7,
+   "rate": 0.7
+  },
+  {
+   "key": "HORIZON-MISS-2025-01",
+   "projects": 10,
+   "with_a_target": 9,
+   "rate": 0.9
+  },
+  {
+   "key": "HORIZON-CL3-2021-DRS-01",
+   "projects": 9,
+   "with_a_target": 8,
+   "rate": 0.8889
+  },
+  {
+   "key": "HORIZON-CL3-2023-DRS-01",
+   "projects": 9,
+   "with_a_target": 2,
+   "rate": 0.2222
+  },
+  {
+   "key": "HORIZON-CL3-2023-FCT-01",
+   "projects": 9,
+   "with_a_target": 2,
+   "rate": 0.2222
+  },
+  {
+   "key": "HORIZON-CL3-2024-DRS-01",
+   "projects": 9,
+   "with_a_target": 5,
+   "rate": 0.5556
+  },
+  {
+   "key": "HORIZON-CL5-2021-D4-01",
+   "projects": 9,
+   "with_a_target": 7,
+   "rate": 0.7778
+  },
+  {
+   "key": "HORIZON-CL5-2022-D1-01-two-stage",
+   "projects": 9,
+   "with_a_target": 8,
+   "rate": 0.8889
+  },
+  {
+   "key": "HORIZON-CL6-2023-COMMUNITIES-01",
+   "projects": 9,
+   "with_a_target": 7,
+   "rate": 0.7778
+  },
+  {
+   "key": "HORIZON-EIC-2024-BOOSTER-IBA-01",
+   "projects": 9,
+   "with_a_target": 2,
+   "rate": 0.2222
+  },
+  {
+   "key": "HORIZON-EIE-2023-CONNECT-02",
+   "projects": 9,
+   "with_a_target": 2,
+   "rate": 0.2222
+  },
+  {
+   "key": "HORIZON-EIE-2024-CONNECT-01",
+   "projects": 9,
+   "with_a_target": 5,
+   "rate": 0.5556
+  },
+  {
+   "key": "HORIZON-INFRA-2022-DEV-01",
+   "projects": 9,
+   "with_a_target": 5,
+   "rate": 0.5556
+  },
+  {
+   "key": "HORIZON-INFRA-2024-DEV-01",
+   "projects": 9,
+   "with_a_target": 5,
+   "rate": 0.5556
+  },
+  {
+   "key": "HORIZON-INFRA-2024-EOSC-01",
+   "projects": 9,
+   "with_a_target": 3,
+   "rate": 0.3333
+  },
+  {
+   "key": "HORIZON-JU-EUROHPC-2025-AIFA-01",
+   "projects": 9,
+   "with_a_target": 7,
+   "rate": 0.7778
+  },
+  {
+   "key": "HORIZON-JU-GH-EDCTP3-2024-Mpox",
+   "projects": 9,
+   "with_a_target": 2,
+   "rate": 0.2222
+  },
+  {
+   "key": "HORIZON-JU-GH-EDCTP3-2025-01-two-stage",
+   "projects": 9,
+   "with_a_target": 7,
+   "rate": 0.7778
+  },
+  {
+   "key": "HORIZON-JU-IHI-2022-03-single-stage",
+   "projects": 9,
+   "with_a_target": 7,
+   "rate": 0.7778
+  },
+  {
+   "key": "HORIZON-KDT-JU-2022-2-RIA",
+   "projects": 9,
+   "with_a_target": 5,
+   "rate": 0.5556
+  },
+  {
+   "key": "HORIZON-MISS-2021-CLIMA-02",
+   "projects": 9,
+   "with_a_target": 9,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-WIDERA-2021-ACCESS-05",
+   "projects": 9,
+   "with_a_target": 8,
+   "rate": 0.8889
+  },
+  {
+   "key": "HORIZON-WIDERA-2022-TALENTS-03",
+   "projects": 9,
+   "with_a_target": 5,
+   "rate": 0.5556
+  },
+  {
+   "key": "HORIZON-CL3-2022-BM-01",
+   "projects": 8,
+   "with_a_target": 1,
+   "rate": 0.125
+  },
+  {
+   "key": "HORIZON-CL4-2022-HUMAN-02",
+   "projects": 8,
+   "with_a_target": 3,
+   "rate": 0.375
+  },
+  {
+   "key": "HORIZON-CL4-2024-DIGITAL-EMERGING-01-CNECT",
+   "projects": 8,
+   "with_a_target": 2,
+   "rate": 0.25
+  },
+  {
+   "key": "HORIZON-CL4-2024-HUMAN-03",
+   "projects": 8,
+   "with_a_target": 1,
+   "rate": 0.125
+  },
+  {
+   "key": "HORIZON-CL5-2021-D3-01",
+   "projects": 8,
+   "with_a_target": 5,
+   "rate": 0.625
+  },
+  {
+   "key": "HORIZON-CL6-2021-COMMUNITIES-01",
+   "projects": 8,
+   "with_a_target": 7,
+   "rate": 0.875
+  },
+  {
+   "key": "HORIZON-CL6-2022-COMMUNITIES-01",
+   "projects": 8,
+   "with_a_target": 6,
+   "rate": 0.75
+  },
+  {
+   "key": "HORIZON-EIE-2024-CONNECT-02",
+   "projects": 8,
+   "with_a_target": 3,
+   "rate": 0.375
+  },
+  {
+   "key": "HORIZON-ER-JU-2022-02",
+   "projects": 8,
+   "with_a_target": 2,
+   "rate": 0.25
+  },
+  {
+   "key": "HORIZON-INFRA-2021-SERV-01",
+   "projects": 8,
+   "with_a_target": 6,
+   "rate": 0.75
+  },
+  {
+   "key": "HORIZON-JU-Clean-Aviation-2023-01",
+   "projects": 8,
+   "with_a_target": 2,
+   "rate": 0.25
+  },
+  {
+   "key": "HORIZON-JU-Clean-Aviation-2025-01",
+   "projects": 8,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-JU-IHI-2024-07-single-stage",
+   "projects": 8,
+   "with_a_target": 4,
+   "rate": 0.5
+  },
+  {
+   "key": "HORIZON-KDT-JU-2023-1-IA",
+   "projects": 8,
+   "with_a_target": 4,
+   "rate": 0.5
+  },
+  {
+   "key": "HORIZON-MISS-2021-CIT-02",
+   "projects": 8,
+   "with_a_target": 8,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-MISS-2021-OCEAN-02",
+   "projects": 8,
+   "with_a_target": 8,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-MISS-2024-OCEAN-01",
+   "projects": 8,
+   "with_a_target": 6,
+   "rate": 0.75
+  },
+  {
+   "key": "HORIZON-CL3-2021-BM-01",
+   "projects": 7,
+   "with_a_target": 2,
+   "rate": 0.2857
+  },
+  {
+   "key": "HORIZON-CL3-2024-BM-01",
+   "projects": 7,
+   "with_a_target": 3,
+   "rate": 0.4286
+  },
+  {
+   "key": "HORIZON-CL4-2024-DATA-01",
+   "projects": 7,
+   "with_a_target": 3,
+   "rate": 0.4286
+  },
+  {
+   "key": "HORIZON-CL4-2024-TWIN-TRANSITION-01-TWO-STAGE",
+   "projects": 7,
+   "with_a_target": 3,
+   "rate": 0.4286
+  },
+  {
+   "key": "HORIZON-CL5-2023-D2-02",
+   "projects": 7,
+   "with_a_target": 5,
+   "rate": 0.7143
+  },
+  {
+   "key": "HORIZON-CL5-2024-D4-01",
+   "projects": 7,
+   "with_a_target": 3,
+   "rate": 0.4286
+  },
+  {
+   "key": "HORIZON-CL6-2024-ZEROPOLLUTION-01",
+   "projects": 7,
+   "with_a_target": 7,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-CL6-2024-ZEROPOLLUTION-02",
+   "projects": 7,
+   "with_a_target": 6,
+   "rate": 0.8571
+  },
+  {
+   "key": "HORIZON-EIE-2022-SCALEUP-01",
+   "projects": 7,
+   "with_a_target": 6,
+   "rate": 0.8571
+  },
+  {
+   "key": "HORIZON-HLTH-2023-IND-06",
+   "projects": 7,
+   "with_a_target": 3,
+   "rate": 0.4286
+  },
+  {
+   "key": "HORIZON-HLTH-2024-DISEASE-08",
+   "projects": 7,
+   "with_a_target": 3,
+   "rate": 0.4286
+  },
+  {
+   "key": "HORIZON-HLTH-2024-ENVHLTH-02-two-stage",
+   "projects": 7,
+   "with_a_target": 6,
+   "rate": 0.8571
+  },
+  {
+   "key": "HORIZON-HLTH-2024-STAYHLTH-01-two-stage",
+   "projects": 7,
+   "with_a_target": 6,
+   "rate": 0.8571
+  },
+  {
+   "key": "HORIZON-INFRA-2023-EOSC-01",
+   "projects": 7,
+   "with_a_target": 5,
+   "rate": 0.7143
+  },
+  {
+   "key": "HORIZON-JU-Chips-2024-1-IA",
+   "projects": 7,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-JU-ER-2023-01",
+   "projects": 7,
+   "with_a_target": 4,
+   "rate": 0.5714
+  },
+  {
+   "key": "HORIZON-JU-IHI-2023-05",
+   "projects": 7,
+   "with_a_target": 6,
+   "rate": 0.8571
+  },
+  {
+   "key": "HORIZON-KDT-JU-2021-1-IA",
+   "projects": 7,
+   "with_a_target": 3,
+   "rate": 0.4286
+  },
+  {
+   "key": "HORIZON-KDT-JU-2021-2-RIA",
+   "projects": 7,
+   "with_a_target": 3,
+   "rate": 0.4286
+  },
+  {
+   "key": "HORIZON-MISS-2024-CROSS-02",
+   "projects": 7,
+   "with_a_target": 5,
+   "rate": 0.7143
+  },
+  {
+   "key": "HORIZON-CL3-2022-FCT-01",
+   "projects": 6,
+   "with_a_target": 4,
+   "rate": 0.6667
+  },
+  {
+   "key": "HORIZON-CL3-2022-SSRI-01",
+   "projects": 6,
+   "with_a_target": 5,
+   "rate": 0.8333
+  },
+  {
+   "key": "HORIZON-CL3-2023-BM-01",
+   "projects": 6,
+   "with_a_target": 1,
+   "rate": 0.1667
+  },
+  {
+   "key": "HORIZON-CL3-2024-SSRI-01",
+   "projects": 6,
+   "with_a_target": 1,
+   "rate": 0.1667
+  },
+  {
+   "key": "HORIZON-CL5-2021-D4-02",
+   "projects": 6,
+   "with_a_target": 4,
+   "rate": 0.6667
+  },
+  {
+   "key": "HORIZON-CL5-2024-D2-02",
+   "projects": 6,
+   "with_a_target": 2,
+   "rate": 0.3333
+  },
+  {
+   "key": "HORIZON-CL6-2022-CLIMATE-01",
+   "projects": 6,
+   "with_a_target": 5,
+   "rate": 0.8333
+  },
+  {
+   "key": "HORIZON-CL6-2022-COMMUNITIES-02-two-stage",
+   "projects": 6,
+   "with_a_target": 5,
+   "rate": 0.8333
+  },
+  {
+   "key": "HORIZON-CL6-2024-BIODIV-02",
+   "projects": 6,
+   "with_a_target": 6,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-ER-JU-2022-01",
+   "projects": 6,
+   "with_a_target": 4,
+   "rate": 0.6667
+  },
+  {
+   "key": "HORIZON-HLTH-2021-IND-07",
+   "projects": 6,
+   "with_a_target": 4,
+   "rate": 0.6667
+  },
+  {
+   "key": "HORIZON-HLTH-2024-TOOL-11",
+   "projects": 6,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-INFRA-2021-DEV-01",
+   "projects": 6,
+   "with_a_target": 2,
+   "rate": 0.3333
+  },
+  {
+   "key": "HORIZON-JU-IHI-2023-04-two-stage",
+   "projects": 6,
+   "with_a_target": 4,
+   "rate": 0.6667
+  },
+  {
+   "key": "HORIZON-KDT-JU-2022-1-IA",
+   "projects": 6,
+   "with_a_target": 2,
+   "rate": 0.3333
+  },
+  {
+   "key": "HORIZON-MISS-2021-NEB-01",
+   "projects": 6,
+   "with_a_target": 5,
+   "rate": 0.8333
+  },
+  {
+   "key": "HORIZON-MISS-2025-04",
+   "projects": 6,
+   "with_a_target": 4,
+   "rate": 0.6667
+  },
+  {
+   "key": "HORIZON-CL3-2023-SSRI-01",
+   "projects": 5,
+   "with_a_target": 2,
+   "rate": 0.4
+  },
+  {
+   "key": "HORIZON-CL4-2023-SSA-SST-ART195",
+   "projects": 5,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-CL4-2024-HUMAN-02",
+   "projects": 5,
+   "with_a_target": 1,
+   "rate": 0.2
+  },
+  {
+   "key": "HORIZON-CL4-2025-SSA-SST-IBA",
+   "projects": 5,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-CL5-2026-01",
+   "projects": 5,
+   "with_a_target": 3,
+   "rate": 0.6
+  },
+  {
+   "key": "HORIZON-CL6-2022-BIODIV-02-two-stage",
+   "projects": 5,
+   "with_a_target": 5,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-CL6-2024-CLIMATE-02",
+   "projects": 5,
+   "with_a_target": 4,
+   "rate": 0.8
+  },
+  {
+   "key": "HORIZON-CL6-2024-COMMUNITIES-01",
+   "projects": 5,
+   "with_a_target": 4,
+   "rate": 0.8
+  },
+  {
+   "key": "HORIZON-EIE-2023-CONNECT-03",
+   "projects": 5,
+   "with_a_target": 3,
+   "rate": 0.6
+  },
+  {
+   "key": "HORIZON-EIE-2025-02",
+   "projects": 5,
+   "with_a_target": 4,
+   "rate": 0.8
+  },
+  {
+   "key": "HORIZON-HLTH-2022-CARE-08",
+   "projects": 5,
+   "with_a_target": 4,
+   "rate": 0.8
+  },
+  {
+   "key": "HORIZON-HLTH-2022-ENVHLTH-04",
+   "projects": 5,
+   "with_a_target": 5,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-HLTH-2024-DISEASE-13",
+   "projects": 5,
+   "with_a_target": 5,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-INFRA-2022-EOSC-01",
+   "projects": 5,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-JU-GH-EDCTP3-2025-03-two-stage",
+   "projects": 5,
+   "with_a_target": 5,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-JU-IHI-2022-01-single-stage",
+   "projects": 5,
+   "with_a_target": 4,
+   "rate": 0.8
+  },
+  {
+   "key": "HORIZON-MISS-2023-CIT-01",
+   "projects": 5,
+   "with_a_target": 4,
+   "rate": 0.8
+  },
+  {
+   "key": "HORIZON-MISS-2023-CLIMA-CITIES-01",
+   "projects": 5,
+   "with_a_target": 4,
+   "rate": 0.8
+  },
+  {
+   "key": "HORIZON-MISS-2024-NEB-01",
+   "projects": 5,
+   "with_a_target": 4,
+   "rate": 0.8
+  },
+  {
+   "key": "HORIZON-MISS-2024-OCEAN-02",
+   "projects": 5,
+   "with_a_target": 4,
+   "rate": 0.8
+  },
+  {
+   "key": "HORIZON-CL2-2023-HERITAGE-ECCCH-01",
+   "projects": 4,
+   "with_a_target": 3,
+   "rate": 0.75
+  },
+  {
+   "key": "HORIZON-CL3-2021-SSRI-01",
+   "projects": 4,
+   "with_a_target": 2,
+   "rate": 0.5
+  },
+  {
+   "key": "HORIZON-CL6-2024-COMMUNITIES-02",
+   "projects": 4,
+   "with_a_target": 2,
+   "rate": 0.5
+  },
+  {
+   "key": "HORIZON-EIC-2023-BOOSTER-IBA-01",
+   "projects": 4,
+   "with_a_target": 2,
+   "rate": 0.5
+  },
+  {
+   "key": "HORIZON-HLTH-2024-CARE-04-two-stage",
+   "projects": 4,
+   "with_a_target": 4,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-INFRA-2021-TECH-01",
+   "projects": 4,
+   "with_a_target": 2,
+   "rate": 0.5
+  },
+  {
+   "key": "HORIZON-INFRA-2023-TECH-01",
+   "projects": 4,
+   "with_a_target": 3,
+   "rate": 0.75
+  },
+  {
+   "key": "HORIZON-JU-Chips-2023-RIA-CPL",
+   "projects": 4,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-JU-Chips-2024-2-RIA",
+   "projects": 4,
+   "with_a_target": 3,
+   "rate": 0.75
+  },
+  {
+   "key": "HORIZON-JU-Chips-2024-3-RIA",
+   "projects": 4,
+   "with_a_target": 1,
+   "rate": 0.25
+  },
+  {
+   "key": "HORIZON-JU-Clean-Aviation-2025-01F",
+   "projects": 4,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-JU-IHI-2024-08-two-stage",
+   "projects": 4,
+   "with_a_target": 1,
+   "rate": 0.25
+  },
+  {
+   "key": "HORIZON-MISS-2022-CIT-01",
+   "projects": 4,
+   "with_a_target": 4,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-CL3-2023-INFRA-01",
+   "projects": 3,
+   "with_a_target": 2,
+   "rate": 0.6667
+  },
+  {
+   "key": "HORIZON-CL3-2024-INFRA-01",
+   "projects": 3,
+   "with_a_target": 2,
+   "rate": 0.6667
+  },
+  {
+   "key": "HORIZON-CL4-2021-RESILIENCE-02",
+   "projects": 3,
+   "with_a_target": 3,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-CL5-2023-D1-02",
+   "projects": 3,
+   "with_a_target": 1,
+   "rate": 0.3333
+  },
+  {
+   "key": "HORIZON-CL6-2023-ZEROPOLLUTION-02",
+   "projects": 3,
+   "with_a_target": 3,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-EIC-2021-STARTUPEU-01",
+   "projects": 3,
+   "with_a_target": 2,
+   "rate": 0.6667
+  },
+  {
+   "key": "HORIZON-EIC-2022-STARTUPEU-01",
+   "projects": 3,
+   "with_a_target": 2,
+   "rate": 0.6667
+  },
+  {
+   "key": "HORIZON-EIT-2024-MOC-IBA",
+   "projects": 3,
+   "with_a_target": 2,
+   "rate": 0.6667
+  },
+  {
+   "key": "HORIZON-ER-JU-2024-01",
+   "projects": 3,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-HLTH-2023-STAYHLTH-01",
+   "projects": 3,
+   "with_a_target": 3,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-HLTH-2024-CARE-14",
+   "projects": 3,
+   "with_a_target": 3,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-HLTH-2024-TOOL-05-two-stage",
+   "projects": 3,
+   "with_a_target": 2,
+   "rate": 0.6667
+  },
+  {
+   "key": "HORIZON-JU-GH-EDCTP3-2024-02-two-stage",
+   "projects": 3,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-KDT-JU-2023-3-CSA-IA",
+   "projects": 3,
+   "with_a_target": 1,
+   "rate": 0.3333
+  },
+  {
+   "key": "HORIZON-MISS-2021-OCEAN-03",
+   "projects": 3,
+   "with_a_target": 3,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-MISS-2021-OCEAN-04",
+   "projects": 3,
+   "with_a_target": 2,
+   "rate": 0.6667
+  },
+  {
+   "key": "HORIZON-MISS-2021-OCEAN-05",
+   "projects": 3,
+   "with_a_target": 3,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-CL2-2021-HERITAGE-02",
+   "projects": 2,
+   "with_a_target": 1,
+   "rate": 0.5
+  },
+  {
+   "key": "HORIZON-CL3-2021-INFRA-01",
+   "projects": 2,
+   "with_a_target": 2,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-CL3-2022-INFRA-01",
+   "projects": 2,
+   "with_a_target": 1,
+   "rate": 0.5
+  },
+  {
+   "key": "HORIZON-CL4-2022-QUANTUM-01-SGA",
+   "projects": 2,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-CL4-2023-TWIN-TRANSITION-01-TWO-STAGE",
+   "projects": 2,
+   "with_a_target": 2,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-CL4-2024-DIGITAL-EMERGING-02",
+   "projects": 2,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-EIC-2026-ACCELERATOR-02",
+   "projects": 2,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-EIT-2024-ERMA-EAMA-IBA",
+   "projects": 2,
+   "with_a_target": 2,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-EIT-2025-MOC-IBA",
+   "projects": 2,
+   "with_a_target": 2,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-EURATOM-2022-NRT-01",
+   "projects": 2,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-EURATOM-2024-NRT-01",
+   "projects": 2,
+   "with_a_target": 1,
+   "rate": 0.5
+  },
+  {
+   "key": "HORIZON-EUROHPC-JU-2023-COE-01",
+   "projects": 2,
+   "with_a_target": 1,
+   "rate": 0.5
+  },
+  {
+   "key": "HORIZON-EUROHPC-JU-2023-COE-03",
+   "projects": 2,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-EUROHPC-JU-2023-QEC-05",
+   "projects": 2,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-EUSPA-2023-SPACE-PRS-2",
+   "projects": 2,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-HLTH-2024-IND-06",
+   "projects": 2,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-JU-CHIPS-2025-IA-EDA-two-stage",
+   "projects": 2,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-JU-ER-2025-02",
+   "projects": 2,
+   "with_a_target": 2,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-JU-IHI-2022-02-two-stage",
+   "projects": 2,
+   "with_a_target": 1,
+   "rate": 0.5
+  },
+  {
+   "key": "HORIZON-JU-IHI-2024-06-two-stage",
+   "projects": 2,
+   "with_a_target": 1,
+   "rate": 0.5
+  },
+  {
+   "key": "HORIZON-JU-IHI-2025-10-two-stage",
+   "projects": 2,
+   "with_a_target": 1,
+   "rate": 0.5
+  },
+  {
+   "key": "HORIZON-JU-SNS-2025-02",
+   "projects": 2,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-MISS-2021-CIT-01",
+   "projects": 2,
+   "with_a_target": 1,
+   "rate": 0.5
+  },
+  {
+   "key": "HORIZON-MISS-2023-CIT-02",
+   "projects": 2,
+   "with_a_target": 2,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-MISS-2023-OCEAN-SOIL-01",
+   "projects": 2,
+   "with_a_target": 2,
+   "rate": 1.0
+  },
+  {
+   "key": "ERC-2023-SJI",
+   "projects": 1,
+   "with_a_target": 1,
+   "rate": 1.0
+  },
+  {
+   "key": "ERC-2025-EPMC-IBA",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "ERC-2025-VICECHAIRS-IBA",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "EURATOM-2021-ADHOC-IBA",
+   "projects": 1,
+   "with_a_target": 1,
+   "rate": 1.0
+  },
+  {
+   "key": "EURATOM-2021-FISA-EURADWASTE-IBA",
+   "projects": 1,
+   "with_a_target": 1,
+   "rate": 1.0
+  },
+  {
+   "key": "EURATOM-2021-UKRAINE-TRAINING-INFO-IBA",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "EURATOM-2023-EURADWASTE-IBA",
+   "projects": 1,
+   "with_a_target": 1,
+   "rate": 1.0
+  },
+  {
+   "key": "EURATOM-2023-IFMIF-DONES-2-IBA",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "EURATOM-2023-RADIOWASTE-IBA",
+   "projects": 1,
+   "with_a_target": 1,
+   "rate": 1.0
+  },
+  {
+   "key": "EURATOM-2024-UKRAINIAN-IBA",
+   "projects": 1,
+   "with_a_target": 1,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-CL2-2021-GIB-PRES-01-IBA",
+   "projects": 1,
+   "with_a_target": 1,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-CL2-2022-DEMOCRACY-02",
+   "projects": 1,
+   "with_a_target": 1,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-CL2-2022-HERITAGE-02",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-CL2-2022-TRANSFORMATIONS-02",
+   "projects": 1,
+   "with_a_target": 1,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-CL2-2023-CCI-PRES-IBA",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-CL2-2023-SSAH-STEM-PRES-IBA",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-CL2-2024-DK-PRES-03-IBA",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-CL2-2024-SKILLS-IBA",
+   "projects": 1,
+   "with_a_target": 1,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-CL2-2025-03",
+   "projects": 1,
+   "with_a_target": 1,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-CL2-2025-GIB-PRES-IBA",
+   "projects": 1,
+   "with_a_target": 1,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-CL4-2021-CONF-1-IBA",
+   "projects": 1,
+   "with_a_target": 1,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-CL4-2021-ESNS-IBA",
+   "projects": 1,
+   "with_a_target": 1,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-CL4-2022-DIGITAL-ASSEMBLY-IBA",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-CL4-2022-QUANTUM-02-SGA",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-CL4-2022-QUANTUM-03-SGA",
+   "projects": 1,
+   "with_a_target": 1,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-CL4-2022-QUANTUM-04-SGA",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-CL4-2022-QUANTUM-05-SGA",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-CL4-2022-QUANTUM-06-SGA",
+   "projects": 1,
+   "with_a_target": 1,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-CL4-2022-RESILIENCE-02-PCP",
+   "projects": 1,
+   "with_a_target": 1,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-CL4-2022-SWEDEN-CONF-IND-IBA",
+   "projects": 1,
+   "with_a_target": 1,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-CL4-2023-ICT-EVENT-2024",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-CL4-2023-PRESIDENCY-EVENT-2024-IBA",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-CL4-2023-SPACE-PARTNERSHIP-IBA",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-CL4-2024-DIGITAL-SME-EVENT-IBA",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-CL4-2024-ESNS-IBA",
+   "projects": 1,
+   "with_a_target": 1,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-CL4-2024-ICT-EVENT-2025-IBA",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-CL4-2024-PRESIDENCY-EVENT-2025-IBA",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-CL4-2024-QUANTUM-01-SGA",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-CL4-2025-CONFERENCE-AI-IBA",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-CL4-2025-QUANTUM-CONFERENCE-IBA",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-CL5-2021-OFFSHORE-IBA",
+   "projects": 1,
+   "with_a_target": 1,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-CL5-2021-SETPLAN-IBA",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-CL5-2022-REDII-IBA",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-CL5-2022-SETPLAN-IBA",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-CL5-2023-SETPLAN-IBA",
+   "projects": 1,
+   "with_a_target": 1,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-CL5-2024-EUDSO-IBA-2",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-CL5-2024-SETPLAN-IBA",
+   "projects": 1,
+   "with_a_target": 1,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-CL5-2025-PUMPS-IBA",
+   "projects": 1,
+   "with_a_target": 1,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-CL5-2025-SETPLAN-IBA",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-CL6-2021-BIODIV-02",
+   "projects": 1,
+   "with_a_target": 1,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-CL6-2023-2025-BIOEAST-IBA-02",
+   "projects": 1,
+   "with_a_target": 1,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-CL6-2023-GOVERNANCE-02",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-CL6-2024-FARM2FORK-03",
+   "projects": 1,
+   "with_a_target": 1,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-CL6-2024-FOOD-SYSTEMS-IBA",
+   "projects": 1,
+   "with_a_target": 1,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-CL6-2024-GEO-IBA",
+   "projects": 1,
+   "with_a_target": 1,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-CL6-2024-GOVERNANCE-02",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-CL6-2024-SYNERGY-IBA",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-CL6-2025-IBA-01",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-CL6-2026-01-IBA",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-CL6-OA01-2022-IBA",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-Chips-2024-RIA-CPL-5",
+   "projects": 1,
+   "with_a_target": 1,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-EIC-2021-EEN-01",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-EIC-2021-NCP-01",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-EIC-2021-PUBLICBUY-01",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-EIC-2022-AIBP-TRAINING-IBA",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-EIC-2022-AIBTRTOOL-IBA",
+   "projects": 1,
+   "with_a_target": 1,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-EIC-2022-COMMUNITIES-01",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-EIC-2022-GENDER-01",
+   "projects": 1,
+   "with_a_target": 1,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-EIC-2022-SCALEUP-01",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-EIC-2022-UKRAINIANTECH-01",
+   "projects": 1,
+   "with_a_target": 1,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-EIC-2023-INNOVPRO-01",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-EIC-2023-PARTNERS-01",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-EIC-2023-SPAIN-IBA-01",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-EIC-2023-SWEDPC-IBA-01",
+   "projects": 1,
+   "with_a_target": 1,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-EIC-2023-TALENTS-01",
+   "projects": 1,
+   "with_a_target": 1,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-EIC-2024-BOOSTER",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-EIC-2025-DENMPRES-IBA",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-EIC-2025-POLPRES-IBA",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-EIC-2025-WOMENTECH",
+   "projects": 1,
+   "with_a_target": 1,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-EIC-2026-01-IBA",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-EIE-2021-INNOVSMES-01",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-EIE-2022-CONNECT-02",
+   "projects": 1,
+   "with_a_target": 1,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-EIT-2022-KIC-STARTUP",
+   "projects": 1,
+   "with_a_target": 1,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-EIT-2024-2025-KIC-CCSI",
+   "projects": 1,
+   "with_a_target": 1,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-EIT-2024-CRM-IBA",
+   "projects": 1,
+   "with_a_target": 1,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-EIT-2024-NCP-IBA",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-EIT-2025-STARTUP-IBA",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-ERC-2021-VICECHAIRS-IBA",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-ERC-2022-VICECHAIRS-IBA",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-ERC-2023-VICECHAIRS-IBA",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-ERC-2025-NCPS-IBA",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-EURATOM-2022-ERA-LEARN-IBA",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-EURATOM-2022-NCP-IBA",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-EURATOM-2023-UKRAINE-IBA",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-EURATOM-2024-SAPEA-IBA",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-EURATOM-2025-EGE",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-EURATOM-2025-EIPP",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-EURATOM-2025-MOLDOVA-IBA",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-EURATOM-2025-OAPEN-IBA",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-EURATOM-2025-REPOSITARY-IBA",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-EURATOM-HORIZONTAL-2025-09-IBA",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-EURATOM-HORIZONTAL-2026-DIALOGUE-IBA",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-EUROHPC-JU-2022-ALG-02",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-EUROHPC-JU-2022-INCO-04",
+   "projects": 1,
+   "with_a_target": 1,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-EUROHPC-JU-2023-ENERGY-04",
+   "projects": 1,
+   "with_a_target": 1,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-EUROHPC-JU-2023-INCO-06",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-EUROHPC-JU-2023-INTER-02",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-EUROHPC-JU-2024-DARE-SGA-04",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-EUROHPC-JU-2024-INCO-06",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-EUROHPC-JU-2025-IHPCSS-02",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-HLTH-2021-CEPI-10-IBA",
+   "projects": 1,
+   "with_a_target": 1,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-HLTH-2021-ENVHLTH-03",
+   "projects": 1,
+   "with_a_target": 1,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-HLTH-2021-GACD-08-IBA",
+   "projects": 1,
+   "with_a_target": 1,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-HLTH-2021-hPSC-09-IBA",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-HLTH-2022-CARE-10",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-HLTH-2022-CEPI-15-IBA",
+   "projects": 1,
+   "with_a_target": 1,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-HLTH-2022-DISEASE-03",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-HLTH-2022-MPX-14",
+   "projects": 1,
+   "with_a_target": 1,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-HLTH-2023-CARE-08",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-HLTH-2023-CEPI-11-IBA",
+   "projects": 1,
+   "with_a_target": 1,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-HLTH-2023-DISEASE-07",
+   "projects": 1,
+   "with_a_target": 1,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-HLTH-2023-PSPA-10-IBA",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-HLTH-2023-PSWE-09-IBA",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-HLTH-2024-DISEASE-09",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-HLTH-2024-DISEASE-12",
+   "projects": 1,
+   "with_a_target": 1,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-HLTH-2024-DISEASE-17",
+   "projects": 1,
+   "with_a_target": 1,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-HLTH-2024-PBEL-12-IBA",
+   "projects": 1,
+   "with_a_target": 1,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-HLTH-2024-PDEN-18-IBA",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-HLTH-2024-PHUN-15-IBA",
+   "projects": 1,
+   "with_a_target": 1,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-HLTH-2024-PPOL-16-IBA",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-HLTH-2025-02",
+   "projects": 1,
+   "with_a_target": 1,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-HLTH-2025-04-IBA",
+   "projects": 1,
+   "with_a_target": 1,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-HLTH-2025-05-IBA",
+   "projects": 1,
+   "with_a_target": 1,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-HLTH-2025-06-IBA",
+   "projects": 1,
+   "with_a_target": 1,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-HORIZONTAL-2021-INDICATORS-IBA",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-INFRA-2021-EMERGENCY-01",
+   "projects": 1,
+   "with_a_target": 1,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-INFRA-2021-EMERGENCY-02",
+   "projects": 1,
+   "with_a_target": 1,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-INFRA-2021-ESFRI20-IBA",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-INFRA-2021-ICRI-IBA",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-INFRA-2021-NET-01-SGA-2",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-INFRA-2022-NET-01-SGA",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-INFRA-2022-SERV-B-01",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-INFRA-2023-EOSC-MONIT-IBA",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-INFRA-2023-EOSC-REP-ART195-IBA",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-INFRA-2023-ERIC-ART195-IBA",
+   "projects": 1,
+   "with_a_target": 1,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-INFRA-2023-ES-CONF-ART195-IBA",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-INFRA-2023-SE-CONF-ART195-IBA",
+   "projects": 1,
+   "with_a_target": 1,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-INFRA-2024-BE-CONF-ART195-IBA",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-INFRA-2024-DEV-02",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-INFRA-2024-EOSC-02",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-INFRA-2024-GEANT-01-SGA",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-INFRA-2024-ICRI-IBA",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-INFRA-2024-SESAME-IBA",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-INFRA-2025-DK-CONF-IBA",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-INFRA-2025-GAZA-IBA",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-INFRA-2025-ICRI-IBA",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-JU-CBE-2023-2",
+   "projects": 1,
+   "with_a_target": 1,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-JU-CHIPS-2025-CSA-JPN",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-JU-CHIPS-2025-IA-HPA",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-JU-CHIPS-2025-QAC1-1-SGA",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-JU-CHIPS-2025-QAC1-2-SGA",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-JU-CHIPS-2025-QAC2-SGA",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-JU-Chips-2025-CSA-1",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-JU-EDCTP3-2022-GH-Africa-IBA",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-JU-EDCTP3-2022-GH-Epidemiology-IBA",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-JU-ER-2025-01",
+   "projects": 1,
+   "with_a_target": 1,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-JU-EUROHPC-2025-INCO-01",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-JU-GH-EDCTP3-2025-05-AFRICA-IBA",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-KDT-JU-2021-3-CSA",
+   "projects": 1,
+   "with_a_target": 1,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-MISS-2021-COOR-01",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-MISS-2021-OCEAN-01",
+   "projects": 1,
+   "with_a_target": 1,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-MISS-2021-OCEAN-IBA-01",
+   "projects": 1,
+   "with_a_target": 1,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-MISS-2021-OCEAN-IBA-02",
+   "projects": 1,
+   "with_a_target": 1,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-MISS-2021-SOIL-01",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-MISS-2021-UNCAN-01",
+   "projects": 1,
+   "with_a_target": 1,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-MISS-2022-CIT-IBA",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-MISS-2022-CIT-SGA",
+   "projects": 1,
+   "with_a_target": 1,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-MISS-2022-NCP-01",
+   "projects": 1,
+   "with_a_target": 1,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-MISS-2023-CIT-SGA-01",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-MISS-2023-CLIMA-OCEAN-SOIL-01",
+   "projects": 1,
+   "with_a_target": 1,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-MISS-2023-SOIL-SGA-01",
+   "projects": 1,
+   "with_a_target": 1,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-MISS-2024-CIT-02",
+   "projects": 1,
+   "with_a_target": 1,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-MISS-2024-CIT-IBA",
+   "projects": 1,
+   "with_a_target": 1,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-MISS-2024-CROSS-01",
+   "projects": 1,
+   "with_a_target": 1,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-MISS-2024-NEB-IBA",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-MISS-2024-OCEAN-IBA",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-MISS-2025-05-SOIL-SGA-02",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-MISS-2025-06",
+   "projects": 1,
+   "with_a_target": 1,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-MISS-2025-CIT-SGA",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-MISS-2025-OCEAN-IBA",
+   "projects": 1,
+   "with_a_target": 1,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-MSCA-2021-FRC-IBA",
+   "projects": 1,
+   "with_a_target": 1,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-MSCA-2021-INCO-01",
+   "projects": 1,
+   "with_a_target": 1,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-MSCA-2021-NCP-01",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-MSCA-2021-RR-01",
+   "projects": 1,
+   "with_a_target": 1,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-MSCA-2021-SLOVENIAN-PRESIDENCY-IBA",
+   "projects": 1,
+   "with_a_target": 1,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-MSCA-2022-ALUMNI-IBA",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-MSCA-2022-Ukraine-ART195-IBA",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-MSCA-2023-BEL-IBA",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-MSCA-2023-ESP-IBA",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-MSCA-2024-ALUMNI-IBA",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-MSCA-2024-FTP-01",
+   "projects": 1,
+   "with_a_target": 1,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-MSCA-2024-INCO-01",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-MSCA-2024-NCP-01",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-MSCA-2025-DNK-IBA",
+   "projects": 1,
+   "with_a_target": 1,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-MSCA-2026-01-IBA",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-WIDERA-2021-ACCESS-06",
+   "projects": 1,
+   "with_a_target": 1,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-WIDERA-2021-COST-SGA",
+   "projects": 1,
+   "with_a_target": 1,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-WIDERA-2021-EA-IBA",
+   "projects": 1,
+   "with_a_target": 1,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-WIDERA-2021-ERA-IBA",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-WIDERA-2021-ESOF-IBA",
+   "projects": 1,
+   "with_a_target": 1,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-WIDERA-2021-EUCYS-IBA",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-WIDERA-2021-NCP-IBA",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-WIDERA-2021-RESAVER-IBA",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-WIDERA-2022-CONF-RI-IBA",
+   "projects": 1,
+   "with_a_target": 1,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-WIDERA-2022-ERA-IBA",
+   "projects": 1,
+   "with_a_target": 1,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-WIDERA-2022-WIRE-IBA",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-WIDERA-2023-ACCESS-05",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-WIDERA-2023-ERA-GIB-02",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-WIDERA-2023-ESOF-IBA",
+   "projects": 1,
+   "with_a_target": 1,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-WIDERA-2023-EU-CECR-IBA",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-WIDERA-2023-EUCYS-IBA",
+   "projects": 1,
+   "with_a_target": 1,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-WIDERA-2023-RESAVER-IBA",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-WIDERA-2024-COST-SGA",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-WIDERA-2024-EUCYS-IBA",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-WIDERA-2024-WIRE-IBA",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-WIDERA-2025-04",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-WIDERA-2025-DK-CONF-ART195-IBA",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-WIDERA-2025-EUCYS-IBA",
+   "projects": 1,
+   "with_a_target": 1,
+   "rate": 1.0
+  },
+  {
+   "key": "HORIZON-WIDERA-2025-RESAVER-IBA",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-WIDERA-2025-WIRE2026-IBA",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-WIDERA-2026-04-IBA",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  },
+  {
+   "key": "HORIZON-WIDERA-2026-06-IBA",
+   "projects": 1,
+   "with_a_target": 1,
+   "rate": 1.0
+  }
+ ],
+ "by_legal_basis": [
+  {
+   "key": "HORIZON.1.2",
+   "projects": 8617,
+   "with_a_target": 2988,
+   "rate": 0.3468
+  },
+  {
+   "key": "HORIZON.1.1",
+   "projects": 6469,
+   "with_a_target": 1783,
+   "rate": 0.2756
+  },
+  {
+   "key": "HORIZON.3.1",
+   "projects": 1533,
+   "with_a_target": 661,
+   "rate": 0.4312
+  },
+  {
+   "key": "HORIZON.2.5",
+   "projects": 1500,
+   "with_a_target": 908,
+   "rate": 0.6053
+  },
+  {
+   "key": "HORIZON.2.4",
+   "projects": 1370,
+   "with_a_target": 636,
+   "rate": 0.4642
+  },
+  {
+   "key": "HORIZON.2.6",
+   "projects": 1010,
+   "with_a_target": 800,
+   "rate": 0.7921
+  },
+  {
+   "key": "HORIZON.4.1",
+   "projects": 778,
+   "with_a_target": 327,
+   "rate": 0.4203
+  },
+  {
+   "key": "HORIZON.2.1",
+   "projects": 756,
+   "with_a_target": 538,
+   "rate": 0.7116
+  },
+  {
+   "key": "HORIZON.2.2",
+   "projects": 428,
+   "with_a_target": 309,
+   "rate": 0.722
+  },
+  {
+   "key": "HORIZON.3.2",
+   "projects": 287,
+   "with_a_target": 145,
+   "rate": 0.5052
+  },
+  {
+   "key": "HORIZON.1.3",
+   "projects": 252,
+   "with_a_target": 114,
+   "rate": 0.4524
+  },
+  {
+   "key": "HORIZON.2.3",
+   "projects": 215,
+   "with_a_target": 76,
+   "rate": 0.3535
+  },
+  {
+   "key": "HORIZON.4.2",
+   "projects": 137,
+   "with_a_target": 51,
+   "rate": 0.3723
+  },
+  {
+   "key": "EURATOM2027",
+   "projects": 61,
+   "with_a_target": 31,
+   "rate": 0.5082
+  },
+  {
+   "key": "HORIZON.3.3",
+   "projects": 38,
+   "with_a_target": 27,
+   "rate": 0.7105
+  }
+ ],
+ "by_topic": [
+  {
+   "key": "HORIZON-MSCA-2024-PF-01-01",
+   "projects": 1720,
+   "with_a_target": 516,
+   "rate": 0.3
+  },
+  {
+   "key": "HORIZON-MSCA-2025-PF-01-01",
+   "projects": 1618,
+   "with_a_target": 512,
+   "rate": 0.3164
+  },
+  {
+   "key": "HORIZON-MSCA-2023-PF-01-01",
+   "projects": 1322,
+   "with_a_target": 376,
+   "rate": 0.2844
+  },
+  {
+   "key": "HORIZON-MSCA-2022-PF-01-01",
+   "projects": 1289,
+   "with_a_target": 460,
+   "rate": 0.3569
+  },
+  {
+   "key": "HORIZON-MSCA-2021-PF-01-01",
+   "projects": 1211,
+   "with_a_target": 462,
+   "rate": 0.3815
+  },
+  {
+   "key": "ERC-2024-STG",
+   "projects": 491,
+   "with_a_target": 103,
+   "rate": 0.2098
+  },
+  {
+   "key": "ERC-2025-STG",
+   "projects": 476,
+   "with_a_target": 117,
+   "rate": 0.2458
+  },
+  {
+   "key": "ERC-2021-STG",
+   "projects": 470,
+   "with_a_target": 148,
+   "rate": 0.3149
+  },
+  {
+   "key": "ERC-2022-STG",
+   "projects": 411,
+   "with_a_target": 118,
+   "rate": 0.2871
+  },
+  {
+   "key": "ERC-2023-STG",
+   "projects": 400,
+   "with_a_target": 106,
+   "rate": 0.265
+  },
+  {
+   "key": "ERC-2025-COG",
+   "projects": 341,
+   "with_a_target": 69,
+   "rate": 0.2023
+  },
+  {
+   "key": "ERC-2024-COG",
+   "projects": 329,
+   "with_a_target": 73,
+   "rate": 0.2219
+  },
+  {
+   "key": "ERC-2022-COG",
+   "projects": 323,
+   "with_a_target": 82,
+   "rate": 0.2539
+  },
+  {
+   "key": "ERC-2021-COG",
+   "projects": 318,
+   "with_a_target": 111,
+   "rate": 0.3491
+  },
+  {
+   "key": "ERC-2023-COG",
+   "projects": 307,
+   "with_a_target": 90,
+   "rate": 0.2932
+  },
+  {
+   "key": "ERC-2025-POC",
+   "projects": 299,
+   "with_a_target": 100,
+   "rate": 0.3344
+  },
+  {
+   "key": "ERC-2024-ADG",
+   "projects": 281,
+   "with_a_target": 55,
+   "rate": 0.1957
+  },
+  {
+   "key": "ERC-2021-ADG",
+   "projects": 255,
+   "with_a_target": 70,
+   "rate": 0.2745
+  },
+  {
+   "key": "ERC-2023-ADG",
+   "projects": 255,
+   "with_a_target": 50,
+   "rate": 0.1961
+  },
+  {
+   "key": "ERC-2024-POC",
+   "projects": 245,
+   "with_a_target": 67,
+   "rate": 0.2735
+  },
+  {
+   "key": "ERC-2023-POC",
+   "projects": 240,
+   "with_a_target": 102,
+   "rate": 0.425
+  },
+  {
+   "key": "ERC-2022-ADG",
+   "projects": 218,
+   "with_a_target": 47,
+   "rate": 0.2156
+  },
+  {
+   "key": "ERC-2022-POC2",
+   "projects": 209,
+   "with_a_target": 101,
+   "rate": 0.4833
+  },
+  {
+   "key": "HORIZON-MSCA-2022-DN-01-01",
+   "projects": 158,
+   "with_a_target": 81,
+   "rate": 0.5127
+  },
+  {
+   "key": "ERC-2022-POC1",
+   "projects": 156,
+   "with_a_target": 65,
+   "rate": 0.4167
+  },
+  {
+   "key": "HORIZON-MSCA-2024-DN-01-01",
+   "projects": 153,
+   "with_a_target": 66,
+   "rate": 0.4314
+  },
+  {
+   "key": "HORIZON-MSCA-2021-DN-01-01",
+   "projects": 152,
+   "with_a_target": 81,
+   "rate": 0.5329
+  },
+  {
+   "key": "ERC-2025-ADG",
+   "projects": 145,
+   "with_a_target": 27,
+   "rate": 0.1862
+  },
+  {
+   "key": "HORIZON-EIC-2022-ACCELERATOROPEN-01",
+   "projects": 145,
+   "with_a_target": 54,
+   "rate": 0.3724
+  },
+  {
+   "key": "HORIZON-MSCA-2025-DN-01-01",
+   "projects": 141,
+   "with_a_target": 72,
+   "rate": 0.5106
+  },
+  {
+   "key": "HORIZON-MSCA-2023-DN-01-01",
+   "projects": 136,
+   "with_a_target": 61,
+   "rate": 0.4485
+  },
+  {
+   "key": "HORIZON-EIE-2022-SCALEUP-02-02",
+   "projects": 129,
+   "with_a_target": 65,
+   "rate": 0.5039
+  },
+  {
+   "key": "HORIZON-EIC-2023-ACCELERATOROPEN-01",
+   "projects": 126,
+   "with_a_target": 54,
+   "rate": 0.4286
+  },
+  {
+   "key": "HORIZON-WIDERA-2021-ACCESS-03-01",
+   "projects": 106,
+   "with_a_target": 60,
+   "rate": 0.566
+  },
+  {
+   "key": "HORIZON-EIC-2024-ACCELERATOROPEN-01",
+   "projects": 101,
+   "with_a_target": 48,
+   "rate": 0.4752
+  },
+  {
+   "key": "ERC-2026-POC",
+   "projects": 99,
+   "with_a_target": 27,
+   "rate": 0.2727
+  },
+  {
+   "key": "HORIZON-MSCA-2024-SE-01-01",
+   "projects": 83,
+   "with_a_target": 37,
+   "rate": 0.4458
+  },
+  {
+   "key": "HORIZON-MSCA-2025-SE-01-01",
+   "projects": 81,
+   "with_a_target": 36,
+   "rate": 0.4444
+  },
+  {
+   "key": "HORIZON-MSCA-2022-SE-01-01",
+   "projects": 80,
+   "with_a_target": 36,
+   "rate": 0.45
+  },
+  {
+   "key": "HORIZON-MSCA-2021-SE-01-01",
+   "projects": 78,
+   "with_a_target": 46,
+   "rate": 0.5897
+  }
+ ],
+ "by_country": [
+  {
+   "key": "DE",
+   "projects": 8073,
+   "with_a_target": 3770,
+   "rate": 0.467
+  },
+  {
+   "key": "ES",
+   "projects": 6916,
+   "with_a_target": 3683,
+   "rate": 0.5325
+  },
+  {
+   "key": "IT",
+   "projects": 6510,
+   "with_a_target": 3306,
+   "rate": 0.5078
+  },
+  {
+   "key": "FR",
+   "projects": 6115,
+   "with_a_target": 2765,
+   "rate": 0.4522
+  },
+  {
+   "key": "NL",
+   "projects": 5120,
+   "with_a_target": 2631,
+   "rate": 0.5139
+  },
+  {
+   "key": "UK",
+   "projects": 4817,
+   "with_a_target": 2339,
+   "rate": 0.4856
+  },
+  {
+   "key": "BE",
+   "projects": 4612,
+   "with_a_target": 2542,
+   "rate": 0.5512
+  },
+  {
+   "key": "EL",
+   "projects": 2855,
+   "with_a_target": 1663,
+   "rate": 0.5825
+  },
+  {
+   "key": "SE",
+   "projects": 2709,
+   "with_a_target": 1379,
+   "rate": 0.509
+  },
+  {
+   "key": "AT",
+   "projects": 2623,
+   "with_a_target": 1339,
+   "rate": 0.5105
+  },
+  {
+   "key": "DK",
+   "projects": 2475,
+   "with_a_target": 1325,
+   "rate": 0.5354
+  },
+  {
+   "key": "CH",
+   "projects": 2469,
+   "with_a_target": 1248,
+   "rate": 0.5055
+  },
+  {
+   "key": "PT",
+   "projects": 2455,
+   "with_a_target": 1410,
+   "rate": 0.5743
+  },
+  {
+   "key": "FI",
+   "projects": 2050,
+   "with_a_target": 1107,
+   "rate": 0.54
+  },
+  {
+   "key": "NO",
+   "projects": 1980,
+   "with_a_target": 1131,
+   "rate": 0.5712
+  },
+  {
+   "key": "IE",
+   "projects": 1845,
+   "with_a_target": 998,
+   "rate": 0.5409
+  },
+  {
+   "key": "PL",
+   "projects": 1807,
+   "with_a_target": 963,
+   "rate": 0.5329
+  },
+  {
+   "key": "CZ",
+   "projects": 1406,
+   "with_a_target": 680,
+   "rate": 0.4836
+  },
+  {
+   "key": "US",
+   "projects": 1267,
+   "with_a_target": 513,
+   "rate": 0.4049
+  },
+  {
+   "key": "SI",
+   "projects": 994,
+   "with_a_target": 591,
+   "rate": 0.5946
+  },
+  {
+   "key": "RO",
+   "projects": 986,
+   "with_a_target": 587,
+   "rate": 0.5953
+  },
+  {
+   "key": "IL",
+   "projects": 910,
+   "with_a_target": 379,
+   "rate": 0.4165
+  },
+  {
+   "key": "CY",
+   "projects": 876,
+   "with_a_target": 506,
+   "rate": 0.5776
+  },
+  {
+   "key": "TR",
+   "projects": 803,
+   "with_a_target": 449,
+   "rate": 0.5592
+  },
+  {
+   "key": "HU",
+   "projects": 795,
+   "with_a_target": 444,
+   "rate": 0.5585
+  },
+  {
+   "key": "EE",
+   "projects": 723,
+   "with_a_target": 414,
+   "rate": 0.5726
+  },
+  {
+   "key": "BG",
+   "projects": 580,
+   "with_a_target": 347,
+   "rate": 0.5983
+  },
+  {
+   "key": "LT",
+   "projects": 564,
+   "with_a_target": 320,
+   "rate": 0.5674
+  },
+  {
+   "key": "HR",
+   "projects": 525,
+   "with_a_target": 321,
+   "rate": 0.6114
+  },
+  {
+   "key": "LU",
+   "projects": 517,
+   "with_a_target": 281,
+   "rate": 0.5435
+  },
+  {
+   "key": "RS",
+   "projects": 470,
+   "with_a_target": 291,
+   "rate": 0.6191
+  },
+  {
+   "key": "SK",
+   "projects": 469,
+   "with_a_target": 262,
+   "rate": 0.5586
+  },
+  {
+   "key": "CA",
+   "projects": 423,
+   "with_a_target": 204,
+   "rate": 0.4823
+  },
+  {
+   "key": "LV",
+   "projects": 403,
+   "with_a_target": 225,
+   "rate": 0.5583
+  },
+  {
+   "key": "UA",
+   "projects": 362,
+   "with_a_target": 207,
+   "rate": 0.5718
+  },
+  {
+   "key": "AU",
+   "projects": 246,
+   "with_a_target": 132,
+   "rate": 0.5366
+  },
+  {
+   "key": "MT",
+   "projects": 237,
+   "with_a_target": 120,
+   "rate": 0.5063
+  },
+  {
+   "key": "ZA",
+   "projects": 227,
+   "with_a_target": 153,
+   "rate": 0.674
+  },
+  {
+   "key": "JP",
+   "projects": 186,
+   "with_a_target": 69,
+   "rate": 0.371
+  },
+  {
+   "key": "BR",
+   "projects": 173,
+   "with_a_target": 86,
+   "rate": 0.4971
+  }
+ ],
+ "by_organisation_type": [
+  {
+   "key": "HES",
+   "projects": 18795,
+   "with_a_target": 7707,
+   "rate": 0.4101
+  },
+  {
+   "key": "REC",
+   "projects": 11417,
+   "with_a_target": 5438,
+   "rate": 0.4763
+  },
+  {
+   "key": "PRC",
+   "projects": 8831,
+   "with_a_target": 4743,
+   "rate": 0.5371
+  },
+  {
+   "key": "OTH",
+   "projects": 4612,
+   "with_a_target": 2884,
+   "rate": 0.6253
+  },
+  {
+   "key": "PUB",
+   "projects": 2840,
+   "with_a_target": 1713,
+   "rate": 0.6032
+  },
+  {
+   "key": "(blank)",
+   "projects": 1,
+   "with_a_target": 0,
+   "rate": 0.0
+  }
+ ],
+ "by_duration": [
+  {
+   "key": "1 to 2 years",
+   "projects": 8158,
+   "with_a_target": 2794,
+   "rate": 0.3425
+  },
+  {
+   "key": "4 to 5 years",
+   "projects": 5880,
+   "with_a_target": 1843,
+   "rate": 0.3134
+  },
+  {
+   "key": "3 to 4 years",
+   "projects": 4296,
+   "with_a_target": 2506,
+   "rate": 0.5833
+  },
+  {
+   "key": "2 to 3 years",
+   "projects": 4278,
+   "with_a_target": 1946,
+   "rate": 0.4549
+  },
+  {
+   "key": "over 5 years",
+   "projects": 522,
+   "with_a_target": 165,
+   "rate": 0.3161
+  },
+  {
+   "key": "up to 1 year",
+   "projects": 317,
+   "with_a_target": 140,
+   "rate": 0.4416
+  }
+ ],
+ "by_scientific_field": [
+  {
+   "key": "natural sciences",
+   "projects": 13296,
+   "with_a_target": 5093,
+   "rate": 0.383
+  },
+  {
+   "key": "engineering and technology",
+   "projects": 6579,
+   "with_a_target": 3224,
+   "rate": 0.49
+  },
+  {
+   "key": "social sciences",
+   "projects": 5340,
+   "with_a_target": 3007,
+   "rate": 0.5631
+  },
+  {
+   "key": "medical and health sciences",
+   "projects": 5045,
+   "with_a_target": 2897,
+   "rate": 0.5742
+  },
+  {
+   "key": "(absent)",
+   "projects": 3290,
+   "with_a_target": 869,
+   "rate": 0.2641
+  },
+  {
+   "key": "humanities",
+   "projects": 1882,
+   "with_a_target": 539,
+   "rate": 0.2864
+  },
+  {
+   "key": "agricultural sciences",
+   "projects": 1390,
+   "with_a_target": 1134,
+   "rate": 0.8158
+  }
+ ],
+ "where_the_mapping_is_uncertain": {
+  "_what_this_is": "Section 6 item 4's last clause. Uncertainty here is not a guess about a row: it is the measured shape of the method's error on the held-out 100, plus the bands and the fallbacks that mark a weak assignment on the corpus.",
+  "evaluation_target_level": {
+   "true_positives": 21,
+   "false_positives": 26,
+   "false_negatives": 74,
+   "predicted_pairs": 47,
+   "reference_pairs": 95,
+   "precision": 0.4468,
+   "recall": 0.2211,
+   "f1": 0.2958
+  },
+  "evaluation_goal_level": {
+   "true_positives": 29,
+   "false_positives": 42,
+   "false_negatives": 50,
+   "predicted_pairs": 71,
+   "reference_pairs": 79,
+   "precision": 0.4085,
+   "recall": 0.3671,
+   "f1": 0.3867
+  },
+  "recall_ceiling": {
+   "reference_pairs": 95,
+   "with_some_evidence": 42,
+   "with_no_evidence_at_any_threshold": 53,
+   "ceiling": 0.4421
+  },
+  "disagreement_shape_on_the_evaluation_100": {
+   "projects_disagreeing": 64,
+   "recall_only": 46,
+   "precision_only": 4,
+   "both_directions": 14
+  },
+  "corpus_rows_with_no_band": 0,
+  "corpus_projects_at_goal_level_only": 6882,
+  "corpus_projects_over_the_cap": 520
+ }
+}
