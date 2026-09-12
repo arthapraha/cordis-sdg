@@ -379,10 +379,35 @@ reads tidily is the opposite of provenance.
 
 ### 7.7 How to reproduce
 
+**The repository builds itself from a clone. That is measured, not promised.**
+
+At commit `33e38de` the README's fifteen-step block was run in a fresh clone with
+nothing from the author's working tree except the snapshot payload under
+`data/raw/`, which is not committed by design and whose hashes are in the
+manifest. **Every step exited 0**, and every artefact the block regenerates
+matched its published hash:
+
+| | |
+|---|---|
+| taxonomy | `a0c61a4f…` |
+| hand-off, 150 | `fd506beb…` |
+| hand-off, evaluation 100 | `1603a0d7…` |
+| development output | `45a514cf…` |
+| **frozen evaluation run** | **`0938fe34…`** |
+| §4.7 metrics | `babd3741…` |
+
+**`git status` after the run was empty**, so every committed generated file
+equals what a clone produces — not what it produces after a normalisation.
+
+**It was run twice, by two seats, and the second was not the author.** The first
+run found a defect the author's own line-by-line check had missed: one input the
+metrics step reads was excluded from the repository, so the block passed in the
+tree that already had the file and failed everywhere else.
+
 **From a clone, not an archive, for the mapping table**, because every row
 carries the commit that scored it and that is read from git rather than guessed;
 the build refuses rather than inventing it. Everything else reproduces from an
-archive or a clone. The commands are in the README.
+archive or a clone.
 
 **The figures reproduce; the notebook does not.** Matplotlib's SVG writer embeds
 a timestamp and randomised element ids, both now pinned, so a second execution

@@ -642,6 +642,32 @@ is mangled. The cost is that a plain CSV reader sees the first header as
 `﻿project_id`, so read it with `encoding="utf-8-sig"`, which is what
 `figures.py` does.
 
+### This block has been run from a clean clone, by two seats
+
+**Measured at `33e38de`, not promised.** A fresh clone with nothing from the
+author's working tree except `data/raw/`, which is the 248 MB snapshot payload —
+not committed by design, every file hashed in `data/manifest.json`. **All fifteen
+steps exited 0**, and each regenerated artefact matched its published hash: the
+taxonomy `a0c61a4f…`, both hand-offs `fd506beb…` and `1603a0d7…`, the development
+output `45a514cf…`, **the frozen evaluation run `0938fe34…`**, and the metrics
+`babd3741…`.
+
+**`git status` after the run was empty.** Every committed generated file equals
+what a clone produces, rather than equalling it after a line-ending
+normalisation.
+
+**The first clone run failed**, and that is why this section exists. `metrics.py`
+reads `data/pipeline/development-50-v1.json` to recompute the figures published
+at cordis-sdg seq 129 before it reports anything new, and that file was ignored,
+so the step could not run for anyone but the author. The block had been checked
+line by line the day before **in the tree that already had the file**. Three
+files were excluded the same way and each is now committed with its reason
+beside it in `.gitignore`.
+
+**Then it was run again by counsel, in counsel's own clone**, with the same
+result. A reproduction checked only by the person who wrote it is the thing this
+repository keeps getting wrong.
+
 `make_manifest.py` rebuilds `data/manifest.json` from the files on disk. Every
 sha256 in the manifest is computed from bytes at that moment; none is
 transcribed by hand. Retrieval timestamps are the recorded UTC clock readings
