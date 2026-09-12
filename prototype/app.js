@@ -83,13 +83,12 @@ function setupTabs() {
     });
   });
 
-  const headerProvLink = document.getElementById("header-provenance-link");
-  if (headerProvLink) {
-    headerProvLink.addEventListener("click", (e) => {
+  document.querySelectorAll(".section-link[data-tab]").forEach(el => {
+    el.addEventListener("click", (e) => {
       e.preventDefault();
-      switchTab("provenance");
+      switchTab(el.dataset.tab);
     });
-  }
+  });
 }
 
 window.switchTab = switchTab;
