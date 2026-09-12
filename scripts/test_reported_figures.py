@@ -38,6 +38,7 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 README = ROOT / "README.md"
 DESCRIPTION = ROOT / "docs/description-document.md"
 LIMITATIONS = ROOT / "docs/limitations.md"
+SUMMARY = ROOT / "docs/summary.md"
 METRICS = ROOT / "data/pipeline/evaluation-100-metrics.json"
 FIGURES = ROOT / "data/corpus/figures.json"
 MAPPING = ROOT / "data/corpus/mapping-table-0246412.csv"
@@ -50,8 +51,8 @@ def thousands(n):
 
 
 def main():
-    for p in (README, DESCRIPTION, LIMITATIONS, METRICS, FIGURES, MAPPING,
-              CROSSWALK, TAXONOMY):
+    for p in (README, DESCRIPTION, LIMITATIONS, SUMMARY, METRICS, FIGURES,
+              MAPPING, CROSSWALK, TAXONOMY):
         if not p.is_file():
             sys.exit("missing: %s" % p.relative_to(ROOT))
 
@@ -68,7 +69,8 @@ def main():
 
     import hashlib
     METRICS_SHA = hashlib.sha256(METRICS.read_bytes()).hexdigest()
-    TAXONOMY_SHA = hashlib.sha256((ROOT / "data/terms/sdg-targets.csv").read_bytes()).hexdigest()
+    TAXONOMY_SHA = hashlib.sha256(TAXONOMY.read_bytes()).hexdigest()
+    FIGURES_SHA = hashlib.sha256(FIGURES.read_bytes()).hexdigest()
 
     m = json.loads(METRICS.read_text(encoding="utf-8"))
     f = json.loads(FIGURES.read_text(encoding="utf-8"))
@@ -94,6 +96,7 @@ def main():
         "README.md": README.read_text(encoding="utf-8"),
         "docs/description-document.md": DESCRIPTION.read_text(encoding="utf-8"),
         "docs/limitations.md": LIMITATIONS.read_text(encoding="utf-8"),
+        "docs/summary.md": SUMMARY.read_text(encoding="utf-8"),
     }
 
     # (document, what the claim is, the string that must appear)
@@ -108,6 +111,7 @@ def main():
     D = "docs/description-document.md"
     R = "README.md"
     L = "docs/limitations.md"
+    S = "docs/summary.md"
     claims = [
         (D, "the evaluation table's target row",
          "| **target level** | %d | %d | %d | **%s** | **%s** | %s |"
@@ -235,6 +239,72 @@ def main():
         (L, "improvement 3.2's residue",
          "**Would not fix** the %d pairs with no evidence at any threshold."
          % rc["with_no_evidence_at_any_threshold"]),
+
+        # docs/summary.md — section 6 item 6. The owner's word at cordis-sdg seq
+        # 335 requires every figure and hash on that page to be covered here, so
+        # this block is the page read back line by line rather than a sample of
+        # it. The two evaluation rows are computed from the counts by ratio3 for
+        # the reason ratio3 exists.
+        (S, "the evaluation table's target row",
+         "| **target level** | %d | %d | %d | **%s** | **%s** | %s |"
+         % (t["true_positives"], t["false_positives"], t["false_negatives"],
+            ratio3(t["true_positives"], t["false_positives"]),
+            ratio3(t["true_positives"], t["false_negatives"]), "%.3f" % t["f1"])),
+        (S, "the evaluation table's goal row",
+         "| goal level, secondary | %d | %d | %d | %s | %s | %s |"
+         % (g["true_positives"], g["false_positives"], g["false_negatives"],
+            ratio3(g["true_positives"], g["false_positives"]),
+            ratio3(g["true_positives"], g["false_negatives"]), "%.3f" % g["f1"])),
+        (S, "the reference's size",
+         "The reference is %d pairs over %d projects, %d of which carry no target."
+         % (m["reference"]["pairs"], m["reference"]["projects"],
+            m["reference"]["projects_with_no_target"])),
+        (S, "the ceiling",
+         "a ceiling of **%.3f**" % rc["ceiling"]),
+        (S, "the unrecoverable pairs",
+         "**%d of %d reference pairs have no evidence at any threshold**"
+         % (rc["with_no_evidence_at_any_threshold"], rc["reference_pairs"])),
+        (S, "the disagreement shape",
+         "`%d disagreeing, %d recall-only`"
+         % (unc["projects_disagreeing"], unc["recall_only"])),
+        (S, "development kappa",
+         "`Cohen's kappa %.3f`" % proof["target_level"]["cohens_kappa"]),
+        (S, "the corpus size",
+         "the whole snapshot, %s Horizon Europe projects" % thousands(cover["projects_in_table"])),
+        (S, "the corpus row for table rows",
+         "| rows in the mapping table | %s |" % thousands(shape["rows"])),
+        (S, "the corpus row for projects with a target",
+         "| with at least one target | %s |" % thousands(shape["projects_with_a_target"])),
+        (S, "the corpus row for goal-level-only projects",
+         "| goal level only | %s |" % thousands(shape["projects_goal_level_only"])),
+        (S, "the corpus row for unassigned projects",
+         "| **nothing at all** | **%s** |" % thousands(shape["projects_unassigned"])),
+        (S, "the band row",
+         "| bands, of %s target assignments | %s low, %s medium, %s high |"
+         % (thousands(sum(bands.values())), thousands(bands["low"]),
+            thousands(bands["medium"]), thousands(bands["high"]))),
+        (S, "the reproduction table's pipeline commit",
+         "| frozen pipeline commit | `%s` |" % f["pipeline_commit"]),
+        (S, "the reproduction table's snapshot hash",
+         "| snapshot | `%s` |" % f["snapshot_sha256"]),
+        (S, "the reproduction table's taxonomy hash",
+         "| taxonomy | `%s` |" % TAXONOMY_SHA),
+        (S, "the reproduction table's parameters digest",
+         "| parameters, values digest | `%s` |" % m["parameters_values_sha256"]),
+        (S, "the reproduction table's hand-off hash",
+         "| evaluation hand-off | `%s` |" % m["handoff_sha256"]),
+        (S, "the reproduction table's reference hash",
+         "| reference label set | `%s` |" % m["reference"]["sha256"]),
+        (S, "the reproduction table's frozen-output hash",
+         "| frozen evaluation output | `%s` |" % m["pipeline_output_sha256"]),
+        (S, "the reproduction table's metrics hash",
+         "| metrics | `%s` |" % METRICS_SHA),
+        (S, "the reproduction table's mapping-table hash",
+         "| mapping table | `%s` |" % f["mapping_table_sha256"]),
+        (S, "the reproduction table's figure-counts hash",
+         "| figure counts | `%s` |" % FIGURES_SHA),
+        (S, "the live prototype URL, which the page must end with",
+         "**Live prototype: https://cordis-sdg-prototype.vercel.app/**"),
     ]
 
     # THE REGISTRATION IS NOW IN THE REPOSITORY, so this is a value check like
@@ -304,6 +374,36 @@ def main():
     else:
         failures.append((L, "the goal-level-only row for project 101111215",
                          "the row itself, which is no longer in the table"))
+
+    # THE README'S DELIVERABLES TABLE MUST NAME PATHS THAT EXIST.
+    #
+    # The owner's word at cordis-sdg seq 335 requires README.md to list all eight
+    # of registration section 6's deliverables by path. A list of paths is prose
+    # that rots exactly like a figure does, and a judge follows it before reading
+    # anything else.
+    #
+    # The paths are READ OUT OF THE TABLE rather than repeated here. A copy in
+    # this file would pass while the README named something else, which is the
+    # failure this repository keeps having: a check that shares the assumption it
+    # is checking cannot see the bug.
+    readme = docs["README.md"]
+    head = "## The eight deliverables, by path"
+    if head not in readme:
+        failures.append((R, "the eight-deliverable table", head))
+    else:
+        section = readme[readme.index(head) + len(head):]
+        section = section[:section.index("\n## ")]
+        numbered = re.findall(r"^\| (\d+)\. ", section, re.M)
+        if numbered != [str(i) for i in range(1, 9)]:
+            failures.append((R, "eight deliverables numbered 1 to 8",
+                             "rows numbered %s" % (", ".join(numbered) or "none")))
+        named = [s for s in re.findall(r"`([^`]+)`", section)
+                 if "/" in s or s.endswith(".txt")]
+        if not named:
+            failures.append((R, "any path at all in the deliverables table", "—"))
+        for rel in named:
+            if not (ROOT / rel.rstrip("/")).exists():
+                failures.append((R, "a deliverable path that exists", rel))
 
     for doc, what, needle in claims:
         if needle not in docs[doc]:

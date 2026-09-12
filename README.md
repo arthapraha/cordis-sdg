@@ -40,6 +40,30 @@ vocabulary in `data/terms/` and the crosswalk in `data/crosswalk/` were still
 built from the taxonomy and the category list alone, and **no project text
 reached either of them**; that part was the load-bearing half and it stands.
 
+## The eight deliverables, by path
+
+**Registration section 6 lists eight**, and this table says where each one is, so
+nothing has to be searched for. The count is eight rather than six because the
+competition page carries two six-item lists and section 6 is their union; section
+6 explains that in its own words.
+
+| | |
+|---|---|
+| 1. Notebook | `notebooks/cordis-sdg.ipynb`, pinned by `requirements-notebook.txt` |
+| 2. Mapping table | `data/corpus/mapping-table-0246412.csv` |
+| 3. Reproducibility files | `data/manifest.json`, `data/terms/`, `data/crosswalk/`, `data/sample/`, `data/pipeline/parameters-v1.json`, `scripts/`, and the block under **Reproducing this commit** below |
+| 4. Visualisations | `figures/` and the notebook's inline figures; the counts behind them in `data/corpus/figures.json`; the interactive charts in the prototype |
+| 5. Limitations, uncertain cases, improvements | `docs/limitations.md` |
+| 6. Summary of approach and findings | `docs/summary.md` |
+| 7. Working web prototype | <https://cordis-sdg-prototype.vercel.app/>, source in `prototype/` |
+| 8. Description document | `docs/description-document.md` |
+
+**Item 3's scripts include the checks**, which are the part of this repository
+worth reading first: `scripts/test_pipeline_guard.py` on the evaluation guard,
+`scripts/test_parameters_provenance.py` on the values digest, and
+`scripts/test_reported_figures.py`, which fails if any figure or hash quoted in
+any of these documents stops matching the artefact it came from.
+
 ## Licence
 
 Settled by the owner on ratification day and recorded here because registration
@@ -703,17 +727,25 @@ every target is reachable by at least one term. It passes at this commit.
 
 ## Status
 
-Registration v9 is ratified and this repository is anchored to its hash. The
-competition page was re-read against the registration's own reading of it before
-any of this was written, and the differences found were reported to the project
-room first, as the registration requires. This repository follows the
-registration exactly as ratified; changing it takes an amendment and a new hash.
+**Everything registration section 6 asks for is built and listed above**, except
+section 3.7's explanation pass, which is parked with no model credential and
+records its prompts rather than inventing output. The prototype is live and was
+loaded from this commit's README before this line was written.
 
-**The gap this file reported at the previous commit is closed.** Section 3.4's
-editorial description had no source in the snapshot; it now has one, defined by
-v9 and hashed here, and its coverage is measured rather than inferred. Everything
-section 8 puts on ratification day is done.
+**What stood here until this commit was written when the registration had just
+been ratified**, and it said there was no crosswalk, no key-term rule, no synonym
+list, no stop-list, no negation rule, no sample draw, no labelling and no model
+call. Every one of those has existed for some time; the mapping table over all
+23,451 projects has existed since the corpus run. **The section was true of the
+commit that wrote it and false of every commit since**, which is this
+repository's one recurring failure — a claim reported against a tree it does not
+describe — living in the file that describes that failure.
 
-Nothing beyond it is built. There is still no crosswalk, no key-term extraction
-rule, no synonym list, no stop-list, no negation rule, no sample draw, no
-labelling and no model call.
+It survived because nobody re-reads the bottom of a file they are appending to.
+The fix is not a resolution to be more careful: `scripts/test_reported_figures.py`
+now covers four documents, and any figure or hash in them that stops matching its
+artefact fails the run.
+
+The registration in force is v10, named with its sha256 at the top of this file
+and committed at `docs/cordis-sdg-registration-v10.md` so the hash can be
+checked rather than taken. Changing the method takes an amendment and a new hash.
