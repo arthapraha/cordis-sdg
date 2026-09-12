@@ -348,6 +348,73 @@ gives six byte-identical figures. The notebook's own bytes carry per-cell
 execution timestamps, which are **kept deliberately** as the machine-checkable
 evidence that it was executed rather than written.
 
+### 7.8 The frozen pipeline was sped up once, and the speed-up changed no byte
+
+**The frozen pipeline commit is not the commit that was frozen.** The freeze
+fixed the pipeline at `c8a610477bc170817c20e0432bd197dec62c52c8`. Scoring the
+whole snapshot at that commit took about ten hours, because every one of 1,222
+vocabulary phrases ran a regular expression over every project. So one line went
+in afterwards: skip a phrase's expression when the phrase is not a plain
+substring of the text, since an escaped literal between two zero-width
+assertions cannot match text that does not contain it. That is commit
+`0246412b44f722567feaa2e6c1b6e695de86c923`, and it scored the whole snapshot in
+minutes.
+
+**The owner allowed it at cordis-sdg seq 244 on one condition: the output must
+equal the slow run's.** An argument that the skip cannot change an answer is not
+the same as a measurement that it did not. So the slow pipeline was run again
+over all 23,451 projects, in a separate worktree at `c8a6104`, and its table was
+compared with the committed one.
+
+| | |
+|---|---|
+| control table, pipeline at `c8a6104` | `a9f8f66f17810d48094c738a887285f732f1b0bf26ab101870bcadd7d7b6c130` |
+| committed mapping table, pipeline at `0246412` | `181d378a3078014193f3ae4f684b00b375ed62f3d24b2b34c060f6457b4a00d3` |
+| rows on each side | 28,833 over 23,451 projects |
+| projects missing from the control | 0 |
+| rows present on one side only | 0 |
+| rows whose score or band differs | **0** |
+| cells differing in any column but `pipeline_commit` | **0** |
+| **control with its commit hash swapped for `0246412`'s** | **`181d378a3078014193f3ae4f684b00b375ed62f3d24b2b34c060f6457b4a00d3`** |
+
+**The last row is the result.** The two tables differ in `pipeline_commit`
+by construction, because each row records the code that scored it. Both hashes
+are 40 characters, so swapping one for the other moves no byte. **With that one
+column swapped, the control hashes to the committed table's own sha256: the two
+runs are byte-identical in everything else.** The swap cannot hide a difference.
+Each file carries its own commit exactly once per row and the other's never, and
+a single changed byte in the control breaks the match.
+
+**Two instruments, by two seats.** The byte comparison is one. The other is a
+differential on every column, paired on project, target and assignment level.
+**It is scoped by the order the build runs in, not by what the control happens to
+contain**, and that correction was paid for. Its first version compared only the
+projects the control held, so a project the control had lost disappeared from
+both sides. Dropping a single-row project from a copy passed. Counsel then
+wrote an independent comparison, took a separate copy of the finished file, and
+reached the same zeros and the same substituted hash.
+
+**To re-run it.** The control table is not committed, being a 24 MB second copy
+of a result the repository already holds. It is kept beside its build worktree
+as the artefact the hash above names, so **its hash cannot be checked from a
+clone**, and this section does not pretend otherwise. To rebuild it and compare:
+
+```bash
+git worktree add --detach ../cordis-sdg-slow c8a6104
+cd ../cordis-sdg-slow
+git checkout 0246412 -- . && git checkout HEAD -- scripts/pipeline.py
+python scripts/build_mapping_table.py --freeze-seq 207 --records ../cordis-sdg/data/corpus/records.jsonl --out data/corpus/mapping-table.csv
+cd ../cordis-sdg
+python scripts/compare_control_table.py --control ../cordis-sdg-slow/data/corpus/mapping-table.csv
+```
+
+The third line restores every later file except the pipeline. Without it, a
+resumed build would score with the skip in place and stamp the fast commit, and
+the comparison would pass for the wrong reason. `compare_control_table.py`
+refuses to report until both instruments have caught a moved score, a moved band,
+a dropped single-row project and a changed byte. It also refuses if the two
+tables do not carry exactly the two expected commits.
+
 ---
 
 ## 8. Why we think this is good work, against the criteria

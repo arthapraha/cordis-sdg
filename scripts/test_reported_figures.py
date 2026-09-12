@@ -387,6 +387,23 @@ def main():
             len(f["least_linked_targets"]["targets_never_assigned"]),
             f["least_linked_targets"]["targets_in_taxonomy"])),
         (D, "the mapping table hash", f["mapping_table_sha256"]),
+
+        # Section 7.8, the seq 244 control. The control table's own hash is NOT
+        # checked here and cannot be: the table is not committed, so no file in
+        # a clone can say what it should be. The section says so. What IS checked
+        # is everything a clone can compute: the committed table's hash in both
+        # places it appears, including as the result of the commit swap, and the
+        # row and project counts.
+        (D, "section 7.8's committed-table row",
+         "| committed mapping table, pipeline at `0246412` | `%s` |" % f["mapping_table_sha256"]),
+        (D, "section 7.8's result, the swapped control hashing to the committed table",
+         "| **control with its commit hash swapped for `0246412`'s** | **`%s`** |"
+         % f["mapping_table_sha256"]),
+        (D, "section 7.8's row and project counts",
+         "| rows on each side | %s over %s projects |"
+         % (thousands(shape["rows"]), thousands(cover["projects_in_table"]))),
+        (D, "section 7.8's frozen commit, named in full",
+         "That is commit\n`%s`" % f["pipeline_commit"]),
         (D, "the pipeline commit", f["pipeline_commit"]),
         (D, "the snapshot hash", f["snapshot_sha256"]),
         (D, "the parameters values digest", m["parameters_values_sha256"]),
