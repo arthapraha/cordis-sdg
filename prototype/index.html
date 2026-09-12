@@ -26,7 +26,11 @@
         </div>
         <div class="badge-item">
           <span class="badge-label">Pipeline Commit</span>
-          <span class="badge-value mono">0938fe34 (Frozen)</span>
+          <span class="badge-value mono" title="0246412b44f722567feaa2e6c1b6e695de86c923">0246412b</span>
+        </div>
+        <div class="badge-item">
+          <span class="badge-label">Frozen Output</span>
+          <span class="badge-value mono" title="0938fe34e41cd5d8ddccfba69238481fdf6470e54046104ad7a3535da6743709">0938fe34&hellip;</span>
         </div>
         <div class="badge-item">
           <span class="badge-label">Specification</span>
@@ -211,7 +215,7 @@
     <section id="tab-evaluation" class="tab-pane">
       <div class="pane-intro">
         <h2>Pipeline Evaluation &amp; Benchmark Metrics</h2>
-        <p>Ground-truth validation results on the held-out 100 evaluation sample and development agreement metrics from the frozen pipeline run (commit <code class="mono">0938fe34</code>, metrics artefact <code class="mono">babd3741&hellip;</code>).</p>
+        <p>Ground-truth validation results on the held-out 100 evaluation sample and development agreement metrics from the frozen pipeline run (output <code class="mono" title="0938fe34e41cd5d8ddccfba69238481fdf6470e54046104ad7a3535da6743709">0938fe34&hellip;</code>, pipeline commit <code class="mono" title="0246412b44f722567feaa2e6c1b6e695de86c923">0246412b</code>, metrics artefact <code class="mono" title="babd37415581ce82ecb09c4501052ce811e834e57dad7c6735389ce321dd8a2e">babd3741&hellip;</code>).</p>
       </div>
 
       <div class="metrics-grid">
@@ -233,7 +237,7 @@
         <div class="metric-box">
           <div class="metric-title">Development Cohen's Kappa</div>
           <div class="metric-number" id="eval-metric-kappa">0.677</div>
-          <div class="metric-desc">Inter-annotator agreement scale on development 50 sample (substantial agreement baseline).</div>
+          <div class="metric-desc">Agreement between two model seats on development 50 sample (substantial agreement baseline).</div>
         </div>
       </div>
 
@@ -251,7 +255,8 @@
             </li>
             <li>
               <strong>Single-Reference Annotation Limit:</strong>
-              Reference evaluation targets are anchored against a single expert annotator reference standard. Inter-annotator variance is calibrated against development Cohen's Kappa (<span id="eval-prose-kappa">0.677</span>).
+              <span id="eval-prose-reference-note">Hermes Cordis's set is the sole reference for all 100. Section 4.8 provides for Attila's call on the 20 he hand-labelled and Hermes's labels as the reference for the other 80; THE 20 WERE NEVER MADE, so there was nothing to adjudicate, no call was taken, and the limitation covers the whole hundred.</span>
+              <span id="eval-prose-human-anchor">Section 4.3 provides for 20 of the 100 to be hand-labelled by Attila as the human anchor, and section 4.7 reports agreement against them separately. They were not made. The evaluation reference rests entirely on one automated labeller working blind, and nothing in this report is anchored to a human judgement.</span>
             </li>
             <li>
               <strong>Parked Explanation Pass (&sect;3.7):</strong>
@@ -265,7 +270,7 @@
           <div class="repro-box">
             <p>Every metric published on the chain is verified by self-proof inside <code class="mono">scripts/metrics.py</code> before reporting:</p>
             <pre class="code-block">python scripts/metrics.py --set evaluation</pre>
-            <p>The script validates development-50 agreement (<code class="mono" id="eval-repro-kappa">0.677</code>) and held-out 100 target metrics (<code class="mono" id="eval-repro-metrics">P=0.447, R=0.221, Ceiling=0.442</code>) against the frozen run <code class="mono">0938fe34&hellip;</code>.</p>
+            <p>The script validates development-50 agreement (<code class="mono" id="eval-repro-kappa">0.677</code>) and held-out 100 target metrics (<code class="mono" id="eval-repro-metrics">P=0.447, R=0.221, Ceiling=0.442</code>) against the frozen run output <code class="mono" title="0938fe34e41cd5d8ddccfba69238481fdf6470e54046104ad7a3535da6743709">0938fe34&hellip;</code>.</p>
           </div>
         </div>
       </div>
