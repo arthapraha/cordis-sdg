@@ -468,7 +468,7 @@ function renderProjectsTable() {
 
     html += `
       <tr class="project-row" tabindex="0" data-project-id="${p.id}" role="button" aria-label="Inspect project ${p.id}: ${safeAcronym}">
-        <td class="col-id"><span class="mono">${p.id}</span></td>
+        <td class="col-id">${p.id}</td>
         <td class="col-acronym">${safeAcronym}</td>
         <td class="col-title"><a href="https://cordis.europa.eu/project/id/${p.id}" target="_blank" rel="noopener" class="project-title-link cordis-outbound-link" title="Open CORDIS project record ${p.id} (external site, opens in new tab)" aria-label="Open project ${p.id} on CORDIS (leaves site)">${safeTitle}&nbsp;<span class="external-icon">&nearr;</span></a></td>
         <td class="col-level"><span class="badge-level ${levelClass}">${levelText}</span></td>

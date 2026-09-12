@@ -615,8 +615,10 @@ body {
   text-decoration: underline;
 }
 
-.col-id { width: 110px; font-weight: 600; }
-.col-acronym { width: 140px; font-weight: 600; }
+.col-id { width: 110px; }
+.col-acronym { width: 140px; }
+.projects-table td.col-id,
+.projects-table td.col-acronym { color: var(--text-secondary); font-weight: 500; }
 .col-title { min-width: 340px; }
 .col-level { width: 130px; }
 .col-sdgs { width: 150px; }
