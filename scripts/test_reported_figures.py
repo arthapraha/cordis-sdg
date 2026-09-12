@@ -252,6 +252,26 @@ def main():
     with open(TAXONOMY, encoding="utf-8-sig", newline="") as fh:
         taxonomy_targets = len({r["target_id"] for r in csv.DictReader(fh, delimiter=";")})
 
+    # t-63ab's figures, section 1.6. Counted HERE from the crosswalk rather than
+    # copied from scripts/measure_ancestor_exposure.py, so the document and the
+    # measurement script are checked by two independent counts rather than one
+    # count quoted twice.
+    reach = {}
+    for r in xrows:
+        reach.setdefault(r["eurosciwoc_path"].strip(), []).append((r["target_id"], r["strength"]))
+    anc = []
+    for a in sorted(reach):
+        for b in sorted(reach):
+            if not b.startswith(a + "/"):
+                continue
+            for tgt in sorted({x for x, _ in reach[a]} & {x for x, _ in reach[b]}):
+                sa = sorted({s for x, s in reach[a] if x == tgt})[0]
+                sb = sorted({s for x, s in reach[b] if x == tgt})[0]
+                anc.append((sa, sb))
+    ancestor_pairs = len(anc)
+    ancestor_deduped = sum(1 for x in anc if x == ("contributing", "contributing"))
+    ancestor_summable = ancestor_pairs - ancestor_deduped
+
     docs = {
         "README.md": README.read_text(encoding="utf-8"),
         "docs/description-document.md": DESCRIPTION.read_text(encoding="utf-8"),
@@ -404,6 +424,15 @@ def main():
          % (unc["recall_only"], unc["projects_disagreeing"])),
         (L, "improvement 3.2's goal-level population",
          "among the %s goal-level-only projects" % thousands(shape["projects_goal_level_only"])),
+        (L, "the crosswalk's mapped categories",
+         "| mapped EuroSciVoc categories | %d |" % crosswalk_categories),
+        (L, "the ancestor-pair count",
+         "| ancestor pairs reaching the same target | **%d** |" % ancestor_pairs),
+        (L, "the summable ancestor pairs",
+         "| of those, pairs that would sum if a project carried both | **%d** |"
+         % ancestor_summable),
+        (L, "the already-neutralised pairs",
+         "| pairs the contributing rule already neutralises | %d |" % ancestor_deduped),
         (L, "improvement 3.2's residue",
          "**Would not fix** the %d pairs with no evidence at any threshold."
          % rc["with_no_evidence_at_any_threshold"]),
@@ -516,6 +545,20 @@ def main():
     # nothing.
     examples = {("101113215", "4.6"), ("101203848", "5.2"), ("101203848", "2.2")}
     rows, goal_only = {}, {}
+
+    # AND THE EXPOSURE ITSELF, not just its denominator. Section 1.6 says
+    # "0 of 14,776". Checking only the 14,776 would leave the 0 as a literal
+    # nobody verifies — the document could say zero while the table had ten and
+    # nothing would go red. So the zero is counted here, on the committed table,
+    # by a pass this file was already making.
+    by_target = {}
+    for a in sorted(reach):
+        for b in sorted(reach):
+            if b.startswith(a + "/"):
+                for tgt in {x for x, _ in reach[a]} & {x for x, _ in reach[b]}:
+                    by_target.setdefault(tgt, set()).add((a, b))
+    item_re = re.compile(r"^([a-z_]+): (.*?) \[(.+?), (-?[0-9.]+)\]$")
+    target_rows = exposure = 0
     with open(MAPPING, encoding="utf-8-sig", newline="") as fh:
         for row in csv.DictReader(fh):
             pid = row["project_id"]
@@ -524,6 +567,18 @@ def main():
                 rows[(pid, tid)] = row
             if pid == "101111215" and row["assignment_level"] == "goal_only":
                 goal_only[pid] = row
+            if row["assignment_level"] != "target":
+                continue
+            target_rows += 1
+            if tid not in by_target:
+                continue
+            cats = set()
+            for part in row["matched_phrases_and_source_fields"].split(" | "):
+                hit = item_re.match(part.strip())
+                if hit and hit.group(1) == "eurosciwoc_categories":
+                    cats.add(hit.group(2))
+            if any(a in cats and b in cats for a, b in by_target[tid]):
+                exposure += 1
 
     for pid, tid in sorted(examples):
         row = rows.get((pid, tid))
@@ -535,6 +590,39 @@ def main():
         claims.append((L, "project %s's %s row, as the table records it" % (pid, tid),
                        "`%s score %s band %s`"
                        % (tid, row["score"], row["confidence_band"])))
+
+    claims.append((L, "the measured exposure on the mapping table",
+                   "| target assignments in the mapping table reached by such a pair | **%d of %s** |"
+                   % (exposure, thousands(target_rows))))
+
+    # THE OTHER ZERO CANNOT BE CHECKED FROM A CLONE, and saying so is the point.
+    # data/corpus/records.jsonl is 150 MB and .gitignore keeps it out, so this
+    # figure is verified when the file has been rebuilt and NOT verified
+    # otherwise. A check that quietly skips is worse than one that is absent:
+    # the run says which of the two happened.
+    records = ROOT / "data/corpus/records.jsonl"
+    if records.is_file():
+        carriers = projects_seen = 0
+        pairset = {(a, b) for v in by_target.values() for a, b in v}
+        with open(records, encoding="utf-8") as fh:
+            for line in fh:
+                rec = json.loads(line)
+                projects_seen += 1
+                cats = rec.get("eurosciwoc_categories")
+                if cats == "(absent)" or not cats:
+                    continue
+                cats = [c.strip() for c in cats]
+                if any(b.startswith(a + "/") for a in cats for b in cats if a != b):
+                    carriers += 1
+        claims.append((L, "the measured exposure on the corpus records",
+                       "| projects carrying a category and one of its own descendants | **%d of %s** |"
+                       % (carriers, thousands(projects_seen))))
+        print("data/corpus/records.jsonl present: section 1.6's corpus figure checked "
+              "against it (%d of %d)" % (carriers, projects_seen))
+    else:
+        print("data/corpus/records.jsonl absent: section 1.6's '0 of 23,451' is NOT "
+              "checked by this run. Rebuild it with scripts/build_corpus_records.py "
+              "to cover it.")
 
     if "101111215" in goal_only:
         claims.append((L, "project 101111215's goal-only score",

@@ -106,6 +106,42 @@ the competition's criteria penalise. A project in an unmapped category is not
 thereby unmapped: it reaches targets through the lexical evidence that reads the
 project's own words.
 
+**A second thing about the crosswalk, which is a defect rather than a design
+choice.** `score()` adds every crosswalk row for every category a project
+carries, and only `contributing` rows are held to one per target. So a project
+carrying a category **and one of its own descendants**, where both map to the
+same target, scores that target twice from a single classification.
+
+| | |
+|---|---|
+| mapped EuroSciVoc categories | 199 |
+| ancestor pairs reaching the same target | **46** |
+| of those, pairs that would sum if a project carried both | **41** |
+| pairs the contributing rule already neutralises | 5 |
+| target assignments in the mapping table reached by such a pair | **0 of 14,776** |
+| projects carrying a category and one of its own descendants | **0 of 23,451** |
+
+**The zero is measured, not assumed, and it is not an artefact of sparse
+classification.** 20,161 projects carry a category list and 14,562 carry more
+than one. **CORDIS classifies with the most specific term in a branch and does
+not also list the ancestors**, so the pairs exist in our crosswalk and never meet
+in a project.
+
+**No row of the submitted table is inflated. The reason is a property of CORDIS's
+classification, not of our rule.** `score()` has no guard against an ancestor
+pair, and a snapshot that listed a parent beside its child would double count
+silently with nothing in the pipeline to say so. **That is why this is recorded
+here rather than fixed under a re-freeze**: no output byte moves, so a re-freeze
+would change nothing a reader could check, while the exposure is real and belongs
+on the record.
+
+**Both halves are re-runnable rather than asserted.**
+`scripts/measure_ancestor_exposure.py` refuses to report until it has rebuilt all
+14,776 scores and bands from the rows' own evidence cells and matched the
+committed columns. `scripts/measure_ancestor_structure.py` refuses until it has
+detected a planted ancestor pair, because a zero from an instrument nobody has
+seen find anything is indistinguishable from an instrument that cannot.
+
 ### 1.7 The explanation pass is parked
 
 No model credential is set in the build environment and the registration forbids
