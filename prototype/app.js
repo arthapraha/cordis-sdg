@@ -100,6 +100,8 @@ function switchTab(tabName) {
   document.querySelectorAll(".menu-item").forEach(b => b.classList.toggle("active", b.dataset.tab === tabName));
   document.querySelectorAll(".tab-pane").forEach(p => p.classList.remove("active"));
   targetPane.classList.add("active");
+  const head = document.getElementById("page-head");
+  if (head) head.hidden = tabName !== "explorer";
   if (!window.location.hash.startsWith("#project")) {
     try { history.replaceState(null, "", `#tab-${tabName}`); } catch (_) { /* file: URLs */ }
   }
