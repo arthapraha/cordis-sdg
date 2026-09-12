@@ -38,9 +38,38 @@ instances so far, every one found by a reviewer rather than by the author:
 `scripts/hooks/precommit_check.py` enforces 2 and 4 at commit time. It is not a
 substitute for 1 and 3, which are yours.
 
+**Know exactly how far that hook reaches.** It is a Claude Code tool hook,
+configured in `.claude/settings.json`. **It fires on a commit made through a
+Claude Code session and on nothing else.** A `git commit` typed in a terminal, or
+made through another client, or issued via a shell alias the matcher does not
+recognise, is not checked at all. The same is true of the path guard in
+`scripts/hooks/guard_paths.py`.
+
+That is the correct scope for what was authorised, and it is written here because
+"the pre-commit hook refuses" would otherwise read as a guarantee about every
+path to a commit. **A file about not making false claims should not open with
+one.** Closing the gap means a git-side `pre-commit` calling the same script, and
+that is a separate decision.
+
 ---
 
-## Writing files
+## Staging
+
+**Never `git add -A` or `git add .` in this repository. Stage the paths the
+commit is about, by name.**
+
+This is not a style preference. Twice in twenty minutes `git add -A` swept
+`data/labels/` into a commit whose message described something else — the second
+time within the same hour as writing the first occurrence down, and in the commit
+that was correcting the previous round of notes. Both were caught before the hash
+reached the room, by reading `git show --stat` rather than by noticing at the
+time.
+
+A commit here is reviewed by another seat against its message. **A commit that
+contains more than its message describes is a false statement**, whatever the
+extra files are and however defensible they would have been on their own.
+
+**Read `git show --stat` before posting any hash.** That is what caught both.
 
 **Every write uses `newline=""`.** Python translates `\n` to CRLF on Windows, git
 stores LF, and the file then regenerates differently in the fresh clone that

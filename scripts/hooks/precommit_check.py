@@ -57,8 +57,17 @@ VERIFIERS = ["scripts/verify_crosswalk.py", "scripts/verify_licences.py"]
 
 
 def is_a_commit(payload):
+    """Substring test, and its limits stated rather than left to be found.
+
+    Catches `git commit`, `--amend`, and the `git -c key=value commit` form.
+    DOES NOT catch a commit issued through a shell alias, a wrapper script, or
+    any client other than Claude Code — this is a tool hook, not a git hook, so a
+    commit typed in a terminal is not seen at all. Fine for the seat that uses
+    this repository; a git-side pre-commit calling this same script is what would
+    close it. Counsel raised both limits at cordis-sdg seq 169.
+    """
     cmd = (payload.get("tool_input") or {}).get("command") or ""
-    return "git commit" in cmd or "git -c" in cmd and "commit" in cmd
+    return "git commit" in cmd or ("git -c" in cmd and "commit" in cmd)
 
 
 def build_scratch(tmp):
