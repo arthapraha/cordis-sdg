@@ -431,7 +431,7 @@ function renderProjectsTable() {
   const endIdx = Math.min(startIdx + state.pageSize, total);
   const pageItems = state.filteredProjects.slice(startIdx, endIdx);
 
-  countEl.textContent = `Showing ${startIdx + 1}–${endIdx} of ${total.toLocaleString()} projects (${(total / 23451 * 100).toFixed(1)}% of corpus)`;
+  countEl.textContent = `Showing ${startIdx + 1}–${endIdx} of ${total.toLocaleString()} projects (${(total / 23451 * 100).toFixed(1)}% of all projects)`;
 
   let html = "";
   pageItems.forEach(p => {
@@ -635,7 +635,7 @@ function renderProjectDetail(project) {
         <h3>No SDG Targets or Goals Assigned</h3>
         <p>This project did not reach the calibrated relevance scoring threshold for any of the 169 SDG targets or 17 goals.</p>
         <p style="margin-top: 0.6rem; font-size: 0.8rem; color: var(--text-muted);">
-          30.6% of the Horizon Europe corpus (7,175 projects) is unassigned by design to prevent spurious or false-positive topic attribution.
+          30.6% of Horizon Europe projects (7,175) are left unassigned on purpose, rather than attributing a goal on weak evidence.
         </p>
       </div>
       ${recordFieldsHtml}
@@ -714,7 +714,7 @@ function renderSdgDistribution() {
           <span class="sdg-count-badge">${Number(count).toLocaleString()} Projects</span>
         </div>
         <div class="sdg-card-title">${meta.name}</div>
-        <div class="sdg-card-pct">${pct}% of analyzed corpus</div>
+        <div class="sdg-card-pct">${pct}% of all projects</div>
       </div>
     `;
   }
@@ -761,7 +761,7 @@ window.inspectSdg = function(goalNum) {
           <tr>
             <th style="width: 140px;">Target</th>
             <th style="width: 120px; text-align: right;">Projects</th>
-            <th class="bar-cell">Corpus Relative Frequency</th>
+            <th class="bar-cell">Share of all projects</th>
           </tr>
         </thead>
         <tbody>

@@ -29,13 +29,13 @@
   <section class="page-head">
     <div class="header-top">
       <div class="header-titles">
-        <div class="header-badge">Horizon Europe (2021&ndash;2027) &bull; CORDIS Mapping</div>
-        <h1>CORDIS SDG Mapper</h1>
-        <p class="header-subtitle">Deterministic SDG assignment and multi-field evidence explorer across 23,451 Horizon Europe research projects.</p>
+        <div class="header-badge">Horizon Europe (2021&ndash;2027)</div>
+        <h1>Horizon Europe research, mapped to the Sustainable Development Goals</h1>
+        <p class="header-subtitle">23,451 projects, each matched to SDG goals and targets by a fixed rule that gives the same answer every time, with the evidence behind every match one click away.</p>
       </div>
       <div class="provenance-badges">
         <div class="badge-item">
-          <span class="badge-label">Corpus Size</span>
+          <span class="badge-label">Projects</span>
           <span class="badge-value">23,451 Projects</span>
         </div>
         <div class="badge-item">
@@ -58,7 +58,7 @@
         <div class="stat-card" id="card-total">
           <div class="stat-label">Total Projects</div>
           <div class="stat-value" id="stat-total">23,451</div>
-          <div class="stat-sub">100% of analyzed corpus</div>
+          <div class="stat-sub">All projects in the set</div>
         </div>
         <div class="stat-card stat-target" id="card-target">
           <div class="stat-label">Target-Level Assigned</div>
@@ -242,7 +242,7 @@
               Keyword and text-matching pipelines cannot reach <span id="eval-prose-unreachable-pairs">53 of 95</span> gold-standard target associations because CORDIS project descriptions and UN SDG target texts use non-overlapping terminologies. This ceiling is an inherent property of lexical overlap, not a pipeline bug.
             </li>
             <li>
-              <strong>Unassigned Corpus Rate (30.6%):</strong>
+              <strong>Unassigned Rate (30.6%):</strong>
               7,175 of 23,451 projects receive no SDG assignment (<code class="mono">assignment_level: none</code>). Calibrated thresholding intentionally rejects low-confidence matches to preserve high precision (<span id="eval-prose-precision">0.447</span>) rather than forcing arbitrary labels.
             </li>
             <li>
@@ -361,7 +361,7 @@
               <span class="fig-file">figures/confidence-bands.svg</span>
               <span class="fig-hash mono" title="7d55aa97458541589e569986b3be7a8abb14e7a5da12ccef06030469fe160761">sha256: 7d55aa97&hellip;</span>
             </div>
-            <p class="fig-caption">Stratification of corpus assignments into calibrated confidence tiers, demonstrating distribution across high-certainty core targets and exploratory matches.</p>
+            <p class="fig-caption">How the assignments split across the three confidence bands, from high-certainty matches to exploratory ones.</p>
           </div>
         </article>
       </div>
@@ -381,7 +381,7 @@
           <p>The analysis operates on official European Union open datasets and established international taxonomies:</p>
           <ul class="covenant-list">
             <li>
-              <strong>Horizon Europe Project Corpus:</strong>
+              <strong>The Horizon Europe projects:</strong>
               A complete snapshot of 23,451 research projects funded under the European Union's Horizon Europe framework programme (2021&ndash;2027), sourced from the official CORDIS open data repository. Each project record contains project identifiers, title, acronym, teaser summary, comprehensive objective text, free keywords, and classified scientific domains.
             </li>
             <li>
@@ -442,7 +442,7 @@
               Evaluation was performed once against the frozen pipeline using a held-out benchmark of 100 projects. The run yielded target-level precision of 0.447 and recall of 0.221, reflecting an inherent vocabulary ceiling of 0.442 where 53 of 95 reference pairs share zero lexical overlap with official UN target texts.
             </li>
             <li>
-              <strong>Whole-Corpus Differential Proof:</strong>
+              <strong>Fast run checked against the slow run:</strong>
               A performance optimization (substring pre-check skip) was verified against a slow control run across all 23,451 projects (28,833 assigned rows). Two independent instruments confirmed byte-identical results: zero missing projects, zero row differences, and zero score or band discrepancies.
             </li>
             <li>
