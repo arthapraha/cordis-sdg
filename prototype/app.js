@@ -176,16 +176,7 @@ function renderEvaluationMetrics() {
     if (reproKappaEl) reproKappaEl.textContent = kappaVal;
   }
 
-  if (eval100) {
-    if (eval100.reference_note) {
-      const refNoteEl = document.getElementById("eval-prose-reference-note");
-      if (refNoteEl) refNoteEl.textContent = eval100.reference_note;
-    }
-    if (eval100.human_anchor_status) {
-      const humanAnchorEl = document.getElementById("eval-prose-human-anchor");
-      if (humanAnchorEl) humanAnchorEl.textContent = eval100.human_anchor_status;
-    }
-  }
+
 
   if (tLevel && ceiling) {
     const reproMetricsEl = document.getElementById("eval-repro-metrics");
