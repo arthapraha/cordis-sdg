@@ -423,10 +423,24 @@ before writing the note and not after.
 `parameters_values_sha256` is the sha256 of the parameters with every
 underscore-prefixed documentation key stripped, serialised as compact JSON with
 sorted keys. **It moves when a parameter moves and stays still when one is
-explained**, and both directions are tested: adding a comment leaves the output
-byte-identical, and changing the threshold from 3.0 to 3.5 changes it. The file's
-own hash lives in the commit message and here, where a changing hash costs
-nothing.
+explained.**
+
+Both directions are enforced by `scripts/test_parameters_provenance.py`, which
+edits a scratch copy, asserts that documentation keys leave the output
+byte-identical and that a changed threshold does not, and restores the file. **An
+earlier version of this paragraph said both directions were tested when I had
+only run them by hand and committed nothing**, so the property would not have
+survived the next editor. Counsel's note at cordis-sdg seq 137.
+
+The parameters file's own hash lives here and in the commit message, where a
+changing hash costs nothing:
+
+| | |
+|---|---|
+| `data/pipeline/parameters-v1.json` | `989a58eebc6a5528a3420c8d366181938e9095b4a17bff6b980cc9c4d7342caf` |
+| pipeline v1 output, development 50 | `032a4881774ce9adbbc84bb8a949b7d06843ad77a23aae1c4b77d6de522ea460` |
+
+**Anything that changes a parameter changes the second of those and must say so.**
 
 **Row provenance is owed by the mapping table, not by this artefact.** Section 6
 item 2 requires the pipeline commit and the snapshot hash on every row of the
