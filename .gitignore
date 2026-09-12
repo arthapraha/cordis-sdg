@@ -22,3 +22,8 @@ data/pipeline/development-50-explanations-v1.json
 data/pipeline/development-50-v2.json
 data/pipeline/dev50-adjudication-v2.json
 data/sample/handoff-evaluation-100.json
+
+# The section 4.7 metrics report, like the other pipeline output: posted to the
+# room as an artefact by hash. metrics.py and the label artefacts it reads are
+# committed, so the report is reproducible from the repository.
+data/pipeline/evaluation-100-metrics.json
