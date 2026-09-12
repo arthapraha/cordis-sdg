@@ -434,9 +434,9 @@ function renderProjectsTable() {
 
     html += `
       <tr class="project-row" tabindex="0" data-project-id="${p.id}" role="button" aria-label="Inspect project ${p.id}: ${safeAcronym}">
-        <td class="col-id"><a href="https://cordis.europa.eu/project/id/${p.id}" target="_blank" rel="noopener" class="cordis-outbound-link mono" title="Open CORDIS project record ${p.id} (external site, opens in new tab)" aria-label="Open project ${p.id} on CORDIS (leaves site)">${p.id}&nbsp;<span class="external-icon">&nearr;</span></a></td>
+        <td class="col-id"><span class="mono">${p.id}</span></td>
         <td class="col-acronym">${safeAcronym}</td>
-        <td class="col-title"><a href="#project=${p.id}" class="project-title-link" tabindex="-1">${safeTitle}</a></td>
+        <td class="col-title"><a href="https://cordis.europa.eu/project/id/${p.id}" target="_blank" rel="noopener" class="project-title-link cordis-outbound-link" title="Open CORDIS project record ${p.id} (external site, opens in new tab)" aria-label="Open project ${p.id} on CORDIS (leaves site)">${safeTitle}&nbsp;<span class="external-icon">&nearr;</span></a></td>
         <td class="col-level"><span class="badge-level ${levelClass}">${levelText}</span></td>
         <td class="col-sdgs">${sdgsHtml}</td>
         <td class="col-band"><span class="badge-band ${bandClass}">${bandText}</span></td>
@@ -553,17 +553,20 @@ async function fetchProjectDetail(projectId) {
 function renderProjectDetail(project) {
   const modalIdEl = document.getElementById("modal-project-id");
   if (modalIdEl) {
-    modalIdEl.href = `https://cordis.europa.eu/project/id/${project.id}`;
-    modalIdEl.target = "_blank";
-    modalIdEl.rel = "noopener";
-    modalIdEl.title = `Open CORDIS project record ${project.id} on cordis.europa.eu (external site, opens in new tab)`;
-    modalIdEl.setAttribute("aria-label", `Open project ${project.id} on CORDIS (leaves site)`);
-    modalIdEl.innerHTML = `Project ${project.id}&nbsp;<span class="external-icon">&nearr;</span>`;
+    modalIdEl.textContent = `Project ${project.id}`;
   }
   document.getElementById("modal-project-acronym").textContent = project.acronym || "NO ACRONYM";
 
-  // Binding Rule 1: Hyphen-leading titles (101073045, 101275778) preserved without escaping
-  document.getElementById("modal-project-title").textContent = project.title;
+  // Binding Rule 1: Hyphen-leading titles (101073045, 101275778) preserved via escapeHtml
+  const modalTitleEl = document.getElementById("modal-project-title");
+  if (modalTitleEl) {
+    modalTitleEl.href = `https://cordis.europa.eu/project/id/${project.id}`;
+    modalTitleEl.target = "_blank";
+    modalTitleEl.rel = "noopener";
+    modalTitleEl.title = `Open CORDIS project record ${project.id} on cordis.europa.eu (external site, opens in new tab)`;
+    modalTitleEl.setAttribute("aria-label", `Open project ${project.id} on CORDIS (leaves site)`);
+    modalTitleEl.innerHTML = `${escapeHtml(project.title)}&nbsp;<span class="external-icon">&nearr;</span>`;
+  }
 
   const levelBadge = document.getElementById("modal-level-badge");
   const hasTarget = project.assignments && project.assignments.some(a => a.level === "target");
@@ -812,7 +815,7 @@ function setupProjectsTableListeners() {
   // Left-click (or modifier click) anywhere on the row
   tbody.addEventListener("click", (e) => {
     // Direct click on outbound CORDIS link navigates externally in new tab without opening modal
-    if (e.target.closest(".cordis-outbound-link")) {
+    if (e.target.closest(".cordis-outbound-link") || e.target.closest(".project-title-link")) {
       return;
     }
 
@@ -834,7 +837,7 @@ function setupProjectsTableListeners() {
   // Middle-click (auxclick with button 1) anywhere on the row opens project in new tab
   tbody.addEventListener("auxclick", (e) => {
     if (e.button !== 1) return;
-    if (e.target.closest(".cordis-outbound-link")) {
+    if (e.target.closest(".cordis-outbound-link") || e.target.closest(".project-title-link")) {
       return;
     }
     const projectId = getRowProjectId(e.target);
@@ -849,7 +852,7 @@ function setupProjectsTableListeners() {
   // Keyboard navigation: Enter or Space on focused row opens inspector
   tbody.addEventListener("keydown", (e) => {
     if (e.key === "Enter" || e.key === " ") {
-      if (e.target.closest(".cordis-outbound-link")) {
+      if (e.target.closest(".cordis-outbound-link") || e.target.closest(".project-title-link")) {
         return;
       }
       const projectId = getRowProjectId(e.target);
