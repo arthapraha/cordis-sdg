@@ -85,7 +85,7 @@ def badge(html, label):
     return (hit.group(1), hit.group(2)) if hit else (None, None)
 
 
-def prototype_failures(m, f, html):
+def prototype_failures(m, f, html, reg_sha):
     """The published page's claims, against the artefacts they came from.
 
     WHY THIS IS NOT JUST MORE NEEDLES IN `claims`. The figures on that page are
@@ -184,7 +184,16 @@ def prototype_failures(m, f, html):
             out.append((H, "the fallback in #%s" % el, needle[:130]))
 
     # The header chips, read as label-and-value pairs.
-    for label, want_title, want_text in [
+    # THE PAGE NOW NAMES THE REGISTRATION IT IS BUILT UNDER, so it joins the
+    # obligation the four documents already carry. It could not before: the chip
+    # read "Registration v10 section 6 Item 7" with no hash, so there was nothing
+    # to check and forcing one from this file would have decided something on the
+    # prototype seat's row. Antigravity Cordis put the sha256 in the chip's title
+    # at 9228c94, and this is the other half of the owner's word at seq 367.
+    chips = []
+    if reg_sha:
+        chips.append(("Specification", reg_sha, "Registration v10 &sect;6 Item 7"))
+    for label, want_title, want_text in chips + [
         ("Pipeline Commit", f["pipeline_commit"], f["pipeline_commit"][:8]),
         ("Frozen Output", m["pipeline_output_sha256"], m["pipeline_output_sha256"][:8] + "&hellip;"),
         ("Mapping Table", f["mapping_table_sha256"], f["mapping_table_sha256"][:8] + "&hellip;"),
@@ -284,6 +293,10 @@ def main():
     # to name the ratified registration by hash; the page names it by version
     # only ("Registration v10 section 6 Item 7"), which is its owner's call and
     # not something this file should force by putting the page in that loop.
+    # Since 9228c94 the page names the registration by hash in its Specification
+    # chip, so it is checked for that too — by the chip reader in
+    # prototype_failures, which compares the label and the value together rather
+    # than hunting the page for a hash that might sit under any word.
     pages = {"prototype/index.html": PROTOTYPE_HTML.read_text(encoding="utf-8")}
     everything = dict(docs, **pages)
 
@@ -661,7 +674,8 @@ def main():
             if not (ROOT / rel.rstrip("/")).exists():
                 failures.append((R, "a deliverable path that exists", rel))
 
-    proto_failures, proto_checked = prototype_failures(m, f, pages["prototype/index.html"])
+    proto_failures, proto_checked = prototype_failures(
+        m, f, pages["prototype/index.html"], reg_sha)
     failures.extend(proto_failures)
 
     for doc, what, needle in claims:
