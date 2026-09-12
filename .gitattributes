@@ -25,3 +25,9 @@ data/labels/*.json -text -diff
 # explicit line terminator, so it is already LF; this makes that a property of
 # the repository rather than of the machine that wrote it.
 data/corpus/mapping-table-*.csv -text -diff
+
+# The ratified registration. Its hash is the first thing a reader checks and the
+# thing the README's opening claim rests on, so git must not touch a byte of it:
+# the committed blob has to be the document the owner ratified, not a
+# normalisation of it. Same reason as the sealed labels and the mapping table.
+docs/cordis-sdg-registration-v10.md -text -diff

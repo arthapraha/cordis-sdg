@@ -175,30 +175,29 @@ def main():
          "covers %s projects rather than 150" % thousands(cover["projects_in_table"])),
     ]
 
-    # THE REGISTRATION HASH CANNOT BE COMPUTED FROM ANYTHING HERE, so it is
-    # checked for AGREEMENT rather than against a value. The registration lives
-    # in the room's artefact vault and is not committed, so no file in this
-    # repository can say what its hash ought to be; every committed artefact
-    # records the PREDECESSOR it was built under, which is correct and is not
-    # the hash these documents name as in force.
+    # THE REGISTRATION IS NOW IN THE REPOSITORY, so this is a value check like
+    # the other thirty-three rather than the agreement check it had to be.
     #
-    # What can still be checked is that the two documents name the SAME one and
-    # that it is well formed. A typo in either fires. Counsel asked for this at
-    # cordis-sdg seq 302: it is the hash a judge reads first.
-    named = {}
-    for doc, text in docs.items():
-        found = re.findall(r"registration-v10[.]md`, sha256 `([0-9a-f]{64})`", text)
-        named[doc] = found
+    # Until the owner's ruling at cordis-sdg seq 313 the registration lived only
+    # in the room's artefact vault, so no file here could say what its hash
+    # ought to be and the best available check was that the two documents named
+    # the same 64 hex. A reader could verify every artefact in this repository
+    # and not the sentence that governs them. Now the document is committed with
+    # -text -diff, and both documents must name ITS hash.
+    registration = ROOT / "docs/cordis-sdg-registration-v10.md"
     failures = []
-    for doc, found in named.items():
-        if len(found) != 1:
-            failures.append((doc, "exactly one registration hash (found %d)" % len(found), "—"))
-    if all(len(v) == 1 for v in named.values()):
-        values = {doc: v[0] for doc, v in named.items()}
-        if len(set(values.values())) != 1:
-            failures.append(("both documents",
-                             "one registration hash, not %d different ones" % len(set(values.values())),
-                             " vs ".join(sorted(set(values.values())))))
+    if not registration.is_file():
+        failures.append(("docs/cordis-sdg-registration-v10.md",
+                         "the ratified registration, committed", "the file itself"))
+        reg_sha = None
+    else:
+        reg_sha = hashlib.sha256(registration.read_bytes()).hexdigest()
+        for doc, text in docs.items():
+            found = re.findall(r"registration-v10[.]md`, sha256 `([0-9a-f]{64})`", text)
+            if len(found) != 1:
+                failures.append((doc, "exactly one registration hash (found %d)" % len(found), "—"))
+            elif found[0] != reg_sha:
+                failures.append((doc, "the committed registration's hash", reg_sha))
 
     for doc, what, needle in claims:
         if needle not in docs[doc]:
