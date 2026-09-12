@@ -417,6 +417,25 @@ def find_matches(record, vocab, stop, patterns):
             # and "we improve water quality" in its aim has said the second
             # thing, and stopping at the first occurrence would lose it. If
             # every occurrence is discarded, the discard is recorded once.
+            # A PHRASE ABSENT AS A PLAIN SUBSTRING CANNOT MATCH THE PATTERN
+            # BELOW, so skipping it here changes how fast this loop reaches its
+            # answer and cannot change the answer. The pattern's core is
+            # re.escape(phrase) — the literal characters, no alternation, no
+            # character class, no IGNORECASE — wrapped in two zero-width
+            # lookarounds, and a zero-width assertion cannot make a literal
+            # match text that does not contain it. The test runs on `low`, the
+            # same string the pattern runs on.
+            #
+            # It is here because the corpus is 23,451 projects and the
+            # vocabulary is 1,222 phrases, so the full snapshot took about ten
+            # hours: the cost is the vocabulary, not the text. Owner's word at
+            # cordis-sdg seq 244, on counsel's reading at seq 242, with the
+            # proof being 0938fe34… and 45a514cf… reproduced byte-identical
+            # from this code. Nothing under section 3 moves: no rule file
+            # changes, so _frozen.rule_file_sha256 stands, and no parameter
+            # changes, so the values digest stands.
+            if phrase not in low:
+                continue
             first_discard = None
             kept = False
             for m in re.finditer(r"(?<![a-z0-9])" + re.escape(phrase) + r"(?![a-z0-9])", low):
