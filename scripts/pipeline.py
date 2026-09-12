@@ -150,8 +150,17 @@ def sentence_window(text, start, end):
     either side when no boundary is found."""
     left = max(0, start - 300)
     right = min(len(text), end + 300)
-    for m in re.finditer(r"[.?!]\s|\n", text[left:start]):
-        left = left + m.end()
+    # KEEP ONLY THE LAST BOUNDARY. This accumulated — `left = left + m.end()` —
+    # while every m.end() indexes the same slice taken at the original left, so
+    # two boundaries in the lookback pushed `left` past the match and `before`
+    # came back empty. negation_verdict then saw nothing and kept every match.
+    # Measured on the development 50 before the fix: 847 matches examined, 224
+    # with an empty window, 26.4%. Section 3.3 is committed data and the code was
+    # not running it on a quarter of its matches. Found by counsel at cordis-sdg
+    # seq 149.
+    window_start = left
+    for m in re.finditer(r"[.?!]\s|\n", text[window_start:start]):
+        left = window_start + m.end()
     nxt = re.search(r"[.?!]\s|\n", text[end:right])
     if nxt:
         right = end + nxt.start()
@@ -259,8 +268,27 @@ def score(record, matches, crosswalk, params):
 
     cats = record.get("eurosciwoc_categories")
     if cats != ABSENT and cats:
+        # A CONTRIBUTING ROW COUNTS AT MOST ONCE PER TARGET.
+        #
+        # Two contributing rows each say "this discipline is a route to the
+        # target, not its subject", and at these weights two of them sum to 3.0
+        # — exactly one direct row, which says "this is what the target is
+        # about". That is arithmetic standing in for a reviewed judgement. On the
+        # corpus, 338 (project, target) pairs are reached by more than one row
+        # and 100 cross the threshold only because the rows were summed; every
+        # one of those is contributing plus contributing.
+        #
+        # Direct rows still sum, deliberately. Two direct rows come from two
+        # different category branches — zero ancestor pairs exist in the whole
+        # corpus — so they are two independent reviewed claims about the same
+        # target, which is corroboration rather than duplication.
+        contributing_counted = set()
         for path in cats:
             for row in crosswalk.get(path.strip(), []):
+                if row["strength"] == "contributing":
+                    if row["target_id"] in contributing_counted:
+                        continue
+                    contributing_counted.add(row["target_id"])
                 value = w["crosswalk_" + row["strength"]] * fm["eurosciwoc_categories"]
                 t = per_target[row["target_id"]]
                 t["score"] += value
@@ -316,6 +344,16 @@ def run(records, vocab, stop, crosswalk, patterns, params):
         if not assignments:
             by_goal = collections.defaultdict(float)
             for tid, t in per_target.items():
+                # Section 3.6 does not say whether a target refused at target
+                # level for lacking discriminating evidence may still push a goal
+                # over the fallback threshold. parameters-v1.json now states that
+                # it may not, and says why: otherwise the discriminating
+                # requirement is a formality, since the same evidence reaches the
+                # same project by a weaker route.
+                if (a["requires_discriminating_evidence"]
+                        and params["ambiguity"]["fallback_requires_discriminating_evidence"]
+                        and not t["has_discriminating"]):
+                    continue
                 by_goal[tid.split(".")[0]] += t["score"]
             for gid, s in sorted(by_goal.items(), key=lambda kv: -kv[1]):
                 if s >= params["ambiguity"]["goal_level_fallback_threshold"]:
@@ -374,6 +412,22 @@ def main():
         sys.exit(REFUSAL % args.set)
 
     params = json.loads(PARAMS.read_text(encoding="utf-8"))
+
+    # A tuned threshold below the low band's minimum makes band() fall through to
+    # null, and an empty confidence column is a submission defect under section 6
+    # item 2. At threshold 2.5 the development 50 produced 7 assignments with no
+    # band and no warning. Counsel raised it at cordis-sdg seq 149; it is not a
+    # bug at any setting used so far, and it becomes one the moment tuning
+    # touches the threshold, which is exactly when nobody is looking at bands.
+    low = params["confidence_bands"]["low"]["min_score"]
+    threshold = params["assignment"]["threshold"]
+    if low > threshold:
+        sys.exit("refused: confidence_bands.low.min_score (%s) exceeds "
+                 "assignment.threshold (%s), so every assignment between them "
+                 "would be written with a null confidence band. Lower the band "
+                 "or raise the threshold; do not ship an empty column."
+                 % (low, threshold))
+
     doc = json.loads(pathlib.Path(args.handoff).read_text(encoding="utf-8"))
     records = [r for r in doc["projects"] if r["set"] == args.set]
     # Belt to the braces above, and the one that survives a future flag: whatever

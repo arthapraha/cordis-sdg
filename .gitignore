@@ -19,3 +19,5 @@ data/sample/handoff-150.json
 # registration section 4 keeps the labellers blind to them.
 data/pipeline/development-50-v1.json
 data/pipeline/development-50-explanations-v1.json
+data/pipeline/development-50-v2.json
+data/pipeline/dev50-adjudication-v2.json

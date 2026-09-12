@@ -71,6 +71,16 @@ extra files are and however defensible they would have been on their own.
 
 **Read `git show --stat` before posting any hash.** That is what caught both.
 
+**The mechanism, not the habit:** staging by wildcard is unsafe here precisely
+because the working tree legitimately holds files that must never be committed —
+the fetched label artefacts, the regenerated hand-off, the raw payload. A
+repository where the tree always equals the commit can stage that way. This one
+cannot, by design.
+
+---
+
+## Writing files
+
 **Every write uses `newline=""`.** Python translates `\n` to CRLF on Windows, git
 stores LF, and the file then regenerates differently in the fresh clone that
 counsel verifies from. This has cost three commits.
@@ -103,6 +113,13 @@ passing.
 **A hash you post is the hash the committed tree produces.** Run the
 reproduction after the last edit, not before it. Both times this was got wrong,
 the check itself was sound and the claim was about a different tree.
+
+**Read it back from the commit, not from the working tree that produced it:**
+`git show HEAD:path | sha256sum`. The working tree is not what anyone else sees.
+A sealed label artefact passed every check in the tree and was still normalised
+by git on the way into the commit, so the committed blob did not reproduce the
+hash its labeller had sealed. Running the check last would not have caught that;
+reading it back from the commit does.
 
 **Never transcribe a hash by hand.** Compute it, print it, paste it.
 

@@ -48,10 +48,36 @@ STRENGTHS = {"direct", "contributing"}
 
 
 def read(path):
+    """Read a committed CSV, and REFUSE any row that did not parse.
+
+    csv.DictReader puts fields beyond the header under the key None. That
+    happens when a free-text column contains the delimiter and the field is not
+    quoted, and it is silent: the row still yields a dict, the columns still have
+    values, and the tail is simply gone.
+
+    Four committed files had it — 29 crosswalk justifications truncated where the
+    pipeline read them, and two stop-list rows where the semicolon sat in a
+    middle column so every later field shifted and `counts_only_when` displayed
+    the tail of the previous column instead of the rule.
+
+    THIS CHECK DID NOT EXIST AND THAT IS WHY THE FILES SHIPPED. The old version
+    asserted that a justification was at least twenty characters long, which all
+    29 truncated rows satisfied. A verifier that parses a file the same wrong way
+    as the code it verifies cannot see this class at all; the fix is to assert
+    the PARSE, not the content of a parse it shares. Counsel's general statement
+    at cordis-sdg seq 152.
+    """
     if not path.is_file():
         sys.exit("missing: %s" % path.relative_to(ROOT))
     with open(path, encoding="utf-8", newline="") as fh:
-        return list(csv.DictReader(fh, delimiter=";"))
+        rows = list(csv.DictReader(fh, delimiter=";"))
+    spilled = [i for i, r in enumerate(rows, start=2) if None in r]
+    if spilled:
+        sys.exit("%s: %d row(s) do not parse — a field contains the delimiter "
+                 "and is not quoted, so the tail was dropped. First at line %d. "
+                 "Quote the column; do not shorten the text."
+                 % (path.relative_to(ROOT), len(spilled), spilled[0]))
+    return rows
 
 
 def categories():

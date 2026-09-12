@@ -43,21 +43,26 @@ same two sources and nothing else.
 Rows were written at **every level whose own justification holds**, which is
 usually a leaf or near-leaf category but is often its parent as well.
 
-**An earlier version of this sentence claimed the opposite** — that where a parent
-and its children map to the same target, only one level is listed — and the table
-has never done that. **46 parent/child pairs map to the same target, 36 of them at
-the same strength**: `agriculture` and `agriculture/agroecology` both reach 2.4 as
-`direct`, and so do `soil sciences` and `soil sciences/soil management` for 15.3.
-Hermes Cordis found the mismatch in the section 4.6 pass. **The data is right and
-the sentence was wrong**, which is the third time in this repository that a
-sentence has miscounted the list beneath it.
+**Two earlier versions of this sentence were wrong in opposite directions**, and
+the correction is worth keeping because it changed what got fixed.
+
+The first claimed only one level is listed where a parent and its children map to
+the same target. The table has never done that: 46 parent/child pairs map to the
+same target, 36 at the same strength. Hermes Cordis found that in the section 4.6
+pass.
+
+The second said scoring "must count distinct targets rather than rows", written
+in the belief that those 46 pairs would double-count in the pipeline. **Measured
+across the whole corpus, a project is never tagged with both a parent and its own
+child: zero ancestor pairs in 20,161 projects.** That sentence sent a reader to
+fix a fault that does not occur, and pointed away from the one that does.
 
 Both levels earn their row. A project tagged only `agriculture` and a project
 tagged `agriculture/agroecology` are different evidence for target 2.4, and
-dropping the parent row would silently lose the first. What the duplication costs
-is that one project carrying both tags produces two crosswalk hits for one
-target, so **section 3.5's scoring must count distinct targets rather than rows**,
-and the per-row source record in section 3.4 is what makes that checkable.
+dropping the parent row would silently lose the first. **On the corpus no project
+carries both, so the cost the second sentence feared is never paid** — and the
+per-row source record in section 3.4 is what makes that checkable rather than
+assumed.
 
 ## Coverage, stated plainly
 
@@ -85,6 +90,16 @@ the project's own words.
 implementation targets and those about finance, trade and governance
 arrangements, which a research discipline does not indicate. They too remain
 reachable lexically.
+
+**What actually happens, and what was fixed.** Two categories from *different
+branches* reach the same target on 338 pairs across the corpus, which is
+corroboration rather than duplication. On 100 of those the target crosses the
+threshold only because the rows were summed, and every one is `contributing` plus
+`contributing` — two claims that each say "a route to the target, not its
+subject", together equalling one claim that says "this is what the target is
+about". **Since the section 3.5 release, a contributing row counts at most once
+per target.** Direct rows still sum, deliberately: two of them are two
+independent reviewed claims.
 
 ## What a reviewer should attack
 
