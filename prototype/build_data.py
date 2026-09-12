@@ -351,6 +351,18 @@ def build_prototype_data():
         json.dump(summary, f, ensure_ascii=False, indent=1, sort_keys=True)
     print(f"  Wrote summary: {summary_path.relative_to(REPO_ROOT)}")
 
+    # Copy 6 notebook figures to prototype/figures/ for standalone deployment
+    proto_fig_dir = REPO_ROOT / "prototype" / "figures"
+    proto_fig_dir.mkdir(parents=True, exist_ok=True)
+    for key, (src_path, expected_hash) in EXPECTED_HASHES.items():
+        if key.startswith("fig_"):
+            dest_path = proto_fig_dir / src_path.name
+            raw_bytes = src_path.read_bytes()
+            assert hashlib.sha256(raw_bytes).hexdigest() == expected_hash
+            dest_path.write_bytes(raw_bytes)
+            assert hashlib.sha256(dest_path.read_bytes()).hexdigest() == expected_hash
+    print(f"  Copied and verified 6 notebook SVGs into {proto_fig_dir.relative_to(REPO_ROOT)}")
+
     # Verification pass over generated assets
     print("\nVerifying generated prototype assets...")
     assert summary_path.is_file()

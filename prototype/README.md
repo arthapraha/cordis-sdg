@@ -43,3 +43,11 @@ Built strictly under **Registration v10** (`c5f2a26ce6049e801a7e757efc2cbe425368
    ```bash
    python -m http.server 8000
    ```
+   Then navigate to `http://localhost:8000/prototype/` (or `http://localhost:8000/` if served directly from the `prototype` directory).
+
+## 5. Regeneration & Integrity Guarantees (Attila seq 285 & Counsel seq 280)
+
+1. **Deliberate Repository Exception**: Under Attila's ruling at `cordis-sdg` seq 285, §6 item 2 (mapping table) is a named deliverable and §6 item 7 (`prototype/data/`) is its static derivative, and a clone must carry both so a reader or judge can inspect the prototype immediately without running multi-step data pipelines or accessing external vaults.
+2. **Hash Guard**: `build_data.py` validates the SHA-256 hashes of all four confirmed inputs before reading or writing any data. If any hash diverges, execution halts immediately with an assertion failure.
+3. **Deterministic & Minimal Churn**: Prototype data files under `prototype/data/` are regenerated **only** when the published mapping table or figures hash moves on the chain, never for cosmetic or UI changes.
+4. **Standalone Integrity**: For independent, zero-dependency deployment without access to the outer repository structure, `prototype/figures/` maintains verified byte-identical copies of the six committed figures.
