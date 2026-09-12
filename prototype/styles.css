@@ -1068,6 +1068,37 @@ body {
   font-size: 0.85rem;
   font-weight: 700;
   color: var(--text-secondary);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  transition: color 0.15s ease, text-decoration 0.15s ease;
+}
+
+.modal-id:hover,
+.modal-id:focus {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+.cordis-outbound-link {
+  color: var(--primary);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.2rem;
+  transition: color 0.15s ease, text-decoration 0.15s ease;
+}
+
+.cordis-outbound-link:hover,
+.cordis-outbound-link:focus {
+  color: var(--primary-hover);
+  text-decoration: underline;
+}
+
+.external-icon {
+  font-size: 0.8em;
+  opacity: 0.85;
 }
 
 .modal-acronym {

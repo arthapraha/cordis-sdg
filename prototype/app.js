@@ -443,7 +443,7 @@ function renderProjectsTable() {
 
     html += `
       <tr class="project-row" tabindex="0" data-project-id="${p.id}" role="button" aria-label="Inspect project ${p.id}: ${safeAcronym}">
-        <td class="col-id"><span class="mono">${p.id}</span></td>
+        <td class="col-id"><a href="https://cordis.europa.eu/project/id/${p.id}" target="_blank" rel="noopener" class="cordis-outbound-link mono" title="Open CORDIS project record ${p.id} (external site, opens in new tab)" aria-label="Open project ${p.id} on CORDIS (leaves site)">${p.id}&nbsp;<span class="external-icon">&nearr;</span></a></td>
         <td class="col-acronym">${safeAcronym}</td>
         <td class="col-title"><a href="#project=${p.id}" class="project-title-link" tabindex="-1">${safeTitle}</a></td>
         <td class="col-level"><span class="badge-level ${levelClass}">${levelText}</span></td>
@@ -560,7 +560,15 @@ async function fetchProjectDetail(projectId) {
 }
 
 function renderProjectDetail(project) {
-  document.getElementById("modal-project-id").textContent = `Project ${project.id}`;
+  const modalIdEl = document.getElementById("modal-project-id");
+  if (modalIdEl) {
+    modalIdEl.href = `https://cordis.europa.eu/project/id/${project.id}`;
+    modalIdEl.target = "_blank";
+    modalIdEl.rel = "noopener";
+    modalIdEl.title = `Open CORDIS project record ${project.id} on cordis.europa.eu (external site, opens in new tab)`;
+    modalIdEl.setAttribute("aria-label", `Open project ${project.id} on CORDIS (leaves site)`);
+    modalIdEl.innerHTML = `Project ${project.id}&nbsp;<span class="external-icon">&nearr;</span>`;
+  }
   document.getElementById("modal-project-acronym").textContent = project.acronym || "NO ACRONYM";
 
   // Binding Rule 1: Hyphen-leading titles (101073045, 101275778) preserved without escaping
@@ -812,6 +820,11 @@ function setupProjectsTableListeners() {
 
   // Left-click (or modifier click) anywhere on the row
   tbody.addEventListener("click", (e) => {
+    // Direct click on outbound CORDIS link navigates externally in new tab without opening modal
+    if (e.target.closest(".cordis-outbound-link")) {
+      return;
+    }
+
     const projectId = getRowProjectId(e.target);
     if (!projectId) return;
 
@@ -830,6 +843,9 @@ function setupProjectsTableListeners() {
   // Middle-click (auxclick with button 1) anywhere on the row opens project in new tab
   tbody.addEventListener("auxclick", (e) => {
     if (e.button !== 1) return;
+    if (e.target.closest(".cordis-outbound-link")) {
+      return;
+    }
     const projectId = getRowProjectId(e.target);
     if (!projectId) return;
 
@@ -842,6 +858,9 @@ function setupProjectsTableListeners() {
   // Keyboard navigation: Enter or Space on focused row opens inspector
   tbody.addEventListener("keydown", (e) => {
     if (e.key === "Enter" || e.key === " ") {
+      if (e.target.closest(".cordis-outbound-link")) {
+        return;
+      }
       const projectId = getRowProjectId(e.target);
       if (!projectId) return;
 
