@@ -59,6 +59,10 @@ def main():
         """
         return "%.3f" % (tp / (tp + other)) if (tp + other) else "n/a"
 
+    import hashlib
+    METRICS_SHA = hashlib.sha256(METRICS.read_bytes()).hexdigest()
+    TAXONOMY_SHA = hashlib.sha256((ROOT / "data/terms/sdg-targets.csv").read_bytes()).hexdigest()
+
     m = json.loads(METRICS.read_text(encoding="utf-8"))
     f = json.loads(FIGURES.read_text(encoding="utf-8"))
     t, g = m["target_level"], m["goal_level_secondary"]
@@ -158,6 +162,14 @@ def main():
         (D, "the evaluation output hash", m["pipeline_output_sha256"]),
         (D, "the hand-off the run read", m["handoff_sha256"]),
         (D, "the reference label set hash", m["reference"]["sha256"]),
+        (R, "the reproduction table's taxonomy hash",
+         "| `data/terms/sdg-targets.csv` | `%s` |" % TAXONOMY_SHA),
+        (R, "the reproduction table's frozen-run hash",
+         "the frozen run | `%s` |" % m["pipeline_output_sha256"]),
+        (R, "the reproduction table's metrics hash",
+         "| `data/pipeline/evaluation-100-metrics.json` | `%s` |" % METRICS_SHA),
+        (R, "the reproduction table's hand-off hash",
+         "| `data/sample/handoff-evaluation-100.json` | `%s` |" % m["handoff_sha256"]),
         (R, "the corpus size in the mapping-table section",
          "covers %s projects rather than 150" % thousands(cover["projects_in_table"])),
     ]

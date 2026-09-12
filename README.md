@@ -648,10 +648,24 @@ is mangled. The cost is that a plain CSV reader sees the first header as
 **Measured at `33e38de`, not promised.** A fresh clone with nothing from the
 author's working tree except `data/raw/`, which is the 248 MB snapshot payload —
 not committed by design, every file hashed in `data/manifest.json`. **All fifteen
-steps exited 0**, and each regenerated artefact matched its published hash: the
-taxonomy `a0c61a4f…`, both hand-offs `fd506beb…` and `1603a0d7…`, the development
-output `45a514cf…`, **the frozen evaluation run `0938fe34…`**, and the metrics
-`babd3741…`.
+steps exited 0**, and each of these six regenerated artefacts matched its
+published hash byte for byte:
+
+| artefact | sha256 |
+|---|---|
+| `data/terms/sdg-targets.csv` | `a0c61a4f5b089863d6c8a60a83671495fb530969fa1a0e04228e3a01cc072b94` |
+| `data/sample/handoff-150.json` | `fd506beb26684df464127df73d351b26f3cbdd6d8db6a8dacc73581e1d231d11` |
+| `data/sample/handoff-evaluation-100.json` | `1603a0d7eb351ac92cf17bc488e7a1180cf40305748120076888ac30383a43cc` |
+| `data/pipeline/development-50-v2.json` | `45a514cf0c7a0984c419f086f11025077e9a4122e7bf2879263176b2b5430bbf` |
+| **`data/pipeline/evaluation-100-v2.json`**, the frozen run | `0938fe34e41cd5d8ddccfba69238481fdf6470e54046104ad7a3535da6743709` |
+| `data/pipeline/evaluation-100-metrics.json` | `babd37415581ce82ecb09c4501052ce811e834e57dad7c6735389ce321dd8a2e` |
+
+**Written in full, and that is deliberate.** These appeared here as eight-
+character truncations until a seat building against them read a truncation from
+a message, could not compute the rest, and posted a 64-character value whose
+last 56 characters came from nowhere. **A hash a reader has to reconstruct is a
+hash a reader will guess.** Truncations are fine in prose and not fine where
+somebody checks against them.
 
 **`git status` after the run was empty.** Every committed generated file equals
 what a clone produces, rather than equalling it after a line-ending
