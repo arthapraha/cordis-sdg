@@ -49,6 +49,7 @@ import time
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 
 import pipeline
+from repo_path import shown
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 TARGETS = ROOT / "data/terms/sdg-targets.csv"
@@ -319,8 +320,7 @@ def main():
 
     digest = hashlib.sha256(out.read_bytes()).hexdigest()
     print()
-    shown = out.relative_to(ROOT) if str(out).startswith(str(ROOT)) else out
-    print("wrote %s  %.1f MB" % (shown, out.stat().st_size / 1048576))
+    print("wrote %s  %.1f MB" % (shown(out, ROOT), out.stat().st_size / 1048576))
     print("  sha256          ", digest)
     print("  projects scored ", scored)
     print("  rows            ", written)

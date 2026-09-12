@@ -39,6 +39,7 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 
 import build_handoff
 import read_projects
+from repo_path import shown
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 SAMPLE = ROOT / "data/sample"
@@ -136,11 +137,11 @@ def main():
         fh.write(json.dumps(manifest, indent=1, ensure_ascii=False) + "\n")
 
     print()
-    print("wrote %s  %.1f MB" % (out.relative_to(ROOT), out.stat().st_size / 1048576))
+    print("wrote %s  %.1f MB" % (shown(out, ROOT), out.stat().st_size / 1048576))
     print("  sha256      ", digest)
     print("  records     ", len(ids))
     print("  by set      ", counts)
-    print("  manifest    ", man.relative_to(ROOT))
+    print("  manifest    ", shown(man, ROOT))
 
 
 if __name__ == "__main__":

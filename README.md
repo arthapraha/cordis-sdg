@@ -595,12 +595,40 @@ refuses without it, and refuses again if it does not match the freeze record.
 See the four conditions above.
 
 The §6 mapping table over the whole snapshot is built separately, because it
-takes hours rather than minutes:
+covers 23,451 projects rather than 150:
 
 ```
 python scripts/build_corpus_records.py --out data/corpus/records.jsonl
 python scripts/build_mapping_table.py --freeze-seq 207 --records data/corpus/records.jsonl --out data/corpus/mapping-table.csv
+python scripts/figures.py --table data/corpus/mapping-table.csv --out data/corpus/figures.json
 ```
+
+### Opening the mapping table in a spreadsheet
+
+**Import it. Do not double-click it.** In Excel: Data → From Text/CSV, and set
+every column to **Text**. Two things go wrong on a plain open, both found by
+opening the file in Excel rather than by parsing it and calling that the same
+thing.
+
+**A title that begins with a hyphen is evaluated as a formula and the title is
+destroyed**, showing `#NAME?`. Two CORDIS project titles do — `101073045` and
+`101275778` — which is three cells out of 28,833 rows by 18 columns, all in
+`title`. **The file is not escaped to prevent this.** Every fix that survives a
+double-click — a leading apostrophe, a tab, `="…"` — changes the bytes for every
+other reader, and a table that escapes a source title for one spreadsheet lies
+to every other consumer. The titles are CORDIS's own text, recorded as it is,
+which is how this repository treats the trailing space in a category path and
+the under-escaped quotation marks in `project.csv`.
+
+**`project_id` displays as `1.01E+08`** on a plain open. The stored value is
+intact — Excel holds `101069359` — but the key column of a submission table
+should not be read in scientific notation.
+
+**The file carries a UTF-8 byte-order mark, deliberately.** Without it Excel
+reads a UTF-8 CSV in the system codepage and every accented character in a title
+is mangled. The cost is that a plain CSV reader sees the first header as
+`﻿project_id`, so read it with `encoding="utf-8-sig"`, which is what
+`figures.py` does.
 
 `make_manifest.py` rebuilds `data/manifest.json` from the files on disk. Every
 sha256 in the manifest is computed from bytes at that moment; none is
