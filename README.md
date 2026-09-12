@@ -559,9 +559,47 @@ python scripts/extract_key_terms.py
 python scripts/verify_crosswalk.py
 python scripts/draw_sample.py
 python scripts/build_handoff.py
-python scripts/pipeline.py --handoff data/sample/handoff-150.json --set development --out data/pipeline/development-50-v1.json
-python scripts/explain.py --results data/pipeline/development-50-v1.json --out data/pipeline/development-50-explanations-v1.json
+python scripts/build_handoff.py --set evaluation --out data/sample/handoff-evaluation-100.json
+python scripts/pipeline.py --handoff data/sample/handoff-150.json --set development --out data/pipeline/development-50-v2.json
+python scripts/pipeline.py --handoff data/sample/handoff-evaluation-100.json --set evaluation --freeze-seq 207 --out data/pipeline/evaluation-100-v2.json
+python scripts/explain.py --results data/pipeline/development-50-v2.json --out data/pipeline/development-50-explanations-v2.json
+python scripts/metrics.py --results data/pipeline/evaluation-100-v2.json --results-sha256 0938fe34e41cd5d8ddccfba69238481fdf6470e54046104ad7a3535da6743709 --dev-results data/pipeline/development-50-v1.json --dev-results-sha256 032a4881774ce9adbbc84bb8a949b7d06843ad77a23aae1c4b77d6de522ea460 --handoff data/sample/handoff-evaluation-100.json --out data/pipeline/evaluation-100-metrics.json
+python scripts/test_scoring_rules.py
 python scripts/test_pipeline_guard.py
+python scripts/test_parameters_provenance.py
+```
+
+**`explain.py` stays in the block and exits 0 with no credential.** It reports
+`status: parked`, 32 explanations it would write and 31 distinct prompt hashes,
+and writes nothing that pretends to be a model's work. It is listed rather than
+dropped because removing a deliverable's build line from a reproduction block
+because it cannot complete is how a gap stops being visible.
+
+**The development line names `development-50-v2.json` and not `-v1`, and that is
+the correction rather than a rename.** The parameters were tuned to v2 under
+§3.5 and frozen at seq 207, so **the committed code cannot produce the v1
+artefact any more**: the line as it stood asked a reader to run a command and
+compare against a hash that command has not produced since the freeze. A
+reproduction block that cannot reproduce is the same defect as a control
+reported against the wrong tree, in a file whose subject is not making them.
+
+**`development-50-v1.json` is still named, once, as an input to `metrics.py`.**
+That is deliberate and it is not a contradiction: the metrics script proves
+itself by recomputing the figures published at cordis-sdg seq 129, which were
+measured against the v1 output, so the v1 artefact is **evidence to be checked
+against rather than a thing this commit regenerates.** Its sha256 is on the
+command line for exactly that reason.
+
+**`--freeze-seq 207` is not optional and not defaulted.** The evaluation line
+refuses without it, and refuses again if it does not match the freeze record.
+See the four conditions above.
+
+The §6 mapping table over the whole snapshot is built separately, because it
+takes hours rather than minutes:
+
+```
+python scripts/build_corpus_records.py --out data/corpus/records.jsonl
+python scripts/build_mapping_table.py --freeze-seq 207 --records data/corpus/records.jsonl --out data/corpus/mapping-table.csv
 ```
 
 `make_manifest.py` rebuilds `data/manifest.json` from the files on disk. Every

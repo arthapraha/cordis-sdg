@@ -267,8 +267,14 @@ def main():
     ev = [r for r in records if r["set"] == "evaluation"]
     def pct(rs, key):
         return 100.0 * sum(1 for r in rs if r[key] != ABSENT) / len(rs)
-    print("wrote", out_path.relative_to(ROOT),
-          "%.1f KB" % (out_path.stat().st_size / 1024))
+    # relative_to RAISES when --out points outside the repository, which it is
+    # allowed to do: this script wrote a correct artefact and then exited
+    # non-zero on the line that announces it. Harmless where --out sits in the
+    # tree, which is why it survived, and a script that fails after succeeding
+    # is exactly the kind of thing a reader treats as a failed build.
+    shown = (out_path.relative_to(ROOT) if str(out_path).startswith(str(ROOT))
+             else out_path)
+    print("wrote", shown, "%.1f KB" % (out_path.stat().st_size / 1024))
     print("projects: %d development, %d evaluation" % (len(dev), len(ev)))
     for k in ("objective", "editorial_description", "deliverable_descriptions",
               "eurosciwoc_categories", "keywords"):

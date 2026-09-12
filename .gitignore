@@ -27,3 +27,8 @@ data/sample/handoff-evaluation-100.json
 # room as an artefact by hash. metrics.py and the label artefacts it reads are
 # committed, so the report is reproducible from the repository.
 data/pipeline/evaluation-100-metrics.json
+
+# The corpus records and the section 6 mapping table: 146 MB of hand-off-shaped
+# records and the table built from them. Both are derivatives of payload that is
+# itself not committed, and both go to the room as artefacts by hash.
+data/corpus/
