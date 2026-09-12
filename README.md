@@ -9,11 +9,23 @@ move the method.
 
 | | |
 |---|---|
-| registration | `cordis-sdg-registration-v9.md`, sha256 `72187842d621e55dedb6c6b366356131141cd47acf3324ab26bc7f06293c341c` (32,402 bytes) |
-| ratified | 2026-09-11, by the owner, by hash |
-| supersedes | v1 to v8, none of which governs this repository. v1 was never ratified and neither was v8; what each version changed is logged in v9 section 11, and every hash is in the cordis-sdg record. No superseded hash is written here, so a grep for one returns nothing rather than something a reader has to interpret. |
-| built so far | sections 3.1 to 3.3, the crosswalk and the vocabulary, committed as data; the seeded draw and the labelling hand-off under section 4.5; sections 3.4 to 3.6, the pipeline, run on the development 50; the section 3.5 freeze at cordis-sdg seq 207; and the section 4.3 evaluation guard |
-| not yet run | the evaluation 100. Its labels are sealed and unopened, and scoring it waits on the owner's word |
+| registration | `cordis-sdg-registration-v10.md`, sha256 `c5f2a26ce6049e801a7e757efc2cbe4253689987fad761f1d97cfb5b0ad68fb2` (34,975 bytes) |
+| ratified | 2026-09-12, by the owner, by hash, at cordis-sdg seq 261 |
+| supersedes | v1 to v9. What each version changed is logged in v10 section 11, and every hash is in the cordis-sdg record. No superseded hash is written here, so a grep for one returns nothing rather than something a reader has to interpret. |
+| built | sections 3.1 to 3.3, the crosswalk and the vocabulary, committed as data; the seeded draw and both labelling hand-offs under section 4.5; sections 3.4 to 3.6, the pipeline; the section 3.5 freeze; the section 4.3 evaluation guard; the frozen run on the evaluation 100; section 4.7's metrics; the section 6 mapping table over all 23,451 projects; and the notebook with its figures |
+| not built | section 3.7's explanations, parked with no model credential; the section 6 prototype, which is another seat's row under v10 section 7 |
+
+**What v10 changed, and why the artefacts still name v9.** v10 adds a second
+builder seat for the prototype and pins the timeline's relative rows to the
+calendar. **Sections 1 to 6, 9 and 10 are byte-identical to v9** — measured
+section by section, not asserted — so no rule, measure, margin, seed, draw,
+field, cap or ordering moved. Only sections 7, 8 and 11 differ.
+
+**Every artefact and script built before ratification records the v9 hash it was
+built under, and that is correct rather than stale.** A frozen output names the
+registration that governed the run that produced it; rewriting those to name v10
+would change sealed bytes to make a document tidier. The sections those artefacts
+depend on did not move.
 
 Section 8's ratification-day line was completed at `7c34a77`: repository, rules
 re-read, all four CORDIS distributions and the taxonomy hashed, licence lines
