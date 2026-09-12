@@ -368,6 +368,32 @@ instead. Making the rule cleverer until they produced something would have been
 tuning the rule against its own output, which is the habit section 3 exists to
 prevent.
 
+## The freeze
+
+**Registration sections 3.5 and 4.3. The parameters are frozen as of cordis-sdg
+seq 207, 2026-09-12T09:57:55Z, by the owner's word.**
+
+| | |
+|---|---|
+| frozen at commit | `ab525b048153306dc83909e9e686ebdd2ca7838d` |
+| parameters version | v2 |
+| `parameters_values_sha256` | `3808845b553dfda751bf4a3e5c87bd17f32b6ca8c195a0c54321ed25e03e09e1` |
+
+Frozen with them: the crosswalk, the key-term rule and its output, the synonym
+list, the stop-list and the negation rule, as committed in that tree. **Nothing
+under section 3 moves after that seq except by amendment to the registration.**
+
+The freeze is recorded inside `parameters-v1.json` under `_frozen`, which is a
+**documentation key**. `parameters_values_sha256` is computed with every
+underscore-prefixed key stripped, so **recording the freeze cannot change the
+hash the freeze is of** — verified: the digest is unchanged after the record was
+added. That property was built two commits earlier and this is the first thing to
+depend on it.
+
+**The five contested pairs under section 4.8 stand recorded unresolved.** No
+tuning decision turned on them, and the development precision is reported with
+them counted both ways.
+
 ## The pipeline
 
 Registration section 3 requires the mapping decision to be made by rules a reader

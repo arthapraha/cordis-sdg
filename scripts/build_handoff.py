@@ -27,6 +27,7 @@ Reads the four hashed CORDIS distributions and nothing else. Writes
 data/sample/handoff-150.json.
 """
 
+import argparse
 import collections
 import csv
 import json
@@ -146,6 +147,18 @@ def load_editorial(wanted):
 
 
 def main():
+    # The 150 artefact was the hand-off for the development round. After the
+    # freeze the evaluation 100 is handed off on its own, so the artefact hash
+    # covers exactly the set being labelled and no labeller has to decide which
+    # subset is theirs. The default emits all 150 and is BYTE-IDENTICAL to what
+    # it produced before this option existed: the document's shape does not
+    # change for --set all, only for a subset, so fd506beb… still reproduces.
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--set", default="all",
+                    choices=["all", "development", "evaluation"])
+    ap.add_argument("--out", default=None)
+    args = ap.parse_args()
+
     development = load_ids("development-50.txt")
     evaluation = load_ids("evaluation-100.txt")
     wanted = set(development) | set(evaluation)
@@ -161,8 +174,11 @@ def main():
     deliv = load_deliverables(wanted)
     editorial = load_editorial(wanted)
 
+    order = {'development': development, 'evaluation': evaluation}.get(
+        args.set, development + evaluation)
+
     records = []
-    for pid in development + evaluation:
+    for pid in order:
         p = by_id.get(pid)
         if p is None:
             sys.exit("drawn id not in the projects extract: %s" % pid)
@@ -241,18 +257,23 @@ def main():
     # newline="" for the same reason as everywhere else here: the labellers
     # compare this artefact by hash, and a CRLF translation would give two
     # correct builds two different hashes.
-    with open(OUT, "w", encoding="utf-8", newline="") as fh:
+    # Resolve against ROOT so a relative --out works from any working directory
+    # and still prints a path relative to the repository.
+    out_path = (ROOT / args.out) if args.out else OUT
+    with open(out_path, "w", encoding="utf-8", newline="") as fh:
         fh.write(json.dumps(doc, indent=1, ensure_ascii=False) + "\n")
 
     dev = [r for r in records if r["set"] == "development"]
     ev = [r for r in records if r["set"] == "evaluation"]
     def pct(rs, key):
         return 100.0 * sum(1 for r in rs if r[key] != ABSENT) / len(rs)
-    print("wrote", OUT.relative_to(ROOT), "%.1f KB" % (OUT.stat().st_size / 1024))
+    print("wrote", out_path.relative_to(ROOT),
+          "%.1f KB" % (out_path.stat().st_size / 1024))
     print("projects: %d development, %d evaluation" % (len(dev), len(ev)))
     for k in ("objective", "editorial_description", "deliverable_descriptions",
               "eurosciwoc_categories", "keywords"):
-        print("  %-26s present on %5.1f%% of the 150" % (k, pct(records, k)))
+        print("  %-26s present on %5.1f%% of the %d"
+              % (k, pct(records, k), len(records)))
     print("  rows a standard CSV reader breaks:",
           sum(1 for r in records if r["source_note"]))
 

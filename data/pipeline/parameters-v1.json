@@ -1,6 +1,25 @@
 {
   "_what_this_is": "Registration v9 section 3.5's weighting, threshold and confidence rule, written down BEFORE the pipeline was run on any project. Section 3.5 permits these to be tuned on the development 50 and then frozen by the owner's word before the evaluation 100 is scored; this file is the pre-tuning baseline, and any tuned version supersedes it in a commit that says what moved and why.",
   "_registration_sha256": "72187842d621e55dedb6c6b366356131141cd47acf3324ab26bc7f06293c341c",
+  "_frozen": {
+    "freeze_seq": 207,
+    "room": "cordis-sdg",
+    "frozen_at": "2026-09-12T09:57:55Z",
+    "by": "the owner's word, registration section 3.5 and section 4.3",
+    "commit": "ab525b048153306dc83909e9e686ebdd2ca7838d",
+    "parameters_values_sha256": "3808845b553dfda751bf4a3e5c87bd17f32b6ca8c195a0c54321ed25e03e09e1",
+    "also_frozen_in_that_tree": [
+      "data/crosswalk/eurosciwoc-to-sdg.csv",
+      "data/terms/key-term-rule.md",
+      "data/terms/target-key-terms.csv",
+      "data/terms/synonyms.csv",
+      "data/terms/stop-list.csv",
+      "data/terms/negation-rule.md",
+      "data/terms/negation-patterns.csv"
+    ],
+    "_note": "Nothing under section 3 moves after the freeze seq except by amendment to the registration. This block is deliberately an underscore-prefixed DOCUMENTATION key: parameters_values_sha256 is computed with every such key stripped, so recording the freeze cannot change the hash the freeze is of. That property was built at commit 52fe745 and this is the first thing to depend on it.",
+    "_adjudication": "The five (project, target) pairs in artefact 68937f37 stand recorded unresolved under section 4.8. No tuning decision turned on them; move F's development precision is reported with them counted both ways."
+  },
   "version": "v2",
 
   "evidence_weights": {
