@@ -1,0 +1,3762 @@
+{
+ "101039048": {
+  "acronym": "GanESS",
+  "assignments": [],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039048",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description",
+   "deliverable_descriptions"
+  ],
+  "title": "Gaseous detectors for neutrino physics at the European Spallation Source"
+ },
+ "101039060": {
+  "acronym": "PalaeOrigins",
+  "assignments": [
+   {
+    "confidence_band": "low",
+    "evidence": "eurosciwoc_categories: medical and health sciences/health sciences/nutrition [crosswalk direct, 3.0]",
+    "goal_label": "End hunger, achieve food security and improved nutrition and promote sustainable agriculture",
+    "goal_uri": "http://data.europa.eu/sdg/2",
+    "level": "target",
+    "score": 3.0,
+    "target_label": "By 2030, end all forms of malnutrition, including achieving, by 2025, the internationally agreed targets on stunting and wasting in children under 5 years of age, and address the nutritional needs of adolescent girls, pregnant and lactating women and older persons",
+    "target_uri": "http://data.europa.eu/sdg/2.2"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039060",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description",
+   "deliverable_descriptions"
+  ],
+  "title": "Tracing the Epipalaeolithic origins of plant management in southwest Asia"
+ },
+ "101039066": {
+  "acronym": "ForestFuture",
+  "assignments": [
+   {
+    "confidence_band": "medium",
+    "evidence": "editorial_description: \"sustainable forest management\" [synonym_subject, 2.0] | editorial_description: \"reforestation\" [synonym_subject, 2.0] | eurosciwoc_categories: agricultural sciences/agriculture, forestry, and fisheries/forestry [crosswalk direct, 3.0]",
+    "goal_label": "Protect, restore and promote sustainable use of terrestrial ecosystems, sustainably manage forests, combat desertification, and halt and reverse land degradation and halt biodiversity loss",
+    "goal_uri": "http://data.europa.eu/sdg/15",
+    "level": "target",
+    "score": 7.0,
+    "target_label": "By 2020, promote the implementation of sustainable management of all types of forests, halt deforestation, restore degraded forests and substantially increase afforestation and reforestation globally",
+    "target_uri": "http://data.europa.eu/sdg/15.2"
+   },
+   {
+    "confidence_band": "low",
+    "evidence": "objective: \"forests\" [key_term, 0.5] | objective: \"conservation\" [key_term, 0.5] | editorial_description: \"forests\" [key_term, 0.5] | editorial_description: \"conservation\" [key_term, 0.5] | eurosciwoc_categories: agricultural sciences/agriculture, forestry, and fisheries/forestry [crosswalk contributing, 1.5]",
+    "goal_label": "Protect, restore and promote sustainable use of terrestrial ecosystems, sustainably manage forests, combat desertification, and halt and reverse land degradation and halt biodiversity loss",
+    "goal_uri": "http://data.europa.eu/sdg/15",
+    "level": "target",
+    "score": 3.5,
+    "target_label": "By 2020, ensure the conservation, restoration and sustainable use of terrestrial and inland freshwater ecosystems and their services, in particular forests, wetlands, mountains and drylands, in line with obligations under international agreements",
+    "target_uri": "http://data.europa.eu/sdg/15.1"
+   },
+   {
+    "confidence_band": "low",
+    "evidence": "title: \"Climate change\" [key_term, 1.2] | objective: \"climate change\" [key_term, 1.0] | editorial_description: \"climate change\" [key_term, 1.0]",
+    "goal_label": "Make cities and human settlements inclusive, safe, resilient and sustainable",
+    "goal_uri": "http://data.europa.eu/sdg/11",
+    "level": "target",
+    "score": 3.2,
+    "target_label": "By 2020, substantially increase the number of cities and human settlements adopting and implementing integrated policies and plans towards inclusion, resource efficiency, mitigation and adaptation to climate change, resilience to disasters, and develop and implement, in line with the Sendai Framework for Disaster Risk Reduction 2015–2030, holistic disaster risk management at all levels",
+    "target_uri": "http://data.europa.eu/sdg/11.b"
+   },
+   {
+    "confidence_band": "low",
+    "evidence": "title: \"Climate change\" [key_term, 1.2] | objective: \"climate change\" [key_term, 1.0] | editorial_description: \"climate change\" [key_term, 1.0]",
+    "goal_label": "End hunger, achieve food security and improved nutrition and promote sustainable agriculture",
+    "goal_uri": "http://data.europa.eu/sdg/2",
+    "level": "target",
+    "score": 3.2,
+    "target_label": "By 2030, ensure sustainable food production systems and implement resilient agricultural practices that increase productivity and production, that help maintain ecosystems, that strengthen capacity for adaptation to climate change, extreme weather, drought, flooding and other disasters and that progressively improve land and soil quality",
+    "target_uri": "http://data.europa.eu/sdg/2.4"
+   },
+   {
+    "confidence_band": "low",
+    "evidence": "eurosciwoc_categories: natural sciences/earth and related environmental sciences/atmospheric sciences/climatology/climatic changes [crosswalk direct, 3.0]",
+    "goal_label": "Take urgent action to combat climate change and its impacts",
+    "goal_uri": "http://data.europa.eu/sdg/13",
+    "level": "target",
+    "score": 3.0,
+    "target_label": "Strengthen resilience and adaptive capacity to climate-related hazards and natural disasters in all countries",
+    "target_uri": "http://data.europa.eu/sdg/13.1"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039066",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "keywords",
+   "deliverable_descriptions"
+  ],
+  "sources_present": [
+   "title",
+   "objective",
+   "editorial_description"
+  ],
+  "title": "Climate change impacts on trees reproduction and forecasts of forest recruitment change"
+ },
+ "101039090": {
+  "acronym": "TOPS",
+  "assignments": [
+   {
+    "confidence_band": "(not banded: section 3.6 bands target assignments)",
+    "evidence": "(evidence summed by goal, below the target threshold)",
+    "goal_label": "Strengthen the means of implementation and revitalize the Global Partnership for Sustainable Development",
+    "goal_uri": "http://data.europa.eu/sdg/17",
+    "level": "goal_only",
+    "score": 3.7,
+    "target_label": "(goal level only, no target above threshold)",
+    "target_uri": "(goal level only, no target above threshold)"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039090",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "deliverable_descriptions"
+  ],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description"
+  ],
+  "title": "Machine-Assisted Teaching for Open-Ended Problem Solving: Foundations and Applications"
+ },
+ "101039098": {
+  "acronym": "QUANTWIST",
+  "assignments": [
+   {
+    "confidence_band": "(not banded: section 3.6 bands target assignments)",
+    "evidence": "(evidence summed by goal, below the target threshold)",
+    "goal_label": "Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all",
+    "goal_uri": "http://data.europa.eu/sdg/4",
+    "level": "goal_only",
+    "score": 2.6,
+    "target_label": "(goal level only, no target above threshold)",
+    "target_uri": "(goal level only, no target above threshold)"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039098",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "deliverable_descriptions"
+  ],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description"
+  ],
+  "title": "Enhanced quantum resilience through twists"
+ },
+ "101039103": {
+  "acronym": "EMetBrown",
+  "assignments": [],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039103",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "editorial_description"
+  ],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "deliverable_descriptions"
+  ],
+  "title": "Brownian Motion near Soft Interfaces"
+ },
+ "101039110": {
+  "acronym": "UNIFY",
+  "assignments": [
+   {
+    "confidence_band": "high",
+    "evidence": "title: \"photovoltaic\" [synonym_domain, 1.8] | objective: \"solar energy\" [synonym_domain, 1.5] | objective: \"photovoltaic\" [synonym_domain, 1.5] | editorial_description: \"solar energy\" [synonym_domain, 1.5] | editorial_description: \"photovoltaic\" [synonym_domain, 1.5] | eurosciwoc_categories: engineering and technology/environmental engineering/energy and fuels/renewable energy/solar energy/photovoltaic [crosswalk direct, 3.0]",
+    "goal_label": "Ensure access to affordable, reliable, sustainable and modern energy for all",
+    "goal_uri": "http://data.europa.eu/sdg/7",
+    "level": "target",
+    "score": 10.8,
+    "target_label": "By 2030, increase substantially the share of renewable energy in the global energy mix",
+    "target_uri": "http://data.europa.eu/sdg/7.2"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039110",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description",
+   "deliverable_descriptions"
+  ],
+  "title": "Unification of the best piezoelectric and photovoltaic properties in a single photoferroelectric material"
+ },
+ "101039115": {
+  "acronym": "NextMechMod",
+  "assignments": [],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039115",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "deliverable_descriptions"
+  ],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description"
+  ],
+  "title": "Next generation mechanistic models of retinal interneurons"
+ },
+ "101039127": {
+  "acronym": "NanoNonEq",
+  "assignments": [],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039127",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "deliverable_descriptions"
+  ],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description"
+  ],
+  "title": "Nanoprobes for Nonequilibrium Driven Systems"
+ },
+ "101039145": {
+  "acronym": "InsulaBodyLoop",
+  "assignments": [
+   {
+    "confidence_band": "medium",
+    "evidence": "objective: \"mental health\" [key_term, 1.0] | objective: \"mental health\" [synonym_subject, 2.0] | editorial_description: \"mental health\" [key_term, 1.0] | editorial_description: \"mental health\" [synonym_subject, 2.0]",
+    "goal_label": "Ensure healthy lives and promote well-being for all at all ages",
+    "goal_uri": "http://data.europa.eu/sdg/3",
+    "level": "target",
+    "score": 6.0,
+    "target_label": "By 2030, reduce by one third premature mortality from non-communicable diseases through prevention and treatment and promote mental health and well-being",
+    "target_uri": "http://data.europa.eu/sdg/3.4"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039145",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "deliverable_descriptions"
+  ],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description"
+  ],
+  "title": "The Insula-Body Loop for Neural Control of Gut Physiology"
+ },
+ "101039152": {
+  "acronym": "TICKLISHUMAN",
+  "assignments": [],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039152",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description",
+   "deliverable_descriptions"
+  ],
+  "title": "The neuroscience of human tickle perception"
+ },
+ "101039174": {
+  "acronym": "FINALphagy",
+  "assignments": [
+   {
+    "confidence_band": "high",
+    "evidence": "objective: \"recycling\" [key_term, 0.5] | objective: \"recycling\" [synonym_subject, 2.0] | editorial_description: \"recycling\" [key_term, 0.5] | editorial_description: \"recycling\" [synonym_subject, 2.0] | eurosciwoc_categories: engineering and technology/environmental engineering/waste management/waste treatment processes/recycling [crosswalk direct, 3.0]",
+    "goal_label": "Ensure sustainable consumption and production patterns",
+    "goal_uri": "http://data.europa.eu/sdg/12",
+    "level": "target",
+    "score": 8.0,
+    "target_label": "By 2030, substantially reduce waste generation through prevention, reduction, recycling and reuse",
+    "target_uri": "http://data.europa.eu/sdg/12.5"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039174",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "deliverable_descriptions"
+  ],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description"
+  ],
+  "title": "Final act of the autophagy symphony: Whole-organism orchestration of autophagy termination"
+ },
+ "101039181": {
+  "acronym": "SEDAHEAD",
+  "assignments": [
+   {
+    "confidence_band": "low",
+    "evidence": "eurosciwoc_categories: natural sciences/earth and related environmental sciences/atmospheric sciences/climatology/climatic changes [crosswalk direct, 3.0]",
+    "goal_label": "Take urgent action to combat climate change and its impacts",
+    "goal_uri": "http://data.europa.eu/sdg/13",
+    "level": "target",
+    "score": 3.0,
+    "target_label": "Strengthen resilience and adaptive capacity to climate-related hazards and natural disasters in all countries",
+    "target_uri": "http://data.europa.eu/sdg/13.1"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039181",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "deliverable_descriptions"
+  ],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description"
+  ],
+  "title": "Dynamic river catchments in a Global Change context: assessing the present, preparing for the future"
+ },
+ "101039196": {
+  "acronym": "CRETE",
+  "assignments": [],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039196",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description",
+   "deliverable_descriptions"
+  ],
+  "title": "Certified Refinement Types"
+ },
+ "101039198": {
+  "acronym": "SURFACE",
+  "assignments": [
+   {
+    "confidence_band": "(not banded: section 3.6 bands target assignments)",
+    "evidence": "(evidence summed by goal, below the target threshold)",
+    "goal_label": "Build resilient infrastructure, promote inclusive and sustainable industrialization and foster innovation",
+    "goal_uri": "http://data.europa.eu/sdg/9",
+    "level": "goal_only",
+    "score": 3.0,
+    "target_label": "(goal level only, no target above threshold)",
+    "target_uri": "(goal level only, no target above threshold)"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039198",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description",
+   "deliverable_descriptions"
+  ],
+  "title": "Towards Future Interfaces With Tuneable Adhesion By Dynamic Excitation"
+ },
+ "101039206": {
+  "acronym": "ATENA",
+  "assignments": [
+   {
+    "confidence_band": "(not banded: section 3.6 bands target assignments)",
+    "evidence": "(evidence summed by goal, below the target threshold)",
+    "goal_label": "Strengthen the means of implementation and revitalize the Global Partnership for Sustainable Development",
+    "goal_uri": "http://data.europa.eu/sdg/17",
+    "level": "goal_only",
+    "score": 3.0,
+    "target_label": "(goal level only, no target above threshold)",
+    "target_uri": "(goal level only, no target above threshold)"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039206",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "deliverable_descriptions"
+  ],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description"
+  ],
+  "title": "Autobiographical memory, time and environmental navigation: unveiling the cognitive map of our past through an integrated neuropsychological perspective"
+ },
+ "101039208": {
+  "acronym": "REGINDEX",
+  "assignments": [
+   {
+    "confidence_band": "(not banded: section 3.6 bands target assignments)",
+    "evidence": "(evidence summed by goal, below the target threshold)",
+    "goal_label": "Strengthen the means of implementation and revitalize the Global Partnership for Sustainable Development",
+    "goal_uri": "http://data.europa.eu/sdg/17",
+    "level": "goal_only",
+    "score": 2.5,
+    "target_label": "(goal level only, no target above threshold)",
+    "target_uri": "(goal level only, no target above threshold)"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039208",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description",
+   "deliverable_descriptions"
+  ],
+  "title": "Compressed Indexes for Regular Languages with Applications to Computational Pan-genomics"
+ },
+ "101039221": {
+  "acronym": "ERC VP CSA",
+  "assignments": [
+   {
+    "confidence_band": "(not banded: section 3.6 bands target assignments)",
+    "evidence": "(evidence summed by goal, below the target threshold)",
+    "goal_label": "Ensure healthy lives and promote well-being for all at all ages",
+    "goal_uri": "http://data.europa.eu/sdg/3",
+    "level": "goal_only",
+    "score": 3.1,
+    "target_label": "(goal level only, no target above threshold)",
+    "target_uri": "(goal level only, no target above threshold)"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039221",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description",
+   "deliverable_descriptions"
+  ],
+  "title": "Support to the Vice-Presidents of the ERC Scientific Council 2021-2022"
+ },
+ "101039222": {
+  "acronym": "SUperSAFE",
+  "assignments": [
+   {
+    "confidence_band": "low",
+    "evidence": "editorial_description: \"road safety\" [synonym_subject, 2.0] | eurosciwoc_categories: engineering and technology/mechanical engineering/vehicle engineering [crosswalk contributing, 1.5]",
+    "goal_label": "Make cities and human settlements inclusive, safe, resilient and sustainable",
+    "goal_uri": "http://data.europa.eu/sdg/11",
+    "level": "target",
+    "score": 3.5,
+    "target_label": "By 2030, provide access to safe, affordable, accessible and sustainable transport systems for all, improving road safety, notably by expanding public transport, with special attention to the needs of those in vulnerable situations, women, children, persons with disabilities and older persons",
+    "target_uri": "http://data.europa.eu/sdg/11.2"
+   },
+   {
+    "confidence_band": "low",
+    "evidence": "title: \"measures\" [key_term, 0.6] | keywords: \"Measures\" [key_term, 0.6] | keywords: \"Vulnerable\" [key_term, 0.6] | objective: \"measures\" [key_term, 0.5] | editorial_description: \"measures\" [key_term, 0.5] | editorial_description: \"vulnerable\" [key_term, 0.5]",
+    "goal_label": "End poverty in all its forms everywhere",
+    "goal_uri": "http://data.europa.eu/sdg/1",
+    "level": "target",
+    "score": 3.3,
+    "target_label": "Implement nationally appropriate social protection systems and measures for all, including floors, and by 2030 achieve substantial coverage of the poor and the vulnerable",
+    "target_uri": "http://data.europa.eu/sdg/1.3"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039222",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description",
+   "deliverable_descriptions"
+  ],
+  "title": "SUrrogate measures for SAFE autonomous and connected mobility"
+ },
+ "101039226": {
+  "acronym": "ITDA",
+  "assignments": [
+   {
+    "confidence_band": "(not banded: section 3.6 bands target assignments)",
+    "evidence": "(evidence summed by goal, below the target threshold)",
+    "goal_label": "Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all",
+    "goal_uri": "http://data.europa.eu/sdg/4",
+    "level": "goal_only",
+    "score": 2.0,
+    "target_label": "(goal level only, no target above threshold)",
+    "target_uri": "(goal level only, no target above threshold)"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039226",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description",
+   "deliverable_descriptions"
+  ],
+  "title": "An integrated theory of deciding and acting"
+ },
+ "101039252": {
+  "acronym": "P3OPLE",
+  "assignments": [
+   {
+    "confidence_band": "medium",
+    "evidence": "objective: \"mental health\" [key_term, 1.0] | objective: \"mental health\" [synonym_subject, 2.0] | editorial_description: \"mental health\" [key_term, 1.0] | editorial_description: \"mental health\" [synonym_subject, 2.0]",
+    "goal_label": "Ensure healthy lives and promote well-being for all at all ages",
+    "goal_uri": "http://data.europa.eu/sdg/3",
+    "level": "target",
+    "score": 6.0,
+    "target_label": "By 2030, reduce by one third premature mortality from non-communicable diseases through prevention and treatment and promote mental health and well-being",
+    "target_uri": "http://data.europa.eu/sdg/3.4"
+   },
+   {
+    "confidence_band": "medium",
+    "evidence": "objective: \"information\" [key_term, 0.5] | editorial_description: \"family planning\" [key_term, 1.0] | editorial_description: \"family planning\" [synonym_subject, 2.0] | editorial_description: \"information\" [key_term, 0.5] | editorial_description: \"education\" [key_term, 0.5] | editorial_description: \"contraception\" [synonym_domain, 1.5]",
+    "goal_label": "Ensure healthy lives and promote well-being for all at all ages",
+    "goal_uri": "http://data.europa.eu/sdg/3",
+    "level": "target",
+    "score": 6.0,
+    "target_label": "By 2030, ensure universal access to sexual and reproductive health-care services, including for family planning, information and education, and the integration of reproductive health into national strategies and programmes",
+    "target_uri": "http://data.europa.eu/sdg/3.7"
+   },
+   {
+    "confidence_band": "low",
+    "evidence": "objective: \"economic\" [key_term, 0.5] | objective: \"social\" [key_term, 0.5] | objective: \"sex\" [key_term, 0.5] | editorial_description: \"economic\" [key_term, 0.5] | editorial_description: \"social\" [key_term, 0.5] | editorial_description: \"sex\" [key_term, 0.5]",
+    "goal_label": "Reduce inequality within and among countries",
+    "goal_uri": "http://data.europa.eu/sdg/10",
+    "level": "target",
+    "score": 3.0,
+    "target_label": "By 2030, empower and promote the social, economic and political inclusion of all, irrespective of age, sex, disability, race, ethnicity, origin, religion or economic or other status",
+    "target_uri": "http://data.europa.eu/sdg/10.2"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039252",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "keywords",
+   "deliverable_descriptions"
+  ],
+  "sources_present": [
+   "title",
+   "objective",
+   "editorial_description"
+  ],
+  "title": "Peers and Possible Partners: Exploring the Origins of Population Long-term Equilibria"
+ },
+ "101039265": {
+  "acronym": "LymphoTOP",
+  "assignments": [
+   {
+    "confidence_band": "high",
+    "evidence": "objective: \"cancer\" [synonym_domain, 1.5] | editorial_description: \"Cancer\" [synonym_domain, 1.5] | eurosciwoc_categories: medical and health sciences/clinical medicine/oncology [crosswalk direct, 3.0]",
+    "goal_label": "Ensure healthy lives and promote well-being for all at all ages",
+    "goal_uri": "http://data.europa.eu/sdg/3",
+    "level": "target",
+    "score": 6.0,
+    "target_label": "By 2030, reduce by one third premature mortality from non-communicable diseases through prevention and treatment and promote mental health and well-being",
+    "target_uri": "http://data.europa.eu/sdg/3.4"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039265",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "deliverable_descriptions"
+  ],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description"
+  ],
+  "title": "Deciphering translocation-based genome topology effects and their role in lymphoma formation"
+ },
+ "101039270": {
+  "acronym": "ERA-ARE",
+  "assignments": [
+   {
+    "confidence_band": "medium",
+    "evidence": "objective: \"deaths\" [key_term, 0.5] | objective: \"contamination\" [key_term, 0.5] | objective: \"contamination\" [synonym_subject, 2.0] | editorial_description: \"contamination\" [key_term, 0.5] | editorial_description: \"contamination\" [synonym_subject, 2.0]",
+    "goal_label": "Ensure healthy lives and promote well-being for all at all ages",
+    "goal_uri": "http://data.europa.eu/sdg/3",
+    "level": "target",
+    "score": 5.5,
+    "target_label": "By 2030, substantially reduce the number of deaths and illnesses from hazardous chemicals and air, water and soil pollution and contamination",
+    "target_uri": "http://data.europa.eu/sdg/3.9"
+   },
+   {
+    "confidence_band": "low",
+    "evidence": "eurosciwoc_categories: engineering and technology/environmental engineering/water treatment processes/wastewater treatment processes [crosswalk direct, 3.0]",
+    "goal_label": "Ensure availability and sustainable management of water and sanitation for all",
+    "goal_uri": "http://data.europa.eu/sdg/6",
+    "level": "target",
+    "score": 3.0,
+    "target_label": "By 2030, improve water quality by reducing pollution, eliminating dumping and minimizing release of hazardous chemicals and materials, halving the proportion of untreated wastewater and substantially increasing recycling and safe reuse globally",
+    "target_uri": "http://data.europa.eu/sdg/6.3"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039270",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "deliverable_descriptions"
+  ],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description"
+  ],
+  "title": "A new ERA for Environmental Risk Assessment: Chirality as a tool towards environmentally safe pharmaceuticals"
+ },
+ "101039271": {
+  "acronym": "BEFOREtheFLOOD",
+  "assignments": [
+   {
+    "confidence_band": "(not banded: section 3.6 bands target assignments)",
+    "evidence": "(evidence summed by goal, below the target threshold)",
+    "goal_label": "Take urgent action to combat climate change and its impacts",
+    "goal_uri": "http://data.europa.eu/sdg/13",
+    "level": "goal_only",
+    "score": 2.1,
+    "target_label": "(goal level only, no target above threshold)",
+    "target_uri": "(goal level only, no target above threshold)"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039271",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description",
+   "deliverable_descriptions"
+  ],
+  "title": "Neolithic coastal settlements and responses to environmental dynamics: A pioneering world lost beneath the Mediterranean Sea"
+ },
+ "101039272": {
+  "acronym": "DOPAMICS",
+  "assignments": [
+   {
+    "confidence_band": "high",
+    "evidence": "objective: \"biodiversity loss\" [synonym_subject, 2.0] | editorial_description: \"biodiversity loss\" [synonym_subject, 2.0] | eurosciwoc_categories: natural sciences/biological sciences/biodiversity conservation [crosswalk direct, 3.0]",
+    "goal_label": "Protect, restore and promote sustainable use of terrestrial ecosystems, sustainably manage forests, combat desertification, and halt and reverse land degradation and halt biodiversity loss",
+    "goal_uri": "http://data.europa.eu/sdg/15",
+    "level": "target",
+    "score": 7.0,
+    "target_label": "Take urgent and significant action to reduce the degradation of natural habitats, halt the loss of biodiversity and, by 2020, protect and prevent the extinction of threatened species",
+    "target_uri": "http://data.europa.eu/sdg/15.5"
+   },
+   {
+    "confidence_band": "low",
+    "evidence": "objective: \"climate change\" [key_term, 1.0] | objective: \"mitigation\" [key_term, 0.5] | editorial_description: \"climate change\" [key_term, 1.0] | editorial_description: \"mitigation\" [key_term, 0.5]",
+    "goal_label": "Make cities and human settlements inclusive, safe, resilient and sustainable",
+    "goal_uri": "http://data.europa.eu/sdg/11",
+    "level": "target",
+    "score": 3.0,
+    "target_label": "By 2020, substantially increase the number of cities and human settlements adopting and implementing integrated policies and plans towards inclusion, resource efficiency, mitigation and adaptation to climate change, resilience to disasters, and develop and implement, in line with the Sendai Framework for Disaster Risk Reduction 2015–2030, holistic disaster risk management at all levels",
+    "target_uri": "http://data.europa.eu/sdg/11.b"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039272",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "deliverable_descriptions"
+  ],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description"
+  ],
+  "title": "Domestication and adaptation in Neotropical palms: a microevolutionary history"
+ },
+ "101039294": {
+  "acronym": "LCFlow",
+  "assignments": [
+   {
+    "confidence_band": "(not banded: section 3.6 bands target assignments)",
+    "evidence": "(evidence summed by goal, below the target threshold)",
+    "goal_label": "Strengthen the means of implementation and revitalize the Global Partnership for Sustainable Development",
+    "goal_uri": "http://data.europa.eu/sdg/17",
+    "level": "goal_only",
+    "score": 3.5,
+    "target_label": "(goal level only, no target above threshold)",
+    "target_uri": "(goal level only, no target above threshold)"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039294",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "deliverable_descriptions"
+  ],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description"
+  ],
+  "title": "Liquid Crystals in Flow: A New Era in Sensing and Diagnostics"
+ },
+ "101039296": {
+  "acronym": "SELFRELIANCE",
+  "assignments": [
+   {
+    "confidence_band": "(not banded: section 3.6 bands target assignments)",
+    "evidence": "(evidence summed by goal, below the target threshold)",
+    "goal_label": "Reduce inequality within and among countries",
+    "goal_uri": "http://data.europa.eu/sdg/10",
+    "level": "goal_only",
+    "score": 3.7,
+    "target_label": "(goal level only, no target above threshold)",
+    "target_uri": "(goal level only, no target above threshold)"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039296",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "deliverable_descriptions"
+  ],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description"
+  ],
+  "title": "The Social Dilemma of Self-Reliance"
+ },
+ "101039303": {
+  "acronym": "NG-NLG",
+  "assignments": [
+   {
+    "confidence_band": "(not banded: section 3.6 bands target assignments)",
+    "evidence": "(evidence summed by goal, below the target threshold)",
+    "goal_label": "Ensure healthy lives and promote well-being for all at all ages",
+    "goal_uri": "http://data.europa.eu/sdg/3",
+    "level": "goal_only",
+    "score": 4.0,
+    "target_label": "(goal level only, no target above threshold)",
+    "target_uri": "(goal level only, no target above threshold)"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039303",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "deliverable_descriptions"
+  ],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description"
+  ],
+  "title": "Next-Generation Natural Language Generation"
+ },
+ "101039320": {
+  "acronym": "MEGI CD",
+  "assignments": [
+   {
+    "confidence_band": "low",
+    "evidence": "eurosciwoc_categories: medical and health sciences/health sciences/nutrition [crosswalk direct, 3.0]",
+    "goal_label": "End hunger, achieve food security and improved nutrition and promote sustainable agriculture",
+    "goal_uri": "http://data.europa.eu/sdg/2",
+    "level": "target",
+    "score": 3.0,
+    "target_label": "By 2030, end all forms of malnutrition, including achieving, by 2025, the internationally agreed targets on stunting and wasting in children under 5 years of age, and address the nutritional needs of adolescent girls, pregnant and lactating women and older persons",
+    "target_uri": "http://data.europa.eu/sdg/2.2"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039320",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "keywords",
+   "deliverable_descriptions"
+  ],
+  "sources_present": [
+   "title",
+   "objective",
+   "editorial_description"
+  ],
+  "title": "Metabolic Gut Inflammation in Crohn's disease"
+ },
+ "101039339": {
+  "acronym": "eWaveShaper",
+  "assignments": [
+   {
+    "confidence_band": "(not banded: section 3.6 bands target assignments)",
+    "evidence": "(evidence summed by goal, below the target threshold)",
+    "goal_label": "Strengthen the means of implementation and revitalize the Global Partnership for Sustainable Development",
+    "goal_uri": "http://data.europa.eu/sdg/17",
+    "level": "goal_only",
+    "score": 2.0,
+    "target_label": "(goal level only, no target above threshold)",
+    "target_uri": "(goal level only, no target above threshold)"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039339",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description",
+   "deliverable_descriptions"
+  ],
+  "title": "Spatio-temporal shaping of electron wavepackets for time-domain electron holography"
+ },
+ "101039348": {
+  "acronym": "PASSAGE",
+  "assignments": [
+   {
+    "confidence_band": "low",
+    "evidence": "eurosciwoc_categories: natural sciences/earth and related environmental sciences/atmospheric sciences/climatology/climatic changes [crosswalk direct, 3.0]",
+    "goal_label": "Take urgent action to combat climate change and its impacts",
+    "goal_uri": "http://data.europa.eu/sdg/13",
+    "level": "target",
+    "score": 3.0,
+    "target_label": "Strengthen resilience and adaptive capacity to climate-related hazards and natural disasters in all countries",
+    "target_uri": "http://data.europa.eu/sdg/13.1"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039348",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description",
+   "deliverable_descriptions"
+  ],
+  "title": "Provenance And tranSport PathwayS of mArine proxy-bearinG particlEs"
+ },
+ "101039349": {
+  "acronym": "G-CYBERHEART",
+  "assignments": [
+   {
+    "confidence_band": "(not banded: section 3.6 bands target assignments)",
+    "evidence": "(evidence summed by goal, below the target threshold)",
+    "goal_label": "Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all",
+    "goal_uri": "http://data.europa.eu/sdg/4",
+    "level": "goal_only",
+    "score": 2.1,
+    "target_label": "(goal level only, no target above threshold)",
+    "target_uri": "(goal level only, no target above threshold)"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039349",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "deliverable_descriptions"
+  ],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description"
+  ],
+  "title": "Computationally and experimentallY BioEngineeRing the next generation of Growing HEARTs"
+ },
+ "101039354": {
+  "acronym": "SynTra",
+  "assignments": [
+   {
+    "confidence_band": "(not banded: section 3.6 bands target assignments)",
+    "evidence": "(evidence summed by goal, below the target threshold)",
+    "goal_label": "Ensure healthy lives and promote well-being for all at all ages",
+    "goal_uri": "http://data.europa.eu/sdg/3",
+    "level": "goal_only",
+    "score": 2.5,
+    "target_label": "(goal level only, no target above threshold)",
+    "target_uri": "(goal level only, no target above threshold)"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039354",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "deliverable_descriptions"
+  ],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description"
+  ],
+  "title": "Controlling Gene Expression with Synthetic Cell-Penetrating Transcription Factors"
+ },
+ "101039361": {
+  "acronym": "CORSAIR",
+  "assignments": [],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039361",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description",
+   "deliverable_descriptions"
+  ],
+  "title": "Controlled subradiance in atomic arrays"
+ },
+ "101039375": {
+  "acronym": "SQiMic",
+  "assignments": [
+   {
+    "confidence_band": "(not banded: section 3.6 bands target assignments)",
+    "evidence": "(evidence summed by goal, below the target threshold)",
+    "goal_label": "Strengthen the means of implementation and revitalize the Global Partnership for Sustainable Development",
+    "goal_uri": "http://data.europa.eu/sdg/17",
+    "level": "goal_only",
+    "score": 2.0,
+    "target_label": "(goal level only, no target above threshold)",
+    "target_uri": "(goal level only, no target above threshold)"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039375",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description",
+   "deliverable_descriptions"
+  ],
+  "title": "Structuring Quantum Light for Microscopy"
+ },
+ "101039376": {
+  "acronym": "INFLUX",
+  "assignments": [
+   {
+    "confidence_band": "(not banded: section 3.6 bands target assignments)",
+    "evidence": "(evidence summed by goal, below the target threshold)",
+    "goal_label": "End poverty in all its forms everywhere",
+    "goal_uri": "http://data.europa.eu/sdg/1",
+    "level": "goal_only",
+    "score": 2.7,
+    "target_label": "(goal level only, no target above threshold)",
+    "target_uri": "(goal level only, no target above threshold)"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039376",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description",
+   "deliverable_descriptions"
+  ],
+  "title": "Emerging pests and pathogens as a novel lens for unravelling social-ecological cascades"
+ },
+ "101039378": {
+  "acronym": "NONMANUAL",
+  "assignments": [
+   {
+    "confidence_band": "(not banded: section 3.6 bands target assignments)",
+    "evidence": "(evidence summed by goal, below the target threshold)",
+    "goal_label": "Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all",
+    "goal_uri": "http://data.europa.eu/sdg/4",
+    "level": "goal_only",
+    "score": 2.5,
+    "target_label": "(goal level only, no target above threshold)",
+    "target_uri": "(goal level only, no target above threshold)"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039378",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description",
+   "deliverable_descriptions"
+  ],
+  "title": "Fundamentals of formal properties of nonmanuals: A quantitative approach"
+ },
+ "101039399": {
+  "acronym": "4SBATT",
+  "assignments": [],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039399",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description",
+   "deliverable_descriptions"
+  ],
+  "title": "Sustainable Solid State Sodium Batteries"
+ },
+ "101039402": {
+  "acronym": "FLORA",
+  "assignments": [
+   {
+    "confidence_band": "medium",
+    "evidence": "objective: \"hunger\" [key_term, 0.5] | objective: \"hunger\" [synonym_subject, 2.0] | editorial_description: \"hunger\" [key_term, 0.5] | editorial_description: \"hunger\" [synonym_subject, 2.0]",
+    "goal_label": "End hunger, achieve food security and improved nutrition and promote sustainable agriculture",
+    "goal_uri": "http://data.europa.eu/sdg/2",
+    "level": "target",
+    "score": 5.0,
+    "target_label": "By 2030, end hunger and ensure access by all people, in particular the poor and people in vulnerable situations, including infants, to safe, nutritious and sufficient food all year round",
+    "target_uri": "http://data.europa.eu/sdg/2.1"
+   },
+   {
+    "confidence_band": "medium",
+    "evidence": "objective: \"climate change\" [key_term, 1.0] | editorial_description: \"climate change\" [key_term, 1.0] | eurosciwoc_categories: agricultural sciences/agriculture, forestry, and fisheries/agriculture/sustainable agriculture [crosswalk direct, 3.0]",
+    "goal_label": "End hunger, achieve food security and improved nutrition and promote sustainable agriculture",
+    "goal_uri": "http://data.europa.eu/sdg/2",
+    "level": "target",
+    "score": 5.0,
+    "target_label": "By 2030, ensure sustainable food production systems and implement resilient agricultural practices that increase productivity and production, that help maintain ecosystems, that strengthen capacity for adaptation to climate change, extreme weather, drought, flooding and other disasters and that progressively improve land and soil quality",
+    "target_uri": "http://data.europa.eu/sdg/2.4"
+   },
+   {
+    "confidence_band": "medium",
+    "evidence": "objective: \"well-being\" [key_term, 0.5] | objective: \"well-being\" [synonym_subject, 2.0] | editorial_description: \"well-being\" [key_term, 0.5] | editorial_description: \"well-being\" [synonym_subject, 2.0]",
+    "goal_label": "Ensure healthy lives and promote well-being for all at all ages",
+    "goal_uri": "http://data.europa.eu/sdg/3",
+    "level": "target",
+    "score": 5.0,
+    "target_label": "By 2030, reduce by one third premature mortality from non-communicable diseases through prevention and treatment and promote mental health and well-being",
+    "target_uri": "http://data.europa.eu/sdg/3.4"
+   },
+   {
+    "confidence_band": "low",
+    "evidence": "eurosciwoc_categories: engineering and technology/environmental engineering/natural resources management [crosswalk direct, 3.0]",
+    "goal_label": "Ensure sustainable consumption and production patterns",
+    "goal_uri": "http://data.europa.eu/sdg/12",
+    "level": "target",
+    "score": 3.0,
+    "target_label": "By 2030, achieve the sustainable management and efficient use of natural resources",
+    "target_uri": "http://data.europa.eu/sdg/12.2"
+   },
+   {
+    "confidence_band": "low",
+    "evidence": "objective: \"human health\" [key_term, 1.0] | objective: \"environment\" [key_term, 0.5] | editorial_description: \"human health\" [key_term, 1.0] | editorial_description: \"environment\" [key_term, 0.5]",
+    "goal_label": "Ensure sustainable consumption and production patterns",
+    "goal_uri": "http://data.europa.eu/sdg/12",
+    "level": "target",
+    "score": 3.0,
+    "target_label": "By 2020, achieve the environmentally sound management of chemicals and all wastes throughout their life cycle, in accordance with agreed international frameworks, and significantly reduce their release to air, water and soil in order to minimize their adverse impacts on human health and the environment",
+    "target_uri": "http://data.europa.eu/sdg/12.4"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039402",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "deliverable_descriptions"
+  ],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description"
+  ],
+  "title": "Sustainable and healthy food solutions: system dynamics and trade-offs"
+ },
+ "101039416": {
+  "acronym": "Fashioning Sudan",
+  "assignments": [
+   {
+    "confidence_band": "(not banded: section 3.6 bands target assignments)",
+    "evidence": "(evidence summed by goal, below the target threshold)",
+    "goal_label": "Achieve gender equality and empower all women and girls",
+    "goal_uri": "http://data.europa.eu/sdg/5",
+    "level": "goal_only",
+    "score": 4.5,
+    "target_label": "(goal level only, no target above threshold)",
+    "target_uri": "(goal level only, no target above threshold)"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039416",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "deliverable_descriptions"
+  ],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description"
+  ],
+  "title": "Archaeology of Dress along the Middle Nile"
+ },
+ "101039421": {
+  "acronym": "PRIMAZINC",
+  "assignments": [],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039421",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description",
+   "deliverable_descriptions"
+  ],
+  "title": "Deciphering the role of C2H2 zinc finger transcription factors during primate neocortex development and evolution"
+ },
+ "101039426": {
+  "acronym": "B-WEX",
+  "assignments": [
+   {
+    "confidence_band": "high",
+    "evidence": "keywords: \"water scarcity\" [key_term, 1.2] | keywords: \"water scarcity\" [synonym_subject, 2.4] | editorial_description: \"water scarcity\" [key_term, 1.0] | editorial_description: \"water scarcity\" [synonym_subject, 2.0] | eurosciwoc_categories: natural sciences/earth and related environmental sciences/hydrology [crosswalk contributing, 1.5]",
+    "goal_label": "Ensure availability and sustainable management of water and sanitation for all",
+    "goal_uri": "http://data.europa.eu/sdg/6",
+    "level": "target",
+    "score": 8.1,
+    "target_label": "By 2030, substantially increase water-use efficiency across all sectors and ensure sustainable withdrawals and supply of freshwater to address water scarcity and substantially reduce the number of people suffering from water scarcity",
+    "target_uri": "http://data.europa.eu/sdg/6.4"
+   },
+   {
+    "confidence_band": "medium",
+    "evidence": "keywords: \"climate change\" [key_term, 1.2] | keywords: \"drought\" [key_term, 0.6] | objective: \"extreme weather\" [key_term, 1.0] | editorial_description: \"climate change\" [key_term, 1.0] | editorial_description: \"extreme weather\" [key_term, 1.0] | editorial_description: \"drought\" [key_term, 0.5]",
+    "goal_label": "End hunger, achieve food security and improved nutrition and promote sustainable agriculture",
+    "goal_uri": "http://data.europa.eu/sdg/2",
+    "level": "target",
+    "score": 5.3,
+    "target_label": "By 2030, ensure sustainable food production systems and implement resilient agricultural practices that increase productivity and production, that help maintain ecosystems, that strengthen capacity for adaptation to climate change, extreme weather, drought, flooding and other disasters and that progressively improve land and soil quality",
+    "target_uri": "http://data.europa.eu/sdg/2.4"
+   },
+   {
+    "confidence_band": "low",
+    "evidence": "objective: \"water quality\" [synonym_subject, 2.0] | editorial_description: \"water quality\" [synonym_subject, 2.0]",
+    "goal_label": "Ensure availability and sustainable management of water and sanitation for all",
+    "goal_uri": "http://data.europa.eu/sdg/6",
+    "level": "target",
+    "score": 4.0,
+    "target_label": "By 2030, improve water quality by reducing pollution, eliminating dumping and minimizing release of hazardous chemicals and materials, halving the proportion of untreated wastewater and substantially increasing recycling and safe reuse globally",
+    "target_uri": "http://data.europa.eu/sdg/6.3"
+   },
+   {
+    "confidence_band": "low",
+    "evidence": "keywords: \"climate change\" [key_term, 1.2] | objective: \"mitigation\" [key_term, 0.5] | editorial_description: \"climate change\" [key_term, 1.0] | editorial_description: \"mitigation\" [key_term, 0.5]",
+    "goal_label": "Make cities and human settlements inclusive, safe, resilient and sustainable",
+    "goal_uri": "http://data.europa.eu/sdg/11",
+    "level": "target",
+    "score": 3.2,
+    "target_label": "By 2020, substantially increase the number of cities and human settlements adopting and implementing integrated policies and plans towards inclusion, resource efficiency, mitigation and adaptation to climate change, resilience to disasters, and develop and implement, in line with the Sendai Framework for Disaster Risk Reduction 2015–2030, holistic disaster risk management at all levels",
+    "target_uri": "http://data.europa.eu/sdg/11.b"
+   },
+   {
+    "confidence_band": "low",
+    "evidence": "objective: \"climate mitigation\" [synonym_domain, 1.5] | editorial_description: \"climate mitigation\" [synonym_domain, 1.5]",
+    "goal_label": "Take urgent action to combat climate change and its impacts",
+    "goal_uri": "http://data.europa.eu/sdg/13",
+    "level": "target",
+    "score": 3.0,
+    "target_label": "Integrate climate change measures into national policies, strategies and planning",
+    "target_uri": "http://data.europa.eu/sdg/13.2"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039426",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "deliverable_descriptions"
+  ],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description"
+  ],
+  "title": "Balancing clean Water and Energy provision under changing climate and eXtremes"
+ },
+ "101039429": {
+  "acronym": "IMAGINE adaptation",
+  "assignments": [
+   {
+    "confidence_band": "medium",
+    "evidence": "objective: \"climate resilience\" [synonym_subject, 2.0] | editorial_description: \"climate resilience\" [synonym_subject, 2.0] | editorial_description: \"climate adaptation\" [synonym_domain, 1.5]",
+    "goal_label": "Take urgent action to combat climate change and its impacts",
+    "goal_uri": "http://data.europa.eu/sdg/13",
+    "level": "target",
+    "score": 5.5,
+    "target_label": "Strengthen resilience and adaptive capacity to climate-related hazards and natural disasters in all countries",
+    "target_uri": "http://data.europa.eu/sdg/13.1"
+   },
+   {
+    "confidence_band": "medium",
+    "evidence": "title: \"climate change\" [key_term, 1.2] | keywords: \"climate change\" [key_term, 1.2] | objective: \"climate change\" [key_term, 1.0] | editorial_description: \"climate change\" [key_term, 1.0] | editorial_description: \"Cities\" [key_term, 0.5]",
+    "goal_label": "Make cities and human settlements inclusive, safe, resilient and sustainable",
+    "goal_uri": "http://data.europa.eu/sdg/11",
+    "level": "target",
+    "score": 4.9,
+    "target_label": "By 2020, substantially increase the number of cities and human settlements adopting and implementing integrated policies and plans towards inclusion, resource efficiency, mitigation and adaptation to climate change, resilience to disasters, and develop and implement, in line with the Sendai Framework for Disaster Risk Reduction 2015–2030, holistic disaster risk management at all levels",
+    "target_uri": "http://data.europa.eu/sdg/11.b"
+   },
+   {
+    "confidence_band": "low",
+    "evidence": "title: \"climate change\" [key_term, 1.2] | keywords: \"climate change\" [key_term, 1.2] | objective: \"climate change\" [key_term, 1.0] | editorial_description: \"climate change\" [key_term, 1.0]",
+    "goal_label": "End hunger, achieve food security and improved nutrition and promote sustainable agriculture",
+    "goal_uri": "http://data.europa.eu/sdg/2",
+    "level": "target",
+    "score": 4.4,
+    "target_label": "By 2030, ensure sustainable food production systems and implement resilient agricultural practices that increase productivity and production, that help maintain ecosystems, that strengthen capacity for adaptation to climate change, extreme weather, drought, flooding and other disasters and that progressively improve land and soil quality",
+    "target_uri": "http://data.europa.eu/sdg/2.4"
+   },
+   {
+    "confidence_band": "low",
+    "evidence": "keywords: \"effective\" [key_term, 0.6] | editorial_description: \"effective\" [key_term, 0.5] | eurosciwoc_categories: social sciences/sociology/governance [crosswalk direct, 3.0]",
+    "goal_label": "Promote peaceful and inclusive societies for sustainable development, provide access to justice for all and build effective, accountable and inclusive institutions at all levels",
+    "goal_uri": "http://data.europa.eu/sdg/16",
+    "level": "target",
+    "score": 4.1,
+    "target_label": "Develop effective, accountable and transparent institutions at all levels",
+    "target_uri": "http://data.europa.eu/sdg/16.6"
+   },
+   {
+    "confidence_band": "low",
+    "evidence": "title: \"adaptation\" [key_term, 0.6] | keywords: \"adaptation\" [key_term, 0.6] | objective: \"adaptation\" [key_term, 0.5] | editorial_description: \"human\" [key_term, 0.5] | editorial_description: \"adaptation\" [key_term, 0.5] | deliverable_descriptions: \"Adaptation\" [key_term, 0.4]",
+    "goal_label": "Take urgent action to combat climate change and its impacts",
+    "goal_uri": "http://data.europa.eu/sdg/13",
+    "level": "target",
+    "score": 3.1,
+    "target_label": "Improve education, awareness-raising and human and institutional capacity on climate change mitigation, adaptation, impact reduction and early warning",
+    "target_uri": "http://data.europa.eu/sdg/13.3"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039429",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description",
+   "deliverable_descriptions"
+  ],
+  "title": "IMAGINE climate change adaptation in urban areas"
+ },
+ "101039433": {
+  "acronym": "KNOW-THYSELF",
+  "assignments": [
+   {
+    "confidence_band": "(not banded: section 3.6 bands target assignments)",
+    "evidence": "(evidence summed by goal, below the target threshold)",
+    "goal_label": "Strengthen the means of implementation and revitalize the Global Partnership for Sustainable Development",
+    "goal_uri": "http://data.europa.eu/sdg/17",
+    "level": "goal_only",
+    "score": 4.7,
+    "target_label": "(goal level only, no target above threshold)",
+    "target_uri": "(goal level only, no target above threshold)"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039433",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "deliverable_descriptions"
+  ],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description"
+  ],
+  "title": "Increasing Self-Knowledge to Promote Moral Behavior"
+ },
+ "101039436": {
+  "acronym": "A-B-C-Deep",
+  "assignments": [
+   {
+    "confidence_band": "(not banded: section 3.6 bands target assignments)",
+    "evidence": "(evidence summed by goal, below the target threshold)",
+    "goal_label": "Ensure healthy lives and promote well-being for all at all ages",
+    "goal_uri": "http://data.europa.eu/sdg/3",
+    "level": "goal_only",
+    "score": 2.0,
+    "target_label": "(goal level only, no target above threshold)",
+    "target_uri": "(goal level only, no target above threshold)"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039436",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description",
+   "deliverable_descriptions"
+  ],
+  "title": "Algorithmic Bias Control in Deep learning"
+ },
+ "101039438": {
+  "acronym": "NEXUS",
+  "assignments": [
+   {
+    "confidence_band": "(not banded: section 3.6 bands target assignments)",
+    "evidence": "(evidence summed by goal, below the target threshold)",
+    "goal_label": "Ensure healthy lives and promote well-being for all at all ages",
+    "goal_uri": "http://data.europa.eu/sdg/3",
+    "level": "goal_only",
+    "score": 2.2,
+    "target_label": "(goal level only, no target above threshold)",
+    "target_uri": "(goal level only, no target above threshold)"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039438",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description",
+   "deliverable_descriptions"
+  ],
+  "title": "Network Synergies in Tissue Homeostasis and Stromal Prevention of Inflammatory Disease."
+ },
+ "101039446": {
+  "acronym": "ARCVIR",
+  "assignments": [
+   {
+    "confidence_band": "(not banded: section 3.6 bands target assignments)",
+    "evidence": "(evidence summed by goal, below the target threshold)",
+    "goal_label": "Strengthen the means of implementation and revitalize the Global Partnership for Sustainable Development",
+    "goal_uri": "http://data.europa.eu/sdg/17",
+    "level": "goal_only",
+    "score": 2.0,
+    "target_label": "(goal level only, no target above threshold)",
+    "target_uri": "(goal level only, no target above threshold)"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039446",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description",
+   "deliverable_descriptions"
+  ],
+  "title": "Archaeal Virology: unravelling the mechanisms of interviral warfare"
+ },
+ "101039447": {
+  "acronym": "INTERMAPS",
+  "assignments": [
+   {
+    "confidence_band": "high",
+    "evidence": "keywords: \"social\" [key_term, 0.6] | objective: \"social\" [key_term, 0.5] | objective: \"ethnicity\" [key_term, 0.5] | editorial_description: \"social\" [key_term, 0.5] | editorial_description: \"race\" [key_term, 0.5] | editorial_description: \"ethnicity\" [key_term, 0.5] | eurosciwoc_categories: social sciences/sociology/social issues/social inequalities [crosswalk direct, 3.0]",
+    "goal_label": "Reduce inequality within and among countries",
+    "goal_uri": "http://data.europa.eu/sdg/10",
+    "level": "target",
+    "score": 6.1,
+    "target_label": "By 2030, empower and promote the social, economic and political inclusion of all, irrespective of age, sex, disability, race, ethnicity, origin, religion or economic or other status",
+    "target_uri": "http://data.europa.eu/sdg/10.2"
+   },
+   {
+    "confidence_band": "low",
+    "evidence": "objective: \"ethnicity\" [key_term, 0.5] | objective: \"gender\" [key_term, 0.5] | objective: \"age\" [key_term, 0.5] | editorial_description: \"race\" [key_term, 0.5] | editorial_description: \"ethnicity\" [key_term, 0.5] | editorial_description: \"gender\" [key_term, 0.5] | editorial_description: \"age\" [key_term, 0.5]",
+    "goal_label": "Strengthen the means of implementation and revitalize the Global Partnership for Sustainable Development",
+    "goal_uri": "http://data.europa.eu/sdg/17",
+    "level": "target",
+    "score": 3.5,
+    "target_label": "By 2020, enhance capacity-building support to developing countries, including for least developed countries and small island developing States, to increase significantly the availability of high-quality, timely and reliable data disaggregated by income, gender, age, race, ethnicity, migratory status, disability, geographic location and other characteristics relevant in national contexts",
+    "target_uri": "http://data.europa.eu/sdg/17.18"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039447",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "deliverable_descriptions"
+  ],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description"
+  ],
+  "title": "Mapping intersectionality: a conceptual and methodological model for the study of inequalities and discriminations"
+ },
+ "101039452": {
+  "acronym": "WANDA",
+  "assignments": [],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039452",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description",
+   "deliverable_descriptions"
+  ],
+  "title": "Winds ANd Disk structures near and Afar"
+ },
+ "101039455": {
+  "acronym": "SEGUE",
+  "assignments": [
+   {
+    "confidence_band": "medium",
+    "evidence": "objective: \"well-being\" [key_term, 0.5] | objective: \"well-being\" [synonym_subject, 2.0] | editorial_description: \"well-being\" [key_term, 0.5] | editorial_description: \"well-being\" [synonym_subject, 2.0]",
+    "goal_label": "Ensure healthy lives and promote well-being for all at all ages",
+    "goal_uri": "http://data.europa.eu/sdg/3",
+    "level": "target",
+    "score": 5.0,
+    "target_label": "By 2030, reduce by one third premature mortality from non-communicable diseases through prevention and treatment and promote mental health and well-being",
+    "target_uri": "http://data.europa.eu/sdg/3.4"
+   },
+   {
+    "confidence_band": "low",
+    "evidence": "title: \"Economic\" [key_term, 0.6] | keywords: \"Economic\" [key_term, 0.6] | objective: \"economic\" [key_term, 0.5] | objective: \"social\" [key_term, 0.5] | editorial_description: \"economic\" [key_term, 0.5] | editorial_description: \"social\" [key_term, 0.5] | editorial_description: \"race\" [key_term, 0.5]",
+    "goal_label": "Reduce inequality within and among countries",
+    "goal_uri": "http://data.europa.eu/sdg/10",
+    "level": "target",
+    "score": 3.7,
+    "target_label": "By 2030, empower and promote the social, economic and political inclusion of all, irrespective of age, sex, disability, race, ethnicity, origin, religion or economic or other status",
+    "target_uri": "http://data.europa.eu/sdg/10.2"
+   },
+   {
+    "confidence_band": "low",
+    "evidence": "title: \"Economic\" [key_term, 0.6] | keywords: \"Economic\" [key_term, 0.6] | objective: \"economic\" [key_term, 0.5] | objective: \"social\" [key_term, 0.5] | editorial_description: \"economic\" [key_term, 0.5] | editorial_description: \"social\" [key_term, 0.5]",
+    "goal_label": "End poverty in all its forms everywhere",
+    "goal_uri": "http://data.europa.eu/sdg/1",
+    "level": "target",
+    "score": 3.2,
+    "target_label": "By 2030, build the resilience of the poor and those in vulnerable situations and reduce their exposure and vulnerability to climate-related extreme events and other economic, social and environmental shocks and disasters",
+    "target_uri": "http://data.europa.eu/sdg/1.5"
+   },
+   {
+    "confidence_band": "low",
+    "evidence": "objective: \"economic resources\" [key_term, 1.0] | objective: \"inheritance\" [key_term, 0.5] | editorial_description: \"economic resources\" [key_term, 1.0] | editorial_description: \"inheritance\" [key_term, 0.5]",
+    "goal_label": "End poverty in all its forms everywhere",
+    "goal_uri": "http://data.europa.eu/sdg/1",
+    "level": "target",
+    "score": 3.0,
+    "target_label": "By 2030, ensure that all men and women, in particular the poor and the vulnerable, have equal rights to economic resources, as well as access to basic services, ownership and control over land and other forms of property, inheritance, natural resources, appropriate new technology and financial services, including microfinance",
+    "target_uri": "http://data.europa.eu/sdg/1.4"
+   },
+   {
+    "confidence_band": "low",
+    "evidence": "objective: \"economic resources\" [key_term, 1.0] | objective: \"inheritance\" [key_term, 0.5] | editorial_description: \"economic resources\" [key_term, 1.0] | editorial_description: \"inheritance\" [key_term, 0.5]",
+    "goal_label": "Achieve gender equality and empower all women and girls",
+    "goal_uri": "http://data.europa.eu/sdg/5",
+    "level": "target",
+    "score": 3.0,
+    "target_label": "Undertake reforms to give women equal rights to economic resources, as well as access to ownership and control over land and other forms of property, financial services, inheritance and natural resources, in accordance with national laws",
+    "target_uri": "http://data.europa.eu/sdg/5.a"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039455",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description",
+   "deliverable_descriptions"
+  ],
+  "title": "Urban Economic SEGregation: integrating explanatory mechanisms across geographical scales to compare remediatory policies in silico"
+ },
+ "101039467": {
+  "acronym": "CoDe4Bio",
+  "assignments": [
+   {
+    "confidence_band": "medium",
+    "evidence": "title: \"cancer\" [synonym_domain, 1.8] | objective: \"Cancer\" [synonym_domain, 1.5] | editorial_description: \"Cancer\" [synonym_domain, 1.5]",
+    "goal_label": "Ensure healthy lives and promote well-being for all at all ages",
+    "goal_uri": "http://data.europa.eu/sdg/3",
+    "level": "target",
+    "score": 4.8,
+    "target_label": "By 2030, reduce by one third premature mortality from non-communicable diseases through prevention and treatment and promote mental health and well-being",
+    "target_uri": "http://data.europa.eu/sdg/3.4"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039467",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description",
+   "deliverable_descriptions"
+  ],
+  "title": "COmputational DEsign for 4D BIOfabrication: harnessing programmable materials for dynamic pre-clinical cancer models"
+ },
+ "101039481": {
+  "acronym": "ALPS",
+  "assignments": [
+   {
+    "confidence_band": "(not banded: section 3.6 bands target assignments)",
+    "evidence": "(evidence summed by goal, below the target threshold)",
+    "goal_label": "Ensure sustainable consumption and production patterns",
+    "goal_uri": "http://data.europa.eu/sdg/12",
+    "level": "goal_only",
+    "score": 3.5,
+    "target_label": "(goal level only, no target above threshold)",
+    "target_uri": "(goal level only, no target above threshold)"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039481",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "deliverable_descriptions"
+  ],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description"
+  ],
+  "title": "AI-based Learning for Physical Simulation"
+ },
+ "101039493": {
+  "acronym": "HEROINE",
+  "assignments": [
+   {
+    "confidence_band": "(not banded: section 3.6 bands target assignments)",
+    "evidence": "(evidence summed by goal, below the target threshold)",
+    "goal_label": "Ensure healthy lives and promote well-being for all at all ages",
+    "goal_uri": "http://data.europa.eu/sdg/3",
+    "level": "goal_only",
+    "score": 3.0,
+    "target_label": "(goal level only, no target above threshold)",
+    "target_uri": "(goal level only, no target above threshold)"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039493",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description",
+   "deliverable_descriptions"
+  ],
+  "title": "Hormone-microbiome interactions as a key-player in female health"
+ },
+ "101039500": {
+  "acronym": "TITAN",
+  "assignments": [],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039500",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "deliverable_descriptions"
+  ],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description"
+  ],
+  "title": "Tailoring Quantum Matter on the Flatland"
+ },
+ "101039501": {
+  "acronym": "FrogWY",
+  "assignments": [
+   {
+    "confidence_band": "(not banded: section 3.6 bands target assignments)",
+    "evidence": "(evidence summed by goal, below the target threshold)",
+    "goal_label": "Reduce inequality within and among countries",
+    "goal_uri": "http://data.europa.eu/sdg/10",
+    "level": "goal_only",
+    "score": 2.7,
+    "target_label": "(goal level only, no target above threshold)",
+    "target_uri": "(goal level only, no target above threshold)"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039501",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "deliverable_descriptions"
+  ],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description"
+  ],
+  "title": "Evolutionary Genomics of Unconventional Sex Chromosomes in Frogs"
+ },
+ "101039522": {
+  "acronym": "QUDITS",
+  "assignments": [
+   {
+    "confidence_band": "(not banded: section 3.6 bands target assignments)",
+    "evidence": "(evidence summed by goal, below the target threshold)",
+    "goal_label": "Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all",
+    "goal_uri": "http://data.europa.eu/sdg/4",
+    "level": "goal_only",
+    "score": 2.1,
+    "target_label": "(goal level only, no target above threshold)",
+    "target_uri": "(goal level only, no target above threshold)"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039522",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description",
+   "deliverable_descriptions"
+  ],
+  "title": "Quantum Information Processing in High-Dimensional Ion Trap Systems"
+ },
+ "101039524": {
+  "acronym": "TIME",
+  "assignments": [],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039524",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description",
+   "deliverable_descriptions"
+  ],
+  "title": "It's about time: Towards a dynamic account of natural vision."
+ },
+ "101039531": {
+  "acronym": "SyncyNucDiff",
+  "assignments": [
+   {
+    "confidence_band": "(not banded: section 3.6 bands target assignments)",
+    "evidence": "(evidence summed by goal, below the target threshold)",
+    "goal_label": "End hunger, achieve food security and improved nutrition and promote sustainable agriculture",
+    "goal_uri": "http://data.europa.eu/sdg/2",
+    "level": "goal_only",
+    "score": 2.0,
+    "target_label": "(goal level only, no target above threshold)",
+    "target_uri": "(goal level only, no target above threshold)"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039531",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "deliverable_descriptions"
+  ],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description"
+  ],
+  "title": "The biology of syncytial cells:  Dissecting the mechanisms and functions of nuclear differentiation inside skeletal muscle syncytium"
+ },
+ "101039532": {
+  "acronym": "GLOBCOADEV",
+  "assignments": [
+   {
+    "confidence_band": "high",
+    "evidence": "title: \"contamination\" [key_term, 0.6] | title: \"contamination\" [synonym_subject, 2.4] | objective: \"contamination\" [key_term, 0.5] | objective: \"contamination\" [synonym_subject, 2.0] | editorial_description: \"contamination\" [key_term, 0.5] | editorial_description: \"contamination\" [synonym_subject, 2.0]",
+    "goal_label": "Ensure healthy lives and promote well-being for all at all ages",
+    "goal_uri": "http://data.europa.eu/sdg/3",
+    "level": "target",
+    "score": 8.0,
+    "target_label": "By 2030, substantially reduce the number of deaths and illnesses from hazardous chemicals and air, water and soil pollution and contamination",
+    "target_uri": "http://data.europa.eu/sdg/3.9"
+   },
+   {
+    "confidence_band": "low",
+    "evidence": "objective: \"food security\" [synonym_subject, 2.0] | editorial_description: \"food security\" [synonym_subject, 2.0]",
+    "goal_label": "End hunger, achieve food security and improved nutrition and promote sustainable agriculture",
+    "goal_uri": "http://data.europa.eu/sdg/2",
+    "level": "target",
+    "score": 4.0,
+    "target_label": "By 2030, end hunger and ensure access by all people, in particular the poor and people in vulnerable situations, including infants, to safe, nutritious and sufficient food all year round",
+    "target_uri": "http://data.europa.eu/sdg/2.1"
+   },
+   {
+    "confidence_band": "low",
+    "evidence": "eurosciwoc_categories: agricultural sciences/agriculture, forestry, and fisheries/fisheries [crosswalk direct, 3.0]",
+    "goal_label": "Conserve and sustainably use the oceans, seas and marine resources for sustainable development",
+    "goal_uri": "http://data.europa.eu/sdg/14",
+    "level": "target",
+    "score": 3.0,
+    "target_label": "By 2020, effectively regulate harvesting and end overfishing, illegal, unreported and unregulated fishing and destructive fishing practices and implement science-based management plans, in order to restore fish stocks in the shortest time feasible, at least to levels that can produce maximum sustainable yield as determined by their biological characteristics",
+    "target_uri": "http://data.europa.eu/sdg/14.4"
+   },
+   {
+    "confidence_band": "low",
+    "evidence": "eurosciwoc_categories: medical and health sciences/health sciences/nutrition [crosswalk direct, 3.0]",
+    "goal_label": "End hunger, achieve food security and improved nutrition and promote sustainable agriculture",
+    "goal_uri": "http://data.europa.eu/sdg/2",
+    "level": "target",
+    "score": 3.0,
+    "target_label": "By 2030, end all forms of malnutrition, including achieving, by 2025, the internationally agreed targets on stunting and wasting in children under 5 years of age, and address the nutritional needs of adolescent girls, pregnant and lactating women and older persons",
+    "target_uri": "http://data.europa.eu/sdg/2.2"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039532",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description",
+   "deliverable_descriptions"
+  ],
+  "title": "The global impact of coastal water contamination on economic development"
+ },
+ "101039538": {
+  "acronym": "DELV",
+  "assignments": [
+   {
+    "confidence_band": "high",
+    "evidence": "keywords: \"Hepatitis\" [synonym_subject, 2.4] | objective: \"Hepatitis\" [synonym_subject, 2.0] | editorial_description: \"Hepatitis\" [synonym_subject, 2.0] | eurosciwoc_categories: medical and health sciences/health sciences/infectious diseases [crosswalk direct, 3.0]",
+    "goal_label": "Ensure healthy lives and promote well-being for all at all ages",
+    "goal_uri": "http://data.europa.eu/sdg/3",
+    "level": "target",
+    "score": 9.4,
+    "target_label": "By 2030, end the epidemics of AIDS, tuberculosis, malaria and neglected tropical diseases and combat hepatitis, water-borne diseases and other communicable diseases",
+    "target_uri": "http://data.europa.eu/sdg/3.3"
+   },
+   {
+    "confidence_band": "low",
+    "evidence": "title: \"human\" [key_term, 0.6] | keywords: \"adaptation\" [key_term, 0.6] | objective: \"human\" [key_term, 0.5] | objective: \"adaptation\" [key_term, 0.5] | editorial_description: \"human\" [key_term, 0.5] | editorial_description: \"adaptation\" [key_term, 0.5]",
+    "goal_label": "Take urgent action to combat climate change and its impacts",
+    "goal_uri": "http://data.europa.eu/sdg/13",
+    "level": "target",
+    "score": 3.2,
+    "target_label": "Improve education, awareness-raising and human and institutional capacity on climate change mitigation, adaptation, impact reduction and early warning",
+    "target_uri": "http://data.europa.eu/sdg/13.3"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039538",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "deliverable_descriptions"
+  ],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description"
+  ],
+  "title": "DELta Virus infection in animal and human hosts"
+ },
+ "101039541": {
+  "acronym": "HoloE2Plant",
+  "assignments": [
+   {
+    "confidence_band": "(not banded: section 3.6 bands target assignments)",
+    "evidence": "(evidence summed by goal, below the target threshold)",
+    "goal_label": "End hunger, achieve food security and improved nutrition and promote sustainable agriculture",
+    "goal_uri": "http://data.europa.eu/sdg/2",
+    "level": "goal_only",
+    "score": 2.7,
+    "target_label": "(goal level only, no target above threshold)",
+    "target_uri": "(goal level only, no target above threshold)"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039541",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description",
+   "deliverable_descriptions"
+  ],
+  "title": "Exploring the Holobiont concept through a Plant Evolutionary Experiment study"
+ },
+ "101039545": {
+  "acronym": "DECYCLE",
+  "assignments": [
+   {
+    "confidence_band": "high",
+    "evidence": "keywords: \"Circular economy\" [synonym_policy, 1.8] | objective: \"reduction\" [key_term, 0.5] | objective: \"circular economy\" [synonym_policy, 1.5] | editorial_description: \"reduction\" [key_term, 0.5] | editorial_description: \"reuse\" [key_term, 0.5] | editorial_description: \"reuse\" [synonym_subject, 2.0] | editorial_description: \"circular economy\" [synonym_policy, 1.5]",
+    "goal_label": "Ensure sustainable consumption and production patterns",
+    "goal_uri": "http://data.europa.eu/sdg/12",
+    "level": "target",
+    "score": 8.3,
+    "target_label": "By 2030, substantially reduce waste generation through prevention, reduction, recycling and reuse",
+    "target_uri": "http://data.europa.eu/sdg/12.5"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039545",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "deliverable_descriptions"
+  ],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description"
+  ],
+  "title": "Towards a circular degrowth economy: Explaining the material valorization regime of city-regions"
+ },
+ "101039556": {
+  "acronym": "SecMessFunctions",
+  "assignments": [],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039556",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description",
+   "deliverable_descriptions"
+  ],
+  "title": "Revealing second messenger functions in bacterial stress response,  cell differentiation and natural product biosynthesis"
+ },
+ "101039567": {
+  "acronym": "ForExD",
+  "assignments": [
+   {
+    "confidence_band": "low",
+    "evidence": "objective: \"human\" [key_term, 0.5] | objective: \"climate change mitigation\" [key_term, 1.0] | editorial_description: \"human\" [key_term, 0.5] | editorial_description: \"climate change mitigation\" [key_term, 1.0] | editorial_description: \"Adaptation\" [key_term, 0.5]",
+    "goal_label": "Take urgent action to combat climate change and its impacts",
+    "goal_uri": "http://data.europa.eu/sdg/13",
+    "level": "target",
+    "score": 3.5,
+    "target_label": "Improve education, awareness-raising and human and institutional capacity on climate change mitigation, adaptation, impact reduction and early warning",
+    "target_uri": "http://data.europa.eu/sdg/13.3"
+   },
+   {
+    "confidence_band": "low",
+    "evidence": "objective: \"climate change\" [key_term, 1.0] | objective: \"mitigation\" [key_term, 0.5] | editorial_description: \"climate change\" [key_term, 1.0] | editorial_description: \"mitigation\" [key_term, 0.5]",
+    "goal_label": "Make cities and human settlements inclusive, safe, resilient and sustainable",
+    "goal_uri": "http://data.europa.eu/sdg/11",
+    "level": "target",
+    "score": 3.0,
+    "target_label": "By 2020, substantially increase the number of cities and human settlements adopting and implementing integrated policies and plans towards inclusion, resource efficiency, mitigation and adaptation to climate change, resilience to disasters, and develop and implement, in line with the Sendai Framework for Disaster Risk Reduction 2015–2030, holistic disaster risk management at all levels",
+    "target_uri": "http://data.europa.eu/sdg/11.b"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039567",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description",
+   "deliverable_descriptions"
+  ],
+  "title": "Forest vulnerability to compound extremes and disturbances in a changing climate"
+ },
+ "101039572": {
+  "acronym": "ARITHMETIC",
+  "assignments": [
+   {
+    "confidence_band": "medium",
+    "evidence": "objective: \"literacy\" [key_term, 0.5] | objective: \"literacy\" [synonym_subject, 2.0] | editorial_description: \"literacy\" [key_term, 0.5] | editorial_description: \"literacy\" [synonym_subject, 2.0]",
+    "goal_label": "Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all",
+    "goal_uri": "http://data.europa.eu/sdg/4",
+    "level": "target",
+    "score": 5.0,
+    "target_label": "By 2030, ensure that all youth and a substantial proportion of adults, both men and women, achieve literacy and numeracy",
+    "target_uri": "http://data.europa.eu/sdg/4.6"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039572",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description",
+   "deliverable_descriptions"
+  ],
+  "title": "German Arithmetical Treatises in Manuscripts of the Late Middle Ages (1400-1522). A Study on Philology, History and Culture based on a Digital Edition of the Treatises."
+ },
+ "101039576": {
+  "acronym": "POSEIDON",
+  "assignments": [
+   {
+    "confidence_band": "low",
+    "evidence": "objective: \"renewable energy\" [synonym_subject, 2.0] | editorial_description: \"renewable energy\" [synonym_subject, 2.0]",
+    "goal_label": "Ensure access to affordable, reliable, sustainable and modern energy for all",
+    "goal_uri": "http://data.europa.eu/sdg/7",
+    "level": "target",
+    "score": 4.0,
+    "target_label": "By 2030, increase substantially the share of renewable energy in the global energy mix",
+    "target_uri": "http://data.europa.eu/sdg/7.2"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039576",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "deliverable_descriptions"
+  ],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description"
+  ],
+  "title": "Unconventional principles of underwater wave control in the sub-wavelength regime"
+ },
+ "101039578": {
+  "acronym": "PROTOMAT",
+  "assignments": [
+   {
+    "confidence_band": "(not banded: section 3.6 bands target assignments)",
+    "evidence": "(evidence summed by goal, below the target threshold)",
+    "goal_label": "Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all",
+    "goal_uri": "http://data.europa.eu/sdg/4",
+    "level": "goal_only",
+    "score": 3.1,
+    "target_label": "(goal level only, no target above threshold)",
+    "target_uri": "(goal level only, no target above threshold)"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039578",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "deliverable_descriptions"
+  ],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description"
+  ],
+  "title": "Integrating non-living and living matter via protocellular materials (PCMs) design and synthetic construction"
+ },
+ "101039583": {
+  "acronym": "MICROECO",
+  "assignments": [
+   {
+    "confidence_band": "low",
+    "evidence": "objective: \"achieving\" [key_term, 0.5] | editorial_description: \"achieving\" [key_term, 0.5] | eurosciwoc_categories: medical and health sciences/health sciences/nutrition [crosswalk direct, 3.0]",
+    "goal_label": "End hunger, achieve food security and improved nutrition and promote sustainable agriculture",
+    "goal_uri": "http://data.europa.eu/sdg/2",
+    "level": "target",
+    "score": 4.0,
+    "target_label": "By 2030, end all forms of malnutrition, including achieving, by 2025, the internationally agreed targets on stunting and wasting in children under 5 years of age, and address the nutritional needs of adolescent girls, pregnant and lactating women and older persons",
+    "target_uri": "http://data.europa.eu/sdg/2.2"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039583",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description",
+   "deliverable_descriptions"
+  ],
+  "title": "Microbial ecosystems biology in the human gut"
+ },
+ "101039588": {
+  "acronym": "PRIMETIME",
+  "assignments": [],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039588",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "keywords"
+  ],
+  "sources_present": [
+   "title",
+   "objective",
+   "editorial_description",
+   "deliverable_descriptions"
+  ],
+  "title": "Rhizosphere priming: Quantifying plant impacts on carbon dioxide emissions from a warming Arctic"
+ },
+ "101039592": {
+  "acronym": "PhotoLanZyme",
+  "assignments": [],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039592",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description",
+   "deliverable_descriptions"
+  ],
+  "title": "Artificial Lanthanide Enzymes for Selective Photocatalysis:  'Enlightening' Metalloenzyme Design and Evolution"
+ },
+ "101039636": {
+  "acronym": "Pb-FREE",
+  "assignments": [
+   {
+    "confidence_band": "(not banded: section 3.6 bands target assignments)",
+    "evidence": "(evidence summed by goal, below the target threshold)",
+    "goal_label": "Ensure access to affordable, reliable, sustainable and modern energy for all",
+    "goal_uri": "http://data.europa.eu/sdg/7",
+    "level": "goal_only",
+    "score": 2.6,
+    "target_label": "(goal level only, no target above threshold)",
+    "target_uri": "(goal level only, no target above threshold)"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039636",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description",
+   "deliverable_descriptions"
+  ],
+  "title": "Piezoelectric Biomolecules for lead-free, Reliable,  Eco-Friendly Electronics"
+ },
+ "101039641": {
+  "acronym": "DIGIPORTS",
+  "assignments": [
+   {
+    "confidence_band": "low",
+    "evidence": "eurosciwoc_categories: social sciences/economics and business/business and management/employment [crosswalk direct, 3.0]",
+    "goal_label": "Promote sustained, inclusive and sustainable economic growth, full and productive employment and decent work for all",
+    "goal_uri": "http://data.europa.eu/sdg/8",
+    "level": "target",
+    "score": 3.0,
+    "target_label": "By 2030, achieve full and productive employment and decent work for all women and men, including for young people and persons with disabilities, and equal pay for work of equal value",
+    "target_uri": "http://data.europa.eu/sdg/8.5"
+   },
+   {
+    "confidence_band": "low",
+    "evidence": "objective: \"working conditions\" [synonym_domain, 1.5] | editorial_description: \"working conditions\" [synonym_domain, 1.5]",
+    "goal_label": "Promote sustained, inclusive and sustainable economic growth, full and productive employment and decent work for all",
+    "goal_uri": "http://data.europa.eu/sdg/8",
+    "level": "target",
+    "score": 3.0,
+    "target_label": "Protect labour rights and promote safe and secure working environments for all workers, including migrant workers, in particular women migrants, and those in precarious employment",
+    "target_uri": "http://data.europa.eu/sdg/8.8"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039641",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "deliverable_descriptions"
+  ],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description"
+  ],
+  "title": "Digitalized Ports, Racialized Labor: Shifting Infrastructures for Work in Container Shipping"
+ },
+ "101039648": {
+  "acronym": "TransLitigate",
+  "assignments": [
+   {
+    "confidence_band": "(not banded: section 3.6 bands target assignments)",
+    "evidence": "(evidence summed by goal, below the target threshold)",
+    "goal_label": "Protect, restore and promote sustainable use of terrestrial ecosystems, sustainably manage forests, combat desertification, and halt and reverse land degradation and halt biodiversity loss",
+    "goal_uri": "http://data.europa.eu/sdg/15",
+    "level": "goal_only",
+    "score": 4.0,
+    "target_label": "(goal level only, no target above threshold)",
+    "target_uri": "(goal level only, no target above threshold)"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039648",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description",
+   "deliverable_descriptions"
+  ],
+  "title": "The Agency of Transnational Strategic Litigators in Global Governance"
+ },
+ "101039651": {
+  "acronym": "DiscEvol",
+  "assignments": [],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039651",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description",
+   "deliverable_descriptions"
+  ],
+  "title": "Rebuilding the foundations of planet formation: proto-planetary disc evolution"
+ },
+ "101039655": {
+  "acronym": "ExpPov",
+  "assignments": [
+   {
+    "confidence_band": "medium",
+    "evidence": "objective: \"well-being\" [key_term, 0.5] | objective: \"well-being\" [synonym_subject, 2.0] | editorial_description: \"mental health\" [key_term, 1.0] | editorial_description: \"mental health\" [synonym_subject, 2.0]",
+    "goal_label": "Ensure healthy lives and promote well-being for all at all ages",
+    "goal_uri": "http://data.europa.eu/sdg/3",
+    "level": "target",
+    "score": 5.5,
+    "target_label": "By 2030, reduce by one third premature mortality from non-communicable diseases through prevention and treatment and promote mental health and well-being",
+    "target_uri": "http://data.europa.eu/sdg/3.4"
+   },
+   {
+    "confidence_band": "low",
+    "evidence": "keywords: \"social\" [key_term, 0.6] | objective: \"economic\" [key_term, 0.5] | objective: \"social\" [key_term, 0.5] | editorial_description: \"Economic\" [key_term, 0.5] | editorial_description: \"social\" [key_term, 0.5] | editorial_description: \"status\" [key_term, 0.5]",
+    "goal_label": "Reduce inequality within and among countries",
+    "goal_uri": "http://data.europa.eu/sdg/10",
+    "level": "target",
+    "score": 3.1,
+    "target_label": "By 2030, empower and promote the social, economic and political inclusion of all, irrespective of age, sex, disability, race, ethnicity, origin, religion or economic or other status",
+    "target_uri": "http://data.europa.eu/sdg/10.2"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039655",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description",
+   "deliverable_descriptions"
+  ],
+  "title": "The Experience of Poverty in the Post-Industrial Economy"
+ },
+ "101039657": {
+  "acronym": "CARDIOTRIALS",
+  "assignments": [
+   {
+    "confidence_band": "(not banded: section 3.6 bands target assignments)",
+    "evidence": "(evidence summed by goal, below the target threshold)",
+    "goal_label": "Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all",
+    "goal_uri": "http://data.europa.eu/sdg/4",
+    "level": "goal_only",
+    "score": 4.1,
+    "target_label": "(goal level only, no target above threshold)",
+    "target_uri": "(goal level only, no target above threshold)"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039657",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description",
+   "deliverable_descriptions"
+  ],
+  "title": "Using CARDIac simulations to run in-silicO clinical TRIALS"
+ },
+ "101039672": {
+  "acronym": "TEMPO",
+  "assignments": [
+   {
+    "confidence_band": "high",
+    "evidence": "title: \"mental health\" [key_term, 1.2] | title: \"mental health\" [synonym_subject, 2.4] | keywords: \"mental health\" [key_term, 1.2] | keywords: \"mental health\" [synonym_subject, 2.4] | objective: \"mental health\" [key_term, 1.0] | objective: \"mental health\" [synonym_subject, 2.0] | editorial_description: \"mental health\" [key_term, 1.0] | editorial_description: \"mental health\" [synonym_subject, 2.0]",
+    "goal_label": "Ensure healthy lives and promote well-being for all at all ages",
+    "goal_uri": "http://data.europa.eu/sdg/3",
+    "level": "target",
+    "score": 13.2,
+    "target_label": "By 2030, reduce by one third premature mortality from non-communicable diseases through prevention and treatment and promote mental health and well-being",
+    "target_uri": "http://data.europa.eu/sdg/3.4"
+   },
+   {
+    "confidence_band": "low",
+    "evidence": "title: \"child\" [key_term, 0.6] | keywords: \"child\" [key_term, 0.6] | objective: \"child\" [key_term, 0.5] | objective: \"early\" [key_term, 0.5] | editorial_description: \"child\" [key_term, 0.5] | editorial_description: \"early\" [key_term, 0.5]",
+    "goal_label": "Achieve gender equality and empower all women and girls",
+    "goal_uri": "http://data.europa.eu/sdg/5",
+    "level": "target",
+    "score": 3.2,
+    "target_label": "Eliminate all harmful practices, such as child, early and forced marriage and female genital mutilation",
+    "target_uri": "http://data.europa.eu/sdg/5.3"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039672",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description",
+   "deliverable_descriptions"
+  ],
+  "title": "Solving the 'time puzzle' of epigenetic effects on child mental health"
+ },
+ "101039676": {
+  "acronym": "DYNASTY",
+  "assignments": [
+   {
+    "confidence_band": "(not banded: section 3.6 bands target assignments)",
+    "evidence": "(evidence summed by goal, below the target threshold)",
+    "goal_label": "Ensure healthy lives and promote well-being for all at all ages",
+    "goal_uri": "http://data.europa.eu/sdg/3",
+    "level": "goal_only",
+    "score": 2.5,
+    "target_label": "(goal level only, no target above threshold)",
+    "target_uri": "(goal level only, no target above threshold)"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039676",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description",
+   "deliverable_descriptions"
+  ],
+  "title": "Dynamics-Aware Theory of Deep Learning"
+ },
+ "101039683": {
+  "acronym": "PROMETHEUS",
+  "assignments": [
+   {
+    "confidence_band": "(not banded: section 3.6 bands target assignments)",
+    "evidence": "(evidence summed by goal, below the target threshold)",
+    "goal_label": "Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all",
+    "goal_uri": "http://data.europa.eu/sdg/4",
+    "level": "goal_only",
+    "score": 2.6,
+    "target_label": "(goal level only, no target above threshold)",
+    "target_uri": "(goal level only, no target above threshold)"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039683",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "deliverable_descriptions"
+  ],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description"
+  ],
+  "title": "Engineering of Superfluorescent Nanocrystal Solids"
+ },
+ "101039692": {
+  "acronym": "GENERALIZATION",
+  "assignments": [
+   {
+    "confidence_band": "(not banded: section 3.6 bands target assignments)",
+    "evidence": "(evidence summed by goal, below the target threshold)",
+    "goal_label": "Strengthen the means of implementation and revitalize the Global Partnership for Sustainable Development",
+    "goal_uri": "http://data.europa.eu/sdg/17",
+    "level": "goal_only",
+    "score": 3.6,
+    "target_label": "(goal level only, no target above threshold)",
+    "target_uri": "(goal level only, no target above threshold)"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039692",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description",
+   "deliverable_descriptions"
+  ],
+  "title": "Modern Challenges in Learning Theory"
+ },
+ "101039706": {
+  "acronym": "MOBY-FLY",
+  "assignments": [],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039706",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "deliverable_descriptions"
+  ],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description"
+  ],
+  "title": "Circuit mechanisms of behavioural variability in Drosophila flight."
+ },
+ "101039711": {
+  "acronym": "PEOPLE",
+  "assignments": [
+   {
+    "confidence_band": "medium",
+    "evidence": "objective: \"mountains\" [key_term, 0.5] | objective: \"wetlands\" [key_term, 0.5] | objective: \"wetlands\" [synonym_subject, 2.0] | objective: \"rivers\" [key_term, 0.5] | objective: \"lakes\" [key_term, 0.5] | editorial_description: \"mountains\" [key_term, 0.5] | editorial_description: \"wetlands\" [key_term, 0.5] | editorial_description: \"wetlands\" [synonym_subject, 2.0] | editorial_description: \"rivers\" [key_term, 0.5] | editorial_description: \"lakes\" [key_term, 0.5]",
+    "goal_label": "Ensure availability and sustainable management of water and sanitation for all",
+    "goal_uri": "http://data.europa.eu/sdg/6",
+    "level": "target",
+    "score": 8.0,
+    "target_label": "By 2020, protect and restore water-related ecosystems, including mountains, forests, wetlands, rivers, aquifers and lakes",
+    "target_uri": "http://data.europa.eu/sdg/6.6"
+   },
+   {
+    "confidence_band": "medium",
+    "evidence": "objective: \"mountains\" [key_term, 0.5] | objective: \"wetlands\" [key_term, 0.5] | objective: \"wetlands\" [synonym_subject, 2.0] | editorial_description: \"mountains\" [key_term, 0.5] | editorial_description: \"wetlands\" [key_term, 0.5] | editorial_description: \"wetlands\" [synonym_subject, 2.0]",
+    "goal_label": "Protect, restore and promote sustainable use of terrestrial ecosystems, sustainably manage forests, combat desertification, and halt and reverse land degradation and halt biodiversity loss",
+    "goal_uri": "http://data.europa.eu/sdg/15",
+    "level": "target",
+    "score": 6.0,
+    "target_label": "By 2020, ensure the conservation, restoration and sustainable use of terrestrial and inland freshwater ecosystems and their services, in particular forests, wetlands, mountains and drylands, in line with obligations under international agreements",
+    "target_uri": "http://data.europa.eu/sdg/15.1"
+   },
+   {
+    "confidence_band": "low",
+    "evidence": "keywords: \"human\" [key_term, 0.6] | objective: \"human\" [key_term, 0.5] | objective: \"adaptation\" [key_term, 0.5] | editorial_description: \"human\" [key_term, 0.5] | editorial_description: \"adaptation\" [key_term, 0.5] | eurosciwoc_categories: natural sciences/earth and related environmental sciences/atmospheric sciences/climatology/climatic changes [crosswalk contributing, 1.5]",
+    "goal_label": "Take urgent action to combat climate change and its impacts",
+    "goal_uri": "http://data.europa.eu/sdg/13",
+    "level": "target",
+    "score": 4.1,
+    "target_label": "Improve education, awareness-raising and human and institutional capacity on climate change mitigation, adaptation, impact reduction and early warning",
+    "target_uri": "http://data.europa.eu/sdg/13.3"
+   },
+   {
+    "confidence_band": "low",
+    "evidence": "eurosciwoc_categories: natural sciences/earth and related environmental sciences/atmospheric sciences/climatology/climatic changes [crosswalk direct, 3.0]",
+    "goal_label": "Take urgent action to combat climate change and its impacts",
+    "goal_uri": "http://data.europa.eu/sdg/13",
+    "level": "target",
+    "score": 3.0,
+    "target_label": "Strengthen resilience and adaptive capacity to climate-related hazards and natural disasters in all countries",
+    "target_uri": "http://data.europa.eu/sdg/13.1"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039711",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description",
+   "deliverable_descriptions"
+  ],
+  "title": "PalaeoEcology and OPen-LandscapE adaptations of Pleistocene humans in South Africa"
+ },
+ "101039712": {
+  "acronym": "COREDIM",
+  "assignments": [
+   {
+    "confidence_band": "(not banded: section 3.6 bands target assignments)",
+    "evidence": "(evidence summed by goal, below the target threshold)",
+    "goal_label": "Strengthen the means of implementation and revitalize the Global Partnership for Sustainable Development",
+    "goal_uri": "http://data.europa.eu/sdg/17",
+    "level": "goal_only",
+    "score": 2.0,
+    "target_label": "(goal level only, no target above threshold)",
+    "target_uri": "(goal level only, no target above threshold)"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039712",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "deliverable_descriptions"
+  ],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description"
+  ],
+  "title": "Uncovering the core dimensions of visual object representations"
+ },
+ "101039716": {
+  "acronym": "MYCO-SoilC",
+  "assignments": [
+   {
+    "confidence_band": "low",
+    "evidence": "eurosciwoc_categories: natural sciences/earth and related environmental sciences/atmospheric sciences/climatology/climatic changes [crosswalk direct, 3.0]",
+    "goal_label": "Take urgent action to combat climate change and its impacts",
+    "goal_uri": "http://data.europa.eu/sdg/13",
+    "level": "target",
+    "score": 3.0,
+    "target_label": "Strengthen resilience and adaptive capacity to climate-related hazards and natural disasters in all countries",
+    "target_uri": "http://data.europa.eu/sdg/13.1"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039716",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description",
+   "deliverable_descriptions"
+  ],
+  "title": "Mycorrhizal Types and Soil Carbon Storage:  A mechanistic theory of fungal mediated soil organic matter cycling in temperate forests"
+ },
+ "101039734": {
+  "acronym": "MemoPlasticGenomics",
+  "assignments": [],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039734",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description",
+   "deliverable_descriptions"
+  ],
+  "title": "Epigenetic and transcriptional basis of memory engram plasticity"
+ },
+ "101039746": {
+  "acronym": "WEPOF",
+  "assignments": [
+   {
+    "confidence_band": "high",
+    "evidence": "objective: \"solar energy\" [synonym_domain, 1.5] | editorial_description: \"solar energy\" [synonym_domain, 1.5] | eurosciwoc_categories: engineering and technology/environmental engineering/energy and fuels/renewable energy/solar energy [crosswalk direct, 3.0]",
+    "goal_label": "Ensure access to affordable, reliable, sustainable and modern energy for all",
+    "goal_uri": "http://data.europa.eu/sdg/7",
+    "level": "target",
+    "score": 6.0,
+    "target_label": "By 2030, increase substantially the share of renewable energy in the global energy mix",
+    "target_uri": "http://data.europa.eu/sdg/7.2"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039746",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "keywords"
+  ],
+  "sources_present": [
+   "title",
+   "objective",
+   "editorial_description",
+   "deliverable_descriptions"
+  ],
+  "title": "Watching Excitons in Photoactive Organic Frameworks"
+ },
+ "101039748": {
+  "acronym": "ELECTROCOFS",
+  "assignments": [],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039748",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description",
+   "deliverable_descriptions"
+  ],
+  "title": "Molecular Design of Electrically Conductive Covalent Organic Frameworks as Efficient Electrodes for Lithium-Ion Batteries"
+ },
+ "101039754": {
+  "acronym": "CHIROTRONICS",
+  "assignments": [
+   {
+    "confidence_band": "(not banded: section 3.6 bands target assignments)",
+    "evidence": "(evidence summed by goal, below the target threshold)",
+    "goal_label": "Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all",
+    "goal_uri": "http://data.europa.eu/sdg/4",
+    "level": "goal_only",
+    "score": 4.0,
+    "target_label": "(goal level only, no target above threshold)",
+    "target_uri": "(goal level only, no target above threshold)"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039754",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "deliverable_descriptions"
+  ],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description"
+  ],
+  "title": "Controlling chirality in atomically thin quantum electronic materials"
+ },
+ "101039756": {
+  "acronym": "X-HEP",
+  "assignments": [],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039756",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "keywords",
+   "deliverable_descriptions"
+  ],
+  "sources_present": [
+   "title",
+   "objective",
+   "editorial_description"
+  ],
+  "title": "Exotic High Energy Phenomenology"
+ },
+ "101039758": {
+  "acronym": "DigID",
+  "assignments": [
+   {
+    "confidence_band": "high",
+    "evidence": "keywords: \"legal identity\" [key_term, 1.2] | keywords: \"legal identity\" [synonym_subject, 2.4] | objective: \"birth registration\" [key_term, 1.0] | objective: \"birth registration\" [synonym_subject, 2.0] | editorial_description: \"Birth registration\" [key_term, 1.0] | editorial_description: \"Birth registration\" [synonym_subject, 2.0]",
+    "goal_label": "Promote peaceful and inclusive societies for sustainable development, provide access to justice for all and build effective, accountable and inclusive institutions at all levels",
+    "goal_uri": "http://data.europa.eu/sdg/16",
+    "level": "target",
+    "score": 9.6,
+    "target_label": "By 2030, provide legal identity for all, including birth registration",
+    "target_uri": "http://data.europa.eu/sdg/16.9"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039758",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "deliverable_descriptions"
+  ],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description"
+  ],
+  "title": "DigID - Doing Digital Identities"
+ },
+ "101039760": {
+  "acronym": "ChloroMosaic",
+  "assignments": [
+   {
+    "confidence_band": "(not banded: section 3.6 bands target assignments)",
+    "evidence": "(evidence summed by goal, below the target threshold)",
+    "goal_label": "Make cities and human settlements inclusive, safe, resilient and sustainable",
+    "goal_uri": "http://data.europa.eu/sdg/11",
+    "level": "goal_only",
+    "score": 2.5,
+    "target_label": "(goal level only, no target above threshold)",
+    "target_uri": "(goal level only, no target above threshold)"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039760",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description",
+   "deliverable_descriptions"
+  ],
+  "title": "Environmentally-informed functional characterisation of the secondary red chloroplast proteome"
+ },
+ "101039762": {
+  "acronym": "HamDyWWa",
+  "assignments": [],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039762",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "deliverable_descriptions"
+  ],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description"
+  ],
+  "title": "Hamiltonian Dynamics, Normal Forms and Water Waves"
+ },
+ "101039764": {
+  "acronym": "NeuFRO",
+  "assignments": [],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039764",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "editorial_description",
+   "deliverable_descriptions"
+  ],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective"
+  ],
+  "title": "Inducing functionality in retinal organoids with electrical activities derived from developing retina"
+ },
+ "101039777": {
+  "acronym": "ABSTRACTION",
+  "assignments": [
+   {
+    "confidence_band": "(not banded: section 3.6 bands target assignments)",
+    "evidence": "(evidence summed by goal, below the target threshold)",
+    "goal_label": "Ensure healthy lives and promote well-being for all at all ages",
+    "goal_uri": "http://data.europa.eu/sdg/3",
+    "level": "goal_only",
+    "score": 3.5,
+    "target_label": "(goal level only, no target above threshold)",
+    "target_uri": "(goal level only, no target above threshold)"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039777",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description",
+   "deliverable_descriptions"
+  ],
+  "title": "Abstraction. Unlocking meaning from experience, through language."
+ },
+ "101039782": {
+  "acronym": "Dreamscape",
+  "assignments": [
+   {
+    "confidence_band": "(not banded: section 3.6 bands target assignments)",
+    "evidence": "(evidence summed by goal, below the target threshold)",
+    "goal_label": "Build resilient infrastructure, promote inclusive and sustainable industrialization and foster innovation",
+    "goal_uri": "http://data.europa.eu/sdg/9",
+    "level": "goal_only",
+    "score": 2.0,
+    "target_label": "(goal level only, no target above threshold)",
+    "target_uri": "(goal level only, no target above threshold)"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039782",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "deliverable_descriptions"
+  ],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description"
+  ],
+  "title": "The Electrophysiological Landscape of Dreams"
+ },
+ "101039794": {
+  "acronym": "CHORAL",
+  "assignments": [
+   {
+    "confidence_band": "(not banded: section 3.6 bands target assignments)",
+    "evidence": "(evidence summed by goal, below the target threshold)",
+    "goal_label": "Ensure healthy lives and promote well-being for all at all ages",
+    "goal_uri": "http://data.europa.eu/sdg/3",
+    "level": "goal_only",
+    "score": 3.1,
+    "target_label": "(goal level only, no target above threshold)",
+    "target_uri": "(goal level only, no target above threshold)"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039794",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "deliverable_descriptions"
+  ],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description"
+  ],
+  "title": "Computational Hardness Of RepresentAtion Learning"
+ },
+ "101039795": {
+  "acronym": "SPACETWIN",
+  "assignments": [
+   {
+    "confidence_band": "low",
+    "evidence": "eurosciwoc_categories: engineering and technology/environmental engineering/remote sensing [crosswalk contributing, 1.5] | eurosciwoc_categories: natural sciences/earth and related environmental sciences/atmospheric sciences/climatology/climatic changes [crosswalk direct, 3.0]",
+    "goal_label": "Take urgent action to combat climate change and its impacts",
+    "goal_uri": "http://data.europa.eu/sdg/13",
+    "level": "target",
+    "score": 4.5,
+    "target_label": "Strengthen resilience and adaptive capacity to climate-related hazards and natural disasters in all countries",
+    "target_uri": "http://data.europa.eu/sdg/13.1"
+   },
+   {
+    "confidence_band": "low",
+    "evidence": "eurosciwoc_categories: agricultural sciences/agriculture, forestry, and fisheries/forestry [crosswalk direct, 3.0]",
+    "goal_label": "Protect, restore and promote sustainable use of terrestrial ecosystems, sustainably manage forests, combat desertification, and halt and reverse land degradation and halt biodiversity loss",
+    "goal_uri": "http://data.europa.eu/sdg/15",
+    "level": "target",
+    "score": 3.0,
+    "target_label": "By 2020, promote the implementation of sustainable management of all types of forests, halt deforestation, restore degraded forests and substantially increase afforestation and reforestation globally",
+    "target_uri": "http://data.europa.eu/sdg/15.2"
+   },
+   {
+    "confidence_band": "low",
+    "evidence": "objective: \"climate change\" [key_term, 1.0] | objective: \"drought\" [key_term, 0.5] | editorial_description: \"climate change\" [key_term, 1.0] | editorial_description: \"drought\" [key_term, 0.5]",
+    "goal_label": "End hunger, achieve food security and improved nutrition and promote sustainable agriculture",
+    "goal_uri": "http://data.europa.eu/sdg/2",
+    "level": "target",
+    "score": 3.0,
+    "target_label": "By 2030, ensure sustainable food production systems and implement resilient agricultural practices that increase productivity and production, that help maintain ecosystems, that strengthen capacity for adaptation to climate change, extreme weather, drought, flooding and other disasters and that progressively improve land and soil quality",
+    "target_uri": "http://data.europa.eu/sdg/2.4"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039795",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description",
+   "deliverable_descriptions"
+  ],
+  "title": "Digital twins for understanding forest disturbances and recovery from space"
+ },
+ "101039802": {
+  "acronym": "SMADBINS",
+  "assignments": [
+   {
+    "confidence_band": "(not banded: section 3.6 bands target assignments)",
+    "evidence": "(evidence summed by goal, below the target threshold)",
+    "goal_label": "Ensure access to affordable, reliable, sustainable and modern energy for all",
+    "goal_uri": "http://data.europa.eu/sdg/7",
+    "level": "goal_only",
+    "score": 3.0,
+    "target_label": "(goal level only, no target above threshold)",
+    "target_uri": "(goal level only, no target above threshold)"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039802",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description",
+   "deliverable_descriptions"
+  ],
+  "title": "Smart Dust Batteries Integrated with Near-Zero-Power Surveillance"
+ },
+ "101039804": {
+  "acronym": "ESIP-RM",
+  "assignments": [
+   {
+    "confidence_band": "medium",
+    "evidence": "objective: \"desalination\" [key_term, 0.5] | objective: \"desalination\" [synonym_subject, 2.0] | editorial_description: \"desalination\" [key_term, 0.5] | editorial_description: \"desalination\" [synonym_subject, 2.0]",
+    "goal_label": "Ensure availability and sustainable management of water and sanitation for all",
+    "goal_uri": "http://data.europa.eu/sdg/6",
+    "level": "target",
+    "score": 5.0,
+    "target_label": "By 2030, expand international cooperation and capacity-building support to developing countries in water- and sanitation-related activities and programmes, including water harvesting, desalination, water efficiency, wastewater treatment, recycling and reuse technologies",
+    "target_uri": "http://data.europa.eu/sdg/6.a"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039804",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "deliverable_descriptions"
+  ],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description"
+  ],
+  "title": "Efficient & Selective Ion Pumps based on Ratchet Mechanisms"
+ },
+ "101039805": {
+  "acronym": "LIVE-AR",
+  "assignments": [
+   {
+    "confidence_band": "(not banded: section 3.6 bands target assignments)",
+    "evidence": "(evidence summed by goal, below the target threshold)",
+    "goal_label": "Reduce inequality within and among countries",
+    "goal_uri": "http://data.europa.eu/sdg/10",
+    "level": "goal_only",
+    "score": 3.6,
+    "target_label": "(goal level only, no target above threshold)",
+    "target_uri": "(goal level only, no target above threshold)"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039805",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "deliverable_descriptions"
+  ],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description"
+  ],
+  "title": "The subsequent lives of Arab revolutionaries"
+ },
+ "101039824": {
+  "acronym": "R-ELEVATION",
+  "assignments": [
+   {
+    "confidence_band": "low",
+    "evidence": "editorial_description: \"knowledge\" [key_term, 0.5] | editorial_description: \"markets\" [key_term, 0.5] | eurosciwoc_categories: agricultural sciences/agriculture, forestry, and fisheries/agriculture/agronomy/plant breeding [crosswalk direct, 3.0]",
+    "goal_label": "End hunger, achieve food security and improved nutrition and promote sustainable agriculture",
+    "goal_uri": "http://data.europa.eu/sdg/2",
+    "level": "target",
+    "score": 4.0,
+    "target_label": "By 2030, double the agricultural productivity and incomes of small-scale food producers, in particular women, indigenous peoples, family farmers, pastoralists and fishers, including through secure and equal access to land, other productive resources and inputs, knowledge, financial services, markets and opportunities for value addition and non-farm employment",
+    "target_uri": "http://data.europa.eu/sdg/2.3"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039824",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description",
+   "deliverable_descriptions"
+  ],
+  "title": "Unravelling novel mechanisms of defense gene activation: a gateway to elevate disease resistance in plants"
+ },
+ "101039827": {
+  "acronym": "HIGH-HOPeS",
+  "assignments": [],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039827",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "deliverable_descriptions"
+  ],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description"
+  ],
+  "title": "Higher-Order Hodge Laplacians for Processing of multi-way Signals"
+ },
+ "101039841": {
+  "acronym": "DEBUGGING-LPS",
+  "assignments": [
+   {
+    "confidence_band": "(not banded: section 3.6 bands target assignments)",
+    "evidence": "(evidence summed by goal, below the target threshold)",
+    "goal_label": "Ensure sustainable consumption and production patterns",
+    "goal_uri": "http://data.europa.eu/sdg/12",
+    "level": "goal_only",
+    "score": 2.5,
+    "target_label": "(goal level only, no target above threshold)",
+    "target_uri": "(goal level only, no target above threshold)"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039841",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "deliverable_descriptions"
+  ],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description"
+  ],
+  "title": "Deciphering and Exploiting the chemical features of Silent Lipopolysaccharides: a gift from gut microbiota"
+ },
+ "101039843": {
+  "acronym": "CHIMERA",
+  "assignments": [
+   {
+    "confidence_band": "(not banded: section 3.6 bands target assignments)",
+    "evidence": "(evidence summed by goal, below the target threshold)",
+    "goal_label": "Ensure sustainable consumption and production patterns",
+    "goal_uri": "http://data.europa.eu/sdg/12",
+    "level": "goal_only",
+    "score": 2.0,
+    "target_label": "(goal level only, no target above threshold)",
+    "target_uri": "(goal level only, no target above threshold)"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039843",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description",
+   "deliverable_descriptions"
+  ],
+  "title": "The sympatric lifestyle of giant viruses: contact tracing and fitness through mobile genetic elements"
+ },
+ "101039844": {
+  "acronym": "ORIGIN",
+  "assignments": [],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039844",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description",
+   "deliverable_descriptions"
+  ],
+  "title": "Resolving magnetic ORIGINs of the hot solar atmosphere"
+ },
+ "101039854": {
+  "acronym": "TRACE-it",
+  "assignments": [
+   {
+    "confidence_band": "(not banded: section 3.6 bands target assignments)",
+    "evidence": "(evidence summed by goal, below the target threshold)",
+    "goal_label": "Take urgent action to combat climate change and its impacts",
+    "goal_uri": "http://data.europa.eu/sdg/13",
+    "level": "goal_only",
+    "score": 2.1,
+    "target_label": "(goal level only, no target above threshold)",
+    "target_uri": "(goal level only, no target above threshold)"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039854",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "deliverable_descriptions"
+  ],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description"
+  ],
+  "title": "Controlling particle flow driven by local concentration gradients in geological porous media"
+ },
+ "101039862": {
+  "acronym": "VenomEvolvability",
+  "assignments": [],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039862",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description",
+   "deliverable_descriptions"
+  ],
+  "title": "Lacewing venom: Linking the molecular and phenotypic evolution of adaptive traits"
+ },
+ "101039864": {
+  "acronym": "ECura",
+  "assignments": [
+   {
+    "confidence_band": "low",
+    "evidence": "objective: \"cultural heritage\" [synonym_subject, 2.0] | editorial_description: \"cultural heritage\" [synonym_subject, 2.0]",
+    "goal_label": "Make cities and human settlements inclusive, safe, resilient and sustainable",
+    "goal_uri": "http://data.europa.eu/sdg/11",
+    "level": "target",
+    "score": 4.0,
+    "target_label": "Strengthen efforts to protect and safeguard the world’s cultural and natural heritage",
+    "target_uri": "http://data.europa.eu/sdg/11.4"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039864",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "deliverable_descriptions"
+  ],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description"
+  ],
+  "title": "Everyone's a Curator: Digitally Empowering Ethnic Minority Music Sustainability in China"
+ },
+ "101039890": {
+  "acronym": "ELECTRA",
+  "assignments": [],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039890",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "deliverable_descriptions"
+  ],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description"
+  ],
+  "title": "ELEctrically ConTRolled magnetic Anisotropy"
+ },
+ "101039904": {
+  "acronym": "EXILED-EMPIRICISTS",
+  "assignments": [],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039904",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "deliverable_descriptions"
+  ],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description"
+  ],
+  "title": "Exiled Empiricists:  American Philosophy and the Great Intellectual Migration"
+ },
+ "101039913": {
+  "acronym": "PARAPATH",
+  "assignments": [],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039913",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description",
+   "deliverable_descriptions"
+  ],
+  "title": "Parameterized Complexity Through the Lens of Path Problems"
+ },
+ "101039914": {
+  "acronym": "CODY",
+  "assignments": [
+   {
+    "confidence_band": "(not banded: section 3.6 bands target assignments)",
+    "evidence": "(evidence summed by goal, below the target threshold)",
+    "goal_label": "Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all",
+    "goal_uri": "http://data.europa.eu/sdg/4",
+    "level": "goal_only",
+    "score": 2.0,
+    "target_label": "(goal level only, no target above threshold)",
+    "target_uri": "(goal level only, no target above threshold)"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039914",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "deliverable_descriptions"
+  ],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description"
+  ],
+  "title": "The Complexity of Dynamic Matrix Problems"
+ },
+ "101039920": {
+  "acronym": "AFREXTRACT",
+  "assignments": [
+   {
+    "confidence_band": "low",
+    "evidence": "eurosciwoc_categories: natural sciences/earth and related environmental sciences/atmospheric sciences/climatology/climatic changes [crosswalk direct, 3.0]",
+    "goal_label": "Take urgent action to combat climate change and its impacts",
+    "goal_uri": "http://data.europa.eu/sdg/13",
+    "level": "target",
+    "score": 3.0,
+    "target_label": "Strengthen resilience and adaptive capacity to climate-related hazards and natural disasters in all countries",
+    "target_uri": "http://data.europa.eu/sdg/13.1"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039920",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description",
+   "deliverable_descriptions"
+  ],
+  "title": "Environmental Histories of Resource Extraction in Africa: Understanding Cultural and Political Responses to Environmental Transformation"
+ },
+ "101039927": {
+  "acronym": "GCMech",
+  "assignments": [
+   {
+    "confidence_band": "(not banded: section 3.6 bands target assignments)",
+    "evidence": "(evidence summed by goal, below the target threshold)",
+    "goal_label": "Ensure sustainable consumption and production patterns",
+    "goal_uri": "http://data.europa.eu/sdg/12",
+    "level": "goal_only",
+    "score": 3.0,
+    "target_label": "(goal level only, no target above threshold)",
+    "target_uri": "(goal level only, no target above threshold)"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039927",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description",
+   "deliverable_descriptions"
+  ],
+  "title": "Determining the mechanisms behind goblet cell dysfunction"
+ },
+ "101039928": {
+  "acronym": "EnhanceSex",
+  "assignments": [
+   {
+    "confidence_band": "(not banded: section 3.6 bands target assignments)",
+    "evidence": "(evidence summed by goal, below the target threshold)",
+    "goal_label": "Reduce inequality within and among countries",
+    "goal_uri": "http://data.europa.eu/sdg/10",
+    "level": "goal_only",
+    "score": 3.8,
+    "target_label": "(goal level only, no target above threshold)",
+    "target_uri": "(goal level only, no target above threshold)"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039928",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description",
+   "deliverable_descriptions"
+  ],
+  "title": "Deciphering Gene Regulatory Networks governing Mammalian Sex Determination"
+ },
+ "101039945": {
+  "acronym": "PhotoTherEpi",
+  "assignments": [
+   {
+    "confidence_band": "high",
+    "evidence": "objective: \"diabetes\" [synonym_domain, 1.5] | objective: \"cancer\" [synonym_domain, 1.5] | editorial_description: \"treatment\" [key_term, 0.5] | editorial_description: \"diabetes\" [synonym_domain, 1.5] | editorial_description: \"cancer\" [synonym_domain, 1.5] | eurosciwoc_categories: medical and health sciences/clinical medicine/oncology [crosswalk direct, 3.0]",
+    "goal_label": "Ensure healthy lives and promote well-being for all at all ages",
+    "goal_uri": "http://data.europa.eu/sdg/3",
+    "level": "target",
+    "score": 9.5,
+    "target_label": "By 2030, reduce by one third premature mortality from non-communicable diseases through prevention and treatment and promote mental health and well-being",
+    "target_uri": "http://data.europa.eu/sdg/3.4"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039945",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "deliverable_descriptions"
+  ],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description"
+  ],
+  "title": "Targeting epilepsy with phototherapeutics"
+ },
+ "101039953": {
+  "acronym": "INDIGO",
+  "assignments": [],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039953",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "deliverable_descriptions"
+  ],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description"
+  ],
+  "title": "Developing an inductive spectrometer for electron paramagnetic resonance detection and imaging at the micron scale using superconducting quantum circuits."
+ },
+ "101039986": {
+  "acronym": "MottSwitch",
+  "assignments": [
+   {
+    "confidence_band": "low",
+    "evidence": "objective: \"energy efficiency\" [synonym_subject, 2.0] | editorial_description: \"energy efficiency\" [synonym_subject, 2.0]",
+    "goal_label": "Ensure access to affordable, reliable, sustainable and modern energy for all",
+    "goal_uri": "http://data.europa.eu/sdg/7",
+    "level": "target",
+    "score": 4.0,
+    "target_label": "By 2030, double the global rate of improvement in energy efficiency",
+    "target_uri": "http://data.europa.eu/sdg/7.3"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039986",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description",
+   "deliverable_descriptions"
+  ],
+  "title": "Highly Energy-Efficient Resistive Switching in Defect- and Strain- Engineered Mott Insulators for Neuromorphic Computing Applications"
+ },
+ "101039994": {
+  "acronym": "MLCat",
+  "assignments": [
+   {
+    "confidence_band": "(not banded: section 3.6 bands target assignments)",
+    "evidence": "(evidence summed by goal, below the target threshold)",
+    "goal_label": "Promote sustained, inclusive and sustainable economic growth, full and productive employment and decent work for all",
+    "goal_uri": "http://data.europa.eu/sdg/8",
+    "level": "goal_only",
+    "score": 3.0,
+    "target_label": "(goal level only, no target above threshold)",
+    "target_uri": "(goal level only, no target above threshold)"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039994",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "deliverable_descriptions"
+  ],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description"
+  ],
+  "title": "Multifunctional Ligands for Enhanced Catalysis"
+ },
+ "101039995": {
+  "acronym": "REGENECREST",
+  "assignments": [
+   {
+    "confidence_band": "(not banded: section 3.6 bands target assignments)",
+    "evidence": "(evidence summed by goal, below the target threshold)",
+    "goal_label": "Ensure healthy lives and promote well-being for all at all ages",
+    "goal_uri": "http://data.europa.eu/sdg/3",
+    "level": "goal_only",
+    "score": 2.0,
+    "target_label": "(goal level only, no target above threshold)",
+    "target_uri": "(goal level only, no target above threshold)"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039995",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "deliverable_descriptions"
+  ],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description"
+  ],
+  "title": "Enhancing endogenous regenerative response in mammals by redeploying Cranial Neural Crest Cells pluripotency developmental programs and positional identity remodeling"
+ },
+ "101039998": {
+  "acronym": "UnderPressure",
+  "assignments": [
+   {
+    "confidence_band": "high",
+    "evidence": "keywords: \"cancer\" [synonym_domain, 1.8] | objective: \"cancer\" [synonym_domain, 1.5] | editorial_description: \"cancer\" [synonym_domain, 1.5] | eurosciwoc_categories: medical and health sciences/clinical medicine/oncology [crosswalk direct, 3.0]",
+    "goal_label": "Ensure healthy lives and promote well-being for all at all ages",
+    "goal_uri": "http://data.europa.eu/sdg/3",
+    "level": "target",
+    "score": 7.8,
+    "target_label": "By 2030, reduce by one third premature mortality from non-communicable diseases through prevention and treatment and promote mental health and well-being",
+    "target_uri": "http://data.europa.eu/sdg/3.4"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101039998",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description",
+   "deliverable_descriptions"
+  ],
+  "title": "Elucidating the phenotypic convergence of proliferation reduction under growth-induced pressure"
+ }
+}

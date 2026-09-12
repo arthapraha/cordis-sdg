@@ -1,0 +1,940 @@
+{
+ "190190195": {
+  "acronym": "iSPLASH",
+  "assignments": [
+   {
+    "confidence_band": "low",
+    "evidence": "eurosciwoc_categories: engineering and technology/environmental engineering/energy and fuels/renewable energy/solar energy/photovoltaic [crosswalk direct, 3.0]",
+    "goal_label": "Ensure access to affordable, reliable, sustainable and modern energy for all",
+    "goal_uri": "http://data.europa.eu/sdg/7",
+    "level": "target",
+    "score": 3.0,
+    "target_label": "By 2030, increase substantially the share of renewable energy in the global energy mix",
+    "target_uri": "http://data.europa.eu/sdg/7.2"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "190190195",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description",
+   "deliverable_descriptions"
+  ],
+  "title": "Industrial Selective PLAting for Solar Heterojunction"
+ },
+ "190190711": {
+  "acronym": "Forest Maker",
+  "assignments": [
+   {
+    "confidence_band": "high",
+    "evidence": "keywords: \"Reforestation\" [synonym_subject, 2.4] | objective: \"reforestation\" [synonym_subject, 2.0] | objective: \"deforestation\" [synonym_subject, 2.0] | editorial_description: \"reforestation\" [synonym_subject, 2.0] | eurosciwoc_categories: agricultural sciences/agriculture, forestry, and fisheries/forestry [crosswalk direct, 3.0]",
+    "goal_label": "Protect, restore and promote sustainable use of terrestrial ecosystems, sustainably manage forests, combat desertification, and halt and reverse land degradation and halt biodiversity loss",
+    "goal_uri": "http://data.europa.eu/sdg/15",
+    "level": "target",
+    "score": 11.4,
+    "target_label": "By 2020, promote the implementation of sustainable management of all types of forests, halt deforestation, restore degraded forests and substantially increase afforestation and reforestation globally",
+    "target_uri": "http://data.europa.eu/sdg/15.2"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "190190711",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "deliverable_descriptions"
+  ],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description"
+  ],
+  "title": "Autoforestation Mode: ON"
+ },
+ "190190768": {
+  "acronym": "AI-driven cardiac ultrasound analysis",
+  "assignments": [
+   {
+    "confidence_band": "(not banded: section 3.6 bands target assignments)",
+    "evidence": "(evidence summed by goal, below the target threshold)",
+    "goal_label": "Ensure healthy lives and promote well-being for all at all ages",
+    "goal_uri": "http://data.europa.eu/sdg/3",
+    "level": "goal_only",
+    "score": 2.5,
+    "target_label": "(goal level only, no target above threshold)",
+    "target_uri": "(goal level only, no target above threshold)"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "190190768",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description",
+   "deliverable_descriptions"
+  ],
+  "title": "AI-driven cardiac ultrasound analysis"
+ },
+ "190190785": {
+  "acronym": "STABILIS",
+  "assignments": [],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "190190785",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "deliverable_descriptions"
+  ],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description"
+  ],
+  "title": "Stabilis – Providing relief for tremor patients"
+ },
+ "190190885": {
+  "acronym": "CROCUS",
+  "assignments": [
+   {
+    "confidence_band": "(not banded: section 3.6 bands target assignments)",
+    "evidence": "(evidence summed by goal, below the target threshold)",
+    "goal_label": "Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all",
+    "goal_uri": "http://data.europa.eu/sdg/4",
+    "level": "goal_only",
+    "score": 2.1,
+    "target_label": "(goal level only, no target above threshold)",
+    "target_uri": "(goal level only, no target above threshold)"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "190190885",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "deliverable_descriptions"
+  ],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description"
+  ],
+  "title": "Coherent Rapid Optical Communication Under the Stratosphere"
+ },
+ "190191356": {
+  "acronym": "BMAI",
+  "assignments": [
+   {
+    "confidence_band": "high",
+    "evidence": "title: \"Cancer\" [synonym_domain, 1.8] | objective: \"cancer\" [synonym_domain, 1.5] | editorial_description: \"treatment\" [key_term, 0.5] | editorial_description: \"cancer\" [synonym_domain, 1.5] | eurosciwoc_categories: medical and health sciences/clinical medicine/oncology [crosswalk direct, 3.0]",
+    "goal_label": "Ensure healthy lives and promote well-being for all at all ages",
+    "goal_uri": "http://data.europa.eu/sdg/3",
+    "level": "target",
+    "score": 8.3,
+    "target_label": "By 2030, reduce by one third premature mortality from non-communicable diseases through prevention and treatment and promote mental health and well-being",
+    "target_uri": "http://data.europa.eu/sdg/3.4"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "190191356",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "keywords",
+   "deliverable_descriptions"
+  ],
+  "sources_present": [
+   "title",
+   "objective",
+   "editorial_description"
+  ],
+  "title": "Empowering Radiologists in Cancer Diagnostics with Artificial Intelligence"
+ },
+ "190191933": {
+  "acronym": "iFLUX",
+  "assignments": [
+   {
+    "confidence_band": "high",
+    "evidence": "keywords: \"contamination\" [key_term, 0.6] | keywords: \"contamination\" [synonym_subject, 2.4] | editorial_description: \"contamination\" [key_term, 0.5] | editorial_description: \"contamination\" [synonym_subject, 2.0] | eurosciwoc_categories: natural sciences/earth and related environmental sciences/environmental sciences/pollution [crosswalk direct, 3.0]",
+    "goal_label": "Ensure healthy lives and promote well-being for all at all ages",
+    "goal_uri": "http://data.europa.eu/sdg/3",
+    "level": "target",
+    "score": 8.5,
+    "target_label": "By 2030, substantially reduce the number of deaths and illnesses from hazardous chemicals and air, water and soil pollution and contamination",
+    "target_uri": "http://data.europa.eu/sdg/3.9"
+   },
+   {
+    "confidence_band": "low",
+    "evidence": "keywords: \"Water quality\" [synonym_subject, 2.4] | editorial_description: \"water quality\" [synonym_subject, 2.0]",
+    "goal_label": "Ensure availability and sustainable management of water and sanitation for all",
+    "goal_uri": "http://data.europa.eu/sdg/6",
+    "level": "target",
+    "score": 4.4,
+    "target_label": "By 2030, improve water quality by reducing pollution, eliminating dumping and minimizing release of hazardous chemicals and materials, halving the proportion of untreated wastewater and substantially increasing recycling and safe reuse globally",
+    "target_uri": "http://data.europa.eu/sdg/6.3"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "190191933",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "deliverable_descriptions"
+  ],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description"
+  ],
+  "title": "Real-time flow and flux measurements for combating groundwater supply and pollution."
+ },
+ "190191982": {
+  "acronym": "SKYFORA",
+  "assignments": [
+   {
+    "confidence_band": "low",
+    "evidence": "objective: \"climate change\" [key_term, 1.0] | editorial_description: \"climate change\" [key_term, 1.0] | editorial_description: \"disaster risk management\" [key_term, 1.0]",
+    "goal_label": "Make cities and human settlements inclusive, safe, resilient and sustainable",
+    "goal_uri": "http://data.europa.eu/sdg/11",
+    "level": "target",
+    "score": 3.0,
+    "target_label": "By 2020, substantially increase the number of cities and human settlements adopting and implementing integrated policies and plans towards inclusion, resource efficiency, mitigation and adaptation to climate change, resilience to disasters, and develop and implement, in line with the Sendai Framework for Disaster Risk Reduction 2015–2030, holistic disaster risk management at all levels",
+    "target_uri": "http://data.europa.eu/sdg/11.b"
+   },
+   {
+    "confidence_band": "low",
+    "evidence": "eurosciwoc_categories: natural sciences/earth and related environmental sciences/atmospheric sciences/climatology/climatic changes [crosswalk direct, 3.0]",
+    "goal_label": "Take urgent action to combat climate change and its impacts",
+    "goal_uri": "http://data.europa.eu/sdg/13",
+    "level": "target",
+    "score": 3.0,
+    "target_label": "Strengthen resilience and adaptive capacity to climate-related hazards and natural disasters in all countries",
+    "target_uri": "http://data.europa.eu/sdg/13.1"
+   },
+   {
+    "confidence_band": "low",
+    "evidence": "objective: \"climate change\" [key_term, 1.0] | objective: \"extreme weather\" [key_term, 1.0] | editorial_description: \"climate change\" [key_term, 1.0]",
+    "goal_label": "End hunger, achieve food security and improved nutrition and promote sustainable agriculture",
+    "goal_uri": "http://data.europa.eu/sdg/2",
+    "level": "target",
+    "score": 3.0,
+    "target_label": "By 2030, ensure sustainable food production systems and implement resilient agricultural practices that increase productivity and production, that help maintain ecosystems, that strengthen capacity for adaptation to climate change, extreme weather, drought, flooding and other disasters and that progressively improve land and soil quality",
+    "target_uri": "http://data.europa.eu/sdg/2.4"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "190191982",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "deliverable_descriptions"
+  ],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description"
+  ],
+  "title": "Next-generation weather intelligence for more accurate decision making throughout the economy"
+ },
+ "190192260": {
+  "acronym": "AORTYX",
+  "assignments": [],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "190192260",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "deliverable_descriptions"
+  ],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description"
+  ],
+  "title": "Revolutionary vascular repair patch to treat aortic dissections"
+ },
+ "190192897": {
+  "acronym": "VMS - Vaginal Microbiome Screening",
+  "assignments": [
+   {
+    "confidence_band": "high",
+    "evidence": "keywords: \"treatment\" [key_term, 0.6] | objective: \"cancer\" [synonym_domain, 1.5] | editorial_description: \"treatment\" [key_term, 0.5] | editorial_description: \"cancer\" [synonym_domain, 1.5] | eurosciwoc_categories: medical and health sciences/clinical medicine/oncology [crosswalk direct, 3.0]",
+    "goal_label": "Ensure healthy lives and promote well-being for all at all ages",
+    "goal_uri": "http://data.europa.eu/sdg/3",
+    "level": "target",
+    "score": 7.1,
+    "target_label": "By 2030, reduce by one third premature mortality from non-communicable diseases through prevention and treatment and promote mental health and well-being",
+    "target_uri": "http://data.europa.eu/sdg/3.4"
+   },
+   {
+    "confidence_band": "low",
+    "evidence": "eurosciwoc_categories: medical and health sciences/clinical medicine/obstetrics [crosswalk direct, 3.0]",
+    "goal_label": "Ensure healthy lives and promote well-being for all at all ages",
+    "goal_uri": "http://data.europa.eu/sdg/3",
+    "level": "target",
+    "score": 3.0,
+    "target_label": "By 2030, reduce the global maternal mortality ratio to less than 70 per 100,000 live births",
+    "target_uri": "http://data.europa.eu/sdg/3.1"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "190192897",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "deliverable_descriptions"
+  ],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description"
+  ],
+  "title": "Commercialisation and scale up of a Vaginal Microbiome Screening service with a menstrual tampon collection device and a digital layer to provide diagnosis, disease risk evaluation and aftercare."
+ },
+ "190193416": {
+  "acronym": "RHINO",
+  "assignments": [
+   {
+    "confidence_band": "(not banded: section 3.6 bands target assignments)",
+    "evidence": "(evidence summed by goal, below the target threshold)",
+    "goal_label": "Ensure access to affordable, reliable, sustainable and modern energy for all",
+    "goal_uri": "http://data.europa.eu/sdg/7",
+    "level": "goal_only",
+    "score": 3.5,
+    "target_label": "(goal level only, no target above threshold)",
+    "target_uri": "(goal level only, no target above threshold)"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "190193416",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "deliverable_descriptions"
+  ],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description"
+  ],
+  "title": "Electric bReaker Hammer transforming the mIning aNd cOnstruction industries to zero-emission."
+ },
+ "190194105": {
+  "acronym": "ALA DIAGNOSTICS MS KIT",
+  "assignments": [
+   {
+    "confidence_band": "(not banded: section 3.6 bands target assignments)",
+    "evidence": "(evidence summed by goal, below the target threshold)",
+    "goal_label": "Strengthen the means of implementation and revitalize the Global Partnership for Sustainable Development",
+    "goal_uri": "http://data.europa.eu/sdg/17",
+    "level": "goal_only",
+    "score": 2.6,
+    "target_label": "(goal level only, no target above threshold)",
+    "target_uri": "(goal level only, no target above threshold)"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "190194105",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "deliverable_descriptions"
+  ],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description"
+  ],
+  "title": "Revolutionising the diagnosis of multiple Sclerosis with the first bioinformatic diagnostic kit that allows early detection with a simple blood test"
+ },
+ "190194936": {
+  "acronym": "ACROBAT",
+  "assignments": [
+   {
+    "confidence_band": "(not banded: section 3.6 bands target assignments)",
+    "evidence": "(evidence summed by goal, below the target threshold)",
+    "goal_label": "Ensure sustainable consumption and production patterns",
+    "goal_uri": "http://data.europa.eu/sdg/12",
+    "level": "goal_only",
+    "score": 2.5,
+    "target_label": "(goal level only, no target above threshold)",
+    "target_uri": "(goal level only, no target above threshold)"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "190194936",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "deliverable_descriptions"
+  ],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description"
+  ],
+  "title": "TowArd demoCRatization Of ev-BAsed Therapies"
+ },
+ "190195250": {
+  "acronym": "LiSSA 3D",
+  "assignments": [],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "190195250",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "deliverable_descriptions"
+  ],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description"
+  ],
+  "title": "Next Generation LiDAR for Automotive and Industrial Use Cases"
+ },
+ "190195324": {
+  "acronym": "LogisticsBrain",
+  "assignments": [
+   {
+    "confidence_band": "low",
+    "evidence": "eurosciwoc_categories: social sciences/social geography/transport [crosswalk direct, 3.0]",
+    "goal_label": "Make cities and human settlements inclusive, safe, resilient and sustainable",
+    "goal_uri": "http://data.europa.eu/sdg/11",
+    "level": "target",
+    "score": 3.0,
+    "target_label": "By 2030, provide access to safe, affordable, accessible and sustainable transport systems for all, improving road safety, notably by expanding public transport, with special attention to the needs of those in vulnerable situations, women, children, persons with disabilities and older persons",
+    "target_uri": "http://data.europa.eu/sdg/11.2"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "190195324",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description",
+   "deliverable_descriptions"
+  ],
+  "title": "Self-learning AI-based transport optimization software as a service for the most complex logis-tics scenarios in real-time enabling double-digit cost-, CO2- and tyre wear savings"
+ },
+ "190195672": {
+  "acronym": "Laser bioprinting device and in vivo applications",
+  "assignments": [
+   {
+    "confidence_band": "medium",
+    "evidence": "objective: \"cancer\" [synonym_domain, 1.5] | editorial_description: \"treatment\" [key_term, 0.5] | eurosciwoc_categories: medical and health sciences/clinical medicine/oncology [crosswalk direct, 3.0]",
+    "goal_label": "Ensure healthy lives and promote well-being for all at all ages",
+    "goal_uri": "http://data.europa.eu/sdg/3",
+    "level": "target",
+    "score": 5.0,
+    "target_label": "By 2030, reduce by one third premature mortality from non-communicable diseases through prevention and treatment and promote mental health and well-being",
+    "target_uri": "http://data.europa.eu/sdg/3.4"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "190195672",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "deliverable_descriptions"
+  ],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description"
+  ],
+  "title": "Laser bioprinting device and in vivo applications"
+ },
+ "190195702": {
+  "acronym": "MICK",
+  "assignments": [
+   {
+    "confidence_band": "low",
+    "evidence": "editorial_description: \"infectious disease\" [synonym_domain, 1.5] | eurosciwoc_categories: natural sciences/biological sciences/microbiology [crosswalk contributing, 1.5]",
+    "goal_label": "Ensure healthy lives and promote well-being for all at all ages",
+    "goal_uri": "http://data.europa.eu/sdg/3",
+    "level": "target",
+    "score": 3.0,
+    "target_label": "By 2030, end the epidemics of AIDS, tuberculosis, malaria and neglected tropical diseases and combat hepatitis, water-borne diseases and other communicable diseases",
+    "target_uri": "http://data.europa.eu/sdg/3.3"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "190195702",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description",
+   "deliverable_descriptions"
+  ],
+  "title": "Translational Microbiome Platform"
+ },
+ "190195939": {
+  "acronym": "AR-R2P",
+  "assignments": [],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "190195939",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "deliverable_descriptions"
+  ],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description"
+  ],
+  "title": "Mass Manufacturing Augmented Reality (AR) Waveguides via Roll-to-Plate Nanoimprinting"
+ },
+ "190196128": {
+  "acronym": "NanoWi",
+  "assignments": [
+   {
+    "confidence_band": "(not banded: section 3.6 bands target assignments)",
+    "evidence": "(evidence summed by goal, below the target threshold)",
+    "goal_label": "Ensure healthy lives and promote well-being for all at all ages",
+    "goal_uri": "http://data.europa.eu/sdg/3",
+    "level": "goal_only",
+    "score": 2.0,
+    "target_label": "(goal level only, no target above threshold)",
+    "target_uri": "(goal level only, no target above threshold)"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "190196128",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description",
+   "deliverable_descriptions"
+  ],
+  "title": "Novel highly sensitive NanoWire sensors for disease biomarker analysis"
+ },
+ "190196379": {
+  "acronym": "Gate2Brain",
+  "assignments": [
+   {
+    "confidence_band": "(not banded: section 3.6 bands target assignments)",
+    "evidence": "(evidence summed by goal, below the target threshold)",
+    "goal_label": "Ensure healthy lives and promote well-being for all at all ages",
+    "goal_uri": "http://data.europa.eu/sdg/3",
+    "level": "goal_only",
+    "score": 2.0,
+    "target_label": "(goal level only, no target above threshold)",
+    "target_uri": "(goal level only, no target above threshold)"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "190196379",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "deliverable_descriptions"
+  ],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description"
+  ],
+  "title": "Gate2Brain. Medicines beyond barriers."
+ },
+ "190197114": {
+  "acronym": "CELLBOX",
+  "assignments": [
+   {
+    "confidence_band": "(not banded: section 3.6 bands target assignments)",
+    "evidence": "(evidence summed by goal, below the target threshold)",
+    "goal_label": "Ensure availability and sustainable management of water and sanitation for all",
+    "goal_uri": "http://data.europa.eu/sdg/6",
+    "level": "goal_only",
+    "score": 2.7,
+    "target_label": "(goal level only, no target above threshold)",
+    "target_uri": "(goal level only, no target above threshold)"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "190197114",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "deliverable_descriptions"
+  ],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description"
+  ],
+  "title": "Innovative transport of “in culture” cell-based materials ensuring product safety, quality and function"
+ },
+ "190197288": {
+  "acronym": "BioScale",
+  "assignments": [],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "190197288",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "deliverable_descriptions"
+  ],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description"
+  ],
+  "title": "Biosensor Activated Biomanufacturing Scale-up"
+ },
+ "190197515": {
+  "acronym": "ATLAS",
+  "assignments": [
+   {
+    "confidence_band": "(not banded: section 3.6 bands target assignments)",
+    "evidence": "(evidence summed by goal, below the target threshold)",
+    "goal_label": "Ensure healthy lives and promote well-being for all at all ages",
+    "goal_uri": "http://data.europa.eu/sdg/3",
+    "level": "goal_only",
+    "score": 4.9,
+    "target_label": "(goal level only, no target above threshold)",
+    "target_uri": "(goal level only, no target above threshold)"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "190197515",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "deliverable_descriptions"
+  ],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description"
+  ],
+  "title": "The first broad-spectrum treatment against pandemic-prone flaviviral infections: Dengue, West-Nile and Zika"
+ },
+ "190198093": {
+  "acronym": "Giskard",
+  "assignments": [],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "190198093",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "deliverable_descriptions"
+  ],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description"
+  ],
+  "title": "Quality Assurance for AI"
+ },
+ "190198268": {
+  "acronym": "NAO.VNS",
+  "assignments": [
+   {
+    "confidence_band": "(not banded: section 3.6 bands target assignments)",
+    "evidence": "(evidence summed by goal, below the target threshold)",
+    "goal_label": "Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all",
+    "goal_uri": "http://data.europa.eu/sdg/4",
+    "level": "goal_only",
+    "score": 2.0,
+    "target_label": "(goal level only, no target above threshold)",
+    "target_uri": "(goal level only, no target above threshold)"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "190198268",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "deliverable_descriptions"
+  ],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description"
+  ],
+  "title": "NAO.VNS: A New Personalized Neural Stimulation Therapy For Drug-resistant Epilepsy"
+ },
+ "190198323": {
+  "acronym": "PATHMAKER",
+  "assignments": [
+   {
+    "confidence_band": "(not banded: section 3.6 bands target assignments)",
+    "evidence": "(evidence summed by goal, below the target threshold)",
+    "goal_label": "Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all",
+    "goal_uri": "http://data.europa.eu/sdg/4",
+    "level": "goal_only",
+    "score": 4.0,
+    "target_label": "(goal level only, no target above threshold)",
+    "target_uri": "(goal level only, no target above threshold)"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "190198323",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description",
+   "deliverable_descriptions"
+  ],
+  "title": "An AI-Powered Visual Assistive Design IoT Pathway Platform to implement fast and optimal automated patient pathways and healthcare demand planning projects"
+ },
+ "190198819": {
+  "acronym": "FKBP",
+  "assignments": [
+   {
+    "confidence_band": "(not banded: section 3.6 bands target assignments)",
+    "evidence": "(evidence summed by goal, below the target threshold)",
+    "goal_label": "Make cities and human settlements inclusive, safe, resilient and sustainable",
+    "goal_uri": "http://data.europa.eu/sdg/11",
+    "level": "goal_only",
+    "score": 3.3,
+    "target_label": "(goal level only, no target above threshold)",
+    "target_uri": "(goal level only, no target above threshold)"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "190198819",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "editorial_description",
+   "deliverable_descriptions"
+  ],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective"
+  ],
+  "title": "Fimuskraft Biogas Plant (FKBP): a revolutionary and cost-effective biotechnological method to treat and valorise biowaste"
+ },
+ "190199097": {
+  "acronym": "3D Bonding",
+  "assignments": [
+   {
+    "confidence_band": "(not banded: section 3.6 bands target assignments)",
+    "evidence": "(evidence summed by goal, below the target threshold)",
+    "goal_label": "Ensure sustainable consumption and production patterns",
+    "goal_uri": "http://data.europa.eu/sdg/12",
+    "level": "goal_only",
+    "score": 2.8,
+    "target_label": "(goal level only, no target above threshold)",
+    "target_uri": "(goal level only, no target above threshold)"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "190199097",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description",
+   "deliverable_descriptions"
+  ],
+  "title": "New industrial process for footwear manufacturing using 3D Bonding"
+ },
+ "190199127": {
+  "acronym": "HCAI4ALL",
+  "assignments": [
+   {
+    "confidence_band": "(not banded: section 3.6 bands target assignments)",
+    "evidence": "(evidence summed by goal, below the target threshold)",
+    "goal_label": "Ensure healthy lives and promote well-being for all at all ages",
+    "goal_uri": "http://data.europa.eu/sdg/3",
+    "level": "goal_only",
+    "score": 2.6,
+    "target_label": "(goal level only, no target above threshold)",
+    "target_uri": "(goal level only, no target above threshold)"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "190199127",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "deliverable_descriptions"
+  ],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description"
+  ],
+  "title": "Human-Centric AI platform for heALth and Life sciences"
+ },
+ "190199469": {
+  "acronym": "NANOWOUND",
+  "assignments": [
+   {
+    "confidence_band": "low",
+    "evidence": "objective: \"diabetes\" [synonym_domain, 1.5] | editorial_description: \"diabetes\" [synonym_domain, 1.5]",
+    "goal_label": "Ensure healthy lives and promote well-being for all at all ages",
+    "goal_uri": "http://data.europa.eu/sdg/3",
+    "level": "target",
+    "score": 3.0,
+    "target_label": "By 2030, reduce by one third premature mortality from non-communicable diseases through prevention and treatment and promote mental health and well-being",
+    "target_uri": "http://data.europa.eu/sdg/3.4"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "190199469",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "deliverable_descriptions"
+  ],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description"
+  ],
+  "title": "Antibacterial wound dressing based on advanced nanotechnology to improve the efficiency of wound care"
+ },
+ "190199874": {
+  "acronym": "NextGen Dyes",
+  "assignments": [
+   {
+    "confidence_band": "low",
+    "evidence": "keywords: \"Circular economy\" [synonym_policy, 1.8] | editorial_description: \"reduction\" [key_term, 0.5] | editorial_description: \"Circular Economy\" [synonym_policy, 1.5]",
+    "goal_label": "Ensure sustainable consumption and production patterns",
+    "goal_uri": "http://data.europa.eu/sdg/12",
+    "level": "target",
+    "score": 3.8,
+    "target_label": "By 2030, substantially reduce waste generation through prevention, reduction, recycling and reuse",
+    "target_uri": "http://data.europa.eu/sdg/12.5"
+   },
+   {
+    "confidence_band": "low",
+    "evidence": "eurosciwoc_categories: natural sciences/earth and related environmental sciences/environmental sciences/pollution [crosswalk direct, 3.0]",
+    "goal_label": "Ensure healthy lives and promote well-being for all at all ages",
+    "goal_uri": "http://data.europa.eu/sdg/3",
+    "level": "target",
+    "score": 3.0,
+    "target_label": "By 2030, substantially reduce the number of deaths and illnesses from hazardous chemicals and air, water and soil pollution and contamination",
+    "target_uri": "http://data.europa.eu/sdg/3.9"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "190199874",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "deliverable_descriptions"
+  ],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description"
+  ],
+  "title": "Efficient bio-production of next generation dyes for sustainable fashion"
+ }
+}

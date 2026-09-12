@@ -1,0 +1,22 @@
+{
+ "101345777": {
+  "acronym": "FORESEE",
+  "assignments": [],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "101345777",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "keywords",
+   "editorial_description",
+   "deliverable_descriptions"
+  ],
+  "sources_present": [
+   "title",
+   "objective"
+  ],
+  "title": "FORward-looking EURAXESS SErvices for Europe – A Modern, Specialised and Coordinated European Talent Support Model"
+ }
+}

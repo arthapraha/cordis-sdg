@@ -1,0 +1,1067 @@
+{
+ "190100321": {
+  "acronym": "LungQ-Care",
+  "assignments": [
+   {
+    "confidence_band": "(not banded: section 3.6 bands target assignments)",
+    "evidence": "(evidence summed by goal, below the target threshold)",
+    "goal_label": "Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all",
+    "goal_uri": "http://data.europa.eu/sdg/4",
+    "level": "goal_only",
+    "score": 4.5,
+    "target_label": "(goal level only, no target above threshold)",
+    "target_uri": "(goal level only, no target above threshold)"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "190100321",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "deliverable_descriptions"
+  ],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description"
+  ],
+  "title": "Facilitating personalised Lung Treatment Decisions through a Deeptech AI Clinical Decision Support System"
+ },
+ "190100375": {
+  "acronym": "EOinTime",
+  "assignments": [
+   {
+    "confidence_band": "(not banded: section 3.6 bands target assignments)",
+    "evidence": "(evidence summed by goal, below the target threshold)",
+    "goal_label": "Build resilient infrastructure, promote inclusive and sustainable industrialization and foster innovation",
+    "goal_uri": "http://data.europa.eu/sdg/9",
+    "level": "goal_only",
+    "score": 2.6,
+    "target_label": "(goal level only, no target above threshold)",
+    "target_uri": "(goal level only, no target above threshold)"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "190100375",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "deliverable_descriptions"
+  ],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description"
+  ],
+  "title": "Satellite-based change detection and predictive monitoring of infrastructure grids based on high resolution data"
+ },
+ "190100402": {
+  "acronym": "CASSIOPEE",
+  "assignments": [],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "190100402",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "keywords"
+  ],
+  "sources_present": [
+   "title",
+   "objective",
+   "editorial_description",
+   "deliverable_descriptions"
+  ],
+  "title": "Collision Avoidance and Space Surveillance Innovations for Orbital Protection in Earth  Environment"
+ },
+ "190100437": {
+  "acronym": "Celerway GO mini",
+  "assignments": [
+   {
+    "confidence_band": "low",
+    "evidence": "eurosciwoc_categories: medical and health sciences/health sciences/public health/epidemiology/pandemics [crosswalk direct, 3.0]",
+    "goal_label": "Ensure healthy lives and promote well-being for all at all ages",
+    "goal_uri": "http://data.europa.eu/sdg/3",
+    "level": "target",
+    "score": 3.0,
+    "target_label": "Strengthen the capacity of all countries, in particular developing countries, for early warning, risk reduction and management of national and global health risks",
+    "target_uri": "http://data.europa.eu/sdg/3.d"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "190100437",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "keywords",
+   "deliverable_descriptions"
+  ],
+  "sources_present": [
+   "title",
+   "objective",
+   "editorial_description"
+  ],
+  "title": "Celerway GO mini, your office network in your pocket"
+ },
+ "190101116": {
+  "acronym": "Codasip RISC-V Solution for High-end Processor IP",
+  "assignments": [],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "190101116",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description",
+   "deliverable_descriptions"
+  ],
+  "title": "Codasip High-end processor IP and high-level design tools for RISC-V"
+ },
+ "190101308": {
+  "acronym": "AUTOFARM",
+  "assignments": [
+   {
+    "confidence_band": "low",
+    "evidence": "eurosciwoc_categories: agricultural sciences/agriculture, forestry, and fisheries/agriculture [crosswalk direct, 3.0]",
+    "goal_label": "End hunger, achieve food security and improved nutrition and promote sustainable agriculture",
+    "goal_uri": "http://data.europa.eu/sdg/2",
+    "level": "target",
+    "score": 3.0,
+    "target_label": "By 2030, ensure sustainable food production systems and implement resilient agricultural practices that increase productivity and production, that help maintain ecosystems, that strengthen capacity for adaptation to climate change, extreme weather, drought, flooding and other disasters and that progressively improve land and soil quality",
+    "target_uri": "http://data.europa.eu/sdg/2.4"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "190101308",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "keywords",
+   "deliverable_descriptions"
+  ],
+  "sources_present": [
+   "title",
+   "objective",
+   "editorial_description"
+  ],
+  "title": "Autonomous Indoor Farming"
+ },
+ "190101904": {
+  "acronym": "ELANA®",
+  "assignments": [],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "190101904",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "deliverable_descriptions"
+  ],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description"
+  ],
+  "title": "Bypassing open heart surgery with Excimer Laser Assisted Non Occlusive Anastomosis (ELANA®)"
+ },
+ "190101940": {
+  "acronym": "HyperCollar4D",
+  "assignments": [
+   {
+    "confidence_band": "high",
+    "evidence": "title: \"Treatment\" [key_term, 0.6] | title: \"Cancer\" [synonym_domain, 1.8] | keywords: \"treatment\" [key_term, 0.6] | keywords: \"cancer\" [synonym_domain, 1.8] | objective: \"cancer\" [synonym_domain, 1.5] | editorial_description: \"treatment\" [key_term, 0.5] | editorial_description: \"cancer\" [synonym_domain, 1.5]",
+    "goal_label": "Ensure healthy lives and promote well-being for all at all ages",
+    "goal_uri": "http://data.europa.eu/sdg/3",
+    "level": "target",
+    "score": 8.3,
+    "target_label": "By 2030, reduce by one third premature mortality from non-communicable diseases through prevention and treatment and promote mental health and well-being",
+    "target_uri": "http://data.europa.eu/sdg/3.4"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "190101940",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description",
+   "deliverable_descriptions"
+  ],
+  "title": "Radical Improvement of Cancer Treatment without Additional Negative Side Effects"
+ },
+ "190102180": {
+  "acronym": "ROBI",
+  "assignments": [
+   {
+    "confidence_band": "(not banded: section 3.6 bands target assignments)",
+    "evidence": "(evidence summed by goal, below the target threshold)",
+    "goal_label": "Ensure sustainable consumption and production patterns",
+    "goal_uri": "http://data.europa.eu/sdg/12",
+    "level": "goal_only",
+    "score": 4.5,
+    "target_label": "(goal level only, no target above threshold)",
+    "target_uri": "(goal level only, no target above threshold)"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "190102180",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "keywords"
+  ],
+  "sources_present": [
+   "title",
+   "objective",
+   "editorial_description",
+   "deliverable_descriptions"
+  ],
+  "title": "AI Adviser for Agronomy and Food Safety"
+ },
+ "190102529": {
+  "acronym": "OverSemi",
+  "assignments": [
+   {
+    "confidence_band": "(not banded: section 3.6 bands target assignments)",
+    "evidence": "(evidence summed by goal, below the target threshold)",
+    "goal_label": "Make cities and human settlements inclusive, safe, resilient and sustainable",
+    "goal_uri": "http://data.europa.eu/sdg/11",
+    "level": "goal_only",
+    "score": 3.6,
+    "target_label": "(goal level only, no target above threshold)",
+    "target_uri": "(goal level only, no target above threshold)"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "190102529",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "deliverable_descriptions"
+  ],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description"
+  ],
+  "title": "Optimisation of a novel software tool for automation of the design & verification process of semiconductor development"
+ },
+ "190102649": {
+  "acronym": "RePace",
+  "assignments": [
+   {
+    "confidence_band": "(not banded: section 3.6 bands target assignments)",
+    "evidence": "(evidence summed by goal, below the target threshold)",
+    "goal_label": "End poverty in all its forms everywhere",
+    "goal_uri": "http://data.europa.eu/sdg/1",
+    "level": "goal_only",
+    "score": 2.5,
+    "target_label": "(goal level only, no target above threshold)",
+    "target_uri": "(goal level only, no target above threshold)"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "190102649",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "deliverable_descriptions"
+  ],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description"
+  ],
+  "title": "Rebuilding Joint Surface to Prevent Pain and Immobility"
+ },
+ "190102751": {
+  "acronym": "SSB2",
+  "assignments": [],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "190102751",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "deliverable_descriptions"
+  ],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description"
+  ],
+  "title": "Surgify Safety Burrs for safer bone surgery"
+ },
+ "190102812": {
+  "acronym": "Smart ProTcell",
+  "assignments": [],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "190102812",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "editorial_description",
+   "deliverable_descriptions"
+  ],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective"
+  ],
+  "title": "Smart Immune ProTcell: first-in-class allogeneic thymus empowered T cell therapy platform for fast and durable immune system reconstitution"
+ },
+ "190103391": {
+  "acronym": "Selio System",
+  "assignments": [
+   {
+    "confidence_band": "high",
+    "evidence": "keywords: \"cancer\" [synonym_domain, 1.8] | objective: \"cancer\" [synonym_domain, 1.5] | editorial_description: \"treatment\" [key_term, 0.5] | editorial_description: \"cancer\" [synonym_domain, 1.5] | eurosciwoc_categories: medical and health sciences/clinical medicine/oncology [crosswalk direct, 3.0]",
+    "goal_label": "Ensure healthy lives and promote well-being for all at all ages",
+    "goal_uri": "http://data.europa.eu/sdg/3",
+    "level": "target",
+    "score": 8.3,
+    "target_label": "By 2030, reduce by one third premature mortality from non-communicable diseases through prevention and treatment and promote mental health and well-being",
+    "target_uri": "http://data.europa.eu/sdg/3.4"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "190103391",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "deliverable_descriptions"
+  ],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description"
+  ],
+  "title": "Development and commercialisation of a novel needle tract sealant system for pneumothorax prevention during lung biopsy"
+ },
+ "190103560": {
+  "acronym": "RondelO",
+  "assignments": [
+   {
+    "confidence_band": "(not banded: section 3.6 bands target assignments)",
+    "evidence": "(evidence summed by goal, below the target threshold)",
+    "goal_label": "Ensure healthy lives and promote well-being for all at all ages",
+    "goal_uri": "http://data.europa.eu/sdg/3",
+    "level": "goal_only",
+    "score": 4.0,
+    "target_label": "(goal level only, no target above threshold)",
+    "target_uri": "(goal level only, no target above threshold)"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "190103560",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "deliverable_descriptions"
+  ],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description"
+  ],
+  "title": "RondelO - the first medical stopcock designed for sequential intraveneous infusion of incompatible drugs"
+ },
+ "190103720": {
+  "acronym": "Naco Tech",
+  "assignments": [
+   {
+    "confidence_band": "high",
+    "evidence": "title: \"green hydrogen\" [synonym_domain, 1.8] | keywords: \"Green hydrogen\" [synonym_domain, 1.8] | objective: \"wind energy\" [synonym_domain, 1.5] | objective: \"green hydrogen\" [synonym_domain, 1.5] | editorial_description: \"Green hydrogen\" [synonym_domain, 1.5]",
+    "goal_label": "Ensure access to affordable, reliable, sustainable and modern energy for all",
+    "goal_uri": "http://data.europa.eu/sdg/7",
+    "level": "target",
+    "score": 8.1,
+    "target_label": "By 2030, increase substantially the share of renewable energy in the global energy mix",
+    "target_uri": "http://data.europa.eu/sdg/7.2"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "190103720",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "deliverable_descriptions"
+  ],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description"
+  ],
+  "title": "Novel nano coating process to empower the green hydrogen revolution"
+ },
+ "190103838": {
+  "acronym": "in silico bio-evolutio",
+  "assignments": [],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "190103838",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "deliverable_descriptions"
+  ],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description"
+  ],
+  "title": "in silico bio-evolutio - novel AI paradigm for molecular biology"
+ },
+ "190104075": {
+  "acronym": "SEAFARER",
+  "assignments": [
+   {
+    "confidence_band": "medium",
+    "evidence": "keywords: \"Circular Economy\" [synonym_policy, 1.8] | editorial_description: \"recycling\" [key_term, 0.5] | editorial_description: \"recycling\" [synonym_subject, 2.0] | editorial_description: \"reduction\" [key_term, 0.5]",
+    "goal_label": "Ensure sustainable consumption and production patterns",
+    "goal_uri": "http://data.europa.eu/sdg/12",
+    "level": "target",
+    "score": 4.8,
+    "target_label": "By 2030, substantially reduce waste generation through prevention, reduction, recycling and reuse",
+    "target_uri": "http://data.europa.eu/sdg/12.5"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "190104075",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "deliverable_descriptions"
+  ],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description"
+  ],
+  "title": "Lignocellulosic oil: novel biofuel platform for maritime transportation"
+ },
+ "190104418": {
+  "acronym": "GAFT",
+  "assignments": [
+   {
+    "confidence_band": "low",
+    "evidence": "keywords: \"Bioenergy\" [synonym_domain, 1.8] | editorial_description: \"renewable energy\" [synonym_subject, 2.0]",
+    "goal_label": "Ensure access to affordable, reliable, sustainable and modern energy for all",
+    "goal_uri": "http://data.europa.eu/sdg/7",
+    "level": "target",
+    "score": 3.8,
+    "target_label": "By 2030, increase substantially the share of renewable energy in the global energy mix",
+    "target_uri": "http://data.europa.eu/sdg/7.2"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "190104418",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "deliverable_descriptions"
+  ],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description"
+  ],
+  "title": "Production of High-quality Fatty Acids Feedstock for use in SAF Production"
+ },
+ "190104468": {
+  "acronym": "SOMIT-CD",
+  "assignments": [],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "190104468",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "deliverable_descriptions"
+  ],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description"
+  ],
+  "title": "Novel First-in-Class Specific Oromucosal Immunotherapy (SOMIT) to treat Celiac Disease (CD)"
+ },
+ "190105118": {
+  "acronym": "QUENML",
+  "assignments": [
+   {
+    "confidence_band": "(not banded: section 3.6 bands target assignments)",
+    "evidence": "(evidence summed by goal, below the target threshold)",
+    "goal_label": "Ensure access to affordable, reliable, sustainable and modern energy for all",
+    "goal_uri": "http://data.europa.eu/sdg/7",
+    "level": "goal_only",
+    "score": 2.5,
+    "target_label": "(goal level only, no target above threshold)",
+    "target_uri": "(goal level only, no target above threshold)"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "190105118",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "deliverable_descriptions"
+  ],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description"
+  ],
+  "title": "Quantum-enhanced Machine Learning"
+ },
+ "190105256": {
+  "acronym": "HOMEOBRAIN",
+  "assignments": [],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "190105256",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "deliverable_descriptions"
+  ],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description"
+  ],
+  "title": "Homeoproteins as novel therapies for neurodegenerative diseases"
+ },
+ "190106381": {
+  "acronym": "AVRICS",
+  "assignments": [
+   {
+    "confidence_band": "(not banded: section 3.6 bands target assignments)",
+    "evidence": "(evidence summed by goal, below the target threshold)",
+    "goal_label": "Ensure healthy lives and promote well-being for all at all ages",
+    "goal_uri": "http://data.europa.eu/sdg/3",
+    "level": "goal_only",
+    "score": 3.5,
+    "target_label": "(goal level only, no target above threshold)",
+    "target_uri": "(goal level only, no target above threshold)"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "190106381",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description",
+   "deliverable_descriptions"
+  ],
+  "title": "Akara Violet Robotic Infection Control System"
+ },
+ "190106476": {
+  "acronym": "M.I.L.A.N.O. Robot",
+  "assignments": [],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "190106476",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description",
+   "deliverable_descriptions"
+  ],
+  "title": "Transforming everyday surgery into a painless and scarless experience"
+ },
+ "190106489": {
+  "acronym": "TrueSbW",
+  "assignments": [
+   {
+    "confidence_band": "low",
+    "evidence": "editorial_description: \"road traffic accidents\" [key_term, 1.0] | editorial_description: \"road traffic accidents\" [synonym_subject, 2.0]",
+    "goal_label": "Ensure healthy lives and promote well-being for all at all ages",
+    "goal_uri": "http://data.europa.eu/sdg/3",
+    "level": "target",
+    "score": 3.0,
+    "target_label": "By 2020, halve the number of global deaths and injuries from road traffic accidents",
+    "target_uri": "http://data.europa.eu/sdg/3.6"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "190106489",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description",
+   "deliverable_descriptions"
+  ],
+  "title": "Fail-operational safety – making autonomous vehicles a reality"
+ },
+ "190106553": {
+  "acronym": "makinG aUgmedit lumI stanDArd in NeurosurgiCal surgEry in 3D: GUIDANCE 3D",
+  "assignments": [
+   {
+    "confidence_band": "(not banded: section 3.6 bands target assignments)",
+    "evidence": "(evidence summed by goal, below the target threshold)",
+    "goal_label": "Ensure healthy lives and promote well-being for all at all ages",
+    "goal_uri": "http://data.europa.eu/sdg/3",
+    "level": "goal_only",
+    "score": 3.0,
+    "target_label": "(goal level only, no target above threshold)",
+    "target_uri": "(goal level only, no target above threshold)"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "190106553",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "deliverable_descriptions"
+  ],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description"
+  ],
+  "title": "makinG aUgmedit lumI stanDArd in NeurosurgiCal surgEry in 3D: GUIDANCE 3D"
+ },
+ "190107075": {
+  "acronym": "SAFE-FOOD",
+  "assignments": [
+   {
+    "confidence_band": "medium",
+    "evidence": "objective: \"supply chains\" [key_term, 1.0] | objective: \"food waste\" [synonym_subject, 2.0] | editorial_description: \"food waste\" [synonym_subject, 2.0]",
+    "goal_label": "Ensure sustainable consumption and production patterns",
+    "goal_uri": "http://data.europa.eu/sdg/12",
+    "level": "target",
+    "score": 5.0,
+    "target_label": "By 2030,halve per capita global food waste at the retail and consumer levels and reduce food losses along production and supply chains, including post-harvest losses",
+    "target_uri": "http://data.europa.eu/sdg/12.3"
+   },
+   {
+    "confidence_band": "low",
+    "evidence": "keywords: \"contamination\" [key_term, 0.6] | keywords: \"contamination\" [synonym_subject, 2.4]",
+    "goal_label": "Ensure healthy lives and promote well-being for all at all ages",
+    "goal_uri": "http://data.europa.eu/sdg/3",
+    "level": "target",
+    "score": 3.0,
+    "target_label": "By 2030, substantially reduce the number of deaths and illnesses from hazardous chemicals and air, water and soil pollution and contamination",
+    "target_uri": "http://data.europa.eu/sdg/3.9"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "190107075",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description",
+   "deliverable_descriptions"
+  ],
+  "title": "THE FIRST PORTABLE MASS SPECTROMETER DEVICE FOR RAPID, ON-SITE FOOD CONTAMINANT TESTING"
+ },
+ "190107195": {
+  "acronym": "TfI SeaSprings",
+  "assignments": [
+   {
+    "confidence_band": "(not banded: section 3.6 bands target assignments)",
+    "evidence": "(evidence summed by goal, below the target threshold)",
+    "goal_label": "Ensure sustainable consumption and production patterns",
+    "goal_uri": "http://data.europa.eu/sdg/12",
+    "level": "goal_only",
+    "score": 2.0,
+    "target_label": "(goal level only, no target above threshold)",
+    "target_uri": "(goal level only, no target above threshold)"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "190107195",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "deliverable_descriptions"
+  ],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description"
+  ],
+  "title": "Making access to the ocean affordable through our SeaSprings mooring solution"
+ },
+ "190107486": {
+  "acronym": "StentGuard",
+  "assignments": [
+   {
+    "confidence_band": "low",
+    "evidence": "eurosciwoc_categories: medical and health sciences/clinical medicine/cardiology [crosswalk direct, 3.0]",
+    "goal_label": "Ensure healthy lives and promote well-being for all at all ages",
+    "goal_uri": "http://data.europa.eu/sdg/3",
+    "level": "target",
+    "score": 3.0,
+    "target_label": "By 2030, reduce by one third premature mortality from non-communicable diseases through prevention and treatment and promote mental health and well-being",
+    "target_uri": "http://data.europa.eu/sdg/3.4"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "190107486",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "deliverable_descriptions"
+  ],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description"
+  ],
+  "title": "Clinical validation of the First Implantable Sensor System for Wireless detection of stent occlusion/ restenosis"
+ },
+ "190108094": {
+  "acronym": "Bioweg",
+  "assignments": [
+   {
+    "confidence_band": "(not banded: section 3.6 bands target assignments)",
+    "evidence": "(evidence summed by goal, below the target threshold)",
+    "goal_label": "Ensure sustainable consumption and production patterns",
+    "goal_uri": "http://data.europa.eu/sdg/12",
+    "level": "goal_only",
+    "score": 2.5,
+    "target_label": "(goal level only, no target above threshold)",
+    "target_uri": "(goal level only, no target above threshold)"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "190108094",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description",
+   "deliverable_descriptions"
+  ],
+  "title": "A zero waste process for producing all natural, biodegradable replacement additives for synthetic polymers and microspheres"
+ },
+ "190108462": {
+  "acronym": "Ecoplastomer",
+  "assignments": [
+   {
+    "confidence_band": "high",
+    "evidence": "objective: \"recycling\" [key_term, 0.5] | objective: \"recycling\" [synonym_subject, 2.0] | editorial_description: \"recycling\" [key_term, 0.5] | editorial_description: \"recycling\" [synonym_subject, 2.0] | editorial_description: \"reduction\" [key_term, 0.5] | editorial_description: \"circular economy\" [synonym_policy, 1.5] | eurosciwoc_categories: engineering and technology/environmental engineering/waste management/waste treatment processes/recycling [crosswalk direct, 3.0]",
+    "goal_label": "Ensure sustainable consumption and production patterns",
+    "goal_uri": "http://data.europa.eu/sdg/12",
+    "level": "target",
+    "score": 10.0,
+    "target_label": "By 2030, substantially reduce waste generation through prevention, reduction, recycling and reuse",
+    "target_uri": "http://data.europa.eu/sdg/12.5"
+   },
+   {
+    "confidence_band": "low",
+    "evidence": "keywords: \"Materials\" [key_term, 0.6] | objective: \"materials\" [key_term, 0.5] | editorial_description: \"materials\" [key_term, 0.5] | eurosciwoc_categories: engineering and technology/environmental engineering/waste management/waste treatment processes/recycling [crosswalk contributing, 1.5]",
+    "goal_label": "Ensure availability and sustainable management of water and sanitation for all",
+    "goal_uri": "http://data.europa.eu/sdg/6",
+    "level": "target",
+    "score": 3.1,
+    "target_label": "By 2030, improve water quality by reducing pollution, eliminating dumping and minimizing release of hazardous chemicals and materials, halving the proportion of untreated wastewater and substantially increasing recycling and safe reuse globally",
+    "target_uri": "http://data.europa.eu/sdg/6.3"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "190108462",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "deliverable_descriptions"
+  ],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description"
+  ],
+  "title": "Breakthrough Technology for Plastic and Rubber Waste Circular TPE"
+ },
+ "190108904": {
+  "acronym": "CARBONCAPS",
+  "assignments": [
+   {
+    "confidence_band": "(not banded: section 3.6 bands target assignments)",
+    "evidence": "(evidence summed by goal, below the target threshold)",
+    "goal_label": "Ensure access to affordable, reliable, sustainable and modern energy for all",
+    "goal_uri": "http://data.europa.eu/sdg/7",
+    "level": "goal_only",
+    "score": 3.0,
+    "target_label": "(goal level only, no target above threshold)",
+    "target_uri": "(goal level only, no target above threshold)"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "190108904",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description",
+   "deliverable_descriptions"
+  ],
+  "title": "CARBONCAPS - Efficient and verifiable carbon removal with ecosystem co-benefits."
+ },
+ "190109071": {
+  "acronym": "ImmunoNet",
+  "assignments": [
+   {
+    "confidence_band": "high",
+    "evidence": "objective: \"treatment\" [key_term, 0.5] | objective: \"cancer\" [synonym_domain, 1.5] | editorial_description: \"Treatment\" [key_term, 0.5] | editorial_description: \"cancer\" [synonym_domain, 1.5] | eurosciwoc_categories: medical and health sciences/clinical medicine/oncology [crosswalk direct, 3.0]",
+    "goal_label": "Ensure healthy lives and promote well-being for all at all ages",
+    "goal_uri": "http://data.europa.eu/sdg/3",
+    "level": "target",
+    "score": 7.0,
+    "target_label": "By 2030, reduce by one third premature mortality from non-communicable diseases through prevention and treatment and promote mental health and well-being",
+    "target_uri": "http://data.europa.eu/sdg/3.4"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "190109071",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "deliverable_descriptions"
+  ],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description"
+  ],
+  "title": "Inhibiting resistance to immunotherapy in Oncology by targeting Netrin-1"
+ },
+ "190109136": {
+  "acronym": "FlexoFibers",
+  "assignments": [
+   {
+    "confidence_band": "low",
+    "evidence": "objective: \"CIRCULAR ECONOMY\" [synonym_policy, 1.5] | editorial_description: \"circular economy\" [synonym_policy, 1.5]",
+    "goal_label": "Ensure sustainable consumption and production patterns",
+    "goal_uri": "http://data.europa.eu/sdg/12",
+    "level": "target",
+    "score": 3.0,
+    "target_label": "By 2030, substantially reduce waste generation through prevention, reduction, recycling and reuse",
+    "target_uri": "http://data.europa.eu/sdg/12.5"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "190109136",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description",
+   "deliverable_descriptions"
+  ],
+  "title": "Unlocking the potential of second life steel fibers from tire waste for the construction industry"
+ },
+ "190109269": {
+  "acronym": "QModem",
+  "assignments": [
+   {
+    "confidence_band": "(not banded: section 3.6 bands target assignments)",
+    "evidence": "(evidence summed by goal, below the target threshold)",
+    "goal_label": "Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all",
+    "goal_uri": "http://data.europa.eu/sdg/4",
+    "level": "goal_only",
+    "score": 2.0,
+    "target_label": "(goal level only, no target above threshold)",
+    "target_uri": "(goal level only, no target above threshold)"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "190109269",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description",
+   "deliverable_descriptions"
+  ],
+  "title": "Developing the world’s first quantum modem"
+ },
+ "190109922": {
+  "acronym": "EmbeDL",
+  "assignments": [],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "190109922",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description",
+   "deliverable_descriptions"
+  ],
+  "title": "Faster and More Energy Efficient Machine Learning for Embedded Systems"
+ },
+ "190109977": {
+  "acronym": "Trillium",
+  "assignments": [],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "190109977",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description",
+   "deliverable_descriptions"
+  ],
+  "title": "A transcatheter functional valve replacement for tricuspid valve insufficiency"
+ },
+ "190109979": {
+  "acronym": "ROUTINE",
+  "assignments": [
+   {
+    "confidence_band": "high",
+    "evidence": "title: \"canceR\" [synonym_domain, 1.8] | objective: \"treatment\" [key_term, 0.5] | objective: \"Cancer\" [synonym_domain, 1.5] | editorial_description: \"treatment\" [key_term, 0.5] | editorial_description: \"Cancer\" [synonym_domain, 1.5] | eurosciwoc_categories: medical and health sciences/clinical medicine/oncology [crosswalk direct, 3.0]",
+    "goal_label": "Ensure healthy lives and promote well-being for all at all ages",
+    "goal_uri": "http://data.europa.eu/sdg/3",
+    "level": "target",
+    "score": 8.8,
+    "target_label": "By 2030, reduce by one third premature mortality from non-communicable diseases through prevention and treatment and promote mental health and well-being",
+    "target_uri": "http://data.europa.eu/sdg/3.4"
+   }
+  ],
+  "explanation_marker": "(not generated: section 3.7's explanation pass is parked, no model credential in this environment, section 9 forbids one here)",
+  "id": "190109979",
+  "overflow": 0,
+  "pipeline_commit": "0246412b44f722567feaa2e6c1b6e695de86c923",
+  "prompt_marker": "(no prompt: section 3.7 parked)",
+  "snapshot_sha256": "bf558b0c04db70acc9a83b5badaeae959f7f85ad8ccff472ab68d22a03dce2f3",
+  "sources_absent": [
+   "deliverable_descriptions"
+  ],
+  "sources_present": [
+   "title",
+   "keywords",
+   "objective",
+   "editorial_description"
+  ],
+  "title": "canceR agnOstic immUnoTherapy predIctioN blood-tEst"
+ }
+}
