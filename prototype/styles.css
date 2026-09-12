@@ -491,17 +491,47 @@ body {
   vertical-align: middle;
 }
 
-.projects-table tbody tr:hover {
-  background-color: #f8fafc;
+.projects-table tbody tr.project-row {
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.projects-table tbody tr.project-row:hover {
+  background-color: var(--primary-light);
+}
+
+.projects-table tbody tr.project-row:focus {
+  outline: 2px solid var(--primary);
+  outline-offset: -2px;
+  background-color: var(--primary-light);
+}
+
+.projects-table tbody tr.project-row:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: -2px;
+  background-color: var(--primary-light);
+}
+
+.project-title-link {
+  color: var(--primary);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  font-weight: 500;
+  transition: color 0.15s ease;
+}
+
+.project-title-link:hover,
+.projects-table tbody tr.project-row:hover .project-title-link {
+  color: var(--primary-hover);
+  text-decoration: underline;
 }
 
 .col-id { width: 110px; font-weight: 600; }
 .col-acronym { width: 140px; font-weight: 600; }
-.col-title { min-width: 320px; }
+.col-title { min-width: 340px; }
 .col-level { width: 130px; }
-.col-sdgs { width: 140px; }
+.col-sdgs { width: 150px; }
 .col-band { width: 110px; }
-.col-actions { width: 100px; text-align: center; }
 
 .loading-cell {
   text-align: center;

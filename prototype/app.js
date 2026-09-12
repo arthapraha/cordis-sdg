@@ -42,6 +42,8 @@ document.addEventListener("DOMContentLoaded", () => {
   setupTabs();
   setupFilterListeners();
   setupModalListeners();
+  setupProjectsTableListeners();
+  setupUrlRouting();
   loadStaticData();
 });
 
@@ -90,11 +92,12 @@ async function loadStaticData() {
     renderSdgDistribution();
     populateSdgFilterDropdown();
     applyFilters();
+    checkUrlForProject();
   } catch (err) {
     console.error("Failed to load static prototype data:", err);
     document.getElementById("projects-table-body").innerHTML = `
       <tr>
-        <td colspan="7" class="loading-cell" style="color: var(--danger);">
+        <td colspan="6" class="loading-cell" style="color: var(--danger);">
           Failed to load static datasets (<code>data/projects_index.json</code>). Ensure files are generated with <code>python prototype/build_data.py</code>.
         </td>
       </tr>
@@ -392,7 +395,7 @@ function renderProjectsTable() {
     countEl.textContent = "0 projects match the selected criteria";
     tbody.innerHTML = `
       <tr>
-        <td colspan="7" class="loading-cell">No matching projects found. Try clearing or relaxing filters.</td>
+        <td colspan="6" class="loading-cell">No matching projects found. Try clearing or relaxing filters.</td>
       </tr>
     `;
     renderPagination(0);
@@ -429,16 +432,13 @@ function renderProjectsTable() {
     const safeAcronym = escapeHtml(p.acronym || "");
 
     html += `
-      <tr>
+      <tr class="project-row" tabindex="0" data-project-id="${p.id}" role="button" aria-label="Inspect project ${p.id}: ${safeAcronym}">
         <td class="col-id"><span class="mono">${p.id}</span></td>
         <td class="col-acronym">${safeAcronym}</td>
-        <td class="col-title">${safeTitle}</td>
+        <td class="col-title"><a href="#project=${p.id}" class="project-title-link" tabindex="-1">${safeTitle}</a></td>
         <td class="col-level"><span class="badge-level ${levelClass}">${levelText}</span></td>
         <td class="col-sdgs">${sdgsHtml}</td>
         <td class="col-band"><span class="badge-band ${bandClass}">${bandText}</span></td>
-        <td class="col-actions">
-          <button class="btn btn-outline" onclick="openProjectModal('${p.id}')">Inspect</button>
-        </td>
       </tr>
     `;
   });
@@ -497,9 +497,25 @@ function setupModalListeners() {
 
 function closeProjectModal() {
   document.getElementById("project-modal-backdrop").classList.remove("open");
+  if (window.location.hash.startsWith("#project")) {
+    try {
+      history.replaceState(null, "", window.location.pathname + window.location.search);
+    } catch (_) {
+      window.location.hash = "";
+    }
+  }
 }
 
 window.openProjectModal = async function(projectId) {
+  const targetHash = `#project=${projectId}`;
+  if (window.location.hash !== targetHash) {
+    try {
+      history.replaceState(null, "", targetHash);
+    } catch (_) {
+      window.location.hash = targetHash;
+    }
+  }
+
   const backdrop = document.getElementById("project-modal-backdrop");
   const bodyEl = document.getElementById("modal-body");
 
@@ -772,4 +788,82 @@ function escapeHtml(str) {
     .replace(/>/g, "&gt;")
     .replace(/"/g, "&quot;")
     .replace(/'/g, "&#039;");
+}
+
+// Projects Table Row Interactions (Reachable by Tab & Enter, Click anywhere, Middle-click in new tab)
+function setupProjectsTableListeners() {
+  const tbody = document.getElementById("projects-table-body");
+  if (!tbody) return;
+
+  function getRowProjectId(target) {
+    const row = target.closest("tr.project-row");
+    return row ? row.dataset.projectId : null;
+  }
+
+  // Left-click (or modifier click) anywhere on the row
+  tbody.addEventListener("click", (e) => {
+    const projectId = getRowProjectId(e.target);
+    if (!projectId) return;
+
+    if (e.ctrlKey || e.metaKey || e.shiftKey) {
+      e.preventDefault();
+      const url = new URL(window.location.href);
+      url.hash = `project=${projectId}`;
+      window.open(url.href, "_blank");
+      return;
+    }
+
+    e.preventDefault();
+    openProjectModal(projectId);
+  });
+
+  // Middle-click (auxclick with button 1) anywhere on the row opens project in new tab
+  tbody.addEventListener("auxclick", (e) => {
+    if (e.button !== 1) return;
+    const projectId = getRowProjectId(e.target);
+    if (!projectId) return;
+
+    e.preventDefault();
+    const url = new URL(window.location.href);
+    url.hash = `project=${projectId}`;
+    window.open(url.href, "_blank");
+  });
+
+  // Keyboard navigation: Enter or Space on focused row opens inspector
+  tbody.addEventListener("keydown", (e) => {
+    if (e.key === "Enter" || e.key === " ") {
+      const projectId = getRowProjectId(e.target);
+      if (!projectId) return;
+
+      e.preventDefault();
+      openProjectModal(projectId);
+    }
+  });
+}
+
+function checkUrlForProject() {
+  const hashMatch = window.location.hash.match(/#project[=-]([0-9a-zA-Z]+)/);
+  const searchMatch = new URLSearchParams(window.location.search).get("project");
+  const projectId = searchMatch || (hashMatch ? hashMatch[1] : null);
+  if (projectId) {
+    openProjectModal(projectId);
+  }
+}
+
+function setupUrlRouting() {
+  window.addEventListener("hashchange", () => {
+    const hashMatch = window.location.hash.match(/#project[=-]([0-9a-zA-Z]+)/);
+    if (hashMatch) {
+      openProjectModal(hashMatch[1]);
+    } else {
+      const backdrop = document.getElementById("project-modal-backdrop");
+      if (backdrop && backdrop.classList.contains("open")) {
+        closeProjectModal();
+      }
+    }
+  });
+
+  window.addEventListener("popstate", () => {
+    checkUrlForProject();
+  });
 }
