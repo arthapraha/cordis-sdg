@@ -173,95 +173,28 @@ registration compensated with a human anchor, and the anchor was not made — se
 
 ## 6. Limitations
 
-### 6.1 The evaluation reference is one automated labeller, working blind
+**This section is a pointer, not a summary.** The limitations, the uncertain
+cases with worked examples, and the possible improvements are registration
+section 6 item 5's own deliverable, and they live in **`docs/limitations.md`**.
 
-The registration provided for two references on the held-out 100: one labeller on
-all of them, and **20 hand-labelled by the owner as a human anchor**. **The 20
-were never made.**
+They were in both places until this commit. **A limitation written twice is a
+limitation that drifts**, and this registration has paid for a rule living in two
+places four times in its own sections. What stood here is there now, and more of
+it: the disagreement shape is carried down to named projects with the evidence
+cells that produced them.
 
-Two consequences, both of which remove a figure rather than weaken one:
+`docs/limitations.md` covers the measured recall ceiling; that no human labelled
+anything in this study; the single blind automated reference and the human anchor
+that was never made; the third of the corpus that receives nothing; the band
+distribution and what a band does not mean; the deliberately unmapped four fifths
+of the category vocabulary; the parked explanation pass; and scope. **Its section
+2 works through four failure mechanisms on real projects**, and its section 3
+gives five improvements, each with what it would cost and what it would not fix.
 
-- **There is no inter-rater agreement figure on the evaluation set.** One
-  labeller cannot disagree with himself. **No substitute is offered**: comparing
-  the labeller to the pipeline would be the pipeline's own accuracy reported a
-  second time under a name that implies two humans.
-- **There is no human anchor.**
-
-The adjudication rule was fixed in advance, before any number was in view:
-
-> "On the evaluation 100: for the 20 Attila labelled, a disagreement between him
-> and Hermes is settled by **Attila's call**; for the other 80, **Hermes's labels
-> are the reference**, and the report carries that as a limitation. […] The rule
-> is stated here so it is not chosen after the numbers are in view."
-
-With no 20, **that labeller's set is the sole reference for all 100 and the
-limitation covers the whole hundred rather than 80 of it.**
-
-**The window for making the 20 honestly has closed.** The registration requires
-an evaluation labeller not to see the pipeline output before sealing, and that
-output's hash is published. Twenty labels made now would carry that exposure as a
-stated limitation; they would not repair this one.
-
-### 6.2 No human labelled anything in this study
-
-This is the weight of the limitation above and it deserves its own line rather
-than an adjective.
-
-**Every label in this study, on both sets, was made by a language-model seat.**
-The registration provided for exactly one human labelling contribution and it was
-not made. Where this document says two labellers agree at kappa 0.677, it means
-two model seats agree; where it calls a set the reference, it means a model's
-output is standing in for ground truth. The evaluation labeller was served by
-`glm-5.3-flash:cloud`, a different model family from the seat that built the
-pipeline, which weakens but does not remove the shared-priors concern — and does
-nothing at all about the fact that **no person read a project and said what it
-was about.**
-
-### 6.3 Recall is bounded at 0.442 by the method
-
-See §4. **53 of 95 reference pairs have no evidence at any threshold.**
-
-### 6.4 Nearly a third of the corpus receives nothing
-
-**7,175 of 23,451 projects get no assignment at all**, and 33 of the 169 targets
-are never assigned anywhere in the corpus.
-
-### 6.5 Most assignments sit in the weakest band
-
-Of 14,776 target assignments: **9,228 low, 2,923 medium, 2,625 high.** The band
-is derived from the score and the number of independent evidence sources, counted
-over the fields a project actually has rather than over five, so a project with
-two fields present and both firing is not punished for the absence of the others.
-
-### 6.6 Four fifths of the category vocabulary is deliberately unmapped
-
-199 of 1,007 EuroSciVoc categories carry a crosswalk row, and 87 of the 169
-targets have none. **That is the result, not a gap to be filled.** Categories
-like `natural sciences/mathematics/applied mathematics` have no defensible
-one-line justification against any target's text, and **inventing one would
-produce exactly the superficial mapping that criterion 2 penalises.** A project
-in an unmapped category is not thereby unmapped: it reaches targets through the
-lexical evidence that reads the project's own words.
-
-### 6.7 The explanation pass is parked
-
-No model credential is set in the build environment and §9 forbids one in the
-repository or the room, so the pass records its prompts with their hashes and
-**writes nothing that pretends to be a model's work.** The `explanation` and
-`prompt_sha256` columns of the mapping table say so on every row rather than
-being blank.
-
-### 6.8 Scope
-
-Horizon Europe only; FP7 and Horizon 2020 are excluded for size, and the notebook
-says how the method extends. Model-made assignments are excluded from the mapping
-by §3. **No personal data is read**; participating organisations and their
-countries are, because an organisation is not a person.
-
-### 6.9 There is no acceptance threshold
-
-This is a report of what the method does, not a gate it passed. **A poor number
-is submitted with its explanation.**
+**Section 4's numbers stay here**, because the bounded recall is this study's
+result rather than an apology for it, and **section 5 keeps the independence
+limitation of §4.4 in its own words** because registration section 6 item 8 asks
+this document for that by name.
 
 ---
 
