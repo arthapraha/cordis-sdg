@@ -1,0 +1,4364 @@
+{
+ "_what_this_is": "Pipeline v1 output, sections 3.4 to 3.6. No model was called; section 3.7's explanations are added downstream and cannot change any assignment here.",
+ "registration_sha256": "72187842d621e55dedb6c6b366356131141cd47acf3324ab26bc7f06293c341c",
+ "parameters_version": "v1",
+ "parameters_values_sha256": "3b1bec689de0dde0bef9201e6f9ef3e468383ba3e3fa47317f4c8387b8b56d6c",
+ "parameters_values_sha256_is": "sha256 of the parameters with every underscore-prefixed documentation key stripped, serialised as compact JSON with sorted keys. It moves when a parameter moves and not when one is explained. The file's own hash is in the commit and the README.",
+ "handoff_sha256": "fd506beb26684df464127df73d351b26f3cbdd6d8db6a8dacc73581e1d231d11",
+ "set": "development",
+ "projects": 50,
+ "results": [
+  {
+   "id": "101248722",
+   "set": "development",
+   "acronym": "AICAP",
+   "sources_present": [
+    "title",
+    "keywords",
+    "objective"
+   ],
+   "sources_absent": [
+    "editorial_description",
+    "deliverable_descriptions"
+   ],
+   "assignments": [
+    {
+     "target_id": "13.3",
+     "target_uri": "http://data.europa.eu/sdg/13.3",
+     "goal_id": "13",
+     "goal_uri": "http://data.europa.eu/sdg/13",
+     "score": 3.3,
+     "independent_sources": 2,
+     "confidence": "low",
+     "evidence": [
+      {
+       "source": "lexical",
+       "field": "keywords",
+       "phrase": "Early Warning",
+       "kind": "key_term",
+       "weight": 1.8
+      },
+      {
+       "source": "lexical",
+       "field": "objective",
+       "phrase": "early warning",
+       "kind": "key_term",
+       "weight": 1.5
+      }
+     ]
+    },
+    {
+     "target_id": "3.d",
+     "target_uri": "http://data.europa.eu/sdg/3.d",
+     "goal_id": "3",
+     "goal_uri": "http://data.europa.eu/sdg/3",
+     "score": 3.3,
+     "independent_sources": 2,
+     "confidence": "low",
+     "evidence": [
+      {
+       "source": "lexical",
+       "field": "keywords",
+       "phrase": "Early Warning",
+       "kind": "key_term",
+       "weight": 1.8
+      },
+      {
+       "source": "lexical",
+       "field": "objective",
+       "phrase": "early warning",
+       "kind": "key_term",
+       "weight": 1.5
+      }
+     ]
+    }
+   ],
+   "goal_level_only": [],
+   "unassigned": false,
+   "cross_cutting": true,
+   "overflow_beyond_cap": 0,
+   "discarded_by_negation_rule": []
+  },
+  {
+   "id": "101276378",
+   "set": "development",
+   "acronym": "FERROGAST",
+   "sources_present": [
+    "title",
+    "keywords",
+    "objective"
+   ],
+   "sources_absent": [
+    "editorial_description",
+    "deliverable_descriptions"
+   ],
+   "assignments": [],
+   "goal_level_only": [
+    {
+     "goal_id": "3",
+     "goal_uri": "http://data.europa.eu/sdg/3",
+     "score": 2.5
+    }
+   ],
+   "unassigned": false,
+   "cross_cutting": false,
+   "overflow_beyond_cap": 0,
+   "discarded_by_negation_rule": []
+  },
+  {
+   "id": "101104138",
+   "set": "development",
+   "acronym": "INTDKIN",
+   "sources_present": [
+    "title",
+    "keywords",
+    "objective",
+    "editorial_description",
+    "deliverable_descriptions"
+   ],
+   "sources_absent": [],
+   "assignments": [
+    {
+     "target_id": "9.5",
+     "target_uri": "http://data.europa.eu/sdg/9.5",
+     "goal_id": "9",
+     "goal_uri": "http://data.europa.eu/sdg/9",
+     "score": 3.6,
+     "independent_sources": 3,
+     "confidence": "low",
+     "evidence": [
+      {
+       "source": "lexical",
+       "field": "objective",
+       "phrase": "including",
+       "kind": "key_term",
+       "weight": 1.0
+      },
+      {
+       "source": "lexical",
+       "field": "editorial_description",
+       "phrase": "including",
+       "kind": "key_term",
+       "weight": 1.0
+      },
+      {
+       "source": "lexical",
+       "field": "deliverable_descriptions",
+       "phrase": "including",
+       "kind": "key_term",
+       "weight": 0.8
+      },
+      {
+       "source": "lexical",
+       "field": "deliverable_descriptions",
+       "phrase": "public",
+       "kind": "key_term",
+       "weight": 0.8
+      }
+     ]
+    },
+    {
+     "target_id": "11.3",
+     "target_uri": "http://data.europa.eu/sdg/11.3",
+     "goal_id": "11",
+     "goal_uri": "http://data.europa.eu/sdg/11",
+     "score": 3.2,
+     "independent_sources": 3,
+     "confidence": "low",
+     "evidence": [
+      {
+       "source": "lexical",
+       "field": "title",
+       "phrase": "Integrated",
+       "kind": "key_term",
+       "weight": 1.2
+      },
+      {
+       "source": "lexical",
+       "field": "objective",
+       "phrase": "integrated",
+       "kind": "key_term",
+       "weight": 1.0
+      },
+      {
+       "source": "lexical",
+       "field": "editorial_description",
+       "phrase": "integrated",
+       "kind": "key_term",
+       "weight": 1.0
+      }
+     ]
+    }
+   ],
+   "goal_level_only": [],
+   "unassigned": false,
+   "cross_cutting": true,
+   "overflow_beyond_cap": 0,
+   "discarded_by_negation_rule": []
+  },
+  {
+   "id": "101130787",
+   "set": "development",
+   "acronym": "POLYTROP",
+   "sources_present": [
+    "title",
+    "keywords",
+    "objective",
+    "editorial_description",
+    "deliverable_descriptions"
+   ],
+   "sources_absent": [],
+   "assignments": [
+    {
+     "target_id": "3.4",
+     "target_uri": "http://data.europa.eu/sdg/3.4",
+     "goal_id": "3",
+     "goal_uri": "http://data.europa.eu/sdg/3",
+     "score": 7.0,
+     "independent_sources": 3,
+     "confidence": "high",
+     "evidence": [
+      {
+       "source": "lexical",
+       "field": "objective",
+       "phrase": "cancer",
+       "kind": "synonym_domain",
+       "weight": 1.5
+      },
+      {
+       "source": "lexical",
+       "field": "editorial_description",
+       "phrase": "treatment",
+       "kind": "key_term",
+       "weight": 1.0
+      },
+      {
+       "source": "lexical",
+       "field": "editorial_description",
+       "phrase": "Cancer",
+       "kind": "synonym_domain",
+       "weight": 1.5
+      },
+      {
+       "source": "crosswalk",
+       "category": "medical and health sciences/clinical medicine/oncology",
+       "strength": "direct",
+       "justification": "Cancer is a principal non-communicable disease under target 3.4.",
+       "weight": 3.0
+      }
+     ]
+    }
+   ],
+   "goal_level_only": [],
+   "unassigned": false,
+   "cross_cutting": false,
+   "overflow_beyond_cap": 0,
+   "discarded_by_negation_rule": []
+  },
+  {
+   "id": "101292413",
+   "set": "development",
+   "acronym": "PROTECT",
+   "sources_present": [
+    "title",
+    "objective"
+   ],
+   "sources_absent": [
+    "keywords",
+    "editorial_description",
+    "deliverable_descriptions"
+   ],
+   "assignments": [],
+   "goal_level_only": [
+    {
+     "goal_id": "11",
+     "goal_uri": "http://data.europa.eu/sdg/11",
+     "score": 2.0
+    }
+   ],
+   "unassigned": false,
+   "cross_cutting": false,
+   "overflow_beyond_cap": 0,
+   "discarded_by_negation_rule": []
+  },
+  {
+   "id": "101220791",
+   "set": "development",
+   "acronym": "LearnMamBo",
+   "sources_present": [
+    "title",
+    "keywords",
+    "objective"
+   ],
+   "sources_absent": [
+    "editorial_description",
+    "deliverable_descriptions"
+   ],
+   "assignments": [],
+   "goal_level_only": [
+    {
+     "goal_id": "3",
+     "goal_uri": "http://data.europa.eu/sdg/3",
+     "score": 2.0
+    }
+   ],
+   "unassigned": false,
+   "cross_cutting": false,
+   "overflow_beyond_cap": 0,
+   "discarded_by_negation_rule": []
+  },
+  {
+   "id": "101279230",
+   "set": "development",
+   "acronym": "INSPiRE",
+   "sources_present": [
+    "title",
+    "keywords",
+    "objective"
+   ],
+   "sources_absent": [
+    "editorial_description",
+    "deliverable_descriptions"
+   ],
+   "assignments": [
+    {
+     "target_id": "10.3",
+     "target_uri": "http://data.europa.eu/sdg/10.3",
+     "goal_id": "10",
+     "goal_uri": "http://data.europa.eu/sdg/10",
+     "score": 3.2,
+     "independent_sources": 2,
+     "confidence": "low",
+     "evidence": [
+      {
+       "source": "lexical",
+       "field": "title",
+       "phrase": "Practices",
+       "kind": "key_term",
+       "weight": 1.2
+      },
+      {
+       "source": "lexical",
+       "field": "objective",
+       "phrase": "policies",
+       "kind": "key_term",
+       "weight": 1.0
+      },
+      {
+       "source": "lexical",
+       "field": "objective",
+       "phrase": "practices",
+       "kind": "key_term",
+       "weight": 1.0
+      }
+     ]
+    }
+   ],
+   "goal_level_only": [],
+   "unassigned": false,
+   "cross_cutting": false,
+   "overflow_beyond_cap": 0,
+   "discarded_by_negation_rule": []
+  },
+  {
+   "id": "101122653",
+   "set": "development",
+   "acronym": "CertiFOX",
+   "sources_present": [
+    "title",
+    "keywords",
+    "objective"
+   ],
+   "sources_absent": [
+    "editorial_description",
+    "deliverable_descriptions"
+   ],
+   "assignments": [],
+   "goal_level_only": [
+    {
+     "goal_id": "4",
+     "goal_uri": "http://data.europa.eu/sdg/4",
+     "score": 2.0
+    }
+   ],
+   "unassigned": false,
+   "cross_cutting": false,
+   "overflow_beyond_cap": 0,
+   "discarded_by_negation_rule": []
+  },
+  {
+   "id": "101248862",
+   "set": "development",
+   "acronym": "The PHM Hub",
+   "sources_present": [
+    "title",
+    "keywords",
+    "objective"
+   ],
+   "sources_absent": [
+    "editorial_description",
+    "deliverable_descriptions"
+   ],
+   "assignments": [
+    {
+     "target_id": "3.3",
+     "target_uri": "http://data.europa.eu/sdg/3.3",
+     "goal_id": "3",
+     "goal_uri": "http://data.europa.eu/sdg/3",
+     "score": 6.0,
+     "independent_sources": 2,
+     "confidence": "medium",
+     "evidence": [
+      {
+       "source": "lexical",
+       "field": "objective",
+       "phrase": "infectious disease",
+       "kind": "synonym_domain",
+       "weight": 1.5
+      },
+      {
+       "source": "crosswalk",
+       "category": "medical and health sciences/health sciences/public health/epidemiology",
+       "strength": "contributing",
+       "justification": "Target 3.3's end of epidemics and combat of communicable diseases.",
+       "weight": 1.5
+      },
+      {
+       "source": "crosswalk",
+       "category": "medical and health sciences/health sciences/infectious diseases",
+       "strength": "direct",
+       "justification": "Target 3.3's communicable diseases, verbatim.",
+       "weight": 3.0
+      }
+     ]
+    },
+    {
+     "target_id": "8.5",
+     "target_uri": "http://data.europa.eu/sdg/8.5",
+     "goal_id": "8",
+     "goal_uri": "http://data.europa.eu/sdg/8",
+     "score": 4.0,
+     "independent_sources": 2,
+     "confidence": "low",
+     "evidence": [
+      {
+       "source": "lexical",
+       "field": "objective",
+       "phrase": "full",
+       "kind": "key_term",
+       "weight": 1.0
+      },
+      {
+       "source": "crosswalk",
+       "category": "social sciences/economics and business/business and management/employment",
+       "strength": "direct",
+       "justification": "Target 8.5's full and productive employment and decent work for all.",
+       "weight": 3.0
+      }
+     ]
+    },
+    {
+     "target_id": "3.b",
+     "target_uri": "http://data.europa.eu/sdg/3.b",
+     "goal_id": "3",
+     "goal_uri": "http://data.europa.eu/sdg/3",
+     "score": 3.3,
+     "independent_sources": 2,
+     "confidence": "low",
+     "evidence": [
+      {
+       "source": "lexical",
+       "field": "title",
+       "phrase": "Public Health",
+       "kind": "key_term",
+       "weight": 1.8
+      },
+      {
+       "source": "lexical",
+       "field": "objective",
+       "phrase": "Public Health",
+       "kind": "key_term",
+       "weight": 1.5
+      }
+     ]
+    },
+    {
+     "target_id": "9.5",
+     "target_uri": "http://data.europa.eu/sdg/9.5",
+     "goal_id": "9",
+     "goal_uri": "http://data.europa.eu/sdg/9",
+     "score": 3.2,
+     "independent_sources": 2,
+     "confidence": "low",
+     "evidence": [
+      {
+       "source": "lexical",
+       "field": "title",
+       "phrase": "Public",
+       "kind": "key_term",
+       "weight": 1.2
+      },
+      {
+       "source": "lexical",
+       "field": "objective",
+       "phrase": "including",
+       "kind": "key_term",
+       "weight": 1.0
+      },
+      {
+       "source": "lexical",
+       "field": "objective",
+       "phrase": "Public",
+       "kind": "key_term",
+       "weight": 1.0
+      }
+     ]
+    }
+   ],
+   "goal_level_only": [],
+   "unassigned": false,
+   "cross_cutting": true,
+   "overflow_beyond_cap": 0,
+   "discarded_by_negation_rule": []
+  },
+  {
+   "id": "101073045",
+   "set": "development",
+   "acronym": "TADFsolutions",
+   "sources_present": [
+    "title",
+    "keywords",
+    "objective",
+    "editorial_description",
+    "deliverable_descriptions"
+   ],
+   "sources_absent": [],
+   "assignments": [
+    {
+     "target_id": "6.3",
+     "target_uri": "http://data.europa.eu/sdg/6.3",
+     "goal_id": "6",
+     "goal_uri": "http://data.europa.eu/sdg/6",
+     "score": 4.4,
+     "independent_sources": 4,
+     "confidence": "low",
+     "evidence": [
+      {
+       "source": "lexical",
+       "field": "title",
+       "phrase": "materials",
+       "kind": "key_term",
+       "weight": 1.2
+      },
+      {
+       "source": "lexical",
+       "field": "keywords",
+       "phrase": "materials",
+       "kind": "key_term",
+       "weight": 1.2
+      },
+      {
+       "source": "lexical",
+       "field": "objective",
+       "phrase": "materials",
+       "kind": "key_term",
+       "weight": 1.0
+      },
+      {
+       "source": "lexical",
+       "field": "editorial_description",
+       "phrase": "materials",
+       "kind": "key_term",
+       "weight": 1.0
+      }
+     ]
+    },
+    {
+     "target_id": "4.4",
+     "target_uri": "http://data.europa.eu/sdg/4.4",
+     "goal_id": "4",
+     "goal_uri": "http://data.europa.eu/sdg/4",
+     "score": 4.0,
+     "independent_sources": 2,
+     "confidence": "low",
+     "evidence": [
+      {
+       "source": "lexical",
+       "field": "objective",
+       "phrase": "technical",
+       "kind": "key_term",
+       "weight": 1.0
+      },
+      {
+       "source": "lexical",
+       "field": "objective",
+       "phrase": "employment",
+       "kind": "key_term",
+       "weight": 1.0
+      },
+      {
+       "source": "lexical",
+       "field": "editorial_description",
+       "phrase": "technical",
+       "kind": "key_term",
+       "weight": 1.0
+      },
+      {
+       "source": "lexical",
+       "field": "editorial_description",
+       "phrase": "employment",
+       "kind": "key_term",
+       "weight": 1.0
+      }
+     ]
+    },
+    {
+     "target_id": "8.5",
+     "target_uri": "http://data.europa.eu/sdg/8.5",
+     "goal_id": "8",
+     "goal_uri": "http://data.europa.eu/sdg/8",
+     "score": 3.0,
+     "independent_sources": 1,
+     "confidence": "low",
+     "evidence": [
+      {
+       "source": "crosswalk",
+       "category": "social sciences/economics and business/business and management/employment",
+       "strength": "direct",
+       "justification": "Target 8.5's full and productive employment and decent work for all.",
+       "weight": 3.0
+      }
+     ]
+    },
+    {
+     "target_id": "9.4",
+     "target_uri": "http://data.europa.eu/sdg/9.4",
+     "goal_id": "9",
+     "goal_uri": "http://data.europa.eu/sdg/9",
+     "score": 3.0,
+     "independent_sources": 1,
+     "confidence": "low",
+     "evidence": [
+      {
+       "source": "crosswalk",
+       "category": "engineering and technology/mechanical engineering/manufacturing engineering",
+       "strength": "direct",
+       "justification": "Target 9.4's \"retrofit industries to make them sustainable, with increased resource-use efficiency\".",
+       "weight": 3.0
+      }
+     ]
+    }
+   ],
+   "goal_level_only": [],
+   "unassigned": false,
+   "cross_cutting": true,
+   "overflow_beyond_cap": 0,
+   "discarded_by_negation_rule": []
+  },
+  {
+   "id": "101152308",
+   "set": "development",
+   "acronym": "ReSens-Nature",
+   "sources_present": [
+    "title",
+    "keywords",
+    "objective",
+    "editorial_description"
+   ],
+   "sources_absent": [
+    "deliverable_descriptions"
+   ],
+   "assignments": [],
+   "goal_level_only": [
+    {
+     "goal_id": "17",
+     "goal_uri": "http://data.europa.eu/sdg/17",
+     "score": 3.0
+    }
+   ],
+   "unassigned": false,
+   "cross_cutting": false,
+   "overflow_beyond_cap": 0,
+   "discarded_by_negation_rule": [
+    {
+     "field": "editorial_description",
+     "phrase": "effective",
+     "at": 1979,
+     "discarded_by": "direct_negation",
+     "targets": [
+      "3.8",
+      "16.6"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "101061575",
+   "set": "development",
+   "acronym": "COMPHACRISIS",
+   "sources_present": [
+    "title",
+    "keywords",
+    "objective",
+    "editorial_description",
+    "deliverable_descriptions"
+   ],
+   "sources_absent": [],
+   "assignments": [
+    {
+     "target_id": "14.5",
+     "target_uri": "http://data.europa.eu/sdg/14.5",
+     "goal_id": "14",
+     "goal_uri": "http://data.europa.eu/sdg/14",
+     "score": 4.4,
+     "independent_sources": 4,
+     "confidence": "low",
+     "evidence": [
+      {
+       "source": "lexical",
+       "field": "title",
+       "phrase": "Law",
+       "kind": "key_term",
+       "weight": 1.2
+      },
+      {
+       "source": "lexical",
+       "field": "keywords",
+       "phrase": "Law",
+       "kind": "key_term",
+       "weight": 1.2
+      },
+      {
+       "source": "lexical",
+       "field": "objective",
+       "phrase": "law",
+       "kind": "key_term",
+       "weight": 1.0
+      },
+      {
+       "source": "lexical",
+       "field": "editorial_description",
+       "phrase": "law",
+       "kind": "key_term",
+       "weight": 1.0
+      }
+     ]
+    },
+    {
+     "target_id": "3.b",
+     "target_uri": "http://data.europa.eu/sdg/3.b",
+     "goal_id": "3",
+     "goal_uri": "http://data.europa.eu/sdg/3",
+     "score": 4.0,
+     "independent_sources": 1,
+     "confidence": "low",
+     "evidence": [
+      {
+       "source": "lexical",
+       "field": "editorial_description",
+       "phrase": "vaccines",
+       "kind": "key_term",
+       "weight": 1.0
+      },
+      {
+       "source": "lexical",
+       "field": "editorial_description",
+       "phrase": "public health",
+       "kind": "key_term",
+       "weight": 1.5
+      },
+      {
+       "source": "lexical",
+       "field": "editorial_description",
+       "phrase": "protect public health",
+       "kind": "key_term",
+       "weight": 1.5
+      }
+     ]
+    },
+    {
+     "target_id": "9.5",
+     "target_uri": "http://data.europa.eu/sdg/9.5",
+     "goal_id": "9",
+     "goal_uri": "http://data.europa.eu/sdg/9",
+     "score": 3.6,
+     "independent_sources": 2,
+     "confidence": "low",
+     "evidence": [
+      {
+       "source": "lexical",
+       "field": "editorial_description",
+       "phrase": "including",
+       "kind": "key_term",
+       "weight": 1.0
+      },
+      {
+       "source": "lexical",
+       "field": "editorial_description",
+       "phrase": "public",
+       "kind": "key_term",
+       "weight": 1.0
+      },
+      {
+       "source": "lexical",
+       "field": "deliverable_descriptions",
+       "phrase": "including",
+       "kind": "key_term",
+       "weight": 0.8
+      },
+      {
+       "source": "lexical",
+       "field": "deliverable_descriptions",
+       "phrase": "public",
+       "kind": "key_term",
+       "weight": 0.8
+      }
+     ]
+    },
+    {
+     "target_id": "1.5",
+     "target_uri": "http://data.europa.eu/sdg/1.5",
+     "goal_id": "1",
+     "goal_uri": "http://data.europa.eu/sdg/1",
+     "score": 3.0,
+     "independent_sources": 2,
+     "confidence": "low",
+     "evidence": [
+      {
+       "source": "lexical",
+       "field": "objective",
+       "phrase": "social",
+       "kind": "key_term",
+       "weight": 1.0
+      },
+      {
+       "source": "lexical",
+       "field": "editorial_description",
+       "phrase": "Economic",
+       "kind": "key_term",
+       "weight": 1.0
+      },
+      {
+       "source": "lexical",
+       "field": "editorial_description",
+       "phrase": "Social",
+       "kind": "key_term",
+       "weight": 1.0
+      }
+     ]
+    },
+    {
+     "target_id": "10.2",
+     "target_uri": "http://data.europa.eu/sdg/10.2",
+     "goal_id": "10",
+     "goal_uri": "http://data.europa.eu/sdg/10",
+     "score": 3.0,
+     "independent_sources": 2,
+     "confidence": "low",
+     "evidence": [
+      {
+       "source": "lexical",
+       "field": "objective",
+       "phrase": "social",
+       "kind": "key_term",
+       "weight": 1.0
+      },
+      {
+       "source": "lexical",
+       "field": "editorial_description",
+       "phrase": "Economic",
+       "kind": "key_term",
+       "weight": 1.0
+      },
+      {
+       "source": "lexical",
+       "field": "editorial_description",
+       "phrase": "Social",
+       "kind": "key_term",
+       "weight": 1.0
+      }
+     ]
+    }
+   ],
+   "goal_level_only": [],
+   "unassigned": false,
+   "cross_cutting": true,
+   "overflow_beyond_cap": 3,
+   "discarded_by_negation_rule": []
+  },
+  {
+   "id": "101178354",
+   "set": "development",
+   "acronym": "OPTIMINER",
+   "sources_present": [
+    "title",
+    "keywords",
+    "objective"
+   ],
+   "sources_absent": [
+    "editorial_description",
+    "deliverable_descriptions"
+   ],
+   "assignments": [
+    {
+     "target_id": "16.4",
+     "target_uri": "http://data.europa.eu/sdg/16.4",
+     "goal_id": "16",
+     "goal_uri": "http://data.europa.eu/sdg/16",
+     "score": 3.4,
+     "independent_sources": 3,
+     "confidence": "low",
+     "evidence": [
+      {
+       "source": "lexical",
+       "field": "title",
+       "phrase": "Recovery",
+       "kind": "key_term",
+       "weight": 1.2
+      },
+      {
+       "source": "lexical",
+       "field": "keywords",
+       "phrase": "recovery",
+       "kind": "key_term",
+       "weight": 1.2
+      },
+      {
+       "source": "lexical",
+       "field": "objective",
+       "phrase": "recovery",
+       "kind": "key_term",
+       "weight": 1.0
+      }
+     ]
+    },
+    {
+     "target_id": "12.5",
+     "target_uri": "http://data.europa.eu/sdg/12.5",
+     "goal_id": "12",
+     "goal_uri": "http://data.europa.eu/sdg/12",
+     "score": 3.3,
+     "independent_sources": 2,
+     "confidence": "low",
+     "evidence": [
+      {
+       "source": "lexical",
+       "field": "keywords",
+       "phrase": "waste valorisation",
+       "kind": "synonym_domain",
+       "weight": 1.8
+      },
+      {
+       "source": "lexical",
+       "field": "objective",
+       "phrase": "waste valorisation",
+       "kind": "synonym_domain",
+       "weight": 1.5
+      }
+     ]
+    }
+   ],
+   "goal_level_only": [],
+   "unassigned": false,
+   "cross_cutting": true,
+   "overflow_beyond_cap": 0,
+   "discarded_by_negation_rule": []
+  },
+  {
+   "id": "101144659",
+   "set": "development",
+   "acronym": "UroAct",
+   "sources_present": [
+    "title",
+    "keywords",
+    "objective",
+    "editorial_description"
+   ],
+   "sources_absent": [
+    "deliverable_descriptions"
+   ],
+   "assignments": [
+    {
+     "target_id": "1.4",
+     "target_uri": "http://data.europa.eu/sdg/1.4",
+     "goal_id": "1",
+     "goal_uri": "http://data.europa.eu/sdg/1",
+     "score": 4.8,
+     "independent_sources": 3,
+     "confidence": "medium",
+     "evidence": [
+      {
+       "source": "lexical",
+       "field": "title",
+       "phrase": "women",
+       "kind": "key_term",
+       "weight": 0.6
+      },
+      {
+       "source": "lexical",
+       "field": "title",
+       "phrase": "men",
+       "kind": "key_term",
+       "weight": 1.2
+      },
+      {
+       "source": "lexical",
+       "field": "objective",
+       "phrase": "women",
+       "kind": "key_term",
+       "weight": 0.5
+      },
+      {
+       "source": "lexical",
+       "field": "objective",
+       "phrase": "men",
+       "kind": "key_term",
+       "weight": 1.0
+      },
+      {
+       "source": "lexical",
+       "field": "editorial_description",
+       "phrase": "women",
+       "kind": "key_term",
+       "weight": 0.5
+      },
+      {
+       "source": "lexical",
+       "field": "editorial_description",
+       "phrase": "men",
+       "kind": "key_term",
+       "weight": 1.0
+      }
+     ]
+    },
+    {
+     "target_id": "8.5",
+     "target_uri": "http://data.europa.eu/sdg/8.5",
+     "goal_id": "8",
+     "goal_uri": "http://data.europa.eu/sdg/8",
+     "score": 3.2,
+     "independent_sources": 3,
+     "confidence": "low",
+     "evidence": [
+      {
+       "source": "lexical",
+       "field": "title",
+       "phrase": "men",
+       "kind": "key_term",
+       "weight": 1.2
+      },
+      {
+       "source": "lexical",
+       "field": "objective",
+       "phrase": "men",
+       "kind": "key_term",
+       "weight": 1.0
+      },
+      {
+       "source": "lexical",
+       "field": "editorial_description",
+       "phrase": "men",
+       "kind": "key_term",
+       "weight": 1.0
+      }
+     ]
+    },
+    {
+     "target_id": "4.6",
+     "target_uri": "http://data.europa.eu/sdg/4.6",
+     "goal_id": "4",
+     "goal_uri": "http://data.europa.eu/sdg/4",
+     "score": 3.1,
+     "independent_sources": 3,
+     "confidence": "low",
+     "evidence": [
+      {
+       "source": "lexical",
+       "field": "title",
+       "phrase": "women",
+       "kind": "key_term",
+       "weight": 0.6
+      },
+      {
+       "source": "lexical",
+       "field": "objective",
+       "phrase": "women",
+       "kind": "key_term",
+       "weight": 0.5
+      },
+      {
+       "source": "lexical",
+       "field": "editorial_description",
+       "phrase": "women",
+       "kind": "key_term",
+       "weight": 0.5
+      },
+      {
+       "source": "lexical",
+       "field": "editorial_description",
+       "phrase": "both men",
+       "kind": "key_term",
+       "weight": 1.5
+      }
+     ]
+    },
+    {
+     "target_id": "3.b",
+     "target_uri": "http://data.europa.eu/sdg/3.b",
+     "goal_id": "3",
+     "goal_uri": "http://data.europa.eu/sdg/3",
+     "score": 3.0,
+     "independent_sources": 2,
+     "confidence": "low",
+     "evidence": [
+      {
+       "source": "lexical",
+       "field": "objective",
+       "phrase": "public health",
+       "kind": "key_term",
+       "weight": 1.5
+      },
+      {
+       "source": "lexical",
+       "field": "editorial_description",
+       "phrase": "public health",
+       "kind": "key_term",
+       "weight": 1.5
+      }
+     ]
+    },
+    {
+     "target_id": "9.5",
+     "target_uri": "http://data.europa.eu/sdg/9.5",
+     "goal_id": "9",
+     "goal_uri": "http://data.europa.eu/sdg/9",
+     "score": 3.0,
+     "independent_sources": 2,
+     "confidence": "low",
+     "evidence": [
+      {
+       "source": "lexical",
+       "field": "objective",
+       "phrase": "public",
+       "kind": "key_term",
+       "weight": 1.0
+      },
+      {
+       "source": "lexical",
+       "field": "editorial_description",
+       "phrase": "including",
+       "kind": "key_term",
+       "weight": 1.0
+      },
+      {
+       "source": "lexical",
+       "field": "editorial_description",
+       "phrase": "public",
+       "kind": "key_term",
+       "weight": 1.0
+      }
+     ]
+    }
+   ],
+   "goal_level_only": [],
+   "unassigned": false,
+   "cross_cutting": true,
+   "overflow_beyond_cap": 0,
+   "discarded_by_negation_rule": []
+  },
+  {
+   "id": "101094648",
+   "set": "development",
+   "acronym": "SLEs",
+   "sources_present": [
+    "title",
+    "keywords",
+    "objective",
+    "editorial_description",
+    "deliverable_descriptions"
+   ],
+   "sources_absent": [],
+   "assignments": [
+    {
+     "target_id": "17.8",
+     "target_uri": "http://data.europa.eu/sdg/17.8",
+     "goal_id": "17",
+     "goal_uri": "http://data.europa.eu/sdg/17",
+     "score": 3.6,
+     "independent_sources": 3,
+     "confidence": "low",
+     "evidence": [
+      {
+       "source": "lexical",
+       "field": "objective",
+       "phrase": "science",
+       "kind": "key_term",
+       "weight": 1.0
+      },
+      {
+       "source": "lexical",
+       "field": "editorial_description",
+       "phrase": "science",
+       "kind": "key_term",
+       "weight": 1.0
+      },
+      {
+       "source": "lexical",
+       "field": "deliverable_descriptions",
+       "phrase": "information",
+       "kind": "key_term",
+       "weight": 0.8
+      },
+      {
+       "source": "lexical",
+       "field": "deliverable_descriptions",
+       "phrase": "science",
+       "kind": "key_term",
+       "weight": 0.8
+      }
+     ]
+    }
+   ],
+   "goal_level_only": [],
+   "unassigned": false,
+   "cross_cutting": false,
+   "overflow_beyond_cap": 0,
+   "discarded_by_negation_rule": []
+  },
+  {
+   "id": "101208624",
+   "set": "development",
+   "acronym": "MEMOCELL",
+   "sources_present": [
+    "title",
+    "keywords",
+    "objective",
+    "deliverable_descriptions"
+   ],
+   "sources_absent": [
+    "editorial_description"
+   ],
+   "assignments": [
+    {
+     "target_id": "3.4",
+     "target_uri": "http://data.europa.eu/sdg/3.4",
+     "goal_id": "3",
+     "goal_uri": "http://data.europa.eu/sdg/3",
+     "score": 7.5,
+     "independent_sources": 2,
+     "confidence": "medium",
+     "evidence": [
+      {
+       "source": "lexical",
+       "field": "objective",
+       "phrase": "well-being",
+       "kind": "key_term",
+       "weight": 1.0
+      },
+      {
+       "source": "lexical",
+       "field": "objective",
+       "phrase": "well-being",
+       "kind": "synonym_subject",
+       "weight": 2.0
+      },
+      {
+       "source": "lexical",
+       "field": "objective",
+       "phrase": "cancer",
+       "kind": "synonym_domain",
+       "weight": 1.5
+      },
+      {
+       "source": "crosswalk",
+       "category": "medical and health sciences/clinical medicine/oncology",
+       "strength": "direct",
+       "justification": "Cancer is a principal non-communicable disease under target 3.4.",
+       "weight": 3.0
+      }
+     ]
+    }
+   ],
+   "goal_level_only": [],
+   "unassigned": false,
+   "cross_cutting": false,
+   "overflow_beyond_cap": 0,
+   "discarded_by_negation_rule": []
+  },
+  {
+   "id": "101039436",
+   "set": "development",
+   "acronym": "A-B-C-Deep",
+   "sources_present": [
+    "title",
+    "keywords",
+    "objective",
+    "editorial_description",
+    "deliverable_descriptions"
+   ],
+   "sources_absent": [],
+   "assignments": [
+    {
+     "target_id": "15.8",
+     "target_uri": "http://data.europa.eu/sdg/15.8",
+     "goal_id": "15",
+     "goal_uri": "http://data.europa.eu/sdg/15",
+     "score": 3.2,
+     "independent_sources": 3,
+     "confidence": "low",
+     "evidence": [
+      {
+       "source": "lexical",
+       "field": "title",
+       "phrase": "Control",
+       "kind": "key_term",
+       "weight": 1.2
+      },
+      {
+       "source": "lexical",
+       "field": "objective",
+       "phrase": "control",
+       "kind": "key_term",
+       "weight": 1.0
+      },
+      {
+       "source": "lexical",
+       "field": "editorial_description",
+       "phrase": "Control",
+       "kind": "key_term",
+       "weight": 1.0
+      }
+     ]
+    }
+   ],
+   "goal_level_only": [],
+   "unassigned": false,
+   "cross_cutting": false,
+   "overflow_beyond_cap": 0,
+   "discarded_by_negation_rule": []
+  },
+  {
+   "id": "101155303",
+   "set": "development",
+   "acronym": "F-TRADEMARK",
+   "sources_present": [
+    "title",
+    "keywords",
+    "objective"
+   ],
+   "sources_absent": [
+    "editorial_description",
+    "deliverable_descriptions"
+   ],
+   "assignments": [
+    {
+     "target_id": "2.4",
+     "target_uri": "http://data.europa.eu/sdg/2.4",
+     "goal_id": "2",
+     "goal_uri": "http://data.europa.eu/sdg/2",
+     "score": 6.3,
+     "independent_sources": 3,
+     "confidence": "high",
+     "evidence": [
+      {
+       "source": "lexical",
+       "field": "keywords",
+       "phrase": "Climate change",
+       "kind": "key_term",
+       "weight": 1.8
+      },
+      {
+       "source": "lexical",
+       "field": "objective",
+       "phrase": "climate change",
+       "kind": "key_term",
+       "weight": 1.5
+      },
+      {
+       "source": "crosswalk",
+       "category": "agricultural sciences/agriculture, forestry, and fisheries/agriculture/sustainable agriculture",
+       "strength": "direct",
+       "justification": "Target 2.4's subject verbatim: sustainable food production and resilient agricultural practices.",
+       "weight": 3.0
+      }
+     ]
+    },
+    {
+     "target_id": "2.1",
+     "target_uri": "http://data.europa.eu/sdg/2.1",
+     "goal_id": "2",
+     "goal_uri": "http://data.europa.eu/sdg/2",
+     "score": 5.0,
+     "independent_sources": 1,
+     "confidence": "low",
+     "evidence": [
+      {
+       "source": "lexical",
+       "field": "objective",
+       "phrase": "hunger",
+       "kind": "key_term",
+       "weight": 1.0
+      },
+      {
+       "source": "lexical",
+       "field": "objective",
+       "phrase": "hunger",
+       "kind": "synonym_subject",
+       "weight": 2.0
+      },
+      {
+       "source": "lexical",
+       "field": "objective",
+       "phrase": "food security",
+       "kind": "synonym_subject",
+       "weight": 2.0
+      }
+     ]
+    },
+    {
+     "target_id": "11.b",
+     "target_uri": "http://data.europa.eu/sdg/11.b",
+     "goal_id": "11",
+     "goal_uri": "http://data.europa.eu/sdg/11",
+     "score": 3.3,
+     "independent_sources": 2,
+     "confidence": "low",
+     "evidence": [
+      {
+       "source": "lexical",
+       "field": "keywords",
+       "phrase": "Climate change",
+       "kind": "key_term",
+       "weight": 1.8
+      },
+      {
+       "source": "lexical",
+       "field": "objective",
+       "phrase": "climate change",
+       "kind": "key_term",
+       "weight": 1.5
+      }
+     ]
+    },
+    {
+     "target_id": "13.1",
+     "target_uri": "http://data.europa.eu/sdg/13.1",
+     "goal_id": "13",
+     "goal_uri": "http://data.europa.eu/sdg/13",
+     "score": 3.0,
+     "independent_sources": 1,
+     "confidence": "low",
+     "evidence": [
+      {
+       "source": "crosswalk",
+       "category": "natural sciences/earth and related environmental sciences/atmospheric sciences/climatology/climatic changes",
+       "strength": "direct",
+       "justification": "Target 13.1's resilience and adaptive capacity to climate-related hazards rests on this science.",
+       "weight": 3.0
+      }
+     ]
+    },
+    {
+     "target_id": "2.2",
+     "target_uri": "http://data.europa.eu/sdg/2.2",
+     "goal_id": "2",
+     "goal_uri": "http://data.europa.eu/sdg/2",
+     "score": 3.0,
+     "independent_sources": 1,
+     "confidence": "low",
+     "evidence": [
+      {
+       "source": "crosswalk",
+       "category": "medical and health sciences/health sciences/nutrition",
+       "strength": "direct",
+       "justification": "Target 2.2 asks to \"end all forms of malnutrition\".",
+       "weight": 3.0
+      }
+     ]
+    }
+   ],
+   "goal_level_only": [],
+   "unassigned": false,
+   "cross_cutting": true,
+   "overflow_beyond_cap": 0,
+   "discarded_by_negation_rule": []
+  },
+  {
+   "id": "101056815",
+   "set": "development",
+   "acronym": "RESHIP",
+   "sources_present": [
+    "title",
+    "keywords",
+    "objective",
+    "editorial_description",
+    "deliverable_descriptions"
+   ],
+   "sources_absent": [],
+   "assignments": [
+    {
+     "target_id": "7.3",
+     "target_uri": "http://data.europa.eu/sdg/7.3",
+     "goal_id": "7",
+     "goal_uri": "http://data.europa.eu/sdg/7",
+     "score": 7.9,
+     "independent_sources": 4,
+     "confidence": "high",
+     "evidence": [
+      {
+       "source": "lexical",
+       "field": "title",
+       "phrase": "energy Efficiency",
+       "kind": "synonym_subject",
+       "weight": 2.4
+      },
+      {
+       "source": "lexical",
+       "field": "objective",
+       "phrase": "energy efficiency",
+       "kind": "synonym_subject",
+       "weight": 2.0
+      },
+      {
+       "source": "lexical",
+       "field": "editorial_description",
+       "phrase": "energy efficiency",
+       "kind": "synonym_subject",
+       "weight": 2.0
+      },
+      {
+       "source": "crosswalk",
+       "category": "engineering and technology/environmental engineering/energy and fuels",
+       "strength": "contributing",
+       "justification": "Target 7.3 asks to \"double the global rate of improvement in energy efficiency\"",
+       "weight": 1.5
+      }
+     ]
+    },
+    {
+     "target_id": "14.2",
+     "target_uri": "http://data.europa.eu/sdg/14.2",
+     "goal_id": "14",
+     "goal_uri": "http://data.europa.eu/sdg/14",
+     "score": 3.2,
+     "independent_sources": 3,
+     "confidence": "low",
+     "evidence": [
+      {
+       "source": "lexical",
+       "field": "title",
+       "phrase": "marine",
+       "kind": "key_term",
+       "weight": 1.2
+      },
+      {
+       "source": "lexical",
+       "field": "objective",
+       "phrase": "marine",
+       "kind": "key_term",
+       "weight": 1.0
+      },
+      {
+       "source": "lexical",
+       "field": "editorial_description",
+       "phrase": "marine",
+       "kind": "key_term",
+       "weight": 1.0
+      }
+     ]
+    }
+   ],
+   "goal_level_only": [],
+   "unassigned": false,
+   "cross_cutting": true,
+   "overflow_beyond_cap": 0,
+   "discarded_by_negation_rule": []
+  },
+  {
+   "id": "101057934",
+   "set": "development",
+   "acronym": "INSPIRE",
+   "sources_present": [
+    "title",
+    "keywords",
+    "objective",
+    "editorial_description",
+    "deliverable_descriptions"
+   ],
+   "sources_absent": [],
+   "assignments": [
+    {
+     "target_id": "11.3",
+     "target_uri": "http://data.europa.eu/sdg/11.3",
+     "goal_id": "11",
+     "goal_uri": "http://data.europa.eu/sdg/11",
+     "score": 3.2,
+     "independent_sources": 3,
+     "confidence": "low",
+     "evidence": [
+      {
+       "source": "lexical",
+       "field": "title",
+       "phrase": "IntegRatEd",
+       "kind": "key_term",
+       "weight": 1.2
+      },
+      {
+       "source": "lexical",
+       "field": "objective",
+       "phrase": "IntegRatEd",
+       "kind": "key_term",
+       "weight": 1.0
+      },
+      {
+       "source": "lexical",
+       "field": "editorial_description",
+       "phrase": "Integrated",
+       "kind": "key_term",
+       "weight": 1.0
+      }
+     ]
+    },
+    {
+     "target_id": "3.7",
+     "target_uri": "http://data.europa.eu/sdg/3.7",
+     "goal_id": "3",
+     "goal_uri": "http://data.europa.eu/sdg/3",
+     "score": 3.2,
+     "independent_sources": 3,
+     "confidence": "low",
+     "evidence": [
+      {
+       "source": "lexical",
+       "field": "keywords",
+       "phrase": "information",
+       "kind": "key_term",
+       "weight": 1.2
+      },
+      {
+       "source": "lexical",
+       "field": "objective",
+       "phrase": "education",
+       "kind": "key_term",
+       "weight": 1.0
+      },
+      {
+       "source": "lexical",
+       "field": "editorial_description",
+       "phrase": "information",
+       "kind": "key_term",
+       "weight": 1.0
+      }
+     ]
+    },
+    {
+     "target_id": "4.b",
+     "target_uri": "http://data.europa.eu/sdg/4.b",
+     "goal_id": "4",
+     "goal_uri": "http://data.europa.eu/sdg/4",
+     "score": 3.2,
+     "independent_sources": 2,
+     "confidence": "low",
+     "evidence": [
+      {
+       "source": "lexical",
+       "field": "keywords",
+       "phrase": "information",
+       "kind": "key_term",
+       "weight": 1.2
+      },
+      {
+       "source": "lexical",
+       "field": "editorial_description",
+       "phrase": "information",
+       "kind": "key_term",
+       "weight": 1.0
+      },
+      {
+       "source": "lexical",
+       "field": "editorial_description",
+       "phrase": "technical",
+       "kind": "key_term",
+       "weight": 1.0
+      }
+     ]
+    }
+   ],
+   "goal_level_only": [],
+   "unassigned": false,
+   "cross_cutting": true,
+   "overflow_beyond_cap": 0,
+   "discarded_by_negation_rule": []
+  },
+  {
+   "id": "101066596",
+   "set": "development",
+   "acronym": "USFT",
+   "sources_present": [
+    "title",
+    "keywords",
+    "objective",
+    "editorial_description",
+    "deliverable_descriptions"
+   ],
+   "sources_absent": [],
+   "assignments": [
+    {
+     "target_id": "3.9",
+     "target_uri": "http://data.europa.eu/sdg/3.9",
+     "goal_id": "3",
+     "goal_uri": "http://data.europa.eu/sdg/3",
+     "score": 4.0,
+     "independent_sources": 1,
+     "confidence": "low",
+     "evidence": [
+      {
+       "source": "lexical",
+       "field": "editorial_description",
+       "phrase": "air",
+       "kind": "key_term",
+       "weight": 1.0
+      },
+      {
+       "source": "lexical",
+       "field": "editorial_description",
+       "phrase": "contamination",
+       "kind": "key_term",
+       "weight": 1.0
+      },
+      {
+       "source": "lexical",
+       "field": "editorial_description",
+       "phrase": "contamination",
+       "kind": "synonym_subject",
+       "weight": 2.0
+      }
+     ]
+    },
+    {
+     "target_id": "17.10",
+     "target_uri": "http://data.europa.eu/sdg/17.10",
+     "goal_id": "17",
+     "goal_uri": "http://data.europa.eu/sdg/17",
+     "score": 3.8,
+     "independent_sources": 3,
+     "confidence": "low",
+     "evidence": [
+      {
+       "source": "lexical",
+       "field": "objective",
+       "phrase": "open",
+       "kind": "key_term",
+       "weight": 1.0
+      },
+      {
+       "source": "lexical",
+       "field": "editorial_description",
+       "phrase": "universal",
+       "kind": "key_term",
+       "weight": 1.0
+      },
+      {
+       "source": "lexical",
+       "field": "editorial_description",
+       "phrase": "open",
+       "kind": "key_term",
+       "weight": 1.0
+      },
+      {
+       "source": "lexical",
+       "field": "deliverable_descriptions",
+       "phrase": "open",
+       "kind": "key_term",
+       "weight": 0.8
+      }
+     ]
+    },
+    {
+     "target_id": "2.4",
+     "target_uri": "http://data.europa.eu/sdg/2.4",
+     "goal_id": "2",
+     "goal_uri": "http://data.europa.eu/sdg/2",
+     "score": 3.0,
+     "independent_sources": 1,
+     "confidence": "low",
+     "evidence": [
+      {
+       "source": "crosswalk",
+       "category": "agricultural sciences/agriculture, forestry, and fisheries/agriculture",
+       "strength": "direct",
+       "justification": "Target 2.4 asks for \"sustainable food production systems\" and \"resilient agricultural practices\"",
+       "weight": 3.0
+      }
+     ]
+    },
+    {
+     "target_id": "6.1",
+     "target_uri": "http://data.europa.eu/sdg/6.1",
+     "goal_id": "6",
+     "goal_uri": "http://data.europa.eu/sdg/6",
+     "score": 3.0,
+     "independent_sources": 1,
+     "confidence": "low",
+     "evidence": [
+      {
+       "source": "lexical",
+       "field": "editorial_description",
+       "phrase": "universal",
+       "kind": "key_term",
+       "weight": 1.0
+      },
+      {
+       "source": "lexical",
+       "field": "editorial_description",
+       "phrase": "drinking water",
+       "kind": "synonym_subject",
+       "weight": 2.0
+      }
+     ]
+    }
+   ],
+   "goal_level_only": [],
+   "unassigned": false,
+   "cross_cutting": true,
+   "overflow_beyond_cap": 0,
+   "discarded_by_negation_rule": []
+  },
+  {
+   "id": "101065094",
+   "set": "development",
+   "acronym": "EpiCoVs",
+   "sources_present": [
+    "title",
+    "keywords",
+    "objective",
+    "editorial_description",
+    "deliverable_descriptions"
+   ],
+   "sources_absent": [],
+   "assignments": [],
+   "goal_level_only": [
+    {
+     "goal_id": "12",
+     "goal_uri": "http://data.europa.eu/sdg/12",
+     "score": 2.2
+    }
+   ],
+   "unassigned": false,
+   "cross_cutting": false,
+   "overflow_beyond_cap": 0,
+   "discarded_by_negation_rule": []
+  },
+  {
+   "id": "101136095",
+   "set": "development",
+   "acronym": "TREASURE",
+   "sources_present": [
+    "title",
+    "keywords",
+    "objective",
+    "editorial_description",
+    "deliverable_descriptions"
+   ],
+   "sources_absent": [],
+   "assignments": [
+    {
+     "target_id": "10.2",
+     "target_uri": "http://data.europa.eu/sdg/10.2",
+     "goal_id": "10",
+     "goal_uri": "http://data.europa.eu/sdg/10",
+     "score": 4.0,
+     "independent_sources": 2,
+     "confidence": "low",
+     "evidence": [
+      {
+       "source": "lexical",
+       "field": "objective",
+       "phrase": "social",
+       "kind": "key_term",
+       "weight": 1.0
+      },
+      {
+       "source": "lexical",
+       "field": "editorial_description",
+       "phrase": "Economic",
+       "kind": "key_term",
+       "weight": 1.0
+      },
+      {
+       "source": "lexical",
+       "field": "editorial_description",
+       "phrase": "social",
+       "kind": "key_term",
+       "weight": 1.0
+      },
+      {
+       "source": "lexical",
+       "field": "editorial_description",
+       "phrase": "status",
+       "kind": "key_term",
+       "weight": 1.0
+      }
+     ]
+    },
+    {
+     "target_id": "4.b",
+     "target_uri": "http://data.europa.eu/sdg/4.b",
+     "goal_id": "4",
+     "goal_uri": "http://data.europa.eu/sdg/4",
+     "score": 4.0,
+     "independent_sources": 2,
+     "confidence": "low",
+     "evidence": [
+      {
+       "source": "lexical",
+       "field": "objective",
+       "phrase": "engineering",
+       "kind": "key_term",
+       "weight": 1.0
+      },
+      {
+       "source": "lexical",
+       "field": "editorial_description",
+       "phrase": "Information",
+       "kind": "key_term",
+       "weight": 1.0
+      },
+      {
+       "source": "lexical",
+       "field": "editorial_description",
+       "phrase": "technical",
+       "kind": "key_term",
+       "weight": 1.0
+      },
+      {
+       "source": "lexical",
+       "field": "editorial_description",
+       "phrase": "engineering",
+       "kind": "key_term",
+       "weight": 1.0
+      }
+     ]
+    },
+    {
+     "target_id": "13.2",
+     "target_uri": "http://data.europa.eu/sdg/13.2",
+     "goal_id": "13",
+     "goal_uri": "http://data.europa.eu/sdg/13",
+     "score": 3.5,
+     "independent_sources": 2,
+     "confidence": "low",
+     "evidence": [
+      {
+       "source": "lexical",
+       "field": "objective",
+       "phrase": "planning",
+       "kind": "key_term",
+       "weight": 1.0
+      },
+      {
+       "source": "lexical",
+       "field": "objective",
+       "phrase": "decarbonisation",
+       "kind": "synonym_domain",
+       "weight": 1.5
+      },
+      {
+       "source": "lexical",
+       "field": "editorial_description",
+       "phrase": "planning",
+       "kind": "key_term",
+       "weight": 1.0
+      }
+     ]
+    },
+    {
+     "target_id": "12.6",
+     "target_uri": "http://data.europa.eu/sdg/12.6",
+     "goal_id": "12",
+     "goal_uri": "http://data.europa.eu/sdg/12",
+     "score": 3.2,
+     "independent_sources": 3,
+     "confidence": "low",
+     "evidence": [
+      {
+       "source": "lexical",
+       "field": "title",
+       "phrase": "large",
+       "kind": "key_term",
+       "weight": 1.2
+      },
+      {
+       "source": "lexical",
+       "field": "objective",
+       "phrase": "large",
+       "kind": "key_term",
+       "weight": 1.0
+      },
+      {
+       "source": "lexical",
+       "field": "editorial_description",
+       "phrase": "large",
+       "kind": "key_term",
+       "weight": 1.0
+      }
+     ]
+    },
+    {
+     "target_id": "1.5",
+     "target_uri": "http://data.europa.eu/sdg/1.5",
+     "goal_id": "1",
+     "goal_uri": "http://data.europa.eu/sdg/1",
+     "score": 3.0,
+     "independent_sources": 2,
+     "confidence": "low",
+     "evidence": [
+      {
+       "source": "lexical",
+       "field": "objective",
+       "phrase": "social",
+       "kind": "key_term",
+       "weight": 1.0
+      },
+      {
+       "source": "lexical",
+       "field": "editorial_description",
+       "phrase": "Economic",
+       "kind": "key_term",
+       "weight": 1.0
+      },
+      {
+       "source": "lexical",
+       "field": "editorial_description",
+       "phrase": "social",
+       "kind": "key_term",
+       "weight": 1.0
+      }
+     ]
+    }
+   ],
+   "goal_level_only": [],
+   "unassigned": false,
+   "cross_cutting": true,
+   "overflow_beyond_cap": 0,
+   "discarded_by_negation_rule": []
+  },
+  {
+   "id": "101116774",
+   "set": "development",
+   "acronym": "InqML",
+   "sources_present": [
+    "title",
+    "keywords",
+    "objective"
+   ],
+   "sources_absent": [
+    "editorial_description",
+    "deliverable_descriptions"
+   ],
+   "assignments": [],
+   "goal_level_only": [
+    {
+     "goal_id": "17",
+     "goal_uri": "http://data.europa.eu/sdg/17",
+     "score": 2.0
+    }
+   ],
+   "unassigned": false,
+   "cross_cutting": false,
+   "overflow_beyond_cap": 0,
+   "discarded_by_negation_rule": []
+  },
+  {
+   "id": "101064013",
+   "set": "development",
+   "acronym": "INJORG",
+   "sources_present": [
+    "title",
+    "keywords",
+    "objective",
+    "editorial_description",
+    "deliverable_descriptions"
+   ],
+   "sources_absent": [],
+   "assignments": [
+    {
+     "target_id": "9.5",
+     "target_uri": "http://data.europa.eu/sdg/9.5",
+     "goal_id": "9",
+     "goal_uri": "http://data.europa.eu/sdg/9",
+     "score": 5.6,
+     "independent_sources": 3,
+     "confidence": "medium",
+     "evidence": [
+      {
+       "source": "lexical",
+       "field": "objective",
+       "phrase": "including",
+       "kind": "key_term",
+       "weight": 1.0
+      },
+      {
+       "source": "lexical",
+       "field": "objective",
+       "phrase": "public",
+       "kind": "key_term",
+       "weight": 1.0
+      },
+      {
+       "source": "lexical",
+       "field": "editorial_description",
+       "phrase": "including",
+       "kind": "key_term",
+       "weight": 1.0
+      },
+      {
+       "source": "lexical",
+       "field": "editorial_description",
+       "phrase": "public",
+       "kind": "key_term",
+       "weight": 1.0
+      },
+      {
+       "source": "lexical",
+       "field": "deliverable_descriptions",
+       "phrase": "including",
+       "kind": "key_term",
+       "weight": 0.8
+      },
+      {
+       "source": "lexical",
+       "field": "deliverable_descriptions",
+       "phrase": "public",
+       "kind": "key_term",
+       "weight": 0.8
+      }
+     ]
+    },
+    {
+     "target_id": "1.5",
+     "target_uri": "http://data.europa.eu/sdg/1.5",
+     "goal_id": "1",
+     "goal_uri": "http://data.europa.eu/sdg/1",
+     "score": 5.2,
+     "independent_sources": 3,
+     "confidence": "medium",
+     "evidence": [
+      {
+       "source": "lexical",
+       "field": "title",
+       "phrase": "Social",
+       "kind": "key_term",
+       "weight": 1.2
+      },
+      {
+       "source": "lexical",
+       "field": "objective",
+       "phrase": "social",
+       "kind": "key_term",
+       "weight": 1.0
+      },
+      {
+       "source": "lexical",
+       "field": "editorial_description",
+       "phrase": "exposure",
+       "kind": "key_term",
+       "weight": 1.0
+      },
+      {
+       "source": "lexical",
+       "field": "editorial_description",
+       "phrase": "economic",
+       "kind": "key_term",
+       "weight": 1.0
+      },
+      {
+       "source": "lexical",
+       "field": "editorial_description",
+       "phrase": "social",
+       "kind": "key_term",
+       "weight": 1.0
+      }
+     ]
+    },
+    {
+     "target_id": "16.a",
+     "target_uri": "http://data.europa.eu/sdg/16.a",
+     "goal_id": "16",
+     "goal_uri": "http://data.europa.eu/sdg/16",
+     "score": 4.4,
+     "independent_sources": 4,
+     "confidence": "low",
+     "evidence": [
+      {
+       "source": "lexical",
+       "field": "title",
+       "phrase": "Cooperation",
+       "kind": "key_term",
+       "weight": 1.2
+      },
+      {
+       "source": "lexical",
+       "field": "keywords",
+       "phrase": "Cooperation",
+       "kind": "key_term",
+       "weight": 1.2
+      },
+      {
+       "source": "lexical",
+       "field": "objective",
+       "phrase": "cooperation",
+       "kind": "key_term",
+       "weight": 1.0
+      },
+      {
+       "source": "lexical",
+       "field": "editorial_description",
+       "phrase": "Cooperation",
+       "kind": "key_term",
+       "weight": 1.0
+      }
+     ]
+    },
+    {
+     "target_id": "17.6",
+     "target_uri": "http://data.europa.eu/sdg/17.6",
+     "goal_id": "17",
+     "goal_uri": "http://data.europa.eu/sdg/17",
+     "score": 4.4,
+     "independent_sources": 4,
+     "confidence": "low",
+     "evidence": [
+      {
+       "source": "lexical",
+       "field": "title",
+       "phrase": "Cooperation",
+       "kind": "key_term",
+       "weight": 1.2
+      },
+      {
+       "source": "lexical",
+       "field": "keywords",
+       "phrase": "Cooperation",
+       "kind": "key_term",
+       "weight": 1.2
+      },
+      {
+       "source": "lexical",
+       "field": "objective",
+       "phrase": "cooperation",
+       "kind": "key_term",
+       "weight": 1.0
+      },
+      {
+       "source": "lexical",
+       "field": "editorial_description",
+       "phrase": "Cooperation",
+       "kind": "key_term",
+       "weight": 1.0
+      }
+     ]
+    },
+    {
+     "target_id": "6.a",
+     "target_uri": "http://data.europa.eu/sdg/6.a",
+     "goal_id": "6",
+     "goal_uri": "http://data.europa.eu/sdg/6",
+     "score": 4.4,
+     "independent_sources": 4,
+     "confidence": "low",
+     "evidence": [
+      {
+       "source": "lexical",
+       "field": "title",
+       "phrase": "Cooperation",
+       "kind": "key_term",
+       "weight": 1.2
+      },
+      {
+       "source": "lexical",
+       "field": "keywords",
+       "phrase": "Cooperation",
+       "kind": "key_term",
+       "weight": 1.2
+      },
+      {
+       "source": "lexical",
+       "field": "objective",
+       "phrase": "cooperation",
+       "kind": "key_term",
+       "weight": 1.0
+      },
+      {
+       "source": "lexical",
+       "field": "editorial_description",
+       "phrase": "Cooperation",
+       "kind": "key_term",
+       "weight": 1.0
+      }
+     ]
+    }
+   ],
+   "goal_level_only": [],
+   "unassigned": false,
+   "cross_cutting": true,
+   "overflow_beyond_cap": 4,
+   "discarded_by_negation_rule": []
+  },
+  {
+   "id": "101101053",
+   "set": "development",
+   "acronym": "MIOPIC",
+   "sources_present": [
+    "title",
+    "objective",
+    "editorial_description"
+   ],
+   "sources_absent": [
+    "keywords",
+    "deliverable_descriptions"
+   ],
+   "assignments": [
+    {
+     "target_id": "3.b",
+     "target_uri": "http://data.europa.eu/sdg/3.b",
+     "goal_id": "3",
+     "goal_uri": "http://data.europa.eu/sdg/3",
+     "score": 4.5,
+     "independent_sources": 2,
+     "confidence": "medium",
+     "evidence": [
+      {
+       "source": "lexical",
+       "field": "editorial_description",
+       "phrase": "public health",
+       "kind": "key_term",
+       "weight": 1.5
+      },
+      {
+       "source": "crosswalk",
+       "category": "medical and health sciences/basic medicine/pharmacology and pharmacy",
+       "strength": "direct",
+       "justification": "Target 3.b's research and development of medicines and access to essential medicines.",
+       "weight": 3.0
+      }
+     ]
+    },
+    {
+     "target_id": "14.4",
+     "target_uri": "http://data.europa.eu/sdg/14.4",
+     "goal_id": "14",
+     "goal_uri": "http://data.europa.eu/sdg/14",
+     "score": 3.2,
+     "independent_sources": 3,
+     "confidence": "low",
+     "evidence": [
+      {
+       "source": "lexical",
+       "field": "title",
+       "phrase": "Illegal",
+       "kind": "key_term",
+       "weight": 1.2
+      },
+      {
+       "source": "lexical",
+       "field": "objective",
+       "phrase": "illegal",
+       "kind": "key_term",
+       "weight": 1.0
+      },
+      {
+       "source": "lexical",
+       "field": "editorial_description",
+       "phrase": "illegal",
+       "kind": "key_term",
+       "weight": 1.0
+      }
+     ]
+    }
+   ],
+   "goal_level_only": [],
+   "unassigned": false,
+   "cross_cutting": true,
+   "overflow_beyond_cap": 0,
+   "discarded_by_negation_rule": []
+  },
+  {
+   "id": "101217875",
+   "set": "development",
+   "acronym": "COMPLEXPOL",
+   "sources_present": [
+    "title",
+    "keywords",
+    "objective"
+   ],
+   "sources_absent": [
+    "editorial_description",
+    "deliverable_descriptions"
+   ],
+   "assignments": [],
+   "goal_level_only": [
+    {
+     "goal_id": "17",
+     "goal_uri": "http://data.europa.eu/sdg/17",
+     "score": 3.2
+    }
+   ],
+   "unassigned": false,
+   "cross_cutting": false,
+   "overflow_beyond_cap": 0,
+   "discarded_by_negation_rule": []
+  },
+  {
+   "id": "101232533",
+   "set": "development",
+   "acronym": "PhaseShift",
+   "sources_present": [
+    "title",
+    "keywords",
+    "objective"
+   ],
+   "sources_absent": [
+    "editorial_description",
+    "deliverable_descriptions"
+   ],
+   "assignments": [],
+   "goal_level_only": [
+    {
+     "goal_id": "17",
+     "goal_uri": "http://data.europa.eu/sdg/17",
+     "score": 3.0
+    }
+   ],
+   "unassigned": false,
+   "cross_cutting": false,
+   "overflow_beyond_cap": 0,
+   "discarded_by_negation_rule": []
+  },
+  {
+   "id": "101110750",
+   "set": "development",
+   "acronym": "GenHumCap",
+   "sources_present": [
+    "title",
+    "keywords",
+    "objective",
+    "deliverable_descriptions"
+   ],
+   "sources_absent": [
+    "editorial_description"
+   ],
+   "assignments": [],
+   "goal_level_only": [
+    {
+     "goal_id": "17",
+     "goal_uri": "http://data.europa.eu/sdg/17",
+     "score": 5.2
+    }
+   ],
+   "unassigned": false,
+   "cross_cutting": false,
+   "overflow_beyond_cap": 0,
+   "discarded_by_negation_rule": []
+  },
+  {
+   "id": "101123039",
+   "set": "development",
+   "acronym": "ADSOILS",
+   "sources_present": [
+    "title",
+    "objective",
+    "editorial_description"
+   ],
+   "sources_absent": [
+    "keywords",
+    "deliverable_descriptions"
+   ],
+   "assignments": [
+    {
+     "target_id": "3.9",
+     "target_uri": "http://data.europa.eu/sdg/3.9",
+     "goal_id": "3",
+     "goal_uri": "http://data.europa.eu/sdg/3",
+     "score": 6.0,
+     "independent_sources": 2,
+     "confidence": "medium",
+     "evidence": [
+      {
+       "source": "lexical",
+       "field": "objective",
+       "phrase": "contamination",
+       "kind": "key_term",
+       "weight": 1.0
+      },
+      {
+       "source": "lexical",
+       "field": "objective",
+       "phrase": "contamination",
+       "kind": "synonym_subject",
+       "weight": 2.0
+      },
+      {
+       "source": "lexical",
+       "field": "editorial_description",
+       "phrase": "contamination",
+       "kind": "key_term",
+       "weight": 1.0
+      },
+      {
+       "source": "lexical",
+       "field": "editorial_description",
+       "phrase": "contamination",
+       "kind": "synonym_subject",
+       "weight": 2.0
+      }
+     ]
+    },
+    {
+     "target_id": "15.3",
+     "target_uri": "http://data.europa.eu/sdg/15.3",
+     "goal_id": "15",
+     "goal_uri": "http://data.europa.eu/sdg/15",
+     "score": 5.0,
+     "independent_sources": 3,
+     "confidence": "medium",
+     "evidence": [
+      {
+       "source": "lexical",
+       "field": "objective",
+       "phrase": "soil",
+       "kind": "key_term",
+       "weight": 1.0
+      },
+      {
+       "source": "lexical",
+       "field": "editorial_description",
+       "phrase": "soil",
+       "kind": "key_term",
+       "weight": 1.0
+      },
+      {
+       "source": "crosswalk",
+       "category": "natural sciences/earth and related environmental sciences/soil sciences",
+       "strength": "direct",
+       "justification": "Target 15.3's combat of desertification and restoration of degraded land and soil.",
+       "weight": 3.0
+      }
+     ]
+    },
+    {
+     "target_id": "7.a",
+     "target_uri": "http://data.europa.eu/sdg/7.a",
+     "goal_id": "7",
+     "goal_uri": "http://data.europa.eu/sdg/7",
+     "score": 3.2,
+     "independent_sources": 3,
+     "confidence": "low",
+     "evidence": [
+      {
+       "source": "lexical",
+       "field": "title",
+       "phrase": "ADvanced",
+       "kind": "key_term",
+       "weight": 1.2
+      },
+      {
+       "source": "lexical",
+       "field": "objective",
+       "phrase": "advanced",
+       "kind": "key_term",
+       "weight": 1.0
+      },
+      {
+       "source": "lexical",
+       "field": "editorial_description",
+       "phrase": "advanced",
+       "kind": "key_term",
+       "weight": 1.0
+      }
+     ]
+    },
+    {
+     "target_id": "11.b",
+     "target_uri": "http://data.europa.eu/sdg/11.b",
+     "goal_id": "11",
+     "goal_uri": "http://data.europa.eu/sdg/11",
+     "score": 3.0,
+     "independent_sources": 2,
+     "confidence": "low",
+     "evidence": [
+      {
+       "source": "lexical",
+       "field": "objective",
+       "phrase": "climate change",
+       "kind": "key_term",
+       "weight": 1.5
+      },
+      {
+       "source": "lexical",
+       "field": "editorial_description",
+       "phrase": "climate change",
+       "kind": "key_term",
+       "weight": 1.5
+      }
+     ]
+    },
+    {
+     "target_id": "2.4",
+     "target_uri": "http://data.europa.eu/sdg/2.4",
+     "goal_id": "2",
+     "goal_uri": "http://data.europa.eu/sdg/2",
+     "score": 3.0,
+     "independent_sources": 2,
+     "confidence": "low",
+     "evidence": [
+      {
+       "source": "lexical",
+       "field": "objective",
+       "phrase": "climate change",
+       "kind": "key_term",
+       "weight": 1.5
+      },
+      {
+       "source": "lexical",
+       "field": "editorial_description",
+       "phrase": "climate change",
+       "kind": "key_term",
+       "weight": 1.5
+      }
+     ]
+    }
+   ],
+   "goal_level_only": [],
+   "unassigned": false,
+   "cross_cutting": true,
+   "overflow_beyond_cap": 0,
+   "discarded_by_negation_rule": []
+  },
+  {
+   "id": "101045128",
+   "set": "development",
+   "acronym": "iBack-epic",
+   "sources_present": [
+    "title",
+    "keywords",
+    "objective",
+    "editorial_description",
+    "deliverable_descriptions"
+   ],
+   "sources_absent": [],
+   "assignments": [
+    {
+     "target_id": "12.6",
+     "target_uri": "http://data.europa.eu/sdg/12.6",
+     "goal_id": "12",
+     "goal_uri": "http://data.europa.eu/sdg/12",
+     "score": 3.2,
+     "independent_sources": 3,
+     "confidence": "low",
+     "evidence": [
+      {
+       "source": "lexical",
+       "field": "title",
+       "phrase": "large",
+       "kind": "key_term",
+       "weight": 1.2
+      },
+      {
+       "source": "lexical",
+       "field": "objective",
+       "phrase": "large",
+       "kind": "key_term",
+       "weight": 1.0
+      },
+      {
+       "source": "lexical",
+       "field": "editorial_description",
+       "phrase": "large",
+       "kind": "key_term",
+       "weight": 1.0
+      }
+     ]
+    }
+   ],
+   "goal_level_only": [],
+   "unassigned": false,
+   "cross_cutting": false,
+   "overflow_beyond_cap": 0,
+   "discarded_by_negation_rule": []
+  },
+  {
+   "id": "101217127",
+   "set": "development",
+   "acronym": "UNITES",
+   "sources_present": [
+    "title",
+    "keywords",
+    "objective"
+   ],
+   "sources_absent": [
+    "editorial_description",
+    "deliverable_descriptions"
+   ],
+   "assignments": [
+    {
+     "target_id": "17.8",
+     "target_uri": "http://data.europa.eu/sdg/17.8",
+     "goal_id": "17",
+     "goal_uri": "http://data.europa.eu/sdg/17",
+     "score": 3.4,
+     "independent_sources": 3,
+     "confidence": "low",
+     "evidence": [
+      {
+       "source": "lexical",
+       "field": "title",
+       "phrase": "SCIENCE",
+       "kind": "key_term",
+       "weight": 1.2
+      },
+      {
+       "source": "lexical",
+       "field": "keywords",
+       "phrase": "science",
+       "kind": "key_term",
+       "weight": 1.2
+      },
+      {
+       "source": "lexical",
+       "field": "objective",
+       "phrase": "Science",
+       "kind": "key_term",
+       "weight": 1.0
+      }
+     ]
+    },
+    {
+     "target_id": "9.5",
+     "target_uri": "http://data.europa.eu/sdg/9.5",
+     "goal_id": "9",
+     "goal_uri": "http://data.europa.eu/sdg/9",
+     "score": 3.2,
+     "independent_sources": 2,
+     "confidence": "low",
+     "evidence": [
+      {
+       "source": "lexical",
+       "field": "keywords",
+       "phrase": "Public",
+       "kind": "key_term",
+       "weight": 1.2
+      },
+      {
+       "source": "lexical",
+       "field": "objective",
+       "phrase": "including",
+       "kind": "key_term",
+       "weight": 1.0
+      },
+      {
+       "source": "lexical",
+       "field": "objective",
+       "phrase": "public",
+       "kind": "key_term",
+       "weight": 1.0
+      }
+     ]
+    }
+   ],
+   "goal_level_only": [],
+   "unassigned": false,
+   "cross_cutting": true,
+   "overflow_beyond_cap": 0,
+   "discarded_by_negation_rule": []
+  },
+  {
+   "id": "101149800",
+   "set": "development",
+   "acronym": "DISCWORLD",
+   "sources_present": [
+    "title",
+    "keywords",
+    "objective",
+    "deliverable_descriptions"
+   ],
+   "sources_absent": [
+    "editorial_description"
+   ],
+   "assignments": [],
+   "goal_level_only": [
+    {
+     "goal_id": "12",
+     "goal_uri": "http://data.europa.eu/sdg/12",
+     "score": 2.2
+    }
+   ],
+   "unassigned": false,
+   "cross_cutting": false,
+   "overflow_beyond_cap": 0,
+   "discarded_by_negation_rule": []
+  },
+  {
+   "id": "101094237",
+   "set": "development",
+   "acronym": "ENIGMA",
+   "sources_present": [
+    "title",
+    "keywords",
+    "objective",
+    "editorial_description",
+    "deliverable_descriptions"
+   ],
+   "sources_absent": [],
+   "assignments": [
+    {
+     "target_id": "11.4",
+     "target_uri": "http://data.europa.eu/sdg/11.4",
+     "goal_id": "11",
+     "goal_uri": "http://data.europa.eu/sdg/11",
+     "score": 4.4,
+     "independent_sources": 2,
+     "confidence": "low",
+     "evidence": [
+      {
+       "source": "lexical",
+       "field": "title",
+       "phrase": "CULTURAL HERITAGE",
+       "kind": "synonym_subject",
+       "weight": 2.4
+      },
+      {
+       "source": "lexical",
+       "field": "editorial_description",
+       "phrase": "Cultural Heritage",
+       "kind": "synonym_subject",
+       "weight": 2.0
+      }
+     ]
+    },
+    {
+     "target_id": "5.2",
+     "target_uri": "http://data.europa.eu/sdg/5.2",
+     "goal_id": "5",
+     "goal_uri": "http://data.europa.eu/sdg/5",
+     "score": 3.0,
+     "independent_sources": 1,
+     "confidence": "low",
+     "evidence": [
+      {
+       "source": "lexical",
+       "field": "editorial_description",
+       "phrase": "trafficking",
+       "kind": "key_term",
+       "weight": 1.0
+      },
+      {
+       "source": "lexical",
+       "field": "editorial_description",
+       "phrase": "trafficking",
+       "kind": "synonym_subject",
+       "weight": 2.0
+      }
+     ]
+    }
+   ],
+   "goal_level_only": [],
+   "unassigned": false,
+   "cross_cutting": true,
+   "overflow_beyond_cap": 0,
+   "discarded_by_negation_rule": []
+  },
+  {
+   "id": "101187327",
+   "set": "development",
+   "acronym": "OBICODE",
+   "sources_present": [
+    "title",
+    "keywords",
+    "objective"
+   ],
+   "sources_absent": [
+    "editorial_description",
+    "deliverable_descriptions"
+   ],
+   "assignments": [
+    {
+     "target_id": "4.6",
+     "target_uri": "http://data.europa.eu/sdg/4.6",
+     "goal_id": "4",
+     "goal_uri": "http://data.europa.eu/sdg/4",
+     "score": 6.6,
+     "independent_sources": 2,
+     "confidence": "medium",
+     "evidence": [
+      {
+       "source": "lexical",
+       "field": "keywords",
+       "phrase": "Literacy",
+       "kind": "key_term",
+       "weight": 1.2
+      },
+      {
+       "source": "lexical",
+       "field": "keywords",
+       "phrase": "Literacy",
+       "kind": "synonym_subject",
+       "weight": 2.4
+      },
+      {
+       "source": "lexical",
+       "field": "objective",
+       "phrase": "literacy",
+       "kind": "key_term",
+       "weight": 1.0
+      },
+      {
+       "source": "lexical",
+       "field": "objective",
+       "phrase": "literacy",
+       "kind": "synonym_subject",
+       "weight": 2.0
+      }
+     ]
+    }
+   ],
+   "goal_level_only": [],
+   "unassigned": false,
+   "cross_cutting": false,
+   "overflow_beyond_cap": 0,
+   "discarded_by_negation_rule": []
+  },
+  {
+   "id": "101081430",
+   "set": "development",
+   "acronym": "PARIS",
+   "sources_present": [
+    "title",
+    "keywords",
+    "objective",
+    "editorial_description",
+    "deliverable_descriptions"
+   ],
+   "sources_absent": [],
+   "assignments": [],
+   "goal_level_only": [
+    {
+     "goal_id": "9",
+     "goal_uri": "http://data.europa.eu/sdg/9",
+     "score": 5.8
+    }
+   ],
+   "unassigned": false,
+   "cross_cutting": false,
+   "overflow_beyond_cap": 0,
+   "discarded_by_negation_rule": []
+  },
+  {
+   "id": "101137144",
+   "set": "development",
+   "acronym": "APOLLO2028",
+   "sources_present": [
+    "title",
+    "keywords",
+    "objective",
+    "editorial_description",
+    "deliverable_descriptions"
+   ],
+   "sources_absent": [],
+   "assignments": [
+    {
+     "target_id": "3.4",
+     "target_uri": "http://data.europa.eu/sdg/3.4",
+     "goal_id": "3",
+     "goal_uri": "http://data.europa.eu/sdg/3",
+     "score": 14.2,
+     "independent_sources": 3,
+     "confidence": "high",
+     "evidence": [
+      {
+       "source": "lexical",
+       "field": "title",
+       "phrase": "mental health",
+       "kind": "key_term",
+       "weight": 1.8
+      },
+      {
+       "source": "lexical",
+       "field": "title",
+       "phrase": "mental health",
+       "kind": "synonym_subject",
+       "weight": 2.4
+      },
+      {
+       "source": "lexical",
+       "field": "objective",
+       "phrase": "mental health",
+       "kind": "key_term",
+       "weight": 1.5
+      },
+      {
+       "source": "lexical",
+       "field": "objective",
+       "phrase": "mental health",
+       "kind": "synonym_subject",
+       "weight": 2.0
+      },
+      {
+       "source": "lexical",
+       "field": "editorial_description",
+       "phrase": "mental health",
+       "kind": "key_term",
+       "weight": 1.5
+      },
+      {
+       "source": "lexical",
+       "field": "editorial_description",
+       "phrase": "mental health",
+       "kind": "synonym_subject",
+       "weight": 2.0
+      },
+      {
+       "source": "lexical",
+       "field": "editorial_description",
+       "phrase": "well-being",
+       "kind": "key_term",
+       "weight": 1.0
+      },
+      {
+       "source": "lexical",
+       "field": "editorial_description",
+       "phrase": "well-being",
+       "kind": "synonym_subject",
+       "weight": 2.0
+      }
+     ]
+    }
+   ],
+   "goal_level_only": [],
+   "unassigned": false,
+   "cross_cutting": false,
+   "overflow_beyond_cap": 0,
+   "discarded_by_negation_rule": []
+  },
+  {
+   "id": "101220380",
+   "set": "development",
+   "acronym": "CHIMERA",
+   "sources_present": [
+    "title",
+    "keywords",
+    "objective"
+   ],
+   "sources_absent": [
+    "editorial_description",
+    "deliverable_descriptions"
+   ],
+   "assignments": [],
+   "goal_level_only": [],
+   "unassigned": true,
+   "cross_cutting": false,
+   "overflow_beyond_cap": 0,
+   "discarded_by_negation_rule": []
+  },
+  {
+   "id": "101112972",
+   "set": "development",
+   "acronym": "DesirMED",
+   "sources_present": [
+    "title",
+    "keywords",
+    "objective",
+    "editorial_description",
+    "deliverable_descriptions"
+   ],
+   "sources_absent": [],
+   "assignments": [
+    {
+     "target_id": "13.1",
+     "target_uri": "http://data.europa.eu/sdg/13.1",
+     "goal_id": "13",
+     "goal_uri": "http://data.europa.eu/sdg/13",
+     "score": 5.5,
+     "independent_sources": 2,
+     "confidence": "medium",
+     "evidence": [
+      {
+       "source": "lexical",
+       "field": "objective",
+       "phrase": "climate resilience",
+       "kind": "synonym_subject",
+       "weight": 2.0
+      },
+      {
+       "source": "lexical",
+       "field": "editorial_description",
+       "phrase": "climate resilience",
+       "kind": "synonym_subject",
+       "weight": 2.0
+      },
+      {
+       "source": "lexical",
+       "field": "editorial_description",
+       "phrase": "climate adaptation",
+       "kind": "synonym_domain",
+       "weight": 1.5
+      }
+     ]
+    },
+    {
+     "target_id": "10.2",
+     "target_uri": "http://data.europa.eu/sdg/10.2",
+     "goal_id": "10",
+     "goal_uri": "http://data.europa.eu/sdg/10",
+     "score": 5.0,
+     "independent_sources": 2,
+     "confidence": "medium",
+     "evidence": [
+      {
+       "source": "lexical",
+       "field": "objective",
+       "phrase": "social",
+       "kind": "key_term",
+       "weight": 1.0
+      },
+      {
+       "source": "lexical",
+       "field": "editorial_description",
+       "phrase": "Economic",
+       "kind": "key_term",
+       "weight": 1.0
+      },
+      {
+       "source": "lexical",
+       "field": "editorial_description",
+       "phrase": "social",
+       "kind": "key_term",
+       "weight": 1.0
+      },
+      {
+       "source": "lexical",
+       "field": "editorial_description",
+       "phrase": "empower",
+       "kind": "key_term",
+       "weight": 1.0
+      },
+      {
+       "source": "lexical",
+       "field": "editorial_description",
+       "phrase": "status",
+       "kind": "key_term",
+       "weight": 1.0
+      }
+     ]
+    },
+    {
+     "target_id": "1.4",
+     "target_uri": "http://data.europa.eu/sdg/1.4",
+     "goal_id": "1",
+     "goal_uri": "http://data.europa.eu/sdg/1",
+     "score": 4.5,
+     "independent_sources": 2,
+     "confidence": "medium",
+     "evidence": [
+      {
+       "source": "lexical",
+       "field": "objective",
+       "phrase": "ownership",
+       "kind": "key_term",
+       "weight": 1.0
+      },
+      {
+       "source": "lexical",
+       "field": "editorial_description",
+       "phrase": "vulnerable",
+       "kind": "key_term",
+       "weight": 1.0
+      },
+      {
+       "source": "lexical",
+       "field": "editorial_description",
+       "phrase": "ownership",
+       "kind": "key_term",
+       "weight": 1.0
+      },
+      {
+       "source": "lexical",
+       "field": "editorial_description",
+       "phrase": "natural resources",
+       "kind": "key_term",
+       "weight": 1.5
+      }
+     ]
+    },
+    {
+     "target_id": "3.b",
+     "target_uri": "http://data.europa.eu/sdg/3.b",
+     "goal_id": "3",
+     "goal_uri": "http://data.europa.eu/sdg/3",
+     "score": 4.0,
+     "independent_sources": 2,
+     "confidence": "low",
+     "evidence": [
+      {
+       "source": "lexical",
+       "field": "objective",
+       "phrase": "public health",
+       "kind": "key_term",
+       "weight": 1.5
+      },
+      {
+       "source": "lexical",
+       "field": "editorial_description",
+       "phrase": "public health",
+       "kind": "key_term",
+       "weight": 1.5
+      },
+      {
+       "source": "lexical",
+       "field": "editorial_description",
+       "phrase": "particular",
+       "kind": "key_term",
+       "weight": 1.0
+      }
+     ]
+    },
+    {
+     "target_id": "12.2",
+     "target_uri": "http://data.europa.eu/sdg/12.2",
+     "goal_id": "12",
+     "goal_uri": "http://data.europa.eu/sdg/12",
+     "score": 3.5,
+     "independent_sources": 1,
+     "confidence": "low",
+     "evidence": [
+      {
+       "source": "lexical",
+       "field": "editorial_description",
+       "phrase": "natural resources",
+       "kind": "key_term",
+       "weight": 1.5
+      },
+      {
+       "source": "lexical",
+       "field": "editorial_description",
+       "phrase": "sustainable management of natural resources",
+       "kind": "synonym_subject",
+       "weight": 2.0
+      }
+     ]
+    }
+   ],
+   "goal_level_only": [],
+   "unassigned": false,
+   "cross_cutting": true,
+   "overflow_beyond_cap": 7,
+   "discarded_by_negation_rule": [
+    {
+     "field": "editorial_description",
+     "phrase": "exposure",
+     "at": 562,
+     "discarded_by": "direct_negation",
+     "targets": [
+      "1.5"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "101153422",
+   "set": "development",
+   "acronym": "VIRODOM",
+   "sources_present": [
+    "title",
+    "keywords",
+    "objective",
+    "deliverable_descriptions"
+   ],
+   "sources_absent": [
+    "editorial_description"
+   ],
+   "assignments": [
+    {
+     "target_id": "3.3",
+     "target_uri": "http://data.europa.eu/sdg/3.3",
+     "goal_id": "3",
+     "goal_uri": "http://data.europa.eu/sdg/3",
+     "score": 3.0,
+     "independent_sources": 2,
+     "confidence": "low",
+     "evidence": [
+      {
+       "source": "lexical",
+       "field": "objective",
+       "phrase": "infectious disease",
+       "kind": "synonym_domain",
+       "weight": 1.5
+      },
+      {
+       "source": "crosswalk",
+       "category": "medical and health sciences/health sciences/public health/epidemiology",
+       "strength": "contributing",
+       "justification": "Target 3.3's end of epidemics and combat of communicable diseases.",
+       "weight": 1.5
+      }
+     ]
+    }
+   ],
+   "goal_level_only": [],
+   "unassigned": false,
+   "cross_cutting": false,
+   "overflow_beyond_cap": 0,
+   "discarded_by_negation_rule": []
+  },
+  {
+   "id": "101256949",
+   "set": "development",
+   "acronym": "HERACLES",
+   "sources_present": [
+    "title",
+    "keywords",
+    "objective"
+   ],
+   "sources_absent": [
+    "editorial_description",
+    "deliverable_descriptions"
+   ],
+   "assignments": [
+    {
+     "target_id": "1.b",
+     "target_uri": "http://data.europa.eu/sdg/1.b",
+     "goal_id": "1",
+     "goal_uri": "http://data.europa.eu/sdg/1",
+     "score": 3.4,
+     "independent_sources": 3,
+     "confidence": "low",
+     "evidence": [
+      {
+       "source": "lexical",
+       "field": "title",
+       "phrase": "Regional",
+       "kind": "key_term",
+       "weight": 1.2
+      },
+      {
+       "source": "lexical",
+       "field": "keywords",
+       "phrase": "Regional",
+       "kind": "key_term",
+       "weight": 1.2
+      },
+      {
+       "source": "lexical",
+       "field": "objective",
+       "phrase": "regional",
+       "kind": "key_term",
+       "weight": 1.0
+      }
+     ]
+    },
+    {
+     "target_id": "2.5",
+     "target_uri": "http://data.europa.eu/sdg/2.5",
+     "goal_id": "2",
+     "goal_uri": "http://data.europa.eu/sdg/2",
+     "score": 3.4,
+     "independent_sources": 3,
+     "confidence": "low",
+     "evidence": [
+      {
+       "source": "lexical",
+       "field": "title",
+       "phrase": "Regional",
+       "kind": "key_term",
+       "weight": 1.2
+      },
+      {
+       "source": "lexical",
+       "field": "keywords",
+       "phrase": "Regional",
+       "kind": "key_term",
+       "weight": 1.2
+      },
+      {
+       "source": "lexical",
+       "field": "objective",
+       "phrase": "regional",
+       "kind": "key_term",
+       "weight": 1.0
+      }
+     ]
+    },
+    {
+     "target_id": "9.1",
+     "target_uri": "http://data.europa.eu/sdg/9.1",
+     "goal_id": "9",
+     "goal_uri": "http://data.europa.eu/sdg/9",
+     "score": 3.4,
+     "independent_sources": 3,
+     "confidence": "low",
+     "evidence": [
+      {
+       "source": "lexical",
+       "field": "title",
+       "phrase": "Regional",
+       "kind": "key_term",
+       "weight": 1.2
+      },
+      {
+       "source": "lexical",
+       "field": "keywords",
+       "phrase": "Regional",
+       "kind": "key_term",
+       "weight": 1.2
+      },
+      {
+       "source": "lexical",
+       "field": "objective",
+       "phrase": "regional",
+       "kind": "key_term",
+       "weight": 1.0
+      }
+     ]
+    }
+   ],
+   "goal_level_only": [],
+   "unassigned": false,
+   "cross_cutting": true,
+   "overflow_beyond_cap": 0,
+   "discarded_by_negation_rule": []
+  },
+  {
+   "id": "101066047",
+   "set": "development",
+   "acronym": "HI-GEN-SHARE",
+   "sources_present": [
+    "title",
+    "keywords",
+    "objective",
+    "editorial_description",
+    "deliverable_descriptions"
+   ],
+   "sources_absent": [],
+   "assignments": [
+    {
+     "target_id": "3.4",
+     "target_uri": "http://data.europa.eu/sdg/3.4",
+     "goal_id": "3",
+     "goal_uri": "http://data.europa.eu/sdg/3",
+     "score": 6.0,
+     "independent_sources": 1,
+     "confidence": "low",
+     "evidence": [
+      {
+       "source": "lexical",
+       "field": "editorial_description",
+       "phrase": "treatment",
+       "kind": "key_term",
+       "weight": 1.0
+      },
+      {
+       "source": "lexical",
+       "field": "editorial_description",
+       "phrase": "mental health",
+       "kind": "key_term",
+       "weight": 1.5
+      },
+      {
+       "source": "lexical",
+       "field": "editorial_description",
+       "phrase": "mental health",
+       "kind": "synonym_subject",
+       "weight": 2.0
+      },
+      {
+       "source": "lexical",
+       "field": "editorial_description",
+       "phrase": "diabetes",
+       "kind": "synonym_domain",
+       "weight": 1.5
+      }
+     ]
+    },
+    {
+     "target_id": "17.18",
+     "target_uri": "http://data.europa.eu/sdg/17.18",
+     "goal_id": "17",
+     "goal_uri": "http://data.europa.eu/sdg/17",
+     "score": 5.4,
+     "independent_sources": 4,
+     "confidence": "medium",
+     "evidence": [
+      {
+       "source": "lexical",
+       "field": "title",
+       "phrase": "Gender",
+       "kind": "key_term",
+       "weight": 1.2
+      },
+      {
+       "source": "lexical",
+       "field": "keywords",
+       "phrase": "gender",
+       "kind": "key_term",
+       "weight": 1.2
+      },
+      {
+       "source": "lexical",
+       "field": "objective",
+       "phrase": "gender",
+       "kind": "key_term",
+       "weight": 1.0
+      },
+      {
+       "source": "lexical",
+       "field": "editorial_description",
+       "phrase": "gender",
+       "kind": "key_term",
+       "weight": 1.0
+      },
+      {
+       "source": "lexical",
+       "field": "editorial_description",
+       "phrase": "age",
+       "kind": "key_term",
+       "weight": 1.0
+      }
+     ]
+    },
+    {
+     "target_id": "10.2",
+     "target_uri": "http://data.europa.eu/sdg/10.2",
+     "goal_id": "10",
+     "goal_uri": "http://data.europa.eu/sdg/10",
+     "score": 5.0,
+     "independent_sources": 2,
+     "confidence": "medium",
+     "evidence": [
+      {
+       "source": "lexical",
+       "field": "objective",
+       "phrase": "economic",
+       "kind": "key_term",
+       "weight": 1.0
+      },
+      {
+       "source": "lexical",
+       "field": "objective",
+       "phrase": "social",
+       "kind": "key_term",
+       "weight": 1.0
+      },
+      {
+       "source": "lexical",
+       "field": "editorial_description",
+       "phrase": "economic",
+       "kind": "key_term",
+       "weight": 1.0
+      },
+      {
+       "source": "lexical",
+       "field": "editorial_description",
+       "phrase": "social",
+       "kind": "key_term",
+       "weight": 1.0
+      },
+      {
+       "source": "lexical",
+       "field": "editorial_description",
+       "phrase": "status",
+       "kind": "key_term",
+       "weight": 1.0
+      }
+     ]
+    },
+    {
+     "target_id": "3.d",
+     "target_uri": "http://data.europa.eu/sdg/3.d",
+     "goal_id": "3",
+     "goal_uri": "http://data.europa.eu/sdg/3",
+     "score": 4.5,
+     "independent_sources": 2,
+     "confidence": "medium",
+     "evidence": [
+      {
+       "source": "lexical",
+       "field": "objective",
+       "phrase": "health risks",
+       "kind": "key_term",
+       "weight": 1.5
+      },
+      {
+       "source": "crosswalk",
+       "category": "medical and health sciences/health sciences/public health/epidemiology/pandemics",
+       "strength": "direct",
+       "justification": "Target 3.d's early warning and management of national and global health risks.",
+       "weight": 3.0
+      }
+     ]
+    },
+    {
+     "target_id": "1.5",
+     "target_uri": "http://data.europa.eu/sdg/1.5",
+     "goal_id": "1",
+     "goal_uri": "http://data.europa.eu/sdg/1",
+     "score": 4.0,
+     "independent_sources": 2,
+     "confidence": "low",
+     "evidence": [
+      {
+       "source": "lexical",
+       "field": "objective",
+       "phrase": "economic",
+       "kind": "key_term",
+       "weight": 1.0
+      },
+      {
+       "source": "lexical",
+       "field": "objective",
+       "phrase": "social",
+       "kind": "key_term",
+       "weight": 1.0
+      },
+      {
+       "source": "lexical",
+       "field": "editorial_description",
+       "phrase": "economic",
+       "kind": "key_term",
+       "weight": 1.0
+      },
+      {
+       "source": "lexical",
+       "field": "editorial_description",
+       "phrase": "social",
+       "kind": "key_term",
+       "weight": 1.0
+      }
+     ]
+    }
+   ],
+   "goal_level_only": [],
+   "unassigned": false,
+   "cross_cutting": true,
+   "overflow_beyond_cap": 1,
+   "discarded_by_negation_rule": []
+  },
+  {
+   "id": "101310358",
+   "set": "development",
+   "acronym": "SPEAR",
+   "sources_present": [
+    "title",
+    "keywords",
+    "objective"
+   ],
+   "sources_absent": [
+    "editorial_description",
+    "deliverable_descriptions"
+   ],
+   "assignments": [
+    {
+     "target_id": "7.2",
+     "target_uri": "http://data.europa.eu/sdg/7.2",
+     "goal_id": "7",
+     "goal_uri": "http://data.europa.eu/sdg/7",
+     "score": 3.0,
+     "independent_sources": 1,
+     "confidence": "low",
+     "evidence": [
+      {
+       "source": "crosswalk",
+       "category": "engineering and technology/environmental engineering/energy and fuels/renewable energy",
+       "strength": "direct",
+       "justification": "Target 7.2's subject verbatim: increase substantially the share of renewable energy.",
+       "weight": 3.0
+      }
+     ]
+    }
+   ],
+   "goal_level_only": [],
+   "unassigned": false,
+   "cross_cutting": false,
+   "overflow_beyond_cap": 0,
+   "discarded_by_negation_rule": []
+  },
+  {
+   "id": "101202710",
+   "set": "development",
+   "acronym": "QUBITTO",
+   "sources_present": [
+    "title",
+    "keywords",
+    "objective"
+   ],
+   "sources_absent": [
+    "editorial_description",
+    "deliverable_descriptions"
+   ],
+   "assignments": [
+    {
+     "target_id": "17.8",
+     "target_uri": "http://data.europa.eu/sdg/17.8",
+     "goal_id": "17",
+     "goal_uri": "http://data.europa.eu/sdg/17",
+     "score": 3.4,
+     "independent_sources": 3,
+     "confidence": "low",
+     "evidence": [
+      {
+       "source": "lexical",
+       "field": "title",
+       "phrase": "Information",
+       "kind": "key_term",
+       "weight": 1.2
+      },
+      {
+       "source": "lexical",
+       "field": "keywords",
+       "phrase": "Information",
+       "kind": "key_term",
+       "weight": 1.2
+      },
+      {
+       "source": "lexical",
+       "field": "objective",
+       "phrase": "information",
+       "kind": "key_term",
+       "weight": 1.0
+      }
+     ]
+    },
+    {
+     "target_id": "3.7",
+     "target_uri": "http://data.europa.eu/sdg/3.7",
+     "goal_id": "3",
+     "goal_uri": "http://data.europa.eu/sdg/3",
+     "score": 3.4,
+     "independent_sources": 3,
+     "confidence": "low",
+     "evidence": [
+      {
+       "source": "lexical",
+       "field": "title",
+       "phrase": "Information",
+       "kind": "key_term",
+       "weight": 1.2
+      },
+      {
+       "source": "lexical",
+       "field": "keywords",
+       "phrase": "Information",
+       "kind": "key_term",
+       "weight": 1.2
+      },
+      {
+       "source": "lexical",
+       "field": "objective",
+       "phrase": "information",
+       "kind": "key_term",
+       "weight": 1.0
+      }
+     ]
+    },
+    {
+     "target_id": "4.b",
+     "target_uri": "http://data.europa.eu/sdg/4.b",
+     "goal_id": "4",
+     "goal_uri": "http://data.europa.eu/sdg/4",
+     "score": 3.4,
+     "independent_sources": 3,
+     "confidence": "low",
+     "evidence": [
+      {
+       "source": "lexical",
+       "field": "title",
+       "phrase": "Information",
+       "kind": "key_term",
+       "weight": 1.2
+      },
+      {
+       "source": "lexical",
+       "field": "keywords",
+       "phrase": "Information",
+       "kind": "key_term",
+       "weight": 1.2
+      },
+      {
+       "source": "lexical",
+       "field": "objective",
+       "phrase": "information",
+       "kind": "key_term",
+       "weight": 1.0
+      }
+     ]
+    },
+    {
+     "target_id": "5.b",
+     "target_uri": "http://data.europa.eu/sdg/5.b",
+     "goal_id": "5",
+     "goal_uri": "http://data.europa.eu/sdg/5",
+     "score": 3.4,
+     "independent_sources": 3,
+     "confidence": "low",
+     "evidence": [
+      {
+       "source": "lexical",
+       "field": "title",
+       "phrase": "Information",
+       "kind": "key_term",
+       "weight": 1.2
+      },
+      {
+       "source": "lexical",
+       "field": "keywords",
+       "phrase": "Information",
+       "kind": "key_term",
+       "weight": 1.2
+      },
+      {
+       "source": "lexical",
+       "field": "objective",
+       "phrase": "information",
+       "kind": "key_term",
+       "weight": 1.0
+      }
+     ]
+    }
+   ],
+   "goal_level_only": [],
+   "unassigned": false,
+   "cross_cutting": true,
+   "overflow_beyond_cap": 0,
+   "discarded_by_negation_rule": []
+  },
+  {
+   "id": "101147196",
+   "set": "development",
+   "acronym": "FoMe",
+   "sources_present": [
+    "title",
+    "keywords",
+    "objective"
+   ],
+   "sources_absent": [
+    "editorial_description",
+    "deliverable_descriptions"
+   ],
+   "assignments": [],
+   "goal_level_only": [],
+   "unassigned": true,
+   "cross_cutting": false,
+   "overflow_beyond_cap": 0,
+   "discarded_by_negation_rule": []
+  },
+  {
+   "id": "101211161",
+   "set": "development",
+   "acronym": "HeatScopy",
+   "sources_present": [
+    "title",
+    "keywords",
+    "objective"
+   ],
+   "sources_absent": [
+    "editorial_description",
+    "deliverable_descriptions"
+   ],
+   "assignments": [
+    {
+     "target_id": "6.3",
+     "target_uri": "http://data.europa.eu/sdg/6.3",
+     "goal_id": "6",
+     "goal_uri": "http://data.europa.eu/sdg/6",
+     "score": 3.4,
+     "independent_sources": 3,
+     "confidence": "low",
+     "evidence": [
+      {
+       "source": "lexical",
+       "field": "title",
+       "phrase": "Materials",
+       "kind": "key_term",
+       "weight": 1.2
+      },
+      {
+       "source": "lexical",
+       "field": "keywords",
+       "phrase": "materials",
+       "kind": "key_term",
+       "weight": 1.2
+      },
+      {
+       "source": "lexical",
+       "field": "objective",
+       "phrase": "materials",
+       "kind": "key_term",
+       "weight": 1.0
+      }
+     ]
+    }
+   ],
+   "goal_level_only": [],
+   "unassigned": false,
+   "cross_cutting": false,
+   "overflow_beyond_cap": 0,
+   "discarded_by_negation_rule": []
+  },
+  {
+   "id": "101208086",
+   "set": "development",
+   "acronym": "WINSAFE",
+   "sources_present": [
+    "title",
+    "keywords",
+    "objective",
+    "deliverable_descriptions"
+   ],
+   "sources_absent": [
+    "editorial_description"
+   ],
+   "assignments": [],
+   "goal_level_only": [
+    {
+     "goal_id": "17",
+     "goal_uri": "http://data.europa.eu/sdg/17",
+     "score": 2.8
+    }
+   ],
+   "unassigned": false,
+   "cross_cutting": false,
+   "overflow_beyond_cap": 0,
+   "discarded_by_negation_rule": []
+  },
+  {
+   "id": "101054300",
+   "set": "development",
+   "acronym": "Embodied Ecologies",
+   "sources_present": [
+    "title",
+    "keywords",
+    "objective",
+    "deliverable_descriptions"
+   ],
+   "sources_absent": [
+    "editorial_description"
+   ],
+   "assignments": [
+    {
+     "target_id": "1.5",
+     "target_uri": "http://data.europa.eu/sdg/1.5",
+     "goal_id": "1",
+     "goal_uri": "http://data.europa.eu/sdg/1",
+     "score": 3.0,
+     "independent_sources": 1,
+     "confidence": "low",
+     "evidence": [
+      {
+       "source": "lexical",
+       "field": "objective",
+       "phrase": "exposure",
+       "kind": "key_term",
+       "weight": 1.0
+      },
+      {
+       "source": "lexical",
+       "field": "objective",
+       "phrase": "economic",
+       "kind": "key_term",
+       "weight": 1.0
+      },
+      {
+       "source": "lexical",
+       "field": "objective",
+       "phrase": "social",
+       "kind": "key_term",
+       "weight": 1.0
+      }
+     ]
+    },
+    {
+     "target_id": "16.6",
+     "target_uri": "http://data.europa.eu/sdg/16.6",
+     "goal_id": "16",
+     "goal_uri": "http://data.europa.eu/sdg/16",
+     "score": 3.0,
+     "independent_sources": 1,
+     "confidence": "low",
+     "evidence": [
+      {
+       "source": "crosswalk",
+       "category": "social sciences/sociology/governance",
+       "strength": "direct",
+       "justification": "Target 16.6's effective, accountable and transparent institutions at all levels.",
+       "weight": 3.0
+      }
+     ]
+    }
+   ],
+   "goal_level_only": [],
+   "unassigned": false,
+   "cross_cutting": true,
+   "overflow_beyond_cap": 0,
+   "discarded_by_negation_rule": []
+  },
+  {
+   "id": "101248797",
+   "set": "development",
+   "acronym": "FACT",
+   "sources_present": [
+    "title",
+    "keywords",
+    "objective"
+   ],
+   "sources_absent": [
+    "editorial_description",
+    "deliverable_descriptions"
+   ],
+   "assignments": [
+    {
+     "target_id": "3.3",
+     "target_uri": "http://data.europa.eu/sdg/3.3",
+     "goal_id": "3",
+     "goal_uri": "http://data.europa.eu/sdg/3",
+     "score": 10.2,
+     "independent_sources": 3,
+     "confidence": "high",
+     "evidence": [
+      {
+       "source": "lexical",
+       "field": "title",
+       "phrase": "malaria",
+       "kind": "key_term",
+       "weight": 1.2
+      },
+      {
+       "source": "lexical",
+       "field": "title",
+       "phrase": "malaria",
+       "kind": "synonym_subject",
+       "weight": 2.4
+      },
+      {
+       "source": "lexical",
+       "field": "keywords",
+       "phrase": "malaria",
+       "kind": "key_term",
+       "weight": 1.2
+      },
+      {
+       "source": "lexical",
+       "field": "keywords",
+       "phrase": "malaria",
+       "kind": "synonym_subject",
+       "weight": 2.4
+      },
+      {
+       "source": "lexical",
+       "field": "objective",
+       "phrase": "malaria",
+       "kind": "key_term",
+       "weight": 1.0
+      },
+      {
+       "source": "lexical",
+       "field": "objective",
+       "phrase": "malaria",
+       "kind": "synonym_subject",
+       "weight": 2.0
+      }
+     ]
+    },
+    {
+     "target_id": "11.2",
+     "target_uri": "http://data.europa.eu/sdg/11.2",
+     "goal_id": "11",
+     "goal_uri": "http://data.europa.eu/sdg/11",
+     "score": 3.4,
+     "independent_sources": 3,
+     "confidence": "low",
+     "evidence": [
+      {
+       "source": "lexical",
+       "field": "title",
+       "phrase": "children",
+       "kind": "key_term",
+       "weight": 1.2
+      },
+      {
+       "source": "lexical",
+       "field": "keywords",
+       "phrase": "children",
+       "kind": "key_term",
+       "weight": 1.2
+      },
+      {
+       "source": "lexical",
+       "field": "objective",
+       "phrase": "children",
+       "kind": "key_term",
+       "weight": 1.0
+      }
+     ]
+    },
+    {
+     "target_id": "11.7",
+     "target_uri": "http://data.europa.eu/sdg/11.7",
+     "goal_id": "11",
+     "goal_uri": "http://data.europa.eu/sdg/11",
+     "score": 3.4,
+     "independent_sources": 3,
+     "confidence": "low",
+     "evidence": [
+      {
+       "source": "lexical",
+       "field": "title",
+       "phrase": "children",
+       "kind": "key_term",
+       "weight": 1.2
+      },
+      {
+       "source": "lexical",
+       "field": "keywords",
+       "phrase": "children",
+       "kind": "key_term",
+       "weight": 1.2
+      },
+      {
+       "source": "lexical",
+       "field": "objective",
+       "phrase": "children",
+       "kind": "key_term",
+       "weight": 1.0
+      }
+     ]
+    }
+   ],
+   "goal_level_only": [],
+   "unassigned": false,
+   "cross_cutting": true,
+   "overflow_beyond_cap": 0,
+   "discarded_by_negation_rule": []
+  },
+  {
+   "id": "101061023",
+   "set": "development",
+   "acronym": "PLANEAT",
+   "sources_present": [
+    "title",
+    "keywords",
+    "objective",
+    "editorial_description",
+    "deliverable_descriptions"
+   ],
+   "sources_absent": [],
+   "assignments": [
+    {
+     "target_id": "10.2",
+     "target_uri": "http://data.europa.eu/sdg/10.2",
+     "goal_id": "10",
+     "goal_uri": "http://data.europa.eu/sdg/10",
+     "score": 8.6,
+     "independent_sources": 4,
+     "confidence": "high",
+     "evidence": [
+      {
+       "source": "lexical",
+       "field": "keywords",
+       "phrase": "social",
+       "kind": "key_term",
+       "weight": 1.2
+      },
+      {
+       "source": "lexical",
+       "field": "objective",
+       "phrase": "economic",
+       "kind": "key_term",
+       "weight": 1.0
+      },
+      {
+       "source": "lexical",
+       "field": "objective",
+       "phrase": "empower",
+       "kind": "key_term",
+       "weight": 1.0
+      },
+      {
+       "source": "lexical",
+       "field": "objective",
+       "phrase": "status",
+       "kind": "key_term",
+       "weight": 1.0
+      },
+      {
+       "source": "lexical",
+       "field": "editorial_description",
+       "phrase": "Social",
+       "kind": "key_term",
+       "weight": 1.0
+      },
+      {
+       "source": "lexical",
+       "field": "editorial_description",
+       "phrase": "empower",
+       "kind": "key_term",
+       "weight": 1.0
+      },
+      {
+       "source": "lexical",
+       "field": "deliverable_descriptions",
+       "phrase": "economic",
+       "kind": "key_term",
+       "weight": 0.8
+      },
+      {
+       "source": "lexical",
+       "field": "deliverable_descriptions",
+       "phrase": "social",
+       "kind": "key_term",
+       "weight": 0.8
+      },
+      {
+       "source": "lexical",
+       "field": "deliverable_descriptions",
+       "phrase": "status",
+       "kind": "key_term",
+       "weight": 0.8
+      }
+     ]
+    },
+    {
+     "target_id": "1.5",
+     "target_uri": "http://data.europa.eu/sdg/1.5",
+     "goal_id": "1",
+     "goal_uri": "http://data.europa.eu/sdg/1",
+     "score": 4.8,
+     "independent_sources": 4,
+     "confidence": "medium",
+     "evidence": [
+      {
+       "source": "lexical",
+       "field": "keywords",
+       "phrase": "social",
+       "kind": "key_term",
+       "weight": 1.2
+      },
+      {
+       "source": "lexical",
+       "field": "objective",
+       "phrase": "economic",
+       "kind": "key_term",
+       "weight": 1.0
+      },
+      {
+       "source": "lexical",
+       "field": "editorial_description",
+       "phrase": "Social",
+       "kind": "key_term",
+       "weight": 1.0
+      },
+      {
+       "source": "lexical",
+       "field": "deliverable_descriptions",
+       "phrase": "economic",
+       "kind": "key_term",
+       "weight": 0.8
+      },
+      {
+       "source": "lexical",
+       "field": "deliverable_descriptions",
+       "phrase": "social",
+       "kind": "key_term",
+       "weight": 0.8
+      }
+     ]
+    },
+    {
+     "target_id": "12.3",
+     "target_uri": "http://data.europa.eu/sdg/12.3",
+     "goal_id": "12",
+     "goal_uri": "http://data.europa.eu/sdg/12",
+     "score": 3.7,
+     "independent_sources": 3,
+     "confidence": "low",
+     "evidence": [
+      {
+       "source": "lexical",
+       "field": "keywords",
+       "phrase": "Consumer",
+       "kind": "key_term",
+       "weight": 1.2
+      },
+      {
+       "source": "lexical",
+       "field": "objective",
+       "phrase": "supply chains",
+       "kind": "key_term",
+       "weight": 1.5
+      },
+      {
+       "source": "lexical",
+       "field": "editorial_description",
+       "phrase": "consumer",
+       "kind": "key_term",
+       "weight": 1.0
+      }
+     ]
+    },
+    {
+     "target_id": "11.a",
+     "target_uri": "http://data.europa.eu/sdg/11.a",
+     "goal_id": "11",
+     "goal_uri": "http://data.europa.eu/sdg/11",
+     "score": 3.0,
+     "independent_sources": 3,
+     "confidence": "low",
+     "evidence": [
+      {
+       "source": "lexical",
+       "field": "keywords",
+       "phrase": "social",
+       "kind": "key_term",
+       "weight": 1.2
+      },
+      {
+       "source": "lexical",
+       "field": "editorial_description",
+       "phrase": "Social",
+       "kind": "key_term",
+       "weight": 1.0
+      },
+      {
+       "source": "lexical",
+       "field": "deliverable_descriptions",
+       "phrase": "social",
+       "kind": "key_term",
+       "weight": 0.8
+      }
+     ]
+    },
+    {
+     "target_id": "2.2",
+     "target_uri": "http://data.europa.eu/sdg/2.2",
+     "goal_id": "2",
+     "goal_uri": "http://data.europa.eu/sdg/2",
+     "score": 3.0,
+     "independent_sources": 1,
+     "confidence": "low",
+     "evidence": [
+      {
+       "source": "crosswalk",
+       "category": "medical and health sciences/health sciences/nutrition",
+       "strength": "direct",
+       "justification": "Target 2.2 asks to \"end all forms of malnutrition\".",
+       "weight": 3.0
+      }
+     ]
+    }
+   ],
+   "goal_level_only": [],
+   "unassigned": false,
+   "cross_cutting": true,
+   "overflow_beyond_cap": 0,
+   "discarded_by_negation_rule": []
+  }
+ ]
+}

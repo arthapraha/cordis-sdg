@@ -17,8 +17,16 @@ data/sample/handoff-150.json
 # Pipeline output goes to the room as an artefact by hash, like the hand-off.
 # The parameters and the code are committed; the scores are not, because
 # registration section 4 keeps the labellers blind to them.
-data/pipeline/development-50-v1.json
+# development-50-v1.json is NOT ignored, and it is the third file to teach this
+# lesson today. metrics.py reads it to recompute the figures published at
+# cordis-sdg seq 129 before it reports anything new, so a clone without it
+# cannot run the reproduction block's metrics line at all — verified by cloning
+# and watching it fail. It is 100 KB and it is EVIDENCE rather than output: the
+# self-proof is only checkable by someone else if the thing it checks against is
+# in the repository.
 data/pipeline/development-50-explanations-v1.json
+data/pipeline/development-50-explanations-v2.json
+data/pipeline/evaluation-100-v2.json
 data/pipeline/development-50-v2.json
 data/pipeline/dev50-adjudication-v2.json
 data/sample/handoff-evaluation-100.json
