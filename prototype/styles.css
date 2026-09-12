@@ -1271,46 +1271,43 @@ body {
   padding: 1.25rem;
 }
 
-/* Sources Present vs Absent Container (CRITICAL REQUIREMENT) */
-.sources-comparison-box {
-  background: #f8fafc;
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-md);
-  padding: 1rem 1.25rem;
-  margin-bottom: 1.25rem;
+/* What the record contains: one small block under the evidence */
+.record-fields {
+  margin-top: 1.25rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--border-color);
 }
 
-.sources-comparison-title {
-  font-size: 0.75rem;
+.record-fields-title {
+  font-size: 0.7rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.04em;
   color: var(--text-muted);
-  margin-bottom: 0.5rem;
-}
-
-.sources-cols {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-}
-
-.sources-col-label {
-  font-size: 0.8rem;
-  font-weight: 600;
   margin-bottom: 0.4rem;
 }
 
-.sources-present-label {
-  color: var(--success);
+.record-fields-line {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem 0.6rem;
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  margin-top: 0.3rem;
 }
 
-.sources-absent-label {
+.record-fields-label {
+  white-space: nowrap;
+}
+
+.record-fields-none {
+  font-size: 0.75rem;
   color: var(--text-muted);
 }
 
 .pill-list {
-  display: flex;
+  display: inline-flex;
   flex-wrap: wrap;
   gap: 0.4rem;
 }
@@ -1319,9 +1316,9 @@ body {
   background-color: var(--success-bg);
   color: var(--success);
   border: 1px solid var(--success-border);
-  padding: 0.15rem 0.5rem;
+  padding: 0.1rem 0.5rem;
   border-radius: 999px;
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   font-weight: 600;
 }
 
@@ -1329,51 +1326,10 @@ body {
   background-color: var(--bg-alt);
   color: var(--text-muted);
   border: 1px solid var(--border-dark);
-  padding: 0.15rem 0.5rem;
+  padding: 0.1rem 0.5rem;
   border-radius: 999px;
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   font-style: italic;
-}
-
-.sources-caption {
-  font-size: 0.75rem;
-  color: var(--text-muted);
-  margin-top: 0.6rem;
-  border-top: 1px dashed var(--border-color);
-  padding-top: 0.4rem;
-}
-
-/* Parked Explanation Marker Box (CRITICAL REQUIREMENT) */
-.parked-marker-box {
-  background-color: #fffbeb;
-  border: 1px solid #fef3c7;
-  border-left: 4px solid var(--warning);
-  border-radius: var(--radius-sm);
-  padding: 0.85rem 1rem;
-  margin-top: 1.25rem;
-}
-
-.parked-marker-header {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-size: 0.8rem;
-  font-weight: 700;
-  color: #b45309;
-  text-transform: uppercase;
-}
-
-.parked-marker-text {
-  font-size: 0.85rem;
-  color: #92400e;
-  margin-top: 0.25rem;
-}
-
-.parked-marker-hash {
-  font-size: 0.75rem;
-  color: #b45309;
-  font-family: var(--font-mono);
-  margin-top: 0.25rem;
 }
 
 /* Evidence text block */
@@ -1430,7 +1386,6 @@ body {
 @media (max-width: 768px) {
   .page-head { padding: 0 1rem; }
   .app-main { padding: 0 1rem; }
-  .sources-cols { grid-template-columns: 1fr; }
   .filters-main { flex-direction: column; align-items: stretch; }
   .figures-gallery { grid-template-columns: 1fr; }
   .eval-cards-container { grid-template-columns: 1fr; }

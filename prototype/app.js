@@ -612,51 +612,28 @@ function renderProjectDetail(project) {
 
   const bodyEl = document.getElementById("modal-body");
 
-  // Binding Rule 3: Prominently surface sources_present vs sources_absent
+  // What the record contains: fields with text, and fields the record does not have
   const presentList = project.sources_present || [];
   const absentList = project.sources_absent || [];
 
   const presentPills = presentList.length > 0
     ? presentList.map(s => `<span class="source-pill-present">${escapeHtml(s)}</span>`).join("")
-    : `<span style="font-size: 0.75rem; color: var(--text-muted);">None</span>`;
+    : `<span class="record-fields-none">none</span>`;
 
   const absentPills = absentList.length > 0
     ? absentList.map(s => `<span class="source-pill-absent">${escapeHtml(s)}</span>`).join("")
-    : `<span style="font-size: 0.75rem; color: var(--text-muted);">None</span>`;
+    : `<span class="record-fields-none">none</span>`;
 
-  const sourcesBoxHtml = `
-    <div class="sources-comparison-box">
-      <div class="sources-comparison-title">CORDIS Source Field Coverage</div>
-      <div class="sources-cols">
-        <div>
-          <div class="sources-col-label sources-present-label">&check; Sources Present in CORDIS Record:</div>
-          <div class="pill-list">${presentPills}</div>
-        </div>
-        <div>
-          <div class="sources-col-label sources-absent-label">&empty; Sources Absent in CORDIS Record:</div>
-          <div class="pill-list">${absentPills}</div>
-        </div>
+  const recordFieldsHtml = `
+    <div class="record-fields">
+      <div class="record-fields-title">What the record contains</div>
+      <div class="record-fields-line">
+        <span class="record-fields-label">Fields with text in the CORDIS record:</span>
+        <span class="pill-list">${presentPills}</span>
       </div>
-      <div class="sources-caption">
-        Surfaced prominently to distinguish between fields that contained text but matched no SDG vocabulary vs. fields entirely absent in the raw CORDIS project payload.
-      </div>
-    </div>
-  `;
-
-  // Binding Rule 2: Explanation & Prompt SHA-256 Section 3.7 Parked Status Marker
-  const explanationText = project.explanation_marker || "";
-  const promptHash = project.prompt_marker || "";
-
-  const parkedMarkerHtml = `
-    <div class="parked-marker-box">
-      <div class="parked-marker-header">
-        <span>Parked Status Marker</span>
-      </div>
-      <div class="parked-marker-text">
-        Model explanation generation parked under methodology specification: <code>${escapeHtml(explanationText)}</code>
-      </div>
-      <div class="parked-marker-hash">
-        Prompt Marker: <code>${escapeHtml(promptHash)}</code>
+      <div class="record-fields-line">
+        <span class="record-fields-label">Fields the record does not have:</span>
+        <span class="pill-list">${absentPills}</span>
       </div>
     </div>
   `;
@@ -664,7 +641,6 @@ function renderProjectDetail(project) {
   // If Unassigned
   if (!project.assignments || project.assignments.length === 0) {
     bodyEl.innerHTML = `
-      ${sourcesBoxHtml}
       <div class="unassigned-notice">
         <h3>No SDG Targets or Goals Assigned</h3>
         <p>This project did not reach the calibrated relevance scoring threshold for any of the 169 SDG targets or 17 goals.</p>
@@ -672,13 +648,12 @@ function renderProjectDetail(project) {
           30.6% of the Horizon Europe corpus (7,175 projects) is unassigned by design to prevent spurious or false-positive topic attribution.
         </p>
       </div>
-      ${parkedMarkerHtml}
+      ${recordFieldsHtml}
     `;
     return;
   }
 
-  let html = sourcesBoxHtml;
-  html += `<h3 style="font-size: 1rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-secondary);">
+  let html = `<h3 style="font-size: 1rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-secondary);">
     Assigned SDGs &amp; Multi-Field Evidence (${project.assignments.length} total)
   </h3>`;
 
@@ -724,7 +699,7 @@ function renderProjectDetail(project) {
     `;
   });
 
-  html += parkedMarkerHtml;
+  html += recordFieldsHtml;
   bodyEl.innerHTML = html;
 }
 
