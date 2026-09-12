@@ -68,22 +68,6 @@ def thousands(n):
 
 
 
-def badge(html, label):
-    """The value the header shows under a given label, and its title attribute.
-
-    Returned as a pair so the CALLER compares them, because the defect Hermes
-    Cordis found at cordis-sdg seq 345 was exactly a label and a value that did
-    not go together: the chip said "Pipeline Commit" and carried the frozen
-    evaluation output's sha256. Searching the page for the right hash would not
-    have caught it — the right hash WAS on the page, under the wrong word. So
-    the check has to read the pairing, not the presence.
-    """
-    pat = (r'<span class="badge-label">%s</span>\s*'
-           r'<span class="badge-value[^"]*"(?:\s+title="([0-9a-f]{40,64})")?>([^<]*)</span>'
-           % re.escape(label))
-    hit = re.search(pat, html)
-    return (hit.group(1), hit.group(2)) if hit else (None, None)
-
 
 def prototype_failures(m, f, html, reg_sha):
     """The published page's claims, against the artefacts they came from.
@@ -138,10 +122,10 @@ def prototype_failures(m, f, html, reg_sha):
         out.append((J, "development_50.cohens_kappa",
                     "%r, but the page serves %r" % (dev["cohens_kappa"], d50.get("cohens_kappa"))))
 
-    # The two sentences the page now serves verbatim instead of a paraphrase.
-    # They are the submission's least flattering sentences, which is why they
-    # are the ones worth binding: the paraphrase that replaced them called the
-    # sole reference "a single expert annotator".
+    # The served JSON still carries the metrics artefact's two sentences about
+    # the reference verbatim, and they are held to it here. The PAGE no longer
+    # shows them: since the plain-language rewrite it shows one sentence written
+    # for a stranger, which is bound below to the artefact facts it states.
     for key, artefact in [("reference_note", m["reference"].get("_sole_reference")),
                           ("human_anchor_status", m["human_anchor"].get("why"))]:
         checked.append("served:" + key)
@@ -175,8 +159,6 @@ def prototype_failures(m, f, html, reg_sha):
         ("eval-repro-metrics", "P=%s, R=%s, Ceiling=%s" % (prec, rec, ceil)),
         ("fig-caption-ceiling", ceil),
         ("fig-caption-unreachable", pairs),
-        ("eval-prose-reference-note", e100.get("reference_note", "")),
-        ("eval-prose-human-anchor", e100.get("human_anchor_status", "")),
     ]:
         needle = 'id="%s">%s<' % (el, value)
         checked.append(el)
@@ -184,28 +166,83 @@ def prototype_failures(m, f, html, reg_sha):
             out.append((H, "the fallback in #%s" % el, needle[:130]))
 
     # The header chips, read as label-and-value pairs.
-    # THE PAGE NOW NAMES THE REGISTRATION IT IS BUILT UNDER, so it joins the
-    # obligation the four documents already carry. It could not before: the chip
-    # read "Registration v10 section 6 Item 7" with no hash, so there was nothing
-    # to check and forcing one from this file would have decided something on the
-    # prototype seat's row. Antigravity Cordis put the sha256 in the chip's title
-    # at 9228c94, and this is the other half of the owner's word at seq 367.
-    chips = []
+    # THE DIGESTS MOVED, AND THE PAIRING RULE MOVED WITH THEM. At 5e12422 the
+    # page was rewritten for a reader who has never seen the project rooms: the
+    # four header chips became plain language, and their digests now live in the
+    # "Verify these files" table on the Methodology & Provenance tab. The rule is
+    # the one the chips taught: a label and its value are checked TOGETHER, inside
+    # one table row, because the original defect was the right hash sitting under
+    # the wrong word. A hash anywhere on the page proves nothing about which row it
+    # is in.
+    #
+    # Two rows the chips never carried are bound too, since the rewrite published
+    # them: the figure counts and the metrics artefact. An unguarded digest on a
+    # page a judge is told to verify against is the defect this file exists for.
+    metrics_sha = hashlib.sha256(METRICS.read_bytes()).hexdigest()
+    figures_sha = hashlib.sha256(FIGURES.read_bytes()).hexdigest()
+    rows = {}
+    for hit in re.finditer(r'<tr id="verify-[a-z-]+">(.*?)</tr>', html, re.S):
+        cell = hit.group(1)
+        label = re.search(r"<strong>([^<]+)</strong>", cell)
+        digest = re.search(r'<code class="mono" id="digest-[a-z-]+" title="([0-9a-f]{40,64})">([0-9a-f]{40,64})</code>', cell)
+        if label:
+            rows.setdefault(label.group(1), []).append(
+                (digest.group(1), digest.group(2)) if digest else (None, None))
+    expected = [("Mapping Table", f["mapping_table_sha256"]),
+                ("Pipeline Commit", f["pipeline_commit"]),
+                ("Frozen Output", m["pipeline_output_sha256"]),
+                ("Figures Document", figures_sha),
+                ("Metrics Artefact", metrics_sha)]
     if reg_sha:
-        chips.append(("Specification", reg_sha, "Registration v10 &sect;6 Item 7"))
-    for label, want_title, want_text in chips + [
-        ("Pipeline Commit", f["pipeline_commit"], f["pipeline_commit"][:8]),
-        ("Frozen Output", m["pipeline_output_sha256"], m["pipeline_output_sha256"][:8] + "&hellip;"),
-        ("Mapping Table", f["mapping_table_sha256"], f["mapping_table_sha256"][:8] + "&hellip;"),
-    ]:
-        checked.append("chip:" + label)
-        title, text = badge(html, label)
-        if title is None:
-            out.append((H, "a header chip labelled %r" % label, "the chip itself"))
-        elif title != want_title or text != want_text:
-            out.append((H, "the %r chip to carry its own value" % label,
-                        "title %s and text %s, but it carries title %s and text %s"
-                        % (want_title[:12], want_text, (title or "-")[:12], text)))
+        expected.insert(3, ("Specification", reg_sha))
+    for label, want in expected:
+        checked.append("verify-row:" + label)
+        found = rows.get(label)
+        if not found:
+            out.append((H, "a 'Verify these files' row labelled %r" % label, "the row itself"))
+        elif len(found) != 1:
+            out.append((H, "exactly one 'Verify these files' row labelled %r" % label,
+                        "%d rows carry that label" % len(found)))
+        elif found[0] != (want, want):
+            out.append((H, "the %r row to carry its own digest" % label,
+                        "title and text %s, but it carries title %s and text %s"
+                        % (want[:12], (found[0][0] or "-")[:12], (found[0][1] or "-")[:12])))
+
+    # The registration hash stays in the Provenance link's title, by the owner's
+    # word at the rewrite, so it is still published and still bound.
+    if reg_sha:
+        checked.append("chip:Provenance")
+        link = re.search(r'<span class="badge-label">Provenance</span>\s*'
+                         r'<a [^>]*id="header-provenance-link"[^>]*title="([0-9a-f]{64})"', html)
+        if not link:
+            out.append((H, "the Provenance chip's link carrying a registration hash", "the link itself"))
+        elif link.group(1) != reg_sha:
+            out.append((H, "the Provenance chip to carry the ratified registration's hash",
+                        "%s, but it carries %s" % (reg_sha[:12], link.group(1)[:12])))
+
+    # THE REFERENCE SENTENCE IS NO LONGER SERVED FROM THE JSON, so it cannot be
+    # compared with the JSON's text. It was two spans quoting the metrics
+    # artefact in project shorthand; it is now one plain sentence written for a
+    # stranger. What it claims is still checkable against the artefact: one
+    # reference labeller over the 100, and a planned human anchor that was not
+    # made. Each claim is bound to the artefact field that makes it true, so the
+    # sentence fails if the record ever stops supporting it — two claims replacing
+    # the two spans.
+    note = re.search(r'<span id="eval-prose-reference-note">([^<]*)</span>', html)
+    text = note.group(1) if note else ""
+    checked.append("reference-note:single annotator")
+    single = "come from a single annotator" in text and ("the 100 evaluation projects" in text)
+    if not note:
+        out.append((H, "the reference-limitation sentence in #eval-prose-reference-note", "the span itself"))
+    elif not single or m["reference"]["projects"] != 100 or m["inter_rater_agreement_evaluation_100"]["computed"]:
+        out.append((H, "#eval-prose-reference-note saying the 100 have one annotator, which the "
+                       "metrics artefact must support (100 projects, no inter-rater figure)",
+                    "one annotator for the 100 evaluation projects"))
+    checked.append("reference-note:anchor not made")
+    if note and not ("was not made" in text and not m["human_anchor"]["made"]):
+        out.append((H, "#eval-prose-reference-note saying the planned second annotation was not "
+                       "made, which the metrics artefact must support (human_anchor.made false)",
+                    "was not made"))
 
     # The evaluation tab's intro, where the same mislabel appeared a second
     # time. Each hash is bound to the words in front of it.
