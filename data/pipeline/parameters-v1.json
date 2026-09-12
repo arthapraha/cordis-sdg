@@ -8,15 +8,17 @@
     "by": "the owner's word, registration section 3.5 and section 4.3",
     "commit": "ab525b048153306dc83909e9e686ebdd2ca7838d",
     "parameters_values_sha256": "3808845b553dfda751bf4a3e5c87bd17f32b6ca8c195a0c54321ed25e03e09e1",
-    "also_frozen_in_that_tree": [
-      "data/crosswalk/eurosciwoc-to-sdg.csv",
-      "data/terms/key-term-rule.md",
-      "data/terms/target-key-terms.csv",
-      "data/terms/synonyms.csv",
-      "data/terms/stop-list.csv",
-      "data/terms/negation-rule.md",
-      "data/terms/negation-patterns.csv"
-    ],
+    "rule_file_sha256": {
+      "data/crosswalk/eurosciwoc-to-sdg.csv": "d64488a73a73fd08c728def5b7527a01ca66fb35b1edbc72b1ca79f10c2490b9",
+      "data/terms/key-term-rule.md": "66160219f814ad02e286446cd854ed940bc16b31032660fbcd3dd388eb90651a",
+      "data/terms/negation-patterns.csv": "fc966e5d7b566ca9bb206415edf674d57c24da65500cc0b467296b86bbd28c3e",
+      "data/terms/negation-rule.md": "ced1c006a9045845e5fbfd9cdcbd45b0c88bbad5f8c3bbb2c82d871c46791787",
+      "data/terms/sdg-targets.csv": "a0c61a4f5b089863d6c8a60a83671495fb530969fa1a0e04228e3a01cc072b94",
+      "data/terms/stop-list.csv": "7725a89a317e8c5201f6a79ad01d1c1ff9c636e6d3f5699181b48feed4a5653d",
+      "data/terms/synonyms.csv": "e448607058481f003f7575d6e0e59d3d771e82babebe10b2a325f711e4d7414a",
+      "data/terms/target-key-terms.csv": "a64b5c6e4617bf249e3bd533c45e898a0fd65e633762be8807aff619e849e661"
+    },
+    "_rule_file_note": "The eight files the freeze covers, with the sha256 each had at ab525b0. The previous version of this block listed the same files BY NAME AND NO DIGEST, which looks like coverage and is not: a stop-list edited after seq 207 would have passed every check. It also omitted sdg-targets.csv entirely. Counsel found the first at seq 215; the second turned up on counting the list against the tree. pipeline.py now hashes the files its loader actually opens and refuses on any difference.",
     "_note": "Nothing under section 3 moves after the freeze seq except by amendment to the registration. This block is deliberately an underscore-prefixed DOCUMENTATION key: parameters_values_sha256 is computed with every such key stripped, so recording the freeze cannot change the hash the freeze is of. That property was built at commit 52fe745 and this is the first thing to depend on it.",
     "_adjudication": "The five (project, target) pairs in artefact 68937f37 stand recorded unresolved under section 4.8. No tuning decision turned on them; move F's development precision is reported with them counted both ways."
   },
@@ -59,9 +61,18 @@
   "confidence_bands": {
     "_note": "Section 3.6: derived from the score and the number of INDEPENDENT evidence sources, counted over the fields that project actually has, never over the five. A project with two of five fields present and both firing is better evidenced than one with five present and two firing, and the band must not punish it for the absence.",
     "_what_counts_as_an_independent_source": "SIX channels, not five: section 3.4's five text fields plus the EuroSciVoc crosswalk. A reviewed crosswalk row and a matched phrase are genuinely independent of each other — one is a discipline-level claim a reviewer checked, the other is the project's own words — so a target supported by both reaches two sources and the medium band. Counsel raised this at cordis-sdg seq 127 because section 3.6 says 'independent evidence sources' without enumerating them, and either reading is defensible; this is the one in force and the one the bands were set against. Recorded rather than changed: the alternative reading would move bands on rows counsel has already passed, and the choice belongs in a tuning commit under section 3.5, not in a fix to a guard.",
-    "high": {"min_score": 6.0, "min_independent_sources": 3},
-    "medium": {"min_score": 4.5, "min_independent_sources": 2},
-    "low": {"min_score": 3.0, "min_independent_sources": 1}
+    "high": {
+      "min_score": 6.0,
+      "min_independent_sources": 3
+    },
+    "medium": {
+      "min_score": 4.5,
+      "min_independent_sources": 2
+    },
+    "low": {
+      "min_score": 3.0,
+      "min_independent_sources": 1
+    }
   },
 
   "ambiguity": {

@@ -31,6 +31,7 @@ import collections
 import csv
 import hashlib
 import json
+import os
 import pathlib
 import re
 import sys
@@ -41,6 +42,54 @@ CROSSWALK = ROOT / "data/crosswalk/eurosciwoc-to-sdg.csv"
 PARAMS = ROOT / "data/pipeline/parameters-v1.json"
 
 ABSENT = "(absent)"
+
+# The two trees section 3.5's freeze covers. Everything in them is rule data
+# except the prose README beside the crosswalk, which is excluded by name and
+# only there.
+FROZEN_TREES = ("data/terms", "data/crosswalk")
+FROZEN_TREE_EXCLUDES = {"data/crosswalk/README.md"}
+
+# EVERY DATA FILE THIS RUN OPENED, MEASURED BY THE INTERPRETER AND NOT BY ME.
+#
+# Condition 4 is "the run hashes the files it loads". A list of those paths
+# written next to the loaders would be this repository's recurring failure in
+# its purest form — a control reported as covering a thing it was never run
+# against — because such a list is checked against my memory of the loaders, not
+# against the loaders. I said so at cordis-sdg seq 216 before building it.
+#
+# So it is not a list. sys.addaudithook fires on the interpreter's own "open"
+# event, underneath this file and underneath csv and json, and records every
+# path this process opens anywhere under data/. The guard then requires each one
+# to be a file _frozen covers, or one of the two inputs hashed separately in the
+# output. A loader added tomorrow that reads a sixth rule file is refused
+# without anyone remembering to declare it, wherever under data/ it puts it.
+#
+# It deliberately records the whole of data/ and not just the frozen trees. A
+# check scoped to those two trees would be redundant — every file in them is
+# already covered by walking them — and would miss the case worth catching,
+# which is a loader reading rule data from a directory nobody froze.
+OPENED = set()
+
+
+def _audit(event, args):
+    if event != "open" or not args:
+        return
+    path = args[0]
+    if isinstance(path, int):          # an already-open file descriptor
+        return
+    try:
+        # relpath and abspath are string operations; neither opens anything, so
+        # the hook cannot re-enter itself. Path.resolve() would stat, which is
+        # why it is not used here.
+        rel = os.path.relpath(os.path.abspath(os.fsdecode(path)), str(ROOT))
+    except (TypeError, ValueError, OSError):
+        return
+    rel = rel.replace(os.sep, "/")
+    if rel.startswith("data/"):
+        OPENED.add(rel)
+
+
+sys.addaudithook(_audit)
 
 # Section 3.4's five sources. The order is fixed so that "which sources were
 # present" is the same list on every row.
@@ -71,6 +120,157 @@ def effective_parameters(obj):
     if isinstance(obj, list):
         return [effective_parameters(v) for v in obj]
     return obj
+
+
+def values_digest(params):
+    return hashlib.sha256(
+        json.dumps(effective_parameters(params), sort_keys=True,
+                   separators=(",", ":")).encode("utf-8")).hexdigest()
+
+
+def frozen_tree_files():
+    """Every rule file in the frozen trees, read from the trees themselves.
+
+    Walked rather than listed, so a file that exists cannot fail to be covered
+    because nobody remembered it. The first version of _frozen listed seven
+    filenames and omitted data/terms/sdg-targets.csv; nothing could have caught
+    that, because the list was the only statement of what the list should be.
+    """
+    out = []
+    for tree in FROZEN_TREES:
+        for p in sorted((ROOT / tree).rglob("*")):
+            if not p.is_file():
+                continue
+            rel = p.relative_to(ROOT).as_posix()
+            if rel not in FROZEN_TREE_EXCLUDES:
+                out.append(rel)
+    return sorted(out)
+
+
+def sha256_file(rel):
+    return hashlib.sha256((ROOT / rel).read_bytes()).hexdigest()
+
+
+def freeze_conditions(params, freeze_seq_arg, handoff, opened):
+    """Registration section 4.3's four conditions. Returns those that FAILED.
+
+    All four are required before an evaluation record is scored. Each returns
+    its own sentence, so a refusal says which one stopped the run rather than
+    that something about the freeze was wrong. They are evaluated together and
+    all failures are reported: a run that satisfies three of four should be told
+    about the fourth, not sent round again to discover the next one.
+
+    Condition 4 is the one with teeth, and it is three checks that have to hold
+    together. _frozen must carry a digest for every file in the frozen trees;
+    every digest it carries must equal the file on disk; and every data file
+    this process actually opened must be one it carries. Drop any of the three
+    and the guard has a hole: without the first the record can be narrowed,
+    without the second it is a list of names that proves nothing, without the
+    third a loader can read rule data from a directory nobody froze.
+    """
+    failed = []
+    frozen = params.get("_frozen") or {}
+
+    # ---- 1: the freeze is recorded at all ----------------------------------
+    if "freeze_seq" not in frozen:
+        failed.append(
+            "condition 1: _frozen.freeze_seq is absent from %s. Section 4.3 "
+            "scores the evaluation set only after the owner's freeze word, and "
+            "an unrecorded freeze is not one."
+            % PARAMS.relative_to(ROOT))
+
+    # ---- 2: the parameters are the ones that were frozen -------------------
+    recorded_values = frozen.get("parameters_values_sha256")
+    actual_values = values_digest(params)
+    if recorded_values != actual_values:
+        failed.append(
+            "condition 2: the parameters' values digest is %s and _frozen "
+            "records %s. A weight, threshold or band has moved since the "
+            "freeze. Documentation keys are stripped before this hash, so this "
+            "cannot be a comment."
+            % (actual_values, recorded_values))
+
+    # ---- 3: the caller names the freeze, and names it right -----------------
+    #
+    # Deliberately not defaulted. The value the run is checked against must be
+    # typed by whoever starts the run, so that scoring the held-out set is an
+    # act with a number in it rather than something a script fell into.
+    if freeze_seq_arg is None:
+        failed.append(
+            "condition 3: --freeze-seq was not given. Scoring the evaluation "
+            "set requires the caller to state which freeze they are running "
+            "under; it is not defaulted from the file being checked.")
+    elif freeze_seq_arg != frozen.get("freeze_seq"):
+        failed.append(
+            "condition 3: --freeze-seq %s does not match _frozen.freeze_seq %r."
+            % (freeze_seq_arg, frozen.get("freeze_seq")))
+
+    # ---- 4: the rule files are the frozen rule files ------------------------
+    failed.extend(rule_file_failures(frozen, handoff, opened))
+    return failed
+
+
+def rule_file_failures(frozen, handoff, opened):
+    """Condition 4, against `opened` — the snapshot taken when loading FINISHED.
+
+    Not against OPENED itself. This function hashes every file _frozen records,
+    and read_bytes opens them, so reading the live set here would mean the check
+    reporting on paths the checker opened rather than paths the loaders did. The
+    first version did exactly that: it named all eight rule files as read by the
+    run, when the run reads five. A control that reports on its own footprint is
+    this repository's recurring failure wearing a new coat.
+    """
+    recorded = frozen.get("rule_file_sha256")
+    if not isinstance(recorded, dict) or not recorded:
+        return ["condition 4: _frozen carries no rule_file_sha256 block, so "
+                "nothing states what the rule files were at the freeze."]
+
+    out = []
+    on_disk = frozen_tree_files()
+
+    missing = [f for f in on_disk if f not in recorded]
+    if missing:
+        out.append("condition 4: _frozen records no digest for %d file(s) that "
+                   "exist in the frozen trees: %s. A partial record reads as "
+                   "coverage and is not."
+                   % (len(missing), ", ".join(missing)))
+
+    gone = [f for f in sorted(recorded) if not (ROOT / f).is_file()]
+    if gone:
+        out.append("condition 4: _frozen records a digest for %d file(s) that "
+                   "are not in the tree: %s." % (len(gone), ", ".join(gone)))
+
+    moved = []
+    for f in sorted(recorded):
+        if f in gone:
+            continue
+        actual = sha256_file(f)
+        if actual != recorded[f]:
+            moved.append("%s is %s, frozen as %s" % (f, actual, recorded[f]))
+    if moved:
+        out.append("condition 4: %d rule file(s) differ from the freeze: %s."
+                   % (len(moved), "; ".join(moved)))
+
+    # The two files under data/ that are legitimately not rule data: the
+    # hand-off artefact the labellers worked from and the parameters. Both are
+    # hashed in the output in their own right — handoff_sha256 and
+    # parameters_values_sha256 — so neither is unaccounted for, and this is a
+    # two-item exemption rather than a way of naming things off the list.
+    allowed = set(recorded) | {PARAMS.relative_to(ROOT).as_posix()}
+    if handoff is not None:
+        try:
+            allowed.add(os.path.relpath(
+                os.path.abspath(str(handoff)), str(ROOT)).replace(os.sep, "/"))
+        except (TypeError, ValueError, OSError):
+            pass
+    undeclared = sorted(p for p in opened if p not in allowed)
+    if undeclared:
+        out.append("condition 4: this run opened %d file(s) under data/ that "
+                   "_frozen does not cover and that are neither the hand-off "
+                   "artefact nor the parameters: %s. A file the run reads and "
+                   "the freeze does not name is rule data outside the freeze."
+                   % (len(undeclared), ", ".join(undeclared)))
+    return out
 
 
 def read_csv(path):
@@ -385,31 +585,16 @@ def main():
     # No `choices` list. argparse would reject an unknown value with "invalid
     # choice" and exit 2, which is a refusal that does not say why — and the
     # point of this guard is that a person who types the wrong thing is told
-    # which rule stopped them. Every value except "development" is refused here,
-    # by one path, naming section 4.3 and the value that was asked for.
+    # which rule stopped them. A value that selects no record is refused below
+    # by name, and a value that selects an evaluation record meets the four
+    # conditions rather than the spelling of the flag.
     ap.add_argument("--set", default="development")
     ap.add_argument("--out", required=True)
+    ap.add_argument("--freeze-seq", type=int, default=None,
+                    help="the cordis-sdg seq of the owner's freeze word. "
+                         "Required to score any evaluation record, and checked "
+                         "against _frozen.freeze_seq. Never defaulted.")
     args = ap.parse_args()
-
-    # THE GUARD IS ON THE DATA, NOT ON THE SPELLING OF A FLAG.
-    #
-    # The first version of this tested `--set == "evaluation"` and the flag had a
-    # third choice, `--set all`, which the record filter admitted. Counsel ran it
-    # and scored 150 rows, 100 of them evaluation, exit 0 (cordis-sdg seq 127),
-    # while the README claimed the registration could not be breached by a wrong
-    # flag. A guard on one spelling of the thing it forbids is not a guard.
-    #
-    # `all` is gone, and what remains refuses on the records themselves: if any
-    # selected record is an evaluation record, this script stops, whatever route
-    # brought it here. A future flag cannot reopen the hole because the check no
-    # longer looks at flags.
-    REFUSAL = ("refused --set %s: registration section 4.3 requires the owner's "
-               "freeze word before the evaluation set is scored, and section 3.5 "
-               "before any parameter is frozen. This script scores the "
-               "development 50 and nothing else on its own say-so.")
-
-    if args.set != "development":
-        sys.exit(REFUSAL % args.set)
 
     params = json.loads(PARAMS.read_text(encoding="utf-8"))
 
@@ -430,17 +615,49 @@ def main():
 
     doc = json.loads(pathlib.Path(args.handoff).read_text(encoding="utf-8"))
     records = [r for r in doc["projects"] if r["set"] == args.set]
-    # Belt to the braces above, and the one that survives a future flag: whatever
-    # route selected these records, if any of them is an evaluation record this
-    # script stops before scoring a single one.
-    if any(r["set"] != "development" for r in records):
-        sys.exit(REFUSAL % args.set)
     if not records:
         sys.exit("no records for set %s" % args.set)
 
+    # THE GUARD IS ON THE RECORDS, NOT ON THE SPELLING OF A FLAG.
+    #
+    # The first version tested `--set == "evaluation"`, and the flag had a third
+    # choice, `--set all`, which the record filter admitted. Counsel ran it and
+    # scored 150 rows, 100 of them evaluation, exit 0 (cordis-sdg seq 127),
+    # while the README claimed the registration could not be breached by a wrong
+    # flag. A guard on one spelling of the thing it forbids is not a guard. So
+    # what triggers the four conditions is an evaluation record being in hand,
+    # whatever route put it there; a flag added tomorrow cannot reopen the hole.
+    holds_evaluation = any(r["set"] == "evaluation" for r in records)
+
+    # Loaded BEFORE the guard runs and BEFORE anything is scored, because
+    # condition 4 asks what this run opened and there is no answer to that until
+    # it has opened them. Loading reads committed rule data and decides nothing.
     vocab, stop = load_vocabulary()
     crosswalk = load_crosswalk()
     patterns = load_negation()
+    # Snapshot NOW: everything this run opens as INPUT has been opened, and
+    # nothing the guard opens to hash has been. See rule_file_failures.
+    loaded = frozenset(OPENED)
+
+    failures = freeze_conditions(params, args.freeze_seq, args.handoff, loaded)
+    if holds_evaluation and failures:
+        sys.exit("refused: %d of registration section 4.3's four conditions did "
+                 "not hold, and all four are required before an evaluation "
+                 "record is scored. %d evaluation record(s) were selected and "
+                 "none was scored.\n\n  %s"
+                 % (len(failures), sum(1 for r in records
+                                       if r["set"] == "evaluation"),
+                    "\n\n  ".join(failures)))
+
+    # A development run is not gated on the freeze — section 3.5 permits tuning
+    # on the 50 — but condition 4 is about the rule data itself, and a run on
+    # rule files that have moved since the freeze is wrong at any time. It
+    # refuses here too, and says so plainly rather than warning into a log.
+    rule_failures = rule_file_failures(params.get("_frozen") or {},
+                                       args.handoff, loaded)
+    if rule_failures:
+        sys.exit("refused: %s" % "\n\n  ".join(rule_failures))
+
     rows = run(records, vocab, stop, crosswalk, patterns, params)
 
     artefact_hash = hashlib.sha256(
@@ -451,14 +668,31 @@ def main():
                          "and cannot change any assignment here.",
         "registration_sha256": params["_registration_sha256"],
         "parameters_version": params["version"],
-        "parameters_values_sha256": hashlib.sha256(
-            json.dumps(effective_parameters(params), sort_keys=True,
-                       separators=(",", ":")).encode("utf-8")).hexdigest(),
+        "parameters_values_sha256": values_digest(params),
         "parameters_values_sha256_is": (
             "sha256 of the parameters with every underscore-prefixed "
             "documentation key stripped, serialised as compact JSON with sorted "
             "keys. It moves when a parameter moves and not when one is "
             "explained. The file's own hash is in the commit and the README."),
+        "freeze_seq": (params.get("_frozen") or {}).get("freeze_seq"),
+        "freeze_seq_asserted_by_caller": args.freeze_seq,
+        "rule_file_sha256": {f: sha256_file(f) for f in frozen_tree_files()},
+        "rule_file_sha256_is": (
+            "the sha256 of every rule file in data/terms and data/crosswalk, "
+            "measured from the files themselves and not from "
+            "_frozen. Section 4.3 condition 4 required every one of them to "
+            "equal the digest _frozen records for it, or the run would have "
+            "refused before scoring. The README beside the crosswalk is prose "
+            "about the data rather than rule data and is the one exclusion."),
+        "rule_files_this_run_opened": sorted(loaded),
+        "rule_files_this_run_opened_is": (
+            "the paths the interpreter reports this process opened under data/, recorded by an audit hook rather than declared beside "
+            "the loaders, and snapshotted the moment loading finished so that "
+            "the guard's own hashing of the eight does not appear here. Fewer "
+            "than the eight above: the key-term and negation rules are prose "
+            "the vocabularies were built from, and the targets list reaches "
+            "this run through those vocabularies. Every path here had to be one "
+            "_frozen covers, or the hand-off, or the parameters."),
         "handoff_sha256": artefact_hash,
         "set": args.set,
         "projects": len(rows),

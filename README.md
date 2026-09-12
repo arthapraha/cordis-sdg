@@ -12,16 +12,21 @@ move the method.
 | registration | `cordis-sdg-registration-v9.md`, sha256 `72187842d621e55dedb6c6b366356131141cd47acf3324ab26bc7f06293c341c` (32,402 bytes) |
 | ratified | 2026-09-11, by the owner, by hash |
 | supersedes | v1 to v8, none of which governs this repository. v1 was never ratified and neither was v8; what each version changed is logged in v9 section 11, and every hash is in the cordis-sdg record. No superseded hash is written here, so a grep for one returns nothing rather than something a reader has to interpret. |
-| this commit covers | registration sections 3.1 to 3.3: the crosswalk, the key-term extraction rule, the synonym list, the stop-list and the negation rule, all committed as data |
+| built so far | sections 3.1 to 3.3, the crosswalk and the vocabulary, committed as data; the seeded draw and the labelling hand-off under section 4.5; sections 3.4 to 3.6, the pipeline, run on the development 50; the section 3.5 freeze at cordis-sdg seq 207; and the section 4.3 evaluation guard |
+| not yet run | the evaluation 100. Its labels are sealed and unopened, and scoring it waits on the owner's word |
 
 Section 8's ratification-day line was completed at `7c34a77`: repository, rules
 re-read, all four CORDIS distributions and the taxonomy hashed, licence lines
 captured.
 
-**Nothing has been matched against any project.** There is no sample draw, no
-labelling, no scoring and no model call, and no matching runs until this commit's
-hash is passed. The vocabulary in `data/terms/` and the crosswalk in
-`data/crosswalk/` were built from the taxonomy and the category list alone.
+**The three sentences that stood here said nothing had been matched against any
+project.** That was true of the commit that wrote them and has not been true
+since the pipeline ran on the development 50. A stale claim in a README is the
+same defect as a control reported against the wrong tree, and it survived several
+commits because nobody re-reads the top of a file they are appending to. The
+vocabulary in `data/terms/` and the crosswalk in `data/crosswalk/` were still
+built from the taxonomy and the category list alone, and **no project text
+reached either of them**; that part was the load-bearing half and it stands.
 
 ## Licence
 
@@ -429,14 +434,58 @@ one spelling of the thing it forbids is not a guard**, and the README said the
 registration could not be breached by a wrong flag while it could be, by the flag
 one word over.
 
-It now refuses on two counts: every `--set` value except `development` is
-rejected by one path that names section 4.3 and the value asked for, and the
-records themselves are checked before any is scored, so a future flag cannot
-reopen the hole. `scripts/test_pipeline_guard.py` runs the real script as a
-subprocess and asserts that every mode which could reach an evaluation record
-exits non-zero, names the section and writes nothing. **It was written to fail on
-the refused code and it did**, reporting `--set all` exiting 0 having written
-261,389 bytes.
+What triggers the guard is now **an evaluation record being in hand**, whatever
+route put it there, rather than the spelling of a flag. A flag added tomorrow
+cannot reopen the hole because the check no longer looks at flags.
+
+### The four conditions
+
+The freeze word landed at cordis-sdg seq 207, so the question stopped being
+whether the evaluation set may ever be scored and became **under what**. On the
+owner's word at seq 219, all four of these are required before a single
+evaluation record is scored, and a refusal names the one that failed:
+
+| | |
+|---|---|
+| 1 | `_frozen.freeze_seq` is present |
+| 2 | the parameters' values digest equals `_frozen.parameters_values_sha256` |
+| 3 | `--freeze-seq` is given explicitly and matches that record |
+| 4 | `_frozen` carries the sha256 of every rule file as at `ab525b0`, the run hashes the files it loads, and any difference refuses |
+
+**Condition 3 is deliberately not defaulted.** The number is typed by whoever
+starts the run rather than read out of the file being checked, so scoring the
+held-out set is an act with a number in it and not something a script falls into.
+
+**Condition 4 is three checks that only work together.** `_frozen` must carry a
+digest for **every** file in `data/terms` and `data/crosswalk`, found by walking
+those trees rather than by reading a list; every digest it carries must equal the
+file on disk; and every file the run opens under `data/` must be one it covers.
+Drop the first and the record can be quietly narrowed. Drop the second and it is
+a list of names that proves nothing. Drop the third and a loader can read rule
+data from a directory nobody froze.
+
+**The first version of `_frozen` failed two of those three.** It listed seven
+filenames with no digests at all, so a stop-list edited after seq 207 would have
+passed every check that existed; and it omitted `data/terms/sdg-targets.csv`
+entirely. Counsel found the missing digests at seq 215. The missing file turned
+up on counting the list against the tree, which is why the tree is now walked.
+
+**"The files it loads" is measured by the interpreter, not declared beside the
+loaders.** A list of paths written next to the code that opens them is checked
+against someone's memory of that code — this repository's recurring failure in
+its purest form. `pipeline.py` installs an audit hook on the interpreter's `open`
+event and records every path the process opens under `data/`. A loader added
+tomorrow appears there without anyone remembering to declare it, and the run
+refuses unless `_frozen` covers it. The set is snapshotted the moment loading
+finishes, because the guard hashes eight files to do its job and a control that
+counted its own footprint would be reporting on itself.
+
+`scripts/test_pipeline_guard.py` breaks exactly one thing per case, in a copy of
+the tree, and asserts the refusal names the right condition. It carries the
+negative control condition 2 exists for: rewriting three comments must **not**
+trip it. **There is deliberately no case where all four hold on the evaluation
+set** — that run is the frozen run, it happens once, and it happens on the
+owner's word and not inside a test.
 
 **The output records the parameter VALUES, not the parameters file.** The first
 version hashed `parameters-v1.json` itself, which makes adding a comment
@@ -463,10 +512,29 @@ changing hash costs nothing:
 
 | | |
 |---|---|
-| `data/pipeline/parameters-v1.json` | `989a58eebc6a5528a3420c8d366181938e9095b4a17bff6b980cc9c4d7342caf` |
-| pipeline v1 output, development 50 | `032a4881774ce9adbbc84bb8a949b7d06843ad77a23aae1c4b77d6de522ea460` |
+| `data/pipeline/parameters-v1.json` | `4a15d80f9040981d27a0977bef00251d384dedbb18e2b7460bb55d6d9f8cf834` |
 
-**Anything that changes a parameter changes the second of those and must say so.**
+**Anything that changes a parameter changes the values digest above and must say
+so.**
+
+**The recorded output hashes belong to the code that produced them.** The
+evaluation guard added four fields to the output document — `freeze_seq`,
+`freeze_seq_asserted_by_caller`, `rule_file_sha256` and
+`rule_files_this_run_opened` — so every development-50 output hash quoted before
+this commit describes a document shape that no longer exists. The hashes are not
+restated here as though they still reproduce.
+
+| | |
+|---|---|
+| development 50, parameters v2, after this commit | `45a514cf0c7a0984c419f086f11025077e9a4122e7bf2879263176b2b5430bbf` |
+| its `results` array alone | `299f4c975833fc2166b2903e8d4cc95d59036a6f21b15eb0ebeb2aab2a68b277` |
+
+**The second row is the one that carries the claim.** It is the digest of the
+scored rows with the document's provenance fields excluded, and it is
+**identical** to the run before the guard existed. The first row moved because
+the document gained four fields; nothing about any of the 50 projects changed.
+That distinction is exactly what `parameters_values_sha256` was built for at
+seq 132, and quoting only the file hash would hide it again.
 
 **Row provenance is owed by the mapping table, not by this artefact.** Section 6
 item 2 requires the pipeline commit and the snapshot hash on every row of the
