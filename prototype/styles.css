@@ -136,6 +136,21 @@ body {
   color: var(--text-primary);
 }
 
+.badge-link {
+  color: var(--primary);
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  transition: color 0.15s ease, text-decoration 0.15s ease;
+}
+
+.badge-link:hover,
+.badge-link:focus {
+  color: var(--primary-hover);
+  text-decoration: underline;
+}
+
 /* Navigation Tabs */
 .nav-tabs {
   display: flex;

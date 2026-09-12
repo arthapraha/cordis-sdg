@@ -1,4 +1,4 @@
-// CORDIS → SDG Web Prototype (Registration §6 Item 7)
+// CORDIS → SDG Web Prototype
 // Client-side execution with static pre-indexed JSON assets.
 // Never uses an external API key or backend server.
 
@@ -56,7 +56,17 @@ function setupTabs() {
       switchTab(tabName);
     });
   });
+
+  const headerProvLink = document.getElementById("header-provenance-link");
+  if (headerProvLink) {
+    headerProvLink.addEventListener("click", (e) => {
+      e.preventDefault();
+      switchTab("provenance");
+    });
+  }
 }
+
+window.switchTab = switchTab;
 
 function switchTab(tabName) {
   document.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
@@ -604,10 +614,10 @@ function renderProjectDetail(project) {
   const parkedMarkerHtml = `
     <div class="parked-marker-box">
       <div class="parked-marker-header">
-        <span>&sect;3.7 Parked Status Marker</span>
+        <span>Parked Status Marker</span>
       </div>
       <div class="parked-marker-text">
-        Model explanation generation parked under registration &sect;3.7: <code>${escapeHtml(explanationText)}</code>
+        Model explanation generation parked under methodology specification: <code>${escapeHtml(explanationText)}</code>
       </div>
       <div class="parked-marker-hash">
         Prompt Marker: <code>${escapeHtml(promptHash)}</code>
@@ -852,6 +862,10 @@ function checkUrlForProject() {
 
 function setupUrlRouting() {
   window.addEventListener("hashchange", () => {
+    if (window.location.hash === "#provenance" || window.location.hash === "#tab-provenance") {
+      switchTab("provenance");
+      return;
+    }
     const hashMatch = window.location.hash.match(/#project[=-]([0-9a-zA-Z]+)/);
     if (hashMatch) {
       openProjectModal(hashMatch[1]);

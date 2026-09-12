@@ -21,20 +21,12 @@
           <span class="badge-value">23,451 Projects</span>
         </div>
         <div class="badge-item">
-          <span class="badge-label">Mapping Table</span>
-          <span class="badge-value mono" title="181d378a3078014193f3ae4f684b00b375ed62f3d24b2b34c060f6457b4a00d3">181d378a&hellip;</span>
+          <span class="badge-label">Pipeline</span>
+          <span class="badge-value">Frozen 12 September 2026</span>
         </div>
-        <div class="badge-item">
-          <span class="badge-label">Pipeline Commit</span>
-          <span class="badge-value mono" title="0246412b44f722567feaa2e6c1b6e695de86c923">0246412b</span>
-        </div>
-        <div class="badge-item">
-          <span class="badge-label">Frozen Output</span>
-          <span class="badge-value mono" title="0938fe34e41cd5d8ddccfba69238481fdf6470e54046104ad7a3535da6743709">0938fe34&hellip;</span>
-        </div>
-        <div class="badge-item">
-          <span class="badge-label">Specification</span>
-          <span class="badge-value" title="c5f2a26ce6049e801a7e757efc2cbe4253689987fad761f1d97cfb5b0ad68fb2">Registration v10 &sect;6 Item 7</span>
+        <div class="badge-item" title="c5f2a26ce6049e801a7e757efc2cbe4253689987fad761f1d97cfb5b0ad68fb2">
+          <span class="badge-label">Provenance</span>
+          <a href="#tab-provenance" class="badge-value badge-link" id="header-provenance-link" title="c5f2a26ce6049e801a7e757efc2cbe4253689987fad761f1d97cfb5b0ad68fb2">Methodology &amp; Provenance &rarr;</a>
         </div>
       </div>
     </div>
@@ -54,7 +46,7 @@
         <span class="tab-icon">&image;</span> Notebook Figures
       </button>
       <button class="tab-btn" data-tab="provenance">
-        <span class="tab-icon">&sect;</span> Methodology &amp; Provenance
+        <span class="tab-icon">&#9776;</span> Methodology &amp; Provenance
       </button>
     </nav>
   </header>
@@ -258,8 +250,8 @@
               <span id="eval-prose-human-anchor">Section 4.3 provides for 20 of the 100 to be hand-labelled by Attila as the human anchor, and section 4.7 reports agreement against them separately. They were not made. The evaluation reference rests entirely on one automated labeller working blind, and nothing in this report is anchored to a human judgement.</span>
             </li>
             <li>
-              <strong>Parked Explanation Pass (&sect;3.7):</strong>
-              To ensure 100% deterministic reproducibility without external API key dependencies, model-generated explanations were parked under registration &sect;3.7 during the frozen run.
+              <strong>Deterministic Verification &amp; Explanation Pass:</strong>
+              To ensure 100% deterministic reproducibility without external API key dependencies, model-generated explanations were parked under the methodology specification during the frozen run.
             </li>
           </ul>
         </div>
@@ -279,7 +271,7 @@
     <section id="tab-figures" class="tab-pane">
       <div class="pane-intro">
         <h2>Notebook Visualisations (Embedded SVGs)</h2>
-        <p>The six figures committed under <code class="mono">figures/</code> are embedded directly without redrawing, per registration &sect;6 item 7 negative covenants.</p>
+        <p>The six figures committed under <code class="mono">figures/</code> are embedded directly without redrawing or modifications.</p>
       </div>
 
       <div class="figures-gallery">
@@ -378,68 +370,157 @@
     <!-- TAB 5: METHODOLOGY & PROVENANCE -->
     <section id="tab-provenance" class="tab-pane">
       <div class="pane-intro">
-        <h2>Methodology &amp; Verification Protocol</h2>
-        <p>Architectural design, render covenants, and reproducibility contract under Registration v10 &sect;6 item 7.</p>
+        <h2>Methodology &amp; Provenance</h2>
+        <p>Deterministic classification methodology, taxonomy integration, reproducibility commands, and cryptographic verification digests for the Horizon Europe CORDIS SDG mapping analysis.</p>
       </div>
 
       <div class="provenance-grid">
+        <!-- 1. What the data is -->
         <div class="provenance-card">
-          <h3>1. Confirmed Input Contract (SHA-256)</h3>
-          <p>The prototype strictly reads four inputs verified on disk in this clone:</p>
-          <table class="contract-table">
-            <thead>
-              <tr><th>Artefact</th><th>Path</th><th>SHA-256 Hash</th></tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Mapping Table</td>
-                <td><code class="mono">data/corpus/mapping-table-0246412.csv</code></td>
-                <td><code class="mono">181d378a3078014193f3ae4f684b00b375ed62f3d24b2b34c060f6457b4a00d3</code></td>
-              </tr>
-              <tr>
-                <td>Figures Document</td>
-                <td><code class="mono">data/corpus/figures.json</code></td>
-                <td><code class="mono">03d79580081ca40bf0d1d25b5279a57880ddf09d750490553593387126d92f6f</code></td>
-              </tr>
-              <tr>
-                <td>Metrics Artefact</td>
-                <td><code class="mono">data/pipeline/evaluation-100-metrics.json</code></td>
-                <td><code class="mono">babd37415581ce82ecb09c4501052ce811e834e57dad7c6735389ce321dd8a2e</code></td>
-              </tr>
-              <tr>
-                <td>6 Notebook SVGs</td>
-                <td><code class="mono">figures/*.svg</code></td>
-                <td>Verified byte-identical blobs (LF line endings)</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <div class="provenance-card">
-          <h3>2. Binding Render Rules (Room seq 266 &amp; 267)</h3>
+          <h3>What the data is</h3>
+          <p>The analysis operates on official European Union open datasets and established international taxonomies:</p>
           <ul class="covenant-list">
             <li>
-              <strong>Unescaped Hyphen Titles:</strong>
-              Two project titles begin with a leading hyphen (<code class="mono">101073045</code> and <code class="mono">101275778</code>). They are raw CORDIS source bytes. This prototype preserves them verbatim without escaping.
+              <strong>Horizon Europe Project Corpus:</strong>
+              A complete snapshot of 23,451 research projects funded under the European Union's Horizon Europe framework programme (2021&ndash;2027), sourced from the official CORDIS open data repository. Each project record contains project identifiers, title, acronym, teaser summary, comprehensive objective text, free keywords, and classified scientific domains.
             </li>
             <li>
-              <strong>Parked Explanation Markers:</strong>
-              The <code class="mono">explanation</code> and <code class="mono">prompt_sha256</code> columns carry explicit &sect;3.7 parked markers. They are rendered as distinct status notification badges, never as model-generated explanatory text.
+              <strong>UN Sustainable Development Goals Taxonomy:</strong>
+              The 17 Goals and 169 Targets defined by the United Nations 2030 Agenda for Sustainable Development, sourced from the Publications Office of the European Union (EU Vocabularies). The taxonomy establishes standard descriptions, indicators, and official target statements.
             </li>
             <li>
-              <strong>Sources Present vs. Absent:</strong>
-              The prototype prominently surfaces <code class="mono">sources_present</code> and <code class="mono">sources_absent</code> side-by-side so readers can distinguish "field matched nothing" from "field was absent in CORDIS record".
+              <strong>European Science Vocabulary (EuroSciVoc):</strong>
+              The multilingual taxonomy of scientific fields maintained by the Publications Office of the European Union. A curated, peer-reviewed domain crosswalk containing 235 mappings connects EuroSciVoc disciplines directly to relevant SDG targets and goals.
             </li>
             <li>
-              <strong>No Chart Redrawing:</strong>
-              The six figures drawn by the notebook are embedded directly without redrawing or reinterpretation.
+              <strong>Five Analyzed Text Fields:</strong>
+              Project evidence is extracted across five distinct fields: Project Title, Teaser, Objective, Free Keywords, and EuroSciVoc Fields. The pipeline explicitly tracks which fields are populated in each CORDIS record to distinguish between absent text fields and non-matching text.
             </li>
           </ul>
         </div>
 
+        <!-- 2. What the pipeline does -->
         <div class="provenance-card">
-          <h3>3. Zero-Dependency Static Deployment</h3>
-          <p>All data is served as static pre-indexed JSON (<code class="mono">prototype/data/</code>). The application requires no external backend server, no database, no API keys, and zero CDN dependencies.</p>
+          <h3>What the pipeline does</h3>
+          <p>The system performs deterministic multi-label classification to assign UN SDGs to Horizon Europe research projects:</p>
+          <ul class="covenant-list">
+            <li>
+              <strong>Dual Evidence Architecture:</strong>
+              The classifier synthesises two complementary channels of evidence:
+              <br>&bull; <em>Lexical Target Matching:</em> High-precision phrase and keyword matching using strict word-boundary regular expressions against SDG target definitions, guarded by negative filters and domain stop-lists to eliminate polysemous false positives.
+              <br>&bull; <em>Taxonomic Crosswalk:</em> Domain-level assignments inferred from official EuroSciVoc classifications attached to each project.
+            </li>
+            <li>
+              <strong>Assignment Tiers &amp; Calibrated Precision:</strong>
+              Projects are stratified into three mutually distinct assignment tiers:
+              <br>&bull; <em>Target-Level Assigned (40.1%, 9,394 projects):</em> Substantive evidence meeting calibrated scoring thresholds for one or more specific SDG targets.
+              <br>&bull; <em>Goal-Only Assigned (29.3%, 6,882 projects):</em> High-level relevance to broader SDG themes without meeting granular target-level evidence criteria.
+              <br>&bull; <em>Unassigned (30.6%, 7,175 projects):</em> Projects lacking sufficient lexical or taxonomic overlap are left unassigned, preserving high precision (0.447) rather than introducing speculative labels.
+            </li>
+            <li>
+              <strong>Full Attribution &amp; Auditability:</strong>
+              Every assigned target or goal retains complete evidence provenance, recording the exact matched phrases and the specific project fields in which they occurred.
+            </li>
+            <li>
+              <strong>Source Text Fidelity:</strong>
+              All project titles and acronyms are preserved verbatim from raw CORDIS source bytes without normalization or escaping (including leading hyphens in projects 101073045 and 101275778).
+            </li>
+          </ul>
+        </div>
+
+        <!-- 3. What was frozen and when -->
+        <div class="provenance-card">
+          <h3>What was frozen and when</h3>
+          <p>Methodological specifications, logic, and evaluation artifacts were formally frozen on 12 September 2026:</p>
+          <ul class="covenant-list">
+            <li>
+              <strong>Pipeline Freeze (12 September 2026):</strong>
+              The classification algorithm, matching rules, scoring weights, vocabulary stop-lists, and assignment thresholds were frozen at commit <code class="mono" title="0246412b44f722567feaa2e6c1b6e695de86c923">0246412b44f722567feaa2e6c1b6e695de86c923</code>.
+            </li>
+            <li>
+              <strong>Single Blind Evaluation Run:</strong>
+              Evaluation was performed once against the frozen pipeline using a held-out benchmark of 100 projects. The run yielded target-level precision of 0.447 and recall of 0.221, reflecting an inherent vocabulary ceiling of 0.442 where 53 of 95 reference pairs share zero lexical overlap with official UN target texts.
+            </li>
+            <li>
+              <strong>Whole-Corpus Differential Proof:</strong>
+              A performance optimization (substring pre-check skip) was verified against a slow control run across all 23,451 projects (28,833 assigned rows). Two independent instruments confirmed byte-identical results: zero missing projects, zero row differences, and zero score or band discrepancies.
+            </li>
+            <li>
+              <strong>Frozen Run Output:</strong>
+              The full evaluation output hashes cryptographically to <code class="mono" title="0938fe34e41cd5d8ddccfba69238481fdf6470e54046104ad7a3535da6743709">0938fe34e41cd5d8ddccfba69238481fdf6470e54046104ad7a3535da6743709</code>.
+            </li>
+          </ul>
+        </div>
+
+        <!-- 4. How to reproduce it -->
+        <div class="provenance-card">
+          <h3>How to reproduce it</h3>
+          <p>The entire pipeline executes using only the Python standard library (version 3.10+) with zero external package dependencies:</p>
+          <div class="repro-box">
+            <p><strong>1. Run the classification pipeline on the project corpus:</strong></p>
+            <pre class="code-block">python scripts/pipeline.py --corpus data/corpus/records.jsonl --output mapping-table.csv</pre>
+
+            <p><strong>2. Verify the benchmark evaluation metrics:</strong></p>
+            <pre class="code-block">python scripts/metrics.py --set evaluation</pre>
+
+            <p><strong>3. Verify whole-corpus differential against control run:</strong></p>
+            <pre class="code-block">python scripts/compare_control_table.py --control &lt;path-to-control-table&gt;</pre>
+
+            <p><strong>4. Run the full verification suite across documents and web prototype:</strong></p>
+            <pre class="code-block">python scripts/test_reported_figures.py</pre>
+          </div>
+        </div>
+
+        <!-- 5. Verify these files -->
+        <div class="provenance-card" id="card-verify-files">
+          <h3>Verify these files</h3>
+          <p>Cryptographic digests for all pipeline artefacts and specification documents, verified on disk:</p>
+          <table class="contract-table" id="verify-files-table">
+            <thead>
+              <tr>
+                <th>Artefact</th>
+                <th>Repository Path</th>
+                <th>SHA-256 / Commit Digest</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr id="verify-mapping-table">
+                <td><strong>Mapping Table</strong></td>
+                <td><code class="mono">data/corpus/mapping-table-0246412.csv</code></td>
+                <td><code class="mono" id="digest-mapping-table" title="181d378a3078014193f3ae4f684b00b375ed62f3d24b2b34c060f6457b4a00d3">181d378a3078014193f3ae4f684b00b375ed62f3d24b2b34c060f6457b4a00d3</code></td>
+              </tr>
+              <tr id="verify-pipeline-commit">
+                <td><strong>Pipeline Commit</strong></td>
+                <td><code class="mono">scripts/pipeline.py</code> (frozen commit)</td>
+                <td><code class="mono" id="digest-pipeline-commit" title="0246412b44f722567feaa2e6c1b6e695de86c923">0246412b44f722567feaa2e6c1b6e695de86c923</code></td>
+              </tr>
+              <tr id="verify-frozen-output">
+                <td><strong>Frozen Output</strong></td>
+                <td>Evaluation run output</td>
+                <td><code class="mono" id="digest-frozen-output" title="0938fe34e41cd5d8ddccfba69238481fdf6470e54046104ad7a3535da6743709">0938fe34e41cd5d8ddccfba69238481fdf6470e54046104ad7a3535da6743709</code></td>
+              </tr>
+              <tr id="verify-specification">
+                <td><strong>Specification</strong></td>
+                <td><code class="mono">docs/cordis-sdg-registration-v10.md</code></td>
+                <td><code class="mono" id="digest-specification" title="c5f2a26ce6049e801a7e757efc2cbe4253689987fad761f1d97cfb5b0ad68fb2">c5f2a26ce6049e801a7e757efc2cbe4253689987fad761f1d97cfb5b0ad68fb2</code></td>
+              </tr>
+              <tr id="verify-figures-document">
+                <td><strong>Figures Document</strong></td>
+                <td><code class="mono">data/corpus/figures.json</code></td>
+                <td><code class="mono" id="digest-figures-document" title="03d79580081ca40bf0d1d25b5279a57880ddf09d750490553593387126d92f6f">03d79580081ca40bf0d1d25b5279a57880ddf09d750490553593387126d92f6f</code></td>
+              </tr>
+              <tr id="verify-metrics-artefact">
+                <td><strong>Metrics Artefact</strong></td>
+                <td><code class="mono">data/pipeline/evaluation-100-metrics.json</code></td>
+                <td><code class="mono" id="digest-metrics-artefact" title="babd37415581ce82ecb09c4501052ce811e834e57dad7c6735389ce321dd8a2e">babd37415581ce82ecb09c4501052ce811e834e57dad7c6735389ce321dd8a2e</code></td>
+              </tr>
+              <tr id="verify-svg-figures">
+                <td><strong>Notebook Figures</strong></td>
+                <td><code class="mono">figures/*.svg</code> (6 embedded figures)</td>
+                <td><code class="mono">Byte-identical SVG vector assets</code></td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </section>
@@ -468,8 +549,8 @@
 
   <footer class="app-footer">
     <div class="footer-content">
-      <p>CORDIS &rarr; SDG Static Prototype &bull; Registration v10 &sect;6 Item 7 &bull; Antigravity Cordis (<code class="mono">ph-94419b8cca125457</code>)</p>
-      <p class="footer-sub">Deterministic Horizon Europe CORDIS snapshot analysis. All data static and verifiable from commit history.</p>
+      <p>CORDIS &rarr; SDG Static Prototype &bull; Horizon Europe Snapshot Analysis &bull; Author: Attila Angyan</p>
+      <p class="footer-sub">Deterministic Horizon Europe CORDIS snapshot analysis. All data static and verifiable from repository history.</p>
     </div>
   </footer>
 
