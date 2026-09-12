@@ -351,7 +351,7 @@ def build_prototype_data():
         json.dump(summary, f, ensure_ascii=False, indent=1, sort_keys=True)
     print(f"  Wrote summary: {summary_path.relative_to(REPO_ROOT)}")
 
-    # Condition 2 Guard (seq 289/291): Refuse if any prototype figure copy differs from original
+    # Condition 2 Guard (seq 289/291/300): Compare before copy; refuse if any copy differs from original
     print("  Checking figure copies against originals for drift...")
     proto_fig_dir = REPO_ROOT / "prototype" / "figures"
     proto_fig_dir.mkdir(parents=True, exist_ok=True)
@@ -364,17 +364,19 @@ def build_prototype_data():
                 raise AssertionError(
                     f"Original figure corrupted: {src_path} has hash {src_hash}, expected {expected_hash}"
                 )
-            dest_path.write_bytes(src_bytes)
-            dest_bytes = dest_path.read_bytes()
-            dest_hash = hashlib.sha256(dest_bytes).hexdigest()
-            if dest_hash != src_hash:
-                raise AssertionError(
-                    f"Figure drift detected: {dest_path.name} in prototype/figures ({dest_hash}) "
-                    f"differs from original {src_path} ({src_hash})"
-                )
+            if dest_path.exists():
+                dest_bytes = dest_path.read_bytes()
+                dest_hash = hashlib.sha256(dest_bytes).hexdigest()
+                if dest_hash != src_hash:
+                    raise AssertionError(
+                        f"Figure drift detected: {dest_path.name} in prototype/figures ({dest_hash}) "
+                        f"differs from original {src_path} ({src_hash})"
+                    )
+            else:
+                dest_path.write_bytes(src_bytes)
     print(f"  Verified 6 notebook SVGs in {proto_fig_dir.relative_to(REPO_ROOT)}: zero drift against originals.")
 
-    # Condition 1 Guard (seq 291): Refuse if evaluation metrics diverge from artefact
+    # Condition 1 Guard (seq 291/300): Refuse if evaluation metrics diverge from artefact or if HTML is stale
     print("  Checking evaluation metrics contract against metrics artefact...")
     t_prec = round(float(metrics_doc["target_level"]["precision"]), 3)
     t_rec = round(float(metrics_doc["target_level"]["recall"]), 3)
@@ -390,6 +392,14 @@ def build_prototype_data():
             f"expected P=0.447, R=0.221, Ceiling=0.442 (53/95), Kappa=0.677"
         )
     print(f"  Verified evaluation metrics: P={t_prec}, R={t_rec}, Ceiling={c_ceil} ({c_unreach}/{c_pairs}), Kappa={d_kappa}")
+
+    # Check that prototype/index.html markup carries the verified claims
+    index_html_path = REPO_ROOT / "prototype" / "index.html"
+    index_html_text = index_html_path.read_text(encoding="utf-8")
+    for claim in [f"{t_prec:.3f}", f"{t_rec:.3f}", f"{c_ceil:.3f}", f"{c_unreach} of {c_pairs}", f"{d_kappa:.3f}"]:
+        if claim not in index_html_text:
+            raise AssertionError(f"Stale claim in prototype/index.html: missing expected {claim}")
+    print("  Verified prototype/index.html figures match metrics artefact.")
 
     # Verification pass over generated assets
     print("\nVerifying generated prototype assets...")

@@ -242,16 +242,16 @@
           <h3>Methodological Findings &amp; Constraints</h3>
           <ul class="eval-list">
             <li>
-              <strong>Vocabulary Divergence &amp; The Recall Ceiling (0.442):</strong>
-              Keyword and text-matching pipelines cannot reach 53 of 95 gold-standard target associations because CORDIS project descriptions and UN SDG target texts use non-overlapping terminologies. This ceiling is an inherent property of lexical overlap, not a pipeline bug.
+              <strong>Vocabulary Divergence &amp; The Recall Ceiling (<span id="eval-prose-ceiling">0.442</span>):</strong>
+              Keyword and text-matching pipelines cannot reach <span id="eval-prose-unreachable-pairs">53 of 95</span> gold-standard target associations because CORDIS project descriptions and UN SDG target texts use non-overlapping terminologies. This ceiling is an inherent property of lexical overlap, not a pipeline bug.
             </li>
             <li>
               <strong>Unassigned Corpus Rate (30.6%):</strong>
-              7,175 of 23,451 projects receive no SDG assignment (<code class="mono">assignment_level: none</code>). Calibrated thresholding intentionally rejects low-confidence matches to preserve high precision (0.447) rather than forcing arbitrary labels.
+              7,175 of 23,451 projects receive no SDG assignment (<code class="mono">assignment_level: none</code>). Calibrated thresholding intentionally rejects low-confidence matches to preserve high precision (<span id="eval-prose-precision">0.447</span>) rather than forcing arbitrary labels.
             </li>
             <li>
               <strong>Single-Reference Annotation Limit:</strong>
-              Reference evaluation targets are anchored against a single expert annotator reference standard. Inter-annotator variance is calibrated against development Cohen's Kappa (0.677).
+              Reference evaluation targets are anchored against a single expert annotator reference standard. Inter-annotator variance is calibrated against development Cohen's Kappa (<span id="eval-prose-kappa">0.677</span>).
             </li>
             <li>
               <strong>Parked Explanation Pass (&sect;3.7):</strong>
@@ -265,7 +265,7 @@
           <div class="repro-box">
             <p>Every metric published on the chain is verified by self-proof inside <code class="mono">scripts/metrics.py</code> before reporting:</p>
             <pre class="code-block">python scripts/metrics.py --set evaluation</pre>
-            <p>The script validates development-50 agreement (<code class="mono">0.677</code>) and held-out 100 target metrics (<code class="mono">P=0.447, R=0.221, Ceiling=0.442</code>) against the frozen run <code class="mono">0938fe34&hellip;</code>.</p>
+            <p>The script validates development-50 agreement (<code class="mono" id="eval-repro-kappa">0.677</code>) and held-out 100 target metrics (<code class="mono" id="eval-repro-metrics">P=0.447, R=0.221, Ceiling=0.442</code>) against the frozen run <code class="mono">0938fe34&hellip;</code>.</p>
           </div>
         </div>
       </div>
@@ -290,7 +290,7 @@
               <span class="fig-file">figures/recall-ceiling.svg</span>
               <span class="fig-hash mono" title="2877c3ac441ffbb0485b712abda4cff057c8efa93e904c7ca494fcd6f8427ed1">sha256: 2877c3ac&hellip;</span>
             </div>
-            <p class="fig-caption">Visualises the 0.442 recall ceiling: 53 of 95 reference pairs share zero terms with UN SDG targets, rendering them unreachable by lexical methods regardless of threshold tuning.</p>
+            <p class="fig-caption">Visualises the <span id="fig-caption-ceiling">0.442</span> recall ceiling: <span id="fig-caption-unreachable">53 of 95</span> reference pairs share zero terms with UN SDG targets, rendering them unreachable by lexical methods regardless of threshold tuning.</p>
           </div>
         </article>
 

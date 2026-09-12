@@ -122,31 +122,51 @@ function renderEvaluationMetrics() {
   const dev50 = vm.development_50;
 
   if (tLevel) {
+    const prec = Number(tLevel.precision).toFixed(3);
+    const rec = Number(tLevel.recall).toFixed(3);
     const precEl = document.getElementById("eval-metric-precision");
-    if (precEl && tLevel.precision !== undefined) {
-      precEl.textContent = Number(tLevel.precision).toFixed(3);
-    }
+    if (precEl) precEl.textContent = prec;
     const recEl = document.getElementById("eval-metric-recall");
-    if (recEl && tLevel.recall !== undefined) {
-      recEl.textContent = Number(tLevel.recall).toFixed(3);
-    }
+    if (recEl) recEl.textContent = rec;
+    const prosePrecEl = document.getElementById("eval-prose-precision");
+    if (prosePrecEl) prosePrecEl.textContent = prec;
   }
 
   if (ceiling) {
+    const ceilVal = Number(ceiling.ceiling).toFixed(3);
+    const unreach = ceiling.with_no_evidence_at_any_threshold;
+    const totalPairs = ceiling.reference_pairs;
+    const pairStr = `${unreach} of ${totalPairs}`;
+
     const ceilEl = document.getElementById("eval-metric-ceiling");
-    if (ceilEl && ceiling.ceiling !== undefined) {
-      ceilEl.textContent = Number(ceiling.ceiling).toFixed(3);
-    }
+    if (ceilEl) ceilEl.textContent = ceilVal;
     const pairsEl = document.getElementById("eval-metric-ceiling-unreachable");
-    if (pairsEl && ceiling.with_no_evidence_at_any_threshold !== undefined && ceiling.reference_pairs !== undefined) {
-      pairsEl.textContent = `${ceiling.with_no_evidence_at_any_threshold} of ${ceiling.reference_pairs} reference pairs`;
-    }
+    if (pairsEl) pairsEl.textContent = `${pairStr} reference pairs`;
+
+    const proseCeilEl = document.getElementById("eval-prose-ceiling");
+    if (proseCeilEl) proseCeilEl.textContent = ceilVal;
+    const prosePairsEl = document.getElementById("eval-prose-unreachable-pairs");
+    if (prosePairsEl) prosePairsEl.textContent = pairStr;
+    const figCeilEl = document.getElementById("fig-caption-ceiling");
+    if (figCeilEl) figCeilEl.textContent = ceilVal;
+    const figPairsEl = document.getElementById("fig-caption-unreachable");
+    if (figPairsEl) figPairsEl.textContent = pairStr;
   }
 
   if (dev50) {
+    const kappaVal = Number(dev50.cohens_kappa).toFixed(3);
     const kappaEl = document.getElementById("eval-metric-kappa");
-    if (kappaEl && dev50.cohens_kappa !== undefined) {
-      kappaEl.textContent = Number(dev50.cohens_kappa).toFixed(3);
+    if (kappaEl) kappaEl.textContent = kappaVal;
+    const proseKappaEl = document.getElementById("eval-prose-kappa");
+    if (proseKappaEl) proseKappaEl.textContent = kappaVal;
+    const reproKappaEl = document.getElementById("eval-repro-kappa");
+    if (reproKappaEl) reproKappaEl.textContent = kappaVal;
+  }
+
+  if (tLevel && ceiling) {
+    const reproMetricsEl = document.getElementById("eval-repro-metrics");
+    if (reproMetricsEl) {
+      reproMetricsEl.textContent = `P=${Number(tLevel.precision).toFixed(3)}, R=${Number(tLevel.recall).toFixed(3)}, Ceiling=${Number(ceiling.ceiling).toFixed(3)}`;
     }
   }
 }
