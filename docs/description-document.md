@@ -74,7 +74,7 @@ beside the loaders. **Each of the four has been shown refusing on purpose.**
 | | tp | fp | fn | precision | recall | F1 |
 |---|---|---|---|---|---|---|
 | **target level** | 21 | 26 | 74 | **0.447** | **0.221** | 0.296 |
-| goal level, secondary | 29 | 42 | 50 | 0.409 | 0.367 | 0.387 |
+| goal level, secondary | 29 | 42 | 50 | 0.408 | 0.367 | 0.387 |
 
 The unit is one (project, target-URI) pair, matched exactly. The reference holds
 95 pairs over 100 projects, 31 of which carry no target at all.

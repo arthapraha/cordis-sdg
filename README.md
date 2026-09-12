@@ -579,6 +579,7 @@ python scripts/metrics.py --results data/pipeline/evaluation-100-v2.json --resul
 python scripts/test_scoring_rules.py
 python scripts/test_pipeline_guard.py
 python scripts/test_parameters_provenance.py
+python scripts/test_reported_figures.py
 ```
 
 **`explain.py` stays in the block and exits 0 with no credential.** It reports
