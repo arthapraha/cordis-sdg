@@ -48,14 +48,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // Setup the menu: one button behind three lines, one list of sections
-const SECTION_NAMES = {
-  explorer: "Project Explorer",
-  sdgs: "SDG Distribution",
-  evaluation: "Evaluation & Metrics",
-  figures: "Notebook Figures",
-  provenance: "Methodology & Provenance",
-};
-
 function setupTabs() {
   const toggle = document.getElementById("menu-toggle");
   const menu = document.getElementById("site-menu");
@@ -108,8 +100,6 @@ function switchTab(tabName) {
   document.querySelectorAll(".menu-item").forEach(b => b.classList.toggle("active", b.dataset.tab === tabName));
   document.querySelectorAll(".tab-pane").forEach(p => p.classList.remove("active"));
   targetPane.classList.add("active");
-  const label = document.getElementById("topbar-section");
-  if (label) label.textContent = SECTION_NAMES[tabName] || "";
   if (!window.location.hash.startsWith("#project")) {
     try { history.replaceState(null, "", `#tab-${tabName}`); } catch (_) { /* file: URLs */ }
   }

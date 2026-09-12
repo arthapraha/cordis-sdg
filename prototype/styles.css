@@ -86,16 +86,6 @@ body {
   white-space: nowrap;
 }
 
-.topbar-section {
-  font-size: 0.85rem;
-  color: var(--text-secondary);
-  flex: 1;
-  text-align: center;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
 .menu-toggle {
   background: none;
   border: none;
