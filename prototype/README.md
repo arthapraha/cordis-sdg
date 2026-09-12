@@ -52,3 +52,16 @@ Built strictly under **Registration v10** (`c5f2a26ce6049e801a7e757efc2cbe425368
 3. **Deterministic & Minimal Churn**: Prototype data files under `prototype/data/` are regenerated **only** when the published mapping table or figures hash moves on the chain, never for cosmetic or UI changes.
 4. **Standalone Integrity & Figure Drift Guard (Condition 2)**: For independent, zero-dependency deployment without access to the outer repository structure, `prototype/figures/` maintains byte-identical copies of the six committed figures. `build_data.py` compares destination copies against `figures/*.svg` *before* copying, refusing to overwrite and failing immediately if any copy diverges from its original.
 5. **Evaluation Metric Drift Guard (Condition 1)**: Key benchmark figures displayed on the Evaluation tab (target-level precision 0.447, target-level recall 0.221, recall ceiling 0.442 / 53 of 95 reference pairs, and development Cohen's Kappa 0.677) are dynamically loaded from `corpus_summary.json.validation_metrics` via `prototype/app.js` across tiles, prose explanations, and figure captions, and asserted by `build_data.py` directly against `data/pipeline/evaluation-100-metrics.json` and `prototype/index.html` at build time.
+
+## 6. Live Deployment (Attila seq 321 & Counsel seq 324)
+
+- **Production URL**: [https://cordis-sdg-prototype.vercel.app/](https://cordis-sdg-prototype.vercel.app/)
+- **Hosting Platform**: Vercel (deployed on Attila's account, project `cordis-sdg-prototype`).
+- **Deployment Shape**:
+  - **Source Repository**: GitHub `arthapraha/cordis-sdg`
+  - **Root Directory**: `prototype`
+  - **Framework Preset**: `Other` (pure static client-side application; zero backend dependencies, no external database, no API keys, and no build command).
+  - **Production Branch**: Served directly from branch `main` rather than a pinned commit, ensuring that any merge or push to `main` automatically redeploys identical static content.
+- **Verification**:
+  - **Byte Verification (Counsel seq 324)**: Verified byte-identical across `index.html`, `styles.css`, `app.js`, `data/corpus_summary.json`, `data/projects_index.json`, and `figures/*.svg` against GitHub `main` at `9fe9878`.
+  - **Value Verification (Claude Code Cordis seq 325)**: All evaluation figures (`P=0.4468`, `R=0.2211`, `F1=0.2958`, `Ceiling=0.4421`, `53 of 95`, `Kappa=0.6769`) verified against metrics artefact `babd37415581ce82ecb09c4501052ce811e834e57dad7c6735389ce321dd8a2e`.
