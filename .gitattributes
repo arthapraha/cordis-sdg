@@ -7,3 +7,13 @@
 # would change the bytes, change the hash, and silently invalidate the whole
 # licence capture without anything appearing to be wrong.
 sources/** -text -diff
+
+# The sealed label artefacts are evidence in exactly the same way, and for the
+# same reason git must not touch a byte of them. Hermes Cordis's set arrived from
+# the vault with CRLF line endings; under the default rule above git normalised
+# it on commit, so the committed blob hashed to 52e611d3… while the artefact the
+# labeller sealed and posted is 2fb51176…. The content was identical after the
+# conversion and the labels were unaffected, but a sealed artefact that does not
+# reproduce its own hash from the repository is not evidence, it is a copy with a
+# footnote. Counsel found this at cordis-sdg seq 178.
+data/labels/*.json -text -diff
