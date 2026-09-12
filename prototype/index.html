@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CORDIS → SDG Mapping Explorer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header & Navigation -->
+  <header class="app-header">
+    <div class="header-top">
+      <div class="header-titles">
+        <div class="header-badge">Horizon Europe (2021–2027) &bull; CORDIS Mapping</div>
+        <h1>CORDIS &rarr; SDG Mapping Explorer</h1>
+        <p class="header-subtitle">Deterministic SDG assignment and multi-field evidence explorer across 23,451 Horizon Europe research projects.</p>
+      </div>
+      <div class="provenance-badges">
+        <div class="badge-item">
+          <span class="badge-label">Corpus Size</span>
+          <span class="badge-value">23,451 Projects</span>
+        </div>
+        <div class="badge-item">
+          <span class="badge-label">Mapping Table</span>
+          <span class="badge-value mono" title="181d378a3078014193f3ae4f684b00b375ed62f3d24b2b34c060f6457b4a00d3">181d378a&hellip;</span>
+        </div>
+        <div class="badge-item">
+          <span class="badge-label">Pipeline Commit</span>
+          <span class="badge-value mono">0938fe34 (Frozen)</span>
+        </div>
+        <div class="badge-item">
+          <span class="badge-label">Specification</span>
+          <span class="badge-value">Registration v10 &sect;6 Item 7</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation Tabs -->
+    <nav class="nav-tabs">
+      <button class="tab-btn active" data-tab="explorer">
+        <span class="tab-icon">&telrec;</span> Project Explorer
+      </button>
+      <button class="tab-btn" data-tab="sdgs">
+        <span class="tab-icon">&xcirc;</span> SDG Distribution
+      </button>
+      <button class="tab-btn" data-tab="evaluation">
+        <span class="tab-icon">&EmptySmallSquare;</span> Evaluation &amp; Metrics
+      </button>
+      <button class="tab-btn" data-tab="figures">
+        <span class="tab-icon">&image;</span> Notebook Figures
+      </button>
+      <button class="tab-btn" data-tab="provenance">
+        <span class="tab-icon">&sect;</span> Methodology &amp; Provenance
+      </button>
+    </nav>
+  </header>
+
+  <main class="app-main">
+    <!-- TAB 1: PROJECT EXPLORER -->
+    <section id="tab-explorer" class="tab-pane active">
+      <!-- High Level Statistics Bar -->
+      <div class="stats-row">
+        <div class="stat-card" id="card-total">
+          <div class="stat-label">Total Projects</div>
+          <div class="stat-value" id="stat-total">23,451</div>
+          <div class="stat-sub">100% of analyzed corpus</div>
+        </div>
+        <div class="stat-card stat-target" id="card-target">
+          <div class="stat-label">Target-Level Assigned</div>
+          <div class="stat-value" id="stat-target">9,394</div>
+          <div class="stat-sub">40.1% &bull; High-precision target links</div>
+        </div>
+        <div class="stat-card stat-goal" id="card-goal">
+          <div class="stat-label">Goal-Only Assigned</div>
+          <div class="stat-value" id="stat-goal">6,882</div>
+          <div class="stat-sub">29.3% &bull; Broad goal relevance</div>
+        </div>
+        <div class="stat-card stat-none" id="card-none">
+          <div class="stat-label">Unassigned</div>
+          <div class="stat-value" id="stat-none">7,175</div>
+          <div class="stat-sub">30.6% &bull; Below calibrated threshold</div>
+        </div>
+      </div>
+
+      <!-- Search & Filters Container -->
+      <div class="filters-card">
+        <div class="filters-main">
+          <div class="search-box">
+            <span class="search-icon">&telrec;</span>
+            <input type="text" id="search-input" placeholder="Search by Project ID (e.g. 101034444), Acronym, or Title keywords..." autocomplete="off">
+            <button id="clear-search-btn" class="icon-btn" title="Clear search">&times;</button>
+          </div>
+
+          <div class="filter-group">
+            <label for="level-filter">Assignment Level:</label>
+            <select id="level-filter">
+              <option value="all">All Levels (23,451)</option>
+              <option value="target">Target-Level Assigned (9,394)</option>
+              <option value="goal_only">Goal-Only Assigned (6,882)</option>
+              <option value="none">Unassigned (7,175)</option>
+            </select>
+          </div>
+
+          <div class="filter-group">
+            <label for="sdg-filter">SDG Goal:</label>
+            <select id="sdg-filter">
+              <option value="all">All SDGs (1–17)</option>
+            </select>
+          </div>
+
+          <div class="filter-group">
+            <label for="band-filter">Confidence Band:</label>
+            <select id="band-filter">
+              <option value="all">All Bands</option>
+              <option value="high">High Confidence</option>
+              <option value="medium">Medium Confidence</option>
+              <option value="low">Low Confidence</option>
+              <option value="none">Unassigned</option>
+            </select>
+          </div>
+
+          <div class="filter-group">
+            <label for="sort-select">Sort By:</label>
+            <select id="sort-select">
+              <option value="id-asc">Project ID (Asc)</option>
+              <option value="id-desc">Project ID (Desc)</option>
+              <option value="acronym-asc">Acronym (A &rarr; Z)</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Quick Filter Presets -->
+        <div class="quick-presets">
+          <span class="preset-label">Quick Audits:</span>
+          <button class="preset-btn" data-preset="sample">Sample Cohort (10103)</button>
+          <button class="preset-btn" data-preset="hyphen-titles" title="Audit projects 101073045 and 101275778 with leading hyphens">Hyphen Titles (101073045, 101275778)</button>
+          <button class="preset-btn" data-preset="high-band">High Confidence</button>
+          <button class="preset-btn" data-preset="unassigned">Unassigned (30.6%)</button>
+          <button class="preset-btn preset-reset" id="reset-filters-btn">Reset All Filters</button>
+        </div>
+      </div>
+
+      <!-- Results Count & Pagination Controls -->
+      <div class="results-header">
+        <div class="results-count" id="results-count">Loading index...</div>
+        <div class="pagination-controls" id="top-pagination"></div>
+      </div>
+
+      <!-- Projects Table -->
+      <div class="table-container">
+        <table class="projects-table">
+          <thead>
+            <tr>
+              <th class="col-id">Project ID</th>
+              <th class="col-acronym">Acronym</th>
+              <th class="col-title">Project Title</th>
+              <th class="col-level">Level</th>
+              <th class="col-sdgs">Assigned SDGs</th>
+              <th class="col-band">Confidence</th>
+              <th class="col-actions">Actions</th>
+            </tr>
+          </thead>
+          <tbody id="projects-table-body">
+            <tr>
+              <td colspan="7" class="loading-cell">Loading project search index (23,451 projects)...</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Bottom Pagination -->
+      <div class="results-footer">
+        <div class="page-size-selector">
+          <label for="page-size-select">Projects per page:</label>
+          <select id="page-size-select">
+            <option value="25">25</option>
+            <option value="50" selected>50</option>
+            <option value="100">100</option>
+            <option value="250">250</option>
+          </select>
+        </div>
+        <div class="pagination-controls" id="bottom-pagination"></div>
+      </div>
+    </section>
+
+    <!-- TAB 2: SDG DISTRIBUTIONS -->
+    <section id="tab-sdgs" class="tab-pane">
+      <div class="pane-intro">
+        <h2>UN Sustainable Development Goals Distribution</h2>
+        <p>Breakdown of 23,451 Horizon Europe projects mapped across the 17 Sustainable Development Goals. Click any Goal to inspect its target-level distribution and filter directly into the Explorer.</p>
+      </div>
+
+      <div class="sdg-grid" id="sdg-grid">
+        <!-- Filled dynamically by JavaScript -->
+      </div>
+
+      <!-- Target Breakdown Drawer / Container -->
+      <div class="target-breakdown-card" id="target-breakdown-card" style="display: none;">
+        <div class="target-breakdown-header">
+          <div class="target-breakdown-title" id="target-breakdown-title">SDG Target Breakdown</div>
+          <div class="target-breakdown-actions">
+            <button class="btn btn-primary" id="filter-by-selected-sdg-btn">Explore Projects in this SDG &rarr;</button>
+            <button class="icon-btn" id="close-target-breakdown-btn">&times;</button>
+          </div>
+        </div>
+        <div class="target-breakdown-body" id="target-breakdown-body"></div>
+      </div>
+    </section>
+
+    <!-- TAB 3: EVALUATION & METRICS -->
+    <section id="tab-evaluation" class="tab-pane">
+      <div class="pane-intro">
+        <h2>Pipeline Evaluation &amp; Benchmark Metrics</h2>
+        <p>Ground-truth validation results on the held-out 100 evaluation sample and development agreement metrics from the frozen pipeline run (commit <code class="mono">0938fe34</code>, metrics artefact <code class="mono">babd3741&hellip;</code>).</p>
+      </div>
+
+      <div class="metrics-grid">
+        <div class="metric-box highlight-box">
+          <div class="metric-title">Target-Level Precision</div>
+          <div class="metric-number" id="eval-metric-precision">0.447</div>
+          <div class="metric-desc">Target-level precision on held-out evaluation 100 sample (calibrated threshold).</div>
+        </div>
+        <div class="metric-box highlight-box">
+          <div class="metric-title">Target-Level Recall</div>
+          <div class="metric-number" id="eval-metric-recall">0.221</div>
+          <div class="metric-desc">Target-level recall on held-out 100 sample (reflects vocabulary ceiling constraints).</div>
+        </div>
+        <div class="metric-box warning-box">
+          <div class="metric-title">Recall Ceiling</div>
+          <div class="metric-number" id="eval-metric-ceiling">0.442</div>
+          <div class="metric-desc"><strong id="eval-metric-ceiling-unreachable">53 of 95 reference pairs</strong> share zero vocabulary with official target descriptions at any threshold.</div>
+        </div>
+        <div class="metric-box">
+          <div class="metric-title">Development Cohen's Kappa</div>
+          <div class="metric-number" id="eval-metric-kappa">0.677</div>
+          <div class="metric-desc">Inter-annotator agreement scale on development 50 sample (substantial agreement baseline).</div>
+        </div>
+      </div>
+
+      <div class="eval-cards-container">
+        <div class="eval-card">
+          <h3>Methodological Findings &amp; Constraints</h3>
+          <ul class="eval-list">
+            <li>
+              <strong>Vocabulary Divergence &amp; The Recall Ceiling (<span id="eval-prose-ceiling">0.442</span>):</strong>
+              Keyword and text-matching pipelines cannot reach <span id="eval-prose-unreachable-pairs">53 of 95</span> gold-standard target associations because CORDIS project descriptions and UN SDG target texts use non-overlapping terminologies. This ceiling is an inherent property of lexical overlap, not a pipeline bug.
+            </li>
+            <li>
+              <strong>Unassigned Corpus Rate (30.6%):</strong>
+              7,175 of 23,451 projects receive no SDG assignment (<code class="mono">assignment_level: none</code>). Calibrated thresholding intentionally rejects low-confidence matches to preserve high precision (<span id="eval-prose-precision">0.447</span>) rather than forcing arbitrary labels.
+            </li>
+            <li>
+              <strong>Single-Reference Annotation Limit:</strong>
+              Reference evaluation targets are anchored against a single expert annotator reference standard. Inter-annotator variance is calibrated against development Cohen's Kappa (<span id="eval-prose-kappa">0.677</span>).
+            </li>
+            <li>
+              <strong>Parked Explanation Pass (&sect;3.7):</strong>
+              To ensure 100% deterministic reproducibility without external API key dependencies, model-generated explanations were parked under registration &sect;3.7 during the frozen run.
+            </li>
+          </ul>
+        </div>
+
+        <div class="eval-card">
+          <h3>Self-Proof Reproduction Protocol</h3>
+          <div class="repro-box">
+            <p>Every metric published on the chain is verified by self-proof inside <code class="mono">scripts/metrics.py</code> before reporting:</p>
+            <pre class="code-block">python scripts/metrics.py --set evaluation</pre>
+            <p>The script validates development-50 agreement (<code class="mono" id="eval-repro-kappa">0.677</code>) and held-out 100 target metrics (<code class="mono" id="eval-repro-metrics">P=0.447, R=0.221, Ceiling=0.442</code>) against the frozen run <code class="mono">0938fe34&hellip;</code>.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 4: NOTEBOOK FIGURES -->
+    <section id="tab-figures" class="tab-pane">
+      <div class="pane-intro">
+        <h2>Notebook Visualisations (Embedded SVGs)</h2>
+        <p>The six figures committed under <code class="mono">figures/</code> are embedded directly without redrawing, per registration &sect;6 item 7 negative covenants.</p>
+      </div>
+
+      <div class="figures-gallery">
+        <!-- Figure 1 -->
+        <article class="figure-card">
+          <div class="figure-media">
+            <img src="figures/recall-ceiling.svg" alt="Recall Ceiling and Unreachable Targets" class="responsive-svg" onerror="this.onerror=null;this.src='../figures/recall-ceiling.svg';">
+          </div>
+          <div class="figure-info">
+            <h3>1. Recall Ceiling &amp; Unreachable Reference Targets</h3>
+            <div class="fig-meta">
+              <span class="fig-file">figures/recall-ceiling.svg</span>
+              <span class="fig-hash mono" title="2877c3ac441ffbb0485b712abda4cff057c8efa93e904c7ca494fcd6f8427ed1">sha256: 2877c3ac&hellip;</span>
+            </div>
+            <p class="fig-caption">Visualises the <span id="fig-caption-ceiling">0.442</span> recall ceiling: <span id="fig-caption-unreachable">53 of 95</span> reference pairs share zero terms with UN SDG targets, rendering them unreachable by lexical methods regardless of threshold tuning.</p>
+          </div>
+        </article>
+
+        <!-- Figure 2 -->
+        <article class="figure-card">
+          <div class="figure-media">
+            <img src="figures/disagreement-shape.svg" alt="Disagreement Shape" class="responsive-svg" onerror="this.onerror=null;this.src='../figures/disagreement-shape.svg';">
+          </div>
+          <div class="figure-info">
+            <h3>2. Disagreement Shape Across Reference Standards</h3>
+            <div class="fig-meta">
+              <span class="fig-file">figures/disagreement-shape.svg</span>
+              <span class="fig-hash mono" title="d9c6a91a11481c3265be6d4747b69352790fa7e4536ff98ff19ea831ea3f9e61">sha256: d9c6a91a&hellip;</span>
+            </div>
+            <p class="fig-caption">Distribution and topology of classification agreements and disagreements between automated heuristic scoring and manual reference annotations.</p>
+          </div>
+        </article>
+
+        <!-- Figure 3 -->
+        <article class="figure-card">
+          <div class="figure-media">
+            <img src="figures/goals-by-project-count.svg" alt="Distribution of Goals per Project" class="responsive-svg" onerror="this.onerror=null;this.src='../figures/goals-by-project-count.svg';">
+          </div>
+          <div class="figure-info">
+            <h3>3. Goals by Project Count</h3>
+            <div class="fig-meta">
+              <span class="fig-file">figures/goals-by-project-count.svg</span>
+              <span class="fig-hash mono" title="7db6eae48b966e1fa73c3e928f21958171cad4a8536f49f3fe1e816701f02d23">sha256: 7db6eae4&hellip;</span>
+            </div>
+            <p class="fig-caption">Frequency of projects mapped to 0, 1, 2, or 3+ SDG goals. 30.6% (7,175) receive 0 assignments, while single-goal and dual-goal projects form the majority of assignments.</p>
+          </div>
+        </article>
+
+        <!-- Figure 4 -->
+        <article class="figure-card">
+          <div class="figure-media">
+            <img src="figures/most-linked-targets.svg" alt="Most Linked Targets" class="responsive-svg" onerror="this.onerror=null;this.src='../figures/most-linked-targets.svg';">
+          </div>
+          <div class="figure-info">
+            <h3>4. Most Linked SDG Targets</h3>
+            <div class="fig-meta">
+              <span class="fig-file">figures/most-linked-targets.svg</span>
+              <span class="fig-hash mono" title="8f2caf29f882ebf6148ffd73485308fb02a7e682e0bfaace837de532c1d644d6">sha256: 8f2caf29&hellip;</span>
+            </div>
+            <p class="fig-caption">The top SDG targets linked across Horizon Europe funding, highlighting prominent concentrations in health (Goal 3), climate action (Goal 13), and energy transition (Goal 7).</p>
+          </div>
+        </article>
+
+        <!-- Figure 5 -->
+        <article class="figure-card">
+          <div class="figure-media">
+            <img src="figures/relevance-by-field.svg" alt="Relevance by Field" class="responsive-svg" onerror="this.onerror=null;this.src='../figures/relevance-by-field.svg';">
+          </div>
+          <div class="figure-info">
+            <h3>5. Relevance by CORDIS Field</h3>
+            <div class="fig-meta">
+              <span class="fig-file">figures/relevance-by-field.svg</span>
+              <span class="fig-hash mono" title="46baad33a8d40a4cba2b0ee220df564d01b4bc61308ff102374da95ace6f4d6f">sha256: 46baad33&hellip;</span>
+            </div>
+            <p class="fig-caption">Signal strength and scoring contribution across project Title, Objective, and Call Title fields, illustrating the critical importance of multi-field provenance.</p>
+          </div>
+        </article>
+
+        <!-- Figure 6 -->
+        <article class="figure-card">
+          <div class="figure-media">
+            <img src="figures/confidence-bands.svg" alt="Confidence Bands" class="responsive-svg" onerror="this.onerror=null;this.src='../figures/confidence-bands.svg';">
+          </div>
+          <div class="figure-info">
+            <h3>6. Assignment Confidence Bands</h3>
+            <div class="fig-meta">
+              <span class="fig-file">figures/confidence-bands.svg</span>
+              <span class="fig-hash mono" title="7d55aa97458541589e569986b3be7a8abb14e7a5da12ccef06030469fe160761">sha256: 7d55aa97&hellip;</span>
+            </div>
+            <p class="fig-caption">Stratification of corpus assignments into calibrated confidence tiers, demonstrating distribution across high-certainty core targets and exploratory matches.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- TAB 5: METHODOLOGY & PROVENANCE -->
+    <section id="tab-provenance" class="tab-pane">
+      <div class="pane-intro">
+        <h2>Methodology &amp; Verification Protocol</h2>
+        <p>Architectural design, render covenants, and reproducibility contract under Registration v10 &sect;6 item 7.</p>
+      </div>
+
+      <div class="provenance-grid">
+        <div class="provenance-card">
+          <h3>1. Confirmed Input Contract (SHA-256)</h3>
+          <p>The prototype strictly reads four inputs verified on disk in this clone:</p>
+          <table class="contract-table">
+            <thead>
+              <tr><th>Artefact</th><th>Path</th><th>SHA-256 Hash</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Mapping Table</td>
+                <td><code class="mono">data/corpus/mapping-table-0246412.csv</code></td>
+                <td><code class="mono">181d378a3078014193f3ae4f684b00b375ed62f3d24b2b34c060f6457b4a00d3</code></td>
+              </tr>
+              <tr>
+                <td>Figures Document</td>
+                <td><code class="mono">data/corpus/figures.json</code></td>
+                <td><code class="mono">03d79580081ca40bf0d1d25b5279a57880ddf09d750490553593387126d92f6f</code></td>
+              </tr>
+              <tr>
+                <td>Metrics Artefact</td>
+                <td><code class="mono">data/pipeline/evaluation-100-metrics.json</code></td>
+                <td><code class="mono">babd37415581ce82ecb09c4501052ce811e834e57dad7c6735389ce321dd8a2e</code></td>
+              </tr>
+              <tr>
+                <td>6 Notebook SVGs</td>
+                <td><code class="mono">figures/*.svg</code></td>
+                <td>Verified byte-identical blobs (LF line endings)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="provenance-card">
+          <h3>2. Binding Render Rules (Room seq 266 &amp; 267)</h3>
+          <ul class="covenant-list">
+            <li>
+              <strong>Unescaped Hyphen Titles:</strong>
+              Two project titles begin with a leading hyphen (<code class="mono">101073045</code> and <code class="mono">101275778</code>). They are raw CORDIS source bytes. This prototype preserves them verbatim without escaping.
+            </li>
+            <li>
+              <strong>Parked Explanation Markers:</strong>
+              The <code class="mono">explanation</code> and <code class="mono">prompt_sha256</code> columns carry explicit &sect;3.7 parked markers. They are rendered as distinct status notification badges, never as model-generated explanatory text.
+            </li>
+            <li>
+              <strong>Sources Present vs. Absent:</strong>
+              The prototype prominently surfaces <code class="mono">sources_present</code> and <code class="mono">sources_absent</code> side-by-side so readers can distinguish "field matched nothing" from "field was absent in CORDIS record".
+            </li>
+            <li>
+              <strong>No Chart Redrawing:</strong>
+              The six figures drawn by the notebook are embedded directly without redrawing or reinterpretation.
+            </li>
+          </ul>
+        </div>
+
+        <div class="provenance-card">
+          <h3>3. Zero-Dependency Static Deployment</h3>
+          <p>All data is served as static pre-indexed JSON (<code class="mono">prototype/data/</code>). The application requires no external backend server, no database, no API keys, and zero CDN dependencies.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- PROJECT DETAIL MODAL / DRAWER -->
+  <div class="modal-backdrop" id="project-modal-backdrop">
+    <div class="modal-content" id="project-modal-content">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <div class="modal-meta-bar">
+            <span class="modal-id" id="modal-project-id">Project 101034444</span>
+            <span class="modal-acronym" id="modal-project-acronym">ACRONYM</span>
+            <span class="badge-level" id="modal-level-badge">Target-Level</span>
+          </div>
+          <h2 class="modal-title" id="modal-project-title">Project Title Placeholder</h2>
+        </div>
+        <button class="modal-close-btn" id="modal-close-btn" title="Close modal">&times;</button>
+      </div>
+
+      <div class="modal-body" id="modal-body">
+        <div class="modal-loading">Loading project details...</div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="app-footer">
+    <div class="footer-content">
+      <p>CORDIS &rarr; SDG Static Prototype &bull; Registration v10 &sect;6 Item 7 &bull; Antigravity Cordis (<code class="mono">ph-94419b8cca125457</code>)</p>
+      <p class="footer-sub">Deterministic Horizon Europe CORDIS snapshot analysis. All data static and verifiable from commit history.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
