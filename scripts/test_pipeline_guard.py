@@ -27,10 +27,18 @@ tested by damaging parameters and rule files, and a test that damaged the real
 ones would be a test that edits what it is checking. The copy also proves
 something the guard claims: the digests are read from the tree the run is in.
 
-NO CASE HERE SCORES AN EVALUATION RECORD. Every evaluation invocation is one
-where at least one condition is broken, so every one must refuse. There is
-deliberately no all-four-hold evaluation case: that run is the frozen run, it
-happens once, and it happens on the owner's word and not inside a test.
+NO CASE HERE SCORES A REAL EVALUATION RECORD, AND THAT DOES NOT DEPEND ON THE
+GUARD WORKING. Every evaluation invocation breaks one condition and must refuse.
+But the only way to learn whether these cases can fail is to weaken the guard and
+watch them stop firing, and under a weakened guard they score whatever the
+fixture holds. The first version of this file handed them the real
+handoff-150.json, so that is exactly what happened: twice to counsel driving a
+mutation at cordis-sdg seq 223, and to me the day I wrote it. The evaluation
+records here are now three invented in this file. See scratch_handoff().
+
+There is also deliberately no all-four-hold evaluation case: that run is the
+frozen run, it happens once, and it happens on the owner's word and not inside a
+test.
 """
 
 import json
@@ -46,9 +54,96 @@ HANDOFF = "data/sample/handoff-150.json"
 PARAMS = "data/pipeline/parameters-v1.json"
 NL = chr(10)
 
+# Built once in main() by scratch_handoff(); every scratch tree gets it.
+FIXTURE = None
+
+
+# Three evaluation records invented here, from constants, out of nothing. No
+# line of this is derived from any real project: not an id, not a phrase, not a
+# field. The prose names renewable energy and water quality so that a weakened
+# guard visibly scores something rather than producing an empty file that could
+# be mistaken for a refusal.
+SYNTHETIC_EVALUATION = [
+    {
+        "id": "900000001",
+        "acronym": "SYNTHETIC-A",
+        "title": "SYNTHETIC TEST RECORD. Renewable energy for a test fixture.",
+        "objective": "SYNTHETIC TEST RECORD, invented by scripts/"
+                     "test_pipeline_guard.py. This project studies renewable "
+                     "energy and the share of renewables in the energy mix.",
+        "keywords": "renewable energy, solar energy",
+    },
+    {
+        "id": "900000002",
+        "acronym": "SYNTHETIC-B",
+        "title": "SYNTHETIC TEST RECORD. Water quality for a test fixture.",
+        "objective": "SYNTHETIC TEST RECORD, invented by scripts/"
+                     "test_pipeline_guard.py. This project improves water "
+                     "quality and wastewater treatment.",
+        "keywords": "water quality, wastewater",
+    },
+    {
+        "id": "900000003",
+        "acronym": "SYNTHETIC-C",
+        "title": "SYNTHETIC TEST RECORD. Nothing in particular.",
+        "objective": "SYNTHETIC TEST RECORD, invented by scripts/"
+                     "test_pipeline_guard.py. It is about nothing the "
+                     "vocabulary covers, so it should score nothing.",
+        "keywords": "(absent)",
+    },
+]
+
+
+def scratch_handoff():
+    """The real development 50, and THREE INVENTED evaluation records.
+
+    THE EVALUATION RECORDS HERE ARE NOT REAL AND THAT IS THE POINT. Every
+    evaluation case below breaks one condition and relies on the guard to refuse
+    before scoring. When the guard is working that reliance is sound; when
+    someone is deliberately weakening it — which is the only way to find out
+    whether these cases can fail — the fixture is what stands between a broken
+    guard and the held-out set.
+
+    The first version of this file passed the real handoff-150.json. Counsel
+    drove a mutation against it at cordis-sdg seq 223 and it scored the real
+    evaluation 100 twice, in temp trees, deleted unopened; I had done the same
+    thing the day I wrote it. A TEST THAT EXERCISES A DEFECT PERFORMS IT, and a
+    fixture that only behaves while the code under test is correct is not a
+    fixture. Now the worst a weakened guard can do here is score three records
+    that were made up in this file.
+
+    The development 50 stay real: they are not held out, the untouched-run case
+    asserts the pipeline still scores all 50, and a synthetic development set
+    would make that case prove nothing.
+    """
+    doc = json.loads((ROOT / HANDOFF).read_text(encoding="utf-8"))
+    real = [r for r in doc["projects"] if r["set"] == "development"]
+    if len(real) != 50:
+        raise AssertionError("expected 50 development records, found %d" % len(real))
+    template = real[0]
+    made_up = []
+    for spec in SYNTHETIC_EVALUATION:
+        rec = {k: "(absent)" for k in template}
+        rec.update(spec)
+        rec["set"] = "evaluation"
+        rec["editorial_description"] = "(absent)"
+        rec["deliverable_descriptions"] = "(absent)"
+        rec["eurosciwoc_categories"] = "(absent)"
+        rec["participating_organisations"] = "(absent)"
+        rec["countries"] = "(absent)"
+        rec["source_note"] = ""
+        rec["absent_fields"] = sorted(k for k, v in rec.items() if v == "(absent)")
+        made_up.append(rec)
+    doc["projects"] = real + made_up
+    doc["what_this_is"] = (
+        "NOT THE HAND-OFF. A fixture built by scripts/test_pipeline_guard.py: "
+        "the real development 50, plus three evaluation records invented in "
+        "that file. Never label from this and never score it for a result.")
+    return doc
+
 
 def build(tmp):
-    """A working copy: the scripts, the two frozen trees, parameters, hand-off."""
+    """A working copy: the scripts, the two frozen trees, parameters, fixture."""
     dst = pathlib.Path(tmp) / "tree"
     (dst / "data/pipeline").mkdir(parents=True)
     (dst / "data/sample").mkdir(parents=True)
@@ -57,7 +152,9 @@ def build(tmp):
     shutil.copytree(ROOT / "data/terms", dst / "data/terms")
     shutil.copytree(ROOT / "data/crosswalk", dst / "data/crosswalk")
     shutil.copy2(ROOT / PARAMS, dst / PARAMS)
-    shutil.copy2(ROOT / HANDOFF, dst / HANDOFF)
+    (dst / HANDOFF).write_text(
+        json.dumps(FIXTURE, indent=1, ensure_ascii=False) + NL,
+        encoding="utf-8", newline="")
     return dst
 
 
@@ -84,6 +181,15 @@ def invoke(tree, which, freeze_seq=None, out_name="out.json"):
 def main():
     if not (ROOT / HANDOFF).is_file():
         sys.exit("run scripts/build_handoff.py first")
+
+    global FIXTURE
+    FIXTURE = scratch_handoff()
+    made_up = [r for r in FIXTURE["projects"] if r["set"] == "evaluation"]
+    real = [r for r in FIXTURE["projects"] if r["set"] == "development"]
+    print("fixture: %d real development records, %d invented evaluation records "
+          "(%s)" % (len(real), len(made_up),
+                    ", ".join(r["id"] for r in made_up)))
+    print()
 
     failures = []
     cases = []          # (label, mutate(tree), set, freeze_seq, expected phrase)
