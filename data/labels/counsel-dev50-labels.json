@@ -1,0 +1,187 @@
+{
+  "what_this_is": "Counsel's development-50 label set under registration v9 section 4.2: id -> list of SDG target URIs, no justifications. Made from the section 4.5 hand-off artefact and nothing else.",
+  "labeller": "Claude Chat (counsel), identity ph-b50aa7262165a51b",
+  "registration_sha256": "72187842d621e55dedb6c6b366356131141cd47acf3324ab26bc7f06293c341c",
+  "labelled_from_artefact_sha256": "fd506beb26684df464127df73d351b26f3cbdd6d8db6a8dacc73581e1d231d11",
+  "development_50_sha256": "6f7796e478097f0ebcb3469429c7b54493303485c898bbfcd0bd45f25173d3c6",
+  "target_uri_form": "http://data.europa.eu/sdg/<goal>.<target> as in the taxonomy snapshot",
+  "cap": "at most five targets per project (v9 section 2); an empty list means no target supported",
+  "labels": {
+    "101248722": [
+      "http://data.europa.eu/sdg/16.1",
+      "http://data.europa.eu/sdg/16.a"
+    ],
+    "101276378": [
+      "http://data.europa.eu/sdg/3.4"
+    ],
+    "101104138": [
+      "http://data.europa.eu/sdg/9.4"
+    ],
+    "101130787": [
+      "http://data.europa.eu/sdg/3.4"
+    ],
+    "101292413": [
+      "http://data.europa.eu/sdg/3.8"
+    ],
+    "101220791": [
+      "http://data.europa.eu/sdg/3.4"
+    ],
+    "101279230": [
+      "http://data.europa.eu/sdg/5.5",
+      "http://data.europa.eu/sdg/10.2",
+      "http://data.europa.eu/sdg/16.7"
+    ],
+    "101122653": [],
+    "101248862": [
+      "http://data.europa.eu/sdg/3.d",
+      "http://data.europa.eu/sdg/3.c",
+      "http://data.europa.eu/sdg/17.9",
+      "http://data.europa.eu/sdg/4.3"
+    ],
+    "101073045": [
+      "http://data.europa.eu/sdg/9.4",
+      "http://data.europa.eu/sdg/12.2"
+    ],
+    "101152308": [
+      "http://data.europa.eu/sdg/3.4",
+      "http://data.europa.eu/sdg/10.2"
+    ],
+    "101061575": [
+      "http://data.europa.eu/sdg/3.8",
+      "http://data.europa.eu/sdg/3.d"
+    ],
+    "101178354": [
+      "http://data.europa.eu/sdg/12.2",
+      "http://data.europa.eu/sdg/9.4",
+      "http://data.europa.eu/sdg/12.5",
+      "http://data.europa.eu/sdg/12.4",
+      "http://data.europa.eu/sdg/8.4"
+    ],
+    "101144659": [
+      "http://data.europa.eu/sdg/3.4"
+    ],
+    "101094648": [
+      "http://data.europa.eu/sdg/4.4",
+      "http://data.europa.eu/sdg/4.7",
+      "http://data.europa.eu/sdg/4.5"
+    ],
+    "101208624": [
+      "http://data.europa.eu/sdg/3.4"
+    ],
+    "101039436": [],
+    "101155303": [
+      "http://data.europa.eu/sdg/2.1",
+      "http://data.europa.eu/sdg/2.c",
+      "http://data.europa.eu/sdg/2.4"
+    ],
+    "101056815": [
+      "http://data.europa.eu/sdg/7.3",
+      "http://data.europa.eu/sdg/9.4"
+    ],
+    "101057934": [
+      "http://data.europa.eu/sdg/9.5"
+    ],
+    "101066596": [
+      "http://data.europa.eu/sdg/6.3",
+      "http://data.europa.eu/sdg/6.1"
+    ],
+    "101065094": [
+      "http://data.europa.eu/sdg/3.3",
+      "http://data.europa.eu/sdg/3.b",
+      "http://data.europa.eu/sdg/3.d"
+    ],
+    "101136095": [
+      "http://data.europa.eu/sdg/7.2",
+      "http://data.europa.eu/sdg/7.3",
+      "http://data.europa.eu/sdg/9.4"
+    ],
+    "101116774": [],
+    "101064013": [
+      "http://data.europa.eu/sdg/10.2",
+      "http://data.europa.eu/sdg/10.3",
+      "http://data.europa.eu/sdg/5.1"
+    ],
+    "101101053": [
+      "http://data.europa.eu/sdg/3.8",
+      "http://data.europa.eu/sdg/16.4"
+    ],
+    "101217875": [],
+    "101232533": [],
+    "101110750": [],
+    "101123039": [
+      "http://data.europa.eu/sdg/2.4"
+    ],
+    "101045128": [
+      "http://data.europa.eu/sdg/3.4"
+    ],
+    "101217127": [
+      "http://data.europa.eu/sdg/4.7"
+    ],
+    "101149800": [],
+    "101094237": [
+      "http://data.europa.eu/sdg/11.4",
+      "http://data.europa.eu/sdg/16.4"
+    ],
+    "101187327": [
+      "http://data.europa.eu/sdg/3.4",
+      "http://data.europa.eu/sdg/2.2",
+      "http://data.europa.eu/sdg/9.5"
+    ],
+    "101081430": [
+      "http://data.europa.eu/sdg/13.2",
+      "http://data.europa.eu/sdg/13.3"
+    ],
+    "101137144": [
+      "http://data.europa.eu/sdg/3.4",
+      "http://data.europa.eu/sdg/8.8",
+      "http://data.europa.eu/sdg/3.c"
+    ],
+    "101220380": [
+      "http://data.europa.eu/sdg/9.4"
+    ],
+    "101112972": [
+      "http://data.europa.eu/sdg/13.1",
+      "http://data.europa.eu/sdg/13.2",
+      "http://data.europa.eu/sdg/11.b",
+      "http://data.europa.eu/sdg/15.1",
+      "http://data.europa.eu/sdg/13.3"
+    ],
+    "101153422": [],
+    "101256949": [
+      "http://data.europa.eu/sdg/9.4",
+      "http://data.europa.eu/sdg/7.3"
+    ],
+    "101066047": [
+      "http://data.europa.eu/sdg/3.8",
+      "http://data.europa.eu/sdg/10.3",
+      "http://data.europa.eu/sdg/5.1"
+    ],
+    "101310358": [
+      "http://data.europa.eu/sdg/9.4",
+      "http://data.europa.eu/sdg/12.2"
+    ],
+    "101202710": [],
+    "101147196": [],
+    "101211161": [
+      "http://data.europa.eu/sdg/7.2",
+      "http://data.europa.eu/sdg/7.3"
+    ],
+    "101208086": [],
+    "101054300": [
+      "http://data.europa.eu/sdg/3.9",
+      "http://data.europa.eu/sdg/12.4",
+      "http://data.europa.eu/sdg/11.6"
+    ],
+    "101248797": [
+      "http://data.europa.eu/sdg/3.3",
+      "http://data.europa.eu/sdg/3.2",
+      "http://data.europa.eu/sdg/3.b"
+    ],
+    "101061023": [
+      "http://data.europa.eu/sdg/3.4",
+      "http://data.europa.eu/sdg/2.2",
+      "http://data.europa.eu/sdg/12.8",
+      "http://data.europa.eu/sdg/2.4"
+    ]
+  }
+}
