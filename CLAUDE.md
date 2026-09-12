@@ -53,6 +53,38 @@ that is a separate decision.
 
 ---
 
+## A write you did not perform yourself is still a write you own
+
+**Three defects in one day, all in code or configuration this repository did not
+write**, each of which looked like the environment misbehaving and was in fact a
+default nobody had checked:
+
+- **`Path.relative_to` raises when the path is not under the base.** Three
+  scripts wrote a correct artefact, hashed it correctly, and then exited non-zero
+  on the line announcing it — but only when `--out` pointed outside the tree,
+  which is why it survived. A script that fails after succeeding reads as a
+  failed build. One helper now, in `scripts/repo_path.py`.
+- **`.gitignore` excluded a file the notebook reads.** A fresh clone could not
+  execute the notebook at all. The rule had been written for one of the
+  notebook's three inputs and applied to one.
+- **`savefig` to a path opens it in text mode**, so on Windows every figure was
+  written with CRLF and the published sha256 could not be checked on half the
+  platforms that might check it — while the rule two sections below had required
+  `newline=""` on every write since it cost three commits. The rule had been
+  applied to every file written by hand and to none a library wrote.
+
+**The pattern is not carelessness about one's own code. It is that a default is
+invisible until it is exercised**, and the parts of a build nobody wrote are
+exactly the parts nobody made fail on purpose.
+
+**So: `.gitignore` is a control. A library's default is a control. A helper you
+reached for without reading is a control.** Each gets the same treatment as any
+other check in this file — make it fail on purpose once, and know what it does
+when it does. **Clone the repository and build from the clone**; that is the one
+move that exercises all three at once, and it is cheap.
+
+---
+
 ## Staging
 
 **Never `git add -A` or `git add .` in this repository. Stage the paths the
