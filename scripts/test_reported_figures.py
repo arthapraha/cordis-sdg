@@ -26,9 +26,24 @@ and what to.
 
 IT IS A CHECK ON THE PROSE, NOT ON THE PIPELINE. A failure here means a document
 is stale, never that a result is wrong.
+
+IT ALSO COVERS THE PUBLISHED PAGE, from cordis-sdg seq 356. The prototype had a
+check of its own in prototype/build_data.py which searched the page for five
+bare numbers, each of which appeared on it two to four times — so editing one
+occurrence left the others and the check stayed green. That is the same defect
+this file had at its first version, described above. The page's own check is
+being removed on its owner's row and this one covers it instead, so one
+instrument guards every published claim.
+
+Two files are read for the page, because they fail differently. The figures a
+reader sees are bound at load time by prototype/app.js out of
+prototype/data/corpus_summary.json; the numbers in the markup are the fallback
+shown when the script does not run. Checking only the markup would pass while
+every reader saw something else.
 """
 
 import csv
+import hashlib
 import json
 import pathlib
 import re
@@ -42,6 +57,8 @@ SUMMARY = ROOT / "docs/summary.md"
 METRICS = ROOT / "data/pipeline/evaluation-100-metrics.json"
 FIGURES = ROOT / "data/corpus/figures.json"
 MAPPING = ROOT / "data/corpus/mapping-table-0246412.csv"
+PROTOTYPE_HTML = ROOT / "prototype/index.html"
+PROTOTYPE_JSON = ROOT / "prototype/data/corpus_summary.json"
 CROSSWALK = ROOT / "data/crosswalk/eurosciwoc-to-sdg.csv"
 TAXONOMY = ROOT / "data/terms/sdg-targets.csv"
 
@@ -50,9 +67,153 @@ def thousands(n):
     return "{:,}".format(n)
 
 
+
+def badge(html, label):
+    """The value the header shows under a given label, and its title attribute.
+
+    Returned as a pair so the CALLER compares them, because the defect Hermes
+    Cordis found at cordis-sdg seq 345 was exactly a label and a value that did
+    not go together: the chip said "Pipeline Commit" and carried the frozen
+    evaluation output's sha256. Searching the page for the right hash would not
+    have caught it — the right hash WAS on the page, under the wrong word. So
+    the check has to read the pairing, not the presence.
+    """
+    pat = (r'<span class="badge-label">%s</span>\s*'
+           r'<span class="badge-value[^"]*"(?:\s+title="([0-9a-f]{40,64})")?>([^<]*)</span>'
+           % re.escape(label))
+    hit = re.search(pat, html)
+    return (hit.group(1), hit.group(2)) if hit else (None, None)
+
+
+def prototype_failures(m, f, html):
+    """The published page's claims, against the artefacts they came from.
+
+    WHY THIS IS NOT JUST MORE NEEDLES IN `claims`. The figures on that page are
+    not served from the HTML. Thirteen ids are bound at load time by
+    prototype/app.js out of prototype/data/corpus_summary.json, so the numbers
+    in the markup are a no-JavaScript fallback and the rendered value comes from
+    the JSON. A check on the HTML alone would pass while every reader saw
+    something else. Both halves are therefore checked, and they fail
+    differently: the JSON is what a reader sees, the HTML is what a reader sees
+    when the script does not run, and both are published claims.
+
+    The JSON is generated from the artefacts by prototype/build_data.py, so it
+    OUGHT to agree by construction. That is the assumption this function exists
+    not to share: the file is committed, so a stale copy can sit on main looking
+    freshly generated, and nothing but reading it can tell.
+    """
+    out, checked = [], []
+    t_, rc = m["target_level"], m["recall_ceiling"]
+    dev = m["self_proof_against_seq_129"]["target_level"]
+
+    # ---- half one: what a reader actually sees -------------------------------
+    try:
+        j = json.loads(PROTOTYPE_JSON.read_text(encoding="utf-8"))
+    except (OSError, ValueError) as exc:
+        return [("prototype/data/corpus_summary.json", "readable JSON", str(exc))]
+
+    vm = j.get("validation_metrics", {})
+    e100, d50 = vm.get("evaluation_100", {}), vm.get("development_50", {})
+    J = "prototype/data/corpus_summary.json"
+
+    for path, got, want in [
+        ("evaluation_100.target_level", e100.get("target_level"), t_),
+        ("evaluation_100.recall_ceiling", e100.get("recall_ceiling"), rc),
+        ("evaluation_100.goal_level_secondary", e100.get("goal_level_secondary"),
+         m["goal_level_secondary"]),
+    ]:
+        if not isinstance(got, dict):
+            out.append((J, "a %s block" % path, "missing"))
+            continue
+        for key, wanted in want.items():
+            if key.startswith("_"):
+                continue
+            checked.append("%s.%s" % (path, key))
+            if key in got and got[key] != wanted:
+                out.append((J, "%s.%s" % (path, key),
+                            "%r, but the page serves %r" % (wanted, got[key])))
+
+    checked.append("development_50.cohens_kappa")
+    if round(d50.get("cohens_kappa", -1), 4) != round(dev["cohens_kappa"], 4):
+        out.append((J, "development_50.cohens_kappa",
+                    "%r, but the page serves %r" % (dev["cohens_kappa"], d50.get("cohens_kappa"))))
+
+    # The two sentences the page now serves verbatim instead of a paraphrase.
+    # They are the submission's least flattering sentences, which is why they
+    # are the ones worth binding: the paraphrase that replaced them called the
+    # sole reference "a single expert annotator".
+    for key, artefact in [("reference_note", m["reference"].get("_sole_reference")),
+                          ("human_anchor_status", m["human_anchor"].get("why"))]:
+        checked.append("served:" + key)
+        if artefact and e100.get(key) != artefact:
+            out.append((J, "evaluation_100.%s, verbatim from the metrics artefact" % key,
+                        (artefact or "")[:110] + "..."))
+
+    # ---- half two: the markup ------------------------------------------------
+    H = "prototype/index.html"
+    prec = "%.3f" % t_["precision"]
+    rec = "%.3f" % t_["recall"]
+    ceil = "%.3f" % rc["ceiling"]
+    pairs = "%d of %d" % (rc["with_no_evidence_at_any_threshold"], rc["reference_pairs"])
+    kappa = "%.3f" % dev["cohens_kappa"]
+
+    # NEEDLES ARE BOUND TO THE ELEMENT ID, not to the surrounding sentence.
+    # Each figure appears two to four times on this page, which is what made
+    # build_data.py's bare "0.447" unable to fail. The id is unique, it names
+    # which element is wrong when the check trips, and it survives the prose
+    # around it being rewritten — which a whole-sentence needle does not.
+    for el, value in [
+        ("eval-metric-precision", prec),
+        ("eval-metric-recall", rec),
+        ("eval-metric-ceiling", ceil),
+        ("eval-metric-ceiling-unreachable", "%s reference pairs" % pairs),
+        ("eval-metric-kappa", kappa),
+        ("eval-prose-precision", prec),
+        ("eval-prose-ceiling", ceil),
+        ("eval-prose-unreachable-pairs", pairs),
+        ("eval-repro-kappa", kappa),
+        ("eval-repro-metrics", "P=%s, R=%s, Ceiling=%s" % (prec, rec, ceil)),
+        ("fig-caption-ceiling", ceil),
+        ("fig-caption-unreachable", pairs),
+        ("eval-prose-reference-note", e100.get("reference_note", "")),
+        ("eval-prose-human-anchor", e100.get("human_anchor_status", "")),
+    ]:
+        needle = 'id="%s">%s<' % (el, value)
+        checked.append(el)
+        if needle not in html:
+            out.append((H, "the fallback in #%s" % el, needle[:130]))
+
+    # The header chips, read as label-and-value pairs.
+    for label, want_title, want_text in [
+        ("Pipeline Commit", f["pipeline_commit"], f["pipeline_commit"][:8]),
+        ("Frozen Output", m["pipeline_output_sha256"], m["pipeline_output_sha256"][:8] + "&hellip;"),
+        ("Mapping Table", f["mapping_table_sha256"], f["mapping_table_sha256"][:8] + "&hellip;"),
+    ]:
+        checked.append("chip:" + label)
+        title, text = badge(html, label)
+        if title is None:
+            out.append((H, "a header chip labelled %r" % label, "the chip itself"))
+        elif title != want_title or text != want_text:
+            out.append((H, "the %r chip to carry its own value" % label,
+                        "title %s and text %s, but it carries title %s and text %s"
+                        % (want_title[:12], want_text, (title or "-")[:12], text)))
+
+    # The evaluation tab's intro, where the same mislabel appeared a second
+    # time. Each hash is bound to the words in front of it.
+    for words, sha in [("output", m["pipeline_output_sha256"]),
+                       ("pipeline commit", f["pipeline_commit"]),
+                       ("metrics artefact", hashlib.sha256(METRICS.read_bytes()).hexdigest())]:
+        checked.append("intro:" + words)
+        needle = '%s <code class="mono" title="%s">' % (words, sha)
+        if needle not in html:
+            out.append((H, "the evaluation intro naming %r with its own hash" % words, needle))
+
+    return out, checked
+
+
 def main():
     for p in (README, DESCRIPTION, LIMITATIONS, SUMMARY, METRICS, FIGURES,
-              MAPPING, CROSSWALK, TAXONOMY):
+              MAPPING, CROSSWALK, TAXONOMY, PROTOTYPE_HTML, PROTOTYPE_JSON):
         if not p.is_file():
             sys.exit("missing: %s" % p.relative_to(ROOT))
 
@@ -67,7 +228,6 @@ def main():
         """
         return "%.3f" % (tp / (tp + other)) if (tp + other) else "n/a"
 
-    import hashlib
     METRICS_SHA = hashlib.sha256(METRICS.read_bytes()).hexdigest()
     TAXONOMY_SHA = hashlib.sha256(TAXONOMY.read_bytes()).hexdigest()
     FIGURES_SHA = hashlib.sha256(FIGURES.read_bytes()).hexdigest()
@@ -98,6 +258,14 @@ def main():
         "docs/limitations.md": LIMITATIONS.read_text(encoding="utf-8"),
         "docs/summary.md": SUMMARY.read_text(encoding="utf-8"),
     }
+
+    # THE PROTOTYPE IS CHECKED BUT IS NOT ONE OF THE DOCUMENTS ABOVE, and the
+    # distinction is load-bearing rather than tidy. `docs` carries an obligation
+    # to name the ratified registration by hash; the page names it by version
+    # only ("Registration v10 section 6 Item 7"), which is its owner's call and
+    # not something this file should force by putting the page in that loop.
+    pages = {"prototype/index.html": PROTOTYPE_HTML.read_text(encoding="utf-8")}
+    everything = dict(docs, **pages)
 
     # (document, what the claim is, the string that must appear)
     #
@@ -405,20 +573,28 @@ def main():
             if not (ROOT / rel.rstrip("/")).exists():
                 failures.append((R, "a deliverable path that exists", rel))
 
+    proto_failures, proto_checked = prototype_failures(m, f, pages["prototype/index.html"])
+    failures.extend(proto_failures)
+
     for doc, what, needle in claims:
-        if needle not in docs[doc]:
+        if needle not in everything[doc]:
             failures.append((doc, what, needle))
 
     print("checked %d claims across %d documents" % (len(claims), len(docs)))
+    print("checked %d bindings on prototype/index.html and every served figure "
+          "in prototype/data/corpus_summary.json" % len(proto_checked))
+    if not proto_checked:
+        sys.exit("refused: the prototype check made no checks at all, which would "
+                 "pass for the same reason an empty test passes.")
 
     if failures:
         print()
         for doc, what, needle in failures:
-            print("FAIL: %s does not contain the current %s" % (doc, what))
-            print("      expected to find: %r" % needle)
-        sys.exit("%d of %d claims in the prose no longer match the artefacts. "
-                 "Update the document; the artefacts are the record."
-                 % (len(failures), len(claims)))
+            print("FAIL: %s: %s" % (doc, what))
+            print("      expected: %r" % needle)
+        sys.exit("%d of %d checks failed, over four documents and the published "
+                 "page. Update what is stale; the artefacts are the record."
+                 % (len(failures), len(claims) + len(proto_checked)))
     print("every figure quoted in the prose matches the artefact it came from")
 
 
