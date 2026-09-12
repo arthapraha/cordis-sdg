@@ -7,11 +7,30 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Header & Navigation -->
-  <header class="app-header">
+  <!-- Top bar: wordmark left, one menu behind three lines on the right -->
+  <header class="topbar">
+    <a class="wordmark" href="#tab-explorer" data-tab="explorer">CORDIS &rarr; SDG</a>
+    <span class="topbar-section" id="topbar-section" aria-live="polite">Project Explorer</span>
+    <button class="menu-toggle" id="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-menu">
+      <span class="menu-lines" aria-hidden="true"><i></i><i></i><i></i></span>
+    </button>
+  </header>
+  <nav class="site-menu" id="site-menu" hidden>
+    <ul class="menu-list" role="list">
+      <li><button class="menu-item active" data-tab="explorer">Project Explorer</button></li>
+      <li><button class="menu-item" data-tab="sdgs">SDG Distribution</button></li>
+      <li><button class="menu-item" data-tab="evaluation">Evaluation &amp; Metrics</button></li>
+      <li><button class="menu-item" data-tab="figures">Notebook Figures</button></li>
+      <li><button class="menu-item" data-tab="provenance">Methodology &amp; Provenance</button></li>
+    </ul>
+  </nav>
+  <div class="menu-backdrop" id="menu-backdrop" hidden></div>
+
+  <!-- Page head: scrolls with the page -->
+  <section class="page-head">
     <div class="header-top">
       <div class="header-titles">
-        <div class="header-badge">Horizon Europe (2021–2027) &bull; CORDIS Mapping</div>
+        <div class="header-badge">Horizon Europe (2021&ndash;2027) &bull; CORDIS Mapping</div>
         <h1>CORDIS &rarr; SDG Mapping Explorer</h1>
         <p class="header-subtitle">Deterministic SDG assignment and multi-field evidence explorer across 23,451 Horizon Europe research projects.</p>
       </div>
@@ -30,26 +49,7 @@
         </div>
       </div>
     </div>
-
-    <!-- Navigation Tabs -->
-    <nav class="nav-tabs">
-      <button class="tab-btn active" data-tab="explorer">
-        <span class="tab-icon">&telrec;</span> Project Explorer
-      </button>
-      <button class="tab-btn" data-tab="sdgs">
-        <span class="tab-icon">&xcirc;</span> SDG Distribution
-      </button>
-      <button class="tab-btn" data-tab="evaluation">
-        <span class="tab-icon">&EmptySmallSquare;</span> Evaluation &amp; Metrics
-      </button>
-      <button class="tab-btn" data-tab="figures">
-        <span class="tab-icon">&image;</span> Notebook Figures
-      </button>
-      <button class="tab-btn" data-tab="provenance">
-        <span class="tab-icon">&#9776;</span> Methodology &amp; Provenance
-      </button>
-    </nav>
-  </header>
+  </section>
 
   <main class="app-main">
     <!-- TAB 1: PROJECT EXPLORER -->

@@ -47,13 +47,47 @@ document.addEventListener("DOMContentLoaded", () => {
   loadStaticData();
 });
 
-// Setup Navigation Tabs
+// Setup the menu: one button behind three lines, one list of sections
+const SECTION_NAMES = {
+  explorer: "Project Explorer",
+  sdgs: "SDG Distribution",
+  evaluation: "Evaluation & Metrics",
+  figures: "Notebook Figures",
+  provenance: "Methodology & Provenance",
+};
+
 function setupTabs() {
-  const tabButtons = document.querySelectorAll(".tab-btn");
-  tabButtons.forEach(btn => {
-    btn.addEventListener("click", () => {
-      const tabName = btn.dataset.tab;
-      switchTab(tabName);
+  const toggle = document.getElementById("menu-toggle");
+  const menu = document.getElementById("site-menu");
+  const backdrop = document.getElementById("menu-backdrop");
+
+  const openMenu = () => {
+    menu.hidden = false;
+    backdrop.hidden = false;
+    toggle.setAttribute("aria-expanded", "true");
+    toggle.setAttribute("aria-label", "Close menu");
+    const current = menu.querySelector(".menu-item.active") || menu.querySelector(".menu-item");
+    if (current) current.focus();
+  };
+  const closeMenu = () => {
+    menu.hidden = true;
+    backdrop.hidden = true;
+    toggle.setAttribute("aria-expanded", "false");
+    toggle.setAttribute("aria-label", "Open menu");
+  };
+  window.closeMenu = closeMenu;
+
+  toggle.addEventListener("click", () => (menu.hidden ? openMenu() : closeMenu()));
+  backdrop.addEventListener("click", closeMenu);
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && !menu.hidden) { closeMenu(); toggle.focus(); }
+  });
+
+  document.querySelectorAll(".menu-item[data-tab], .wordmark[data-tab]").forEach(el => {
+    el.addEventListener("click", (e) => {
+      e.preventDefault();
+      switchTab(el.dataset.tab);
+      closeMenu();
     });
   });
 
@@ -69,17 +103,17 @@ function setupTabs() {
 window.switchTab = switchTab;
 
 function switchTab(tabName) {
-  document.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
-  document.querySelectorAll(".tab-pane").forEach(p => p.classList.remove("active"));
-
-  const targetBtn = document.querySelector(`.tab-btn[data-tab="${tabName}"]`);
   const targetPane = document.getElementById(`tab-${tabName}`);
-
-  if (targetBtn && targetPane) {
-    targetBtn.classList.add("active");
-    targetPane.classList.add("active");
-    window.scrollTo({ top: 0, behavior: "smooth" });
+  if (!targetPane) return;
+  document.querySelectorAll(".menu-item").forEach(b => b.classList.toggle("active", b.dataset.tab === tabName));
+  document.querySelectorAll(".tab-pane").forEach(p => p.classList.remove("active"));
+  targetPane.classList.add("active");
+  const label = document.getElementById("topbar-section");
+  if (label) label.textContent = SECTION_NAMES[tabName] || "";
+  if (!window.location.hash.startsWith("#project")) {
+    try { history.replaceState(null, "", `#tab-${tabName}`); } catch (_) { /* file: URLs */ }
   }
+  window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
 // Load Search Index and Corpus Summary
@@ -875,8 +909,9 @@ function checkUrlForProject() {
 
 function setupUrlRouting() {
   window.addEventListener("hashchange", () => {
-    if (window.location.hash === "#provenance" || window.location.hash === "#tab-provenance") {
-      switchTab("provenance");
+    const tabHash = window.location.hash.match(/^#(?:tab-)?(explorer|sdgs|evaluation|figures|provenance)$/);
+    if (tabHash) {
+      switchTab(tabHash[1]);
       return;
     }
     const hashMatch = window.location.hash.match(/#project[=-]([0-9a-zA-Z]+)/);
@@ -893,4 +928,8 @@ function setupUrlRouting() {
   window.addEventListener("popstate", () => {
     checkUrlForProject();
   });
+
+  // A link straight to a section opens that section on load, not only on change.
+  const initial = window.location.hash.match(/^#(?:tab-)?(explorer|sdgs|evaluation|figures|provenance)$/);
+  if (initial) switchTab(initial[1]);
 }
