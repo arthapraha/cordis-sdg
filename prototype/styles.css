@@ -777,6 +777,20 @@ body {
 .target-row { cursor: pointer; }
 .target-row:hover td { background-color: var(--bg-alt); }
 
+.share-cell {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+.share-cell .progress-bar-bg { flex: 1; }
+.share-pct {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  min-width: 2.5em;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
 .goal-statement {
   font-size: 0.95rem;
   font-weight: 400;

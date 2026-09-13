@@ -834,44 +834,62 @@ window.inspectSdg = function(goalNum) {
 
   closeBtn.onclick = closeSdgBreakdown;
 
-  const allTargets = (state.corpusSummary.distributions && state.corpusSummary.distributions.most_linked_targets) || [];
-  const targets = allTargets.filter(t => t.key.startsWith(`${goalNum}.`));
+  // Every target of this goal that any project carries, counted from the served
+  // index, so the table is complete for the goal. A project with more than one
+  // target under the goal appears in each of its rows, so the rows add to more
+  // than the count above; the note under the table says so.
+  const targetCounts = {};
+  state.projectsIndex.forEach(p => {
+    (p.targets || []).forEach(t => {
+      if (t.startsWith(goalKey + ".")) targetCounts[t] = (targetCounts[t] || 0) + 1;
+    });
+  });
+  const targets = Object.keys(targetCounts)
+    .map(key => ({ key, count: targetCounts[key] }))
+    .sort((a, b) => b.count - a.count || a.key.localeCompare(b.key, undefined, { numeric: true }));
+  const multi = state.projectsIndex.filter(p =>
+    (p.targets || []).filter(t => t.startsWith(goalKey + ".")).length > 1).length;
+
   if (targets.length === 0) {
     bodyEl.innerHTML = `<p class="targets-note" style="margin-top: 0;">
-      The 25 most-linked targets across all projects are listed by goal on this page; Goal ${goalNum}'s targets sit outside that 25.
-      The button on the right lists all ${Number(allInGoal).toLocaleString()} projects mapped to this goal.
+      No project carries a target under this goal. The button on the right lists all ${Number(allInGoal).toLocaleString()} projects mapped to it at goal level.
     </p>`;
   } else {
-    const maxCount = Math.max(...targets.map(t => t.count), 1);
     let tableHtml = `
       <table class="targets-table">
         <thead>
           <tr>
             <th>Target</th>
             <th style="width: 100px; text-align: right;">Projects</th>
-            <th class="bar-cell" style="width: 30%;">Share of all projects</th>
+            <th class="bar-cell" style="width: 30%;">Share of the ${Number(count).toLocaleString()}</th>
           </tr>
         </thead>
         <tbody>
     `;
 
     targets.forEach(t => {
-      const pctBar = (t.count / maxCount * 100).toFixed(1);
+      const share = count ? (t.count / count * 100) : 0;
       tableHtml += `
         <tr class="target-row" data-target="${escapeHtml(t.key)}" title="List the projects assigned to Target ${escapeHtml(t.key)}">
           <td><strong>${escapeHtml(t.key)}</strong>${state.targetLabels[t.key] ? ` <span class="target-label">${escapeHtml(state.targetLabels[t.key])}</span>` : ""}</td>
           <td style="text-align: right;" class="mono font-bold">${Number(t.count).toLocaleString()}</td>
           <td class="bar-cell">
-            <div class="progress-bar-bg">
-              <div class="progress-bar-fill" style="width: ${pctBar}%; background-color: ${meta.color};"></div>
+            <div class="share-cell">
+              <div class="progress-bar-bg">
+                <div class="progress-bar-fill" style="width: ${share.toFixed(1)}%; background-color: ${meta.color};"></div>
+              </div>
+              <span class="share-pct">${share.toFixed(0)}%</span>
             </div>
           </td>
         </tr>
       `;
     });
 
+    const multiNote = multi
+      ? ` ${Number(multi).toLocaleString()} of the ${Number(count).toLocaleString()} projects carry more than one target under this goal and appear in each of their rows, so the rows add to more than ${Number(count).toLocaleString()}.`
+      : "";
     tableHtml += `</tbody></table>
-      <p class="targets-note">Click a target to list its projects. Targets are the numbered aims under each goal in the UN's list of 169; only the 25 most-linked targets across all projects are shown here.</p>`;
+      <p class="targets-note">Click a target to list its projects. Targets are the numbered aims under each goal in the UN's list of 169; every target of this goal that a project carries is listed.${multiNote}</p>`;
     bodyEl.innerHTML = tableHtml;
     bodyEl.querySelectorAll(".target-row").forEach(row => {
       row.addEventListener("click", () => {
