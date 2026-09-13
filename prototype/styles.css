@@ -1016,12 +1016,19 @@ body {
   box-shadow: var(--shadow-sm);
 }
 
+/* The edge colour says where the number comes from, as on Home: blue for a
+   figure measured on the held-out 100, amber for a limit of the method, grey
+   for a development-set figure. */
 .highlight-box {
-  border-top: 4px solid var(--primary);
+  border-left: 4px solid var(--primary);
 }
 
 .warning-box {
-  border-top: 4px solid var(--warning);
+  border-left: 4px solid var(--warning);
+}
+
+.dev-box {
+  border-left: 4px solid var(--text-muted);
 }
 
 .metric-title {
@@ -1086,7 +1093,9 @@ body {
   font-family: var(--font-mono);
   font-size: 0.85rem;
   margin: 0.75rem 0;
-  overflow-x: auto;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  line-height: 1.6;
 }
 
 /* Figures Gallery */
