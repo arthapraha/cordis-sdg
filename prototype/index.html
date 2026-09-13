@@ -272,7 +272,7 @@
           <div class="repro-box">
             <p>Every reported metric is verified by self-proof inside <code class="mono">scripts/metrics.py</code>:</p>
             <pre class="code-block">python scripts/metrics.py --results data/pipeline/evaluation-100-v2.json --results-sha256 0938fe34e41cd5d8ddccfba69238481fdf6470e54046104ad7a3535da6743709 --dev-results data/pipeline/development-50-v1.json --dev-results-sha256 032a4881774ce9adbbc84bb8a949b7d06843ad77a23aae1c4b77d6de522ea460 --handoff data/sample/handoff-evaluation-100.json --out data/pipeline/evaluation-100-metrics.json</pre>
-            <p>The script validates development-50 agreement (<code class="mono" id="eval-repro-kappa">0.677</code>) and held-out 100 target metrics (<code class="mono" id="eval-repro-metrics">P=0.447, R=0.221, Ceiling=0.442</code>) against the frozen run output <code class="mono" title="0938fe34e41cd5d8ddccfba69238481fdf6470e54046104ad7a3535da6743709">0938fe34&hellip;</code>.</p>
+            <p>The script validates development-50 agreement (<span id="eval-repro-kappa">0.677</span>) and held-out 100 target metrics (<span id="eval-repro-metrics">P=0.447, R=0.221, Ceiling=0.442</span>) against the frozen run output <code class="mono" title="0938fe34e41cd5d8ddccfba69238481fdf6470e54046104ad7a3535da6743709">0938fe34&hellip;</code>.</p>
           </div>
         </div>
       </div>
@@ -531,7 +531,7 @@ python scripts/test_reported_figures.py</pre>
               <tr id="verify-svg-figures">
                 <td><strong>Notebook Figures</strong></td>
                 <td><code class="mono">figures/*.svg</code> (6 embedded figures)</td>
-                <td><code class="mono">Byte-identical SVG vector assets</code></td>
+                <td>Byte-identical SVG vector assets</td>
               </tr>
             </tbody>
           </table>

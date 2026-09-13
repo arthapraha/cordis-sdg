@@ -1019,7 +1019,7 @@ body {
   font-weight: 800;
   color: var(--text-primary);
   margin: 0.25rem 0;
-  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
 }
 
 .metric-desc {
@@ -1248,7 +1248,6 @@ body {
 }
 
 .modal-id {
-  font-family: var(--font-mono);
   font-size: 0.85rem;
   font-weight: 700;
   color: var(--text-secondary);
@@ -1368,7 +1367,6 @@ body {
 }
 
 .score-badge {
-  font-family: var(--font-mono);
   font-size: 0.85rem;
   font-weight: 700;
   background: var(--primary-light);

@@ -874,7 +874,7 @@ window.inspectSdg = function(goalNum) {
       tableHtml += `
         <tr class="target-row" data-target="${escapeHtml(t.key)}" title="List the projects assigned to Target ${escapeHtml(t.key)}">
           <td><strong>${escapeHtml(t.key)}</strong>${state.targetLabels[t.key] ? ` <span class="target-label">${escapeHtml(state.targetLabels[t.key])}</span>` : ""}${state.meansTargets.has(t.key) ? ` <span class="means-tag" title="A lettered target: one of the UN's means-of-implementation targets, the how rather than the what">means of implementation</span>` : ""}</td>
-          <td style="text-align: right;" class="mono font-bold">${Number(t.count).toLocaleString()}</td>
+          <td style="text-align: right;"><strong>${Number(t.count).toLocaleString()}</strong></td>
           <td class="bar-cell">
             <div class="share-cell">
               <div class="progress-bar-bg">
