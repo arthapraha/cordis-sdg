@@ -320,9 +320,15 @@ body {
   color: var(--text-secondary);
 }
 
+.stat-total { border-left: 4px solid var(--primary); }
 .stat-target { border-left: 4px solid var(--success); }
 .stat-goal { border-left: 4px solid var(--warning); }
 .stat-none { border-left: 4px solid var(--text-muted); }
+
+.stat-card.is-active {
+  background-color: var(--bg-alt);
+  box-shadow: var(--shadow-md);
+}
 
 /* Filters Card */
 .filters-card {

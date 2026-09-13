@@ -289,26 +289,26 @@ function setupFilterListeners() {
     });
   });
 
-  // Stat Card click filtering
-  document.getElementById("card-target").addEventListener("click", () => {
-    levelFilter.value = "target";
-    state.levelFilter = "target";
+  // Stat card click filtering: a click filters to that level, a second click on
+  // the same card clears it again. Total Projects clears every filter.
+  const toggleLevelCard = (value) => {
+    const next = state.levelFilter === value ? "all" : value;
+    levelFilter.value = next;
+    state.levelFilter = next;
     state.currentPage = 1;
     applyFilters();
-  });
-  document.getElementById("card-goal").addEventListener("click", () => {
-    levelFilter.value = "goal_only";
-    state.levelFilter = "goal_only";
-    state.currentPage = 1;
-    applyFilters();
-  });
-  document.getElementById("card-none").addEventListener("click", () => {
-    levelFilter.value = "none";
-    state.levelFilter = "none";
-    state.currentPage = 1;
-    applyFilters();
-  });
+  };
+  document.getElementById("card-target").addEventListener("click", () => toggleLevelCard("target"));
+  document.getElementById("card-goal").addEventListener("click", () => toggleLevelCard("goal_only"));
+  document.getElementById("card-none").addEventListener("click", () => toggleLevelCard("none"));
   document.getElementById("card-total").addEventListener("click", resetAllFilters);
+}
+
+// The card whose filter is on is marked; Total Projects is marked when no level filter is on.
+function syncStatCards() {
+  const current = state.levelFilter;
+  const map = { all: "card-total", target: "card-target", goal_only: "card-goal", none: "card-none" };
+  document.querySelectorAll(".stat-card").forEach(c => c.classList.toggle("is-active", c.id === map[current]));
 }
 
 function applyPreset(preset) {
@@ -355,6 +355,7 @@ function resetAllFilters(reapply = true) {
 
 // Filter and Sort Engine
 function applyFilters() {
+  syncStatCards();
   const query = state.searchQuery;
   const level = state.levelFilter;
   const sdg = state.sdgFilter;
