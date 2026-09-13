@@ -1210,6 +1210,12 @@ body {
   margin-top: 0.75rem;
 }
 
+/* A 64-character digest has no break opportunity; on a narrow window it must
+   wrap inside its cell rather than push the page sideways. */
+.contract-table td {
+  overflow-wrap: anywhere;
+}
+
 .contract-table th {
   background: var(--bg-alt);
   padding: 0.6rem 0.8rem;
