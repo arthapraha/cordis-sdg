@@ -775,6 +775,27 @@ body {
 }
 
 .target-row { cursor: pointer; }
+
+.means-tag {
+  display: inline-block;
+  font-size: 0.65rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+  background-color: var(--bg-alt);
+  border: 1px solid var(--border-color);
+  border-radius: 999px;
+  padding: 0.05rem 0.45rem;
+  margin-left: 0.4rem;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.note-link {
+  color: var(--primary);
+  text-decoration: underline;
+}
 .target-row:hover td { background-color: var(--bg-alt); }
 
 .share-cell {

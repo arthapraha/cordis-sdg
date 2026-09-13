@@ -36,6 +36,7 @@ const state = {
   sortBy: "id-asc",
   targetLabels: {},     // "12.5" -> the UN target's label, from data/sdg_targets.json
   goalLabels: {},       // "12" -> the UN goal's statement, from the same file
+  meansTargets: new Set(), // the lettered targets the UN classes as means of implementation
   targetFilter: "all",  // one target id, set from the SDG page's breakdown rows
   openSdg: null,        // the goal whose target breakdown is open on the SDG page
   loadedShards: new Map() // prefix -> project details map
@@ -137,6 +138,7 @@ async function loadStaticData() {
         const labels = await labelsRes.json();
         state.targetLabels = labels.targets || {};
         state.goalLabels = labels.goals || {};
+        state.meansTargets = new Set(labels.means_of_implementation || []);
       }
     } catch (_) { /* leave the numbers bare */ }
 
@@ -871,7 +873,7 @@ window.inspectSdg = function(goalNum) {
       const share = count ? (t.count / count * 100) : 0;
       tableHtml += `
         <tr class="target-row" data-target="${escapeHtml(t.key)}" title="List the projects assigned to Target ${escapeHtml(t.key)}">
-          <td><strong>${escapeHtml(t.key)}</strong>${state.targetLabels[t.key] ? ` <span class="target-label">${escapeHtml(state.targetLabels[t.key])}</span>` : ""}</td>
+          <td><strong>${escapeHtml(t.key)}</strong>${state.targetLabels[t.key] ? ` <span class="target-label">${escapeHtml(state.targetLabels[t.key])}</span>` : ""}${state.meansTargets.has(t.key) ? ` <span class="means-tag" title="A lettered target: one of the UN's means-of-implementation targets, the how rather than the what">means of implementation</span>` : ""}</td>
           <td style="text-align: right;" class="mono font-bold">${Number(t.count).toLocaleString()}</td>
           <td class="bar-cell">
             <div class="share-cell">
@@ -889,7 +891,7 @@ window.inspectSdg = function(goalNum) {
       ? ` ${Number(multi).toLocaleString()} of the ${Number(count).toLocaleString()} projects carry more than one target under this goal and appear in each of their rows, so the rows add to more than ${Number(count).toLocaleString()}.`
       : "";
     tableHtml += `</tbody></table>
-      <p class="targets-note">Click a target to list its projects. Targets are the numbered aims under each goal in the UN's list of 169; every target of this goal that a project carries is listed.${multiNote}</p>`;
+      <p class="targets-note">Click a target to list its projects. Targets are the aims under each goal in the UN's list of 169, on <a href="https://sdgs.un.org/goals" target="_blank" rel="noopener" class="note-link">the UN's SDG site</a>; numbered ones (3.4) are outcomes, lettered ones (3.d) are the UN's "means of implementation", the how rather than the what. Every target of this goal that a project carries is listed.${multiNote}</p>`;
     bodyEl.innerHTML = tableHtml;
     bodyEl.querySelectorAll(".target-row").forEach(row => {
       row.addEventListener("click", () => {

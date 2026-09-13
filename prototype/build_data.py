@@ -112,18 +112,23 @@ def write_target_labels(data_dir: pathlib.Path) -> pathlib.Path:
     src = REPO_ROOT / "data" / "terms" / "sdg-targets.csv"
     labels = {}
     goals = {}
+    means = []
     with open(src, encoding="utf-8-sig", newline="") as f:
         for row in csv.DictReader(f, delimiter=";"):
             labels[row["target_id"]] = row["target_label"]
             goals[row["goal_id"]] = row["goal_label"]
+            if row["is_means_of_implementation"].strip().lower() == "yes":
+                means.append(row["target_id"])
     assert len(labels) == 169, f"expected 169 targets, read {len(labels)}"
     assert len(goals) == 17, f"expected 17 goals, read {len(goals)}"
     out = {
         "_what_this_is": "UN SDG goal statements and target labels keyed by id, copied from "
-                         "data/terms/sdg-targets.csv so the SDG page can say what a goal or target number means.",
+                         "data/terms/sdg-targets.csv so the SDG page can say what a goal or target number means. "
+                         "means_of_implementation lists the lettered targets (3.d, 7.a) the UN classes as means rather than outcomes.",
         "_source_sha256": sha256_file(src),
         "goals": goals,
         "targets": labels,
+        "means_of_implementation": sorted(means),
     }
     path = data_dir / "sdg_targets.json"
     with open(path, "w", encoding="utf-8", newline="") as f:
