@@ -35,6 +35,8 @@ const state = {
   bandFilter: "all",
   sortBy: "id-asc",
   targetLabels: {},     // "12.5" -> the UN target's label, from data/sdg_targets.json
+  goalLabels: {},       // "12" -> the UN goal's statement, from the same file
+  targetFilter: "all",  // one target id, set from the SDG page's breakdown rows
   openSdg: null,        // the goal whose target breakdown is open on the SDG page
   loadedShards: new Map() // prefix -> project details map
 };
@@ -131,7 +133,11 @@ async function loadStaticData() {
     // Target labels are a convenience for the SDG page; the page works without them.
     try {
       const labelsRes = await fetch("data/sdg_targets.json");
-      if (labelsRes.ok) state.targetLabels = (await labelsRes.json()).targets || {};
+      if (labelsRes.ok) {
+        const labels = await labelsRes.json();
+        state.targetLabels = labels.targets || {};
+        state.goalLabels = labels.goals || {};
+      }
     } catch (_) { /* leave the numbers bare */ }
 
     renderCorpusSummary();
@@ -270,6 +276,13 @@ function setupFilterListeners() {
 
   sdgFilter.addEventListener("change", (e) => {
     state.sdgFilter = e.target.value;
+    state.targetFilter = "all";
+    state.currentPage = 1;
+    applyFilters();
+  });
+
+  document.getElementById("target-filter-chip").addEventListener("click", () => {
+    state.targetFilter = "all";
     state.currentPage = 1;
     applyFilters();
   });
@@ -316,6 +329,19 @@ function setupFilterListeners() {
   document.getElementById("card-total").addEventListener("click", resetAllFilters);
 }
 
+// The chip beside the count names the active target filter; clicking it removes it.
+function syncTargetChip() {
+  const chip = document.getElementById("target-filter-chip");
+  if (!chip) return;
+  if (state.targetFilter === "all") {
+    chip.hidden = true;
+    return;
+  }
+  const label = state.targetLabels[state.targetFilter] || "";
+  chip.textContent = `Target ${state.targetFilter}${label ? ": " + label : ""}  ×`;
+  chip.hidden = false;
+}
+
 // The card whose filter is on is marked; Total Projects is marked when no level filter is on.
 function syncStatCards() {
   const current = state.levelFilter;
@@ -352,6 +378,7 @@ function resetAllFilters(reapply = true) {
   state.searchQuery = "";
   state.levelFilter = "all";
   state.sdgFilter = "all";
+  state.targetFilter = "all";
   state.bandFilter = "all";
   state.sortBy = "id-asc";
   state.currentPage = 1;
@@ -368,9 +395,11 @@ function resetAllFilters(reapply = true) {
 // Filter and Sort Engine
 function applyFilters() {
   syncStatCards();
+  syncTargetChip();
   const query = state.searchQuery;
   const level = state.levelFilter;
   const sdg = state.sdgFilter;
+  const target = state.targetFilter;
   const band = state.bandFilter;
 
   state.filteredProjects = state.projectsIndex.filter(p => {
@@ -382,6 +411,13 @@ function applyFilters() {
     // SDG Goal filter
     if (sdg !== "all") {
       if (!p.goals || !p.goals.includes(sdg)) {
+        return false;
+      }
+    }
+
+    // SDG Target filter, set from a row of the SDG page's breakdown
+    if (target !== "all") {
+      if (!p.targets || !p.targets.includes(target)) {
         return false;
       }
     }
@@ -733,7 +769,7 @@ function renderSdgDistribution() {
           <span class="sdg-num-badge" style="background-color: ${meta.color};">Goal ${i}</span>
           <span class="sdg-count-badge">${Number(count).toLocaleString()} Projects</span>
         </div>
-        <div class="sdg-card-title">${meta.name}</div>
+        <div class="sdg-card-title"><a href="https://sdgs.un.org/goals/goal${i}" target="_blank" rel="noopener" class="un-outbound-link" onclick="event.stopPropagation()" title="Open Goal ${i} on the UN's site (opens in a new tab)">${meta.name}&nbsp;<span class="external-icon">&nearr;</span></a></div>
         <div class="sdg-card-pct">${pct}% of all projects</div>
       </div>
     `;
@@ -771,11 +807,15 @@ window.inspectSdg = function(goalNum) {
   const goalObj = goalsData.find(g => String(g.goal_id) === String(goalNum));
   const count = goalObj ? goalObj.projects : 0;
 
-  titleEl.innerHTML = `<span class="sdg-num-badge" style="background-color: ${meta.color}; margin-right: 0.5rem;">Goal ${goalNum}</span> ${meta.name} &bull; ${Number(count).toLocaleString()} Projects`;
+  const statement = state.goalLabels[String(goalNum)] || "";
+  titleEl.innerHTML = `<span class="sdg-num-badge" style="background-color: ${meta.color}; margin-right: 0.5rem;">Goal ${goalNum}</span> <a href="https://sdgs.un.org/goals/goal${goalNum}" target="_blank" rel="noopener" class="un-outbound-link" title="Open Goal ${goalNum} on the UN's site (opens in a new tab)">${meta.name}&nbsp;<span class="external-icon">&nearr;</span></a> &bull; ${Number(count).toLocaleString()} Projects`
+    + (statement ? `<div class="goal-statement">${escapeHtml(statement)}</div>` : "");
 
   filterBtn.onclick = () => {
     document.getElementById("sdg-filter").value = String(goalNum);
     state.sdgFilter = String(goalNum);
+    state.targetFilter = "all";
+    state.currentPage = 1;
     switchTab("explorer");
     applyFilters();
   };
@@ -806,7 +846,7 @@ window.inspectSdg = function(goalNum) {
     targets.forEach(t => {
       const pctBar = (t.count / maxCount * 100).toFixed(1);
       tableHtml += `
-        <tr>
+        <tr class="target-row" data-target="${escapeHtml(t.key)}" title="List the projects assigned to Target ${escapeHtml(t.key)}">
           <td><strong>${escapeHtml(t.key)}</strong>${state.targetLabels[t.key] ? ` <span class="target-label">${escapeHtml(state.targetLabels[t.key])}</span>` : ""}</td>
           <td style="text-align: right;" class="mono font-bold">${Number(t.count).toLocaleString()}</td>
           <td class="bar-cell">
@@ -819,8 +859,18 @@ window.inspectSdg = function(goalNum) {
     });
 
     tableHtml += `</tbody></table>
-      <p class="targets-note">Targets are the numbered aims under each goal in the UN's list of 169; only the 25 most-linked targets across all projects are shown here.</p>`;
+      <p class="targets-note">Click a target to list its projects. Targets are the numbered aims under each goal in the UN's list of 169; only the 25 most-linked targets across all projects are shown here.</p>`;
     bodyEl.innerHTML = tableHtml;
+    bodyEl.querySelectorAll(".target-row").forEach(row => {
+      row.addEventListener("click", () => {
+        document.getElementById("sdg-filter").value = String(goalNum);
+        state.sdgFilter = String(goalNum);
+        state.targetFilter = row.dataset.target;
+        state.currentPage = 1;
+        switchTab("explorer");
+        applyFilters();
+      });
+    });
   }
 
   // Place the panel after the last card in the clicked card's row.

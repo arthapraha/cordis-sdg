@@ -1,6 +1,25 @@
 {
  "_source_sha256": "a0c61a4f5b089863d6c8a60a83671495fb530969fa1a0e04228e3a01cc072b94",
- "_what_this_is": "UN SDG target labels keyed by target id, copied from data/terms/sdg-targets.csv so the SDG page can say what a target number means.",
+ "_what_this_is": "UN SDG goal statements and target labels keyed by id, copied from data/terms/sdg-targets.csv so the SDG page can say what a goal or target number means.",
+ "goals": {
+  "1": "End poverty in all its forms everywhere",
+  "10": "Reduce inequality within and among countries",
+  "11": "Make cities and human settlements inclusive, safe, resilient and sustainable",
+  "12": "Ensure sustainable consumption and production patterns",
+  "13": "Take urgent action to combat climate change and its impacts",
+  "14": "Conserve and sustainably use the oceans, seas and marine resources for sustainable development",
+  "15": "Protect, restore and promote sustainable use of terrestrial ecosystems, sustainably manage forests, combat desertification, and halt and reverse land degradation and halt biodiversity loss",
+  "16": "Promote peaceful and inclusive societies for sustainable development, provide access to justice for all and build effective, accountable and inclusive institutions at all levels",
+  "17": "Strengthen the means of implementation and revitalize the Global Partnership for Sustainable Development",
+  "2": "End hunger, achieve food security and improved nutrition and promote sustainable agriculture",
+  "3": "Ensure healthy lives and promote well-being for all at all ages",
+  "4": "Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all",
+  "5": "Achieve gender equality and empower all women and girls",
+  "6": "Ensure availability and sustainable management of water and sanitation for all",
+  "7": "Ensure access to affordable, reliable, sustainable and modern energy for all",
+  "8": "Promote sustained, inclusive and sustainable economic growth, full and productive employment and decent work for all",
+  "9": "Build resilient infrastructure, promote inclusive and sustainable industrialization and foster innovation"
+ },
  "targets": {
   "1.1": "By 2030, eradicate extreme poverty for all people everywhere, currently measured as people living on less than $1.25 a day",
   "1.2": "By 2030, reduce at least by half the proportion of men, women and children of all ages living in poverty in all its dimensions according to national definitions",

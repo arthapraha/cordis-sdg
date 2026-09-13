@@ -111,14 +111,18 @@ def write_target_labels(data_dir: pathlib.Path) -> pathlib.Path:
     the taxonomy the pipeline itself loads (its sha256 is recorded in the file)."""
     src = REPO_ROOT / "data" / "terms" / "sdg-targets.csv"
     labels = {}
+    goals = {}
     with open(src, encoding="utf-8-sig", newline="") as f:
         for row in csv.DictReader(f, delimiter=";"):
             labels[row["target_id"]] = row["target_label"]
+            goals[row["goal_id"]] = row["goal_label"]
     assert len(labels) == 169, f"expected 169 targets, read {len(labels)}"
+    assert len(goals) == 17, f"expected 17 goals, read {len(goals)}"
     out = {
-        "_what_this_is": "UN SDG target labels keyed by target id, copied from data/terms/sdg-targets.csv "
-                         "so the SDG page can say what a target number means.",
+        "_what_this_is": "UN SDG goal statements and target labels keyed by id, copied from "
+                         "data/terms/sdg-targets.csv so the SDG page can say what a goal or target number means.",
         "_source_sha256": sha256_file(src),
+        "goals": goals,
         "targets": labels,
     }
     path = data_dir / "sdg_targets.json"
