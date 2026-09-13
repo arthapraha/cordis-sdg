@@ -1,4 +1,4 @@
-// CORDIS → SDG Web Prototype
+// CORDIS SDG Mapper
 // Client-side execution with static pre-indexed JSON assets.
 // Never uses an external API key or backend server.
 
