@@ -45,6 +45,7 @@ const state = {
 // Initialize Application
 document.addEventListener("DOMContentLoaded", () => {
   setupTabs();
+  setupHashExpanders();
   setupFilterListeners();
   setupModalListeners();
   setupProjectsTableListeners();
@@ -116,6 +117,31 @@ function switchTab(tabName, opts = {}) {
     try { history.pushState(null, "", targetHash); } catch (_) { /* file: URLs */ }
   }
   window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+// Hashes are printed short with the whole hash in the element's title. A short
+// hash reads as cut off, so each one says it can be opened and a click swaps
+// the short form for the whole hash, and back. The markup is untouched, which
+// is what the checker reads.
+function setupHashExpanders() {
+  document.querySelectorAll("code.mono[title], span.fig-hash[title]").forEach(el => {
+    const full = el.getAttribute("title");
+    const shortText = el.textContent;
+    if (!/^[0-9a-f]{40,64}$/.test(full) || !shortText.includes("\u2026")) return;
+    el.classList.add("hash-short");
+    el.setAttribute("title", "Click to show the whole hash");
+    el.setAttribute("role", "button");
+    el.setAttribute("tabindex", "0");
+    let open = false;
+    const toggle = () => {
+      open = !open;
+      el.textContent = open ? full : shortText;
+      el.classList.toggle("hash-open", open);
+      el.setAttribute("title", open ? "Click to shorten" : "Click to show the whole hash");
+    };
+    el.addEventListener("click", (e) => { e.stopPropagation(); toggle(); });
+    el.addEventListener("keydown", (e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); toggle(); } });
+  });
 }
 
 // Load Search Index and Corpus Summary

@@ -61,6 +61,21 @@ body {
   font-family: var(--font-mono);
 }
 
+/* A shortened hash: dotted underline says there is more, a click shows it all */
+.hash-short {
+  cursor: pointer;
+  text-decoration: underline dotted;
+  text-underline-offset: 3px;
+}
+.hash-short:hover,
+.hash-short:focus-visible {
+  color: var(--primary);
+  outline: none;
+}
+.hash-open {
+  overflow-wrap: anywhere;
+}
+
 /* Top bar: one slim line that stays; everything else scrolls */
 .topbar {
   position: sticky;
