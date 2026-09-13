@@ -34,6 +34,8 @@ const state = {
   sdgFilter: "all",
   bandFilter: "all",
   sortBy: "id-asc",
+  targetLabels: {},     // "12.5" -> the UN target's label, from data/sdg_targets.json
+  openSdg: null,        // the goal whose target breakdown is open on the SDG page
   loadedShards: new Map() // prefix -> project details map
 };
 
@@ -125,6 +127,12 @@ async function loadStaticData() {
 
     state.corpusSummary = await summaryRes.json();
     state.projectsIndex = await indexRes.json();
+
+    // Target labels are a convenience for the SDG page; the page works without them.
+    try {
+      const labelsRes = await fetch("data/sdg_targets.json");
+      if (labelsRes.ok) state.targetLabels = (await labelsRes.json()).targets || {};
+    } catch (_) { /* leave the numbers bare */ }
 
     renderCorpusSummary();
     renderEvaluationMetrics();
@@ -705,6 +713,12 @@ function renderSdgDistribution() {
   const grid = document.getElementById("sdg-grid");
   const goalsData = (state.corpusSummary.distributions && state.corpusSummary.distributions.goals) || [];
 
+  // The breakdown panel lives inside the grid while open; put it back outside
+  // before the cards are redrawn, or the redraw would erase it.
+  const panel = document.getElementById("target-breakdown-card");
+  if (panel && panel.parentNode === grid) grid.parentNode.insertBefore(panel, grid.nextSibling);
+  state.openSdg = null;
+
   let html = "";
   for (let i = 1; i <= 17; i++) {
     const goalData = goalsData.find(g => String(g.goal_id) === String(i));
@@ -713,7 +727,7 @@ function renderSdgDistribution() {
     const meta = SDG_META[i] || { name: `SDG ${i}`, color: "#0284c7" };
 
     html += `
-      <div class="sdg-card" onclick="inspectSdg(${i})">
+      <div class="sdg-card" data-goal="${i}" onclick="inspectSdg(${i})">
         <div class="sdg-card-bar" style="background-color: ${meta.color};"></div>
         <div class="sdg-card-header">
           <span class="sdg-num-badge" style="background-color: ${meta.color};">Goal ${i}</span>
@@ -728,12 +742,29 @@ function renderSdgDistribution() {
   grid.innerHTML = html;
 }
 
+// The target breakdown opens directly under the row of the card that was
+// clicked, so the page does not jump. A second click on the same card closes
+// it; a click on another card moves it there.
+function closeSdgBreakdown() {
+  const panel = document.getElementById("target-breakdown-card");
+  const grid = document.getElementById("sdg-grid");
+  panel.style.display = "none";
+  if (panel.parentNode === grid) grid.parentNode.insertBefore(panel, grid.nextSibling);
+  document.querySelectorAll(".sdg-card.is-open").forEach(c => c.classList.remove("is-open"));
+  state.openSdg = null;
+}
+
 window.inspectSdg = function(goalNum) {
   const breakdownCard = document.getElementById("target-breakdown-card");
   const titleEl = document.getElementById("target-breakdown-title");
   const bodyEl = document.getElementById("target-breakdown-body");
   const filterBtn = document.getElementById("filter-by-selected-sdg-btn");
   const closeBtn = document.getElementById("close-target-breakdown-btn");
+
+  if (state.openSdg === goalNum) {
+    closeSdgBreakdown();
+    return;
+  }
 
   const meta = SDG_META[goalNum];
   const goalsData = (state.corpusSummary.distributions && state.corpusSummary.distributions.goals) || [];
@@ -749,15 +780,14 @@ window.inspectSdg = function(goalNum) {
     applyFilters();
   };
 
-  closeBtn.onclick = () => {
-    breakdownCard.style.display = "none";
-  };
+  closeBtn.onclick = closeSdgBreakdown;
 
   const allTargets = (state.corpusSummary.distributions && state.corpusSummary.distributions.most_linked_targets) || [];
   const targets = allTargets.filter(t => t.key.startsWith(`${goalNum}.`));
   if (targets.length === 0) {
     bodyEl.innerHTML = `<p style="color: var(--text-secondary); font-size: 0.9rem; padding: 0.5rem 0;">
-      Broad goal-level mappings. Click below to explore all projects assigned to SDG ${goalNum}.
+      None of Goal ${goalNum}'s targets is among the 25 most-linked targets, so there is no target table for it.
+      The button on the right lists all ${Number(count).toLocaleString()} projects assigned to this goal.
     </p>`;
   } else {
     const maxCount = Math.max(...targets.map(t => t.count), 1);
@@ -765,9 +795,9 @@ window.inspectSdg = function(goalNum) {
       <table class="targets-table">
         <thead>
           <tr>
-            <th style="width: 140px;">Target</th>
-            <th style="width: 120px; text-align: right;">Projects</th>
-            <th class="bar-cell">Share of all projects</th>
+            <th>Target</th>
+            <th style="width: 100px; text-align: right;">Projects</th>
+            <th class="bar-cell" style="width: 30%;">Share of all projects</th>
           </tr>
         </thead>
         <tbody>
@@ -777,7 +807,7 @@ window.inspectSdg = function(goalNum) {
       const pctBar = (t.count / maxCount * 100).toFixed(1);
       tableHtml += `
         <tr>
-          <td><strong class="mono">Target ${escapeHtml(t.key)}</strong></td>
+          <td><strong>${escapeHtml(t.key)}</strong>${state.targetLabels[t.key] ? ` <span class="target-label">${escapeHtml(state.targetLabels[t.key])}</span>` : ""}</td>
           <td style="text-align: right;" class="mono font-bold">${Number(t.count).toLocaleString()}</td>
           <td class="bar-cell">
             <div class="progress-bar-bg">
@@ -788,10 +818,19 @@ window.inspectSdg = function(goalNum) {
       `;
     });
 
-    tableHtml += `</tbody></table>`;
+    tableHtml += `</tbody></table>
+      <p class="targets-note">Targets are the numbered aims under each goal in the UN's list of 169; only the 25 most-linked targets across all projects are shown here.</p>`;
     bodyEl.innerHTML = tableHtml;
   }
 
+  // Place the panel after the last card in the clicked card's row.
+  const grid = document.getElementById("sdg-grid");
+  const cards = Array.from(grid.querySelectorAll(".sdg-card"));
+  const clicked = cards.find(c => c.dataset.goal === String(goalNum));
+  cards.forEach(c => c.classList.toggle("is-open", c === clicked));
+  const rowEnd = cards.filter(c => c.offsetTop === clicked.offsetTop).pop() || clicked;
+  grid.insertBefore(breakdownCard, rowEnd.nextSibling);
+  state.openSdg = goalNum;
   breakdownCard.style.display = "block";
   breakdownCard.scrollIntoView({ behavior: "smooth", block: "nearest" });
 };

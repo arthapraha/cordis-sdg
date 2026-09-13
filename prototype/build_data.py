@@ -103,10 +103,36 @@ def verify_inputs():
         print(f"  OK {name}: {actual} (matches)")
 
 
+def write_target_labels(data_dir: pathlib.Path) -> pathlib.Path:
+    """The 169 UN target labels, keyed by target id, from the frozen taxonomy file.
+
+    The SDG page names targets by number ("12.5"); this gives each its label so a
+    visitor can read what the number means. Source: data/terms/sdg-targets.csv,
+    the taxonomy the pipeline itself loads (its sha256 is recorded in the file)."""
+    src = REPO_ROOT / "data" / "terms" / "sdg-targets.csv"
+    labels = {}
+    with open(src, encoding="utf-8-sig", newline="") as f:
+        for row in csv.DictReader(f, delimiter=";"):
+            labels[row["target_id"]] = row["target_label"]
+    assert len(labels) == 169, f"expected 169 targets, read {len(labels)}"
+    out = {
+        "_what_this_is": "UN SDG target labels keyed by target id, copied from data/terms/sdg-targets.csv "
+                         "so the SDG page can say what a target number means.",
+        "_source_sha256": sha256_file(src),
+        "targets": labels,
+    }
+    path = data_dir / "sdg_targets.json"
+    with open(path, "w", encoding="utf-8", newline="") as f:
+        json.dump(out, f, ensure_ascii=False, indent=1, sort_keys=True)
+    return path
+
+
 def build_prototype_data():
     verify_inputs()
 
     data_dir = REPO_ROOT / "prototype" / "data"
+    labels_path = write_target_labels(data_dir)
+    print(f"  Wrote target labels: {labels_path.relative_to(REPO_ROOT)}")
     projects_dir = data_dir / "projects"
     projects_dir.mkdir(parents=True, exist_ok=True)
 

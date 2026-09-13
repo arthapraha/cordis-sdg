@@ -757,6 +757,29 @@ body {
   box-shadow: var(--shadow-md);
 }
 
+.sdg-card.is-open {
+  border-color: var(--border-dark);
+  box-shadow: var(--shadow-md);
+  background-color: var(--bg-alt);
+}
+
+/* While open, the breakdown sits inside the grid, under the clicked card's row */
+.sdg-grid > .target-breakdown-card {
+  grid-column: 1 / -1;
+  margin-bottom: 0.25rem;
+}
+
+.target-label {
+  font-weight: 400;
+  color: var(--text-secondary);
+}
+
+.targets-note {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-top: 0.75rem;
+}
+
 .sdg-card-bar {
   height: 6px;
   width: 100%;
