@@ -807,9 +807,21 @@ window.inspectSdg = function(goalNum) {
   const goalObj = goalsData.find(g => String(g.goal_id) === String(goalNum));
   const count = goalObj ? goalObj.projects : 0;
 
-  const statement = state.goalLabels[String(goalNum)] || "";
-  titleEl.innerHTML = `<span class="sdg-num-badge" style="background-color: ${meta.color}; margin-right: 0.5rem;">Goal ${goalNum}</span> <a href="https://sdgs.un.org/goals/goal${goalNum}" target="_blank" rel="noopener" class="un-outbound-link" title="Open Goal ${goalNum} on the UN's site (opens in a new tab)">${meta.name}&nbsp;<span class="external-icon">&nearr;</span></a> &bull; ${Number(count).toLocaleString()} Projects`
-    + (statement ? `<div class="goal-statement">${escapeHtml(statement)}</div>` : "");
+  // The card's figure counts projects with a target under this goal (the
+  // pipeline's own figure). Projects mapped to the goal alone, with no target,
+  // are counted here from the index, so the panel can say both numbers and the
+  // button can say how many it lists.
+  const goalKey = String(goalNum);
+  const goalOnly = state.projectsIndex.filter(p => p.goals && p.goals.includes(goalKey)
+    && !(p.targets || []).some(t => t.startsWith(goalKey + "."))).length;
+  const allInGoal = count + goalOnly;
+
+  const statement = state.goalLabels[goalKey] || "";
+  titleEl.innerHTML = `<span class="sdg-num-badge" style="background-color: ${meta.color}; margin-right: 0.5rem;">Goal ${goalNum}</span> <a href="https://sdgs.un.org/goals/goal${goalNum}" target="_blank" rel="noopener" class="un-outbound-link" title="Open Goal ${goalNum} on the UN's site (opens in a new tab)">${meta.name}&nbsp;<span class="external-icon">&nearr;</span></a>`
+    + (statement ? `<div class="goal-statement">${escapeHtml(statement)}</div>` : "")
+    + `<div class="goal-counts">${Number(count).toLocaleString()} projects with a target under this goal`
+    + (goalOnly ? ` &bull; ${Number(goalOnly).toLocaleString()} more at goal level only` : "") + `</div>`;
+  filterBtn.textContent = `All ${Number(allInGoal).toLocaleString()} projects in this goal →`;
 
   filterBtn.onclick = () => {
     document.getElementById("sdg-filter").value = String(goalNum);
@@ -827,7 +839,7 @@ window.inspectSdg = function(goalNum) {
   if (targets.length === 0) {
     bodyEl.innerHTML = `<p style="color: var(--text-secondary); font-size: 0.9rem; padding: 0.5rem 0;">
       None of Goal ${goalNum}'s targets is among the 25 most-linked targets, so there is no target table for it.
-      The button on the right lists all ${Number(count).toLocaleString()} projects assigned to this goal.
+      The button on the right lists all ${Number(allInGoal).toLocaleString()} projects mapped to this goal.
     </p>`;
   } else {
     const maxCount = Math.max(...targets.map(t => t.count), 1);
