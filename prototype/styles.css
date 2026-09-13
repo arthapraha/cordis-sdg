@@ -763,6 +763,23 @@ body {
   background-color: var(--bg-alt);
 }
 
+.sdg-card-foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.5rem;
+  margin-top: 0.4rem;
+}
+
+.sdg-card-hint {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--primary);
+  white-space: nowrap;
+}
+.sdg-card-hint::after { content: "Show targets \2193"; }
+.sdg-card.is-open .sdg-card-hint::after { content: "Hide targets \2191"; }
+
 /* While open, the breakdown sits inside the grid, under the clicked card's row */
 .sdg-grid > .target-breakdown-card {
   grid-column: 1 / -1;

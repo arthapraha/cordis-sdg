@@ -104,6 +104,8 @@ window.switchTab = switchTab;
 function switchTab(tabName, opts = {}) {
   const targetPane = document.getElementById(`tab-${tabName}`);
   if (!targetPane) return;
+  // The SDG page opens with every card closed, whichever way it is reached.
+  if (state.openSdg !== null && typeof closeSdgBreakdown === "function") closeSdgBreakdown();
   document.querySelectorAll(".menu-item").forEach(b => b.classList.toggle("active", b.dataset.tab === tabName));
   document.querySelectorAll(".tab-pane").forEach(p => p.classList.remove("active"));
   targetPane.classList.add("active");
@@ -772,7 +774,10 @@ function renderSdgDistribution() {
           <span class="sdg-count-badge">${Number(count).toLocaleString()} Projects</span>
         </div>
         <div class="sdg-card-title"><a href="https://sdgs.un.org/goals/goal${i}" target="_blank" rel="noopener" class="un-outbound-link" onclick="event.stopPropagation()" title="Open Goal ${i} on the UN's site (opens in a new tab)">${meta.name}&nbsp;<span class="external-icon">&nearr;</span></a></div>
-        <div class="sdg-card-pct">${pct}% of all projects</div>
+        <div class="sdg-card-foot">
+          <span class="sdg-card-pct">${pct}% of all projects</span>
+          <span class="sdg-card-hint" aria-hidden="true"></span>
+        </div>
       </div>
     `;
   }
