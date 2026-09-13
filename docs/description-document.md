@@ -1,11 +1,13 @@
 # Mapping CORDIS Horizon Europe projects to SDG targets
 
-**Description document, registration §6 item 8.**
+**Description document, registration §6 item 8.** The registration is
+`docs/cordis-sdg-registration-v10.md` in this repository; section and item
+numbers throughout refer to it.
 
 | | |
 |---|---|
 | registration | `cordis-sdg-registration-v10.md`, sha256 `c5f2a26ce6049e801a7e757efc2cbe4253689987fad761f1d97cfb5b0ad68fb2` |
-| ratified | v10 on 2026-09-12; its predecessor **was ratified by hash on 2026-09-11, before any pipeline code was written**, and sections 1 to 6, 9 and 10 are byte-identical between them |
+| ratified | v10 on 2026-09-12; its predecessor **was ratified by hash on 2026-09-11, before any pipeline code was written**, and sections 1 to 6, 9 and 10 are byte-identical between them. The commit history shows it: the first pipeline code, `eb3ec4a`, was committed at 23:01Z on 2026-09-11, seventeen minutes after the ratification recorded in the working record |
 | licence | **CC BY 4.0** for the documentation, the crosswalk and the synonym list; **MIT** for the code (§9) |
 | certificate | one name, **Attila Angyan** |
 
@@ -136,7 +138,7 @@ hand. **That is the cost of §3's requirement**, and it is the honest centre of
 this result rather than a footnote to it.
 
 **The held-out set behaves like the set the method was tuned on**: the
-development ceiling is 0.446 (45 of 101 pairs, over the union of two label sets)
+development ceiling is 0.446 (45 of 101 pairs, counting a pair once if either of the two development-set labellers assigned it)
 and the evaluation ceiling is 0.442 (42 of 95, over one labeller). Those are not
 like for like, and the closeness is evidence about the method's reach rather than
 a controlled comparison.
@@ -153,7 +155,8 @@ the wrong thing, and it fails in the safer direction.
 
 The registration requires this section to quote rather than summarise. Two
 names in the quotation are seats, not people: **Hermes** and **counsel** are two
-of the model seats that worked this entry. Hermes reviewed the crosswalk and was
+of the automated assistants that worked this entry, named as its working
+records name them. Hermes reviewed the crosswalk and was
 one of the two development-set labellers; counsel is the reviewing seat that
 reads every build from its own copy of the code, which is why the clause bars it
 from labelling the evaluation set.
@@ -297,7 +300,7 @@ control, not on this document saying so.**
 |---|---|
 | frozen pipeline commit | `0246412b44f722567feaa2e6c1b6e695de86c923` |
 | parameters, values digest | `3808845b553dfda751bf4a3e5c87bd17f32b6ca8c195a0c54321ed25e03e09e1` |
-| freeze recorded at | seq 207, asserted by the caller on the command line |
+| freeze recorded at | entry 207 of the project's working record, asserted by the caller on the command line as `--freeze-seq 207` |
 | evaluation-100 output | `0938fe34e41cd5d8ddccfba69238481fdf6470e54046104ad7a3535da6743709` |
 | §4.7 metrics | `babd37415581ce82ecb09c4501052ce811e834e57dad7c6735389ce321dd8a2e` |
 | development-50 output | `45a514cf0c7a0984c419f086f11025077e9a4122e7bf2879263176b2b5430bbf` |
@@ -365,8 +368,8 @@ assertions cannot match text that does not contain it. That is commit
 `0246412b44f722567feaa2e6c1b6e695de86c923`, and it scored the whole snapshot in
 minutes.
 
-**The owner allowed it at cordis-sdg seq 244 on one condition: the output must
-equal the slow run's.** An argument that the skip cannot change an answer is not
+**The owner allowed it on one condition, recorded as entry 244 of the project's
+working record: the output must equal the slow run's.** An argument that the skip cannot change an answer is not
 the same as a measurement that it did not. So the slow pipeline was run again
 over all 23,451 projects, in a separate worktree at `c8a6104`, and its table was
 compared with the committed one.
@@ -445,7 +448,7 @@ The decision path is pure standard library — no dependency resolution stands
 between a reader and a reproduction. CC BY 4.0 and MIT.
 
 **(5) Data handling.** Every input hashed, no payload committed, no personal data
-read, no credential in the repository or the room.
+read, no credential in the repository or in any of the working records.
 
 **(6) Visualisation and communication.** Six figures, committed as SVG, each
 reproducing byte-identically, with **the counts behind every chart published
