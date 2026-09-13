@@ -112,9 +112,10 @@ function switchTab(tabName, opts = {}) {
   targetPane.classList.add("active");
   const head = document.getElementById("page-head");
   if (head) head.hidden = tabName !== "explorer";
-  // The hash is the bare section name, which is no element's id, so the browser
-  // has nothing to scroll to on load and the page opens at its top.
-  const targetHash = `#${tabName}`;
+  // The hash is the section's name as the menu says it, which is no element's
+  // id, so the browser has nothing to scroll to on load and the page opens at
+  // its top. The first section is "Home" in the menu and #home in the address.
+  const targetHash = `#${tabName === "explorer" ? "home" : tabName}`;
   if (!opts.fromHistory && !window.location.hash.startsWith("#project") && window.location.hash !== targetHash) {
     try { history.pushState(null, "", targetHash); } catch (_) { /* file: URLs */ }
   }
@@ -1034,9 +1035,9 @@ function checkUrlForProject() {
 
 function setupUrlRouting() {
   window.addEventListener("hashchange", () => {
-    const tabHash = window.location.hash.match(/^#(?:tab-)?(explorer|sdgs|evaluation|figures|provenance)$/);
+    const tabHash = window.location.hash.match(/^#(?:tab-)?(home|explorer|sdgs|evaluation|figures|provenance)$/);
     if (tabHash) {
-      switchTab(tabHash[1], { fromHistory: true });
+      switchTab(tabHash[1] === "home" ? "explorer" : tabHash[1], { fromHistory: true });
       return;
     }
     if (window.location.hash === "") {
@@ -1060,18 +1061,20 @@ function setupUrlRouting() {
   });
 
   // A link straight to a section opens that section on load, not only on change.
-  const initial = window.location.hash.match(/^#(?:tab-)?(explorer|sdgs|evaluation|figures|provenance)$/);
+  const initial = window.location.hash.match(/^#(?:tab-)?(home|explorer|sdgs|evaluation|figures|provenance)$/);
   if (initial) {
-    switchTab(initial[1], { fromHistory: true });
+    const name = initial[1] === "home" ? "explorer" : initial[1];
+    switchTab(name, { fromHistory: true });
     // An older link still says #tab-<name>, which IS a section's id, and the
-    // browser scrolls it into view after the page loads. Rename it and stay at
-    // the top.
-    if (window.location.hash.startsWith("#tab-")) {
-      try { history.replaceState(null, "", `#${initial[1]}`); } catch (_) { /* file: URLs */ }
+    // browser scrolls it into view after the page loads; #explorer is the
+    // first section's old name. Rename either and stay at the top.
+    const wanted = `#${name === "explorer" ? "home" : name}`;
+    if (window.location.hash !== wanted) {
+      try { history.replaceState(null, "", wanted); } catch (_) { /* file: URLs */ }
       window.addEventListener("load", () => window.scrollTo(0, 0), { once: true });
     }
   } else if (window.location.hash === "") {
     // Name the entry the page loaded with, so Back from a section lands on Home by name.
-    try { history.replaceState(null, "", "#explorer"); } catch (_) { /* file: URLs */ }
+    try { history.replaceState(null, "", "#home"); } catch (_) { /* file: URLs */ }
   }
 }
