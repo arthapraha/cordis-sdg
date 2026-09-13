@@ -151,7 +151,12 @@ the wrong thing, and it fails in the safer direction.
 
 ## 5. The independence limitation of §4.4, in its own words
 
-The registration requires this section to quote rather than summarise:
+The registration requires this section to quote rather than summarise. Two
+names in the quotation are seats, not people: **Hermes** and **counsel** are two
+of the model seats that worked this entry. Hermes reviewed the crosswalk and was
+one of the two development-set labellers; counsel is the reviewing seat that
+reads every build from its own copy of the code, which is why the clause bars it
+from labelling the evaluation set.
 
 > **4. What "blind" cuts.** Labellers do not see the pipeline, its output or each
 > other's labels before their own are sealed. **Labellers may have seen the
