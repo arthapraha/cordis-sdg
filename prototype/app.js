@@ -837,8 +837,8 @@ window.inspectSdg = function(goalNum) {
   const allTargets = (state.corpusSummary.distributions && state.corpusSummary.distributions.most_linked_targets) || [];
   const targets = allTargets.filter(t => t.key.startsWith(`${goalNum}.`));
   if (targets.length === 0) {
-    bodyEl.innerHTML = `<p style="color: var(--text-secondary); font-size: 0.9rem; padding: 0.5rem 0;">
-      None of Goal ${goalNum}'s targets is among the 25 most-linked targets, so there is no target table for it.
+    bodyEl.innerHTML = `<p class="targets-note" style="margin-top: 0;">
+      The 25 most-linked targets across all projects are listed by goal on this page; Goal ${goalNum}'s targets sit outside that 25.
       The button on the right lists all ${Number(allInGoal).toLocaleString()} projects mapped to this goal.
     </p>`;
   } else {
