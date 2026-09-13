@@ -112,7 +112,9 @@ function switchTab(tabName, opts = {}) {
   targetPane.classList.add("active");
   const head = document.getElementById("page-head");
   if (head) head.hidden = tabName !== "explorer";
-  const targetHash = `#tab-${tabName}`;
+  // The hash is the bare section name, which is no element's id, so the browser
+  // has nothing to scroll to on load and the page opens at its top.
+  const targetHash = `#${tabName}`;
   if (!opts.fromHistory && !window.location.hash.startsWith("#project") && window.location.hash !== targetHash) {
     try { history.pushState(null, "", targetHash); } catch (_) { /* file: URLs */ }
   }
@@ -1061,8 +1063,15 @@ function setupUrlRouting() {
   const initial = window.location.hash.match(/^#(?:tab-)?(explorer|sdgs|evaluation|figures|provenance)$/);
   if (initial) {
     switchTab(initial[1], { fromHistory: true });
+    // An older link still says #tab-<name>, which IS a section's id, and the
+    // browser scrolls it into view after the page loads. Rename it and stay at
+    // the top.
+    if (window.location.hash.startsWith("#tab-")) {
+      try { history.replaceState(null, "", `#${initial[1]}`); } catch (_) { /* file: URLs */ }
+      window.addEventListener("load", () => window.scrollTo(0, 0), { once: true });
+    }
   } else if (window.location.hash === "") {
     // Name the entry the page loaded with, so Back from a section lands on Home by name.
-    try { history.replaceState(null, "", "#tab-explorer"); } catch (_) { /* file: URLs */ }
+    try { history.replaceState(null, "", "#explorer"); } catch (_) { /* file: URLs */ }
   }
 }
