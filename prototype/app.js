@@ -93,7 +93,10 @@ function setupTabs() {
 
 window.switchTab = switchTab;
 
-function switchTab(tabName) {
+// Opening a section from the menu, a bubble or a button adds a history entry,
+// so the browser's Back returns to the previous section. Opening it from the
+// URL (a load, Back, Forward) does not, or Back would loop.
+function switchTab(tabName, opts = {}) {
   const targetPane = document.getElementById(`tab-${tabName}`);
   if (!targetPane) return;
   document.querySelectorAll(".menu-item").forEach(b => b.classList.toggle("active", b.dataset.tab === tabName));
@@ -101,8 +104,9 @@ function switchTab(tabName) {
   targetPane.classList.add("active");
   const head = document.getElementById("page-head");
   if (head) head.hidden = tabName !== "explorer";
-  if (!window.location.hash.startsWith("#project")) {
-    try { history.replaceState(null, "", `#tab-${tabName}`); } catch (_) { /* file: URLs */ }
+  const targetHash = `#tab-${tabName}`;
+  if (!opts.fromHistory && !window.location.hash.startsWith("#project") && window.location.hash !== targetHash) {
+    try { history.pushState(null, "", targetHash); } catch (_) { /* file: URLs */ }
   }
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
@@ -878,7 +882,12 @@ function setupUrlRouting() {
   window.addEventListener("hashchange", () => {
     const tabHash = window.location.hash.match(/^#(?:tab-)?(explorer|sdgs|evaluation|figures|provenance)$/);
     if (tabHash) {
-      switchTab(tabHash[1]);
+      switchTab(tabHash[1], { fromHistory: true });
+      return;
+    }
+    if (window.location.hash === "") {
+      // Back has reached the entry the page loaded with: that is Home.
+      switchTab("explorer", { fromHistory: true });
       return;
     }
     const hashMatch = window.location.hash.match(/#project[=-]([0-9a-zA-Z]+)/);
@@ -898,5 +907,10 @@ function setupUrlRouting() {
 
   // A link straight to a section opens that section on load, not only on change.
   const initial = window.location.hash.match(/^#(?:tab-)?(explorer|sdgs|evaluation|figures|provenance)$/);
-  if (initial) switchTab(initial[1]);
+  if (initial) {
+    switchTab(initial[1], { fromHistory: true });
+  } else if (window.location.hash === "") {
+    // Name the entry the page loaded with, so Back from a section lands on Home by name.
+    try { history.replaceState(null, "", "#tab-explorer"); } catch (_) { /* file: URLs */ }
+  }
 }
