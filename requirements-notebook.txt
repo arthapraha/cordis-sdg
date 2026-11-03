@@ -20,7 +20,7 @@
 
 ipykernel==7.3.0
 jupyter==1.1.1
-jupyterlab==4.6.3
+jupyterlab==4.6.4
 matplotlib==3.11.2
 nbclient==0.11.0
 nbconvert==7.17.1
